@@ -1,0 +1,57 @@
+html {
+	background: #f7f7f7;
+	color: #333;
+	font: 16px/1.4 Open Sans, Helvetica, Arial, sans-serif;
+}
+
+body {
+	max-width: 720px;
+	padding: 20px 40px;
+	margin: 0 auto;
+}
+
+a {
+    color: #069;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
+}
+
+h1,
+h2 {
+    line-height: 1.2;
+}
+
+.site-box {
+    padding: 40px 60px 0;
+    border: 1px solid #ccc;
+    margin: 0 0 3em;
+    background: #fff;
+}
+
+.logo {
+    margin: 0 0 1em;
+    color: #4671D5;
+    text-shadow: 1px 1px 0 #06266F;
+    text-decoration: none;
+}
+
+.site-footer {
+    overflow: hidden;
+    padding: 10px 30px;
+    border-top: 1px solid #ddd;
+    margin: 50px -60px 0;
+    background: #eee;
+    line-height: 28px;
+    *zoom: 1;
+}
+
+.read-more {
+    float: right;
+}
+
+
