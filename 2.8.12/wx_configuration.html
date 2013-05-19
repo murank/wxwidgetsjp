@@ -1,0 +1,35 @@
+<HTML>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>Configuration</title></head>
+
+<BODY BGCOLOR=#FFFFFF>
+<A NAME="configuration"></A><CENTER>
+<A HREF="wx_contents.html"><img align=center src="contents.gif" BORDER=0 ALT="Contents"></A> <A HREF="wx_multiplat.html#multiplat"><img align=center src="up.gif" BORDER=0 ALT="Up"></A> <A HREF="wx_libraries.html#libraries"><img align=center src="back.gif" BORDER=0 ALT="Previous"></A> <A HREF="wx_makefiles.html#makefiles"><img align=center src="forward.gif" BORDER=0 ALT="Next"></A> </CENTER><HR>
+
+<H2>Configuration</H2>
+<P>
+
+When using project files and makefiles directly to build wxWidgets,
+options are configurable in the file
+<TT>"wx/XXX/setup.h"</TT> where XXX is the required platform (such as msw, motif, gtk, mac). Some 
+settings are a matter of taste, some help with platform-specific problems, and
+others can be set to minimize the size of the library. Please see the setup.h file
+and <TT>install.txt</TT> files for details on configuration.<P>
+
+When using the 'configure' script to configure wxWidgets (on Unix and other platforms where
+configure is available), the corresponding setup.h files are generated automatically
+along with suitable makefiles. When using the RPM packages
+for installing wxWidgets on Linux, a correct setup.h is shipped in the package and
+this must not be changed.<P>
+
+</FONT><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40693840-1', 'murank.github.io');
+  ga('send', 'pageview');
+
+</script>
+</body></HTML>

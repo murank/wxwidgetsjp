@@ -1,0 +1,70 @@
+<HTML>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>wxTimerEvent</title></head>
+
+<BODY BGCOLOR=#FFFFFF>
+<A NAME="wxtimerevent"></A><CENTER>
+<A HREF="wx_contents.html"><img align=center src="contents.gif" BORDER=0 ALT="Contents"></A> <A HREF="wx_classref.html#classref"><img align=center src="up.gif" BORDER=0 ALT="Up"></A> <A HREF="wx_wxtimer.html#wxtimer"><img align=center src="back.gif" BORDER=0 ALT="Previous"></A> <A HREF="wx_wxtimespan.html#wxtimespan"><img align=center src="forward.gif" BORDER=0 ALT="Next"></A> </CENTER><HR>
+
+<H2>wxTimerEvent</H2>
+<P>
+
+wxTimerEvent object is passed to the event handler of timer events.<P>
+以下に例を示します:<P>
+<PRE>
+class MyFrame : public wxFrame
+{
+public:
+    ...
+    void OnTimer(wxTimerEvent&amp; event);
+
+private:
+    wxTimer m_timer;
+};
+
+BEGIN_EVENT_TABLE(MyFrame, wxFrame)
+    EVT_TIMER(TIMER_ID, MyFrame::OnTimer)
+END_EVENT_TABLE()
+
+MyFrame::MyFrame()
+       : m_timer(this, TIMER_ID)
+{
+    m_timer.Start(1000);    // 1 second interval
+}
+
+void MyFrame::OnTimer(wxTimerEvent&amp; event)
+{
+    // do whatever you want to do every second here
+}
+
+</PRE>
+<B><FONT COLOR="#FF0000">継承元</FONT></B><P>
+<A HREF="wx_wxevent.html#wxevent">wxEvent</A><P>
+<B><FONT COLOR="#FF0000">インクルードファイル</FONT></B><P>
+
+&lt;wx/timer.h&gt;<P>
+<B><FONT COLOR="#FF0000">参照</FONT></B><P>
+<A HREF="wx_wxtimer.html#wxtimer">wxTimer</A><P>
+<B><FONT COLOR="#FF0000">Members</FONT></B><P>
+<A HREF="#wxtimereventgetinterval">wxTimerEvent::GetInterval</A><BR>
+<P>
+
+<HR>
+<A NAME="wxtimereventgetinterval"></A>
+<H3>wxTimerEvent::GetInterval</H3>
+<P>
+<B>int</B> <B>GetInterval</B>() <B>const</B><P>
+
+Returns the interval of the timer which generated this event.<P>
+
+</FONT><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40693840-1', 'murank.github.io');
+  ga('send', 'pageview');
+
+</script>
+</body></HTML>

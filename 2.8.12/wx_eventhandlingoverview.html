@@ -1,0 +1,823 @@
+<HTML>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>イベント処理の概要</title></head>
+
+<BODY BGCOLOR=#FFFFFF>
+<A NAME="eventhandlingoverview"></A><CENTER>
+<A HREF="wx_contents.html"><img align=center src="contents.gif" BORDER=0 ALT="Contents"></A> <A HREF="wx_overviews.html#overviews"><img align=center src="up.gif" BORDER=0 ALT="Up"></A> <A HREF="wx_fs.html#fs"><img align=center src="back.gif" BORDER=0 ALT="Previous"></A> <A HREF="wx_exceptionsoverview.html#exceptionsoverview"><img align=center src="forward.gif" BORDER=0 ALT="Next"></A> </CENTER><HR>
+
+<H2>イベント処理の概要</H2>
+<P>
+クラス: <A HREF="wx_wxevthandler.html#wxevthandler">wxEvtHandler</A>, <A HREF="wx_wxwindow.html#wxwindow">wxWindow</A>, <A HREF="wx_wxevent.html#wxevent">wxEvent</A><P>
+<A HREF="#eventintroduction">イントロダクション</A><BR><A HREF="#eventprocessing">イベント処理の仕組み</A><BR><A HREF="#progevent">ユーザの生成したイベントとプログラム的に生成したイベント</A><BR><A HREF="#pluggablehandlers">動的イベントハンドラ</A><BR><A HREF="#windowids">ウィンドウ識別子</A><BR><A HREF="#eventmacros">イベントマクロの概要</A><BR><A HREF="#customevents">カスタムイベントの概要</A><BR>
+<P>
+
+<HR>
+<A NAME="eventintroduction"></A>
+<H3>イントロダクション</H3>
+<P>
+wxWidgets 2.0 より前のバージョンでは、イベント処理はコールバック関数か、<B>OnSize</B> といった仮想メンバ関数のオーバーライドで実現されていました。<P>
+wxWidgets 2.0 からは一部の例外を除き、代わりに <I>イベントテーブル</I> が使用されています。<P>
+イベントテーブルはソースファイルに配置され、wxWidgets にイベントとメンバ関数のマッピング方法を知らせます。これらのメンバ関数は非仮想関数ですが、すべて同じ形式をとります: wxEvent を継承した引数をひとつ取り、戻り値の型は void です。<P>
+イベントテーブルの例を以下に示します。<P>
+<PRE>
+BEGIN_EVENT_TABLE(MyFrame, wxFrame)
+  EVT_MENU    (wxID_EXIT, MyFrame::OnExit)
+  EVT_MENU    (DO_TEST,   MyFrame::DoTest)
+  EVT_SIZE    (           MyFrame::OnSize)
+  EVT_BUTTON  (BUTTON1,   MyFrame::OnButton1)
+END_EVENT_TABLE()
+</PRE>
+最初の 2 つのエントリはメニューコマンドを異なる 2 つのメンバ関数にマッピングしています。EVT_SIZE マクロはウィンドウ識別子を必要としません。なぜなら、通常は現在のウィンドウのリサイズイベントにのみ関心があるはずだからです。<P>
+EVT_BUTTON マクロはイベントの発生元がウィンドウクラスである必要がないことを表しています。ウィンドウ階層をたどりながらイベントテーブルを検索するため、イベントの発生元がフレーム内のパネルにあるボタンである場合でも動作します。この場合、まずボタンのイベントテーブルが検索され、続いて、その親パネル、フレームの順に検索されます。<P>
+前に述べたように、イベントを処理するメンバ関数は仮想関数である必要はありません。実際に、イベントテーブルはメンバ関数が仮想関数であることを無視する、つまり、仮想メンバ関数を継承クラスでオーバーライドしてもなにも影響を及ぼしません。そのため、メンバ関数を仮想関数にするべきではありません。これらのメンバ関数はイベント引数を取りますが、その引数のクラスはイベントの型と発生元ウィンドウのクラスに応じて異なります。リサイズイベントでは <A HREF="wx_wxsizeevent.html#wxsizeevent">wxSizeEvent</A> が使用されます。メニューコマンドと (ボタン押下といった) 大半のコマンドコントロールでは <A HREF="wx_wxcommandevent.html#wxcommandevent">wxCommandEvent</A> が使用されます。より複雑なコントロールのときには特定のイベントクラスが使用されます。例えば、<A HREF="wx_wxtreectrl.html#wxtreectrl">wxTreeCtrl</A> から発生するイベントには <A HREF="wx_wxtreeevent.html#wxtreeevent">wxTreeEvent</A> が使用されます。<P>
+イベントテーブルをソースファイルに配置するように、クラス宣言のどこかに DECLARE_EVENT_TABLE マクロを配置しなければなりません。以下に例を示します:<P>
+<FONT SIZE=2><PRE>
+class MyFrame : public wxFrame
+{
+public:
+  ...
+  void OnExit(wxCommandEvent&amp; event);
+  void OnSize(wxSizeEvent&amp; event);
+
+protected:
+  int       m_count;
+  ...
+
+  DECLARE_EVENT_TABLE()
+};
+</PRE>
+</FONT>このマクロはクラスの任意の場所 (public、protected、private) に配置することができますが、おそらく例示のように最後に挿入する方が良いでしょう。なぜなら、このマクロは暗黙的にアクセス制御を protected に変更してしまうためです。<P>
+最後に、マクロを使ってイベントテーブルを静的に初期化したくない場合、<A HREF="wx_wxevthandler.html#wxevthandlerconnect">wxEvtHandler::Connect</A> を使用して動的に (実行時に) イベントとイベントハンドラを接続することもできます。これを行なっているサンプルとして <A HREF="wx_samples.html#sampleevent">イベントサンプル</A> を参照してください。<P>
+
+
+<HR>
+<A NAME="eventprocessing"></A>
+<H3>イベント処理の仕組み</H3>
+<P>
+ウィンドウからイベントを受信したとき、wxWidgets はイベントを生成したウィンドウに属する最初のイベントハンドラオブジェクトの <A HREF="wx_wxevthandler.html#wxevthandlerprocessevent">wxEvtHandler::ProcessEvent</A> を呼び出します。<P>
+wxWidgets の行うイベント処理の仕組みは通常の C++ の仮想関数にとても近いことに着目してください。つまり、イベント処理関数をオーバーライドすることでクラスの振る舞いを変更できるということです。ネイティブコントロールの振る舞いを変更するような場合にも、これは動作します。例えば、ネイティブテキストコントロールに送られるキーイベントをフィルタリングする場合、wxTextCtrl をオーバーライドし、EVT_KEY_DOWN を使用してキーイベントハンドラを定義することで実現できます。実際には、これはネイティブコントロールに送られるキーイベントをすべて横取りしますが、これはおそらく期待する動作ではないと思います。この場合、イベントハンドラの検索を続行させるためにイベントハンドラ関数で Skip() を呼ぶ必要があります。<P>
+要約すると、C++ の仮想関数で行うように基底クラスの関数を直接呼ぶ  (つまり、<I>wxTextCtrl::OnChar()</I> を呼ぶ) 代わりに、 <A HREF="wx_wxevent.html#wxeventskip">Skip</A> を呼ぶようにしてください。<P>
+実際に、テキストコントロールで 'a' から 'z' と 'A' から 'Z' までのみを受け付ける場合、以下のようになります。<P>
+<FONT SIZE=2><PRE>
+void MyTextCtrl::OnChar(wxKeyEvent&amp; event)
+{
+    if ( isalpha( event.KeyCode() ) )
+    {
+       // キーコードが正しい範囲に入っている。wxWidgets の規定クラスや
+       // ネイティブコントロールでもイベントを処理するため、
+       // event.Skip() を呼び出す。
+
+       event.Skip();
+    }
+    else
+    {
+       // 対象外のキーが押下された。このイベントを他の場所で処理することはないため、
+       // event.Skip() は呼び出さない。
+
+       wxBell();
+    }
+}
+</PRE>
+</FONT>
+ProcessEvent によるイベントテーブルの検索は通常、以下の順番で行われます：<P>
+<OL>
+
+<LI> (<A HREF="wx_wxevthandler.html#wxevthandlersetevthandlerenabled">wxEvtHandler::SetEvtHandlerEnabled</A> を呼ぶことで) オブジェクトが無効化されている場合、(6) までスキップします。
+</LI><LI> オブジェクトが wxWindow の場合、<B>ProcessEvent</B> はウィンドウの <A HREF="wx_wxvalidator.html#wxvalidator">wxValidator</A> から再帰的に呼び出されます。ProcessEvent が true を返した場合、処理を終了します。
+</LI><LI> このイベントハンドラから <B>SearchEventTable</B> が呼ばれます。ProcessEvent が true を返さなかった場合、基底クラスのイベントテーブルを検索します。これを順次、イベントテーブルが存在しなくなるか、適切な関数が見つかるまで行います。適切な関数が見つからなかった場合、処理を終了します。
+</LI><LI> 次に、イベントハンドラの連鎖を辿って検索します。(通常、この連鎖の長さは 1 です) 検索に成功した場合、処理を終了します。
+</LI><LI> オブジェクトが wxWindow で、かつ、イベントが伝播するように設定されている (ライブラリの中では wxCommandEvent の派生イベントのみ、伝播するよう設定されています) 場合、親ウィンドウの <B>ProcessEvent</B> が再帰的に呼ばれます。ProcessEvent が true を返した場合、処理を終了します。
+</LI><LI> 最後に、wxApp オブジェクトの <B>ProcessEvent</B> が呼ばれます。
+</LI></OL>
+<P>
+<B>ステップ 5 に注意してください。</B> wxWidgets のイベント処理システムの持つこの強力な機能はしばしば見落とされたり、人を混乱させたりします。別の言い方をすると、伝播するように設定されたイベント (<A HREF="wx_wxevent.html#wxeventshouldpropagate">参照: wxEvent::ShouldPropagate</A>) (よくあるのは wxCommandEvent を直接、または間接的に継承したイベントです) は最大回数、伝播するか <A HREF="wx_wxevent.html#wxeventskip">event.Skip()</A> を呼んでいないイベントハンドラが見つかるまで、子から親へコントロール階層をさかのぼっていきます。<P>
+最後に、他にも複雑な仕組みがあります (実際には、これは wxWidgets プログラマの生活を非常にシンプルにしてくれるものです): コマンドイベントが親ウィンドウへ伝播するとき、親ダイアログまで到達した時点で伝播が終了します。これはつまり、モーダルダイアログを表示しているときにダイアログコントロールから意図しないイベントを受け取ることがないことを意味します。 (それらのイベントは処理されないままになるでしょう) しかし、通常のイベントはフレームを超えて伝播します。このようにした理由は、普通のアプリケーションでは数個のフレームしか存在せず、プログラマはそれらの親子関係のことをよく理解している一方で、複雑なプログラムで表示されるすべてのダイアログを追跡することは、不可能でないにしても非常に難しいためです。 (いくつかのダイアログは wxWidgets によって自動的に生成されることを思い出してください) なんらかの理由で別の振る舞いをさせる必要がある場合、明示的に <A HREF="wx_wxwindow.html#wxwindowsetextrastyle">SetExtraStyle(wxWS_EX_BLOCK_EVENTS)</A> を使用することでイベントが指定されたウィンドウ外へ伝播するのを止めたり、ダイアログ (デフォルトでこのフラグが設定されています) のフラグを解除したりできます。<P>
+(リサイズ、移動、描画、マウスイベント、キーボードイベントといった) ウィンドウに関係する一般的なイベントはウィンドウに対してのみ送られます。(ボタンクリック、メニュー選択、ツリーの展開といった) 高水準で、ウィンドウ自身が生成するイベントはコマンドイベントと呼ばれ、そのイベントを処理対象とする場合に親コントロールに対して送られます。<P>
+ProcessEvent をオーバーライドすることでイベント処理をリダイレクトしたいと思うかもしれません。これは例えば、ドキュメント/ビューフレームワークがドキュメントやビューでイベントハンドラを定義するために行います。コマンドイベントかどうか (おそらくリダイレクト対象のイベントかどうかだと思いますが) を調べるため、遅い実行時型情報の代わりに <A HREF="wx_wxevent.html#wxeventiscommandevent">wxEvent::IsCommandEvent</A> を使用することができます。<P>
+上で述べたように、コマンドイベントだけが親コントロールのイベントハンドラで再帰的に処理されます。このことについて混乱する人が多いため、親コントロールのイベントハンドラへ送信 "されない" システムイベントの一覧を以下に示します。<P>
+
+<TABLE>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxevent.html#wxevent">wxEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+イベントの基底クラス
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxactivateevent.html#wxactivateevent">wxActivateEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+ウィンドウまたはアプリケーションのアクティブ化イベント
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxcloseevent.html#wxcloseevent">wxCloseEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+ウィンドウの終了、またはセッションの終了イベント
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxeraseevent.html#wxeraseevent">wxEraseEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+背景の消去イベント
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxfocusevent.html#wxfocusevent">wxFocusEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+ウィンドウフォーカスイベント
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxkeyevent.html#wxkeyevent">wxKeyEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+キー押下イベント
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxidleevent.html#wxidleevent">wxIdleEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+アイドルイベント
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxinitdialogevent.html#wxinitdialogevent">wxInitDialogEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+ダイアログの初期化イベント
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxjoystickevent.html#wxjoystickevent">wxJoystickEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+ジョイスティックイベント
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxmenuevent.html#wxmenuevent">wxMenuEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+メニューイベント
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxmouseevent.html#wxmouseevent">wxMouseEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+マウスイベント
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxmoveevent.html#wxmoveevent">wxMoveEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+移動イベント
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxpaintevent.html#wxpaintevent">wxPaintEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+描画イベント
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxquerylayoutinfoevent.html#wxquerylayoutinfoevent">wxQueryLayoutInfoEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+レイアウト情報の問い合わせに使用される
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxsetcursorevent.html#wxsetcursorevent">wxSetCursorEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+現在のマウス位置に基づいた特殊なカーソル処理に使用される
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxsizeevent.html#wxsizeevent">wxSizeEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+リサイズイベント
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxscrollwinevent.html#wxscrollwinevent">wxScrollWinEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+(スクロールバーではなく) スクロール可能なウィンドウから送信されるスクロールイベント
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxsyscolourchangedevent.html#wxsyscolourchangedevent">wxSysColourChangedEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+システムカラーの変更イベント
+</FONT></TD></TR>
+
+
+</TABLE>
+<P>
+例えばダイアログ内のネイティブコントロールへ送信される (そのコントロール自身では使用しない) キーイベントなど、特定のシステムイベントを親ウィンドウで取得したいと思うことがあるかもしれません。この場合、すべてのイベント (もしくはその中の特定のイベント) を親ウィンドウへ渡すようにイベントハンドラの ProcessEvent() をオーバーライドする必要があります。<P>
+
+
+<HR>
+<A NAME="progevent"></A>
+<H3>ユーザの生成したイベントとプログラム的に生成したイベント</H3>
+<P>
+一般的に <A HREF="wx_wxevent.html#wxevent">wxEvents</A> はユーザ操作 (<A HREF="wx_wxwindow.html#wxwindow">wxWindow</A> のリサイズなど) と関数呼び出し (<A HREF="wx_wxwindow.html#wxwindowsetsize">wxWindow::SetSize</A> など) のどちらからでも発生しますが、<A HREF="wx_wxcommandevent.html#wxcommandevent">wxCommandEvent</A> を継承したイベントはユーザが操作した場合のみ、wxWidgets コントロールから送信されます。このルールの <B>例外</B> は以下のとおりです:<P>
+
+<TABLE>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxnotebook.html#wxnotebookaddpage">wxNotebook::AddPage</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+イベントを送信しない代替方法を持たない
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxnotebook.html#wxnotebookadvanceselection">wxNotebook::AdvanceSelection</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+イベントを送信しない代替方法を持たない
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxnotebook.html#wxnotebookdeletepage">wxNotebook::DeletePage</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+イベントを送信しない代替方法を持たない
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxnotebook.html#wxnotebooksetselection">wxNotebook::SetSelection</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+<A HREF="wx_wxnotebook.html#wxnotebooksetselection">wxNotebook::SetSelection</A> は非推奨のため、代わりに <A HREF="wx_wxnotebook.html#wxnotebookchangeselection">wxNotebook::ChangeSelection</A> を使用してください。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxtreectrl.html#wxtreectrldelete">wxTreeCtrl::Delete</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+イベントを送信しない代替方法を持たない
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxtreectrl.html#wxtreectrldeleteallitems">wxTreeCtrl::DeleteAllItems</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+イベントを送信しない代替方法を持たない
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxtreectrl.html#wxtreectrleditlabel">wxTreeCtrl::EditLabel</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+イベントを送信しない代替方法を持たない
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP>
+<A HREF="wx_wxtextctrl.html#wxtextctrl">wxTextCtrl</A> のすべての関数
+</FONT></TD>
+
+<TD VALIGN=TOP>
+<A HREF="wx_wxtextctrl.html#wxtextctrlsetvalue">wxTextCtrl::SetValue</A> の代わりに <A HREF="wx_wxtextctrl.html#wxtextctrlchangevalue">wxTextCtrl::ChangeValue</A> を使用できますが、<A HREF="wx_wxtextctrl.html#wxtextctrlreplace">Replace</A> や <A HREF="wx_wxtextctrl.html#wxtextctrlwritetext">WriteText</A> といった他の関数にはイベントを送信せずに同じことを行う関数はありません。
+</FONT></TD></TR>
+
+
+</TABLE>
+<P>
+
+
+<HR>
+<A NAME="pluggablehandlers"></A>
+<H3>動的イベントハンドラ</H3>
+<P>
+実際のところ、ウィンドウクラスを継承して新しいクラスを作成したくない場合は、必ずしもそうする必要はありません。代わりに wxEvtHandler を継承した新しいクラスを作成して適切なイベントテーブルを定義し、<A HREF="wx_wxwindow.html#wxwindowseteventhandler">wxWindow::SetEventHandler</A> (か、より望ましいのは <A HREF="wx_wxwindow.html#wxwindowpusheventhandler">wxWindow::PushEventHandler</A>) を呼び出してこのイベントテーブルを使用するようにできます。この方法を使うことで、たくさんの継承クラスを作成しなくてすむとともに、同じイベントハンドラクラスのインスタンスを異なるウィジェットクラスのインスタンスから利用することができます。 (ただし、異なるオブジェクトを同じイベントハンドラオブジェクトとして複数回使用するべきではありません) もし手動でウィンドウのイベントハンドラを呼ぶ必要がある場合、GetEventHandler 関数でウィンドウのイベントハンドラを取得し、そのメンバ関数を呼び出してください。SetEventHandler や PushEventHandler を使用してイベント処理をリダイレクトしていない場合、デフォルトでは GetEventHandler はウィンドウ自身を返却します。<P>
+PushEventHandler の使用法のひとつは、一時的または永続的に GUI の振る舞いを変更することです。例えば、ダイアログの外見を変更するためのダイアログエディタをアプリケーション内で起動したいと思うかもしれません。その場合、既存のダイアログの振る舞いを元に戻す前にすべての入力を取得し、"その場で" 編集することができます。そのため、アプリケーションの振る舞いをカスタマイズするために新しいクラスを継承していたとしても、あなたのユーティリティから自由に振る舞いを変更することができます。これはオンラインチュートリアルでも有用なテクニックです。レッスンから外れることなく、ユーザに一連のステップを実行させることができます。ここでは、ボタンやウィンドウから送られてくるイベントを検証し、それが適用可能なものである場合に元のイベントハンドラへ渡す、ということを行えます。他のイベントハンドラとは異なる範囲のイベントを独立して処理するようなイベントハンドラを作成する場合に PushEventHandler/PopEventHandler を使用してください。<P>
+
+<HR>
+<A NAME="windowids"></A>
+<H3>ウィンドウ識別子</H3>
+<P>
+ウィンドウ識別子とは、イベントシステムにおいてウィンドウを一意に識別するための整数値です。 (とはいえ、他の用途に使用することもできます)  実際には、特定のコンテキスト (フレームやその子コントロール) 内で一意であれば、アプリケーション全体で一意である必要はありません。例えば、同じダイアログ内で複数回使うのでなければ、いくつものダイアログで <TT>wxID_OK</TT> 識別子を使用しても構いません。<P>
+ウィンドウのコンストラクタに <TT>wxID_ANY</TT> を渡した場合、wxWidgets が自動的に識別子を生成します。コントロールの生成するイベントを処理しない場合や、イベントを一箇所で処理する場合 (このときはイベントテーブルに <TT>wxID_ANY</TT> を指定するか、それと同様に <A HREF="wx_wxevthandler.html#wxevthandlerconnect">wxEvtHandler::Connect</A> を呼ぶ必要があります) など、コントロールの正確な識別子が必要でないときにこれは役立ちます。自動生成される識別子は常に負の値のため、必ず正の値でなければならないユーザ定義の識別子と衝突することはありません。<P>
+標準識別子には以下のものが用意されています。新たな識別子を定義する場合、wxID_HIGHEST 以上の値を使用することで安全に値を決定することができます。もしくは wxID_LOWEST 以下の識別子を使用することもできます。<P>
+<PRE>
+#define wxID_ANY                -1
+
+#define wxID_LOWEST             4999
+
+#define wxID_OPEN               5000
+#define wxID_CLOSE              5001
+#define wxID_NEW                5002
+#define wxID_SAVE               5003
+#define wxID_SAVEAS             5004
+#define wxID_REVERT             5005
+#define wxID_EXIT               5006
+#define wxID_UNDO               5007
+#define wxID_REDO               5008
+#define wxID_HELP               5009
+#define wxID_PRINT              5010
+#define wxID_PRINT_SETUP        5011
+#define wxID_PREVIEW            5012
+#define wxID_ABOUT              5013
+#define wxID_HELP_CONTENTS      5014
+#define wxID_HELP_COMMANDS      5015
+#define wxID_HELP_PROCEDURES    5016
+#define wxID_HELP_CONTEXT       5017
+
+#define wxID_CUT                5030
+#define wxID_COPY               5031
+#define wxID_PASTE              5032
+#define wxID_CLEAR              5033
+#define wxID_FIND               5034
+#define wxID_DUPLICATE          5035
+#define wxID_SELECTALL          5036
+#define wxID_DELETE             5037
+#define wxID_REPLACE            5038
+#define wxID_REPLACE_ALL        5039
+#define wxID_PROPERTIES         5040
+
+#define wxID_VIEW_DETAILS       5041
+#define wxID_VIEW_LARGEICONS    5042
+#define wxID_VIEW_SMALLICONS    5043
+#define wxID_VIEW_LIST          5044
+#define wxID_VIEW_SORTDATE      5045
+#define wxID_VIEW_SORTNAME      5046
+#define wxID_VIEW_SORTSIZE      5047
+#define wxID_VIEW_SORTTYPE      5048
+
+#define wxID_FILE1              5050
+#define wxID_FILE2              5051
+#define wxID_FILE3              5052
+#define wxID_FILE4              5053
+#define wxID_FILE5              5054
+#define wxID_FILE6              5055
+#define wxID_FILE7              5056
+#define wxID_FILE8              5057
+#define wxID_FILE9              5058
+
+#define wxID_OK                 5100
+#define wxID_CANCEL             5101
+#define wxID_APPLY              5102
+#define wxID_YES                5103
+#define wxID_NO                 5104
+#define wxID_STATIC             5105
+
+#define wxID_HIGHEST            5999
+</PRE>
+
+<HR>
+<A NAME="eventmacros"></A>
+<H3>イベントマクロの概要</H3>
+<P>
+<B><FONT COLOR="#FF0000">イベントクラスごとのマクロ</FONT></B><P>
+このドキュメントではイベントマクロをイベントクラスごとに分類しています。詳細は各章を参照してください。<P>
+
+<TABLE>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxactivateevent.html#wxactivateevent">wxActivateEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_ACTIVATE、EVT_ACTIVATE_APP マクロはアクティブ化、非アクティブ化イベントを捉えます。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxcommandevent.html#wxcommandevent">wxCommandEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+よく使われる一連のコントロールイベント。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxcloseevent.html#wxcloseevent">wxCloseEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_CLOSE マクロは <A HREF="wx_wxwindow.html#wxwindowclose">wxWindow::Close</A> によるウィンドウの終了を処理します。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxdropfilesevent.html#wxdropfilesevent">wxDropFilesEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_DROP_FILES マクロはファイルドロップイベントを処理します。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxeraseevent.html#wxeraseevent">wxEraseEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_ERASE_BACKGROUND マクロはウィンドウの消去要求を処理するために使用されます。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxfocusevent.html#wxfocusevent">wxFocusEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_SET_FOCUS、EVT_KILL_FOCUS マクロはキーボードフォーカスイベントを処理するために使用されます。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxkeyevent.html#wxkeyevent">wxKeyEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_CHAR、EVT_KEY_DOWN、EVT_KEY_UP マクロは任意のウィンドウのキーボード入力を処理します。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxidleevent.html#wxidleevent">wxIdleEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_IDLE マクロはアプリケーションのアイドルイベントを処理します。 (例えば、バックグラウンド処理などに使用します)
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxinitdialogevent.html#wxinitdialogevent">wxInitDialogEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_INIT_DIALOG マクロはダイアログの初期化イベントを処理するために使用されます。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxlistevent.html#wxlistevent">wxListEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+これらのマクロは <A HREF="wx_wxlistctrl.html#wxlistctrl">wxListCtrl</A> のイベントを処理します。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxmenuevent.html#wxmenuevent">wxMenuEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+これらのマクロは特殊なメニューイベント (メニューコマンドではありません) を処理します。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxmouseevent.html#wxmouseevent">wxMouseEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+マウスイベントマクロは個別のマウスやすべてのマウスのイベントを処理することができます。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxmoveevent.html#wxmoveevent">wxMoveEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_MOVE マクロはウィンドウの移動を処理するために使用されます。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxpaintevent.html#wxpaintevent">wxPaintEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_PAINT マクロはウィンドウの描画要求を処理するために使用されます。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxscrollevent.html#wxscrollevent">wxScrollEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+これらのマクロは <A HREF="wx_wxscrollbar.html#wxscrollbar">wxScrollBar</A>、<A HREF="wx_wxslider.html#wxslider">wxSlider</A>、<A HREF="wx_wxspinbutton.html#wxspinbutton">wxSpinButton</A> から送信されるスクロールイベントを処理するために使用されます。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxsetcursorevent.html#wxsetcursorevent">wxSetCursorEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_SET_CURSOR マクロは特殊なカーソル処理のために使用されます。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxsizeevent.html#wxsizeevent">wxSizeEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_SIZE マクロはウィンドウのりサイズを処理するために使用されます。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxsplitterevent.html#wxsplitterevent">wxSplitterEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_SPLITTER_SASH_POS_CHANGED、EVT_SPLITTER_UNSPLIT、EVT_SPLITTER_DCLICK マクロはさまざまなウィンドウ分割イベントを処理するために使用されます。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxsyscolourchangedevent.html#wxsyscolourchangedevent">wxSysColourChangedEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_SYS_COLOUR_CHANGED マクロはユーザによるシステムカラーの変更イベントを処理するために使用されます。 (Windows のみ)
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxtreeevent.html#wxtreeevent">wxTreeEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+これらのマクロは <A HREF="wx_wxtreectrl.html#wxtreectrl">wxTreeCtrl</A> のイベントを処理します。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<A HREF="wx_wxupdateuievent.html#wxupdateuievent">wxUpdateUIEvent</A>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_UPDATE_UI マクロはアプリケーションがメニュー、ツールバー、コントロールの見た目の状態を変更するための擬似イベントを処理するために使用されます。
+</FONT></TD></TR>
+
+
+</TABLE>
+<P>
+
+<HR>
+<A NAME="customevents"></A>
+<H3>カスタムイベントの概要</H3>
+<P>
+<B><FONT COLOR="#FF0000">一般的なアプローチ</FONT></B><P>
+wxWidgets 2.2.x から <I>実行時に</I> 決定される ID を使用してイベントの型を識別します。これにより、ID の衝突を起こす (異なるふたつのイベント型が同じイベント ID を取得してしまう) ことなく、新しいイベント型をライブラリやアプリケーションに追加することができます。このイベント ID は <B>const wxEventType</B> 型の構造体に格納されます。<P>
+新しいイベント型を定義する方法として、主に 2 種類の選択肢があります。ひとつは完全に新しいイベントクラスを定義することです。 (通常は <A HREF="wx_wxevent.html#wxevent">wxEvent</A> か <A HREF="wx_wxcommandevent.html#wxcommandevent">wxCommandEvent</A> を継承します) もう一方の方法は、既存のイベントクラスを使用し、それらに新しいイベント型を与える方法です。どちらの方法を使うにせよ、新しいイベント型の定義と宣言が必要となりますが、それには以下のマクロを使用します:<P>
+<PRE>
+// ヘッダファイルで使用する
+BEGIN_DECLARE_EVENT_TYPES()
+DECLARE_EVENT_TYPE(name, value)
+END_DECLARE_EVENT_TYPES()
+
+// ソースファイルで使用する
+DEFINE_EVENT_TYPE(name)
+</PRE>
+DECLARE_EVENT_TYPE の <I>value</I> 引数はイベント ID を明示的に指定していた wxWidgets 2.0.x との後方互換性のために使用されているだけなので、無視することができます。<P>
+コードの書き方とカスタムイベント型の動作例として <A HREF="wx_samples.html#sampleevent">イベントサンプル</A> も参照してください。<P>
+<B><FONT COLOR="#FF0000">既存のイベントクラスの使用</FONT></B><P>
+新しいイベント型で <A HREF="wx_wxcommandevent.html#wxcommandevent">wxCommandEvent</A> を使用したいだけの場合、自分自身で新しいマクロを定義するのではなく、以下の汎用的なイベントテーブルマクロを使用することができます。この方法には、スレッド間でイベントを送信するための新しい <A HREF="wx_wxevent.html#wxeventclone">wxEvent::Clone()</A> 関数を定義する必要がないといった利点もあります。以下にコード例を示します。<P>
+<FONT SIZE=2><PRE>
+DECLARE_EVENT_TYPE(wxEVT_MY_EVENT, -1)
+
+DEFINE_EVENT_TYPE(wxEVT_MY_EVENT)
+
+// イベントを捕まえるユーザコード
+
+BEGIN_EVENT_TABLE(MyFrame, wxFrame)
+  EVT_MENU    (wxID_EXIT, MyFrame::OnExit)
+  // ....
+  EVT_COMMAND  (ID_MY_WINDOW, wxEVT_MY_EVENT, MyFrame::OnMyEvent)
+END_EVENT_TABLE()
+
+void MyFrame::OnMyEvent( wxCommandEvent &amp;event )
+{
+    //処理を行う
+    wxString text = event.GetText();
+}
+
+
+// イベントを送信するユーザコード
+
+void MyWindow::SendEvent()
+{
+    wxCommandEvent event( wxEVT_MY_EVENT, GetId() );
+    event.SetEventObject( this );
+    // 何か値を設定する
+    event.SetText( wxT("Hallo") );
+    // 送信する
+    GetEventHandler()-&gt;ProcessEvent( event );
+}
+</PRE>
+</FONT>
+<B><FONT COLOR="#FF0000">汎用的なイベントテーブルマクロ</FONT></B><P>
+
+<TABLE>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<B>EVT_CUSTOM(event, id, func)</B>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+(wxEVT_SIZE といった) イベント識別子、ウィンドウ識別子、呼び出すメンバ関数を指定してカスタムイベントのエントリをイベントテーブルへ追加することができます。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<B>EVT_CUSTOM_RANGE(event, id1, id2, func)</B>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_CUSTOM と同じですが、ウィンドウ識別子を範囲で指定できます。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<B>EVT_COMMAND(id, event, func)</B>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_CUSTOM と同じですが、wxCommandEvent を引数に取るメンバ関数を指定します。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<B>EVT_COMMAND_RANGE(id1, id2, event, func)</B>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_CUSTOM_RANGE と同じですが、wxCommandEvent を引数に取るメンバ関数を指定します。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<B>EVT_NOTIFY(event, id, func)</B>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_CUSTOM と同じですが、wxNotifyEvent を引数に取るメンバ関数を指定します。
+</FONT></TD></TR>
+
+
+<TR><TD VALIGN=TOP WIDTH=318>
+<B>EVT_NOTIFY_RANGE(event, id1, id2, func)</B>
+</FONT></TD>
+
+<TD VALIGN=TOP>
+EVT_CUSTOM_RANGE と同じですが、wxNotifyEvent を引数に取るメンバ関数を指定します。
+</FONT></TD></TR>
+
+
+</TABLE>
+<P>
+
+<B><FONT COLOR="#FF0000">独自のイベントクラスの定義</FONT></B><P>
+(より複雑なデータをある場所から別の場所へ送るといった) 特定の状況下では独自のイベントクラスの定義が必要になるでしょう。イベントクラスの定義とは別に、独自のイベントテーブルマクロも定義する必要があります。 (そしてこれは非常に長くなります) 継承したイベント関数へのキャストが必要なことも忘れないでください。<I>wxPlot</I> ライブラリから抜粋した例を以下に示します。このコードは wxWidgets のソースコードの <I>contrib</I> セクションにあります。<P>
+<FONT SIZE=2><PRE>
+// イベントを定義するコード
+
+class wxPlotEvent: public wxNotifyEvent
+{
+public:
+    wxPlotEvent( wxEventType commandType = wxEVT_NULL, int id = 0 );
+
+    // アクセサ
+    wxPlotCurve *GetCurve()
+        { return m_curve; }
+
+    // wxPostEvent() で必要になる
+    wxEvent* Clone();
+
+private:
+    wxPlotCurve   *m_curve;
+};
+
+DECLARE_EVENT_TYPE( wxEVT_PLOT_ACTION, -1 )
+
+typedef void (wxEvtHandler::*wxPlotEventFunction)(wxPlotEvent&amp;);
+
+#define EVT_PLOT(id, fn) \
+    DECLARE_EVENT_TABLE_ENTRY( wxEVT_PLOT_ACTION, id, -1, \
+    (wxObjectEventFunction) (wxEventFunction) (wxCommandEventFunction) (wxNotifyEventFunction) \
+    wxStaticCastEvent( wxPlotEventFunction, &amp; fn ), (wxObject *) NULL ),
+
+
+// イベント型とイベントクラスを定義するコード
+
+DEFINE_EVENT_TYPE( wxEVT_PLOT_ACTION )
+
+wxPlotEvent::wxPlotEvent( ...
+
+
+// イベントを捕まえるユーザコード
+
+BEGIN_EVENT_TABLE(MyFrame, wxFrame)
+  EVT_PLOT  (ID_MY_WINDOW,  MyFrame::OnPlot)
+END_EVENT_TABLE()
+
+void MyFrame::OnPlot( wxPlotEvent &amp;event )
+{
+    wxPlotCurve *curve = event.GetCurve();
+}
+
+
+// イベントを送信するユーザコード
+
+void MyWindow::SendEvent()
+{
+    wxPlotEvent event( wxEVT_PLOT_ACTION, GetId() );
+    event.SetEventObject( this );
+    event.SetCurve( m_curve );
+    GetEventHandler()-&gt;ProcessEvent( event );
+}
+
+</PRE>
+</FONT>
+</FONT><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40693840-1', 'murank.github.io');
+  ga('send', 'pageview');
+
+</script>
+</body></HTML>

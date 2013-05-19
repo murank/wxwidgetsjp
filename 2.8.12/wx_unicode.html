@@ -1,0 +1,114 @@
+<HTML>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>wxWidgets における Unicode 対応</title></head>
+
+<BODY BGCOLOR=#FFFFFF>
+<A NAME="unicode"></A><CENTER>
+<A HREF="wx_contents.html"><img align=center src="contents.gif" BORDER=0 ALT="Contents"></A> <A HREF="wx_overviews.html#overviews"><img align=center src="up.gif" BORDER=0 ALT="Up"></A> <A HREF="wx_wxdatetimeoverview.html#wxdatetimeoverview"><img align=center src="back.gif" BORDER=0 ALT="Previous"></A> <A HREF="wx_mbconvclasses.html#mbconvclasses"><img align=center src="forward.gif" BORDER=0 ALT="Next"></A> </CENTER><HR>
+
+<H2>wxWidgets における Unicode 対応</H2>
+<P>
+この章では wxWidgets における Unicode の対応状況について簡潔に述べます。英語以外の言語で使用される文字を扱うプログラムを書く方法について、より詳しく知りたい場合はこの章を読んでください。<P>
+<A HREF="#whatisunicode">Unicode とは?</A><BR><A HREF="#unicodeandansi">Unicode モードと ANSI モード</A><BR><A HREF="#unicodeinsidewxw">wxWidgets における Unicode 対応</A><BR><A HREF="#unicodeoutsidewxw">Unicode と外部の世界</A><BR><A HREF="#unicodesettings">Unicode 関連のコンパイル設定</A><BR>
+<P>
+
+<HR>
+<A NAME="whatisunicode"></A>
+<H3>Unicode とは?</H3>
+<P>
+wxWidgets は Unicode に対応しているプラットフォームであれば Unicode モードでコンパイルすることが可能です。Unicode とは、 1 文字あたり少なくとも 16 (あるいは 32) ビットを使用することで、これまでの標準的な 8 ビットの文字コードの欠点に対処した文字コードの標準規格のことです。これにより、 通常の 256 文字の代わりに少なくとも 65536 文字 (これはBMP、もしくは基本多言語面と呼ばれます) 、あるいは 2^32 文字を表現することが可能であり、これは世界中の言語を一度に表現するのに十分な量です。Unicode についての詳細は <TT>www.unicode.org</TT> にあります。<P>
+この解決策は明らかにこれまでのものより望ましい (同じ言語の互換性のない文字コード、混沌としたロケールなどを想像してみてください) ため、多くのモダンなオペレーティングシステムでは Unicode をサポートしています。おそらく、最初の例は Windows NT でしょう。 Windows NT ではかなり初期のバージョンから内部的に Unicode を使用しています。<P>
+Unicode を使うことで、国際化対応のプログラムをより簡単に書くことができます。そして、 Unicode 対応が進むにつれ、それはますます簡単になっていくことでしょう。さらに Windows NT/2000 の場合、標準的な ASCII モードのみを使用するプログラムであっても Unicode の恩恵を得ることができます。 なぜなら、システムコールを実行するたびにすべての文字列を Unicode に/から 変換する必要がないため、より効率的にプログラムが動作できるためです。<P>
+
+<HR>
+<A NAME="unicodeandansi"></A>
+<H3>Unicode モードと ANSI モード</H3>
+<P>
+wxWidgets の対応しているすべてのプラットフォームで Unicode が (完全に) サポートされているわけではないため、Unicode 環境でのみ動作するプログラムを書くのは多くの場合で賢明ではないでしょう。より良い解決策としては、(従来の) ANSI モードと Unicode モードのどちらでもコンパイルできるようにプログラムを書くことです。<P>
+これは wxWidgets の提供する方法を使うことで極めて単純に実現することができます。基本的には、気をつけなければならないことはごく僅かです。<P>
+<UL>
+
+<LI> 文字型 (<TT>char</TT> または <TT>wchar_t</TT>)
+</LI><LI> リテラル文字列 (すなわち <TT>"Hello, world!"</TT> や <TT>'*'</TT>)
+</LI><LI> 文字列関数 (<TT>strlen()</TT>, <TT>strcpy()</TT>, ...)
+</LI><LI> 特別なプリプロセッサトークン (<TT>__FILE__</TT>, <TT>__DATE__</TT>, <TT>__TIME__</TT>)
+</LI></UL>
+<P>
+それではこれらを順番に見ていきましょう。最初に、プログラム中の文字について、通常であれば 1 文字あたり 1 バイトですが、Unicode プログラムの場合 2 バイトを消費するため、文字を格納するために別の型を使用する必要があります。 (<TT>char</TT> 型は通常 1 バイトしか保持できません) この型のことを <TT>wchar_t</TT> と呼び、<I>wide-character type</I> の略です。<P>
+また、文字列や文字定数は <TT>char</TT> (1 バイト) の代わりにワイド文字 (<TT>wchar_t</TT> 型、通常 2 か 4 バイト) で符号化される必要があります。これは標準的な C (および C++) の方法で実現されます: 文字列定数の後ろに <TT>'L'</TT> という文字を配置するだけで、 <I>long</I> 定数、すなわちワイド文字になります。もう少しだけ可読性を上げるために、 <TT>'L'</TT> を定数の後ろではなく、前に付けることも可能です。<P>
+もちろん、普通の標準 C 関数は <TT>wchar_t</TT> 文字列をうまく取り扱うことができません。そのため、<TT>char *</TT> の代わりに <TT>wchar_t *</TT> を受け取る別の関数群が用意されています。例えば、ワイド文字列の長さを取得する関数は <TT>wcslen()</TT> と呼ばれます。(<TT>strlen()</TT> と比べると、違いは "string" を表す接頭語 "str" が "wide-character string" を表す "wcs" に変わっているだけであることが分かると思います) <P>
+最後に、上に挙げた標準プリプロセッサトークンは ANSI 文字列として展開されますが、Unicode ビルドの際には Unicode 文字列の方が必要なことが多いでしょう。wxWidgets では <TT>__TFILE__</TT>、 <TT>__TDATE__</TT>、 <TT>__TTIME__</TT> マクロを提供しており、これらは ANSI ビルド時には ANSI 文字列に、 Unicode ビルド時には Unicode 文字列になることを除き、標準トークンとまったく同じに振る舞います。<P>
+要点をまとめるため、 ANSI モードと Unicode モードの両方でコンパイルできるプログラムの簡潔な例を以下に示します。<P>
+<PRE>
+#if wxUSE_UNICODE
+    wchar_t wch = L'*';
+    const wchar_t *ws = L"Hello, world!";
+    int len = wcslen(ws);
+
+    wprintf(L"Compiled at %s\n", __TDATE__);
+#else // ANSI
+    char ch = '*';
+    const char *s = "Hello, world!";
+    int len = strlen(s);
+
+    printf("Compiled at %s\n", __DATE__);
+#endif // Unicode/ANSI
+</PRE>
+もちろん、この方法でプログラムを書くのは不可能に近いでしょう。 (平均的なプログラムに含まれることになるであろう <TT>#ifdef UNICODE</TT> の数を想像してみてください!) 幸運なことに、別の方法があります。次の章を参照してください。<P>
+
+<HR>
+<A NAME="unicodeinsidewxw"></A>
+<H3>wxWidgets における Unicode 対応</H3>
+<P>
+wxWidgets では、上記のコードの代わりに以下のように書きます<P>
+<PRE>
+    wxChar ch = wxT('*');
+    wxString s = wxT("Hello, world!");
+    int len = s.Len();
+</PRE>
+ここでは何が起きているのでしょうか? 最初に、<TT>#ifdef</TT> がまったくないことが分かると思います。その代わり、Unicode ビルドと ANSI ビルドで異なる振る舞いをする型とマクロが定義されており、これによってプログラム内で条件付きコンパイルを使用しなくても済みます。<P>
+<TT>wxChar</TT> 型はコンパイル時のモードによって <TT>char</TT> か <TT>wchar_t</TT> のいずれかにマッピングされます。だからといって、文字列に別々の型を使用する必要はありません。なぜなら、標準の <A HREF="wx_wxstring.html#wxstring">wxString</A> が Unicode に対応している (コンパイルモードに応じて ANSI 文字列か Unicode 文字列を格納する) ためです。<P>
+最後に、プログラム中のリテラル文字列を囲む、特別な <A HREF="wx_stringfunctions.html#wxt">wxT()</A> マクロがあります。最後の部分を上記の例と比較すると簡単に分かるように、このマクロは (通常の) ANSI モードでは何も起こりませんが、Unicode モードでは引数の接頭語 <TT>'L'</TT> として展開されます。<P>
+重要な結論としては、<TT>char</TT> の代わりに <TT>wxChar</TT> を使い、 C 形式の文字列ではなく <TT>wxString</TT> を使い、すべてのリテラル文字列を <A HREF="wx_stringfunctions.html#wxt">wxT()</A> マクロで囲むのを忘れなければ、あなたのプログラムは自動的に (ほぼ) Unicode 準拠になるということです!<P>
+もう一度だけルールを述べさせてください:<P>
+<UL>
+
+<LI> <TT>char</TT> の代わりに常に <TT>wxChar</TT> を使用する
+</LI><LI> リテラル文字列をすでに正しい表現に変換している (例えば、別の標準 wxWidgets マクロ <A HREF="wx_stringfunctions.html#underscore">_()</A> も <TT>wxT()</TT> と同じ事を行うため、この場合は  <TT>wxT()</TT> を使う必要はありません) か、ワイド文字列を受け付けない外部関数へ直接リテラル文字列を渡すのでない限り、リテラル文字列は常に <A HREF="wx_stringfunctions.html#wxt">wxT()</A> で囲む
+</LI><LI> C 形式の文字列の代わりに <TT>wxString</TT> を使用する
+</LI></UL>
+<P>
+
+<HR>
+<A NAME="unicodeoutsidewxw"></A>
+<H3>Unicode と外部の世界</H3>
+<P>
+すでに見てきたように、wxWidgets の型とマクロを使用することで簡単に Unicode プログラムを書くことができます。しかし、それで十分ではないことについても述べてきました。. プログラム内部ではすべてうまく動作するとしても、外部の世界とやり取りしようとすると、それらは悲しいことにしばしば ANSI 文字列を想定しているため、ひどいことになります。 (特筆すべき例外として、すべての Win32 API は Unicode 文字列と ANSI 文字列の両方を受け付けるため、プログラム内でなんらかの変換を行う必要がまったくありません）GTK 2.0 は UTF-8 文字列のみを受け付けます。<P>
+wxString から ANSI 文字列を取得するには、常に ANSI 文字列を返却する mb_str() 関数を使用することができます。 (これはビルドモードに依存しません。一方で、普通の <A HREF="wx_wxstring.html#wxstringcstr">c_str()</A> は内部の表現型のポインタを返却しますが、これは ASCII か Unicode のどちらかです) めったに使われませんが、便利な関数として wc_str() 関数があり、これは常に Unicode 文字列を返却します。<P>
+時々、ANSI 文字列を wxString に変換する必要があります。この場合、以下の変換コンストラクタを使用することができます:
+ 
+<PRE>
+   const char* ascii_str = "Some text";
+   wxString str(ascii_str, wxConvUTF8);
+</PRE>
+このコードは非 Unicode ビルドでも正常にコンパイルすることができますが、変換自体は行われません。<P>
+Unicode の変換についての詳細は  <A HREF="wx_mbconvclasses.html#mbconvclasses">wxMBConv クラスの概要</A> を参照してください。<P>
+
+<HR>
+<A NAME="unicodesettings"></A>
+<H3>Unicode 関連のコンパイル設定</H3>
+<P>
+プログラムを Unicode モードでコンパイルする場合、 <TT>wxUSE_UNICODE</TT> を 1 に定義する必要があります。これは今のところ、wxMSW、wxGTK、wxMac、wxX11 で動作します。プログラムを ANSI モードでコンパイルした場合でも、 <TT>wxUSE_WCHAR_T</TT> を定義することで <TT>wchar_t</TT> の限定的な機能を利用することができます。<P>
+これにより、あなたのプログラムの中で (<A HREF="wx_mbconvclasses.html#mbconvclasses">wxMBConv クラス</A>を利用した) Unicode 文字列と ANSI 文字列の変換や、(おそらく外部ファイルや他の場所から読み込んだ) Unicode 文字列から wxString オブジェクトを作成することができます。<P>
+
+</FONT><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40693840-1', 'murank.github.io');
+  ga('send', 'pageview');
+
+</script>
+</body></HTML>

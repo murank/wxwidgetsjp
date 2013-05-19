@@ -1,0 +1,29 @@
+<HTML>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>File クラスと関数の概要</title></head>
+
+<BODY BGCOLOR=#FFFFFF>
+<A NAME="wxfileoverview"></A><CENTER>
+<A HREF="wx_contents.html"><img align=center src="contents.gif" BORDER=0 ALT="Contents"></A> <A HREF="wx_overviews.html#overviews"><img align=center src="up.gif" BORDER=0 ALT="Up"></A> <A HREF="wx_wxcontaineroverview.html#wxcontaineroverview"><img align=center src="back.gif" BORDER=0 ALT="Previous"></A> <A HREF="wx_wxstreamoverview.html#wxstreamoverview"><img align=center src="forward.gif" BORDER=0 ALT="Next"></A> </CENTER><HR>
+
+<H2>File クラスと関数の概要</H2>
+<P>
+クラス: <A HREF="wx_wxfile.html#wxfile">wxFile</A>, <A HREF="wx_wxdir.html#wxdir">wxDir</A>, <A HREF="wx_wxtempfile.html#wxtempfile">wxTempFile</A>, <A HREF="wx_wxtextfile.html#wxtextfile">wxTextFile</A><P>
+関数: <A HREF="wx_filefunctions.html#filefunctions">ファイル関数</A> を参照してください。<P>
+wxWidgets はファイルの取り扱いを手助けするための関数やクラスを提供しています。いつものように、クロスプラットフォーム機能に重点がおかれています。例えば <A HREF="wx_wxtextfile.html#wxtextfile">wxTextFile</A> クラスでは異なる形式 (DOS/Unix/Mac) のテキストフアイル同士を変換するために使用されます。<P>
+wxFile は低レベル入出力のために使用されます。このクラスは (オープン/クローズ、読み書き、ファイルシークといった) 通常のファイル操作で使われる関数が含まれますが、標準 C 関数と違い、エラーチェック機能がある (エラーが発生した場合、 <A HREF="wx_wxlog.html#wxlog">wxLog</A> 機能を使ってメッセージがログ出力されます) ほか、デストラクタで自動的にファイルがクローズされます。<P>
+wxTempFile はより安全にファイルの置換を行うためのとても小さなファイルです。詳細は <A HREF="wx_wxtempfile.html#wxtempfile">ドキュメント</A> を参照してください。<P>
+wxTextFile は小さなテキストファイルを行単位で扱うための汎用的なクラスです。このクラスは設定ファイルやソースファイルを扱う場合に特に適しています。プラットフォームと異なる行端文字を扱うこともできますし、必要であればプラットフォームの行端文字に変換して書き込むことも可能です。 (実際のところ、任意の形式でファイルを書き込むことが可能です)<P>
+wxDir はディレクトリ内のファイル、サブディレクトリを列挙するためのヘルパークラスです。このクラスを使って、すべてのファイル、特定のパターンに一致するファイル、隠しファイル以外のファイルを列挙することができます。<P>
+
+</FONT><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40693840-1', 'murank.github.io');
+  ga('send', 'pageview');
+
+</script>
+</body></HTML>

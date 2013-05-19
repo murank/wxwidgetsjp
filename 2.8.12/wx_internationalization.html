@@ -1,0 +1,42 @@
+<HTML>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>国際化</title></head>
+
+<BODY BGCOLOR=#FFFFFF>
+<A NAME="internationalization"></A><CENTER>
+<A HREF="wx_contents.html"><img align=center src="contents.gif" BORDER=0 ALT="Contents"></A> <A HREF="wx_overviews.html#overviews"><img align=center src="up.gif" BORDER=0 ALT="Up"></A> <A HREF="wx_mbconvclasses.html#mbconvclasses"><img align=center src="back.gif" BORDER=0 ALT="Previous"></A> <A HREF="wx_nonenglishoverview.html#nonenglishoverview"><img align=center src="forward.gif" BORDER=0 ALT="Next"></A> </CENTER><HR>
+
+<H2>国際化</H2>
+<P>
+アプリケーションの国際化 (略して i18n) には単にテキストメッセージを他のメッセージに翻訳すること以上のことが含まれます。日付や時間、通貨の形式も変更する必要がありますし、ある言語は左から右へ、別の言語では右から左へ表記するでしょう。文字コードも異なりますし、他にもたくさんのことを変更する必要がありますが、これは必要な最初のステップです。wxWidgets は <A HREF="wx_wxlocale.html#wxlocale">wxLocale</A> クラスを使用したメッセージ翻訳機能を提供しており、wxWidgets 自体がいくつかの言語に完全に翻訳されています。最新の翻訳版は wxWidgets のホームページを参照してください。そして、あなたが wxWidgets をまだ翻訳されていない言語に翻訳した場合、私達はそれを将来のバージョンに含めることを喜んで承認するでしょう! <P>
+wxWidgets の採用している国際化の方法は GNU gettext パッケージの方式に従っています。wxWidgets では gettext のカタログとバイナリ互換性のあるメッセージカタログを使用します。これにより、メッセージカタログを扱う際に gettext のすべてのプログラムを使用できます。しかし、実行時には追加のライブラリは必要ないため、メッセージカタログの他には何も配布する必要がないことに注意してください。<P>
+プログラム開発を行なっている間はメッセージカタログを扱うために gettext パッケージが必要となります。<B>注意:</B> gettext バージョン &lt; 0.10 はバグが多いため、最新版を利用するべきです!<P>
+メッセージカタログには次の 2 種類があります: 拡張子が .po でテキスト形式のソースカタログと、ソースカタログから  <I>msgfmt</I> プログラム (gettext パッケージの一部です) を使って生成する、拡張子が .mo のバイナリカタログです。プログラム実行時にはバイナリファイルだけが必要です。<P>
+プログラムの国際化にはいくつかのステップが含まれます:<P>
+<OL>
+
+<LI> <A HREF="wx_stringfunctions.html#wxgettranslation">wxGetTranslation</A> か、それと同じように <A HREF="wx_stringfunctions.html#underscore">_()</A> マクロを利用してプログラム中のテキストを 翻訳する
+</LI><LI> 翻訳対象の文字列をプログラム中から抽出する: これには前のステップで行った作業の結果を利用します。なぜなら、文字列の抽出に使用する  <TT>xgettext</TT> プログラムが標準的な _() や (<TT>-k</TT> オプションを使用することで) wxGetTranslation を識別し、それらの中にある文字列をすべて抽出してくれるためです。代わりに <TT>-a</TT> オプションを使用することもできますが、そうするとまったく翻訳する必要のない文字列が大量に見つかることになるでしょう。これにより、テキスト形式のメッセージカタログ (.po ファイル) が生成されます。
+</LI><LI> 前のステップで抽出した文字列を別の言語に翻訳する。これは .po ファイルを編集することで行います。
+</LI><LI> .po ファイルをプログラムから使用される .mo ファイルにコンパイルする。
+</LI><LI> あなたのプログラムと一緒に .mo ファイルを対象システム内の適切な場所 (<A HREF="wx_wxstandardpaths.html#wxstandardpathsgetlocalizedresourcesdir">wxStandardPaths::GetLocalizedResourcesDir(wxStandardPaths::ResourceCat_Messages)</A> の返却する場所) にインストールする。このデフォルトの場所にメッセージカタログをインストールしない場合、明示的に <A HREF="wx_wxlocale.html#wxlocaleaddcataloglookuppathprefix">AddCatalogLookupPathPrefix()</A> を使用することで wxWidgets がその場所を探すようになります。ただし、デフォルトのディレクトリを使用することを強く推奨します。
+</LI><LI> 与えられた言語の文字列を使用するように、プログラム内で適切なロケールを設定する: <A HREF="wx_wxlocale.html#wxlocale">wxLocale</A> を参照してください。
+</LI></OL>
+<P>
+GNU gettext のドキュメントも参照してください。これは wxWidgets の配布物の中にある <TT>docs/html/index.htm</TT> からリンクしています。<P>
+<A HREF="wx_nonenglishoverview.html#nonenglishoverview">非英語アプリケーションの作成</A> も参照してください。文字コードに関連した問題について取り組む場合には。<P>
+最後に、国際化を実際にどういう風に行うのかを示す例として <A HREF="wx_samples.html#sampleinternat">i18n サンプル</A> を参照してください。<P>
+<B><FONT COLOR="#FF0000">メニューアクセラレータの翻訳</FONT></B><P>
+もしメニューラベル内のアクセラレータの修飾子名 ( Ctrl、Alt、Shift) を翻訳した場合、アクセラレータが動作しなくなることに気がつくでしょう。 メッセージカタログでは、修飾子の名前を小文字にしたもの (ctrl、alt、shift) とは別の名前に翻訳する必要があります。これによって、 wxWidgets がそれらの名前を翻訳されたものとして認識できるようになります。修飾子の翻訳について、今のところ wxWidgets はすべてに対応しているわけではありません。Backspace、End、Insert といった特殊キーの名前が翻訳された場合、wxWidgets はまだ取り扱うことができません。<P>
+
+</FONT><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40693840-1', 'murank.github.io');
+  ga('send', 'pageview');
+
+</script>
+</body></HTML>
