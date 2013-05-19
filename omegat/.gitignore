@@ -1,0 +1,3 @@
+*.txt
+project_save.tmx*
+!project_save.tmx
