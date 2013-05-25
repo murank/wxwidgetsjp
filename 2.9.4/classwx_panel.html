@@ -135,7 +135,7 @@ function toggleVisibility(linkObj) {
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>A panel is a window on which controls are placed.  </p>
 <p>It is usually placed within a frame. Its main feature over its parent class <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> is code for handling child windows and TAB traversal. Since wxWidgets 2.9, there is support both for TAB traversal implemented by wxWidgets itself as well as native TAB traversal (such as for GTK 2.0).</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Tab traversal is implemented through an otherwise undocumented intermediate wxControlContainer class from which any class can derive in addition to the normal <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> base class. Please see <code><a class="el" href="containr_8h.html">wx/containr.h</a></code> and <code><a class="el" href="panel_8h.html">wx/panel.h</a></code> to find out how this is achieved.</dd>
+<dl class="note"><dt><b>注:</b></dt><dd>Tab traversal is implemented through an otherwise undocumented intermediate wxControlContainer class from which any class can derive in addition to the normal <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> base class. Please see <code><a class="el" href="containr_8h.html">wx/containr.h</a></code> and <code><a class="el" href="panel_8h.html">wx/panel.h</a></code> to find out how this is achieved.</dd>
 <dd>
 
 if not all characters are being intercepted by your OnKeyDown or OnChar handler, it may be because you are using the <code>wxTAB_TRAVERSAL</code> style, which grabs some keypresses for use by child controls.</dd></dl>
@@ -147,7 +147,7 @@ if not all characters are being intercepted by your OnKeyDown or OnChar handler,
 <li><span class="event">EVT_NAVIGATION_KEY(func)</span>:<div class="eventDesc">  Process a navigation key event.  </div></li>
 </ul>
 <h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__miscwnd.html">Miscellaneous Windows</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_dialog.html" title="A dialog box is a window with a title bar and sometimes a system menu, which can be moved around the ...">wxDialog</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__miscwnd.html">Miscellaneous Windows</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
@@ -248,8 +248,8 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">parent</td><td>The parent window.  </td></tr>
     <tr><td class="paramname">id</td><td>An identifier for the panel. <code>wxID_ANY</code> is taken to mean a default.  </td></tr>
-    <tr><td class="paramname">pos</td><td>The panel position. The value <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="Global instance of a wxPoint initialized with values (-1,-1).">wxDefaultPosition</a> indicates a default position, chosen by either the windowing system or wxWidgets, depending on platform.  </td></tr>
-    <tr><td class="paramname">size</td><td>The panel size. The value <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="Global instance of a wxSize object initialized to (-1,-1).">wxDefaultSize</a> indicates a default size, chosen by either the windowing system or wxWidgets, depending on platform.  </td></tr>
+    <tr><td class="paramname">pos</td><td>The panel position. The value <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="(-1,-1) に初期化された wxPoint のグルーバルインスタンス。">wxDefaultPosition</a> indicates a default position, chosen by either the windowing system or wxWidgets, depending on platform.  </td></tr>
+    <tr><td class="paramname">size</td><td>The panel size. The value <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="(-1,-1) に初期化された wxSize のグルーバルインスタンス。">wxDefaultSize</a> indicates a default size, chosen by either the windowing system or wxWidgets, depending on platform.  </td></tr>
     <tr><td class="paramname">style</td><td>The window style. See <a class="el" href="classwx_panel.html" title="A panel is a window on which controls are placed.">wxPanel</a>.  </td></tr>
     <tr><td class="paramname">name</td><td>Window name.</td></tr>
   </table>

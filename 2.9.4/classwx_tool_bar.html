@@ -371,8 +371,8 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">parent</td><td>Pointer to a parent window.  </td></tr>
     <tr><td class="paramname">id</td><td>Window identifier. If -1, will automatically create an identifier.  </td></tr>
-    <tr><td class="paramname">pos</td><td>Window position. <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="Global instance of a wxPoint initialized with values (-1,-1).">wxDefaultPosition</a> indicates that wxWidgets should generate a default position for the window. If using the <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> class directly, supply an actual position.  </td></tr>
-    <tr><td class="paramname">size</td><td>Window size. <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="Global instance of a wxSize object initialized to (-1,-1).">wxDefaultSize</a> indicates that wxWidgets should generate a default size for the window.  </td></tr>
+    <tr><td class="paramname">pos</td><td>Window position. <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="(-1,-1) に初期化された wxPoint のグルーバルインスタンス。">wxDefaultPosition</a> indicates that wxWidgets should generate a default position for the window. If using the <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> class directly, supply an actual position.  </td></tr>
+    <tr><td class="paramname">size</td><td>Window size. <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="(-1,-1) に初期化された wxSize のグルーバルインスタンス。">wxDefaultSize</a> indicates that wxWidgets should generate a default size for the window.  </td></tr>
     <tr><td class="paramname">style</td><td>Window style. See <a class="el" href="classwx_tool_bar.html" title="A toolbar is a bar of buttons and/or other controls usually placed below the menu bar in a wxFrame...">wxToolBar</a> initial description for details.  </td></tr>
     <tr><td class="paramname">name</td><td>Window name.</td></tr>
   </table>
@@ -902,7 +902,7 @@ wxMac: labels are only displayed if wxWidgets is built with <code>wxMAC_USE_NATI
 
 <p>Removes the specified tool from the toolbar and deletes it.  </p>
 <p>If you don't want to delete the tool, but just to remove it from the toolbar (to possibly add it back later), you may use <a class="el" href="classwx_tool_bar.html#a50f65799ae6294ee4ba08a1c75120089" title="Removes the given tool from the toolbar but doesn't delete it.">RemoveTool()</a> instead.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>It is unnecessary to call <a class="el" href="classwx_tool_bar.html#abb31ce337a2d3c1e30e8e3748905ecbf" title="This function should be called after you have added tools.">Realize()</a> for the change to take place, it will happen immediately.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>It is unnecessary to call <a class="el" href="classwx_tool_bar.html#abb31ce337a2d3c1e30e8e3748905ecbf" title="This function should be called after you have added tools.">Realize()</a> for the change to take place, it will happen immediately.</dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if the tool was deleted, <span class="literal">false</span> otherwise.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_tool_bar.html#a441f430c309c1fa8e43803fe09c2fa25" title="This function behaves like DeleteTool() but it deletes the tool at the specified position and not the...">DeleteToolByPos()</a> </dd></dl>
 
@@ -1667,7 +1667,7 @@ wxMac: labels are only displayed if wxWidgets is built with <code>wxMAC_USE_NATI
 
 <p>Removes the given tool from the toolbar but doesn't delete it.  </p>
 <p>This allows to insert/add this tool back to this (or another) toolbar later.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>It is unnecessary to call <a class="el" href="classwx_tool_bar.html#abb31ce337a2d3c1e30e8e3748905ecbf" title="This function should be called after you have added tools.">Realize()</a> for the change to take place, it will happen immediately.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>It is unnecessary to call <a class="el" href="classwx_tool_bar.html#abb31ce337a2d3c1e30e8e3748905ecbf" title="This function should be called after you have added tools.">Realize()</a> for the change to take place, it will happen immediately.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_tool_bar.html#aea3c91f9b3d7505e4b511f678883c73d" title="Removes the specified tool from the toolbar and deletes it.">DeleteTool()</a> </dd></dl>
 
 </div>
@@ -1884,7 +1884,7 @@ wxMac: labels are only displayed if wxWidgets is built with <code>wxMAC_USE_NATI
   </table>
   </dd>
 </dl>
-<dl class="note"><dt><b>Note:</b></dt><dd>The native toolbar classes on the main platforms all synthesize the disabled bitmap from the normal bitmap, so this function will have no effect on those platforms.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>The native toolbar classes on the main platforms all synthesize the disabled bitmap from the normal bitmap, so this function will have no effect on those platforms.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxToolBar::SetToolLongHelp" ref="abaf8db63f2bc75e0de67280b7e83711d" args="(int toolId, const wxString &amp;helpString)" -->

@@ -1926,7 +1926,7 @@ This sequence of operations ensures that the source's transparent area need not 
 <div class="memdoc">
 
 <p>Draws the text rotated by <em>angle</em> degrees (positive angles are counterclockwise; the full angle is 360 degrees).  </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Under Win9x only TrueType fonts can be drawn by this function. In particular, a font different from <code>wxNORMAL_FONT</code> should be used as the latter is not a TrueType font. <code>wxSWISS_FONT</code> is an example of a font which is.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Under Win9x only TrueType fonts can be drawn by this function. In particular, a font different from <code>wxNORMAL_FONT</code> should be used as the latter is not a TrueType font. <code>wxSWISS_FONT</code> is an example of a font which is.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_d_c.html#a11d35ce34fccb57b0efc7dc91168660b" title="Draws a text string at the specified point, using the current text font, and the current text foregro...">DrawText()</a> </dd></dl>
 
 </div>
@@ -2217,7 +2217,7 @@ This sequence of operations ensures that the source's transparent area need not 
 <p>Draws a text string at the specified point, using the current text font, and the current text foreground and background colours.  </p>
 <p>The coordinates refer to the top-left corner of the rectangle bounding the string. See <a class="el" href="classwx_d_c.html#ae55cbf1bc7b7e836cb192eb48d31efab" title="Gets the dimensions of the string using the currently selected font.">GetTextExtent()</a> for how to get the dimensions of a text string, which can be used to position the text more precisely and <a class="el" href="classwx_d_c.html#ae28d7aa2e17a850f4ca15c042a870152" title="Draw optional bitmap and the text into the given rectangle and aligns it as specified by alignment pa...">DrawLabel()</a> if you need to align the string differently.</p>
 <p>Starting from wxWidgets 2.9.2 <em>text</em> parameter can be a multi-line string, i.e. contain new line characters, and will be rendered correctly.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>The current <a class="el" href="classwx_d_c.html#aaa63fac56c04221856bcae7e669a64af">logical function</a> is ignored by this function.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>The current <a class="el" href="classwx_d_c.html#aaa63fac56c04221856bcae7e669a64af">logical function</a> is ignored by this function.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxDC::DrawText" ref="a17f5674c449449b730c63f773534d721" args="(const wxString &amp;text, const wxPoint &amp;pt)" -->
@@ -2333,7 +2333,7 @@ This sequence of operations ensures that the source's transparent area need not 
 <li>wxFLOOD_BORDER: The area to be flooded is bounded by the given colour.</li>
 </ul>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">false</span> if the operation failed.</dd></dl>
-<dl class="note"><dt><b>Note:</b></dt><dd>The present implementation for non-Windows platforms may fail to find colour borders if the pixels do not match the colour exactly. However the function will still return <span class="literal">true</span>.</dd>
+<dl class="note"><dt><b>注:</b></dt><dd>The present implementation for non-Windows platforms may fail to find colour borders if the pixels do not match the colour exactly. However the function will still return <span class="literal">true</span>.</dd>
 <dd>
 
 This method shouldn't be used with <a class="el" href="classwx_paint_d_c.html" title="A wxPaintDC must be constructed if an application wishes to paint on the client area of a window from...">wxPaintDC</a> under non-Windows platforms as it uses <a class="el" href="classwx_d_c.html#a3f82f6b54ba2e6f348de7f779487b234" title="Gets in colour the colour at the specified location.">GetPixel()</a> internally and this may give wrong results, notably in wxGTK. If you need to flood fill <a class="el" href="classwx_paint_d_c.html" title="A wxPaintDC must be constructed if an application wishes to paint on the client area of a window from...">wxPaintDC</a>, create a temporary <a class="el" href="classwx_memory_d_c.html" title="A memory device context provides a means to draw graphics onto a bitmap.">wxMemoryDC</a>, flood fill it and then blit it to, or draw as a bitmap on, <a class="el" href="classwx_paint_d_c.html" title="A wxPaintDC must be constructed if an application wishes to paint on the client area of a window from...">wxPaintDC</a>. See the example of doing this in the drawing sample and <a class="el" href="classwx_buffered_paint_d_c.html" title="This is a subclass of wxBufferedDC which can be used inside of an EVT_PAINT() event handler to achiev...">wxBufferedPaintDC</a> class.  </dd></dl>
@@ -2766,7 +2766,7 @@ This method shouldn't be used with <a class="el" href="classwx_paint_d_c.html" t
 <p><em>string</em> is the text string to measure, <em>heightLine</em>, if non <span class="literal">NULL</span>, is where to store the height of a single line.</p>
 <p>The text extent is set in the given <em>w</em> and <em>h</em> pointers.</p>
 <p>If the optional parameter <em>font</em> is specified and valid, then it is used for the text extent calculation, otherwise the currently selected font is used.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>This function works with both single-line and multi-line strings.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>This function works with both single-line and multi-line strings.</dd></dl>
 <p><b>wxPerl Note:</b> In wxPerl this method is implemented as GetMultiLineTextExtent(string, font = undef) returning a 3-element list (width, height, line_height)</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_font.html" title="A font is an object which determines the appearance of text.">wxFont</a>, <a class="el" href="classwx_d_c.html#afab18239d707cd403235b36a987171a8" title="Sets the current font for the DC.">SetFont()</a>, <a class="el" href="classwx_d_c.html#aa0dd5cdd1ce56ff3d1c23d233711653d" title="Fills the widths array with the widths from the beginning of text to the corresponding character of t...">GetPartialTextExtents()</a>, <a class="el" href="classwx_d_c.html#ae55cbf1bc7b7e836cb192eb48d31efab" title="Gets the dimensions of the string using the currently selected font.">GetTextExtent()</a> </dd></dl>
 
@@ -2790,7 +2790,7 @@ This method shouldn't be used with <a class="el" href="classwx_paint_d_c.html" t
 <p>Gets the dimensions of the string using the currently selected font.  </p>
 <p><em>string</em> is the text string to measure, <em>heightLine</em>, if non <span class="literal">NULL</span>, is where to store the height of a single line.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The text extent as a <a class="el" href="classwx_size.html" title="wxSize は図形操作のための有用なデータ構造です。">wxSize</a> object.</dd></dl>
-<dl class="note"><dt><b>Note:</b></dt><dd>This function works with both single-line and multi-line strings.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>This function works with both single-line and multi-line strings.</dd></dl>
 <p><b>wxPerl Note:</b> Not supported by wxPerl.</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_font.html" title="A font is an object which determines the appearance of text.">wxFont</a>, <a class="el" href="classwx_d_c.html#afab18239d707cd403235b36a987171a8" title="Sets the current font for the DC.">SetFont()</a>, <a class="el" href="classwx_d_c.html#aa0dd5cdd1ce56ff3d1c23d233711653d" title="Fills the widths array with the widths from the beginning of text to the corresponding character of t...">GetPartialTextExtents()</a>, <a class="el" href="classwx_d_c.html#ae55cbf1bc7b7e836cb192eb48d31efab" title="Gets the dimensions of the string using the currently selected font.">GetTextExtent()</a> </dd></dl>
 
@@ -2880,7 +2880,7 @@ This method shouldn't be used with <a class="el" href="classwx_paint_d_c.html" t
 
 <p>Gets in <em>colour</em> the colour at the specified location.  </p>
 <p>Not available for <a class="el" href="classwx_post_script_d_c.html" title="This defines the wxWidgets Encapsulated PostScript device context, which can write PostScript files o...">wxPostScriptDC</a> or <a class="el" href="classwx_metafile_d_c.html" title="This is a type of device context that allows a metafile object to be created (Windows only)...">wxMetafileDC</a>.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Setting a pixel can be done using <a class="el" href="classwx_d_c.html#a8380aab866e8f3947e0898cf08969d9f" title="Draws a point using the color of the current pen.">DrawPoint()</a>.</dd>
+<dl class="note"><dt><b>注:</b></dt><dd>Setting a pixel can be done using <a class="el" href="classwx_d_c.html#a8380aab866e8f3947e0898cf08969d9f" title="Draws a point using the color of the current pen.">DrawPoint()</a>.</dd>
 <dd>
 
 This method shouldn't be used with <a class="el" href="classwx_paint_d_c.html" title="A wxPaintDC must be constructed if an application wishes to paint on the client area of a window from...">wxPaintDC</a> as accessing the DC while drawing can result in unexpected results, notably in wxGTK.  </dd></dl>
@@ -3085,7 +3085,7 @@ This method shouldn't be used with <a class="el" href="classwx_paint_d_c.html" t
 <p><em>string</em> is the text string to measure, <em>descent</em> is the dimension from the baseline of the font to the bottom of the descender, and <em>externalLeading</em> is any extra vertical space added to the font by the font designer (usually is zero).</p>
 <p>The text extent is returned in <em>w</em> and <em>h</em> pointers or as a <a class="el" href="classwx_size.html" title="wxSize は図形操作のための有用なデータ構造です。">wxSize</a> object depending on which version of this function is used.</p>
 <p>If the optional parameter <em>font</em> is specified and valid, then it is used for the text extent calculation. Otherwise the currently selected font is.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>This function only works with single-line strings.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>This function only works with single-line strings.</dd></dl>
 <p><b>wxPerl Note:</b> In wxPerl this method is implemented as GetTextExtent(string, font = undef) returning a 4-element list (width, height, descent, externalLeading)</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_font.html" title="A font is an object which determines the appearance of text.">wxFont</a>, <a class="el" href="classwx_d_c.html#afab18239d707cd403235b36a987171a8" title="Sets the current font for the DC.">SetFont()</a>, <a class="el" href="classwx_d_c.html#aa0dd5cdd1ce56ff3d1c23d233711653d" title="Fills the widths array with the widths from the beginning of text to the corresponding character of t...">GetPartialTextExtents()</a>, <a class="el" href="classwx_d_c.html#a1983be5fdf9e88127d15fff119a0ef03" title="Gets the dimensions of the string using the currently selected font.">GetMultiLineTextExtent()</a> </dd></dl>
 
@@ -3214,7 +3214,7 @@ This method shouldn't be used with <a class="el" href="classwx_paint_d_c.html" t
 
 <p>Fill the area specified by rect with a radial gradient, starting from <em>initialColour</em> at the centre of the circle and fading to <em>destColour</em> on the circle outside.  </p>
 <p>The circle is placed at the centre of <em>rect</em>.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Currently this function is very slow, don't use it for real-time drawing.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Currently this function is very slow, don't use it for real-time drawing.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxDC::GradientFillConcentric" ref="a2f0cd1850aefeda55b25cf56d55ac495" args="(const wxRect &amp;rect, const wxColour &amp;initialColour, const wxColour &amp;destColour, const wxPoint &amp;circleCenter)" -->
@@ -3257,7 +3257,7 @@ This method shouldn't be used with <a class="el" href="classwx_paint_d_c.html" t
 
 <p>Fill the area specified by rect with a radial gradient, starting from <em>initialColour</em> at the centre of the circle and fading to <em>destColour</em> on the circle outside.  </p>
 <p><em>circleCenter</em> are the relative coordinates of centre of the circle in the specified <em>rect</em>.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Currently this function is very slow, don't use it for real-time drawing.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Currently this function is very slow, don't use it for real-time drawing.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxDC::GradientFillLinear" ref="a9cfbde2fcde06ffacf323f3a9dd1b020" args="(const wxRect &amp;rect, const wxColour &amp;initialColour, const wxColour &amp;destColour, wxDirection nDirection=wxRIGHT)" -->

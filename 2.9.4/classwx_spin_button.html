@@ -135,7 +135,7 @@ function toggleVisibility(linkObj) {
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="classwx_spin_button.html" title="A wxSpinButton has two small up and down (or left and right) arrow buttons.">wxSpinButton</a> has two small up and down (or left and right) arrow buttons.  </p>
 <p>It is often used next to a text control for increment and decrementing a value. Portable programs should try to use <a class="el" href="classwx_spin_ctrl.html" title="wxSpinCtrl combines wxTextCtrl and wxSpinButton in one control.">wxSpinCtrl</a> instead as <a class="el" href="classwx_spin_button.html" title="A wxSpinButton has two small up and down (or left and right) arrow buttons.">wxSpinButton</a> is not implemented for all platforms but <a class="el" href="classwx_spin_ctrl.html" title="wxSpinCtrl combines wxTextCtrl and wxSpinButton in one control.">wxSpinCtrl</a> is as it degenerates to a simple <a class="el" href="classwx_text_ctrl.html" title="テキストの表示と編集が可能なテキストコントロール。">wxTextCtrl</a> on such platforms.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>the range supported by this control (and <a class="el" href="classwx_spin_ctrl.html" title="wxSpinCtrl combines wxTextCtrl and wxSpinButton in one control.">wxSpinCtrl</a>) depends on the platform but is at least <code>-0x8000</code> to <code>0x7fff</code>. Under GTK and Win32 with sufficiently new version of <code>comctrl32.dll</code> (at least 4.71 is required, 5.80 is recommended) the full 32 bit range is supported.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>the range supported by this control (and <a class="el" href="classwx_spin_ctrl.html" title="wxSpinCtrl combines wxTextCtrl and wxSpinButton in one control.">wxSpinCtrl</a>) depends on the platform but is at least <code>-0x8000</code> to <code>0x7fff</code>. Under GTK and Win32 with sufficiently new version of <code>comctrl32.dll</code> (at least 4.71 is required, 5.80 is recommended) the full 32 bit range is supported.</dd></dl>
 <h2>Styles</h2>
 <p>This class supports the following styles:</p>
 <div> </div><ul>
@@ -253,8 +253,8 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">parent</td><td>Parent window. Must not be <span class="literal">NULL</span>.  </td></tr>
     <tr><td class="paramname">id</td><td>Window identifier. The value wxID_ANY indicates a default value.  </td></tr>
-    <tr><td class="paramname">pos</td><td>Window position. If <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="Global instance of a wxPoint initialized with values (-1,-1).">wxDefaultPosition</a> is specified then a default position is chosen.  </td></tr>
-    <tr><td class="paramname">size</td><td>Window size. If <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="Global instance of a wxSize object initialized to (-1,-1).">wxDefaultSize</a> is specified then a default size is chosen.  </td></tr>
+    <tr><td class="paramname">pos</td><td>Window position. If <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="(-1,-1) に初期化された wxPoint のグルーバルインスタンス。">wxDefaultPosition</a> is specified then a default position is chosen.  </td></tr>
+    <tr><td class="paramname">size</td><td>Window size. If <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="(-1,-1) に初期化された wxSize のグルーバルインスタンス。">wxDefaultSize</a> is specified then a default size is chosen.  </td></tr>
     <tr><td class="paramname">style</td><td>Window style. See <a class="el" href="classwx_spin_button.html" title="A wxSpinButton has two small up and down (or left and right) arrow buttons.">wxSpinButton</a> class description.  </td></tr>
     <tr><td class="paramname">name</td><td>Window name.</td></tr>
   </table>

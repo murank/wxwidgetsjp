@@ -148,8 +148,8 @@ function toggleVisibility(linkObj) {
                         <span class="stringliteral">"  Please enter your credentials in the controls below."</span>);
 
         <span class="comment">// And position it along the left edge of the window.</span>
-        <a class="code" href="classwx_sizer.html" title="wxSizer is the abstract base class used for laying out subwindows in a window.">wxSizer</a>* sizer = <span class="keyword">new</span> <a class="code" href="classwx_box_sizer.html" title="The basic idea behind a box sizer is that windows will most often be laid out in rather simple basic ...">wxBoxSizer</a>(<a class="code" href="defs_8h.html#a1e6994f40bd9cb140e292afb165af971a2134d1cb8cf605532880c118190695b5">wxVERTICAL</a>);
-        sizer-&gt;<a class="code" href="classwx_sizer.html#a4e2122f2749261473c21cb192d00709f" title="Appends a child to the sizer.">Add</a>(banner, <a class="code" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a>().Expand());
+        <a class="code" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a>* sizer = <span class="keyword">new</span> <a class="code" href="classwx_box_sizer.html" title="ボックスサイザーの基本的な考え方は、ほとんどの場合ウィンドウは とても単純で基本的な配置、よくあるのは行や列、またはその階層内にレイアウトされるという考えです。">wxBoxSizer</a>(<a class="code" href="defs_8h.html#a1e6994f40bd9cb140e292afb165af971a2134d1cb8cf605532880c118190695b5">wxVERTICAL</a>);
+        sizer-&gt;<a class="code" href="classwx_sizer.html#a4e2122f2749261473c21cb192d00709f" title="サイザーに子コントロールを追加します。">Add</a>(banner, <a class="code" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a>().Expand());
 
         ... add the rest of the window contents to the same sizer ...
 

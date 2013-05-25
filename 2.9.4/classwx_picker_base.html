@@ -135,8 +135,8 @@ function toggleVisibility(linkObj) {
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Base abstract class for all pickers which support an auxiliary text control.  </p>
-<p>This class handles all positioning and sizing of the text control like a an horizontal <a class="el" href="classwx_box_sizer.html" title="The basic idea behind a box sizer is that windows will most often be laid out in rather simple basic ...">wxBoxSizer</a> would do, with the text control on the left of the picker button.</p>
-<p>The proportion (see <a class="el" href="classwx_sizer.html" title="wxSizer is the abstract base class used for laying out subwindows in a window.">wxSizer</a> documentation for more info about proportion values) of the picker control defaults to 1 when there isn't a text control associated (see <code>wxPB_USE_TEXTCTRL</code> style) and to 0 otherwise.</p>
+<p>This class handles all positioning and sizing of the text control like a an horizontal <a class="el" href="classwx_box_sizer.html" title="ボックスサイザーの基本的な考え方は、ほとんどの場合ウィンドウは とても単純で基本的な配置、よくあるのは行や列、またはその階層内にレイアウトされるという考えです。">wxBoxSizer</a> would do, with the text control on the left of the picker button.</p>
+<p>The proportion (see <a class="el" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a> documentation for more info about proportion values) of the picker control defaults to 1 when there isn't a text control associated (see <code>wxPB_USE_TEXTCTRL</code> style) and to 0 otherwise.</p>
 <h2>Styles</h2>
 <p>This class supports the following styles:</p>
 <div> </div><ul>
@@ -321,7 +321,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns the native implementation of the real picker control.  </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>The returned control in the generic implementation of <a class="el" href="classwx_file_picker_ctrl.html" title="This control allows the user to select a file.">wxFilePickerCtrl</a>, <a class="el" href="classwx_dir_picker_ctrl.html" title="This control allows the user to select a directory.">wxDirPickerCtrl</a>, <a class="el" href="classwx_font_picker_ctrl.html" title="This control allows the user to select a font.">wxFontPickerCtrl</a> and <a class="el" href="classwx_colour_picker_ctrl.html" title="This control allows the user to select a colour.">wxColourPickerCtrl</a> is a specialized <a class="el" href="classwx_button.html" title="ボタンはテキストを含んだコントロールであり、もっとも一般的な GUI 要素のひとつです。">wxButton</a> class so that you can change its label doing, e.g.:  <div class="fragment"><pre class="fragment"><span class="preprocessor">            #ifdef __WXMSW__</span>
+<dl class="note"><dt><b>注:</b></dt><dd>The returned control in the generic implementation of <a class="el" href="classwx_file_picker_ctrl.html" title="This control allows the user to select a file.">wxFilePickerCtrl</a>, <a class="el" href="classwx_dir_picker_ctrl.html" title="This control allows the user to select a directory.">wxDirPickerCtrl</a>, <a class="el" href="classwx_font_picker_ctrl.html" title="This control allows the user to select a font.">wxFontPickerCtrl</a> and <a class="el" href="classwx_colour_picker_ctrl.html" title="This control allows the user to select a colour.">wxColourPickerCtrl</a> is a specialized <a class="el" href="classwx_button.html" title="ボタンはテキストを含んだコントロールであり、もっとも一般的な GUI 要素のひとつです。">wxButton</a> class so that you can change its label doing, e.g.:  <div class="fragment"><pre class="fragment"><span class="preprocessor">            #ifdef __WXMSW__</span>
 <span class="preprocessor"></span>                <span class="comment">// wxMSW is one of the platforms where the generic implementation</span>
                 <span class="comment">// of wxFilePickerCtrl is used...</span>
 

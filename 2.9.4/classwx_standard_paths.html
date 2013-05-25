@@ -404,7 +404,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Return the program installation prefix, e.g.  </p>
 <p><code>/usr</code>, <code>/opt</code> or <code>/home/zeitlin</code>.</p>
 <p>If the prefix had been previously by <a class="el" href="classwx_standard_paths.html#a80af124a7df05bf1a1f7bee7406d278f" title="Lets wxStandardPaths know about the real program installation prefix on a Unix system.">SetInstallPrefix()</a>, returns that value, otherwise tries to determine it automatically (Linux only right now) and finally returns the default <code>/usr/local</code> value if it failed.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>This function is only available under Unix platforms (but not limited to wxGTK mentioned below).</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>This function is only available under Unix platforms (but not limited to wxGTK mentioned below).</dd></dl>
 <div><span class="avail">Availability:</span>&nbsp;&nbsp;only available for the <a class="el" href="page_port.html#page_port_wxos2">wxOS2</a>, <a class="el" href="page_port.html#page_port_wxgtk">wxGTK</a> ports.</div>  
 </div>
 </div><!-- doxytag: member="wxStandardPaths::GetLocalDataDir" ref="ac935a5c1764c513a4b6d4b8b66d5b808" args="() const " -->
@@ -700,7 +700,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Lets <a class="el" href="classwx_standard_paths.html" title="wxStandardPaths returns the standard locations in the file system and should be used by applications ...">wxStandardPaths</a> know about the real program installation prefix on a Unix system.  </p>
 <p>By default, the value returned by <a class="el" href="classwx_standard_paths.html#a318d939990abd7589a7a2890bc0856de" title="Return the program installation prefix, e.g.">GetInstallPrefix()</a> is used.</p>
 <p>Although under Linux systems the program prefix may usually be determined automatically, portable programs should call this function. Usually the prefix is set during program configuration if using GNU autotools and so it is enough to pass its value defined in <code>config.h</code> to this function.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>This function is only available under Unix platforms (but not limited to wxGTK mentioned below).</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>This function is only available under Unix platforms (but not limited to wxGTK mentioned below).</dd></dl>
 <div><span class="avail">Availability:</span>&nbsp;&nbsp;only available for the <a class="el" href="page_port.html#page_port_wxos2">wxOS2</a>, <a class="el" href="page_port.html#page_port_wxgtk">wxGTK</a> ports.</div>  
 </div>
 </div><!-- doxytag: member="wxStandardPaths::UseAppInfo" ref="ada72c782dcab502f17c348c0e5d3874c" args="(int info)" -->

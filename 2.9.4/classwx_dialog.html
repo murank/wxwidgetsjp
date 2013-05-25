@@ -138,7 +138,7 @@ function toggleVisibility(linkObj) {
 <p>It can contain controls and other windows and is often used to allow the user to make some choice or to answer a question.</p>
 <p>Dialogs can be made scrollable, automatically, for computers with low resolution screens: please see <a class="el" href="overview_dialog.html#overview_dialog_autoscrolling">Automatic scrolling dialogs</a> for further details.</p>
 <p>Dialogs usually contains either a single button allowing to close the dialog or two buttons, one accepting the changes and the other one discarding them (such button, if present, is automatically activated if the user presses the "Esc" key). By default, buttons with the standard wxID_OK and wxID_CANCEL identifiers behave as expected. Starting with wxWidgets 2.7 it is also possible to use a button with a different identifier instead, see <a class="el" href="classwx_dialog.html#a72ea7e269bedb2552bfeaccdbac07939" title="Sets the identifier to be used as OK button.">SetAffirmativeId()</a> and <a class="el" href="classwx_dialog.html#a585869988e308f549128a6a065f387c6" title='Sets the identifier of the button which should work like the standard "Cancel" button in this dialog...'>SetEscapeId()</a>.</p>
-<p>Also notice that the <a class="el" href="classwx_dialog.html#ae362b7c61430593ef8ac5034f1bd92c8" title="Creates a sizer with standard buttons.">CreateButtonSizer()</a> should be used to create the buttons appropriate for the current platform and positioned correctly (including their order which is platform-dependent).</p>
+<p>Also notice that the <a class="el" href="classwx_dialog.html#ae362b7c61430593ef8ac5034f1bd92c8" title="標準ボタンを含むサイザーを作成します。">CreateButtonSizer()</a> should be used to create the buttons appropriate for the current platform and positioned correctly (including their order which is platform-dependent).</p>
 <h2><a class="anchor" id="dialog_modal"></a>
 
 Modal and Modeless</h2>
@@ -147,7 +147,7 @@ Modal and Modeless</h2>
 <div class="fragment"><pre class="fragment">    <span class="keywordtype">void</span> AskUser()
     {
         MyAskDialog *dlg = <span class="keyword">new</span> MyAskDialog(...);
-        <span class="keywordflow">if</span> ( dlg-&gt;ShowModal() == <a class="code" href="defs_8h.html#ac66d0a09761e7d86b2ac0b2e0c6a8cbbaeeb1bdf97306d7f0fdffb62c8af3d02f" title="Standard button and menu IDs.">wxID_OK</a> )
+        <span class="keywordflow">if</span> ( dlg-&gt;ShowModal() == <a class="code" href="defs_8h.html#ac66d0a09761e7d86b2ac0b2e0c6a8cbbaeeb1bdf97306d7f0fdffb62c8af3d02f" title="標準ボタンとメニュー ID。">wxID_OK</a> )
             <span class="comment">// ...</span>
         <span class="comment">//else: dialog was cancelled or some another button pressed</span>
 
@@ -157,7 +157,7 @@ Modal and Modeless</h2>
 <div class="fragment"><pre class="fragment">    <span class="keywordtype">void</span> AskUser()
     {
         MyAskDialog dlg(...);
-        <span class="keywordflow">if</span> ( dlg.ShowModal() == <a class="code" href="defs_8h.html#ac66d0a09761e7d86b2ac0b2e0c6a8cbbaeeb1bdf97306d7f0fdffb62c8af3d02f" title="Standard button and menu IDs.">wxID_OK</a> )
+        <span class="keywordflow">if</span> ( dlg.ShowModal() == <a class="code" href="defs_8h.html#ac66d0a09761e7d86b2ac0b2e0c6a8cbbaeeb1bdf97306d7f0fdffb62c8af3d02f" title="標準ボタンとメニュー ID。">wxID_OK</a> )
             <span class="comment">// ...</span>
 
         <span class="comment">// no need to call Destroy() here</span>
@@ -209,15 +209,15 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_dialog.html#a44e42338cb8bd2a1b312ab7a6f1722a3">Create</a> (<a class="el" href="classwx_window.html">wxWindow</a> *parent, <a class="el" href="windowid_8h.html#ae8091432cc2cb2485d45f2302fb51133">wxWindowID</a> id, const <a class="el" href="classwx_string.html">wxString</a> &amp;title, const <a class="el" href="classwx_point.html">wxPoint</a> &amp;pos=<a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0">wxDefaultPosition</a>, const <a class="el" href="classwx_size.html">wxSize</a> &amp;size=<a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b">wxDefaultSize</a>, long style=wxDEFAULT_DIALOG_STYLE, const <a class="el" href="classwx_string.html">wxString</a> &amp;name=wxDialogNameStr)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Used for two-step dialog box construction.    <a href="#a44e42338cb8bd2a1b312ab7a6f1722a3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer.html">wxSizer</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_dialog.html#ae362b7c61430593ef8ac5034f1bd92c8">CreateButtonSizer</a> (long flags)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a sizer with standard buttons.    <a href="#ae362b7c61430593ef8ac5034f1bd92c8"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">標準ボタンを含むサイザーを作成します。  <a href="#ae362b7c61430593ef8ac5034f1bd92c8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer.html">wxSizer</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_dialog.html#a0c6fb55be0b07b934b30550e0225df8f">CreateSeparatedButtonSizer</a> (long flags)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a sizer with standard buttons using <a class="el" href="classwx_dialog.html#ae362b7c61430593ef8ac5034f1bd92c8" title="Creates a sizer with standard buttons.">CreateButtonSizer()</a> separated from the rest of the dialog contents by a horizontal <a class="el" href="classwx_static_line.html" title="A static line is just a line which may be used in a dialog to separate the groups of controls...">wxStaticLine</a>.    <a href="#a0c6fb55be0b07b934b30550e0225df8f"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a sizer with standard buttons using <a class="el" href="classwx_dialog.html#ae362b7c61430593ef8ac5034f1bd92c8" title="標準ボタンを含むサイザーを作成します。">CreateButtonSizer()</a> separated from the rest of the dialog contents by a horizontal <a class="el" href="classwx_static_line.html" title="A static line is just a line which may be used in a dialog to separate the groups of controls...">wxStaticLine</a>.    <a href="#a0c6fb55be0b07b934b30550e0225df8f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer.html">wxSizer</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_dialog.html#ab7a5666b612d6cfdfb2660fd9bd3393e">CreateSeparatedSizer</a> (<a class="el" href="classwx_sizer.html">wxSizer</a> *sizer)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the sizer containing the given one with a separating <a class="el" href="classwx_static_line.html" title="A static line is just a line which may be used in a dialog to separate the groups of controls...">wxStaticLine</a> if necessarily.    <a href="#ab7a5666b612d6cfdfb2660fd9bd3393e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_std_dialog_button_sizer.html">wxStdDialogButtonSizer</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_dialog.html#a8f2f565975f843035391ce62b0b9f8e8">CreateStdDialogButtonSizer</a> (long flags)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a <a class="el" href="classwx_std_dialog_button_sizer.html" title="This class creates button layouts which conform to the standard button spacing and ordering defined b...">wxStdDialogButtonSizer</a> with standard buttons.    <a href="#a8f2f565975f843035391ce62b0b9f8e8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer.html">wxSizer</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_dialog.html#a5bead5e932f17b7c2345dfc41b6cc79c">CreateTextSizer</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;message)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Splits text up at newlines and places the lines into <a class="el" href="classwx_static_text.html" title="A static text control displays one or more lines of read-only text.">wxStaticText</a> objects in a vertical <a class="el" href="classwx_box_sizer.html" title="The basic idea behind a box sizer is that windows will most often be laid out in rather simple basic ...">wxBoxSizer</a>.    <a href="#a5bead5e932f17b7c2345dfc41b6cc79c"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Splits text up at newlines and places the lines into <a class="el" href="classwx_static_text.html" title="A static text control displays one or more lines of read-only text.">wxStaticText</a> objects in a vertical <a class="el" href="classwx_box_sizer.html" title="ボックスサイザーの基本的な考え方は、ほとんどの場合ウィンドウは とても単純で基本的な配置、よくあるのは行や列、またはその階層内にレイアウトされるという考えです。">wxBoxSizer</a>.    <a href="#a5bead5e932f17b7c2345dfc41b6cc79c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_dialog.html#a919613599a9e919913146e21d09b44c0">DoLayoutAdaptation</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Performs layout adaptation, usually if the dialog is too large to fit on the display.    <a href="#a919613599a9e919913146e21d09b44c0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_dialog.html#a08a07820be45f6c6fcde5c9e2f786389">DoOK</a> ()</td></tr>
@@ -544,7 +544,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Creates a sizer with standard buttons.  </p>
+<p>標準ボタンを含むサイザーを作成します。 </p>
 <p><em>flags</em> is a bit list of the following flags: wxOK, wxCANCEL, wxYES, wxNO, wxAPPLY, wxCLOSE, wxHELP, wxNO_DEFAULT.</p>
 <p>The sizer lays out the buttons in a manner appropriate to the platform.</p>
 <p>This function uses <a class="el" href="classwx_dialog.html#a8f2f565975f843035391ce62b0b9f8e8" title="Creates a wxStdDialogButtonSizer with standard buttons.">CreateStdDialogButtonSizer()</a> internally for most platforms but doesn't create the sizer at all for the platforms with hardware buttons (such as smartphones) for which it sets up the hardware buttons appropriately and returns <span class="literal">NULL</span>, so don't forget to test that the return value is valid before using it.  </p>
@@ -566,9 +566,9 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Creates a sizer with standard buttons using <a class="el" href="classwx_dialog.html#ae362b7c61430593ef8ac5034f1bd92c8" title="Creates a sizer with standard buttons.">CreateButtonSizer()</a> separated from the rest of the dialog contents by a horizontal <a class="el" href="classwx_static_line.html" title="A static line is just a line which may be used in a dialog to separate the groups of controls...">wxStaticLine</a>.  </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Just like <a class="el" href="classwx_dialog.html#ae362b7c61430593ef8ac5034f1bd92c8" title="Creates a sizer with standard buttons.">CreateButtonSizer()</a>, this function may return <span class="literal">NULL</span> if no buttons were created.</dd></dl>
-<p>This is a combination of <a class="el" href="classwx_dialog.html#ae362b7c61430593ef8ac5034f1bd92c8" title="Creates a sizer with standard buttons.">CreateButtonSizer()</a> and <a class="el" href="classwx_dialog.html#ab7a5666b612d6cfdfb2660fd9bd3393e" title="Returns the sizer containing the given one with a separating wxStaticLine if necessarily.">CreateSeparatedSizer()</a>.  </p>
+<p>Creates a sizer with standard buttons using <a class="el" href="classwx_dialog.html#ae362b7c61430593ef8ac5034f1bd92c8" title="標準ボタンを含むサイザーを作成します。">CreateButtonSizer()</a> separated from the rest of the dialog contents by a horizontal <a class="el" href="classwx_static_line.html" title="A static line is just a line which may be used in a dialog to separate the groups of controls...">wxStaticLine</a>.  </p>
+<dl class="note"><dt><b>注:</b></dt><dd>Just like <a class="el" href="classwx_dialog.html#ae362b7c61430593ef8ac5034f1bd92c8" title="標準ボタンを含むサイザーを作成します。">CreateButtonSizer()</a>, this function may return <span class="literal">NULL</span> if no buttons were created.</dd></dl>
+<p>This is a combination of <a class="el" href="classwx_dialog.html#ae362b7c61430593ef8ac5034f1bd92c8" title="標準ボタンを含むサイザーを作成します。">CreateButtonSizer()</a> and <a class="el" href="classwx_dialog.html#ab7a5666b612d6cfdfb2660fd9bd3393e" title="Returns the sizer containing the given one with a separating wxStaticLine if necessarily.">CreateSeparatedSizer()</a>.  </p>
 
 </div>
 </div><!-- doxytag: member="wxDialog::CreateSeparatedSizer" ref="ab7a5666b612d6cfdfb2660fd9bd3393e" args="(wxSizer *sizer)" -->
@@ -636,7 +636,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Splits text up at newlines and places the lines into <a class="el" href="classwx_static_text.html" title="A static text control displays one or more lines of read-only text.">wxStaticText</a> objects in a vertical <a class="el" href="classwx_box_sizer.html" title="The basic idea behind a box sizer is that windows will most often be laid out in rather simple basic ...">wxBoxSizer</a>.  </p>
+<p>Splits text up at newlines and places the lines into <a class="el" href="classwx_static_text.html" title="A static text control displays one or more lines of read-only text.">wxStaticText</a> objects in a vertical <a class="el" href="classwx_box_sizer.html" title="ボックスサイザーの基本的な考え方は、ほとんどの場合ウィンドウは とても単純で基本的な配置、よくあるのは行や列、またはその階層内にレイアウトされるという考えです。">wxBoxSizer</a>.  </p>
 
 </div>
 </div><!-- doxytag: member="wxDialog::DoLayoutAdaptation" ref="a919613599a9e919913146e21d09b44c0" args="()" -->

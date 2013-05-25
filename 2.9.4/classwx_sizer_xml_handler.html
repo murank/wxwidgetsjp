@@ -147,7 +147,7 @@ Public Member Functions</h2></td></tr>
 
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classwx_sizer.html">wxSizer</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_xml_handler.html#abdca4455bece1de0cfab04c2a84323ba">DoCreateSizer</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;name)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates an object of type <a class="el" href="classwx_sizer.html" title="wxSizer is the abstract base class used for laying out subwindows in a window.">wxSizer</a> from the XML node content.    <a href="#abdca4455bece1de0cfab04c2a84323ba"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates an object of type <a class="el" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a> from the XML node content.    <a href="#abdca4455bece1de0cfab04c2a84323ba"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_xml_handler.html#adc7dd4d2b943f31f581196d8493c17d7">IsSizerNode</a> (<a class="el" href="classwx_xml_node.html">wxXmlNode</a> *node) const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Used by <a class="el" href="classwx_sizer_xml_handler.html#a084c61f000ada8809952c75d2b2602f6" title="Returns true if the given node can be handled by this class.">CanHandle()</a> to know if the given node contains a sizer supported by this class.    <a href="#adc7dd4d2b943f31f581196d8493c17d7"></a><br/></td></tr>
 </table>
@@ -233,7 +233,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Creates an object of type <a class="el" href="classwx_sizer.html" title="wxSizer is the abstract base class used for laying out subwindows in a window.">wxSizer</a> from the XML node content.  </p>
+<p>Creates an object of type <a class="el" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a> from the XML node content.  </p>
 <p>This virtual method can be overridden to add support for custom sizer classes to the derived handler.</p>
 <p>Notice that if you override this method you would typically overload <a class="el" href="classwx_sizer_xml_handler.html#adc7dd4d2b943f31f581196d8493c17d7" title="Used by CanHandle() to know if the given node contains a sizer supported by this class.">IsSizerNode()</a> as well.</p>
 <p>Example of use of this method:  </p>
@@ -257,7 +257,7 @@ Protected Member Functions</h2></td></tr>
             }
 
         <span class="keyword">private</span>:
-            <a class="code" href="classwx_sizer.html" title="wxSizer is the abstract base class used for laying out subwindows in a window.">wxSizer</a>* Handle_MySizer()
+            <a class="code" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a>* Handle_MySizer()
             {
                 <span class="comment">// Create your own sizer here from XRC content (see</span>
                 <span class="comment">// wxXmlResource methods) and return the instance.</span>

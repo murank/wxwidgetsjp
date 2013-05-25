@@ -130,13 +130,13 @@ function toggleVisibility(linkObj) {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classwx_flex_grid_sizer__inherit__graph.png" border="0" usemap="#wx_flex_grid_sizer_inherit__map" alt="Inheritance graph"/></div>
 <map name="wx_flex_grid_sizer_inherit__map" id="wx_flex_grid_sizer_inherit__map">
-<area shape="rect" id="node9" href="classwx_grid_bag_sizer.html" title="A wxSizer that can lay out items in a virtual grid like a wxFlexGridSizer but in this case explicit p..." alt="" coords="7,326,121,357"/><area shape="rect" id="node2" href="classwx_grid_sizer.html" title="A grid sizer is a sizer which lays out its children in a two-dimensional table with all table fields ..." alt="" coords="19,166,109,197"/><area shape="rect" id="node4" href="classwx_sizer.html" title="wxSizer is the abstract base class used for laying out subwindows in a window." alt="" coords="31,86,97,117"/><area shape="rect" id="node6" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="27,6,101,37"/></map>
+<area shape="rect" id="node9" href="classwx_grid_bag_sizer.html" title="wxFlexGridSizer のように子コントロールを仮想のグリッドに配置しますが、wxGBPosition を使用してコントロールを明示的に配置することが可能です。また、wxGBSpan を使用することで、複数の行または列にまたがってコントロールを配置することも可能です。" alt="" coords="7,326,121,357"/><area shape="rect" id="node2" href="classwx_grid_sizer.html" title="グリッドサイザーは子コントロールを 2 次元の表にレイアウトするサイザーで、表中のセルはすべて同じ大きさを持ちます。" alt="" coords="19,166,109,197"/><area shape="rect" id="node4" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。" alt="" coords="31,86,97,117"/><area shape="rect" id="node6" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="27,6,101,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>A flex grid sizer is a sizer which lays out its children in a two-dimensional table with all table fields in one row having the same height and all fields in one column having the same width, but all rows or all columns are not necessarily the same height or width as in the <a class="el" href="classwx_grid_sizer.html" title="A grid sizer is a sizer which lays out its children in a two-dimensional table with all table fields ...">wxGridSizer</a>.  </p>
-<p>Since wxWidgets 2.5.0, <a class="el" href="classwx_flex_grid_sizer.html" title="A flex grid sizer is a sizer which lays out its children in a two-dimensional table with all table fi...">wxFlexGridSizer</a> can also size items equally in one direction but unequally ("flexibly") in the other. If the sizer is only flexible in one direction (this can be changed using <a class="el" href="classwx_flex_grid_sizer.html#a5c206d868699abb1e550cdbaa6cb19bc" title="Specifies whether the sizer should flexibly resize its columns, rows, or both.">wxFlexGridSizer::SetFlexibleDirection</a>), it needs to be decided how the sizer should grow in the other ("non-flexible") direction in order to fill the available space. The <a class="el" href="classwx_flex_grid_sizer.html#a24c64f822320fa04e34c21ddde7260b9" title="Specifies how the sizer should grow in the non-flexible direction if there is one (so SetFlexibleDire...">wxFlexGridSizer::SetNonFlexibleGrowMode()</a> method serves this purpose.</p>
+<div class="textblock"><p>A flex grid sizer is a sizer which lays out its children in a two-dimensional table with all table fields in one row having the same height and all fields in one column having the same width, but all rows or all columns are not necessarily the same height or width as in the <a class="el" href="classwx_grid_sizer.html" title="グリッドサイザーは子コントロールを 2 次元の表にレイアウトするサイザーで、表中のセルはすべて同じ大きさを持ちます。">wxGridSizer</a>.  </p>
+<p>Since wxWidgets 2.5.0, <a class="el" href="classwx_flex_grid_sizer.html" title="可変グリッドサイザーは子コントロールを 2 次元の表にレイアウトするサイザーです。同じ行中のセルは同じ高さを持ち、同じ列中のセルは同じ幅を持ちますが、すべての行と列が wxGridSizer のように同じ高さや幅を持つ必要はありません。">wxFlexGridSizer</a> can also size items equally in one direction but unequally ("flexibly") in the other. If the sizer is only flexible in one direction (this can be changed using <a class="el" href="classwx_flex_grid_sizer.html#a5c206d868699abb1e550cdbaa6cb19bc" title="Specifies whether the sizer should flexibly resize its columns, rows, or both.">wxFlexGridSizer::SetFlexibleDirection</a>), it needs to be decided how the sizer should grow in the other ("non-flexible") direction in order to fill the available space. The <a class="el" href="classwx_flex_grid_sizer.html#a24c64f822320fa04e34c21ddde7260b9" title="Specifies how the sizer should grow in the non-flexible direction if there is one (so SetFlexibleDire...">wxFlexGridSizer::SetNonFlexibleGrowMode()</a> method serves this purpose.</p>
 <h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__winlayout.html">Window Layout</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_sizer.html" title="wxSizer is the abstract base class used for laying out subwindows in a window.">wxSizer</a>, <a class="el" href="overview_sizer.html">Sizers Overview</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__winlayout.html">Window Layout</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a>, <a class="el" href="overview_sizer.html">Sizers Overview</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
@@ -167,13 +167,13 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This method is abstract and has to be overwritten by any derived class.    <a href="#add516aeac6cf56faef4cefd53542bba2"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_flex_grid_sizer.html#a1b4a8cb492c6d89e3e3755c9b8d31f03">wxFlexGridSizer</a> (int cols, int vgap, int hgap)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><a class="el" href="classwx_flex_grid_sizer.html" title="A flex grid sizer is a sizer which lays out its children in a two-dimensional table with all table fi...">wxFlexGridSizer</a> constructors.    <a href="#a1b4a8cb492c6d89e3e3755c9b8d31f03"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><a class="el" href="classwx_flex_grid_sizer.html" title="可変グリッドサイザーは子コントロールを 2 次元の表にレイアウトするサイザーです。同じ行中のセルは同じ高さを持ち、同じ列中のセルは同じ幅を持ちますが、すべての行と列が wxGridSizer のように同じ高さや幅を持つ必要はありません。">wxFlexGridSizer</a> constructors.    <a href="#a1b4a8cb492c6d89e3e3755c9b8d31f03"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_flex_grid_sizer.html#a4c2fef6d9eca9c1d3ee3ee0ef41a4307">wxFlexGridSizer</a> (int cols, const <a class="el" href="classwx_size.html">wxSize</a> &amp;gap=<a class="el" href="classwx_size.html">wxSize</a>(0, 0))</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><a class="el" href="classwx_flex_grid_sizer.html" title="A flex grid sizer is a sizer which lays out its children in a two-dimensional table with all table fi...">wxFlexGridSizer</a> constructors.    <a href="#a4c2fef6d9eca9c1d3ee3ee0ef41a4307"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><a class="el" href="classwx_flex_grid_sizer.html" title="可変グリッドサイザーは子コントロールを 2 次元の表にレイアウトするサイザーです。同じ行中のセルは同じ高さを持ち、同じ列中のセルは同じ幅を持ちますが、すべての行と列が wxGridSizer のように同じ高さや幅を持つ必要はありません。">wxFlexGridSizer</a> constructors.    <a href="#a4c2fef6d9eca9c1d3ee3ee0ef41a4307"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_flex_grid_sizer.html#a12b3b94cf1fe8ea687c74c84b8eb892f">wxFlexGridSizer</a> (int rows, int cols, int vgap, int hgap)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><a class="el" href="classwx_flex_grid_sizer.html" title="A flex grid sizer is a sizer which lays out its children in a two-dimensional table with all table fi...">wxFlexGridSizer</a> constructors.    <a href="#a12b3b94cf1fe8ea687c74c84b8eb892f"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><a class="el" href="classwx_flex_grid_sizer.html" title="可変グリッドサイザーは子コントロールを 2 次元の表にレイアウトするサイザーです。同じ行中のセルは同じ高さを持ち、同じ列中のセルは同じ幅を持ちますが、すべての行と列が wxGridSizer のように同じ高さや幅を持つ必要はありません。">wxFlexGridSizer</a> constructors.    <a href="#a12b3b94cf1fe8ea687c74c84b8eb892f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_flex_grid_sizer.html#a49c35e0580fec338a47c5f0f348515e7">wxFlexGridSizer</a> (int rows, int cols, const <a class="el" href="classwx_size.html">wxSize</a> &amp;gap)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><a class="el" href="classwx_flex_grid_sizer.html" title="A flex grid sizer is a sizer which lays out its children in a two-dimensional table with all table fi...">wxFlexGridSizer</a> constructors.    <a href="#a49c35e0580fec338a47c5f0f348515e7"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><a class="el" href="classwx_flex_grid_sizer.html" title="可変グリッドサイザーは子コントロールを 2 次元の表にレイアウトするサイザーです。同じ行中のセルは同じ高さを持ち、同じ列中のセルは同じ幅を持ちますが、すべての行と列が wxGridSizer のように同じ高さや幅を持つ必要はありません。">wxFlexGridSizer</a> constructors.    <a href="#a49c35e0580fec338a47c5f0f348515e7"></a><br/></td></tr>
 </table>
 
 <p><a href="classwx_flex_grid_sizer-members.html">List of all members.</a></p>
@@ -209,7 +209,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p><a class="el" href="classwx_flex_grid_sizer.html" title="A flex grid sizer is a sizer which lays out its children in a two-dimensional table with all table fi...">wxFlexGridSizer</a> constructors.  </p>
+<p><a class="el" href="classwx_flex_grid_sizer.html" title="可変グリッドサイザーは子コントロールを 2 次元の表にレイアウトするサイザーです。同じ行中のセルは同じ高さを持ち、同じ列中のセルは同じ幅を持ちますが、すべての行と列が wxGridSizer のように同じ高さや幅を持つ必要はありません。">wxFlexGridSizer</a> constructors.  </p>
 <p>Please see <a class="el" href="classwx_grid_sizer.html#a54163c431608c0cbe6c74c9009ef1ca2" title="wxGridSizer constructors.">wxGridSizer::wxGridSizer</a> documentation.</p>
 <dl class="since"><dt><b>Since:</b></dt><dd>2.9.1 (except for the four argument overload)  </dd></dl>
 
@@ -240,7 +240,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p><a class="el" href="classwx_flex_grid_sizer.html" title="A flex grid sizer is a sizer which lays out its children in a two-dimensional table with all table fi...">wxFlexGridSizer</a> constructors.  </p>
+<p><a class="el" href="classwx_flex_grid_sizer.html" title="可変グリッドサイザーは子コントロールを 2 次元の表にレイアウトするサイザーです。同じ行中のセルは同じ高さを持ち、同じ列中のセルは同じ幅を持ちますが、すべての行と列が wxGridSizer のように同じ高さや幅を持つ必要はありません。">wxFlexGridSizer</a> constructors.  </p>
 <p>Please see <a class="el" href="classwx_grid_sizer.html#a54163c431608c0cbe6c74c9009ef1ca2" title="wxGridSizer constructors.">wxGridSizer::wxGridSizer</a> documentation.</p>
 <dl class="since"><dt><b>Since:</b></dt><dd>2.9.1 (except for the four argument overload)  </dd></dl>
 
@@ -283,7 +283,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p><a class="el" href="classwx_flex_grid_sizer.html" title="A flex grid sizer is a sizer which lays out its children in a two-dimensional table with all table fi...">wxFlexGridSizer</a> constructors.  </p>
+<p><a class="el" href="classwx_flex_grid_sizer.html" title="可変グリッドサイザーは子コントロールを 2 次元の表にレイアウトするサイザーです。同じ行中のセルは同じ高さを持ち、同じ列中のセルは同じ幅を持ちますが、すべての行と列が wxGridSizer のように同じ高さや幅を持つ必要はありません。">wxFlexGridSizer</a> constructors.  </p>
 <p>Please see <a class="el" href="classwx_grid_sizer.html#a54163c431608c0cbe6c74c9009ef1ca2" title="wxGridSizer constructors.">wxGridSizer::wxGridSizer</a> documentation.</p>
 <dl class="since"><dt><b>Since:</b></dt><dd>2.9.1 (except for the four argument overload)  </dd></dl>
 
@@ -320,7 +320,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p><a class="el" href="classwx_flex_grid_sizer.html" title="A flex grid sizer is a sizer which lays out its children in a two-dimensional table with all table fi...">wxFlexGridSizer</a> constructors.  </p>
+<p><a class="el" href="classwx_flex_grid_sizer.html" title="可変グリッドサイザーは子コントロールを 2 次元の表にレイアウトするサイザーです。同じ行中のセルは同じ高さを持ち、同じ列中のセルは同じ幅を持ちますが、すべての行と列が wxGridSizer のように同じ高さや幅を持つ必要はありません。">wxFlexGridSizer</a> constructors.  </p>
 <p>Please see <a class="el" href="classwx_grid_sizer.html#a54163c431608c0cbe6c74c9009ef1ca2" title="wxGridSizer constructors.">wxGridSizer::wxGridSizer</a> documentation.</p>
 <dl class="since"><dt><b>Since:</b></dt><dd>2.9.1 (except for the four argument overload)  </dd></dl>
 
@@ -353,7 +353,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Specifies that column <em>idx</em> (starting from zero) should be grown if there is extra space available to the sizer.  </p>
-<p>The <em>proportion</em> parameter has the same meaning as the stretch factor for the sizers (see <a class="el" href="classwx_box_sizer.html" title="The basic idea behind a box sizer is that windows will most often be laid out in rather simple basic ...">wxBoxSizer</a>) except that if all proportions are 0, then all columns are resized equally (instead of not being resized at all).</p>
+<p>The <em>proportion</em> parameter has the same meaning as the stretch factor for the sizers (see <a class="el" href="classwx_box_sizer.html" title="ボックスサイザーの基本的な考え方は、ほとんどの場合ウィンドウは とても単純で基本的な配置、よくあるのは行や列、またはその階層内にレイアウトされるという考えです。">wxBoxSizer</a>) except that if all proportions are 0, then all columns are resized equally (instead of not being resized at all).</p>
 <p>Notice that the column must not be already growable, if you need to change the proportion you must call <a class="el" href="classwx_flex_grid_sizer.html#aa25bb73aba1e3bba89ab65854692026b" title="Specifies that the idx column index is no longer growable.">RemoveGrowableCol()</a> first and then make it growable (with a different proportion) again. You can use <a class="el" href="classwx_flex_grid_sizer.html#a04d611af7165db02e9971f9b19fad799" title="Returns true if column idx is growable.">IsColGrowable()</a> to check whether a column is already growable.  </p>
 
 </div>

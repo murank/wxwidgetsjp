@@ -311,8 +311,8 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">parent</td><td>Parent window. Must not be <span class="literal">NULL</span>.  </td></tr>
     <tr><td class="paramname">id</td><td>Window identifier. The value wxID_ANY indicates a default value.  </td></tr>
     <tr><td class="paramname">value</td><td>Initial selection string. An empty string indicates no selection. Notice that for the controls with <code>wxCB_READONLY</code> style this string must be one of the valid choices if it is not empty.  </td></tr>
-    <tr><td class="paramname">pos</td><td>Window position. If <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="Global instance of a wxPoint initialized with values (-1,-1).">wxDefaultPosition</a> is specified then a default position is chosen.  </td></tr>
-    <tr><td class="paramname">size</td><td>Window size. If <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="Global instance of a wxSize object initialized to (-1,-1).">wxDefaultSize</a> is specified then the window is sized appropriately.  </td></tr>
+    <tr><td class="paramname">pos</td><td>Window position. If <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="(-1,-1) に初期化された wxPoint のグルーバルインスタンス。">wxDefaultPosition</a> is specified then a default position is chosen.  </td></tr>
+    <tr><td class="paramname">size</td><td>Window size. If <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="(-1,-1) に初期化された wxSize のグルーバルインスタンス。">wxDefaultSize</a> is specified then the window is sized appropriately.  </td></tr>
     <tr><td class="paramname">n</td><td>Number of strings with which to initialise the control.  </td></tr>
     <tr><td class="paramname">choices</td><td>An array of strings with which to initialise the control.  </td></tr>
     <tr><td class="paramname">style</td><td>Window style. See <a class="el" href="classwx_combo_box.html" title="A combobox is like a combination of an edit control and a listbox.">wxComboBox</a>.  </td></tr>
@@ -701,7 +701,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Same as <a class="el" href="classwx_text_entry.html#a396c9bc8cbf6adb7e69dcf035d31efbe" title="Returns the insertion point, or cursor, position.">wxTextEntry::GetInsertionPoint()</a>.  </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Under wxMSW, this function always returns 0 if the combobox doesn't have the focus.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Under wxMSW, this function always returns 0 if the combobox doesn't have the focus.  </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classwx_text_entry.html#a396c9bc8cbf6adb7e69dcf035d31efbe">wxTextEntry</a>.</p>
 
@@ -1011,7 +1011,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Sets the text for the combobox text field.  </p>
 <p>Notice that this method will generate a <code>wxEVT_COMMAND_TEXT_UPDATED</code> event, use <a class="el" href="classwx_text_entry.html#a8c52ab71f51c8f80556c2c8e763cbca1" title="テキストコントロールの新しい値を設定します。">wxTextEntry::ChangeValue()</a> if this is undesirable.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>For a combobox with <code>wxCB_READONLY</code> style the string must be in the combobox choices list, otherwise the call to <a class="el" href="classwx_combo_box.html#aa784b34330fee87b27cbe64bf0ce41b6" title="Sets the text for the combobox text field.">SetValue()</a> is ignored. This is case insensitive.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>For a combobox with <code>wxCB_READONLY</code> style the string must be in the combobox choices list, otherwise the call to <a class="el" href="classwx_combo_box.html#aa784b34330fee87b27cbe64bf0ce41b6" title="Sets the text for the combobox text field.">SetValue()</a> is ignored. This is case insensitive.</dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">text</td><td>The text to set.  </td></tr>

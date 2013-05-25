@@ -8,13 +8,7 @@
 
 <H2>wxSizer</H2>
 <P>
-
-wxSizer is the abstract base class used for laying out subwindows in a window. You
-cannot use wxSizer directly; instead, you will have to use one of the sizer
-classes derived from it. Currently there are <A HREF="wx_wxboxsizer.html#wxboxsizer">wxBoxSizer</A>, 
-<A HREF="wx_wxstaticboxsizer.html#wxstaticboxsizer">wxStaticBoxSizer</A>,
-<A HREF="wx_wxgridsizer.html#wxgridsizer">wxGridSizer</A> 
-<A HREF="wx_wxflexgridsizer.html#wxflexgridsizer">wxFlexGridSizer</A> and <A HREF="wx_wxgridbagsizer.html#wxgridbagsizer">wxGridBagSizer</A>.<P>
+wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。You cannot use wxSizer directly; instead, you will have to use one of the sizer classes derived from it. Currently there are <A HREF="wx_wxboxsizer.html#wxboxsizer">wxBoxSizer</A>, <A HREF="wx_wxstaticboxsizer.html#wxstaticboxsizer">wxStaticBoxSizer</A>, <A HREF="wx_wxgridsizer.html#wxgridsizer">wxGridSizer</A> <A HREF="wx_wxflexgridsizer.html#wxflexgridsizer">wxFlexGridSizer</A> and <A HREF="wx_wxgridbagsizer.html#wxgridbagsizer">wxGridBagSizer</A>.<P>
 
 The layout algorithm used by sizers in wxWidgets is closely related to layout
 in other GUI toolkits, such as Java's AWT, the GTK toolkit or the Qt toolkit. It is
@@ -27,12 +21,7 @@ children, which can be normal windows, empty space or other sizers, so that
 a hierarchy of sizers can be constructed. Note that wxSizer does not derive from wxWindow
 and thus does not interfere with tab ordering and requires very little resources compared
 to a real window on screen.<P>
-
-What makes sizers so well fitted for use in wxWidgets is the fact that every control
-reports its own minimal size and the algorithm can handle differences in font sizes
-or different window (dialog item) sizes on different platforms without problems. If e.g.
-the standard font as well as the overall design of Motif widgets requires more space than
-on Windows, the initial dialog size will automatically be bigger on Motif than on Windows.<P>
+サイザーが wxWidgets に非常に適している理由は、すべてのコントロールが自身の最小サイズを通知し、このアルゴリズムが異なるプラットフォームのフォントサイズやウィンドウ (ダイアログのアイテム) のサイズの違いを問題なく取り扱うことができるためです。If e.g. the standard font as well as the overall design of Motif widgets requires more space than on Windows, the initial dialog size will automatically be bigger on Motif than on Windows.<P>
 
 Sizers may also be used to control the layout of custom drawn items on the window.  The
 Add, Insert, and Prepend functions return a pointer to the newly added wxSizerItem. Just
@@ -57,7 +46,7 @@ capabilities for the various virtual methods.<P>
 
 &lt;wx/sizer.h&gt;<P>
 <B><FONT COLOR="#FF0000">参照</FONT></B><P>
-<A HREF="wx_sizeroverview.html#sizeroverview">Sizer overview</A><P>
+<A HREF="wx_sizeroverview.html#sizeroverview">サイザーの概要</A><P>
 <B><FONT COLOR="#FF0000">Members</FONT></B><P>
 
 <A HREF="#wxsizerwxsizer">wxSizer::wxSizer</A><BR>
@@ -126,10 +115,7 @@ The destructor.<P>
 <B><A HREF="wx_wxsizeritem.html#wxsizeritem">wxSizerItem</A>*</B> </B> <B>Add</B>(<B><A HREF="wx_wxsizer.html#wxsizer">wxSizer</A>* </B></B><I>sizer</I>, <B>const <A HREF="wx_wxsizerflags.html#wxsizerflags">wxSizerFlags</A>&amp; </B></B><I>flags</I>)<P>
 <B><A HREF="wx_wxsizeritem.html#wxsizeritem">wxSizerItem</A>*</B> </B> <B>Add</B>(<B><A HREF="wx_wxsizer.html#wxsizer">wxSizer</A>* </B></B><I>sizer</I>, <B>int </B><I>proportion = 0</I>, <B>int </B><I>flag = 0</I>, <B>int </B><I>border = 0</I>, <B><A HREF="wx_wxobject.html#wxobject">wxObject</A>* </B></B><I>userData = NULL</I>)<P>
 <B><A HREF="wx_wxsizeritem.html#wxsizeritem">wxSizerItem</A>*</B> </B> <B>Add</B>(<B>int </B><I>width</I>, <B>int </B><I>height</I>, <B>int </B><I>proportion = 0</I>, <B>int </B><I>flag = 0</I>, <B>int </B><I>border = 0</I>, <B><A HREF="wx_wxobject.html#wxobject">wxObject</A>* </B></B><I>userData = NULL</I>)<P>
-
-Appends a child to the sizer.  wxSizer itself is an abstract class, but the parameters are
-equivalent in the derived classes that you will instantiate to use it so they are described
-here:<P>
+サイザーに子コントロールを追加します。wxSizer itself is an abstract class, but the parameters are equivalent in the derived classes that you will instantiate to use it so they are described here:<P>
 <I>window</I><UL><UL>
 
 The window to be added to the sizer. Its initial size (either set explicitly by the

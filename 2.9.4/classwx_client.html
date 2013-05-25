@@ -208,7 +208,7 @@ Public Member Functions</h2></td></tr>
 <p>Tries to make a connection with a server by host (machine name under UNIX - use 'localhost' for same machine; ignored when using native DDE in Windows), service name and topic string.  </p>
 <p>If the server allows a connection, a <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a> object will be returned. The type of <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a> returned can be altered by overriding the <a class="el" href="classwx_client.html#a71328614681f8f50de8a561b5dcfbbde" title="Called by MakeConnection(), by default this simply returns a new wxConnection object.">OnMakeConnection()</a> member to return your own derived connection object.</p>
 <p>Under Unix, the service name may be either an integer port identifier in which case an Internet domain socket will be used for the communications, or a valid file name (which shouldn't exist and will be deleted afterwards) in which case a Unix domain socket is created.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Using Internet domain sockets is extremely insecure for IPC as there is absolutely no access control for them, use Unix domain sockets whenever possible!  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Using Internet domain sockets is extremely insecure for IPC as there is absolutely no access control for them, use Unix domain sockets whenever possible!  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxClient::OnMakeConnection" ref="a71328614681f8f50de8a561b5dcfbbde" args="()" -->

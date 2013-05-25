@@ -181,7 +181,7 @@ Making Your Own Reference Counted Class</h2>
     <span class="keywordflow">return</span> <a class="code" href="group__group__funcmacro__rtti.html#gaa3a4a52303d4a1fa3d3346e762638c64" title="Same as static_cast&lt;T&gt;(x) if the compiler supports static cast or (T)x for old compilers.">wx_static_cast</a>(MyClassRefData*, m_refData);
 }
 </pre></div><p>In fact, any time you need to read the data from your wxObject-derived class, you will need to call this function.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Any time you need to actually modify the data placed inside your <a class="el" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes.">wxObject</a> derived class, you must first call the <a class="el" href="classwx_object.html#a74b40e42d19a4b9e9bec0b57d62a5725" title="This is the same of AllocExclusive() but this method is public.">wxObject::UnShare()</a> function to ensure that the modifications won't affect other instances which are eventually sharing your object's data.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Any time you need to actually modify the data placed inside your <a class="el" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes.">wxObject</a> derived class, you must first call the <a class="el" href="classwx_object.html#a74b40e42d19a4b9e9bec0b57d62a5725" title="This is the same of AllocExclusive() but this method is public.">wxObject::UnShare()</a> function to ensure that the modifications won't affect other instances which are eventually sharing your object's data.  </dd></dl>
 </div></div><!-- window showing the filter options -->
 
 <div id="MSearchSelectWindow"

@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>wxWidgets: wxWidgets: Environment Variables</title>
+<title>wxWidgets: wxWidgets: 環境変数</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="custom_stylesheet.css" rel="stylesheet" type="text/css" />
@@ -114,15 +114,15 @@ function toggleVisibility(linkObj) {
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title">Environment Variables  </div>  </div>
+<div class="title">環境変数 </div>  </div>
 </div>
 <div class="contents">
-<div class="textblock"><p>This section describes all environment variables that affect execution of wxWidgets programs.</p>
+<div class="textblock"><p>この章では wxWidgets プログラムの実行に影響するすべての環境変数について述べます。</p>
 <table  class="doclist" border="1" cellspacing="0">
 <tr>
-<td><span class="itemdef">WXTRACE</span> </td><td>(Debug build only.) This variable can be set to a comma-separated list of trace masks used in wxLogTrace calls; <a class="el" href="classwx_log.html#a4c11ee23ce5264b6c5921a17610cda13" title="Add the mask to the list of allowed masks for wxLogTrace().">wxLog::AddTraceMask</a> is called for every mask in the list during wxWidgets initialization.  </td></tr>
+<td><span class="itemdef">WXTRACE</span> </td><td>(デバッグビルドのみ) この変数は wxLogTrace の呼び出しの中で使用されるトレースマスクのカンマ区切りリストを設定します; wxWidgets の初期化中にリスト内の各マスクに対して <a class="el" href="classwx_log.html#a4c11ee23ce5264b6c5921a17610cda13" title="wxLogTrace() の許可マスクのリストへマスクを追加します。">wxLog::AddTraceMask</a> が呼ばれます。 </td></tr>
 <tr>
-<td><span class="itemdef">WXPREFIX</span> </td><td>(Unix only.) Overrides installation prefix. Normally, the prefix is hard-coded and is the same as the value passed to <code>configure</code> via the <code>--prefix</code> switch when compiling the library (typically <code>/usr/local</code> or <code>/usr</code>). You can set WXPREFIX if you are for example distributing a binary version of an application and you don't know in advance where it will be installed.  </td></tr>
+<td><span class="itemdef">WXPREFIX</span> </td><td>(Unix のみ) インストールプレフィックスを上書きします。通常、プレフィックスはハードコーディングされており、ライブラリのコンパイル時に <code>--prefix</code> スイッチによって <code>configure</code> へ渡される値と同じです。 (普通は <code>/usr/local</code> か <code>/usr</code> です) 例えば、アプリケーションのバイナリを配布するときにどこへインストールされるか分からないような場合に WXPREFIX を設定することができます。 </td></tr>
 </table>
 </div></div><!-- window showing the filter options -->
 

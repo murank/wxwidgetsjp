@@ -171,7 +171,7 @@ data.<a class="code" href="classwx_colour_data.html#a2e5e80d982cbcb17cac113a72ef
 }
 
 <a class="code" href="classwx_colour_dialog.html" title="This class represents the colour chooser dialog.">wxColourDialog</a> dialog(<span class="keyword">this</span>, &amp;data);
-<span class="keywordflow">if</span> (dialog.ShowModal() == <a class="code" href="defs_8h.html#ac66d0a09761e7d86b2ac0b2e0c6a8cbbaeeb1bdf97306d7f0fdffb62c8af3d02f" title="Standard button and menu IDs.">wxID_OK</a>)
+<span class="keywordflow">if</span> (dialog.ShowModal() == <a class="code" href="defs_8h.html#ac66d0a09761e7d86b2ac0b2e0c6a8cbbaeeb1bdf97306d7f0fdffb62c8af3d02f" title="標準ボタンとメニュー ID。">wxID_OK</a>)
 {
     <a class="code" href="classwx_colour_data.html" title="This class holds a variety of information related to colour dialogs.">wxColourData</a> retData = dialog.GetColourData();
     <a class="code" href="classwx_colour.html" title="A colour is an object representing a combination of Red, Green, and Blue (RGB) intensity values...">wxColour</a> col = retData.<a class="code" href="classwx_colour_data.html#ac9eb69a80b6c0638284f6f55966f2ce4" title="Gets the current colour associated with the colour dialog.">GetColour</a>();
@@ -202,7 +202,7 @@ data.<a class="code" href="classwx_font_data.html#a24fd79c0a3eb6764cc7d525acba9a
 data.<a class="code" href="classwx_font_data.html#a52e4308bf17d933b5b2948f6eb469608" title="Sets the colour that will be used for the font foreground colour.">SetColour</a>(canvasTextColour);
 
 <a class="code" href="classwx_font_dialog.html" title="This class represents the font chooser dialog.">wxFontDialog</a> dialog(<span class="keyword">this</span>, &amp;data);
-<span class="keywordflow">if</span> (dialog.ShowModal() == <a class="code" href="defs_8h.html#ac66d0a09761e7d86b2ac0b2e0c6a8cbbaeeb1bdf97306d7f0fdffb62c8af3d02f" title="Standard button and menu IDs.">wxID_OK</a>)
+<span class="keywordflow">if</span> (dialog.ShowModal() == <a class="code" href="defs_8h.html#ac66d0a09761e7d86b2ac0b2e0c6a8cbbaeeb1bdf97306d7f0fdffb62c8af3d02f" title="標準ボタンとメニュー ID。">wxID_OK</a>)
 {
     <a class="code" href="classwx_font_data.html" title="This class holds a variety of information related to font dialogs.">wxFontData</a> retData = dialog.GetFontData();
     canvasFont = retData.<a class="code" href="classwx_font_data.html#a5ecc1a48c1a783fef87c26f7ea825c0d" title="Gets the font chosen by the user if the user pressed OK (wxFontDialog::ShowModal() returned wxID_OK)...">GetChosenFont</a>();

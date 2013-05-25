@@ -157,10 +157,10 @@ Writing a generic widget</h3>
     MySpecialWidget() { Init(); }
 
     MySpecialWidget(<a class="code" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> *parent,
-                    <a class="code" href="windowid_8h.html#ae8091432cc2cb2485d45f2302fb51133" title="The type of unique identifiers (ID) used for wxWindow-derived classes.">wxWindowID</a> winid,
+                    <a class="code" href="windowid_8h.html#ae8091432cc2cb2485d45f2302fb51133" title="wxWindow を継承したクラスで使用される一意の識別子 (ID) の型。">wxWindowID</a> winid,
                     <span class="keyword">const</span> <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>&amp; label,
-                    <span class="keyword">const</span> <a class="code" href="classwx_point.html" title="wxPoint は図形操作のための有用なデータ構造です。">wxPoint</a>&amp; pos = <a class="code" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="Global instance of a wxPoint initialized with values (-1,-1).">wxDefaultPosition</a>,
-                    <span class="keyword">const</span> <a class="code" href="classwx_size.html" title="wxSize は図形操作のための有用なデータ構造です。">wxSize</a>&amp; size = <a class="code" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="Global instance of a wxSize object initialized to (-1,-1).">wxDefaultSize</a>,
+                    <span class="keyword">const</span> <a class="code" href="classwx_point.html" title="wxPoint は図形操作のための有用なデータ構造です。">wxPoint</a>&amp; pos = <a class="code" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="(-1,-1) に初期化された wxPoint のグルーバルインスタンス。">wxDefaultPosition</a>,
+                    <span class="keyword">const</span> <a class="code" href="classwx_size.html" title="wxSize は図形操作のための有用なデータ構造です。">wxSize</a>&amp; size = <a class="code" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="(-1,-1) に初期化された wxSize のグルーバルインスタンス。">wxDefaultSize</a>,
                     <span class="keywordtype">long</span> style = SWS_DEFAULT_STYLE,
                     <span class="keyword">const</span> <a class="code" href="classwx_validator.html" title="wxValidator はコントロールクラスとアプリケーションデータを仲介する、バリデータクラスファミリーの基底クラスです。">wxValidator</a>&amp; val = <a class="code" href="validate_8h.html#af1e90d8aa1824fd2ce4024ef7e40703c" title='An empty, "null" wxValidator instance.'>wxDefaultValidator</a>,
                     <span class="keyword">const</span> <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>&amp; name = <span class="stringliteral">"MySpecialWidget"</span>)
@@ -171,10 +171,10 @@ Writing a generic widget</h3>
     }
 
     <span class="keywordtype">bool</span> <a class="code" href="classwx_control.html#abe23789c94c86907463a0e8434be822a">Create</a>(<a class="code" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> *parent,
-                <a class="code" href="windowid_8h.html#ae8091432cc2cb2485d45f2302fb51133" title="The type of unique identifiers (ID) used for wxWindow-derived classes.">wxWindowID</a> winid,
+                <a class="code" href="windowid_8h.html#ae8091432cc2cb2485d45f2302fb51133" title="wxWindow を継承したクラスで使用される一意の識別子 (ID) の型。">wxWindowID</a> winid,
                 <span class="keyword">const</span> <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>&amp; label,
-                <span class="keyword">const</span> <a class="code" href="classwx_point.html" title="wxPoint は図形操作のための有用なデータ構造です。">wxPoint</a>&amp; pos = <a class="code" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="Global instance of a wxPoint initialized with values (-1,-1).">wxDefaultPosition</a>,
-                <span class="keyword">const</span> <a class="code" href="classwx_size.html" title="wxSize は図形操作のための有用なデータ構造です。">wxSize</a>&amp; size = <a class="code" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="Global instance of a wxSize object initialized to (-1,-1).">wxDefaultSize</a>,
+                <span class="keyword">const</span> <a class="code" href="classwx_point.html" title="wxPoint は図形操作のための有用なデータ構造です。">wxPoint</a>&amp; pos = <a class="code" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="(-1,-1) に初期化された wxPoint のグルーバルインスタンス。">wxDefaultPosition</a>,
+                <span class="keyword">const</span> <a class="code" href="classwx_size.html" title="wxSize は図形操作のための有用なデータ構造です。">wxSize</a>&amp; size = <a class="code" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="(-1,-1) に初期化された wxSize のグルーバルインスタンス。">wxDefaultSize</a>,
                 <span class="keywordtype">long</span> style = SWS_DEFAULT_STYLE,
                 <span class="keyword">const</span> <a class="code" href="classwx_validator.html" title="wxValidator はコントロールクラスとアプリケーションデータを仲介する、バリデータクラスファミリーの基底クラスです。">wxValidator</a>&amp; val = <a class="code" href="validate_8h.html#af1e90d8aa1824fd2ce4024ef7e40703c" title='An empty, "null" wxValidator instance.'>wxDefaultValidator</a>,
                 <span class="keyword">const</span> <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>&amp; name = wxCollapsiblePaneNameStr);

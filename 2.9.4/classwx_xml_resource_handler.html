@@ -134,9 +134,9 @@ function toggleVisibility(linkObj) {
 <area shape="rect" id="node5" href="classwx_sizer_xml_handler.html" title="wxSizerXmlHandler" alt="" coords="17,166,151,197"/><area shape="rect" id="node2" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="47,6,121,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classwx_sizer_xml_handler.html">wxSizerXmlHandler</a> is a class for resource handlers capable of creating a <a class="el" href="classwx_sizer.html" title="wxSizer is the abstract base class used for laying out subwindows in a window.">wxSizer</a> object from an XML node.  </p>
+<div class="textblock"><p><a class="el" href="classwx_sizer_xml_handler.html">wxSizerXmlHandler</a> is a class for resource handlers capable of creating a <a class="el" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a> object from an XML node.  </p>
 <p><a class="el" href="classwx_xml_resource_handler.html" title="wxSizerXmlHandler is a class for resource handlers capable of creating a wxSizer object from an XML n...">wxXmlResourceHandler</a> is an abstract base class for resource handlers capable of creating a control from an XML node.</p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_xml_resource_handler.html" title="wxSizerXmlHandler is a class for resource handlers capable of creating a wxSizer object from an XML n...">wxXmlResourceHandler</a>, <a class="el" href="classwx_sizer.html" title="wxSizer is the abstract base class used for laying out subwindows in a window.">wxSizer</a></dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_xml_resource_handler.html" title="wxSizerXmlHandler is a class for resource handlers capable of creating a wxSizer object from an XML n...">wxXmlResourceHandler</a>, <a class="el" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a></dd></dl>
 <h2></h2>
 <div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxxrc">wxXRC</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__xrc.html">XML Based Resource System (XRC)</a></span></div><p>See <a class="el" href="overview_xrc.html">XML Based Resource System (XRC)</a> for details.</p>
 <h2></h2>
@@ -334,7 +334,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns <span class="literal">true</span> if it understands this node and can create a resource from it, <span class="literal">false</span> otherwise.  </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>You must not call any <a class="el" href="classwx_xml_resource_handler.html" title="wxSizerXmlHandler is a class for resource handlers capable of creating a wxSizer object from an XML n...">wxXmlResourceHandler</a> methods except <a class="el" href="classwx_xml_resource_handler.html#a4ceba613e1ec6261be315d148de6bc46" title="Convenience function.">IsOfClass()</a> from this method! The instance is not yet initialized with node data at the time <a class="el" href="classwx_xml_resource_handler.html#af0c078bc565c86b6ba33f860bfc053ed" title="Returns true if it understands this node and can create a resource from it, false otherwise...">CanHandle()</a> is called and it is only safe to operate on node directly or to call <a class="el" href="classwx_xml_resource_handler.html#a4ceba613e1ec6261be315d148de6bc46" title="Convenience function.">IsOfClass()</a>.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>You must not call any <a class="el" href="classwx_xml_resource_handler.html" title="wxSizerXmlHandler is a class for resource handlers capable of creating a wxSizer object from an XML n...">wxXmlResourceHandler</a> methods except <a class="el" href="classwx_xml_resource_handler.html#a4ceba613e1ec6261be315d148de6bc46" title="Convenience function.">IsOfClass()</a> from this method! The instance is not yet initialized with node data at the time <a class="el" href="classwx_xml_resource_handler.html#af0c078bc565c86b6ba33f860bfc053ed" title="Returns true if it understands this node and can create a resource from it, false otherwise...">CanHandle()</a> is called and it is only safe to operate on node directly or to call <a class="el" href="classwx_xml_resource_handler.html#a4ceba613e1ec6261be315d148de6bc46" title="Convenience function.">IsOfClass()</a>.  </dd></dl>
 
 <p>Implemented in <a class="el" href="classwx_sizer_xml_handler.html#a084c61f000ada8809952c75d2b2602f6">wxSizerXmlHandler</a>.</p>
 
@@ -838,7 +838,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns an icon bundle.  </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Bundles can be loaded either with stock IDs or from files that contain more than one image (e.g. Windows icon files). If a file contains only single image, a bundle with only one icon will be created.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Bundles can be loaded either with stock IDs or from files that contain more than one image (e.g. Windows icon files). If a file contains only single image, a bundle with only one icon will be created.</dd></dl>
 <dl class="since"><dt><b>Since:</b></dt><dd>2.9.0  </dd></dl>
 
 </div>

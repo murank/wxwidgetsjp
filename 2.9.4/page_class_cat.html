@@ -188,12 +188,12 @@ Window Layout</h2>
 <p>Related Overviews: <a class="el" href="overview_sizer.html">Sizers Overview</a></p>
 <p>These are the classes relevant to sizer-based layout:</p>
 <ul>
-<li><a class="el" href="classwx_sizer.html" title="wxSizer is the abstract base class used for laying out subwindows in a window.">wxSizer</a>: Abstract base class  </li>
-<li><a class="el" href="classwx_box_sizer.html" title="The basic idea behind a box sizer is that windows will most often be laid out in rather simple basic ...">wxBoxSizer</a>: A sizer for laying out windows in a row or column  </li>
-<li><a class="el" href="classwx_grid_sizer.html" title="A grid sizer is a sizer which lays out its children in a two-dimensional table with all table fields ...">wxGridSizer</a>: A sizer for laying out windows in a grid with all fields having the same size  </li>
-<li><a class="el" href="classwx_flex_grid_sizer.html" title="A flex grid sizer is a sizer which lays out its children in a two-dimensional table with all table fi...">wxFlexGridSizer</a>: A sizer for laying out windows in a flexible grid  </li>
-<li><a class="el" href="classwx_grid_bag_sizer.html" title="A wxSizer that can lay out items in a virtual grid like a wxFlexGridSizer but in this case explicit p...">wxGridBagSizer</a>: Another grid sizer that lets you specify the cell an item is in, and items can span rows and/or columns.  </li>
-<li><a class="el" href="classwx_static_box_sizer.html" title="wxStaticBoxSizer is a sizer derived from wxBoxSizer but adds a static box around the sizer...">wxStaticBoxSizer</a>: Same as <a class="el" href="classwx_box_sizer.html" title="The basic idea behind a box sizer is that windows will most often be laid out in rather simple basic ...">wxBoxSizer</a>, but with a surrounding static box  </li>
+<li><a class="el" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a>: Abstract base class  </li>
+<li><a class="el" href="classwx_box_sizer.html" title="ボックスサイザーの基本的な考え方は、ほとんどの場合ウィンドウは とても単純で基本的な配置、よくあるのは行や列、またはその階層内にレイアウトされるという考えです。">wxBoxSizer</a>: A sizer for laying out windows in a row or column  </li>
+<li><a class="el" href="classwx_grid_sizer.html" title="グリッドサイザーは子コントロールを 2 次元の表にレイアウトするサイザーで、表中のセルはすべて同じ大きさを持ちます。">wxGridSizer</a>: A sizer for laying out windows in a grid with all fields having the same size  </li>
+<li><a class="el" href="classwx_flex_grid_sizer.html" title="可変グリッドサイザーは子コントロールを 2 次元の表にレイアウトするサイザーです。同じ行中のセルは同じ高さを持ち、同じ列中のセルは同じ幅を持ちますが、すべての行と列が wxGridSizer のように同じ高さや幅を持つ必要はありません。">wxFlexGridSizer</a>: A sizer for laying out windows in a flexible grid  </li>
+<li><a class="el" href="classwx_grid_bag_sizer.html" title="wxFlexGridSizer のように子コントロールを仮想のグリッドに配置しますが、wxGBPosition を使用してコントロールを明示的に配置することが可能です。また、wxGBSpan を使用することで、複数の行または列にまたがってコントロールを配置することも可能です。">wxGridBagSizer</a>: Another grid sizer that lets you specify the cell an item is in, and items can span rows and/or columns.  </li>
+<li><a class="el" href="classwx_static_box_sizer.html" title="wxStaticBoxSizer は wxBoxSizer を継承したサイザーですが、サイザーの周囲にスタティックボックスを追加します。">wxStaticBoxSizer</a>: Same as <a class="el" href="classwx_box_sizer.html" title="ボックスサイザーの基本的な考え方は、ほとんどの場合ウィンドウは とても単純で基本的な配置、よくあるのは行や列、またはその階層内にレイアウトされるという考えです。">wxBoxSizer</a>, but with a surrounding static box  </li>
 <li><a class="el" href="classwx_wrap_sizer.html" title="A wrap sizer lays out its items in a single line, like a box sizer -- as long as there is space avail...">wxWrapSizer</a>: A sizer which wraps its child controls as size permits</li>
 </ul>
 <p>Other layout classes:</p>
@@ -206,7 +206,7 @@ Managed Windows</h2>
 <p>There are several types of window that are directly controlled by the window manager (such as MS Windows, or the Motif Window Manager). Frames and dialogs are similar in wxWidgets, but only dialogs may be modal.</p>
 <p>Related Overviews: <a class="el" href="overview_cmndlg.html">Common Dialogs</a></p>
 <ul>
-<li><a class="el" href="classwx_dialog.html" title="A dialog box is a window with a title bar and sometimes a system menu, which can be moved around the ...">wxDialog</a>: Dialog box  </li>
+<li><a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a>: Dialog box  </li>
 <li><a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a>: Normal frame  </li>
 <li><a class="el" href="classwx_m_d_i_child_frame.html" title="An MDI child frame is a frame that can only exist inside a wxMDIClientWindow, which is itself a child...">wxMDIChildFrame</a>: MDI child frame  </li>
 <li><a class="el" href="classwx_m_d_i_parent_frame.html" title="An MDI (Multiple Document Interface) parent frame is a window which can contain MDI child frames in i...">wxMDIParentFrame</a>: MDI parent frame  </li>
@@ -349,7 +349,7 @@ Common Dialogs</h2>
 <p>Common dialogs are ready-made dialog classes which are frequently used in an application.</p>
 <p>Related Overviews: <a class="el" href="overview_cmndlg.html">Common Dialogs</a></p>
 <ul>
-<li><a class="el" href="classwx_dialog.html" title="A dialog box is a window with a title bar and sometimes a system menu, which can be moved around the ...">wxDialog</a>: Base class for common dialogs  </li>
+<li><a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a>: Base class for common dialogs  </li>
 <li><a class="el" href="classwx_colour_dialog.html" title="This class represents the colour chooser dialog.">wxColourDialog</a>: Colour chooser dialog  </li>
 <li><a class="el" href="classwx_dir_dialog.html" title="This class represents the directory chooser dialog.">wxDirDialog</a>: Directory selector dialog  </li>
 <li><a class="el" href="classwx_file_dialog.html" title="This class represents the file chooser dialog.">wxFileDialog</a>: File selector dialog  </li>

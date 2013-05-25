@@ -1,17 +1,14 @@
 <HTML>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>Environment variables</title></head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>環境変数</title></head>
 
 <BODY BGCOLOR=#FFFFFF>
 <A NAME="envvars"></A><CENTER>
 <A HREF="wx_contents.html"><img align=center src="contents.gif" BORDER=0 ALT="Contents"></A> <A HREF="wx_overviews.html#overviews"><img align=center src="up.gif" BORDER=0 ALT="Up"></A> <A HREF="wx_wxauioverview.html#wxauioverview"><img align=center src="back.gif" BORDER=0 ALT="Previous"></A> <A HREF="wx_wxpython.html#wxpython"><img align=center src="forward.gif" BORDER=0 ALT="Next"></A> </CENTER><HR>
 
-<H2>Environment variables</H2>
+<H2>環境変数</H2>
 
-
-
-This section describes all environment variables that affect execution of
-wxWidgets programs.<P>
+この章では wxWidgets プログラムの実行に影響するすべての環境変数について述べます。<P>
 
 <TABLE>
 
@@ -20,13 +17,7 @@ wxWidgets programs.<P>
 </FONT></TD>
 
 <TD VALIGN=TOP>
-
-(Debug build only.)
-This variable can be set to a comma-separated list of trace masks used in
-<A HREF="wx_logfunctions.html#wxlogtrace">wxLogTrace</A> calls;
-<A HREF="wx_wxlog.html#wxlogaddtracemask">wxLog::AddTraceMask</A> is called for every mask
-in the list during wxWidgets initialization.
-
+(デバッグビルドのみ) この変数は <A HREF="wx_logfunctions.html#wxlogtrace">wxLogTrace</A> の呼び出しの中で使用されるトレースマスクのカンマ区切りリストを設定します; wxWidgets の初期化中にリスト内の各マスクに対して <A HREF="wx_wxlog.html#wxlogaddtracemask">wxLog::AddTraceMask</A> が呼ばれます。
 </FONT></TD></TR>
 <P>
 
@@ -35,15 +26,7 @@ in the list during wxWidgets initialization.
 </FONT></TD>
 
 <TD VALIGN=TOP>
-
-(Unix only.)
-Overrides installation prefix. Normally, the prefix
-is hard-coded and is the same as the value passed to <TT>configure</TT> via
-the <TT>--prefix</TT> switch when compiling the library (typically
-<TT>/usr/local</TT> or <TT>/usr</TT>). You can set WXPREFIX if you are for example
-distributing a binary version of an application and you don't know in advance
-where it will be installed.
-
+(Unix のみ) インストールプレフィックスを上書きします。通常、プレフィックスはハードコーディングされており、ライブラリのコンパイル時に <TT>--prefix</TT> スイッチによって <TT>configure</TT> へ渡される値と同じです。 (普通は <TT>/usr/local</TT> か <TT>/usr</TT> です) 例えば、アプリケーションのバイナリを配布するときにどこへインストールされるか分からないような場合に WXPREFIX を設定することができます。
 </FONT></TD></TR>
 <P>
 
@@ -52,11 +35,7 @@ where it will be installed.
 </FONT></TD>
 
 <TD VALIGN=TOP>
-
-(wxMGL only.)
-Sets MGL video mode. The value must be in form
-<I>width</I>x<I>height</I>-<I>depth</I>. The default is <TT>640x480-16</TT>.
-
+(wxMGL のみ) MGL ビデオモードを設定します。この値は <I>幅</I>x<I>高さ</I>-<I>色深度</I> の形式で指定する必要があります。デフォルトは <TT>640x480-16</TT> です。
 </FONT></TD></TR>
 <P>
 
@@ -65,10 +44,7 @@ Sets MGL video mode. The value must be in form
 </FONT></TD>
 
 <TD VALIGN=TOP>
-
-(wxMGL only.)
-Redirects stderr output to a file.
-
+(wxMGL のみ) 標準エラー出力をファイルへリダイレクトします。
 </FONT></TD></TR>
 <P>
 

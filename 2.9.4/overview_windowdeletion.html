@@ -144,7 +144,7 @@ Closing Windows</h2>
 <h2><a class="anchor" id="overview_windowdeletion_default"></a>
 
 Default Window Close Behaviour</h2>
-<p>The default close event handler for <a class="el" href="classwx_dialog.html" title="A dialog box is a window with a title bar and sometimes a system menu, which can be moved around the ...">wxDialog</a> simulates a Cancel command, generating a wxID_CANCEL event. Since the handler for this cancel event might itself call Close, there is a check for infinite looping. The default handler for wxID_CANCEL hides the dialog (if modeless) or calls EndModal(wxID_CANCEL) (if modal). In other words, by default, the dialog <em>is</em> not destroyed (it might have been created on the stack, so the assumption of dynamic creation cannot be made).</p>
+<p>The default close event handler for <a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> simulates a Cancel command, generating a wxID_CANCEL event. Since the handler for this cancel event might itself call Close, there is a check for infinite looping. The default handler for wxID_CANCEL hides the dialog (if modeless) or calls EndModal(wxID_CANCEL) (if modal). In other words, by default, the dialog <em>is</em> not destroyed (it might have been created on the stack, so the assumption of dynamic creation cannot be made).</p>
 <p>The default close event handler for <a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> destroys the frame using Destroy().</p>
 <h2><a class="anchor" id="overview_windowdeletion_menuexit"></a>
 
@@ -154,7 +154,7 @@ User Calls to Exit From a Menu</h2>
 <h2><a class="anchor" id="overview_windowdeletion_exitapp"></a>
 
 Exiting the Application Gracefully</h2>
-<p>A wxWidgets application automatically exits when the last top level window (<a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> or <a class="el" href="classwx_dialog.html" title="A dialog box is a window with a title bar and sometimes a system menu, which can be moved around the ...">wxDialog</a>), is destroyed. Put any application-wide cleanup code in <a class="el" href="classwx_app_console.html#a5ee60051c92b0b2933258799626a0485" title="Override this member function for any processing which needs to be done as the application is about t...">wxApp::OnExit</a> (this is a virtual function, not an event handler).</p>
+<p>A wxWidgets application automatically exits when the last top level window (<a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> or <a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a>), is destroyed. Put any application-wide cleanup code in <a class="el" href="classwx_app_console.html#a5ee60051c92b0b2933258799626a0485" title="Override this member function for any processing which needs to be done as the application is about t...">wxApp::OnExit</a> (this is a virtual function, not an event handler).</p>
 <h2><a class="anchor" id="overview_windowdeletion_deletion"></a>
 
 Automatic Deletion of Child Windows</h2>

@@ -5180,7 +5180,7 @@ Static Public Attributes</h2></td></tr>
 
         str.<a class="code" href="classwx_string.html#a9588b7f2684b9a6a924dc3746a2b2f8d" title="Similar to the standard function sprintf().">Printf</a>(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>(<span class="stringliteral">"%2$d %3$d %1$d"</span>), 1, 2, 3);
         <span class="comment">// str now contains "2 3 1"</span>
-</pre></div><dl class="note"><dt><b>Note:</b></dt><dd>This function will use a safe version of <em>vsprintf()</em> (usually called <em>vsnprintf()</em>) whenever available to always allocate the buffer of correct size. Unfortunately, this function is not available on all platforms and the dangerous <em>vsprintf()</em> will be used then which may lead to buffer overflows.  </dd></dl>
+</pre></div><dl class="note"><dt><b>注:</b></dt><dd>This function will use a safe version of <em>vsprintf()</em> (usually called <em>vsnprintf()</em>) whenever available to always allocate the buffer of correct size. Unfortunately, this function is not available on all platforms and the dangerous <em>vsprintf()</em> will be used then which may lead to buffer overflows.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxString::PrintfV" ref="a5670779cbafb35c454a6d7664b6a6064" args="(const wxString &amp;pszFormat, va_list argPtr)" -->

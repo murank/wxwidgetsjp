@@ -158,7 +158,7 @@ Setting Custom Popup for wxComboCtrl</h2>
         <span class="comment">// Create popup control</span>
         <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classwx_combo_ctrl.html#aab2390bd7650a56e3d2c243140d28f98" title="Creates the combo control for two-step construction.">Create</a>(<a class="code" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a>* parent)
         {
-            <span class="keywordflow">return</span> <a class="code" href="classwx_combo_ctrl.html#aab2390bd7650a56e3d2c243140d28f98" title="Creates the combo control for two-step construction.">wxListView::Create</a>(parent,1,<a class="code" href="classwx_point.html" title="wxPoint は図形操作のための有用なデータ構造です。">wxPoint</a>(0,0),<a class="code" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="Global instance of a wxSize object initialized to (-1,-1).">wxDefaultSize</a>);
+            <span class="keywordflow">return</span> <a class="code" href="classwx_combo_ctrl.html#aab2390bd7650a56e3d2c243140d28f98" title="Creates the combo control for two-step construction.">wxListView::Create</a>(parent,1,<a class="code" href="classwx_point.html" title="wxPoint は図形操作のための有用なデータ構造です。">wxPoint</a>(0,0),<a class="code" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="(-1,-1) に初期化された wxSize のグルーバルインスタンス。">wxDefaultSize</a>);
         }
 
         <span class="comment">// Return pointer to the created control</span>
@@ -462,8 +462,8 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramname">parent</td><td>Parent window. Must not be <span class="literal">NULL</span>.  </td></tr>
     <tr><td class="paramname">id</td><td>Window identifier. The value wxID_ANY indicates a default value.  </td></tr>
     <tr><td class="paramname">value</td><td>Initial selection string. An empty string indicates no selection.  </td></tr>
-    <tr><td class="paramname">pos</td><td>Window position. If <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="Global instance of a wxPoint initialized with values (-1,-1).">wxDefaultPosition</a> is specified then a default position is chosen.  </td></tr>
-    <tr><td class="paramname">size</td><td>Window size. If <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="Global instance of a wxSize object initialized to (-1,-1).">wxDefaultSize</a> is specified then the window is sized appropriately.  </td></tr>
+    <tr><td class="paramname">pos</td><td>Window position. If <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="(-1,-1) に初期化された wxPoint のグルーバルインスタンス。">wxDefaultPosition</a> is specified then a default position is chosen.  </td></tr>
+    <tr><td class="paramname">size</td><td>Window size. If <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="(-1,-1) に初期化された wxSize のグルーバルインスタンス。">wxDefaultSize</a> is specified then the window is sized appropriately.  </td></tr>
     <tr><td class="paramname">style</td><td>Window style. See <a class="el" href="classwx_combo_ctrl.html" title="A combo control is a generic combobox that allows totally custom popup.">wxComboCtrl</a>.  </td></tr>
     <tr><td class="paramname">validator</td><td>Window validator.  </td></tr>
     <tr><td class="paramname">name</td><td>Window name.</td></tr>
@@ -668,7 +668,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>This member function is not normally called in application code.  </p>
 <p>Instead, it can be implemented in a derived class to return default <a class="el" href="classwx_combo_popup.html" title="In order to use a custom popup with wxComboCtrl, an interface class must be derived from wxComboPopup...">wxComboPopup</a>, in case <em>popup</em> is <span class="literal">NULL</span>.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>If you have implemented <a class="el" href="classwx_combo_ctrl.html#a3ce1fce108f3a84216fa9983d6b89a37" title="Implement in a derived class to define what happens on dropdown button click.">OnButtonClick()</a> to do something else than show the popup, then <a class="el" href="classwx_combo_ctrl.html#a0df7ddd8eb5454a2d3f72eb805848fa9" title="This member function is not normally called in application code.">DoSetPopupControl()</a> must always set <em>popup</em> to <span class="literal">NULL</span>.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>If you have implemented <a class="el" href="classwx_combo_ctrl.html#a3ce1fce108f3a84216fa9983d6b89a37" title="Implement in a derived class to define what happens on dropdown button click.">OnButtonClick()</a> to do something else than show the popup, then <a class="el" href="classwx_combo_ctrl.html#a0df7ddd8eb5454a2d3f72eb805848fa9" title="This member function is not normally called in application code.">DoSetPopupControl()</a> must always set <em>popup</em> to <span class="literal">NULL</span>.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxComboCtrl::DoShowPopup" ref="a1c7a534296a4668e49737f599d54aa14" args="(const wxRect &amp;rect, int flags)" -->
@@ -904,7 +904,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns the insertion point for the combo control's text field.  </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Under Windows, this function always returns 0 if the combo control doesn't have the focus.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Under Windows, this function always returns 0 if the combo control doesn't have the focus.  </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classwx_text_entry.html#a396c9bc8cbf6adb7e69dcf035d31efbe">wxTextEntry</a>.</p>
 
@@ -1173,7 +1173,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implement in a derived class to define what happens on dropdown button click.  </p>
 <p>Default action is to show the popup.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>If you implement this to do something else than show the popup, you must then also implement <a class="el" href="classwx_combo_ctrl.html#a0df7ddd8eb5454a2d3f72eb805848fa9" title="This member function is not normally called in application code.">DoSetPopupControl()</a> to always return <span class="literal">NULL</span>.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>If you implement this to do something else than show the popup, you must then also implement <a class="el" href="classwx_combo_ctrl.html#a0df7ddd8eb5454a2d3f72eb805848fa9" title="This member function is not normally called in application code.">DoSetPopupControl()</a> to always return <span class="literal">NULL</span>.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxComboCtrl::Paste" ref="a361e1a0db2dceb5aa7749ad5a158e49c" args="()" -->
@@ -1833,7 +1833,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Sets the text for the combo control text field.  </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>For a combo control with <code>wxCB_READONLY</code> style the string must be accepted by the popup (for instance, exist in the dropdown list), otherwise the call to <a class="el" href="classwx_combo_ctrl.html#a4202edbc9fc83623c658a83fe4c6d7be" title="Sets the text for the combo control text field.">SetValue()</a> is ignored.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>For a combo control with <code>wxCB_READONLY</code> style the string must be accepted by the popup (for instance, exist in the dropdown list), otherwise the call to <a class="el" href="classwx_combo_ctrl.html#a4202edbc9fc83623c658a83fe4c6d7be" title="Sets the text for the combo control text field.">SetValue()</a> is ignored.  </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classwx_text_entry.html#a90f876b2dd83ba5c97ba0c193b386e9f">wxTextEntry</a>.</p>
 
@@ -1932,7 +1932,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Enable or disable usage of an alternative popup window, which guarantees ability to focus the popup control, and allows common native controls to function normally.  </p>
-<p>This alternative popup window is usually a <a class="el" href="classwx_dialog.html" title="A dialog box is a window with a title bar and sometimes a system menu, which can be moved around the ...">wxDialog</a>, and as such, when it is shown, its parent top-level window will appear as if the focus has been lost from it.  </p>
+<p>This alternative popup window is usually a <a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a>, and as such, when it is shown, its parent top-level window will appear as if the focus has been lost from it.  </p>
 
 </div>
 </div>

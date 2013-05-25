@@ -492,7 +492,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="note"><dt><b>Note:</b></dt><dd>You may override this method in a derived class to customize errors reporting. If you do so, you'll need to either use the derived class in all your code or call <a class="el" href="classwx_xml_resource.html#ac7fd00f8f8a2b3397a8d4afd8fbce0c5" title="Sets the global resources object and returns a pointer to the previous one (may be NULL)...">wxXmlResource::Set()</a> to change the global <a class="el" href="classwx_xml_resource.html" title="This is the main class for interacting with the XML-based resource system.">wxXmlResource</a> instance to your class.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>You may override this method in a derived class to customize errors reporting. If you do so, you'll need to either use the derived class in all your code or call <a class="el" href="classwx_xml_resource.html#ac7fd00f8f8a2b3397a8d4afd8fbce0c5" title="Sets the global resources object and returns a pointer to the previous one (may be NULL)...">wxXmlResource::Set()</a> to change the global <a class="el" href="classwx_xml_resource.html" title="This is the main class for interacting with the XML-based resource system.">wxXmlResource</a> instance to your class.</dd></dl>
 <dl class="since"><dt><b>Since:</b></dt><dd>2.9.0</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_xml_resource.html#ad92d578f48f243e32227702e7003723f" title="Reports error in XRC resources to the user.">ReportError()</a> </dd></dl>
 
@@ -648,7 +648,7 @@ Protected Member Functions</h2></td></tr>
 <p>If an unknown <em>str_id</em> is requested (i.e. other than wxID_XXX or integer), a new record is created which associates the given string with a number.</p>
 <p>If <em>value_if_not_found</em> is <code>wxID_NONE</code>, the number is obtained via <a class="el" href="group__group__funcmacro__misc.html#gaef162e1ba5d17a839b2f7912424bc822">wxNewId()</a>. Otherwise <em>value_if_not_found</em> is used.</p>
 <p>Macro <code>XRCID(name)</code> is provided for convenient use in event tables.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>IDs returned by XRCID() cannot be used with the <code>EVT_*_RANGE</code> macros, because the order in which they are assigned to symbolic <em>name</em> values is not guaranteed.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>IDs returned by XRCID() cannot be used with the <code>EVT_*_RANGE</code> macros, because the order in which they are assigned to symbolic <em>name</em> values is not guaranteed.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxXmlResource::InitAllHandlers" ref="a1fea48a0061b93247b4869a55877862b" args="()" -->
@@ -690,7 +690,7 @@ Protected Member Functions</h2></td></tr>
 <p>例: </p>
 <div class="fragment"><pre class="fragment">            <span class="keywordflow">if</span> (!<a class="code" href="classwx_xml_resource.html#ae9a487479dcd6204d12fbbf7be497561" title="Gets the global resources object or creates one if none exists.">wxXmlResource::Get</a>()-&gt;<a class="code" href="classwx_xml_resource.html#ac44a714ff459b7f3bd6c78d27482bb60" title="Loads resources from XML files that match given filemask.">Load</a>(<span class="stringliteral">"rc/*.xrc"</span>))
                 <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError</a>(<span class="stringliteral">"Couldn't load resources!"</span>);
-</pre></div><dl class="note"><dt><b>Note:</b></dt><dd>If wxUSE_FILESYS is enabled, this method understands <a class="el" href="classwx_file_system.html" title="This class provides an interface for opening files on different file systems.">wxFileSystem</a> URLs (see <a class="el" href="classwx_file_system.html#a93f5d9fc8fe388213f8ed7dddc55db71" title="Works like wxFindFirstFile().">wxFileSystem::FindFirst()</a>).</dd>
+</pre></div><dl class="note"><dt><b>注:</b></dt><dd>If wxUSE_FILESYS is enabled, this method understands <a class="el" href="classwx_file_system.html" title="This class provides an interface for opening files on different file systems.">wxFileSystem</a> URLs (see <a class="el" href="classwx_file_system.html#a93f5d9fc8fe388213f8ed7dddc55db71" title="Works like wxFindFirstFile().">wxFileSystem::FindFirst()</a>).</dd>
 <dd>
 
 If you are sure that the argument is name of single XRC file (rather than an URL or a wildcard), use <a class="el" href="classwx_xml_resource.html#a1c0b754fb165a656d0b57900a55a49e6" title="Simpler form of Load() for loading a single XRC file.">LoadFile()</a> instead.</dd></dl>

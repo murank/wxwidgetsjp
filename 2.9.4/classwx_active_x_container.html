@@ -170,7 +170,7 @@ Example</h2>
             }
         }
         <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CreateControl(<a class="code" href="classwx_control.html" title='This is the base class for a control or "widget".'>wxControl</a>* ctrl, <a class="code" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a>* parent,
-                                        <a class="code" href="windowid_8h.html#ae8091432cc2cb2485d45f2302fb51133" title="The type of unique identifiers (ID) used for wxWindow-derived classes.">wxWindowID</a> <span class="keywordtype">id</span>,
+                                        <a class="code" href="windowid_8h.html#ae8091432cc2cb2485d45f2302fb51133" title="wxWindow を継承したクラスで使用される一意の識別子 (ID) の型。">wxWindowID</a> <span class="keywordtype">id</span>,
                                         <span class="keyword">const</span> <a class="code" href="classwx_point.html" title="wxPoint は図形操作のための有用なデータ構造です。">wxPoint</a>&amp; pos,
                                         <span class="keyword">const</span> <a class="code" href="classwx_size.html" title="wxSize は図形操作のための有用なデータ構造です。">wxSize</a>&amp; size,
                                         <span class="keywordtype">long</span> style,
@@ -260,7 +260,7 @@ Example</h2>
         }
         <a class="code" href="classwx_size.html" title="wxSize は図形操作のための有用なデータ構造です。">wxSize</a> GetVideoSize()<span class="keyword"> const</span>
 <span class="keyword">        </span>{
-            <span class="keywordflow">return</span> <a class="code" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="Global instance of a wxSize object initialized to (-1,-1).">wxDefaultSize</a>;
+            <span class="keywordflow">return</span> <a class="code" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="(-1,-1) に初期化された wxSize のグルーバルインスタンス。">wxDefaultSize</a>;
         }
 
         <span class="keyword">virtual</span> <span class="keywordtype">double</span> GetPlaybackRate()
@@ -307,7 +307,7 @@ Example</h2>
 
     <span class="comment">// Put this in one of your existing source files and then create a wxMediaCtrl with</span>
     <a class="code" href="classwx_media_ctrl.html" title="wxMediaCtrl is a class for displaying types of media, such as videos, audio files, natively through native codecs.">wxMediaCtrl</a>* mymediactrl = <span class="keyword">new</span> <a class="code" href="classwx_media_ctrl.html" title="wxMediaCtrl is a class for displaying types of media, such as videos, audio files, natively through native codecs.">wxMediaCtrl</a>(<span class="keyword">this</span>, <span class="stringliteral">"myfile.pdf"</span>, wxID_ANY,
-                                            <a class="code" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="Global instance of a wxPoint initialized with values (-1,-1).">wxDefaultPosition</a>, <a class="code" href="classwx_size.html" title="wxSize は図形操作のための有用なデータ構造です。">wxSize</a>(300,300),
+                                            <a class="code" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="(-1,-1) に初期化された wxPoint のグルーバルインスタンス。">wxDefaultPosition</a>, <a class="code" href="classwx_size.html" title="wxSize は図形操作のための有用なデータ構造です。">wxSize</a>(300,300),
                                             0, <span class="stringliteral">"wxPDFMediaBackend"</span>);
             <span class="comment">// [this] is the parent window, "myfile.pdf" is the PDF file to open</span>
 </pre></div><div><span class="avail">Availability:</span>&nbsp;&nbsp;only available for the <a class="el" href="page_port.html#page_port_wxmsw">wxMSW</a> port.</div> <h2></h2>

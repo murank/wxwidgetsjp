@@ -136,7 +136,7 @@ function toggleVisibility(linkObj) {
 <div class="textblock"><p><a class="el" href="classwx_log.html" title="wxLog クラスは wxWidgets のロギング関数で使用されるログターゲットのインタフェースを定義するクラスです。 詳細は wxLog クラスの概要を参照してください、">wxLog</a> class defines the interface for the <em>log targets</em> used by wxWidgets logging functions as explained in the <a class="el" href="overview_log.html">wxLog Classes Overview</a>.  </p>
 <p>The only situations when you need to directly use this class is when you want to derive your own log target because the existing ones don't satisfy your needs.</p>
 <p>Otherwise, it is completely hidden behind the <a class="el" href="group__group__funcmacro__log.html">wxLogXXX() functions</a> and you may not even know about its existence.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>For console-mode applications, the default target is <a class="el" href="classwx_log_stderr.html" title="This class can be used to redirect the log messages to a C file stream (not to be confused with C++ s...">wxLogStderr</a>, so that all <em>wxLogXXX()</em> functions print on <code>stderr</code> when <code>wxUSE_GUI</code> = 0.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>For console-mode applications, the default target is <a class="el" href="classwx_log_stderr.html" title="This class can be used to redirect the log messages to a C file stream (not to be confused with C++ s...">wxLogStderr</a>, so that all <em>wxLogXXX()</em> functions print on <code>stderr</code> when <code>wxUSE_GUI</code> = 0.</dd></dl>
 <h2></h2>
 <div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__logging.html">Logging</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_log.html">wxLog Classes Overview</a>, <a class="el" href="group__group__funcmacro__log.html">wxLogXXX() functions</a> </dd></dl>
 </div><table class="memberdecls">
@@ -156,7 +156,7 @@ Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_log.html#a4c11ee23ce5264b6c5921a17610cda13">AddTraceMask</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;mask)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Add the <em>mask</em> to the list of allowed masks for <a class="el" href="group__group__funcmacro__log.html#ga947e317db477914c12b13c4534867ec9" title="Log a message at wxLOG_Trace log level (see wxLogLevelValues enum).">wxLogTrace()</a>.    <a href="#a4c11ee23ce5264b6c5921a17610cda13"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_log.html#ac6b25e807e4948795aea21def6b5c1e4">ClearTraceMasks</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes all trace masks previously set with <a class="el" href="classwx_log.html#a4c11ee23ce5264b6c5921a17610cda13" title="Add the mask to the list of allowed masks for wxLogTrace().">AddTraceMask()</a>.    <a href="#ac6b25e807e4948795aea21def6b5c1e4"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes all trace masks previously set with <a class="el" href="classwx_log.html#a4c11ee23ce5264b6c5921a17610cda13" title="wxLogTrace() の許可マスクのリストへマスクを追加します。">AddTraceMask()</a>.    <a href="#ac6b25e807e4948795aea21def6b5c1e4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classwx_array_string.html">wxArrayString</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_log.html#a899ccb4d60fe3d096e4c8c713774ba5c">GetTraceMasks</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the currently allowed list of string trace masks.    <a href="#a899ccb4d60fe3d096e4c8c713774ba5c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_log.html#a28fece055f6d4eb97455b216bc042ee4">IsAllowedTraceMask</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;mask)</td></tr>
@@ -257,7 +257,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Removes all trace masks previously set with <a class="el" href="classwx_log.html#a4c11ee23ce5264b6c5921a17610cda13" title="Add the mask to the list of allowed masks for wxLogTrace().">AddTraceMask()</a>.  </p>
+<p>Removes all trace masks previously set with <a class="el" href="classwx_log.html#a4c11ee23ce5264b6c5921a17610cda13" title="wxLogTrace() の許可マスクのリストへマスクを追加します。">AddTraceMask()</a>.  </p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_log.html#ab2d378dce2d927e36b7e09618c61fa05" title="Remove the mask from the list of allowed masks for wxLogTrace().">RemoveTraceMask()</a> </dd></dl>
 
 </div>
@@ -545,7 +545,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns the currently allowed list of string trace masks.  </p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_log.html#a4c11ee23ce5264b6c5921a17610cda13" title="Add the mask to the list of allowed masks for wxLogTrace().">AddTraceMask()</a>.  </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_log.html#a4c11ee23ce5264b6c5921a17610cda13" title="wxLogTrace() の許可マスクのリストへマスクを追加します。">AddTraceMask()</a>.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxLog::GetVerbose" ref="ae67871e92f85fcf92a0eb885d0684777" args="()" -->
@@ -583,7 +583,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns <span class="literal">true</span> if the <em>mask</em> is one of allowed masks for <a class="el" href="group__group__funcmacro__log.html#ga947e317db477914c12b13c4534867ec9" title="Log a message at wxLOG_Trace log level (see wxLogLevelValues enum).">wxLogTrace()</a>.  </p>
-<p>See also: <a class="el" href="classwx_log.html#a4c11ee23ce5264b6c5921a17610cda13" title="Add the mask to the list of allowed masks for wxLogTrace().">AddTraceMask()</a>, <a class="el" href="classwx_log.html#ab2d378dce2d927e36b7e09618c61fa05" title="Remove the mask from the list of allowed masks for wxLogTrace().">RemoveTraceMask()</a> </p>
+<p>See also: <a class="el" href="classwx_log.html#a4c11ee23ce5264b6c5921a17610cda13" title="wxLogTrace() の許可マスクのリストへマスクを追加します。">AddTraceMask()</a>, <a class="el" href="classwx_log.html#ab2d378dce2d927e36b7e09618c61fa05" title="Remove the mask from the list of allowed masks for wxLogTrace().">RemoveTraceMask()</a> </p>
 
 </div>
 </div><!-- doxytag: member="wxLog::IsEnabled" ref="a386ce41902b74521a31f4b0de7e1007f" args="()" -->
@@ -704,7 +704,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Remove the <em>mask</em> from the list of allowed masks for <a class="el" href="group__group__funcmacro__log.html#ga947e317db477914c12b13c4534867ec9" title="Log a message at wxLOG_Trace log level (see wxLogLevelValues enum).">wxLogTrace()</a>.  </p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_log.html#a4c11ee23ce5264b6c5921a17610cda13" title="Add the mask to the list of allowed masks for wxLogTrace().">AddTraceMask()</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_log.html#a4c11ee23ce5264b6c5921a17610cda13" title="wxLogTrace() の許可マスクのリストへマスクを追加します。">AddTraceMask()</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxLog::Resume" ref="a14a562556933276939cedbb470f149cb" args="()" -->

@@ -146,7 +146,7 @@ function toggleVisibility(linkObj) {
         <a class="code" href="classwx_u_r_i.html" title="wxURI is used to extract information from a URI (Uniform Resource Identifier).">wxURI</a> myuri(<span class="stringliteral">"http://mysite.com"</span>);
         <span class="keywordflow">if</span>( myuri.HasScheme() )
             protocol = myuri.GetScheme();
-</pre></div><dl class="note"><dt><b>Note:</b></dt><dd>On URIs with a "file" scheme <a class="el" href="classwx_u_r_i.html" title="wxURI is used to extract information from a URI (Uniform Resource Identifier).">wxURI</a> does not parse the userinfo, server, or port portion. This is to keep compatibility with <a class="el" href="classwx_file_system.html" title="This class provides an interface for opening files on different file systems.">wxFileSystem</a>, the old <a class="el" href="classwx_u_r_l.html" title="wxURL is a specialization of wxURI for parsing URLs.">wxURL</a>, and older url specifications.</dd></dl>
+</pre></div><dl class="note"><dt><b>注:</b></dt><dd>On URIs with a "file" scheme <a class="el" href="classwx_u_r_i.html" title="wxURI is used to extract information from a URI (Uniform Resource Identifier).">wxURI</a> does not parse the userinfo, server, or port portion. This is to keep compatibility with <a class="el" href="classwx_file_system.html" title="This class provides an interface for opening files on different file systems.">wxFileSystem</a>, the old <a class="el" href="classwx_u_r_l.html" title="wxURL is a specialization of wxURI for parsing URLs.">wxURL</a>, and older url specifications.</dd></dl>
 <h2></h2>
 <div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__net.html">Networking</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_u_r_l.html" title="wxURL is a specialization of wxURI for parsing URLs.">wxURL</a> </dd></dl>
 </div><table class="memberdecls">
@@ -298,7 +298,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Builds the URI from its individual components, adds proper separators, and returns escape sequences to normal characters.  </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>It is preferred to call this over Unescape(<a class="el" href="classwx_u_r_i.html#a02116f8883e77754a793dbfea0454896" title="Builds the URI from its individual components and adds proper separators.">BuildURI()</a>) since <a class="el" href="classwx_u_r_i.html#a3352a1dd8649194230a72efcd2d0ebf9" title="Builds the URI from its individual components, adds proper separators, and returns escape sequences t...">BuildUnescapedURI()</a> performs some optimizations over the plain method.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>It is preferred to call this over Unescape(<a class="el" href="classwx_u_r_i.html#a02116f8883e77754a793dbfea0454896" title="Builds the URI from its individual components and adds proper separators.">BuildURI()</a>) since <a class="el" href="classwx_u_r_i.html#a3352a1dd8649194230a72efcd2d0ebf9" title="Builds the URI from its individual components, adds proper separators, and returns escape sequences t...">BuildUnescapedURI()</a> performs some optimizations over the plain method.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxURI::BuildURI" ref="a02116f8883e77754a793dbfea0454896" args="() const " -->
@@ -443,7 +443,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns a string representation of the URI's port.  </p>
 <p>The Port of a URI is a value after the server, and must come after a colon (:).</p>
 <p><code>"http://mysite.com:&lt;port&gt;"</code> </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>You can easily get the numeric value of the port by using <a class="el" href="group__group__funcmacro__crt.html#gad0800841c3a401a906ca188b89893aa5">wxAtoi()</a> or <a class="el" href="classwx_string.html#addd9ccfa3ae2b7ab2d66bcbf034d0be0" title="This static function returns the string containing the result of calling Printf() with the passed par...">wxString::Format()</a>.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>You can easily get the numeric value of the port by using <a class="el" href="group__group__funcmacro__crt.html#gad0800841c3a401a906ca188b89893aa5">wxAtoi()</a> or <a class="el" href="classwx_string.html#addd9ccfa3ae2b7ab2d66bcbf034d0be0" title="This static function returns the string containing the result of calling Printf() with the passed par...">wxString::Format()</a>.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxURI::GetQuery" ref="aee997a36b2669dd55a62f1848c3751fd" args="() const " -->

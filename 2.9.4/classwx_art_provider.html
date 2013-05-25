@@ -222,7 +222,7 @@ Identifying art resources</h2>
 </td></tr>
 </table>
 <p>Additionally, any string recognized by custom art providers registered using <a class="el" href="classwx_art_provider.html#a6af5625b194423247ff3845e1f0f61d6" title="Register new art provider and add it to the top of providers stack (i.e.">wxArtProvider::Push</a> may be used.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>When running under GTK+ 2, GTK+ stock item IDs (e.g. <code>"gtk-cdrom"</code>) may be used as well:  <div class="fragment"><pre class="fragment"><span class="preprocessor">    #ifdef __WXGTK__</span>
+<dl class="note"><dt><b>注:</b></dt><dd>When running under GTK+ 2, GTK+ stock item IDs (e.g. <code>"gtk-cdrom"</code>) may be used as well:  <div class="fragment"><pre class="fragment"><span class="preprocessor">    #ifdef __WXGTK__</span>
 <span class="preprocessor"></span>        <a class="code" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> bmp = <a class="code" href="classwx_art_provider.html#a405ecf7cdead6dbfb092376a51a856c4" title="Query registered providers for bitmap with given ID.">wxArtProvider::GetBitmap</a>(<span class="stringliteral">"gtk-cdrom"</span>, <a class="code" href="artprov_8h.html#a71acc864981812e272f64633af6f63a6">wxART_MENU</a>);
 <span class="preprocessor">    #endif</span>
 </pre></div>  For a list of the GTK+ stock items please refer to the <a href="http://library.gnome.org/devel/gtk/stable/gtk-Stock-Items.html">GTK+ documentation page</a>. It is also possible to load icons from the current icon theme by specifying their name (without extension and directory components). Icon themes recognized by GTK+ follow the freedesktop.org <a href="http://freedesktop.org/Standards/icon-theme-spec">Icon Themes specification</a>. Note that themes are not guaranteed to contain all icons, so <a class="el" href="classwx_art_provider.html" title="wxArtProvider class is used to customize the look of wxWidgets application.">wxArtProvider</a> may return <a class="el" href="interface_2wx_2bitmap_8h.html#a2947690e84b8fdb2e37b79a4af8f8a21" title="An empty wxBitmap object.">wxNullBitmap</a> or <a class="el" href="icon_8h.html#a953854798a8dfd400777318358dad5b6" title="An empty wxIcon.">wxNullIcon</a>. The default theme is typically installed in <code>/usr/share/icons/hicolor</code>.</dd></dl>
@@ -346,7 +346,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="note"><dt><b>Note:</b></dt><dd>This is not part of wxArtProvider's public API, use <a class="el" href="classwx_art_provider.html#a405ecf7cdead6dbfb092376a51a856c4" title="Query registered providers for bitmap with given ID.">wxArtProvider::GetBitmap</a> or <a class="el" href="classwx_art_provider.html#a0849828481ed689d716e600672fbaec0" title="Query registered providers for icon bundle with given ID.">wxArtProvider::GetIconBundle</a> or <a class="el" href="classwx_art_provider.html#ac9bd0ba166e5ef9515c68542bb96da09" title="Same as wxArtProvider::GetBitmap, but return a wxIcon object (or wxNullIcon on failure).">wxArtProvider::GetIcon</a> to query <a class="el" href="classwx_art_provider.html" title="wxArtProvider class is used to customize the look of wxWidgets application.">wxArtProvider</a> for a resource.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>This is not part of wxArtProvider's public API, use <a class="el" href="classwx_art_provider.html#a405ecf7cdead6dbfb092376a51a856c4" title="Query registered providers for bitmap with given ID.">wxArtProvider::GetBitmap</a> or <a class="el" href="classwx_art_provider.html#a0849828481ed689d716e600672fbaec0" title="Query registered providers for icon bundle with given ID.">wxArtProvider::GetIconBundle</a> or <a class="el" href="classwx_art_provider.html#ac9bd0ba166e5ef9515c68542bb96da09" title="Same as wxArtProvider::GetBitmap, but return a wxIcon object (or wxNullIcon on failure).">wxArtProvider::GetIcon</a> to query <a class="el" href="classwx_art_provider.html" title="wxArtProvider class is used to customize the look of wxWidgets application.">wxArtProvider</a> for a resource.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_art_provider.html#a0bb64950e85d0cc36977c01f864fdef8" title="This method is similar to CreateBitmap() but can be used when a bitmap (or an icon) exists in several...">CreateIconBundle()</a> </dd></dl>
 
 </div>
@@ -532,7 +532,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Returns native icon size for use specified by <em>client</em> hint.  </p>
 <p>If the platform has no commonly used default for this use or if <em>client</em> is not recognized, returns wxDefaultSize.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>In some cases, a platform may have <em>several</em> appropriate native sizes (for example, wxART_FRAME_ICON for frame icons). In that case, this method returns only one of them, picked reasonably.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>In some cases, a platform may have <em>several</em> appropriate native sizes (for example, wxART_FRAME_ICON for frame icons). In that case, this method returns only one of them, picked reasonably.</dd></dl>
 <dl class="since"><dt><b>Since:</b></dt><dd>2.9.0  </dd></dl>
 
 </div>

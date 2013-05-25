@@ -449,8 +449,8 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">parent</td><td>Parent window. Must not be <span class="literal">NULL</span>.  </td></tr>
     <tr><td class="paramname">id</td><td>Window identifier. The value <code>wxID_ANY</code> indicates a default value.  </td></tr>
-    <tr><td class="paramname">pos</td><td>Window position. If <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="Global instance of a wxPoint initialized with values (-1,-1).">wxDefaultPosition</a> is specified then a default position is chosen.  </td></tr>
-    <tr><td class="paramname">size</td><td>Window size. If <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="Global instance of a wxSize object initialized to (-1,-1).">wxDefaultSize</a> is specified then the window is sized appropriately.  </td></tr>
+    <tr><td class="paramname">pos</td><td>Window position. If <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="(-1,-1) に初期化された wxPoint のグルーバルインスタンス。">wxDefaultPosition</a> is specified then a default position is chosen.  </td></tr>
+    <tr><td class="paramname">size</td><td>Window size. If <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="(-1,-1) に初期化された wxSize のグルーバルインスタンス。">wxDefaultSize</a> is specified then the window is sized appropriately.  </td></tr>
     <tr><td class="paramname">style</td><td>Window style. See <a class="el" href="classwx_tree_ctrl.html" title="ツリーコントロールでは情報を (項目を展開すると追加の項目が現れる) 階層として表します。">wxTreeCtrl</a>.  </td></tr>
     <tr><td class="paramname">validator</td><td>Window validator.  </td></tr>
     <tr><td class="paramname">name</td><td>Window name.</td></tr>
@@ -913,7 +913,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Ends label editing.  </p>
 <p>If <em>cancelEdit</em> is <span class="literal">true</span>, the edit will be cancelled.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>This function is currently supported under Windows only.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>This function is currently supported under Windows only.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_tree_ctrl.html#a08d88a76e02f59001766bc90e20016b7" title="指定された項目のラベル編集を開始します。">EditLabel()</a> </dd></dl>
 
 </div>
@@ -1115,7 +1115,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the edit control being currently used to edit a label.  </p>
 <p>Returns <span class="literal">NULL</span> if no label is being edited.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>This is currently only implemented for wxMSW.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>This is currently only implemented for wxMSW.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxTreeCtrl::GetFirstChild" ref="ae30654f33f4f81a3c5d08eee27bb19f7" args="(const wxTreeItemId &amp;item, wxTreeItemIdValue &amp;cookie) const " -->
@@ -1490,7 +1490,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns the next visible item or an invalid item if this item is the last visible one.  </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>The <em>item</em> itself must be visible.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>The <em>item</em> itself must be visible.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxTreeCtrl::GetPrevSibling" ref="afdbe92a045b68d816d16d4d8d4d3e6a2" args="(const wxTreeItemId &amp;item) const " -->
@@ -1531,7 +1531,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns the previous visible item or an invalid item if this item is the first visible one.  </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>The <em>item</em> itself must be visible.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>The <em>item</em> itself must be visible.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxTreeCtrl::GetQuickBestSize" ref="a1886352707d6699842f9a67d96ffaa18" args="() const " -->
@@ -2068,7 +2068,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Sets the buttons image list (from which application-defined button images are taken).  </p>
 <p>The button images assigned with this method will <b>not</b> be deleted by <a class="el" href="classwx_tree_ctrl.html">wxTreeCtrl</a>'s destructor, you must delete it yourself. Setting or assigning the button image list enables the display of image buttons. Once enabled, the only way to disable the display of button images is to set the button image list to <span class="literal">NULL</span>.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>This function is only available in the generic version.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>This function is only available in the generic version.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_tree_ctrl.html#a2a24d50d475f0c487a9162f477f6e69e" title="Sets the buttons image list.">AssignButtonsImageList()</a>.  </dd></dl>
 
 </div>
@@ -2510,7 +2510,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Sets the mode flags associated with the display of the tree control.  </p>
 <p>The new mode takes effect immediately.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Generic only; MSW ignores changes.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Generic only; MSW ignores changes.  </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classwx_window.html#a306af30adec68689f74ed537b4f9d5fd">wxWindow</a>.</p>
 

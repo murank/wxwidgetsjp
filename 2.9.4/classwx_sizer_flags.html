@@ -125,36 +125,36 @@ function toggleVisibility(linkObj) {
 
 <p><code>#include &lt;/home/zeitlin/src/wx/github/interface/wx/sizer.h&gt;</code></p>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Container for sizer items flags providing readable names for them.  </p>
-<p>Normally, when you add an item to a sizer via <a class="el" href="classwx_sizer.html#a4e2122f2749261473c21cb192d00709f" title="Appends a child to the sizer.">wxSizer::Add</a>, you have to specify a lot of flags and parameters which can be unwieldy. This is where <a class="el" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> comes in: it allows you to specify all parameters using the named methods instead. For example, instead of</p>
-<div class="fragment"><pre class="fragment">    sizer-&gt;<a class="code" href="classwx_sizer.html#a4e2122f2749261473c21cb192d00709f" title="Appends a child to the sizer.">Add</a>(ctrl, 0, <a class="code" href="defs_8h.html#a27b6b668631a5f79f24d474af7d9b388a0d831bd6985c81f9bbc4830cc0c2e7df">wxEXPAND</a> | <a class="code" href="defs_8h.html#ac0f30319732dcceda470516918ff3556a066863c82a2c08f6f53b663de87c60b6">wxALL</a>, 10);
+<div class="textblock"><p>サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。 </p>
+<p>Normally, when you add an item to a sizer via <a class="el" href="classwx_sizer.html#a4e2122f2749261473c21cb192d00709f" title="サイザーに子コントロールを追加します。">wxSizer::Add</a>, you have to specify a lot of flags and parameters which can be unwieldy. This is where <a class="el" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> comes in: it allows you to specify all parameters using the named methods instead. For example, instead of</p>
+<div class="fragment"><pre class="fragment">    sizer-&gt;<a class="code" href="classwx_sizer.html#a4e2122f2749261473c21cb192d00709f" title="サイザーに子コントロールを追加します。">Add</a>(ctrl, 0, <a class="code" href="defs_8h.html#a27b6b668631a5f79f24d474af7d9b388a0d831bd6985c81f9bbc4830cc0c2e7df">wxEXPAND</a> | <a class="code" href="defs_8h.html#ac0f30319732dcceda470516918ff3556a066863c82a2c08f6f53b663de87c60b6">wxALL</a>, 10);
 </pre></div><p>you can now write</p>
-<div class="fragment"><pre class="fragment">    sizer-&gt;<a class="code" href="classwx_sizer.html#a4e2122f2749261473c21cb192d00709f" title="Appends a child to the sizer.">Add</a>(ctrl, <a class="code" href="classwx_sizer_flags.html#a2fe0499abe5461a2b8b4fe5fa2c054d4" title="Creates the wxSizer with the proportion specified by proportion.">wxSizerFlags</a>().<a class="code" href="classwx_sizer_flags.html#a6cb4e696993ffc828e68dda0736ae453" title="Sets the object of the wxSizerFlags to expand to fill as much area as it can.">Expand</a>().<a class="code" href="classwx_sizer_flags.html#a2dc000b863b8580ae3f183c0e11c9944" title="Sets the wxSizerFlags to have a border of a number of pixels specified by borderinpixels with the dir...">Border</a>(<a class="code" href="defs_8h.html#ac0f30319732dcceda470516918ff3556a066863c82a2c08f6f53b663de87c60b6">wxALL</a>, 10));
-</pre></div><p>This is more readable and also allows you to create <a class="el" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> objects which can be reused for several sizer items.</p>
-<div class="fragment"><pre class="fragment">    <a class="code" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> flagsExpand(1);
+<div class="fragment"><pre class="fragment">    sizer-&gt;<a class="code" href="classwx_sizer.html#a4e2122f2749261473c21cb192d00709f" title="サイザーに子コントロールを追加します。">Add</a>(ctrl, <a class="code" href="classwx_sizer_flags.html#a2fe0499abe5461a2b8b4fe5fa2c054d4" title="Creates the wxSizer with the proportion specified by proportion.">wxSizerFlags</a>().<a class="code" href="classwx_sizer_flags.html#a6cb4e696993ffc828e68dda0736ae453" title="Sets the object of the wxSizerFlags to expand to fill as much area as it can.">Expand</a>().<a class="code" href="classwx_sizer_flags.html#a2dc000b863b8580ae3f183c0e11c9944" title="Sets the wxSizerFlags to have a border of a number of pixels specified by borderinpixels with the dir...">Border</a>(<a class="code" href="defs_8h.html#ac0f30319732dcceda470516918ff3556a066863c82a2c08f6f53b663de87c60b6">wxALL</a>, 10));
+</pre></div><p>This is more readable and also allows you to create <a class="el" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> objects which can be reused for several sizer items.</p>
+<div class="fragment"><pre class="fragment">    <a class="code" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> flagsExpand(1);
         flagsExpand.Expand().Border(<a class="code" href="defs_8h.html#ac0f30319732dcceda470516918ff3556a066863c82a2c08f6f53b663de87c60b6">wxALL</a>, 10);
 
-        sizer-&gt;<a class="code" href="classwx_sizer.html#a4e2122f2749261473c21cb192d00709f" title="Appends a child to the sizer.">Add</a>(ctrl1, flagsExpand);
-        sizer-&gt;<a class="code" href="classwx_sizer.html#a4e2122f2749261473c21cb192d00709f" title="Appends a child to the sizer.">Add</a>(ctrl2, flagsExpand);
-</pre></div><p>Note that by specification, all methods of <a class="el" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> return the <a class="el" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> object itself to allowing chaining multiple methods calls like in the examples above.</p>
+        sizer-&gt;<a class="code" href="classwx_sizer.html#a4e2122f2749261473c21cb192d00709f" title="サイザーに子コントロールを追加します。">Add</a>(ctrl1, flagsExpand);
+        sizer-&gt;<a class="code" href="classwx_sizer.html#a4e2122f2749261473c21cb192d00709f" title="サイザーに子コントロールを追加します。">Add</a>(ctrl2, flagsExpand);
+</pre></div><p>Note that by specification, all methods of <a class="el" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> return the <a class="el" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> object itself to allowing chaining multiple methods calls like in the examples above.</p>
 <h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__winlayout.html">Window Layout</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_sizer.html" title="wxSizer is the abstract base class used for laying out subwindows in a window.">wxSizer</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__winlayout.html">Window Layout</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_flags.html#a2fe0499abe5461a2b8b4fe5fa2c054d4">wxSizerFlags</a> (int proportion=0)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates the <a class="el" href="classwx_sizer.html" title="wxSizer is the abstract base class used for laying out subwindows in a window.">wxSizer</a> with the proportion specified by <em>proportion</em>.    <a href="#a2fe0499abe5461a2b8b4fe5fa2c054d4"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates the <a class="el" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a> with the proportion specified by <em>proportion</em>.    <a href="#a2fe0499abe5461a2b8b4fe5fa2c054d4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer_flags.html">wxSizerFlags</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_flags.html#aab874ed16e2fb454649555e537806395">Align</a> (int alignment)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the alignment of this <a class="el" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> to <em>align</em>.    <a href="#aab874ed16e2fb454649555e537806395"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the alignment of this <a class="el" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> to <em>align</em>.    <a href="#aab874ed16e2fb454649555e537806395"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer_flags.html">wxSizerFlags</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_flags.html#a2dc000b863b8580ae3f183c0e11c9944">Border</a> (int direction, int borderinpixels)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the <a class="el" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> to have a border of a number of pixels specified by <em>borderinpixels</em> with the directions specified by <em>direction</em>.    <a href="#a2dc000b863b8580ae3f183c0e11c9944"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the <a class="el" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> to have a border of a number of pixels specified by <em>borderinpixels</em> with the directions specified by <em>direction</em>.    <a href="#a2dc000b863b8580ae3f183c0e11c9944"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer_flags.html">wxSizerFlags</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_flags.html#a8fd32cd5080d3da3597988759c11d337">Border</a> (int direction=wxALL)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the <a class="el" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> to have a border with size as returned by <a class="el" href="classwx_sizer_flags.html#a0766441261548fe6683fcbe411dca7fb" title="Returns the border used by default in Border() method.">GetDefaultBorder()</a>.    <a href="#a8fd32cd5080d3da3597988759c11d337"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the <a class="el" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> to have a border with size as returned by <a class="el" href="classwx_sizer_flags.html#a0766441261548fe6683fcbe411dca7fb" title="Returns the border used by default in Border() method.">GetDefaultBorder()</a>.    <a href="#a8fd32cd5080d3da3597988759c11d337"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer_flags.html">wxSizerFlags</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_flags.html#aa13c756352d356682d5d584c4a05996b">Bottom</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Aligns the object to the bottom, similar for <code>Align(wxALIGN_BOTTOM)</code>.    <a href="#aa13c756352d356682d5d584c4a05996b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer_flags.html">wxSizerFlags</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_flags.html#ad3960148d1e0de7e12c958e7144f4d3c">Center</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the object of the <a class="el" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> to center itself in the area it is given.    <a href="#ad3960148d1e0de7e12c958e7144f4d3c"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the object of the <a class="el" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> to center itself in the area it is given.    <a href="#ad3960148d1e0de7e12c958e7144f4d3c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer_flags.html">wxSizerFlags</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_flags.html#aea64161ea708433e2a674a45ca357abf">Centre</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><a class="el" href="classwx_sizer_flags.html#ad3960148d1e0de7e12c958e7144f4d3c" title="Sets the object of the wxSizerFlags to center itself in the area it is given.">Center()</a> for people with the other dialect of English.    <a href="#aea64161ea708433e2a674a45ca357abf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer_flags.html">wxSizerFlags</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_flags.html#aa1775f50a90fc578db4caafb8dfc7a76">DoubleBorder</a> (int direction=wxALL)</td></tr>
@@ -162,7 +162,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer_flags.html">wxSizerFlags</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_flags.html#a572ce3e15f96accf902d10f02428e035">DoubleHorzBorder</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the border in left and right directions having twice the default border size.    <a href="#a572ce3e15f96accf902d10f02428e035"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer_flags.html">wxSizerFlags</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_flags.html#a6cb4e696993ffc828e68dda0736ae453">Expand</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the object of the <a class="el" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> to expand to fill as much area as it can.    <a href="#a6cb4e696993ffc828e68dda0736ae453"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the object of the <a class="el" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> to expand to fill as much area as it can.    <a href="#a6cb4e696993ffc828e68dda0736ae453"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer_flags.html">wxSizerFlags</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_flags.html#a497f1ffd0377788cb8cf37722d53ec2e">FixedMinSize</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set the <code>wxFIXED_MINSIZE</code> flag which indicates that the initial size of the window should be also set as its minimal size.    <a href="#a497f1ffd0377788cb8cf37722d53ec2e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer_flags.html">wxSizerFlags</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_flags.html#a2964d29e4d31e7e43ab5f4dee31a9d11">ReserveSpaceEvenIfHidden</a> ()</td></tr>
@@ -170,7 +170,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer_flags.html">wxSizerFlags</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_flags.html#a69bff80a85fd8fdefa5be0961fb6a569">Left</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Aligns the object to the left, similar for <code>Align(wxALIGN_LEFT)</code>.    <a href="#a69bff80a85fd8fdefa5be0961fb6a569"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer_flags.html">wxSizerFlags</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_flags.html#a4b40ff52a93f33e5566491c24ccbd9bd">Proportion</a> (int proportion)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the proportion of this <a class="el" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> to <em>proportion</em>.    <a href="#a4b40ff52a93f33e5566491c24ccbd9bd"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the proportion of this <a class="el" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> to <em>proportion</em>.    <a href="#a4b40ff52a93f33e5566491c24ccbd9bd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer_flags.html">wxSizerFlags</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_flags.html#aa8b75ebf008d7c2e6de515dbd22825d5">Right</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Aligns the object to the right, similar for <code>Align(wxALIGN_RIGHT)</code>.    <a href="#aa8b75ebf008d7c2e6de515dbd22825d5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_sizer_flags.html">wxSizerFlags</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_sizer_flags.html#a18a157863932cf61f0b0ec01b5877fa6">Shaped</a> ()</td></tr>
@@ -203,7 +203,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Creates the <a class="el" href="classwx_sizer.html" title="wxSizer is the abstract base class used for laying out subwindows in a window.">wxSizer</a> with the proportion specified by <em>proportion</em>.  </p>
+<p>Creates the <a class="el" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a> with the proportion specified by <em>proportion</em>.  </p>
 
 </div>
 </div>
@@ -223,7 +223,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Sets the alignment of this <a class="el" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> to <em>align</em>.  </p>
+<p>Sets the alignment of this <a class="el" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> to <em>align</em>.  </p>
 <p>This method replaces the previously set alignment with the specified one.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -260,7 +260,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Sets the <a class="el" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> to have a border of a number of pixels specified by <em>borderinpixels</em> with the directions specified by <em>direction</em>.  </p>
+<p>Sets the <a class="el" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> to have a border of a number of pixels specified by <em>borderinpixels</em> with the directions specified by <em>direction</em>.  </p>
 
 </div>
 </div><!-- doxytag: member="wxSizerFlags::Border" ref="a8fd32cd5080d3da3597988759c11d337" args="(int direction=wxALL)" -->
@@ -279,7 +279,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Sets the <a class="el" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> to have a border with size as returned by <a class="el" href="classwx_sizer_flags.html#a0766441261548fe6683fcbe411dca7fb" title="Returns the border used by default in Border() method.">GetDefaultBorder()</a>.  </p>
+<p>Sets the <a class="el" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> to have a border with size as returned by <a class="el" href="classwx_sizer_flags.html#a0766441261548fe6683fcbe411dca7fb" title="Returns the border used by default in Border() method.">GetDefaultBorder()</a>.  </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">direction</td><td>Direction(s) to apply the border in.  </td></tr>
@@ -322,7 +322,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Sets the object of the <a class="el" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> to center itself in the area it is given.  </p>
+<p>Sets the object of the <a class="el" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> to center itself in the area it is given.  </p>
 
 </div>
 </div><!-- doxytag: member="wxSizerFlags::Centre" ref="aea64161ea708433e2a674a45ca357abf" args="()" -->
@@ -395,7 +395,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Sets the object of the <a class="el" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> to expand to fill as much area as it can.  </p>
+<p>Sets the object of the <a class="el" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> to expand to fill as much area as it can.  </p>
 
 </div>
 </div><!-- doxytag: member="wxSizerFlags::FixedMinSize" ref="a497f1ffd0377788cb8cf37722d53ec2e" args="()" -->
@@ -469,7 +469,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Sets the proportion of this <a class="el" href="classwx_sizer_flags.html" title="Container for sizer items flags providing readable names for them.">wxSizerFlags</a> to <em>proportion</em>.  </p>
+<p>Sets the proportion of this <a class="el" href="classwx_sizer_flags.html" title="サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。">wxSizerFlags</a> to <em>proportion</em>.  </p>
 
 </div>
 </div><!-- doxytag: member="wxSizerFlags::ReserveSpaceEvenIfHidden" ref="a2964d29e4d31e7e43ab5f4dee31a9d11" args="()" -->

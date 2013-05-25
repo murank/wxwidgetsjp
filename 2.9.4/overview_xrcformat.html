@@ -180,7 +180,7 @@ Object Element</h3>
 <li>wxWindow's name (see <a class="el" href="classwx_window.html#aab1b302c4bdabd134ce8d401dbaaf990" title="Returns the window's name.">wxWindow::GetName()</a>) is set to it.</li>
 <li>Numeric ID of a window or menu item is derived from the name. If the value represents an integer (in decimal notation), it is used for the numeric ID unmodified. If it is one of the wxID_XXX literals defined by wxWidgets (see <a class="el" href="page_stockitems.html">Stock items</a>), its respective value is used. Otherwise, the name is transformed into dynamically generated ID. See <a class="el" href="classwx_xml_resource.html#a06ec24247401cda58f0a5eec251d8167" title="Returns a numeric ID that is equivalent to the string ID used in an XML resource.">wxXmlResource::GetXRCID()</a> for more information.</li>
 </ol>
-<p>Name attributes must be unique at the top level (where the name is used to load resources) and should be unique among all controls within the same toplevel window (<a class="el" href="classwx_dialog.html" title="A dialog box is a window with a title bar and sometimes a system menu, which can be moved around the ...">wxDialog</a>, <a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a>).</p>
+<p>Name attributes must be unique at the top level (where the name is used to load resources) and should be unique among all controls within the same toplevel window (<a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a>, <a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a>).</p>
 <p>The <code>subclass</code> attribute optional name of class whose constructor will be called instead of the constructor for "class". See <a class="el" href="overview_xrcformat.html#overview_xrcformat_extending_subclass">Subclassing</a> for more details.</p>
 <p><code>&lt;object&gt;</code> element may -- and almost always do -- have children elements. These come in two varieties:</p>
 <ol type="1">
@@ -307,7 +307,7 @@ Text</h3>
 &lt;label translate=<span class="stringliteral">"0"</span>&gt;_Unix&lt;/label&gt;
 &lt;!-- but <span class="keyword">this</span> is: --&gt;
 &lt;help&gt;Use Unix-style newlines&lt;/help&gt;
-</pre></div><dl class="note"><dt><b>Note:</b></dt><dd>Even though the "_" character is used instead of "&amp;" for accelerators, it is still possible to use "&amp;". The latter has to be encoded as "&amp;amp;", though, so using "_" is more convenient.</dd></dl>
+</pre></div><dl class="note"><dt><b>注:</b></dt><dd>Even though the "_" character is used instead of "&amp;" for accelerators, it is still possible to use "&amp;". The latter has to be encoded as "&amp;amp;", though, so using "_" is more convenient.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_xrcformat.html#overview_xrcformat_pre_v2530">Versions Before 2.5.3.0</a>, <a class="el" href="overview_xrcformat.html#overview_xrcformat_pre_v2301">Versions Before 2.3.0.1</a></dd></dl>
 <h3><a class="anchor" id="overview_xrcformat_type_text_notrans"></a>
 
@@ -685,7 +685,7 @@ wxDialog</h4>
 <tr>
 <td>centered  </td><td><a class="el" href="overview_xrcformat.html#overview_xrcformat_type_bool">Boolean</a> </td><td>Whether the dialog should be centered on the screen (default: 0).  </td></tr>
 </table>
-<p><a class="el" href="classwx_dialog.html" title="A dialog box is a window with a title bar and sometimes a system menu, which can be moved around the ...">wxDialog</a> may have optional children: either exactly one <a class="el" href="overview_xrcformat.html#overview_xrcformat_sizers">sizer</a> child or any number of non-toplevel window objects. If sizer child is used, it sets <a class="el" href="classwx_sizer.html#abc460cd0e2bb3bde72142fdb434bc546">size hints</a> too.</p>
+<p><a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> may have optional children: either exactly one <a class="el" href="overview_xrcformat.html#overview_xrcformat_sizers">sizer</a> child or any number of non-toplevel window objects. If sizer child is used, it sets <a class="el" href="classwx_sizer.html#abc460cd0e2bb3bde72142fdb434bc546">size hints</a> too.</p>
 <h4><a class="anchor" id="xrc_wxdirpickerctrl"></a>
 
 wxDirPickerCtrl</h4>
@@ -1545,7 +1545,7 @@ Sizers</h2>
 <tr>
 <th>property  </th><th>type  </th><th>description  </th></tr>
 <tr>
-<td>option  </td><td>integer  </td><td>The "option" value for sizers. Used by <a class="el" href="classwx_box_sizer.html" title="The basic idea behind a box sizer is that windows will most often be laid out in rather simple basic ...">wxBoxSizer</a> to set proportion of the item in the growable direction (default: 0).  </td></tr>
+<td>option  </td><td>integer  </td><td>The "option" value for sizers. Used by <a class="el" href="classwx_box_sizer.html" title="ボックスサイザーの基本的な考え方は、ほとんどの場合ウィンドウは とても単純で基本的な配置、よくあるのは行や列、またはその階層内にレイアウトされるという考えです。">wxBoxSizer</a> to set proportion of the item in the growable direction (default: 0).  </td></tr>
 <tr>
 <td>flag  </td><td><a class="el" href="overview_xrcformat.html#overview_xrcformat_type_style">Style</a> </td><td><a class="el" href="classwx_sizer_item.html" title="The wxSizerItem class is used to track the position, size and other attributes of each item managed b...">wxSizerItem</a> flags (default: 0).  </td></tr>
 <tr>
@@ -1555,9 +1555,9 @@ Sizers</h2>
 <tr>
 <td>ratio  </td><td><a class="el" href="overview_xrcformat.html#overview_xrcformat_type_size">Size</a> </td><td>Item ratio, see wxSizer::SetRatio() (default: no ratio).  </td></tr>
 <tr>
-<td>cellpos  </td><td><a class="el" href="overview_xrcformat.html#overview_xrcformat_type_pos">Position</a> </td><td>(<a class="el" href="classwx_grid_bag_sizer.html" title="A wxSizer that can lay out items in a virtual grid like a wxFlexGridSizer but in this case explicit p...">wxGridBagSizer</a> only) Position, see <a class="el" href="classwx_g_b_sizer_item.html#a16f4cfb3084129107896cdcb6ab6e0df" title="If the item is already a member of a sizer then first ensure that there is no other item that would i...">wxGBSizerItem::SetPos()</a> (required).    </td></tr>
+<td>cellpos  </td><td><a class="el" href="overview_xrcformat.html#overview_xrcformat_type_pos">Position</a> </td><td>(<a class="el" href="classwx_grid_bag_sizer.html" title="wxFlexGridSizer のように子コントロールを仮想のグリッドに配置しますが、wxGBPosition を使用してコントロールを明示的に配置することが可能です。また、wxGBSpan を使用することで、複数の行または列にまたがってコントロールを配置することも可能です。">wxGridBagSizer</a> only) Position, see <a class="el" href="classwx_g_b_sizer_item.html#a16f4cfb3084129107896cdcb6ab6e0df" title="If the item is already a member of a sizer then first ensure that there is no other item that would i...">wxGBSizerItem::SetPos()</a> (required).    </td></tr>
 <tr>
-<td>cellspan  </td><td><a class="el" href="overview_xrcformat.html#overview_xrcformat_type_size">Size</a> </td><td>(<a class="el" href="classwx_grid_bag_sizer.html" title="A wxSizer that can lay out items in a virtual grid like a wxFlexGridSizer but in this case explicit p...">wxGridBagSizer</a> only) Span, see <a class="el" href="classwx_g_b_sizer_item.html#a62fe2aad8ca333ba7d99b688970ab23d" title="If the item is already a member of a sizer then first ensure that there is no other item that would i...">wxGBSizerItem::SetSpan()</a> (required).    </td></tr>
+<td>cellspan  </td><td><a class="el" href="overview_xrcformat.html#overview_xrcformat_type_size">Size</a> </td><td>(<a class="el" href="classwx_grid_bag_sizer.html" title="wxFlexGridSizer のように子コントロールを仮想のグリッドに配置しますが、wxGBPosition を使用してコントロールを明示的に配置することが可能です。また、wxGBSpan を使用することで、複数の行または列にまたがってコントロールを配置することも可能です。">wxGridBagSizer</a> only) Span, see <a class="el" href="classwx_g_b_sizer_item.html#a62fe2aad8ca333ba7d99b688970ab23d" title="If the item is already a member of a sizer then first ensure that there is no other item that would i...">wxGBSizerItem::SetSpan()</a> (required).    </td></tr>
 </table>
 <p>Example of sizers XRC code:  </p>
 <div class="fragment"><pre class="fragment">&lt;<span class="keywordtype">object</span> <span class="keyword">class</span>=<span class="stringliteral">"wxDialog"</span> name=<span class="stringliteral">"derived_dialog"</span>&gt;
@@ -1767,7 +1767,7 @@ ID Ranges</h2>
 <div class="fragment"><pre class="fragment"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> n=XRCID(<span class="stringliteral">"foo[start]"</span>); n &lt;= XRCID(<span class="stringliteral">"foo[end]"</span>); ++n)
     ...
 </pre></div><p>ID ranges can be seen in action in the <em>objref</em> dialog section of the <a class="el" href="page_samples.html#page_samples_xrc">XRC Sample</a>.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd><ul>
+<dl class="note"><dt><b>注:</b></dt><dd><ul>
 <li>All the items in an ID range must be contained in the same XRC file.  </li>
 <li>You can't use an ID range in a situation where static initialisation occurs; in particular, they won't work as expected in an event table. This is because the event table's IDs are set to their integer values before the XRC file is loaded, and aren't subsequently altered when the XRCID value changes.</li>
 </ul>
@@ -1800,7 +1800,7 @@ Unknown Objects</h3>
 <div class="fragment"><pre class="fragment">&lt;<span class="keywordtype">object</span> <span class="keyword">class</span>=<span class="stringliteral">"unknown"</span> name=<span class="stringliteral">"my_placeholder"</span>/&gt;
 </pre></div><p>The placeholder is inserted as dummy <a class="el" href="classwx_panel.html" title="A panel is a window on which controls are placed.">wxPanel</a> that will hold custom control in it. At runtime, after the resource is loaded and a window created from it (using e.g. <a class="el" href="classwx_xml_resource.html#aa9f2603cb55bfb2c696972be9875e229" title="Loads a dialog.">wxXmlResource::LoadDialog()</a>), use code must call <a class="el" href="classwx_xml_resource.html#ab550cd29efdc7afdf72fd0a1990d0074" title="Attaches an unknown control to the given panel/window/dialog.">wxXmlResource::AttachUnknownControl()</a> to insert the desired control into placeholder container.</p>
 <p>This method makes it possible to insert controls that are not known to XRC at all, but it's also impossible to configure the control in XRC description in any way. The only properties that can be specified are the <a class="el" href="overview_xrcformat.html#overview_xrcformat_std_props">standard window properties</a>.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd><code>unknown</code> class cannot be combined with <code>subclass</code> attribute, they are mutually exclusive.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd><code>unknown</code> class cannot be combined with <code>subclass</code> attribute, they are mutually exclusive.</dd></dl>
 <h3><a class="anchor" id="overview_xrcformat_extending_custom"></a>
 
 Adding Custom Classes</h3>

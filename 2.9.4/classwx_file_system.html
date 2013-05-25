@@ -211,7 +211,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>This static function adds new handler into the list of handlers (see <a class="el" href="classwx_file_system_handler.html" title="Classes derived from wxFileSystemHandler are used to access virtual file systems.">wxFileSystemHandler</a>) which provide access to virtual FS.  </p>
 <p>Note that if two handlers for the same protocol are added, the last added one takes precedence.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>You can call:  <div class="fragment"><pre class="fragment">              <a class="code" href="classwx_file_system.html#a442d841b2baa5a0eb83c3a985b1e3119" title="This static function adds new handler into the list of handlers (see wxFileSystemHandler) which provi...">wxFileSystem::AddHandler</a>(<span class="keyword">new</span> My_FS_Handler);
+<dl class="note"><dt><b>注:</b></dt><dd>You can call:  <div class="fragment"><pre class="fragment">              <a class="code" href="classwx_file_system.html#a442d841b2baa5a0eb83c3a985b1e3119" title="This static function adds new handler into the list of handlers (see wxFileSystemHandler) which provi...">wxFileSystem::AddHandler</a>(<span class="keyword">new</span> My_FS_Handler);
 </pre></div>  This is because (a) AddHandler is a static method, and (b) the handlers are deleted in wxFileSystem's destructor so that you don't have to care about it.  </dd></dl>
 
 </div>
@@ -448,7 +448,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Note that the user is responsible for deleting the returned <a class="el" href="classwx_f_s_file.html" title="This class represents a single file opened by wxFileSystem.">wxFSFile</a>. <em>flags</em> can be one or more of the <a class="el" href="filesys_8h.html#abe38fc3ba01ed25545f0c841da8c2942" title="Open Bit Flags.">wxFileSystemOpenFlags</a> values combined together.</p>
 <p>A stream opened with just the default <em>wxFS_READ</em> flag may or may not be seekable depending on the underlying source.</p>
 <p>Passing <em>"wxFS_READ | wxFS_SEEKABLE"</em> for <em>flags</em> will back a stream that is not natively seekable with memory or a file and return a stream that is always seekable.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>The <em>location</em> argument is, despite this method's name <em>not</em> a filename. It is a "location", aka <a class="el" href="classwx_file_system.html" title="This class provides an interface for opening files on different file systems.">wxFileSystem</a> URL (see <a class="el" href="overview_fs.html">wxFileSystem Overview</a>).  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>The <em>location</em> argument is, despite this method's name <em>not</em> a filename. It is a "location", aka <a class="el" href="classwx_file_system.html" title="This class provides an interface for opening files on different file systems.">wxFileSystem</a> URL (see <a class="el" href="overview_fs.html">wxFileSystem Overview</a>).  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxFileSystem::RemoveHandler" ref="a4dfed1274580f8fcbfd02e27bcb920d1" args="(wxFileSystemHandler *handler)" -->

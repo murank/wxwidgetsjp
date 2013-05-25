@@ -1085,14 +1085,14 @@ Public Member Functions</h2></td></tr>
 
 <p>Converts given text position to client coordinates in pixels.  </p>
 <p>This function allows to find where is the character at the given position displayed in the text control.</p>
-<div><span class="avail">Availability:</span>&nbsp;&nbsp;only available for the <a class="el" href="page_port.html#page_port_wxmsw">wxMSW</a>, <a class="el" href="page_port.html#page_port_wxgtk">wxGTK</a> ports.</div>  Additionally, wxGTK only implements this method for multiline controls and <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="Global instance of a wxPoint initialized with values (-1,-1).">wxDefaultPosition</a> is always returned for the single line ones.</p>
+<div><span class="avail">Availability:</span>&nbsp;&nbsp;only available for the <a class="el" href="page_port.html#page_port_wxmsw">wxMSW</a>, <a class="el" href="page_port.html#page_port_wxgtk">wxGTK</a> ports.</div>  Additionally, wxGTK only implements this method for multiline controls and <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="(-1,-1) に初期化された wxPoint のグルーバルインスタンス。">wxDefaultPosition</a> is always returned for the single line ones.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">pos</td><td>Text position in 0 to <a class="el" href="classwx_text_entry.html#a0d31704b5bc0b8cfe2502a66409d05c9" title="Returns the zero based index of the last position in the text control, which is equal to the number o...">GetLastPosition()</a> range (inclusive).  </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>On success returns a <a class="el" href="classwx_point.html" title="wxPoint は図形操作のための有用なデータ構造です。">wxPoint</a> which contains client coordinates for the given position in pixels, otherwise returns <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="Global instance of a wxPoint initialized with values (-1,-1).">wxDefaultPosition</a>.</dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>On success returns a <a class="el" href="classwx_point.html" title="wxPoint は図形操作のための有用なデータ構造です。">wxPoint</a> which contains client coordinates for the given position in pixels, otherwise returns <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="(-1,-1) に初期化された wxPoint のグルーバルインスタンス。">wxDefaultPosition</a>.</dd></dl>
 <dl class="since"><dt><b>Since:</b></dt><dd>2.9.3</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_text_ctrl.html#a4782a4351b2661accbad3db450f30e81" title="Converts the given zero based column and line number to a position.">XYToPosition()</a>, <a class="el" href="classwx_text_ctrl.html#a80cd3dfa4f8c064adf84800eebed41da" title="Converts given position to a zero-based column, line number pair.">PositionToXY()</a> </dd></dl>
 

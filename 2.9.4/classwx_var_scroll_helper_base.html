@@ -304,7 +304,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>When the number of scroll units change, we try to estimate the total size of all units when the full window size is needed (i.e.  </p>
 <p>to calculate the scrollbar thumb size). This is a rather expensive operation in terms of unit access, so if the user code may estimate the average size better or faster than we do, it should override this function to implement its own logic. This function should return the best guess for the total virtual window size.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Although returning a totally wrong value would still work, it risks resulting in very strange scrollbar behaviour so this function should really try to make the best guess possible.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Although returning a totally wrong value would still work, it risks resulting in very strange scrollbar behaviour so this function should really try to make the best guess possible.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxVarScrollHelperBase::GetNonOrientationTargetSize" ref="a5b9316fbade3450efdc359ac049a7839" args="() const =0" -->

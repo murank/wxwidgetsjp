@@ -440,8 +440,8 @@ Protected Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">parent</td><td>Parent window. Must not be <span class="literal">NULL</span>.  </td></tr>
     <tr><td class="paramname">id</td><td>Window identifier. The value wxID_ANY indicates a default value.  </td></tr>
-    <tr><td class="paramname">pos</td><td>Window position. If <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="Global instance of a wxPoint initialized with values (-1,-1).">wxDefaultPosition</a> is specified then a default position is chosen.  </td></tr>
-    <tr><td class="paramname">size</td><td>Window size. If <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="Global instance of a wxSize object initialized to (-1,-1).">wxDefaultSize</a> is specified then the window is sized appropriately.  </td></tr>
+    <tr><td class="paramname">pos</td><td>Window position. If <a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="(-1,-1) に初期化された wxPoint のグルーバルインスタンス。">wxDefaultPosition</a> is specified then a default position is chosen.  </td></tr>
+    <tr><td class="paramname">size</td><td>Window size. If <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="(-1,-1) に初期化された wxSize のグルーバルインスタンス。">wxDefaultSize</a> is specified then the window is sized appropriately.  </td></tr>
     <tr><td class="paramname">style</td><td>Window style. See <a class="el" href="classwx_list_ctrl.html" title="A list control presents lists in a number of formats: list view, report view, icon view and small ico...">wxListCtrl</a>.  </td></tr>
     <tr><td class="paramname">validator</td><td>Window validator.  </td></tr>
     <tr><td class="paramname">name</td><td>Window name.</td></tr>
@@ -580,7 +580,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Deletes all items and all columns.  </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>This sends an event of type <code>wxEVT_COMMAND_LIST_DELETE_ALL_ITEMS</code> under all platforms.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>This sends an event of type <code>wxEVT_COMMAND_LIST_DELETE_ALL_ITEMS</code> under all platforms.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxListCtrl::Create" ref="a5b13e700b9957677468d63558d73d5df" args="(wxWindow *parent, wxWindowID id, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize, long style=wxLC_ICON, const wxValidator &amp;validator=wxDefaultValidator, const wxString &amp;name=wxListCtrlNameStr)" -->
@@ -1058,7 +1058,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Returns the edit control being currently used to edit a label.  </p>
 <p>Returns <span class="literal">NULL</span> if no label is being edited.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>It is currently only implemented for wxMSW and the generic version, not for the native Mac OS X version.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>It is currently only implemented for wxMSW and the generic version, not for the native Mac OS X version.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxListCtrl::GetImageList" ref="aaf7fa8cac520e418487c645f8c81405a" args="(int which) const " -->
@@ -1410,7 +1410,7 @@ Protected Member Functions</h2></td></tr>
 <li>wxLIST_NEXT_LEFT: Searches for an item to the left of the specified item.</li>
 <li>wxLIST_NEXT_RIGHT: Searches for an item to the right of the specified item.</li>
 </ul>
-<dl class="note"><dt><b>Note:</b></dt><dd>this parameter is only supported by wxMSW currently and ignored on other platforms.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>this parameter is only supported by wxMSW currently and ignored on other platforms.</dd></dl>
 <p><em>state</em> can be a bitlist of the following:</p>
 <ul>
 <li>wxLIST_STATE_DONTCARE: Don't care what the state is.</li>
@@ -1905,7 +1905,7 @@ Protected Member Functions</h2></td></tr>
 <p>This function may be overridden in the derived class for a control with <code>wxLC_VIRTUAL</code> style.  </p>
 <p>It should return the attribute for the for the specified <em>item</em> and <em>column</em> or <span class="literal">NULL</span> to use the default appearance parameters.</p>
 <p>The base class version returns <code>OnGetItemAttr(item)</code>.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Currently this function is only called under wxMSW, the other ports only support <a class="el" href="classwx_list_ctrl.html#ad8508ae3a3478d778a912581f87cf349" title="This function may be overridden in the derived class for a control with wxLC_VIRTUAL style...">OnGetItemAttr()</a></dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Currently this function is only called under wxMSW, the other ports only support <a class="el" href="classwx_list_ctrl.html#ad8508ae3a3478d778a912581f87cf349" title="This function may be overridden in the derived class for a control with wxLC_VIRTUAL style...">OnGetItemAttr()</a></dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_list_ctrl.html#ad8508ae3a3478d778a912581f87cf349" title="This function may be overridden in the derived class for a control with wxLC_VIRTUAL style...">OnGetItemAttr()</a>, <a class="el" href="classwx_list_ctrl.html#a92370967f97215e6068326645ee76624" title="This function must be overridden in the derived class for a control with wxLC_VIRTUAL style...">OnGetItemText()</a>, <a class="el" href="classwx_list_ctrl.html#a05bd10ebe1ea2a45955dda48045d23a3" title="This function must be overridden in the derived class for a control with wxLC_VIRTUAL style having an...">OnGetItemImage()</a>, <a class="el" href="classwx_list_ctrl.html#ac2650c225e81512af8dcff22ab50a9dc" title="Override this function in the derived class for a control with wxLC_VIRTUAL and wxLC_REPORT styles in...">OnGetItemColumnImage()</a>,  </dd></dl>
 
 </div>
@@ -2074,7 +2074,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Scrolls the list control.  </p>
 <p>If in icon, small icon or report view mode, <em>dx</em> specifies the number of pixels to scroll. If in list view mode, <em>dx</em> specifies the number of columns to scroll. <em>dy</em> always specifies the number of pixels to scroll vertically.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>This method is currently only implemented in the Windows version.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>This method is currently only implemented in the Windows version.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxListCtrl::SetBackgroundColour" ref="a935412e9017c3fe511514cfc360a3117" args="(const wxColour &amp;col)" -->

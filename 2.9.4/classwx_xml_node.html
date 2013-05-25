@@ -436,7 +436,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Adds node <em>child</em> as the last child of this node.  </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Note that this function works in O(n) time where <em>n</em> is the number of existing children. Consequently, adding large number of child nodes using this method can be expensive, because it has O(n^2) time complexity in number of nodes to be added. Use <a class="el" href="classwx_xml_node.html#a7387dfd55a683f1c52362c08dafd1106" title="Inserts the child node immediately after precedingNode in the children list.">InsertChildAfter()</a> to populate XML tree in linear time.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Note that this function works in O(n) time where <em>n</em> is the number of existing children. Consequently, adding large number of child nodes using this method can be expensive, because it has O(n^2) time complexity in number of nodes to be added. Use <a class="el" href="classwx_xml_node.html#a7387dfd55a683f1c52362c08dafd1106" title="Inserts the child node immediately after precedingNode in the children list.">InsertChildAfter()</a> to populate XML tree in linear time.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_xml_node.html#a0278086b6241fd16490c0090d983dd53" title="Inserts the child node immediately before followingNode in the children list.">InsertChild()</a>, <a class="el" href="classwx_xml_node.html#a7387dfd55a683f1c52362c08dafd1106" title="Inserts the child node immediately after precedingNode in the children list.">InsertChildAfter()</a> </dd></dl>
 
 </div>
@@ -778,7 +778,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Inserts the <em>child</em> node immediately before <em>followingNode</em> in the children list.  </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if <em>followingNode</em> has been found and the <em>child</em> node has been inserted.</dd></dl>
-<dl class="note"><dt><b>Note:</b></dt><dd>For historical reasons, <em>followingNode</em> may be <span class="literal">NULL</span>. In that case, then <em>child</em> is prepended to the list of children and becomes the first child of this node, i.e. it behaves identically to using the first children (as returned by <a class="el" href="classwx_xml_node.html#ad9bb1ba74e8f01cba6107a59ccc7273b" title="Returns the first child of this node.">GetChildren()</a>) for <em>followingNode</em>).</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>For historical reasons, <em>followingNode</em> may be <span class="literal">NULL</span>. In that case, then <em>child</em> is prepended to the list of children and becomes the first child of this node, i.e. it behaves identically to using the first children (as returned by <a class="el" href="classwx_xml_node.html#ad9bb1ba74e8f01cba6107a59ccc7273b" title="Returns the first child of this node.">GetChildren()</a>) for <em>followingNode</em>).</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_xml_node.html#a06a09a31e1f7531f3b37f29b89fe5a10" title="Adds node child as the last child of this node.">AddChild()</a>, <a class="el" href="classwx_xml_node.html#a7387dfd55a683f1c52362c08dafd1106" title="Inserts the child node immediately after precedingNode in the children list.">InsertChildAfter()</a> </dd></dl>
 
 </div>

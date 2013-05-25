@@ -170,7 +170,7 @@ Converting Strings</h2>
 </pre></div><p>Example 5: Printing a <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> to stdout in custom encoding. Using preconstructed <a class="el" href="classwx_c_s_conv.html" title="This class converts between any character set supported by the system and Unicode.">wxCSConv</a> instance.</p>
 <div class="fragment"><pre class="fragment"><a class="code" href="classwx_c_s_conv.html" title="This class converts between any character set supported by the system and Unicode.">wxCSConv</a> cust(user_encoding);
 printf(<span class="stringliteral">"Data: %s\n"</span>, (<span class="keyword">const</span> <span class="keywordtype">char</span>*) str.mb_str(cust));
-</pre></div><dl class="note"><dt><b>Note:</b></dt><dd>Since mb_str() returns a temporary <a class="el" href="classwx_char_buffer.html" title="これは char 型による wxCharTypeBuffer&lt;T&gt; の特殊化です。">wxCharBuffer</a> to hold the result of the conversion, you need to explicitly cast it to const char* if you use it in a vararg context (like with printf).</dd></dl>
+</pre></div><dl class="note"><dt><b>注:</b></dt><dd>Since mb_str() returns a temporary <a class="el" href="classwx_char_buffer.html" title="これは char 型による wxCharTypeBuffer&lt;T&gt; の特殊化です。">wxCharBuffer</a> to hold the result of the conversion, you need to explicitly cast it to const char* if you use it in a vararg context (like with printf).</dd></dl>
 <h2><a class="anchor" id="overview_mbconv_buffers"></a>
 
 Converting Buffers</h2>

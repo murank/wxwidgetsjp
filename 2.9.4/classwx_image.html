@@ -771,7 +771,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="remark"><dt><b>Remarks:</b></dt><dd>Depending on how wxWidgets has been configured and by which handlers have been loaded, not all formats may be available. Any handler other than BMP must be previously initialized with <a class="el" href="classwx_image.html#ab39fb3747dfb8c2d444eff9fe41fa205" title="Register an image handler.">wxImage::AddHandler</a> or wxInitAllImageHandlers.</dd></dl>
-<dl class="note"><dt><b>Note:</b></dt><dd>You can use <a class="el" href="classwx_image.html#af752636f2a2baecd5d33cd8e8501c044" title="Gets a user-defined integer-valued option.">GetOptionInt()</a> to get the hotspot when loading cursor files:  <div class="fragment"><pre class="fragment">            <span class="keywordtype">int</span> hotspot_x = image.GetOptionInt(<a class="code" href="image_8h.html#a22847044c140504122efa4943b0f6e7f">wxIMAGE_OPTION_CUR_HOTSPOT_X</a>);
+<dl class="note"><dt><b>注:</b></dt><dd>You can use <a class="el" href="classwx_image.html#af752636f2a2baecd5d33cd8e8501c044" title="Gets a user-defined integer-valued option.">GetOptionInt()</a> to get the hotspot when loading cursor files:  <div class="fragment"><pre class="fragment">            <span class="keywordtype">int</span> hotspot_x = image.GetOptionInt(<a class="code" href="image_8h.html#a22847044c140504122efa4943b0f6e7f">wxIMAGE_OPTION_CUR_HOTSPOT_X</a>);
             <span class="keywordtype">int</span> hotspot_y = image.GetOptionInt(<a class="code" href="image_8h.html#a420ba1d2430b0c7d92c9a09ccf41fae8">wxIMAGE_OPTION_CUR_HOTSPOT_Y</a>);
 </pre></div></dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_image.html#aa249e657259fe6518d68a5208b9043d0" title="Loads an image from an input stream.">LoadFile()</a> </dd></dl>
@@ -1659,7 +1659,7 @@ Static Public Member Functions</h2></td></tr>
 <p>The parameters <em>r</em>, <em>g</em>, <em>b</em> are pointers to variables to save the colour.</p>
 <p>The parameters <em>startR</em>, <em>startG</em>, <em>startB</em> define the initial values of the colour. The returned colour will have RGB values equal to or greater than these.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns <span class="literal">false</span> if there is no unused colour left, <span class="literal">true</span> on success.</dd></dl>
-<dl class="note"><dt><b>Note:</b></dt><dd>This method involves computing the histogram, which is a computationally intensive operation.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>This method involves computing the histogram, which is a computationally intensive operation.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxImage::FindHandler" ref="abb0458fbb84d41af925f3d2c59d1adde" args="(const wxString &amp;name)" -->
@@ -2203,7 +2203,7 @@ Static Public Member Functions</h2></td></tr>
 <li><code>wxIMAGE_OPTION_TIFF_COMPRESSION:</code> Compression type. By default it is set to 1 (COMPRESSION_NONE). Typical other values are 5 (COMPRESSION_LZW) and 7 (COMPRESSION_JPEG). See tiff.h for more options.  </li>
 <li><code>wxIMAGE_OPTION_TIFF_PHOTOMETRIC:</code> Specifies the photometric interpretation. By default it is set to 2 (PHOTOMETRIC_RGB) for RGB images and 0 (PHOTOMETRIC_MINISWHITE) for greyscale or black and white images. It can also be set to 1 (PHOTOMETRIC_MINISBLACK) to treat the lowest value as black and highest as white. If you want a greyscale image it is also sufficient to only specify <code>wxIMAGE_OPTION_TIFF_PHOTOMETRIC</code> and set it to either PHOTOMETRIC_MINISWHITE or PHOTOMETRIC_MINISBLACK. The other values are taken care of.</li>
 </ul>
-<dl class="note"><dt><b>Note:</b></dt><dd>Be careful when combining the options <code>wxIMAGE_OPTION_TIFF_SAMPLESPERPIXEL</code>, <code>wxIMAGE_OPTION_TIFF_BITSPERSAMPLE</code>, and <code>wxIMAGE_OPTION_TIFF_PHOTOMETRIC</code>. While some measures are taken to prevent illegal combinations and/or values, it is still easy to abuse them and come up with invalid results in the form of either corrupted images or crashes.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Be careful when combining the options <code>wxIMAGE_OPTION_TIFF_SAMPLESPERPIXEL</code>, <code>wxIMAGE_OPTION_TIFF_BITSPERSAMPLE</code>, and <code>wxIMAGE_OPTION_TIFF_PHOTOMETRIC</code>. While some measures are taken to prevent illegal combinations and/or values, it is still easy to abuse them and come up with invalid results in the form of either corrupted images or crashes.</dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the option, case-insensitive.  </td></tr>
@@ -2632,7 +2632,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if the operation succeeded, <span class="literal">false</span> otherwise. If the optional index parameter is out of range, <span class="literal">false</span> is returned and a call to <a class="el" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError()</a> takes place.</dd></dl>
 <dl class="remark"><dt><b>Remarks:</b></dt><dd>Depending on how wxWidgets has been configured, not all formats may be available.</dd></dl>
-<dl class="note"><dt><b>Note:</b></dt><dd>You can use <a class="el" href="classwx_image.html#af752636f2a2baecd5d33cd8e8501c044" title="Gets a user-defined integer-valued option.">GetOptionInt()</a> to get the hotspot when loading cursor files:  <div class="fragment"><pre class="fragment">            <span class="keywordtype">int</span> hotspot_x = image.GetOptionInt(<a class="code" href="image_8h.html#a22847044c140504122efa4943b0f6e7f">wxIMAGE_OPTION_CUR_HOTSPOT_X</a>);
+<dl class="note"><dt><b>注:</b></dt><dd>You can use <a class="el" href="classwx_image.html#af752636f2a2baecd5d33cd8e8501c044" title="Gets a user-defined integer-valued option.">GetOptionInt()</a> to get the hotspot when loading cursor files:  <div class="fragment"><pre class="fragment">            <span class="keywordtype">int</span> hotspot_x = image.GetOptionInt(<a class="code" href="image_8h.html#a22847044c140504122efa4943b0f6e7f">wxIMAGE_OPTION_CUR_HOTSPOT_X</a>);
             <span class="keywordtype">int</span> hotspot_y = image.GetOptionInt(<a class="code" href="image_8h.html#a420ba1d2430b0c7d92c9a09ccf41fae8">wxIMAGE_OPTION_CUR_HOTSPOT_Y</a>);
 </pre></div></dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_image.html#adbdd72be525d71ebb3fe01a5de02607c" title="Saves an image in the given stream.">SaveFile()</a> </dd></dl>
@@ -3211,7 +3211,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if the operation succeeded, <span class="literal">false</span> otherwise.</dd></dl>
 <dl class="remark"><dt><b>Remarks:</b></dt><dd>Depending on how wxWidgets has been configured, not all formats may be available.</dd></dl>
-<dl class="note"><dt><b>Note:</b></dt><dd>You can use <a class="el" href="classwx_image.html#a952ee065b17ee07a8cbee568486e01a4" title="Sets a user-defined option.">SetOption()</a> to set the hotspot when saving an image into a cursor file (default hotspot is in the centre of the image):  <div class="fragment"><pre class="fragment">            image.SetOption(<a class="code" href="image_8h.html#a22847044c140504122efa4943b0f6e7f">wxIMAGE_OPTION_CUR_HOTSPOT_X</a>, hotspotX);
+<dl class="note"><dt><b>注:</b></dt><dd>You can use <a class="el" href="classwx_image.html#a952ee065b17ee07a8cbee568486e01a4" title="Sets a user-defined option.">SetOption()</a> to set the hotspot when saving an image into a cursor file (default hotspot is in the centre of the image):  <div class="fragment"><pre class="fragment">            image.SetOption(<a class="code" href="image_8h.html#a22847044c140504122efa4943b0f6e7f">wxIMAGE_OPTION_CUR_HOTSPOT_X</a>, hotspotX);
             image.SetOption(<a class="code" href="image_8h.html#a420ba1d2430b0c7d92c9a09ccf41fae8">wxIMAGE_OPTION_CUR_HOTSPOT_Y</a>, hotspotY);
 </pre></div></dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_image.html#aa249e657259fe6518d68a5208b9043d0" title="Loads an image from an input stream.">LoadFile()</a> </dd></dl>
@@ -3618,7 +3618,7 @@ Static Public Member Functions</h2></td></tr>
 <p>The parameter <em>mask</em> is the mask image to extract mask shape from. It must have the same dimensions as the image.</p>
 <p>The parameters <em>mr</em>, <em>mg</em>, <em>mb</em> are the RGB values of the pixels in mask that will be used to create the mask.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns <span class="literal">false</span> if mask does not have same dimensions as the image or if there is no unused colour left. Returns <span class="literal">true</span> if the mask was successfully applied.</dd></dl>
-<dl class="note"><dt><b>Note:</b></dt><dd>Note that this method involves computing the histogram, which is a computationally intensive operation.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Note that this method involves computing the histogram, which is a computationally intensive operation.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxImage::SetOption" ref="a952ee065b17ee07a8cbee568486e01a4" args="(const wxString &amp;name, const wxString &amp;value)" -->

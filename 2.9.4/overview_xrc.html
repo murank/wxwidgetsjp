@@ -210,7 +210,7 @@ Getting Started with XRC</h2>
 <p>This is how you would use the above simple dialog in your code.</p>
 <div class="fragment"><pre class="fragment"><span class="keywordtype">void</span> MyClass::ShowDialog()
 {
-    <a class="code" href="classwx_dialog.html" title="A dialog box is a window with a title bar and sometimes a system menu, which can be moved around the ...">wxDialog</a> dlg;
+    <a class="code" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> dlg;
     <span class="keywordflow">if</span> (<a class="code" href="classwx_xml_resource.html#ae9a487479dcd6204d12fbbf7be497561" title="Gets the global resources object or creates one if none exists.">wxXmlResource::Get</a>()-&gt;LoadDialog(&amp;dlg, NULL, <span class="stringliteral">"SimpleDialog"</span>))
         dlg.<a class="code" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="Shows an application-modal dialog.">ShowModal</a>();
 }
@@ -220,7 +220,7 @@ Getting Started with XRC</h2>
 <p>The last section showed how to load top-level windows like dialogs, but what about child windows like the <a class="el" href="classwx_text_ctrl.html" title="テキストの表示と編集が可能なテキストコントロール。">wxTextCtrl</a> named "text" that the dialog contains? You can't 'load' an individual child control in the same way. Instead you use the XRCCTRL macro to get a pointer to the child. To expand the previous code:</p>
 <div class="fragment"><pre class="fragment"><span class="keywordtype">void</span> MyClass::ShowDialog()
 {
-    <a class="code" href="classwx_dialog.html" title="A dialog box is a window with a title bar and sometimes a system menu, which can be moved around the ...">wxDialog</a> dlg;
+    <a class="code" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> dlg;
     <span class="keywordflow">if</span> (!<a class="code" href="classwx_xml_resource.html#ae9a487479dcd6204d12fbbf7be497561" title="Gets the global resources object or creates one if none exists.">wxXmlResource::Get</a>()-&gt;LoadDialog(&amp;dlg, NULL, <span class="stringliteral">"SimpleDialog"</span>))
         <span class="keywordflow">return</span>;
 
@@ -236,7 +236,7 @@ Getting Started with XRC</h2>
 <p>The ID of a control is often needed, e.g. for use in an event table or with <a class="el" href="classwx_evt_handler.html#a84b1e446053bda8f76f13336839e8b64" title="指定された関数、ファンクタ、メンバ関数をイベントへ動的にバインドします。">wxEvtHandler::Bind</a>. It can easily be found by passing the name of the control to the XRCID macro:</p>
 <div class="fragment"><pre class="fragment"><span class="keywordtype">void</span> MyClass::ShowDialog()
 {
-    <a class="code" href="classwx_dialog.html" title="A dialog box is a window with a title bar and sometimes a system menu, which can be moved around the ...">wxDialog</a> dlg;
+    <a class="code" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> dlg;
     <span class="keywordflow">if</span> (!<a class="code" href="classwx_xml_resource.html#ae9a487479dcd6204d12fbbf7be497561" title="Gets the global resources object or creates one if none exists.">wxXmlResource::Get</a>()-&gt;LoadDialog(&amp;dlg, NULL, <span class="stringliteral">"SimpleDialog"</span>))
         <span class="keywordflow">return</span>;
 
@@ -288,7 +288,7 @@ Binary Resource Files</h2>
 <div class="fragment"><pre class="fragment">$ wxrc resource.xrc
 $ wxrc resource.xrc -o resource.xrs
 $ wxrc resource.xrc -v -c -o resource.cpp
-</pre></div><dl class="note"><dt><b>Note:</b></dt><dd>XRS file is essentially a renamed ZIP archive which means that you can manipulate it with standard ZIP tools. Note that if you are using XRS files, you have to initialize the <a class="el" href="classwx_file_system.html" title="This class provides an interface for opening files on different file systems.">wxFileSystem</a> archive handler first! It is a simple thing to do:</dd></dl>
+</pre></div><dl class="note"><dt><b>注:</b></dt><dd>XRS file is essentially a renamed ZIP archive which means that you can manipulate it with standard ZIP tools. Note that if you are using XRS files, you have to initialize the <a class="el" href="classwx_file_system.html" title="This class provides an interface for opening files on different file systems.">wxFileSystem</a> archive handler first! It is a simple thing to do:</dd></dl>
 <div class="fragment"><pre class="fragment"><span class="preprocessor">#include &lt;<a class="code" href="filesys_8h.html">wx/filesys.h</a>&gt;</span>
 <span class="preprocessor">#include &lt;<a class="code" href="fs__arc_8h.html">wx/fs_arc.h</a>&gt;</span>
 ...
@@ -308,7 +308,7 @@ InitXmlResource();
 C++ header file generation</h2>
 <p>Using the <code>-e</code> switch together with <code>-c</code>, a C++ header file is written containing class definitions for the GUI windows defined in the XRC file. This code generation can make it easier to use XRC and automate program development. The classes can be used as basis for development, freeing the programmer from dealing with most of the XRC specifics (e.g. <code>XRCCTRL</code>).</p>
 <p>For each top level window defined in the XRC file a C++ class definition is generated, containing as class members the named widgets of the window. A default constructor for each class is also generated. Inside the constructor all XRC loading is done and all class members representing widgets are initialized.</p>
-<p>A simple example will help understand how the scheme works. Suppose you have a XRC file defining a top level window <code>TestWnd_Base</code>, which subclasses <a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> (any other class like <code><a class="el" href="classwx_dialog.html" title="A dialog box is a window with a title bar and sometimes a system menu, which can be moved around the ...">wxDialog</a></code> will do also), and has subwidgets <a class="el" href="classwx_text_ctrl.html" title="テキストの表示と編集が可能なテキストコントロール。">wxTextCtrl</a> A and <a class="el" href="classwx_button.html" title="ボタンはテキストを含んだコントロールであり、もっとも一般的な GUI 要素のひとつです。">wxButton</a> B.</p>
+<p>A simple example will help understand how the scheme works. Suppose you have a XRC file defining a top level window <code>TestWnd_Base</code>, which subclasses <a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> (any other class like <code><a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a></code> will do also), and has subwidgets <a class="el" href="classwx_text_ctrl.html" title="テキストの表示と編集が可能なテキストコントロール。">wxTextCtrl</a> A and <a class="el" href="classwx_button.html" title="ボタンはテキストを含んだコントロールであり、もっとも一般的な GUI 要素のひとつです。">wxButton</a> B.</p>
 <p>The XRC file and corresponding class definition in the header file will be something like:</p>
 <div class="fragment"><pre class="fragment"><?xml version=<span class="stringliteral">"1.0"</span>?>
 &lt;resource version=<span class="stringliteral">"2.3.0.1"</span>&gt;

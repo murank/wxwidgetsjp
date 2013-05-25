@@ -316,7 +316,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Set the user scale and device origin of the <a class="el" href="classwx_d_c.html" title='A wxDC is a "device context" onto which graphics and text can be drawn.'>wxDC</a> associated with this <a class="el" href="classwx_printout.html" title="This class encapsulates the functionality of printing out an application document.">wxPrintout</a> so that the given image size fits entirely within the paper and the origin is at the top left corner of the paper.  </p>
 <p>Use this if you're managing your own page margins.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>With most printers, the region around the edges of the paper are not printable so that the edges of the image could be cut off.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>With most printers, the region around the edges of the paper are not printable so that the edges of the image could be cut off.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPrintout::GetDC" ref="a0d7807fc425779ab74953d51d6df8652" args="() const " -->
@@ -687,7 +687,7 @@ Public Member Functions</h2></td></tr>
 <p>That is, the user scale is set to (1,1) and the device origin is set to (0,0).</p>
 <p>Use this if you want to do your own scaling prior to calling <a class="el" href="classwx_d_c.html" title='A wxDC is a "device context" onto which graphics and text can be drawn.'>wxDC</a> drawing calls, for example, if your underlying model is floating-point and you want to achieve maximum drawing precision on high-resolution printers.</p>
 <p>You can use the GetLogicalXXXRect() routines below to obtain the paper rectangle, page rectangle, or page margins rectangle to perform your own scaling.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>While the underlying drawing model of Mac OS X is floating-point, wxWidgets's drawing model scales from integer coordinates.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>While the underlying drawing model of Mac OS X is floating-point, wxWidgets's drawing model scales from integer coordinates.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPrintout::MapScreenSizeToPage" ref="acb6a81daabfcfcf601a877bdc69fa46b" args="()" -->

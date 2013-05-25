@@ -260,7 +260,7 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Ring the system bell.  </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>This function is categorized as a GUI one and so is not thread-safe.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>This function is categorized as a GUI one and so is not thread-safe.</dd></dl>
 <p>Include <a href="file:">file:</a> </p>
 <div class="fragment"><pre class="fragment">#include &lt;wx/utils.h&gt; </pre></div><h2></h2>
 <div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div> 
@@ -449,7 +449,7 @@ Functions</h2></td></tr>
 
 <p>Pops up a file selector box.  </p>
 <p>In Windows, this is the common file selector dialog. In X, this is a file selector box with the same functionality. The path and filename are distinct elements of a full file pathname. If path is empty, the current directory will be used. If filename is empty, no default filename will be supplied. The wildcard determines what files are displayed in the file selector, and file extension supplies a type extension for the required filename. Flags may be a combination of wxFD_OPEN, wxFD_SAVE, wxFD_OVERWRITE_PROMPT or wxFD_FILE_MUST_EXIST.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>wxFD_MULTIPLE can only be used with <a class="el" href="classwx_file_dialog.html" title="This class represents the file chooser dialog.">wxFileDialog</a> and not here since this function only returns a single file name.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>wxFD_MULTIPLE can only be used with <a class="el" href="classwx_file_dialog.html" title="This class represents the file chooser dialog.">wxFileDialog</a> and not here since this function only returns a single file name.</dd></dl>
 <p>Both the Unix and Windows versions implement a wildcard filter. Typing a filename containing wildcards (*, ?) in the filename text item, and clicking on Ok, will result in only those files matching the pattern being displayed.</p>
 <p>The wildcard may be a specification for multiple types of file with a description for each, such as:</p>
 <div class="fragment"><pre class="fragment">    <span class="stringliteral">"BMP files (*.bmp)|*.bmp|GIF files (*.gif)|*.gif"</span>

@@ -136,7 +136,7 @@ function toggleVisibility(linkObj) {
 <div class="textblock"><p>A menu is a popup (or pull down) list of items, one of which may be selected before the menu goes away (clicking elsewhere dismisses the menu).  </p>
 <p>Menus may be used to construct either menu bars or popup menus.</p>
 <p>A menu item has an integer ID associated with it which can be used to identify the selection, or to change the menu item in some way. A menu item with a special identifier <em>wxID_SEPARATOR</em> is a separator item and doesn't have an associated command but just makes a separator line appear in the menu.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Please note that <em>wxID_ABOUT</em> and <em>wxID_EXIT</em> are predefined by wxWidgets and have a special meaning since entries using these IDs will be taken out of the normal menus under MacOS X and will be inserted into the system menu (following the appropriate MacOS X interface guideline).</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Please note that <em>wxID_ABOUT</em> and <em>wxID_EXIT</em> are predefined by wxWidgets and have a special meaning since entries using these IDs will be taken out of the normal menus under MacOS X and will be inserted into the system menu (following the appropriate MacOS X interface guideline).</dd></dl>
 <p>Menu items may be either <em>normal</em> items, <em>check</em> items or <em>radio</em> items. Normal items don't have any special properties while the check items have a boolean flag associated to them and they show a checkmark in the menu when the flag is set. wxWidgets automatically toggles the flag value when the item is clicked and its value may be retrieved using either <a class="el" href="classwx_menu.html#a088f0097e2077518e60200f80232e291" title="Determines whether a menu item is checked.">wxMenu::IsChecked</a> method of <a class="el" href="classwx_menu.html" title="A menu is a popup (or pull down) list of items, one of which may be selected before the menu goes awa...">wxMenu</a> or <a class="el" href="classwx_menu_bar.html" title="A menu bar is a series of menus accessible from the top of a frame.">wxMenuBar</a> itself or by using wxEvent::IsChecked when you get the menu notification for the item in question.</p>
 <p>The radio items are similar to the check items except that all the other items in the same radio group are unchecked when a radio item is checked. The radio group is formed by a contiguous range of radio items, i.e. it starts at the first item of this kind and ends with the first item of a different kind (or the end of the menu). Notice that because the radio groups are defined in terms of the item positions inserting or removing the items in the menu containing the radio items risks to not work correctly.</p>
 <h2><a class="anchor" id="menu_allocation"></a>
@@ -363,7 +363,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Destructor, destroying the menu.  </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Under Motif, a popup menu must have a valid parent (the window it was last popped up on) when being destroyed. Therefore, make sure you delete or re-use the popup menu <em>before</em> destroying the parent window. Re-use in this context means popping up the menu on a different window from last time, which causes an implicit destruction and recreation of internal data structures.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Under Motif, a popup menu must have a valid parent (the window it was last popped up on) when being destroyed. Therefore, make sure you delete or re-use the popup menu <em>before</em> destroying the parent window. Re-use in this context means popping up the menu on a different window from last time, which causes an implicit destruction and recreation of internal data structures.  </dd></dl>
 
 </div>
 </div>
@@ -573,7 +573,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Adds a radio item to the end of the menu.  </p>
 <p>All consequent radio items form a group and when an item in the group is checked, all the others are automatically unchecked.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Radio items are not supported under wxMotif.</dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>Radio items are not supported under wxMotif.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_menu.html#ab8b9fe9baabeb67cf3eaa70df072f7c9" title="Adds a menu item.">Append()</a>, <a class="el" href="classwx_menu.html#a1016a10b8df49297cf4ccc970d5106aa" title="Inserts a radio item at the given position.">InsertRadioItem()</a> </dd></dl>
 
 </div>

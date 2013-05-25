@@ -284,7 +284,7 @@ Protected Member Functions</h2></td></tr>
 <p>Returns true if system tray is available in the desktop environment the app runs under.  </p>
 <p>On Windows and Mac OS X, the tray is always available and this function simply returns true.</p>
 <p>On Unix, X11 environment may or may not provide the tray, depending on user's desktop environment. Most modern desktops support the tray via the System Tray Protocol by freedesktop.org (<a href="http://freedesktop.org/wiki/Specifications/systemtray-spec">http://freedesktop.org/wiki/Specifications/systemtray-spec</a>).</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>Tray availability may change during application's lifetime under X11 and so applications shouldn't cache the result.</dd>
+<dl class="note"><dt><b>注:</b></dt><dd>Tray availability may change during application's lifetime under X11 and so applications shouldn't cache the result.</dd>
 <dd>
 <a class="el" href="classwx_task_bar_icon.html" title="This class represents a taskbar icon.">wxTaskBarIcon</a> supports older GNOME 1.2 and KDE 1/2 methods of adding icons to tray, but they are unreliable and this method doesn't detect them.</dd></dl>
 <dl class="since"><dt><b>Since:</b></dt><dd>2.9.0  </dd></dl>
@@ -344,7 +344,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Pops up a menu at the current mouse position.  </p>
 <p>The events can be handled by a class derived from <a class="el" href="classwx_task_bar_icon.html" title="This class represents a taskbar icon.">wxTaskBarIcon</a>.</p>
-<dl class="note"><dt><b>Note:</b></dt><dd>It is recommended to override <a class="el" href="classwx_task_bar_icon.html#a739c81dc5cadf9e550d38001cee419f6" title="This method is called by the library when the user requests popup menu (on Windows and Unix platforms...">CreatePopupMenu()</a> callback instead of calling this method from event handler, because some ports (e.g. wxCocoa) may not implement <a class="el" href="classwx_task_bar_icon.html#a5f67b426e34077c690c49f4e6dcc6919" title="Pops up a menu at the current mouse position.">PopupMenu()</a> and mouse click events at all.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>It is recommended to override <a class="el" href="classwx_task_bar_icon.html#a739c81dc5cadf9e550d38001cee419f6" title="This method is called by the library when the user requests popup menu (on Windows and Unix platforms...">CreatePopupMenu()</a> callback instead of calling this method from event handler, because some ports (e.g. wxCocoa) may not implement <a class="el" href="classwx_task_bar_icon.html#a5f67b426e34077c690c49f4e6dcc6919" title="Pops up a menu at the current mouse position.">PopupMenu()</a> and mouse click events at all.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxTaskBarIcon::RemoveIcon" ref="ae2144fbd2527eff10fe4b7ec8e96ecdc" args="()" -->
