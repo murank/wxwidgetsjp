@@ -186,10 +186,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(Debug build only.) This variable can be set to a comma-separated list of trace masks used in wxLogTrace calls; wxLog::AddTraceMask is called for every mask in the list during wxWidgets initialization.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T154850Z">
+        <seg>(デバッグビルドのみ) この変数は wxLogTrace の呼び出しの中で使用されるトレースマスクのカンマ区切りリストを設定します; wxWidgets の初期化中にリスト内の各マスクに対して wxLog::AddTraceMask が呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Debug build only.) This variable can be set to a comma-separated list of trace masks used in wxLogTrace calls; wxLog::AddTraceMask is called for every mask in the list during wxWidgets initialization.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T155852Z">
+        <seg>(デバッグビルドのみ) この変数は wxLogTrace の呼び出しの中で使用されるトレースマスクのカンマ区切りリストを設定します; wxWidgets の初期化中にリスト内の各マスクに対して wxLog::AddTraceMask が呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(Note that even UTF-32 is still not completely trivial as the mapping is different for little and big-endian architectures).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T032240Z">
         <seg> (UTF-32 であっても、リトルエンディアンとビッグエンディアンではバイト列へのマッピングが異なるため、完全に自明とはまだ言えないことに注意してください。) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Unix only.) Overrides installation prefix.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T154923Z">
+        <seg>(Unix のみ) インストールプレフィックスを上書きします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -224,6 +248,22 @@
       <tuv lang="JA" changeid="owner" changedate="20130506T040148Z">
         <seg>(void)m_docManager-&gt;CreateDocument(f, wxDOC_SILENT);
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(wxMGL only.) Redirects stderr output to a file.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T155530Z">
+        <seg>(wxMGL のみ) 標準エラー出力をファイルへリダイレクトします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(wxMGL only.) Sets MGL video mode.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T155415Z">
+        <seg>(wxMGL のみ) MGL ビデオモードを設定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -342,6 +382,22 @@ public:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// create text ctrl with minimal size 100x60</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112131Z">
+        <seg>// 最小サイズ 100x60 のテキストコントロールを作成する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// create text ctrl with minimal size 100x60 that is horizontally and</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T113559Z">
+        <seg>// 最小サイズ 100x60 のテキストコントロールを作成し、水平方向と</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// do something</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T155813Z">
@@ -422,10 +478,160 @@ DEFINE_EVENT_TYPE(name)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// vertically stretchable with a border width of 10</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T113647Z">
+        <seg>// 垂直方向にリサイズ可能で、ボーダーの太さは 10 にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// we want to get a dialog that is stretchable because it
+// has a text ctrl at the top and two buttons at the bottom
+
+MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112038Z">
+        <seg>// 上部にテキストコントロールと下部にふたつのボタンを持つので
+// リサイズ可能なダイアログにしたい
+
+MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// with an all-around border with a width of 10 and implicit top alignment</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T114006Z">
+        <seg>// 太さ 10 のボーダーを全方向に持たせ、暗黙的に上揃えにする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>//create a sizer with no border and centered horizontally</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T114002Z">
+        <seg>//サイザーを作成し、ボーダーなしで水平方向に中央揃えにする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>//create two buttons that are horizontally unstretchable,</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T113933Z">
+        <seg>//ふたつのボタンを作成し、水平方向にはリサイズ不可にして、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>0,                // make vertically unstretchable</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112830Z">
+        <seg>0,                // 垂直方向にはリサイズ不可にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>0,                // make vertically unstretchable</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T144100Z">
+        <seg>0,                // 垂直方向にはリサイズ不可にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>0,           // make horizontally unstretchable</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112328Z">
+        <seg>0,           // 水平方向にはリサイズ不可にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>0,           // make horizontally unstretchable</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T143831Z">
+        <seg>0,           // 水平方向にはリサイズ不可にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>0,           // make horizontally unstretchable</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T144025Z">
+        <seg>0,           // 水平方向にはリサイズ不可にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>1,            // make vertically stretchable</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112215Z">
+        <seg>1,            // 垂直方向にリサイズ可能にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>1,            // make vertically stretchable</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T143000Z">
+        <seg>1,            // 垂直方向にリサイズ可能にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>10 );         // set border width to 10</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112305Z">
+        <seg>10 );         // ボーダーの幅は 10 にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>10 );         // set border width to 10</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T143812Z">
+        <seg>10 );         // ボーダーの幅は 10 にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>10 );        // set border width to 10</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112809Z">
+        <seg>10 );        // ボーダーの幅は 10 にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>10 );        // set border width to 10</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T143850Z">
+        <seg>10 );        // ボーダーの幅は 10 にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>10 );        // set border width to 10</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T144048Z">
+        <seg>10 );        // ボーダーの幅は 10 にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>: wxEvent(winid, eventType),</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130515T150432Z">
         <seg>: wxEvent(winid, eventType),</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>: wxDialog(parent, id, title, wxDefaultPosition, wxDefaultSize,</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112039Z">
+        <seg>: wxDialog(parent, id, title, wxDefaultPosition, wxDefaultSize,</seg>
       </tuv>
     </tu>
     <tu>
@@ -442,6 +648,22 @@ DEFINE_EVENT_TYPE(name)</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T074645Z">
         <seg>イントロダクション</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Laying out window elements with sizers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T132046Z">
+        <seg>サイザーを利用したウィンドウ要素の配置</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The idea behind sizers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T122848Z">
+        <seg>サイザーの背後にある考え方</seg>
       </tuv>
     </tu>
     <tu>
@@ -478,6 +700,14 @@ DEFINE_EVENT_TYPE(name)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxBoxSizer can lay out its children either vertically or horizontally, depending on what flag is being used in its constructor.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T150612Z">
+        <seg>wxBoxSizer はコンストラクタで使用されたフラグに基づいて、子コントロールを垂直方向または水平方向のいずれかに配置できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxDECLARE_EVENT_TABLE()</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T014946Z">
@@ -498,6 +728,38 @@ DEFINE_EVENT_TYPE(name)</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T072442Z">
         <seg>wxFile は低レベル入出力のために使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxFlexGridSizer is a sizer which lays out its children in a two-dimensional table with all table fields in one row having the same height and all fields in one column having the same width, but all rows or all columns are not necessarily the same height or width as in the wxGridSizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T115123Z">
+        <seg>wxFlexGridSizer は子コントロールを 2 次元の表にレイアウトするサイザーです。同じ行中のセルは同じ高さを持ち、同じ列中のセルは同じ幅を持ちますが、すべての行と列が wxGridSizer のように同じ高さや幅を持つ必要はありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxGridBagSizer is a rather special kind of sizer which, unlike the other classes, allows to directly put the elements at the given position in the sizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145838Z">
+        <seg>wxGridBagSizer はかなり特殊な種類のサイザーで、他のクラスと異なり、サイザー内の指定した位置に子コントロールを直接配置することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxGridSizer is a sizer which lays out its children in a two-dimensional table with all table fields having the same size, i.e. the width of each field is the width of the widest child, the height of each field is the height of the tallest child.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T135720Z">
+        <seg>wxGridSizer は子コントロールを 2 次元の表にレイアウトするサイザーで、表中のセルはすべて同じ大きさを持ちます。つまり、各セルの幅はもっとも幅の広い子コントロールの幅になり、高さはもっとも高い子コントロールの高さになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxGridSizer is a two-dimensional sizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T152816Z">
+        <seg>wxGridSizer は 2 次元のサイザーです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -578,6 +840,30 @@ DEFINE_EVENT_TYPE(name)</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T145841Z">
         <seg>wxSizer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxStaticBoxSixer is the same as a wxBoxSizer, but surrounded by a static box.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T152747Z">
+        <seg>wxStaticBoxSixer は wxBoxSizer と同じですが、スタティックボックスで周りを囲まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxStaticBoxSizer is a sizer derived from wxBoxSizer but adds a static box around the sizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145729Z">
+        <seg>wxStaticBoxSizer は wxBoxSizer を継承したサイザーですが、サイザーの周囲にスタティックボックスを追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxStaticBoxSizer is a sizer derived from wxBoxSizer but adds a static box around the sizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T115224Z">
+        <seg>wxStaticBoxSizer は wxBoxSizer を継承したサイザーですが、サイザーの周囲にスタティックボックスを追加します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -698,10 +984,42 @@ for ( wxString::const_iterator i = s.begin(); i != s.end(); ++i )
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxYES_NO     // Add Yes/No subpanel
+wxYES        // return wxID_YES
+wxNO         // return wxID_NO
+wxNO_DEFAULT // make the wxNO button the default,</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T150103Z">
+        <seg>wxYES_NO     // Yes/No サブパネルを追加します
+wxYES        // wxID_YES を返却します
+wxNO         // wxID_NO を返却します
+wxNO_DEFAULT // wxNO ボタンをデフォルトにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>CreateButtonSizer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T115755Z">
+        <seg>CreateButtonSizer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Event macros summary</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T075037Z">
         <seg>イベントマクロの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxDEFAULT_DIALOG_STYLE | wxRESIZE_BORDER)
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T142908Z">
+        <seg>wxDEFAULT_DIALOG_STYLE | wxRESIZE_BORDER)
+{</seg>
       </tuv>
     </tu>
     <tu>
@@ -730,6 +1048,14 @@ for ( wxString::const_iterator i = s.begin(); i != s.end(); ++i )
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxBoxSizer *topsizer = new wxBoxSizer( wxVERTICAL );</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T142858Z">
+        <seg>wxBoxSizer *topsizer = new wxBoxSizer( wxVERTICAL );</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxString text = event.GetString();
 }
 
@@ -744,6 +1070,14 @@ MyFrame::MyFrame()
 // Bind&lt;&gt;() によるイベント処理のコード例:
 MyFrame::MyFrame()
 {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Environment variables</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T160335Z">
+        <seg>環境変数</seg>
       </tuv>
     </tu>
     <tu>
@@ -774,10 +1108,58 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxEXPAND |    // make horizontally stretchable</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T152907Z">
+        <seg>wxEXPAND |    // 水平方向にリサイズ可能にし、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxSizerFlags(1).Align().Expand().Border(wxALL, 10));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145457Z">
+        <seg>wxSizerFlags(1).Align().Expand().Border(wxALL, 10));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Environment variables</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T160418Z">
+        <seg>環境変数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxALL,        //   and make border all around</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T143803Z">
+        <seg>wxALL,        //   全方向にボーダーを持たせる</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxBoxSizer *button_sizer = new wxBoxSizer( wxHORIZONTAL );</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145459Z">
+        <seg>wxBoxSizer *button_sizer = new wxBoxSizer( wxHORIZONTAL );</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>How events are processed</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T074703Z">
         <seg>イベント処理の仕組み</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Programming with wxBoxSizer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T115650Z">
+        <seg>wxBoxSizer を用いたプログラミング</seg>
       </tuv>
     </tu>
     <tu>
@@ -814,10 +1196,74 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxBoxSizer *button_sizer = new wxBoxSizer( wxHORIZONTAL );</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T143816Z">
+        <seg>wxBoxSizer *button_sizer = new wxBoxSizer( wxHORIZONTAL );</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unicode support in wxWidgets</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T132107Z">
+        <seg>wxWidgets における Unicode 対応</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Internationalization</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T132119Z">
+        <seg>国際化</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxSizerFlags(0).Align().Border(wxALL, 10));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145530Z">
+        <seg>wxSizerFlags(0).Align().Border(wxALL, 10));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxALL,       // make border all around (implicit top alignment)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T143841Z">
+        <seg>wxALL,       // 全方向にボーダーを持たせる (暗黙的に上寄せになる)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>File classes and functions overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T132149Z">
+        <seg>ファイルクラスと関数の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxSizerFlags(0).Align().Border(wxALL, 10));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145538Z">
+        <seg>wxSizerFlags(0).Align().Border(wxALL, 10));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Events generated by the user vs programmatically generated events</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T074731Z">
         <seg>ユーザの生成したイベントとプログラム的に生成したイベント</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Programming with wxGridSizer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T115658Z">
+        <seg>wxGridSizer を用いたプログラミング</seg>
       </tuv>
     </tu>
     <tu>
@@ -838,10 +1284,50 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxALL,       // make border all around (implicit top alignment)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T144038Z">
+        <seg>wxALL,       // 全方向にボーダーを持たせる (暗黙的に上寄せになる)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxSizerFlags(0).Center() );</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145555Z">
+        <seg>wxSizerFlags(0).Center() );</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxALIGN_CENTER ); // no border and centre horizontally</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T144109Z">
+        <seg>wxALIGN_CENTER ); // ボーダーなしで水平方向に中央寄せ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Event handling overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T132222Z">
+        <seg>イベント処理の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Pluggable event handlers</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T074926Z">
         <seg>動的イベントハンドラ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Programming with wxFlexGridSizer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T115708Z">
+        <seg>wxFlexGridSizer を用いたプログラミング</seg>
       </tuv>
     </tu>
     <tu>
@@ -862,10 +1348,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Sizer overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T132236Z">
+        <seg>サイザーの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>File classes and functions</seg>
       </tuv>
-      <tuv lang="JA" changeid="owner" changedate="20130504T074231Z">
-        <seg>File クラスと関数</seg>
+      <tuv lang="JA" changeid="owner" changedate="20130522T132259Z">
+        <seg>ファイルクラスと関数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Programming with wxStaticBoxSizer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T115715Z">
+        <seg>wxStaticBoxSizer を用いたプログラミング</seg>
       </tuv>
     </tu>
     <tu>
@@ -898,6 +1400,70 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T150638Z">
         <seg>wxSize  CalcMin()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A border: The border is just empty space and is used to separate dialog items in a dialog.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T142045Z">
+        <seg>ボーダー : ボーダーは単なる空白スペースで、ダイアログ内でコントロール同士を分けるために使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A border: The border is just empty space and is used to separate dialog items in a dialog.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141211Z">
+        <seg>ボーダー : ボーダーは単なる空白スペースで、ダイアログ内でコントロール同士を分けるために使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A minimal size: This minimal size is usually identical to the initial size of the controls and may either be set explicitly in the wxSize field of the control constructor or may be calculated by wxWidgets, typically by setting the height and/or the width of the item to -1.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T133301Z">
+        <seg>最小サイズ : 通常、この最小サイズはコントロールの初期サイズと同じであり、コントロールのコンストラクタの wxSize フィールドに明示的に設定されるか、(普通は高さや幅に -1 を設定することで) wxWidgets によって計算されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A minimal size: This minimal size is usually identical to the initial size of the controls and may either be set explicitly in the wxSize field of the control constructor or may be calculated by wxWidgets, typically by setting the height and/or the width of the item to -1.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141200Z">
+        <seg>最小サイズ : 通常、この最小サイズはコントロールの初期サイズと同じであり、コントロールのコンストラクタの wxSize フィールドに明示的に設定されるか、(普通は高さや幅に -1 を設定することで) wxWidgets によって計算されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A stretch factor: If a sizer contains more than one child and it is offered more space than its children and their borders need, the question arises how to distribute the surplus space among the children.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T145521Z">
+        <seg>ストレッチ係数 : サイザーがひとつ以上の子コントロールを持ち、子コントロールとそのボーダーの必要とするサイズ以上のサイズを持つ場合、余剰スペースを子コントロールに対してどのように分配するかが問題となります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A stretch factor: If a sizer contains more than one child and it is offered more space than its children and their borders need, the question arises how to distribute the surplus space among the children.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141230Z">
+        <seg>ストレッチ係数 : サイザーがひとつ以上の子コントロールを持ち、子コントロールとそのボーダーの必要とするサイズ以上のサイズを持つ場合、余剰スペースを子コントロールに対してどのように分配するかが問題となります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An alignment: Often, a dialog item is given more space than its minimal size plus its border.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T123510Z">
+        <seg>アライメント : ダイアログアイテムに対して、最小サイズとボーダーのスペースよりも多くのスペースを与えることはよくあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An alignment: Often, a dialog item is given more space than its minimal size plus its border.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141221Z">
+        <seg>アライメント : ダイアログアイテムに対して、最小サイズとボーダーのスペースよりも多くのスペースを与えることはよくあります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -994,6 +1560,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T150042Z">
         <seg>列サイザー、行サイザーを作成する場合、 orient はそれぞれ wxVERTICAL または wxHORIZONTAL になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// We want to get a dialog that is stretchable because it
+// has a text ctrl at the top and two buttons at the bottom.
+
+MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )
+: wxDialog(parent, id, title, wxDefaultPosition, wxDefaultSize,</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T142852Z">
+        <seg>// 上部にテキストコントロールと下部にふたつのボタンを持つので
+// リサイズ可能なダイアログにしたい。
+
+MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )
+: wxDialog(parent, id, title, wxDefaultPosition, wxDefaultSize,</seg>
       </tuv>
     </tu>
     <tu>
@@ -1218,6 +1800,22 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// create text ctrl with minimal size 100x60 that is horizontally and</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145437Z">
+        <seg>// 最小サイズ 100x60 のテキストコントロールを作成し、水平方向と</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// create text ctrl with minimal size 100x60</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T142933Z">
+        <seg>// 最小サイズ 100x60 のテキストコントロールを作成する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// it's common to call the event handlers OnSomething() but there is no</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T020204Z">
@@ -1234,10 +1832,34 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// vertically stretchable with a border width of 10</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T153110Z">
+        <seg>// 垂直方向にリサイズ可能で、ボーダーの太さは 10 にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>new wxTextCtrl( this, -1, "My text.", wxDefaultPosition, wxSize(100,60), wxTE_MULTILINE),</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T142947Z">
+        <seg>new wxTextCtrl( this, -1, "My text.", wxDefaultPosition, wxSize(100,60), wxTE_MULTILINE),</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>void DoTest(wxCommandEvent&amp; event);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T020304Z">
         <seg>void DoTest(wxCommandEvent&amp; event);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>new wxTextCtrl( this, -1, "My text.", wxDefaultPosition, wxSize(100,60), wxTE_MULTILINE),</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145454Z">
+        <seg>new wxTextCtrl( this, -1, "My text.", wxDefaultPosition, wxSize(100,60), wxTE_MULTILINE),</seg>
       </tuv>
     </tu>
     <tu>
@@ -1394,6 +2016,38 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>//create two buttons that are horizontally unstretchable,</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145510Z">
+        <seg>//ふたつのボタンを作成し、水平方向にはリサイズ不可にして、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// with an all-around border with a width of 10 and implicit top alignment</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145520Z">
+        <seg>// 太さ 10 のボーダーを全方向に持たせ、暗黙的に上揃えにする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>new wxButton( this, wxID_OK, "OK" ),</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145526Z">
+        <seg>new wxButton( this, wxID_OK, "OK" ),</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>new wxButton( this, wxID_OK, "OK" ),</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T143820Z">
+        <seg>new wxButton( this, wxID_OK, "OK" ),</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// Do something useful</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T060825Z">
@@ -1430,6 +2084,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>new wxButton( this, wxID_CANCEL, "Cancel" ),</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145535Z">
+        <seg>new wxButton( this, wxID_CANCEL, "Cancel" ),</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>new wxButton( this, wxID_CANCEL, "Cancel" ),</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T143855Z">
+        <seg>new wxButton( this, wxID_CANCEL, "Cancel" ),</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// Do something useful
 }
 
@@ -1454,6 +2124,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T013317Z">
         <seg>const wxFilterClassFactory *fcf;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>//create a sizer with no border and centered horizontally</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145549Z">
+        <seg>//サイザーを作成し、ボーダーなしで水平方向に中央揃えにする</seg>
       </tuv>
     </tu>
     <tu>
@@ -1486,10 +2164,28 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// accordingly and prevent it from being resized</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T144931Z">
+        <seg>// ウィンドウのサイズを調整し、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>event.SetEventObject(this);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130515T151359Z">
         <seg>event.SetEventObject(this);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// to smaller size
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145001Z">
+        <seg>// より小さくリサイズされないようにする
+}</seg>
       </tuv>
     </tu>
     <tu>
@@ -1526,6 +2222,32 @@ private:</seg>
       <tuv lang="JA" changeid="owner" changedate="20130503T153059Z">
         <seg>// これを使って何かする
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// otherwise wxYES or wxOK button will be default
+
+wxOK     // return wxID_OK
+wxCANCEL // return wxID_CANCEL
+wxHELP   // return wxID_HELP
+
+wxFORWARD   // return wxID_FORWARD
+wxBACKWARD  // return wxID_BACKWARD
+wxSETUP     // return wxID_SETUP
+wxMORE      // return wxID_MORE</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T150353Z">
+        <seg>// これを指定しない場合、wxYES ボタンか wxOK ボタンがデフォルトになります
+
+wxOK     // wxID_OK を返却します
+wxCANCEL // wxID_CANCEL を返却します
+wxHELP   // wxID_HELP を返却します
+
+wxFORWARD   // wxID_FORWARD を返却します
+wxBACKWARD  // wxID_BACKWARD を返却します
+wxSETUP     // wxID_SETUP を返却します
+wxMORE      // wxID_MORE を返却します</seg>
       </tuv>
     </tu>
     <tu>
@@ -1610,6 +2332,14 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A dialog box is a window with a title bar and sometimes a system menu, which can be moved around the ...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T142222Z">
+        <seg>ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A dialog initialisation event</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T055253Z">
@@ -1618,10 +2348,26 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A flex grid sizer is a sizer which lays out its children in a two-dimensional table with all table fi...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T140306Z">
+        <seg>可変グリッドサイザーは子コントロールを 2 次元の表にレイアウトするサイザーです。同じ行中のセルは同じ高さを持ち、同じ列中のセルは同じ幅を持ちますが、すべての行と列が wxGridSizer のように同じ高さや幅を持つ必要はありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A frame is a window whose size and position can (usually) be changed by the user.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T010152Z">
         <seg>フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A grid sizer is a sizer which lays out its children in a two-dimensional table with all table fields ...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T135807Z">
+        <seg>グリッドサイザーは子コントロールを 2 次元の表にレイアウトするサイザーで、表中のセルはすべて同じ大きさを持ちます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1754,6 +2500,22 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A value of more than zero is interpreted in relation to the sum of all stretch factors in the children of the respective sizer, i.e. if two children get a stretch factor of 1, they will get half the extra space each independent of whether one control has a minimal sizer inferior to the other or not.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141308Z">
+        <seg>0 より大きい値はサイザー内の子コントロールに設定されたすべてのストレッチ係数の合計に基づいて解釈されます。つまり、ふたつの子コントロールのストレッチ係数に 1 を指定した場合、一方のコントロールの最小サイズがもう一方より小さいかどうかによらず 、余剰スペースは二等分されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A value of more than zero is interpreted in relation to the sum of all stretch factors in the children of the respective sizer, i.e. if two children get a stretch factor of 1, they will get half the extra space each independent of whether one control has a minimal sizer inferior to the other or not.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T123716Z">
+        <seg>0 より大きい値はサイザー内の子コントロールに設定されたすべてのストレッチ係数の合計に基づいて解釈されます。つまり、ふたつの子コントロールのストレッチ係数に 1 を指定した場合、一方のコントロールの最小サイズがもう一方より小さいかどうかによらず 、余剰スペースは二等分されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A value uniquely identifying the type of the event.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130515T150339Z">
@@ -1810,10 +2572,34 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A wxSizer that can lay out items in a virtual grid like a wxFlexGridSizer but in this case explicit p...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T140810Z">
+        <seg>wxFlexGridSizer のように子コントロールを仮想のグリッドに配置しますが、wxGBPosition を使用してコントロールを明示的に配置することが可能です。また、wxGBSpan を使用することで、複数の行または列にまたがってコントロールを配置することも可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Acknowledgements</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T062043Z">
         <seg>謝辞</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Add the mask to the list of allowed masks for wxLogTrace().</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T155753Z">
+        <seg>wxLogTrace() の許可マスクのリストへマスクを追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Additionally, columns and rows can be declared to be stretchable if the sizer is assigned a size different from the one it requested.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T130250Z">
+        <seg>加えて、サイザーの必要とするサイズと異なるサイズを指定した場合に、列や行をリサイズ可能にすることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1846,6 +2632,22 @@ private:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T061029Z">
         <seg>wxTextCtrl のすべての関数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All children are given the same size, which is the minimal size required by the biggest child, in this case the text control in the left bottom border.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T153019Z">
+        <seg>子コントロールはすべて同じサイズ (最大の子コントロールの必要とする最小サイズ) が与えられます。この例では左下のテキストコントロールが最大の子コントロールです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All sizers are containers, that is, they are used to lay out one dialog item (or several dialog items), which they contain.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T143422Z">
+        <seg>サイザーはすべてコンテナです。つまり、ひとつ (または複数) のダイアログアイテムを内部に配置するために使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2034,6 +2836,22 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Another two-dimensional sizer derived from wxGridSizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141821Z">
+        <seg>wxGridSizer を継承した別の 2 次元サイザーです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Another two-dimensional sizer derived from wxGridSizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T153345Z">
+        <seg>wxGridSizer を継承した別の 2 次元サイザーです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Another very widespread standard is UTF-16 which is used by Microsoft Windows: it encodes the first (approximately) 64 thousands of Unicode code points (the BMP plane) using 16-bit code units (2 bytes) and uses a pair of 16-bit code units to encode the characters beyond this.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T031629Z">
@@ -2082,6 +2900,30 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Appends a child to the sizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T142326Z">
+        <seg>サイザーに子コントロールを追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As a convenience, wxDialog::CreateButtonSizer(long flags) can be used to create a standard button sizer in which standard buttons are displayed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145939Z">
+        <seg>利便性のために、標準的なボタンを表示する標準ボタンサイザーを作成するのに CreateButtonSizer (long フラグ) を使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As a convenience, CreateButtonSizer ( long flags ) can be used to create a standard button sizer in which standard buttons are displayed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T131746Z">
+        <seg>利便性のために、標準的なボタンを表示する標準ボタンサイザーを作成するのに CreateButtonSizer (long フラグ) を使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As a slight extension of the above, the handlers can also be unbound at any time with Unbind&lt;&gt;() (and maybe rebound later).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T024945Z">
@@ -2094,6 +2936,14 @@ private:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130514T155125Z">
         <seg>イベント型は変数なので、必要であれば wxDECLARE_EVENT() を使用して宣言することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As an example, we will construct a dialog that will contain a text field at the top and two buttons at the bottom.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T162557Z">
+        <seg>例として、上部にテキストフィールドを持ち、下部にふたつのボタンを持つダイアログを構築します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2118,6 +2968,22 @@ private:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130501T163504Z">
         <seg>最後の部分を上記の例と比較すると簡単に分かるように、このマクロは (通常の) ANSI モードでは何も起こりませんが、Unicode モードでは引数の接頭語 'L' として展開されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As mentioned above, any window belonging to a sizer may have a border, and it can be specified which of the four sides may have this border, using the wxTOP, wxLEFT, wxRIGHT and wxBOTTOM constants or wxALL for all directions (and you may also use wxNORTH, wxWEST etc instead).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141926Z">
+        <seg>上で述べたように、サイザーに所属するウィンドウはどれもボーダーを持ち、四方向のどの方向にボーダーを持たせるか指定することができます。これには wxTOP、wxLEFT、wxRIGHT、wxBOTTOM 定数か、全方向を表す wxALL を使用します。 (代わりに wxNORTH、wxWEST などを使用することも可能です) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As mentioned above, any window belonging to a sizer may have border, and it can be specified which of the four sides may have this border, using the wxTOP, wxLEFT, wxRIGHT and wxBOTTOM constants or wxALL for all directions (and you may also use wxNORTH, wxWEST etc instead).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T110348Z">
+        <seg>上で述べたように、サイザーに所属するウィンドウはどれもボーダーを持ち、四方向のどの方向にボーダーを持たせるか指定することができます。これには wxTOP、wxLEFT、wxRIGHT、wxBOTTOM 定数か、全方向を表す wxALL を使用します。 (代わりに wxNORTH、wxWEST などを使用することも可能です) </seg>
       </tuv>
     </tu>
     <tu>
@@ -2550,6 +3416,22 @@ void MyFrame::OnPlot(MyPlotEvent&amp; event)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Classes: wxSizer, wxBoxSizer, wxStaticBoxSizer, wxGridSizer, wxFlexGridSizer, wxGridBagSizer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T140818Z">
+        <seg>クラス: wxSizer, wxBoxSizer, wxStaticBoxSizer, wxGridSizer, wxFlexGridSizer, wxGridBagSizer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Classes: wxSizer, wxGridSizer, wxFlexGridSizer, wxBoxSizer, wxStaticBoxSizer, CreateButtonSizer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T110559Z">
+        <seg>クラス: wxSizer, wxGridSizer, wxFlexGridSizer, wxBoxSizer, wxStaticBoxSizer, CreateButtonSizer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Close(true);
 }</seg>
       </tuv>
@@ -2564,6 +3446,22 @@ void MyFrame::OnPlot(MyPlotEvent&amp; event)
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T025750Z">
         <seg>コードポイントはメモリ上ではひとつ以上の コード単位 の並びとして表現されます。コード単位とは 8、16、32 ビットといったメモリの単位のことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Common Features</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T140941Z">
+        <seg>共通の機能</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Common features</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T125314Z">
+        <seg>共通の機能</seg>
       </tuv>
     </tu>
     <tu>
@@ -2596,6 +3494,14 @@ void MyFrame::OnPlot(MyPlotEvent&amp; event)
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T145952Z">
         <seg>wxBoxSizer のコンストラクタ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Container for sizer items flags providing readable names for them.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145234Z">
+        <seg>サイザーのフラグを格納するコンテナで、フラグに読みやすい名前を提供します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2652,6 +3558,30 @@ void MyFrame::OnPlot(MyPlotEvent&amp; event)
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T153001Z">
         <seg>文字列をワイド文字表現に変換したものを一時的な wxWCharBuffer オブジェクト (Unix と OS X の場合)、またはワイド文字列である内部文字列のポインタ (Windows の場合) として返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Correspondingly, when using a horizontal sizer, each child can be centered, aligned at the bottom or aligned at the top.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T151613Z">
+        <seg>同様に、水平方向のサイザーを使用する場合、各子コントロールを中央寄せ、下寄せ、上寄せにすることが可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>CreateButtonSizer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T115452Z">
+        <seg>CreateButtonSizer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Creates a sizer with standard buttons.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145917Z">
+        <seg>標準ボタンを含むサイザーを作成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2734,6 +3664,14 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Default alignment is wxALIGN_LEFT | wxALIGN_TOP.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130521T162139Z">
+        <seg>デフォルトのアライメントは wxALIGN_LEFT | wxALIGN_TOP です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Define a new event type associated with the specified event class.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130514T154453Z">
@@ -2778,6 +3716,14 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130516T160010Z">
         <seg>指定されたページと、それに関連するウィンドウを削除します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Depending on what flags are used for the respective dialog item, the dialog item can be made to fill out the available space entirely, i.e. it will grow to a size larger than the minimal size, or it will be moved to either the centre of the available space or to either side of the space.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T123615Z">
+        <seg>個々のコントロールに使用されたフラグに応じて空きスペースを満たす、つまり、最小サイズ以上に伸長させるか、空きスペースの中央またはいずれかの側に移動させることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3026,10 +3972,42 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Each represents either a certain way to lay out dialog items in a dialog or it fulfills a special task such as wrapping a static box around a dialog item (or another sizer).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T124500Z">
+        <seg>それぞれ、特定の方法でダイアログ内にコントロールを配置したり、コントロール (や他のサイザー) をスタティックボックスで囲むといった特別な処理を行ったりします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Either the number of columns or the number or rows is fixed and the grid sizer will grow in the respectively other orientation if new children are added:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T153259Z">
+        <seg>列数か行数のどちらかは固定で、新しい子コントロールが追加されるとグリッドサイザーはもう一方の方向に伸びます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Enables or disables the event handler.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T071121Z">
         <seg>イベントハンドラを有効化、無効化します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Environment Variables</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T155609Z">
+        <seg>環境変数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Environment variables</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T154427Z">
+        <seg>環境変数</seg>
       </tuv>
     </tu>
     <tu>
@@ -3172,16 +4150,16 @@ MyFrame::MyFrame()
       <tuv lang="EN-US">
         <seg>File Classes and Functions</seg>
       </tuv>
-      <tuv lang="JA" changeid="owner" changedate="20130504T070112Z">
-        <seg>File クラスと関数</seg>
+      <tuv lang="JA" changeid="owner" changedate="20130522T132432Z">
+        <seg>ファイルクラスと関数</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>File classes and functions overview</seg>
       </tuv>
-      <tuv lang="JA" changeid="owner" changedate="20130504T054209Z">
-        <seg>File クラスと関数の概要</seg>
+      <tuv lang="JA" changeid="owner" changedate="20130522T132400Z">
+        <seg>ファイルクラスと関数の概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -3370,6 +4348,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, if the standard font as well as the overall design of Linux/GTK widgets requires more space than on Windows, the initial dialog size will automatically be bigger on Linux/GTK than on Windows.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T124150Z">
+        <seg>例えば、標準フォントが Linux/GTK ウィジェット全体のデザインと同じように Windows の場合より多くのスペースを必要とする場合、ダイアログの初期サイズは Windows より Linux/GTK の方が自動的に大きくなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, it's possible to do some initialization first and only bind the handlers if and when it succeeds.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T040630Z">
@@ -3402,10 +4388,42 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For information about the new wxWidgets resource system, which can describe sizer-based dialogs, see the XML-based resource system overview.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T115321Z">
+        <seg>サイザーに基づいたダイアログを作成可能な wxWidgets の新しいリソースシステムについての情報は XML に基づくリソースシステムの概要 を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For information about the wxWidgets resource system, which can describe sizer-based dialogs, see the XML Based Resource System (XRC).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T140937Z">
+        <seg>サイザーに基づいたダイアログを作成可能な wxWidgets のリソースシステムについての情報は XML に基づくリソースシステム (XRC) を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For menu commands and most control commands (such as button presses), wxCommandEvent is used.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T081510Z">
         <seg>メニューコマンドと (ボタン押下といった) 大半のコマンドコントロールでは wxCommandEvent が使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For more detailed information on how to use sizers programmatically, please refer to the section Programming with Sizers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T124732Z">
+        <seg>サイザーをプログラムで使用する方法については サイザーを用いたプログラミング を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For more detailed information on how to use sizers programmatically, please refer to the section Programming with wxBoxSizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141118Z">
+        <seg>サイザーをプログラムで使用する方法については サイザーを用いたプログラミング を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3428,8 +4446,8 @@ MyFrame::MyFrame()
       <tuv lang="EN-US">
         <seg>For more information, please see Programming with wxBoxSizer.</seg>
       </tuv>
-      <tuv lang="JA" changeid="owner" changedate="20130430T145827Z">
-        <seg>り詳しい情報は wxBoxSizer を用いたプログラミング を参照してください。</seg>
+      <tuv lang="JA" changeid="owner" changedate="20130519T124807Z">
+        <seg>より詳しい情報は wxBoxSizer を用いたプログラミング を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3438,6 +4456,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130515T144839Z">
         <seg>特定のイベントハンドラへイベントを送信する方法は 2 種類あります: wxEvtHandler::AddPendingEvent を使用する方法と wxEvtHandler::QueueEvent を使用する方法です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For programming information, see wxGridSizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T153320Z">
+        <seg>プログラミングに関する情報は wxGridSizer を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3454,6 +4480,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T013024Z">
         <seg>イベントクラスの完全な一覧は イベントクラスグループ を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For this purpose, a stretch factor may be assigned to each child, where the default value of 0 indicates that the child will not get more space than its requested minimum size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T145811Z">
+        <seg>このため、子コントロールに対してストレッチ係数を割り当てます。ストレッチ係数のデフォルト値は 0 で、これは必要とする最小サイズ以上のスペースを取得しないことを表します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3548,10 +4582,34 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Global instance of a wxPoint initialized with values (-1,-1).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T142254Z">
+        <seg>(-1,-1) に初期化された wxPoint のグルーバルインスタンス。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Global instance of a wxSize object initialized to (-1,-1).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T142314Z">
+        <seg>(-1,-1) に初期化された wxSize のグルーバルインスタンス。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here are some examples, using a wxString object s and some integer n:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T122441Z">
         <seg>その例を以下に示します。この例では wxString オブジェクト s と、ある整数 n を使用しています:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is a sample:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T152804Z">
+        <seg>以下に例を示します:</seg>
       </tuv>
     </tu>
     <tu>
@@ -3580,10 +4638,42 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here's how you'd do the previous example with wxSizerFlags:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145423Z">
+        <seg>wxSizerFlags を使用して上記の例と同じことをすると以下のようになります:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here's how you'd do the previous example with wxSizerFlags:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145412Z">
+        <seg>wxSizerFlags を使用して上記の例と同じことをすると以下のようになります:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here, you can examine the events coming from buttons and windows, and if acceptable, pass them through to the original event handler.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T065445Z">
         <seg>ここでは、ボタンやウィンドウから送られてくるイベントを検証し、それが適用可能なものである場合に元のイベントハンドラへ渡す、ということを行えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Hiding Controls Using Sizers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T140945Z">
+        <seg>サイザーによるコントロールの非表示</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Hiding controls using sizers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T151438Z">
+        <seg>サイザーによるコントロールの非表示</seg>
       </tuv>
     </tu>
     <tu>
@@ -3660,10 +4750,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, wxSizer also offers a separate method which can tell the sizer not to consider that control in its size calculations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141603Z">
+        <seg>しかし、wxSizer はそのコントロールのサイズを考慮しないようにする別の関数も提供しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, unlike the Unicode build mode of the previous versions of wxWidgets, this support is mostly transparent: you can still continue to work with the narrow (i.e. current locale-encoded char*) strings even if wide (i.e. UTF16-encoded wchar_t* or UTF8-encoded char*) strings are also supported.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T041201Z">
         <seg>しかし、wxWidgets の以前のバージョンにおける Unicode ビルドモードとは異なり、この対応はほとんど透過的です： ワイド 文字列 (UTF16 で符号化された wchar_t* か、UTF8 で符号化された char* のことです) がサポートされていても、引き続き  ナロー 文字列 (現在のロケールで符号化された char* のことです) を使用することができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, wxSizer also offers a separate method which can tell the sizer not to consider that control in its size calculations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T152022Z">
+        <seg>しかし、wxSizer はそのコントロールのサイズを考慮しないようにする別の関数も提供しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3680,6 +4786,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T071056Z">
         <seg>-1 (デフォルト) 以外の値を返却した場合、ただちにイベント処理を終了します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If several windows have a value above zero, the value is interpreted relative to the sum of all weight factors of the sizer, so when adding two windows with a value of 1, they will both get resized equally much and each half as much as the sizer owning them.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T130620Z">
+        <seg>いくつかのウィンドウが 0 より大きい値を持つ場合、その値はサイザーのすべての重み係数の和に対する相対値として解釈されます。そのため、値が 1 であるウィンドウをふたつ追加する場合、両方とも同じようにリサイズされ、それぞれサイザーの半分の大きさになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3916,6 +5030,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In addition, there will be a thin border around all controls to make the dialog look nice and - to make matter worse - the buttons shall be centred as the width of the dialog changes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T130437Z">
+        <seg>加えて、ダイアログの見た目を良くするためにすべてのコントロールの周りに薄いボーダーを設定し、さらに悪いことに、ダイアログの幅の変更にあわせてボダンを中央寄せで配置するものとします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In fact, identifiers do not need to be unique across your entire application as long they are unique within the particular context you're interested in, such as a frame and its children.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130517T171150Z">
@@ -3948,6 +5070,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In many cases (particularly dialogs under Unix and normal frames) the main window will be resizable by the user and this change of size will have to get propagated to its children.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130521T154423Z">
+        <seg>多くの場合で (特に、Unix のダイアログや通常のフレームの場合)、メインウィンドウはリサイズ可能であり、サイズの変更を子コントロールへ伝播させる必要があるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In many cases this works even for changing the behaviour of native controls.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T085456Z">
@@ -3968,6 +5098,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T034401Z">
         <seg>他の場合では、以下のように event 引数の持つ情報が必要になるかもしれません:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In our case, we want the text area to grow with the dialog, whereas the button shall have a fixed size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130521T154608Z">
+        <seg>この例では、ダイアログに合わせてテキストエリアのサイズを変更する一方で、ボタンのサイズは固定にしたいものとします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In our example case, the vertical sizer is supposed to propagate all its height changes to only the text area, not to the button area.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T152653Z">
+        <seg>今回の例では、垂直方向のサイザーは高さに対するすべての変化をテキストエリアにのみ伝播させ、ボタンエリアには伝播させないようにします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4120,6 +5266,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130506T032638Z">
         <seg>実際に、イベントテーブルはメンバ関数が仮想関数であることを無視する、つまり、仮想メンバ関数を継承クラスでオーバーライドしてもなにも影響を及ぼしません。そのため、メンバ関数を仮想関数にするべきではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Independent of how the individual sizers lay out their children, all children have certain features in common:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T132513Z">
+        <seg>個々のサイザーがどのように子コントロールを配置するかによらず、子コントロールはすべていくつかの共通機能を持ちます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4284,10 +5438,42 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is based upon the idea of individual subwindows reporting their minimal required size and their ability to get stretched if the size of the parent window has changed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T140748Z">
+        <seg>このアルゴリズムは、必要最小限のサイズを通知し、親ウィンドウのサイズが変化した場合にそれにあわせてサイズを変更することのできる、個別のサブウィンドウという考えに基づいています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is especially well suited for working with configuration files and program source files.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T064917Z">
         <seg>このクラスは設定ファイルやソースファイルを扱う場合に特に適しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is interpreted as a weight factor, i.e. it can be zero, indicating that the window may not be resized at all, or above zero.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130521T160524Z">
+        <seg>これは重み係数として解釈されます。つまり、値を 0 (この場合、ウィンドウはまったくリサイズされません) か、0 より大きい値にすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is the unique feature of a box sizer, that it can grow in both directions (height and width) but can distribute its growth in the main direction (horizontal for a row) unevenly among its children.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141834Z">
+        <seg>ボックスサイザーに固有の機能として、両方 (高さと幅) の方向に伸長させることができる一方で、主となる方向 (行に対しては水平方向) のサイズ変更を子コントロールに対して 不規則に 分配できる点が挙げられます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is the unique feature of a box sizer, that it can grow in both directions (height and width) but can distribute its growth in the main direction (horizontal for a row) unevenly among its children.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T130514Z">
+        <seg>ボックスサイザーに固有の機能として、両方 (高さと幅) の方向に伸長させることができる一方で、主となる方向 (行に対しては水平方向) のサイズ変更を子コントロールに対して 不規則に 分配できる点が挙げられます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4590,6 +5776,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Normally, the prefix is hard-coded and is the same as the value passed to configure via the --prefix switch when compiling the library (typically /usr/local or /usr).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T160031Z">
+        <seg>通常、プレフィックスはハードコーディングされており、ライブラリのコンパイル時に --prefix スイッチによって configure へ渡される値と同じです。 (普通は /usr/local か /usr です) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Normally, the prefix is hard-coded and is the same as the value passed to configure via the --prefix switch when compiling the library (typically /usr/local or /usr).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T160101Z">
+        <seg>通常、プレフィックスはハードコーディングされており、ライブラリのコンパイル時に --prefix スイッチによって configure へ渡される値と同じです。 (普通は /usr/local か /usr です) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Not so with Bind&lt;&gt;() which can be used to specify these handlers which will handle the event.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T043258Z">
@@ -4602,6 +5804,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T093954Z">
         <seg>特に、Unix のグラフィカルツールキット ( GTK+ など) は普通、UTF-8 文字列を使用しており、wxWidgets でも同じ符号化方式を使用することで、UI に文字列を表示するときや逆に文字列を取得するときに毎回 UTF-32 から UTF-8 に変換する必要がなくなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that wxSizer does not derive from wxWindow and thus does not interfere with tab ordering and requires very few resources compared to a real window on screen.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141726Z">
+        <seg>wxSizer は wxWindow を継承していないため、タブ順に干渉することがなく、実際のウィンドウと比較するとほとんどリソースを必要としません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4630,6 +5840,30 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that only some controls can calculate their size (such as a checkbox) whereas others (such as a listbox) don't have any natural width or height and thus require an explicit size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T133515Z">
+        <seg>(チェックボックスなどの) いくつかのコントロールのみが自身のサイズを計算できるのに対し、(リストボックスなどの) 他のコントロールはデフォルトの幅や高さを持たないため、明示的にサイズを指定する必要がある点に注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that the new way of specifying flags to wxSizer is via wxSizerFlags.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T153032Z">
+        <seg>wxSizer にフラグを指定する新しい方法として wxSizerFlags を使用する方法があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that the new way of specifying flags to wxSizer is via wxSizerFlags.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T153018Z">
+        <seg>wxSizer にフラグを指定する新しい方法として wxSizerFlags を使用する方法があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that this macro doesn't need a window identifier, since normally you are only interested in the current window's size events.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T024247Z">
@@ -4646,10 +5880,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that this static box has to be created separately.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T115446Z">
+        <seg>このスタティックボックスは別々に作成する必要があることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that typically one character is assigned exactly one code point, but there are exceptions; the so-called precomposed characters (see http://en.wikipedia.org/wiki/Precomposed_character) or the ligatures.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T095359Z">
         <seg>通常、ひとつの文字は厳密にひとつのコードポイントに割り当てられますが、なかには例外もあります; いわゆる 合成済み文字 (http://en.wikipedia.org/wiki/Precomposed_character 参照) や 合字 (リガチャ) のことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that wxSizer does not derive from wxWindow and thus does not interfere with tab ordering and requires very few resources compared to a real window on screen.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T123143Z">
+        <seg>wxSizer は wxWindow を継承していないため、タブ順に干渉することがなく、実際のウィンドウと比較するとほとんどリソースを必要としません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4666,6 +5916,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T052859Z">
         <seg>ProcessEvent をオーバーライドすることでイベント処理をリダイレクトしたいと思うかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141627Z">
+        <seg>注:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note: This is supported only by wxBoxSizer and wxFlexGridSizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T150152Z">
+        <seg>注: これは wxBoxSizer と wxFlexGridSizer でのみサポートされています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4838,6 +6104,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Other Types of Sizers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141008Z">
+        <seg>その他のサイザー</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Other unexpected compilation errors may arise but they should happen even more rarely than the above-mentioned ones and the solution should usually be quite simple: just use the explicit methods of wxUniChar and wxCStrData classes instead of relying on their implicit conversions if the compiler can't choose among them.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T034514Z">
@@ -4898,6 +6172,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T005256Z">
         <seg>変更の詳細は Unicode に関連する変更 を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please see its documentation for more details.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145900Z">
+        <seg>詳細はドキュメントを参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4964,6 +6246,38 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T063844Z">
         <seg>イベントテーブルを検索し、0 個以上の適切なイベントハンドラ関数を呼び出してイベントを処理します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Programming with wxBoxSizer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T154127Z">
+        <seg>wxBoxSizer を用いたプログラミング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Programming with wxFlexGridSizer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T114257Z">
+        <seg>wxFlexGridSizer を用いたプログラミング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Programming with wxGridSizer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T114018Z">
+        <seg>wxGridSizer を用いたプログラミング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Programming with wxStaticBoxSizer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T115129Z">
+        <seg>wxStaticBoxSizer を用いたプログラミング</seg>
       </tuv>
     </tu>
     <tu>
@@ -5200,6 +6514,32 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>SetSizer( topsizer );      // use the sizer for layout</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112903Z">
+        <seg>SetSizer( topsizer );      // レイアウトにサイザーを使用する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SetSizerAndFit(topsizer); // use the sizer for layout and set size and hints
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145645Z">
+        <seg>SetSizerAndFit(topsizer); // レイアウトにサイザーを使用し、サイズとヒントを設定する
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SetSizerAndFit(topsizer); // use the sizer for layout and size window</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T144924Z">
+        <seg>SetSizerAndFit(topsizer); // レイアウトにサイザーを使用して</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Sets the event handler for this window.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130517T170833Z">
@@ -5256,6 +6596,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Shows or hides the window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141550Z">
+        <seg>ウィンドウの表示非表示を切り替えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Similarly,</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T123350Z">
@@ -5292,6 +6640,38 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T035942Z">
         <seg>wxWidgets 3.0 からは Unicode が常に有効になります。Unicode を使用せずにライブラリをビルドすることはまだ可能ですが、もはや非推奨であり、近い将来、サポートされなくなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sizer overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T110550Z">
+        <seg>サイザーの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sizers Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T135006Z">
+        <seg>サイザーの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sizers, as represented by the wxSizer class and its descendants in the wxWidgets class hierarchy, have become the method of choice to define the layout of controls in dialogs in wxWidgets because of their ability to create visually appealing dialogs independent of the platform, taking into account the differences in size and style of the individual controls.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T140902Z">
+        <seg>wxWidgets のクラス階層における wxSizer クラスと、その子孫クラスによって代表されるサイザーは、wxWidgets においてダイアログ内のコントロールのレイアウトを決定するための選択法になりました。なぜなら、サイザーによって、各コントロールのサイズやスタイルの違いを考慮しつつ、プラットフォームに依存しない、視覚的に魅力的なダイアログを作ることができるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sizers, as represented by the wxSizer class and its descendants in the wxWidgets class hierarchy, have become the method of choice to define the layout of controls in dialogs in wxWidgets because of their ability to create visually appealing dialogs independent of the platform, taking into account the differences in size and style of the individual controls.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T112812Z">
+        <seg>wxWidgets のクラス階層における wxSizer クラスと、その子孫クラスによって代表されるサイザーは、wxWidgets においてダイアログ内のコントロールのレイアウトを決定するための選択法になりました。なぜなら、サイザーによって、各コントロールのサイズやスタイルの違いを考慮しつつ、プラットフォームに依存しない、視覚的に魅力的なダイアログを作ることができるためです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5336,6 +6716,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Some controls can calculate their height, but not their width (e.g. a single line text control):</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T133610Z">
+        <seg>(単一行テキストコントロールなど) いくつかのコントロールでは自身の高さを計算できても、幅を計算することができません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Sometimes it is also necessary to go from ANSI strings to wxStrings.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130502T144136Z">
@@ -5360,6 +6748,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Standard button and menu IDs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T142809Z">
+        <seg>標準ボタンとメニュー ID。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Starts editing the label of the given item.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130516T160324Z">
@@ -5372,6 +6768,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130501T150738Z">
         <seg>文字列関数 (strlen(), strcpy(), ...)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Such items are sometimes referred to as the children of the sizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T143436Z">
+        <seg>時々、そのようなアイテムをサイザーの子と呼びます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5552,6 +6956,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The Idea Behind Sizers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T140939Z">
+        <seg>サイザーの背後にある考え方</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The Unicode standard divides the space of all possible code points in planes; a plane is a range of 65,536 (1000016) contiguous Unicode code points.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T024646Z">
@@ -5568,6 +6980,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The basic idea behind a wxBoxSizer is that windows will most often be laid out in rather simple basic geometry, typically in a row or a column or several hierarchies of either.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T162347Z">
+        <seg>wxBoxSizer の基本的な考え方は、ほとんどの場合ウィンドウは とても単純で基本的な配置、よくあるのは行や列、またはその階層内にレイアウトされるという考えです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The basic idea behind a box sizer is that windows will most often be laid out in rather simple basic ...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T135121Z">
+        <seg>ボックスサイザーの基本的な考え方は、ほとんどの場合ウィンドウは とても単純で基本的な配置、よくあるのは行や列、またはその階層内にレイアウトされるという考えです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The basic idea behind a box sizer is that windows will most often be laid out in rather simple basic geometry, typically in a row or a column or several hierarchies of either.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T145740Z">
@@ -5580,6 +7008,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130513T153151Z">
         <seg>子フレームクラスはイベントを関連するビューへ直接送信し、このビューがさらに関連するドキュメントへイベントを転送します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The default is 640x480-16.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T155505Z">
+        <seg>デフォルトは 640x480-16 です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5664,6 +7100,62 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The following flags can be passed to this function:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T115722Z">
+        <seg>この関数には以下のフラグを指定できます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following sample shows a dialog with three buttons, the first one has a stretch factor of 1 and thus gets stretched, whereas the other two buttons have a stretch factor of zero and keep their initial width:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T151132Z">
+        <seg>以下に 3 個のボタンを持つダイアログの例を示します。最初のボタンはストレッチ係数に 1 を指定しているため、サイズが伸長していますが、他のふたつのボタンはストレッチ係数が 0 のため、初期サイズを維持しています:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following sample shows a listbox and three buttons in a horizontal box sizer; one button is centred, one is aligned at the top, one is aligned at the bottom:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T144852Z">
+        <seg>以下に水平方向のボックスサイザー内にリストボックスと 3 個のボタンを配置した場合の例を示します; それぞれのボタンは中央寄せ、上寄せ、下寄せです:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following sample shows the same dialog as in the last sample, only the box sizer is a vertical box sizer now:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T152037Z">
+        <seg>以下の例は最後の例と同じダイアログですが、ボックスサイザーが垂直方向のボックスサイザーとなっています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following sample shows the same dialog as the one above, but using a flex grid sizer:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T154117Z">
+        <seg>以下の例は上の例と同じダイアログですが、可変グリッドサイザーを使用しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following samples show dialogs with only one dialog item (a button) and a border of 0, 5, and 10 pixels around the button:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T142728Z">
+        <seg>以下の例では単一のコントロール (ボタン) を持つダイアログについて、ボタンのまわりのボーダーを 0、5、10 ピクセルに設定しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following sections briefly describe how to program with individual sizer classes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T114908Z">
+        <seg>続く章では個々のサイザークラスを用いてプログラムを書く方法について簡潔に説明します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The following standard identifiers are supplied.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130506T041923Z">
@@ -5688,6 +7180,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The idea behind sizers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T123524Z">
+        <seg>サイザーの背後にある考え方</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The important conclusion is that if you use wxChar instead of char, avoid using C style strings and use wxString instead and don't forget to enclose all string literals inside wxT() macro, your program automatically becomes (almost) Unicode compliant!</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130502T140756Z">
@@ -5704,6 +7204,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The layout algorithm used by sizers in wxWidgets is closely related to layout systems in other GUI toolkits, such as Java's AWT, the GTK toolkit or the Qt toolkit.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T122918Z">
+        <seg>wxWidgets のサイザーで用いられているレイアウトアルゴリズムは Java の AWT や GTK ツールキット、 Qt ツールキットといった他の GUI ツールキットで用いられているものと密接に関わりがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The list of dynamically bound event handlers, i.e., those for which Bind&lt;&gt;() was called, is consulted.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T135819Z">
@@ -5716,6 +7224,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T023856Z">
         <seg>次の 4 行は個々のイベントにおけるイベントハンドラへのバインディングを定義しています: 最初のふたつはマクロの第 1 引数で指定された識別子を持つ項目のメニューコマンドを、ふたつの異なるメンバ関数にマッピングしています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The next section describes and shows what can be done with sizers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T114634Z">
+        <seg>次の章ではサイザーを用いて何ができるのかを説明します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5976,6 +7492,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The sizer of the border also must be made known, and it is the third parameter in the Add() method.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T111045Z">
+        <seg>ボーダーの太さも伝える必要があり、Add() 関数の第三引数に指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The static event tables can only handle events in the object where they are defined so using Bind&lt;&gt;() is more flexible than using the event tables.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T021819Z">
@@ -5988,6 +7512,46 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130514T151027Z">
         <seg>イベント伝播アルゴリズムのステップ 4 では、イベントハンドラの連鎖内における次のイベントハンドラを確認します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The stretch factor described in the last paragraph is used for the main orientation, i.e. when using a horizontal box sizer, the stretch factor determines how much the child can be stretched horizontally.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T151910Z">
+        <seg>最後の段落で述べたストレッチ係数は主となる方向に対して適用されます。つまり、水平方向のボックスサイザーを使用している場合、ストレッチ係数は子コントロールを水平方向にどれだけ伸長させるかを決定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The thickness of this border must be set explicitly, typically 5 points.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T142431Z">
+        <seg>ボーダーの太さは必ず明示的に指定する必要があり、デフォルトでは 5 ポイントです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The type of unique identifiers (ID) used for wxWindow-derived classes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T142003Z">
+        <seg>wxWindow を継承したクラスで使用される一意の識別子 (ID) の型。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The value must be in form widthxheight-depth.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T155512Z">
+        <seg>この値は 幅x高さ-色深度 の形式で指定する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The width of each column and the height of each row are calculated individually according to the minimal requirements from the respectively biggest child.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T153619Z">
+        <seg>それぞれの最大の子コントロールの必要とする最小サイズに応じて、各列の幅と各行の高さが個別に計算されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6064,10 +7628,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Then what do we do when a column sizer changes its width?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T131441Z">
+        <seg>では、垂直方向のサイザーの幅が変更された場合はどうすれば良いでしょうか? </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are also events which don't directly correspond to the user actions, such as wxTimerEvent or wxSocketEvent.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130507T155557Z">
         <seg>wxTimerEvent や wxSocketEvent など、ユーザの操作に直接対応しないイベントも存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are currently five different kinds of sizers available in wxWidgets.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T124220Z">
+        <seg>今のところ、wxWidgets では 5 種類のサイザーが利用可能です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6116,6 +7696,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130507T155458Z">
         <seg>これらのイベントは (キーボード、マウス、ジョイスティックなどの) 入力装置を利用して直接発生させるか、より一般的には、それらの入力イベントをより高レベルのイベントへ合成する標準コントロールを利用して発生させることができます: 例えば、wxButton はコントロール上でユーザが左マウスボタンを押下し、 (Esc を押下することなく) 離したときにクリックイベントを生成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These flags can be used in combination with the alignment flags above as the second parameter of the Add() method using the binary or operator |.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T110536Z">
+        <seg>これらのフラグは論理和演算子 | を使用して上記のアライメントフラグと組み合わせることができ、Add() 関数の第二引数に指定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6176,6 +7764,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These sizers will be discussed one by one in the text below.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T124535Z">
+        <seg>これらのサイザーについて、ひとつずつ説明していきます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>They are just simple methods of the class that take as a parameter a reference to an object of a wxEvent-derived class and have no return value (any return information is passed via the argument, which is why it is non-const).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T014246Z">
@@ -6216,6 +7812,30 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This behaviour is controlled by flags (the second parameter of the Add() function): Zero or no flag indicates that the window will preserve it is original size, wxGROW flag (same as wxEXPAND) forces the window to grow with the sizer, and wxSHAPED flag tells the window to change it is size proportionally, preserving original aspect ratio.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141854Z">
+        <seg>この振る舞いは フラグ (Add() 関数の第二引数です) によって制御されます: 0 またはフラグを何も指定しない場合、ウィンドウは元の大きさを維持します。wxGROW フラグ (wxEXPAND と同じです) はサイザーにあわせてウィンドウを強制的にリサイズします。wxSHAPED フラグは元の縦横比を維持しつつ、ウィンドウのサイズを変更します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This behaviour is controlled by flags (the second parameter of the Add() function): Zero or no flag indicates that the window will preserve it is original size, wxGROW flag (same as wxEXPAND) forces the window to grow with the sizer, and wxSHAPED flag tells the window to change it is size proportionally, preserving original aspect ratio.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130521T161543Z">
+        <seg>この振る舞いは フラグ (Add() 関数の第二引数です) によって制御されます: 0 またはフラグを何も指定しない場合、ウィンドウは元の大きさを維持します。wxGROW フラグ (wxEXPAND と同じです) はサイザーにあわせてウィンドウを強制的にリサイズします。wxSHAPED フラグは元の縦横比を維持しつつ、ウィンドウのサイズを変更します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This border can either be all around, or at any combination of sides such as only above and below the control.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T142325Z">
+        <seg>ボーダーは全周、またはコントロールの上と下のみといった任意の組み合わせで指定できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This can avoid the need to test that the object was properly initialized in the event handlers themselves.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T040718Z">
@@ -6240,6 +7860,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This can be seen as a top-hierarchy column with the text at the top and buttons at the bottom and a low-hierarchy row with an OK button to the left and a Cancel button to the right.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T163027Z">
+        <seg>これは上部にテキストフィールドと下部にボタンを持つ上位階層の列と、左に OK ボタンと右にキャンセルボタンを持つ下位階層の行からなるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This can be very convenient and is absolutely necessary for backwards compatibility with the existing code using wxWidgets however it is a rather dangerous operation as it can easily give unexpected results if the string contents isn't convertible to the current locale.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T135014Z">
@@ -6252,6 +7880,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130514T151305Z">
         <seg>この連鎖は wxEvtHandler::SetNextHandler() を使用して形づくられます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This class greatly eases the burden of passing flags to a wxSizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145330Z">
+        <seg>このクラスは wxSizer へフラグを渡す際の負担を大きく軽減してくれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This class greatly eases the burden of passing flags to a wxSizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T113418Z">
+        <seg>このクラスは wxSizer へフラグを渡す際の負担を大きく軽減してくれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6392,6 +8036,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is determined by the proportion parameter when adding a window (or another sizer) to a sizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141844Z">
+        <seg>これはウィンドウ (または他のサイザー) をサイザーへ追加するときの プロポーション パラメータによって決定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is determined by the proportion parameter when adding a window (or another sizer) to a sizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130521T160129Z">
+        <seg>これはウィンドウ (または他のサイザー) をサイザーへ追加するときの プロポーション パラメータによって決定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is done in the document/view framework, for example, to allow event handlers to be defined in the document or view.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T053510Z">
@@ -6412,6 +8072,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T042511Z">
         <seg>これはイベントテーブルでは実現不可能です。なぜなら、イベントのディスパッチ先としてこれらのハンドラを指定することができないためです。そのため、イベントはそれを生成したオブジェクトに対して送信される必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is supported only by wxBoxSizer and wxFlexGridSizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141651Z">
+        <seg>これは wxBoxSizer と wxFlexGridSizer でのみサポートされています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is useful when hiding parts of the interface, since you can avoid removing the controls from the sizer and having to add them back later.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T150111Z">
+        <seg>コントロールをサイザーから削除し、後で追加し直す必要がないため、これはインタフェースの一部を隠すときに役立ちます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6456,6 +8132,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This means, that the entire behaviour of a sizer and its children can be controlled by the three parameters of the Add() method.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T111423Z">
+        <seg>これはつまり、サイザーと子コントロールのすべての振る舞いが Add() 関数の 3 個の引数によって制御されることを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This method can be used inside an event handler to control whether further event handlers bound to th...</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T064047Z">
@@ -6480,6 +8164,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This section describes all environment variables that affect execution of wxWidgets programs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T154507Z">
+        <seg>この章では wxWidgets プログラムの実行に影響するすべての環境変数について述べます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This section describes how does wxWidgets support Unicode and how can it affect your programs.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T004913Z">
@@ -6492,6 +8184,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T062131Z">
         <seg>この章ではそのアルゴリズムについて詳しく説明します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This sizer in turn will query its children (which can be normal windows, empty space or other sizers) so that a hierarchy of sizers can be constructed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T142121Z">
+        <seg>このサイザーは順に子コントロール (通常のウィンドウや空白スペース、他のサイザーかもしれません) に対して問い合わせを行うため、サイザーの階層が構築されることになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6532,6 +8232,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T001119Z">
         <seg>これにより、テキスト形式のメッセージカタログ (.po ファイル) が生成されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This will most often mean that the programmer does not set the start-up size of a dialog, the dialog will rather be assigned a sizer and this sizer will be queried about the recommended size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T121141Z">
+        <seg>これはほどんどの場合で、プログラマがダイアログの初期サイズを設定するのではなく、代わりにダイアログをサイザーに割り当て、サイザーが推奨サイズを問い合わせることを意味します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6604,6 +8312,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T030046Z">
         <seg>一例として、よく質問される子フレーム内にマウスがあるときのマウス移動イベントの受信方法を挙げましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To hide a window using the sizer, call wxSizer::Show.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T152111Z">
+        <seg>サイザーを使用してウィンドウを非表示にするためには wxSizer::Show を呼び出してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To hide a window using the sizer, call wxSizer::Show.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141617Z">
+        <seg>サイザーを使用してウィンドウを非表示にするためには wxSizer::Show を呼び出してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6690,8 +8414,8 @@ MyFrame::MyFrame()
       <tuv lang="EN-US">
         <seg>Topic overviews</seg>
       </tuv>
-      <tuv lang="JA" changeid="owner" changedate="20130502T152201Z">
-        <seg>Topic overviews</seg>
+      <tuv lang="JA" changeid="owner" changedate="20130522T131901Z">
+        <seg>トピックスの概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -6904,6 +8628,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Unlike the original wxWidgets Dialog Editor, editors such as wxDesigner, DialogBlocks, XRCed and wxWorkshop create dialogs based exclusively on sizers, practically forcing the user to create platform independent layouts without compromises.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T114516Z">
+        <seg>wxWidgets のオリジナルのダイアログエディタと異なり、wxDesigner、DialogBlocks、XRCed、wxWorkshop などのエディタはもっぱらサイザーのみに基づいてダイアログを作成し、事実上、プラットフォーム非依存のレイアウトを妥協なしに作ることをユーザに強制します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Up</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T145429Z">
@@ -7056,6 +8788,38 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>WXMODE</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T155355Z">
+        <seg>WXMODE</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>WXPREFIX</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T154852Z">
+        <seg>WXPREFIX</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>WXSTDERR</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T155512Z">
+        <seg>WXSTDERR</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>WXTRACE</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T154508Z">
+        <seg>WXTRACE</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Watch out to put in enough casts to the inherited event function.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130506T042446Z">
@@ -7096,6 +8860,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>What makes sizers so well fitted for use in wxWidgets is the fact that every control reports its own minimal size and the algorithm can handle differences in font sizes or different window (dialog item) sizes on different platforms without problems.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T143344Z">
+        <seg>サイザーが wxWidgets に非常に適している理由は、すべてのコントロールが自身の最小サイズを通知し、このアルゴリズムが異なるプラットフォームのフォントサイズやウィンドウ (ダイアログのアイテム) のサイズの違いを問題なく取り扱うことができるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When an event is received from the windowing system, wxWidgets calls wxEvtHandler::ProcessEvent() on the first event handler object belonging to the window generating the event.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T064141Z">
@@ -7128,10 +8900,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When using a vertical sizer, each child can be centered, aligned to the right or aligned to the left.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T151449Z">
+        <seg>垂直方向のサイザーを使用する場合、各子コントロールを中央寄せ、右寄せ、左寄せにすることが可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When working with Unicode, it's important to define the meaning of some terms.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T012942Z">
         <seg>Unicode を使用するときは、いくつかの言葉を定義しておくことが重要です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When wxGROW flag is not used, the item can be aligned within available space.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130521T161646Z">
+        <seg>wxGROW フラグを使用しない場合、コントロールを利用可能なスペース内で整列させることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7204,6 +8992,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130516T154649Z">
         <seg>仮想関数では基底クラスの関数を直接呼び出す必要があり、継承クラスのイベントハンドラの最初 (イベントの事後処理を行なう場合) か最後 (イベントの事前処理を行なう場合) で呼ぶことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Within wxDesigner, this stretch factor gets set from the Option menu.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141317Z">
+        <seg>wxDesigner では、ストレッチ係数は Option メニューから指定できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Within wxDesigner, this stretch factor gets set from the Option menu.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T151238Z">
+        <seg>wxDesigner では、ストレッチ係数は Option メニューから指定できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7288,10 +9092,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can hide controls contained in sizers the same way you would hide any control, using the wxWindow::Show method.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130519T151534Z">
+        <seg>wxWindow::Show を用いて任意のコントロールを非表示にするのと同じ方法で、サイザー内のコントロールを非表示にすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can ignore the value parameter of the DECLARE_EVENT_TYPE macro since it used only for backwards compatibility with wxWidgets 2.0.x based applications where you have to give the event type ID an explicit value.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T154344Z">
         <seg>DECLARE_EVENT_TYPE の value 引数はイベント ID を明示的に指定していた wxWidgets 2.0.x との後方互換性のために使用されているだけなので、無視することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can set WXPREFIX if you are for example distributing a binary version of an application and you don't know in advance where it will be installed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T155354Z">
+        <seg>例えば、アプリケーションのバイナリを配布するときにどこへインストールされるか分からないような場合に WXPREFIX を設定することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7332,6 +9152,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T075113Z">
         <seg>例えば、同じダイアログ内で複数回使うのでなければ、いくつものダイアログで wxID_OK 識別子を使用しても構いません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You must then call Layout on the sizer to force an update.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T145952Z">
+        <seg>その後、強制的に更新するためにサイザーの Layout 関数を呼び出す必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7380,6 +9208,54 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T061218Z">
         <seg>bind( &amp;MyHandler::OnExit, &amp;myHandler, EXIT_FAILURE, _1, "Bye" ));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>button_sizer,</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112815Z">
+        <seg>button_sizer,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>button_sizer-&gt;Add(</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145523Z">
+        <seg>button_sizer-&gt;Add(</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>button_sizer-&gt;Add(</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T143818Z">
+        <seg>button_sizer-&gt;Add(</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>button_sizer-&gt;Add(</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145533Z">
+        <seg>button_sizer-&gt;Add(</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>button_sizer-&gt;Add(</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T143853Z">
+        <seg>button_sizer-&gt;Add(</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>button_sizer-&gt;Add(</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112307Z">
+        <seg>button_sizer-&gt;Add(</seg>
       </tuv>
     </tu>
     <tu>
@@ -7588,6 +9464,30 @@ public:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>new wxButton( this, wxID_CANCEL, "Cancel" ),</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112813Z">
+        <seg>new wxButton( this, wxID_CANCEL, "Cancel" ),</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>new wxButton( this, wxID_OK, "OK" ),</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112308Z">
+        <seg>new wxButton( this, wxID_OK, "OK" ),</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>new wxTextCtrl( this, -1, "My text.", wxDefaultPosition, wxSize(100,60), wxTE_MULTILINE),</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112137Z">
+        <seg>new wxTextCtrl( this, -1, "My text.", wxDefaultPosition, wxSize(100,60), wxTE_MULTILINE),</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>otherwise.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T123840Z">
@@ -7608,6 +9508,102 @@ public:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130514T152147Z">
         <seg>overview_events_winstack.png</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>overview_sizer_00.png</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141213Z">
+        <seg>overview_sizer_00.png</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>overview_sizer_01.png</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141213Z">
+        <seg>overview_sizer_01.png</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>overview_sizer_02.png</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141215Z">
+        <seg>overview_sizer_02.png</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>overview_sizer_03.png</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141202Z">
+        <seg>overview_sizer_03.png</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>overview_sizer_04.png</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141203Z">
+        <seg>overview_sizer_04.png</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>overview_sizer_05.png</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141203Z">
+        <seg>overview_sizer_05.png</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>overview_sizer_06.png</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141223Z">
+        <seg>overview_sizer_06.png</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>overview_sizer_07.png</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141309Z">
+        <seg>overview_sizer_07.png</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>overview_sizer_08.png</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141653Z">
+        <seg>overview_sizer_08.png</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>overview_sizer_09.png</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141805Z">
+        <seg>overview_sizer_09.png</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>overview_sizer_10.png</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141806Z">
+        <seg>overview_sizer_10.png</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>overview_sizer_11.png</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T141822Z">
+        <seg>overview_sizer_11.png</seg>
       </tuv>
     </tu>
     <tu>
@@ -7690,6 +9686,56 @@ public:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T015006Z">
         <seg>クラス宣言内のどこかに挿入する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>topsizer-&gt;Add(</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T142940Z">
+        <seg>topsizer-&gt;Add(</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>topsizer-&gt;Add(</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145451Z">
+        <seg>topsizer-&gt;Add(</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>topsizer-&gt;Add(</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T145551Z">
+        <seg>topsizer-&gt;Add(</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>topsizer-&gt;Add(</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T144050Z">
+        <seg>topsizer-&gt;Add(</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>topsizer-&gt;Add(</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112134Z">
+        <seg>topsizer-&gt;Add(</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>topsizer-&gt;SetSizeHints( this );   // set size hints to honour minimum size
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T113023Z">
+        <seg>topsizer-&gt;SetSizeHints( this );   // 最小サイズを守るためのサイズヒントを設定する
+}</seg>
       </tuv>
     </tu>
     <tu>
@@ -7806,10 +9852,58 @@ protected:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxALIGN_CENTER ); // no border and centre horizontally</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112848Z">
+        <seg>wxALIGN_CENTER ); // ボーダーなしで水平方向に中央寄せ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxALIGN_CENTRE (same as wxALIGN_CENTER) is defined as (wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130521T162105Z">
+        <seg>wxALIGN_CENTRE (wxALIGN_CENTER と同じです) は (wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL) として定義されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxALIGN_LEFT, wxALIGN_TOP, wxALIGN_RIGHT, wxALIGN_BOTTOM, wxALIGN_CENTER_HORIZONTAL and wxALIGN_CENTER_VERTICAL do what they say.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130521T161853Z">
+        <seg>wxALIGN_LEFT、wxALIGN_TOP、wxALIGN_RIGHT、wxALIGN_BOTTOM、wxALIGN_CENTER_HORIZONTAL、wxALIGN_CENTER_VERTICAL はその名前の通りのことを行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxALL,        //   and make border all around</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112250Z">
+        <seg>wxALL,        //  全方向にボーダーを持たせる</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxALL,       // make border all around (implicit top alignment)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112744Z">
+        <seg>wxALL,       // 全方向にボーダーを持たせる (暗黙的に上寄せになる)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxActivateEvent</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T055055Z">
         <seg>wxActivateEvent</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxBACKWARD  // return wxID_BACKWARD</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T120016Z">
+        <seg>wxBACKWARD  // wxID_BACKWARD を返却します</seg>
       </tuv>
     </tu>
     <tu>
@@ -7826,6 +9920,22 @@ protected:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T145417Z">
         <seg>wxBoxSizer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxBoxSizer *button_sizer = new wxBoxSizer( wxHORIZONTAL );</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112306Z">
+        <seg>wxBoxSizer *button_sizer = new wxBoxSizer( wxHORIZONTAL );</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxBoxSizer *topsizer = new wxBoxSizer( wxVERTICAL );</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112044Z">
+        <seg>wxBoxSizer *topsizer = new wxBoxSizer( wxVERTICAL );</seg>
       </tuv>
     </tu>
     <tu>
@@ -7858,6 +9968,14 @@ protected:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130502T145407Z">
         <seg>wxBoxSizer::wxBoxSizer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxCANCEL // return wxID_CANCEL</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T115856Z">
+        <seg>wxCANCEL // wxID_CANCEL を返却します</seg>
       </tuv>
     </tu>
     <tu>
@@ -7902,6 +10020,16 @@ protected:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxDEFAULT_DIALOG_STYLE | wxRESIZE_BORDER)
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112043Z">
+        <seg>wxDEFAULT_DIALOG_STYLE | wxRESIZE_BORDER)
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxDbTable</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T004405Z">
@@ -7934,6 +10062,14 @@ protected:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxEXPAND |    // make horizontally stretchable</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T112224Z">
+        <seg>wxEXPAND |    // 水平方向にリサイズ可能にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxEraseEvent</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T055213Z">
@@ -7962,6 +10098,14 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxFORWARD   // return wxID_FORWARD</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T120007Z">
+        <seg>wxFORWARD   // wxID_FORWARD を返却します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxFile</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T070910Z">
@@ -7978,10 +10122,34 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxFlexGridSizer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T153320Z">
+        <seg>wxFlexGridSizer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxFocusEvent</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T055226Z">
         <seg>wxFocusEvent</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxGridSizer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T152805Z">
+        <seg>wxGridSizer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxHELP   // return wxID_HELP</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T115957Z">
+        <seg>wxHELP   // wxID_HELP を返却します</seg>
       </tuv>
     </tu>
     <tu>
@@ -8050,6 +10218,14 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxMORE      // return wxID_MORE</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T120032Z">
+        <seg>wxMORE      // wxID_MORE を返却します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxMenuEvent</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T055300Z">
@@ -8070,6 +10246,22 @@ private:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T055314Z">
         <seg>wxMoveEvent</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxNO     // return wxID_NO</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T115802Z">
+        <seg>wxNO     // wxID_NO を返却します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxNO_DEFAULT // make the wxNO button the default, otherwise wxYES or wxOK button will be default</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T115839Z">
+        <seg>wxNO_DEFAULT // wxNO ボタンをデフォルトにします。これを指定しない場合、wxYES ボタンか wxOK ボタンがデフォルトになります</seg>
       </tuv>
     </tu>
     <tu>
@@ -8102,6 +10294,14 @@ private:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T060941Z">
         <seg>wxNotebook::SetSelection</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxOK     // return wxID_OK</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T115848Z">
+        <seg>wxOK     // wxID_OK を返却します</seg>
       </tuv>
     </tu>
     <tu>
@@ -8214,6 +10414,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxSETUP     // return wxID_SETUP</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T120027Z">
+        <seg>wxSETUP     // wxID_SETUP を返却します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxScrollEvent</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T081735Z">
@@ -8246,10 +10454,66 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxSizer is the abstract base class used for laying out subwindows in a window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T135038Z">
+        <seg>wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxSizerFlags(0).Align().Border(wxALL, 10));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T113935Z">
+        <seg>wxSizerFlags(0).Align().Border(wxALL, 10));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxSizerFlags(0).Center() );</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T114010Z">
+        <seg>wxSizerFlags(0).Center() );</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxSizerFlags(1).Align().Expand().Border(wxALL, 10));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T113656Z">
+        <seg>wxSizerFlags(1).Align().Expand().Border(wxALL, 10));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxSplitterEvent</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T081859Z">
         <seg>wxSplitterEvent</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxStaticBoxSixer is the same as a wxBoxSizer, but surrounded by a static box.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T152110Z">
+        <seg>wxStaticBoxSixer は wxBoxSizer と同じですが、スタティックボックスで周りを囲みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxStaticBoxSizer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130520T152038Z">
+        <seg>wxStaticBoxSizer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxStaticBoxSizer is a sizer derived from wxBoxSizer but adds a static box around the sizer...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T135216Z">
+        <seg>wxStaticBoxSizer は wxBoxSizer を継承したサイザーですが、サイザーの周囲にスタティックボックスを追加します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8412,6 +10676,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxWidgets 2.8.12: A portable C++ and Python GUI toolkit</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T131846Z">
+        <seg>wxWidgets 2.8.12: A portable C++ and Python GUI toolkit</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxWidgets does not provide translations for all of these currently.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T043604Z">
@@ -8484,6 +10756,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxWidgets: wxWidgets: Environment Variables</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130523T155606Z">
+        <seg>wxWidgets: wxWidgets: 環境変数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxWidgets: wxWidgets: Events and Event Handling</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130507T151119Z">
@@ -8494,8 +10774,8 @@ void MyWindow::SendEvent()
       <tuv lang="EN-US">
         <seg>wxWidgets: wxWidgets: File Classes and Functions</seg>
       </tuv>
-      <tuv lang="JA" changeid="owner" changedate="20130504T070115Z">
-        <seg>wxWidgets: wxWidgets: File クラスと関数</seg>
+      <tuv lang="JA" changeid="owner" changedate="20130522T132425Z">
+        <seg>wxWidgets: wxWidgets: ファイルクラスと関数</seg>
       </tuv>
     </tu>
     <tu>
@@ -8504,6 +10784,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T035449Z">
         <seg>wxWidgets: wxWidgets: 国際化</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxWidgets: wxWidgets: Sizers Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T135003Z">
+        <seg>wxWidgets: wxWidgets: サイザーの概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -8528,6 +10816,22 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T172216Z">
         <seg>wxWindow's sizers hierarchy is parallel to the wxWindow children hierarchy: child windows are children of their parent window and the sizer (or sizers) form separate hierarchy attached to the window with wxWindow::SetSizer().</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxYES    // return wxID_YES</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T115747Z">
+        <seg>wxYES    // wxID_YES を返却します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxYES_NO // Add Yes/No subpanel</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130522T115739Z">
+        <seg>wxYES_NO // Yes/No サブパネルを追加します</seg>
       </tuv>
     </tu>
     <tu>

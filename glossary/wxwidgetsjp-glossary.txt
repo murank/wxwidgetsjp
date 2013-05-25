@@ -13,3 +13,6 @@ Custom Event Summary	カスタムイベントの概要
 Dynamic Event Handling	動的イベント処理
 Event Handlers Chain	イベントハンドラの連鎖
 event classes group page	イベントクラスグループ
+XML-based resource system overview	XML に基づくリソースシステムの概要	XML-based resource system overview
+Programming with Sizers	サイザーを用いたプログラミング
+empty space	空白スペース
