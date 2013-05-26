@@ -324,6 +324,14 @@ protected:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>... process error ourselves ...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T030154Z">
+        <seg>... 自分自身でエラー処理を行なう ...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>... update the frame <bpt i="4" x="4">&lt;s4&gt;</bpt>using<ept i="4">&lt;/s4&gt;</ept> the <bpt i="5" x="5">&lt;s5&gt;</bpt>new<ept i="5">&lt;/s5&gt;</ept> size ...
 }</seg>
       </tuv>
@@ -504,6 +512,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T114006Z">
         <seg>// 太さ 10 のボーダーを全方向に持たせ、暗黙的に上揃えにする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>// wxFile.Open() normally complains if file can't be opened, we don't want it</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T030136Z">
+        <seg>// 通常はファイルを開けなかった場合に wxFile.Open() がエラーメッセージを出力するが、そうさせたくない</seg>
       </tuv>
     </tu>
     <tu>
@@ -724,6 +740,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxFile<ept i="0">&lt;/a0&gt;</ept> file;</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T113205Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxFile<ept i="0">&lt;/a0&gt;</ept> file;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxFile<ept i="0">&lt;/a0&gt;</ept> may be used for low-level IO.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T072442Z">
@@ -760,6 +784,158 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130520T152816Z">
         <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxGridSizer<ept i="0">&lt;/a0&gt;</ept> は 2 次元のサイザーです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::AddTraceMask<ept i="0">&lt;/a0&gt;</ept>( wxTRACE_OleCalls );</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T133058Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::AddTraceMask<ept i="0">&lt;/a0&gt;</ept>( wxTRACE_OleCalls );</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept> Classes Overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T090619Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept> クラスの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept>* logger = <bpt i="1" x="1">&lt;s1&gt;</bpt>new<ept i="1">&lt;/s1&gt;</ept> <bpt i="2" x="2">&lt;a2&gt;</bpt>wxLogStream<ept i="2">&lt;/a2&gt;</ept>(&amp;cout);</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091557Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept>* logger = <bpt i="1" x="1">&lt;s1&gt;</bpt>new<ept i="1">&lt;/s1&gt;</ept> <bpt i="2" x="2">&lt;a2&gt;</bpt>wxLogStream<ept i="2">&lt;/a2&gt;</ept>(&amp;cout);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogBuffer<ept i="0">&lt;/a0&gt;</ept>: This target collects all the logged messages in an internal buffer allowing to show them later to the user all at once.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T113120Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogBuffer<ept i="0">&lt;/a0&gt;</ept>: このターゲットはすべてのログメッセージを内部バッファに収集し、後で一括してユーザに通知できるようにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogDebug()<ept i="0">&lt;/a0&gt;</ept> is <bpt i="1" x="1">&lt;b1&gt;</bpt>the<ept i="1">&lt;/b1&gt;</ept> right function for debug output.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091154Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogDebug<ept i="0">&lt;/a0&gt;</ept> は <bpt i="1" x="1">&lt;b1&gt;</bpt>まさに<ept i="1">&lt;/b1&gt;</ept> デバッグ出力に適切な関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogError()<ept i="0">&lt;/a0&gt;</ept> is the function to use for error messages, i.e. the messages that must be shown to the user.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131440Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogError<ept i="0">&lt;/a0&gt;</ept> はエラーメッセージ (ユーザに通知しなければならないメッセージ) 用の関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogFatalError()<ept i="0">&lt;/a0&gt;</ept> which is like <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogError()<ept i="1">&lt;/a1&gt;</ept>, but also terminates the program with the exit code 3 (using <bpt i="2" x="2">&lt;e2&gt;</bpt>abort()<ept i="2">&lt;/e2&gt;</ept> standard function).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131421Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogFatalError<ept i="0">&lt;/a0&gt;</ept> は <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogError<ept i="1">&lt;/a1&gt;</ept> と似ていますが、(<bpt i="2" x="2">&lt;e2&gt;</bpt>abort()<ept i="2">&lt;/e2&gt;</ept> 標準関数を使用して) リターンコード 3 でプログラムを終了させます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogGui<ept i="0">&lt;/a0&gt;</ept>: This is the standard log target for wxWidgets applications (it is used by default if you don't do anything) and provides the most reasonable handling of all types of messages for given platform.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T112827Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogGui<ept i="0">&lt;/a0&gt;</ept>: これは wxWidgets アプリケーションの標準ログターゲット (何もしない場合にデフォルトで使用されます) で、指定されたプラットフォームについて、メッセージのすべての型に対してもっとも合理的な処理を行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogMessage()<ept i="0">&lt;/a0&gt;</ept> is for all normal, informational messages.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131739Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogMessage<ept i="0">&lt;/a0&gt;</ept> はすべての通常 (通知) メッセージ用の関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogNull<ept i="0">&lt;/a0&gt;</ept>: The last log class is quite particular: it doesn't do anything.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T113150Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogNull<ept i="0">&lt;/a0&gt;</ept>: 最後のログクラスは極めて特殊です: これは何も行いません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogStatus()<ept i="0">&lt;/a0&gt;</ept> is for status messages.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T085809Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogStatus()<ept i="0">&lt;/a0&gt;</ept> はステータスメッセージ用です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogStderr<ept i="0">&lt;/a0&gt;</ept>: This class logs messages to a <bpt i="1" x="1">&lt;c1&gt;</bpt>FILE *<ept i="1">&lt;/c1&gt;</ept>, using stderr by default as its name suggests.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T112815Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogStderr<ept i="0">&lt;/a0&gt;</ept>: このクラスはメッセージを <bpt i="1" x="1">&lt;c1&gt;</bpt>FILE *<ept i="1">&lt;/c1&gt;</ept> へ出力します。その名の通り、デフォルトでは stderr へ出力します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogStream<ept i="0">&lt;/a0&gt;</ept>: This class has the same functionality as <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogStderr<ept i="1">&lt;/a1&gt;</ept>, but uses <bpt i="2" x="2">&lt;e2&gt;</bpt>ostream<ept i="2">&lt;/e2&gt;</ept> and cerr instead of <bpt i="3" x="3">&lt;c3&gt;</bpt>FILE *<ept i="3">&lt;/c3&gt;</ept> and stderr.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T112822Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogStream<ept i="0">&lt;/a0&gt;</ept>: このクラスは <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogStderr<ept i="1">&lt;/a1&gt;</ept> と同じ機能を持ちますが、<bpt i="3" x="3">&lt;c3&gt;</bpt>FILE *<ept i="3">&lt;/c3&gt;</ept> と stderr の代わりに <bpt i="2" x="2">&lt;e2&gt;</bpt>ostream<ept i="2">&lt;/e2&gt;</ept> と cerr を使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogSysError()<ept i="0">&lt;/a0&gt;</ept> is mostly used by wxWidgets itself, but might be handy for logging errors after system call (API function) failure.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T090926Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogSysError<ept i="0">&lt;/a0&gt;</ept> は主に wxWidgets 自身で使用されますが、システムコール (API 関数) の失敗後のエラーログを記録するのに便利かもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogTrace()<ept i="0">&lt;/a0&gt;</ept> as <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogDebug()<ept i="1">&lt;/a1&gt;</ept> only does something in debug build.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091414Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogTrace<ept i="0">&lt;/a0&gt;</ept> も <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogDebug<ept i="1">&lt;/a1&gt;</ept> と同じようにデバッグビルド時のみ動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogTrace<ept i="0">&lt;/a0&gt;</ept>( wxTRACE_OleCalls, <bpt i="1" x="1">&lt;s1&gt;</bpt>"IFoo::Bar() called"<ept i="1">&lt;/s1&gt;</ept> );</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T132930Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogTrace<ept i="0">&lt;/a0&gt;</ept>( wxTRACE_OleCalls, <bpt i="1" x="1">&lt;s1&gt;</bpt>"IFoo::Bar() called"<ept i="1">&lt;/s1&gt;</ept> );</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogVerbose()<ept i="0">&lt;/a0&gt;</ept> is for verbose output.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131800Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogVerbose<ept i="0">&lt;/a0&gt;</ept> は詳細な出力用の関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogWarning()<ept i="0">&lt;/a0&gt;</ept> for warnings.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131627Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogWarning()<ept i="0">&lt;/a0&gt;</ept> は警告メッセージ用です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogWindow<ept i="0">&lt;/a0&gt;</ept>: This log target provides a "log console" which collects all messages generated by the application and also passes them to the previous active log target.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T112841Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogWindow<ept i="0">&lt;/a0&gt;</ept>: このログターゲットはアプリケーションの生成するすべてのメッセージを収集する "ログコンソール" を提供するとともに、前に有効だったログターゲットに収集したメッセージを引き渡します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1024,6 +1200,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="10" x="10">&lt;a10&gt;</bpt>wxLogGui<ept i="10">&lt;/a10&gt;</ept>,<it pos="begin" x="11">&lt;br11&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T003253Z">
+        <seg><bpt i="10" x="10">&lt;a10&gt;</bpt>wxLogGui<ept i="10">&lt;/a10&gt;</ept>,<it pos="begin" x="11">&lt;br11&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="11" x="11">&lt;a11&gt;</bpt>wxPoint<ept i="11">&lt;/a11&gt;</ept> GetPoint()<bpt i="12" x="12">&lt;s12&gt;</bpt> const <ept i="12">&lt;/s12&gt;</ept>{ <bpt i="13" x="13">&lt;s13&gt;</bpt>return<ept i="13">&lt;/s13&gt;</ept> m_pos; }</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130515T150440Z">
@@ -1056,6 +1240,22 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="12" x="12">&lt;a12&gt;</bpt>wxLog::SetComponentLevel<ept i="12">&lt;/a12&gt;</ept>(<bpt i="13" x="13">&lt;s13&gt;</bpt>"wx/base/module"<ept i="13">&lt;/s13&gt;</ept>, <bpt i="14" x="14">&lt;a14&gt;</bpt>wxLOG_Trace<ept i="14">&lt;/a14&gt;</ept>);</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T111102Z">
+        <seg><bpt i="12" x="12">&lt;a12&gt;</bpt>wxLog::SetComponentLevel<ept i="12">&lt;/a12&gt;</ept>(<bpt i="13" x="13">&lt;s13&gt;</bpt>"wx/base/module"<ept i="13">&lt;/s13&gt;</ept>, <bpt i="14" x="14">&lt;a14&gt;</bpt>wxLOG_Trace<ept i="14">&lt;/a14&gt;</ept>);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="12" x="12">&lt;a12&gt;</bpt>wxLogNull<ept i="12">&lt;/a12&gt;</ept>,<it pos="begin" x="13">&lt;br13&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T003253Z">
+        <seg><bpt i="12" x="12">&lt;a12&gt;</bpt>wxLogNull<ept i="12">&lt;/a12&gt;</ept>,<it pos="begin" x="13">&lt;br13&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="13" x="13">&lt;a13&gt;</bpt>wxString<ept i="13">&lt;/a13&gt;</ept> text = <bpt i="14" x="14">&lt;s14&gt;</bpt>event<ept i="14">&lt;/s14&gt;</ept>.GetString();
 }
 
@@ -1074,6 +1274,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="14" x="14">&lt;a14&gt;</bpt>wxLogChain<ept i="14">&lt;/a14&gt;</ept>,<it pos="begin" x="15">&lt;br15&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T003254Z">
+        <seg><bpt i="14" x="14">&lt;a14&gt;</bpt>wxLogChain<ept i="14">&lt;/a14&gt;</ept>,<it pos="begin" x="15">&lt;br15&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="168" x="168">&lt;a168&gt;</bpt><bpt i="169" x="169">&lt;b169&gt;</bpt>Environment variables<ept i="169">&lt;/b169&gt;</ept><ept i="168">&lt;/a168&gt;</ept><it pos="begin" x="170">&lt;br170&gt;</it></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130523T160335Z">
@@ -1082,10 +1290,42 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="16" x="16">&lt;a16&gt;</bpt>wxLogPassThrough<ept i="16">&lt;/a16&gt;</ept>,<it pos="begin" x="17">&lt;br17&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T003254Z">
+        <seg><bpt i="16" x="16">&lt;a16&gt;</bpt>wxLogPassThrough<ept i="16">&lt;/a16&gt;</ept>,<it pos="begin" x="17">&lt;br17&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="18" x="18">&lt;a18&gt;</bpt>Logging overview<ept i="18">&lt;/a18&gt;</ept><it pos="begin" x="19">&lt;br19&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T124414Z">
+        <seg><bpt i="18" x="18">&lt;a18&gt;</bpt>ロギングの概要<ept i="18">&lt;/a18&gt;</ept><it pos="begin" x="19">&lt;br19&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="18" x="18">&lt;a18&gt;</bpt>wxStreamToTextRedirector<ept i="18">&lt;/a18&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T003254Z">
+        <seg><bpt i="18" x="18">&lt;a18&gt;</bpt>wxStreamToTextRedirector<ept i="18">&lt;/a18&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="19" x="19">&lt;a19&gt;</bpt>wxCommandEvent<ept i="19">&lt;/a19&gt;</ept> event(MY_EVENT, GetId());</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130515T150152Z">
         <seg><bpt i="19" x="19">&lt;a19&gt;</bpt>wxCommandEvent<ept i="19">&lt;/a19&gt;</ept> event(MY_EVENT, GetId());</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog<ept i="1">&lt;/a1&gt;</ept> does however guarantee that messages logged by each thread will appear in order in which they were logged.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T120250Z">
+        <seg>ただし、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog<ept i="1">&lt;/a1&gt;</ept> は各スレッドで記録されたメッセージは記録された順に表示されることを保証しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1180,6 +1420,30 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>wxLog::SetComponentLevel<ept i="2">&lt;/a2&gt;</ept>(<bpt i="3" x="3">&lt;s3&gt;</bpt>"MyProgram/DB"<ept i="3">&lt;/s3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxLOG_FatalError<ept i="4">&lt;/a4&gt;</ept>);</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T110710Z">
+        <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>wxLog::SetComponentLevel<ept i="2">&lt;/a2&gt;</ept>(<bpt i="3" x="3">&lt;s3&gt;</bpt>"MyProgram/DB"<ept i="3">&lt;/s3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxLOG_FatalError<ept i="4">&lt;/a4&gt;</ept>);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>wxLogNull<ept i="2">&lt;/a2&gt;</ept> logNo;</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T113228Z">
+        <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>wxLogNull<ept i="2">&lt;/a2&gt;</ept> logNo;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>wxLogStderr<ept i="2">&lt;/a2&gt;</ept>,<it pos="begin" x="3">&lt;br3&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T003251Z">
+        <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>wxLogStderr<ept i="2">&lt;/a2&gt;</ept>,<it pos="begin" x="3">&lt;br3&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>wxObject<ept i="2">&lt;/a2&gt;</ept></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130430T145842Z">
@@ -1216,6 +1480,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T132119Z">
         <seg><bpt i="39" x="39">&lt;a39&gt;</bpt><bpt i="40" x="40">&lt;b40&gt;</bpt>国際化<ept i="40">&lt;/b40&gt;</ept><ept i="39">&lt;/a39&gt;</ept><it pos="begin" x="41">&lt;br41&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="3" x="3">&lt;a3&gt;</bpt>wxLog::SetActiveTarget<ept i="3">&lt;/a3&gt;</ept>(logger);</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091559Z">
+        <seg><bpt i="3" x="3">&lt;a3&gt;</bpt>wxLog::SetActiveTarget<ept i="3">&lt;/a3&gt;</ept>(logger);</seg>
       </tuv>
     </tu>
     <tu>
@@ -1284,6 +1556,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="4" x="4">&lt;a4&gt;</bpt>wxLogStream<ept i="4">&lt;/a4&gt;</ept>,<it pos="begin" x="5">&lt;br5&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T003252Z">
+        <seg><bpt i="4" x="4">&lt;a4&gt;</bpt>wxLogStream<ept i="4">&lt;/a4&gt;</ept>,<it pos="begin" x="5">&lt;br5&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="52" x="52">&lt;a52&gt;</bpt>wxALL<ept i="52">&lt;/a52&gt;</ept>,       <bpt i="53" x="53">&lt;s53&gt;</bpt>// make border all around (implicit top alignment)<ept i="53">&lt;/s53&gt;</ept></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T144038Z">
@@ -1300,10 +1580,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="54" x="54">&lt;a54&gt;</bpt><bpt i="55" x="55">&lt;b55&gt;</bpt>wxLog classes overview<ept i="55">&lt;/b55&gt;</ept><ept i="54">&lt;/a54&gt;</ept><it pos="begin" x="56">&lt;br56&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T124444Z">
+        <seg><bpt i="54" x="54">&lt;a54&gt;</bpt><bpt i="55" x="55">&lt;b55&gt;</bpt>wxLog クラスの概要<ept i="55">&lt;/b55&gt;</ept><ept i="54">&lt;/a54&gt;</ept><it pos="begin" x="56">&lt;br56&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="57" x="57">&lt;a57&gt;</bpt>wxALIGN_CENTER<ept i="57">&lt;/a57&gt;</ept> ); <bpt i="58" x="58">&lt;s58&gt;</bpt>// no border and centre horizontally<ept i="58">&lt;/s58&gt;</ept></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T144109Z">
         <seg><bpt i="57" x="57">&lt;a57&gt;</bpt>wxALIGN_CENTER<ept i="57">&lt;/a57&gt;</ept> ); <bpt i="58" x="58">&lt;s58&gt;</bpt>// ボーダーなしで水平方向に中央寄せ<ept i="58">&lt;/s58&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="5" x="5">&lt;a5&gt;</bpt>wxLog::DoLogTextAtLevel()<ept i="5">&lt;/a5&gt;</ept> should be overridden if you simply want to redirect the log messages somewhere else, without changing their formatting.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T112214Z">
+        <seg>メッセージの形式を変更することなく、ログメッセージを単純に他の場所へリダイレクトしたいだけの場合、<bpt i="5" x="5">&lt;a5&gt;</bpt>wxLog::DoLogTextAtLevel()<ept i="5">&lt;/a5&gt;</ept> をオーバーライドします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1344,6 +1640,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130430T145927Z">
         <seg><bpt i="6" x="6">&lt;a6&gt;</bpt>wxBoxSizer::GetOrientation<ept i="6">&lt;/a6&gt;</ept><it pos="begin" x="7">&lt;br7&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="6" x="6">&lt;a6&gt;</bpt>wxLogTextCtrl<ept i="6">&lt;/a6&gt;</ept>,<it pos="begin" x="7">&lt;br7&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T003252Z">
+        <seg><bpt i="6" x="6">&lt;a6&gt;</bpt>wxLogTextCtrl<ept i="6">&lt;/a6&gt;</ept>,<it pos="begin" x="7">&lt;br7&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="7" x="7">&lt;a7&gt;</bpt>wxLog::SetComponentLevel<ept i="7">&lt;/a7&gt;</ept>(<bpt i="8" x="8">&lt;s8&gt;</bpt>"MyProgram/DB/Trans"<ept i="8">&lt;/s8&gt;</ept>, <bpt i="9" x="9">&lt;a9&gt;</bpt>wxLOG_Trace<ept i="9">&lt;/a9&gt;</ept>);</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T110923Z">
+        <seg><bpt i="7" x="7">&lt;a7&gt;</bpt>wxLog::SetComponentLevel<ept i="7">&lt;/a7&gt;</ept>(<bpt i="8" x="8">&lt;s8&gt;</bpt>"MyProgram/DB/Trans"<ept i="8">&lt;/s8&gt;</ept>, <bpt i="9" x="9">&lt;a9&gt;</bpt>wxLOG_Trace<ept i="9">&lt;/a9&gt;</ept>);</seg>
       </tuv>
     </tu>
     <tu>
@@ -1392,6 +1704,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T074938Z">
         <seg><bpt i="8" x="8">&lt;a8&gt;</bpt>ウィンドウ識別子<ept i="8">&lt;/a8&gt;</ept><it pos="begin" x="9">&lt;br9&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="8" x="8">&lt;a8&gt;</bpt>wxLogMessage<ept i="8">&lt;/a8&gt;</ept>(<bpt i="9" x="9">&lt;s9&gt;</bpt>"..."<ept i="9">&lt;/s9&gt;</ept>); <bpt i="10" x="10">&lt;s10&gt;</bpt>// ok<ept i="10">&lt;/s10&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T114550Z">
+        <seg><bpt i="8" x="8">&lt;a8&gt;</bpt>wxLogMessage<ept i="8">&lt;/a8&gt;</ept>(<bpt i="9" x="9">&lt;s9&gt;</bpt>"..."<ept i="9">&lt;/s9&gt;</ept>); <bpt i="10" x="10">&lt;s10&gt;</bpt>// ok<ept i="10">&lt;/s10&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="8" x="8">&lt;a8&gt;</bpt>wxLogWindow<ept i="8">&lt;/a8&gt;</ept>,<it pos="begin" x="9">&lt;br9&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T003253Z">
+        <seg><bpt i="8" x="8">&lt;a8&gt;</bpt>wxLogWindow<ept i="8">&lt;/a8&gt;</ept>,<it pos="begin" x="9">&lt;br9&gt;</it></seg>
       </tuv>
     </tu>
     <tu>
@@ -1468,10 +1796,58 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Completeness:<ept i="0">&lt;/b0&gt;</ept> Usually, an error message should be presented to the user when some operation fails.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091816Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>完全性 :<ept i="0">&lt;/b0&gt;</ept> 通常、処理が失敗した場合にはエラーメッセージが表示されるべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Completeness<ept i="0">&lt;/b0&gt;</ept> Usually, an error message should be presented to the user when some operation fails.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T015937Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>完全性<ept i="0">&lt;/b0&gt;</ept> 通常、処理が失敗した場合にはエラーメッセージが表示されるべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Flexibility:<ept i="0">&lt;/b0&gt;</ept> The output of <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog<ept i="1">&lt;/a1&gt;</ept> functions can be redirected or suppressed entirely based on their importance, which is either impossible or difficult to do with traditional methods.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091643Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>柔軟性 :<ept i="0">&lt;/b0&gt;</ept> <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog<ept i="1">&lt;/a1&gt;</ept> 関数の出力はその重要度に応じてリダイレクトしたり抑制したりできます。これは従来の関数では不可能、もしくは困難なことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Flexibility<ept i="0">&lt;/b0&gt;</ept> The output of wxLog functions can be redirected or suppressed entirely based on their importance, which is either impossible or difficult to do with traditional methods.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T090235Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>柔軟性<ept i="0">&lt;/b0&gt;</ept> wxLog 関数の出力はその重要度に応じてリダイレクトしたり抑制したりできます。これは従来の関数では不可能、もしくは困難なことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Pay close attention to Step 5.<ept i="0">&lt;/b0&gt;</ept> People often overlook or get confused by this powerful feature of the wxWidgets event processing system.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T031315Z">
         <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>ステップ 5 に注意してください。<ept i="0">&lt;/b0&gt;</ept> wxWidgets のイベント処理システムの持つこの強力な機能はしばしば見落とされたり、人を混乱させたりします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Portability:<ept i="0">&lt;/b0&gt;</ept> It is a common practice to use <bpt i="1" x="1">&lt;e1&gt;</bpt>printf()<ept i="1">&lt;/e1&gt;</ept> statements or cout/cerr C++ streams for writing out some (debug or otherwise) information.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091656Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>移植性 :<ept i="0">&lt;/b0&gt;</ept> デバッグ情報や他の情報の出力に <bpt i="1" x="1">&lt;e1&gt;</bpt>printf()<ept i="1">&lt;/e1&gt;</ept> や cout/cerr などの C++ ストリームを使用するのはごく普通のことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Portability<ept i="0">&lt;/b0&gt;</ept> It is a common practice to use <bpt i="1" x="1">&lt;i1&gt;</bpt>printf()<ept i="1">&lt;/i1&gt;</ept> statements or cout/cerr C++ streams for writing out some (debug or otherwise) information.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T015828Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>移植性<ept i="0">&lt;/b0&gt;</ept> デバッグ情報や他の情報の出力に <bpt i="1" x="1">&lt;i1&gt;</bpt>printf()<ept i="1">&lt;/i1&gt;</ept> や cout/cerr などの C++ ストリームを使用するのはごく普通のことです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1512,6 +1888,126 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130430T145929Z">
         <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxBoxSizer<ept i="0">&lt;/b0&gt;</ept>(<bpt i="1" x="1">&lt;b1&gt;</bpt>int <ept i="1">&lt;/b1&gt;</ept><bpt i="2" x="2">&lt;i2&gt;</bpt>orient<ept i="2">&lt;/i2&gt;</ept>)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogDebug<ept i="0">&lt;/b0&gt;</ept> is <bpt i="1" x="1">&lt;b1&gt;</bpt>the<ept i="1">&lt;/b1&gt;</ept> right function for debug output.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T011629Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogDebug<ept i="0">&lt;/b0&gt;</ept> は <bpt i="1" x="1">&lt;b1&gt;</bpt>まさに<ept i="1">&lt;/b1&gt;</ept> デバッグ出力に適切な関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogError<ept i="0">&lt;/b0&gt;</ept> is the function to use for error messages, i.e. the messages that must be shown to the user.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T010103Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogError<ept i="0">&lt;/b0&gt;</ept> はエラーメッセージ (ユーザに通知しなければならないメッセージ) 用の関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogFatalError<ept i="0">&lt;/b0&gt;</ept> which is like <bpt i="1" x="1">&lt;i1&gt;</bpt>wxLogError<ept i="1">&lt;/i1&gt;</ept>, but also terminates the program with the exit code 3 (using <bpt i="2" x="2">&lt;i2&gt;</bpt>abort()<ept i="2">&lt;/i2&gt;</ept> standard function).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T005238Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogFatalError<ept i="0">&lt;/b0&gt;</ept> は <bpt i="1" x="1">&lt;i1&gt;</bpt>wxLogError<ept i="1">&lt;/i1&gt;</ept> と似ていますが、(<bpt i="2" x="2">&lt;i2&gt;</bpt>abort()<ept i="2">&lt;/i2&gt;</ept> 標準関数を使用して) リターンコード 3 でプログラムを終了させます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogGui<ept i="0">&lt;/b0&gt;</ept> This is the standard log target for wxWidgets applications (it is used by default if you don't do anything) and provides the most reasonable handling of all types of messages for given platform.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T090443Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogGui<ept i="0">&lt;/b0&gt;</ept> これは wxWidgets アプリケーションの標準ログターゲット (何もしない場合にデフォルトで使用されます) で、指定されたプラットフォームについて、メッセージのすべての型に対してもっとも合理的な処理を行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogMessage<ept i="0">&lt;/b0&gt;</ept> is for all normal, informational messages.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T010056Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogMessage<ept i="0">&lt;/b0&gt;</ept> はすべての通常 (通知) メッセージ用の関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogNull<ept i="0">&lt;/b0&gt;</ept> The last log class is quite particular: it doesn't do anything.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T025643Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogNull<ept i="0">&lt;/b0&gt;</ept> 最後のログクラスは極めて特殊です: これは何も行いません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogStatus<ept i="0">&lt;/b0&gt;</ept> is for status messages - they will go into the status bar of the active or specified (as the first argument) <bpt i="1" x="1">&lt;a1&gt;</bpt>wxFrame<ept i="1">&lt;/a1&gt;</ept> if it has one.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T011009Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogStatus<ept i="0">&lt;/b0&gt;</ept> はステータスメッセージ用の関数で、このメッセージはアクティブまたは第一引数で指定された <bpt i="1" x="1">&lt;a1&gt;</bpt>wxFrame<ept i="1">&lt;/a1&gt;</ept> がステータスバーを持つ場合に、ステータスバーへ出力されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogStderr<ept i="0">&lt;/b0&gt;</ept> This class logs messages to a <bpt i="1" x="1">&lt;i1&gt;</bpt>FILE *<ept i="1">&lt;/i1&gt;</ept>, using stderr by default as its name suggests.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T024402Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogStderr<ept i="0">&lt;/b0&gt;</ept> このクラスはメッセージを <bpt i="1" x="1">&lt;i1&gt;</bpt>FILE *<ept i="1">&lt;/i1&gt;</ept> へ出力します。その名の通り、デフォルトでは stderr へ出力します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogStream<ept i="0">&lt;/b0&gt;</ept> This class has the same functionality as wxLogStderr, but uses <bpt i="1" x="1">&lt;i1&gt;</bpt>ostream<ept i="1">&lt;/i1&gt;</ept> and cerr instead of <bpt i="2" x="2">&lt;i2&gt;</bpt>FILE *<ept i="2">&lt;/i2&gt;</ept> and stderr.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T024353Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogStream<ept i="0">&lt;/b0&gt;</ept> このクラスは wxLogStderr と同じ機能を持ちますが、<bpt i="2" x="2">&lt;i2&gt;</bpt>FILE *<ept i="2">&lt;/i2&gt;</ept> と stderr の代わりに <bpt i="1" x="1">&lt;i1&gt;</bpt>ostream<ept i="1">&lt;/i1&gt;</ept> と cerr を使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogSysError<ept i="0">&lt;/b0&gt;</ept> is mostly used by wxWidgets itself, but might be handy for logging errors after system call (API function) failure.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T011243Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogSysError<ept i="0">&lt;/b0&gt;</ept> は主に wxWidgets 自身で使用されますが、システムコール (API 関数) の失敗後のエラーログを記録するのに便利かもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogTrace<ept i="0">&lt;/b0&gt;</ept> as <bpt i="1" x="1">&lt;b1&gt;</bpt>wxLogDebug<ept i="1">&lt;/b1&gt;</ept> only does something in debug build.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T012357Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogTrace<ept i="0">&lt;/b0&gt;</ept> も <bpt i="1" x="1">&lt;b1&gt;</bpt>wxLogDebug<ept i="1">&lt;/b1&gt;</ept> と同じようにデバッグビルド時のみ動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogVerbose<ept i="0">&lt;/b0&gt;</ept> is for verbose output.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T010049Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogVerbose<ept i="0">&lt;/b0&gt;</ept> は詳細な出力用の関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogWarning<ept i="0">&lt;/b0&gt;</ept> for warnings - they are also normally shown to the user, but don't interrupt the program work.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T010113Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogWarning<ept i="0">&lt;/b0&gt;</ept> は警告メッセージ (通常はユーザに通知されますが、プログラムの動作を妨げないメッセージ） 用の関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogWindow<ept i="0">&lt;/b0&gt;</ept> This log target provides a "log console" which collects all messages generated by the application and also passes them to the previous active log target.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T025402Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogWindow<ept i="0">&lt;/b0&gt;</ept> このログターゲットはアプリケーションの生成するすべてのメッセージを収集する "ログコンソール" を提供するとともに、前に有効だったログターゲットに収集したメッセージを引き渡します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="2" x="2">&lt;b2&gt;</bpt>Tip:<ept i="2">&lt;/b2&gt;</ept> under Windows, you must either run the program under debugger or use a 3rd party program such as <bpt i="3" x="3">&lt;a3&gt;</bpt>DbgView<ept i="3">&lt;/a3&gt;</ept> to actually see the debug output.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T012227Z">
+        <seg><bpt i="2" x="2">&lt;b2&gt;</bpt>ヒント:<ept i="2">&lt;/b2&gt;</ept> Windows でデバッグ出力を確認するためにはデバッガーを使用するか、<bpt i="3" x="3">&lt;a3&gt;</bpt>DbgView<ept i="3">&lt;/a3&gt;</ept> のようなサードパーティーのプログラムを使用する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1590,6 +2086,14 @@ MyDialog::MyDialog(<bpt i="2" x="2">&lt;a2&gt;</bpt>wxFrame<ept i="2">&lt;/a2&gt
 <bpt i="1" x="1">&lt;s1&gt;</bpt>class <ept i="1">&lt;/s1&gt;</ept>MyPlotEvent: <bpt i="2" x="2">&lt;s2&gt;</bpt>public<ept i="2">&lt;/s2&gt;</ept> <bpt i="3" x="3">&lt;a3&gt;</bpt>wxEvent<ept i="3">&lt;/a3&gt;</ept>
 {
 <bpt i="4" x="4">&lt;s4&gt;</bpt>public<ept i="4">&lt;/s4&gt;</ept>:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>// disable all database error messages, everybody knows databases never<ept i="0">&lt;/s0&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T110908Z">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>// 絶対にデータベースが失敗しないことを誰もが知っているため、<ept i="0">&lt;/s0&gt;</ept></seg>
       </tuv>
     </tu>
     <tu>
@@ -1748,10 +2252,26 @@ puts(p); <bpt i="3" x="3">&lt;s3&gt;</bpt>// または const char * を受け取
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="10" x="10">&lt;s10&gt;</bpt>// also enable tracing messages from wxWidgets dynamic module loading<ept i="10">&lt;/s10&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T111013Z">
+        <seg><bpt i="10" x="10">&lt;s10&gt;</bpt>// また、wxWidgets の動的モジュールロード機能の<ept i="10">&lt;/s10&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="10" x="10">&lt;s10&gt;</bpt>void<ept i="10">&lt;/s10&gt;</ept> OnExit(<bpt i="11" x="11">&lt;a11&gt;</bpt>wxCommandEvent<ept i="11">&lt;/a11&gt;</ept>&amp; event);</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T024715Z">
         <seg><bpt i="10" x="10">&lt;s10&gt;</bpt>void<ept i="10">&lt;/s10&gt;</ept> OnExit(<bpt i="11" x="11">&lt;a11&gt;</bpt>wxCommandEvent<ept i="11">&lt;/a11&gt;</ept>&amp; event);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="11" x="11">&lt;s11&gt;</bpt>// mechanism<ept i="11">&lt;/s11&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T111052Z">
+        <seg><bpt i="11" x="11">&lt;s11&gt;</bpt>// トレースメッセージも有効化する<ept i="11">&lt;/s11&gt;</ept></seg>
       </tuv>
     </tu>
     <tu>
@@ -1860,6 +2380,22 @@ puts(p); <bpt i="3" x="3">&lt;s3&gt;</bpt>// または const char * を受け取
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T145454Z">
         <seg><bpt i="19" x="19">&lt;s19&gt;</bpt>new<ept i="19">&lt;/s19&gt;</ept> <bpt i="20" x="20">&lt;a20&gt;</bpt>wxTextCtrl<ept i="20">&lt;/a20&gt;</ept>( <bpt i="21" x="21">&lt;s21&gt;</bpt>this<ept i="21">&lt;/s21&gt;</ept>, -1, <bpt i="22" x="22">&lt;s22&gt;</bpt>"My text."<ept i="22">&lt;/s22&gt;</ept>, <bpt i="23" x="23">&lt;a23&gt;</bpt>wxDefaultPosition<ept i="23">&lt;/a23&gt;</ept>, <bpt i="24" x="24">&lt;a24&gt;</bpt>wxSize<ept i="24">&lt;/a24&gt;</ept>(100,60), <bpt i="25" x="25">&lt;a25&gt;</bpt>wxTE_MULTILINE<ept i="25">&lt;/a25&gt;</ept>),</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="1" x="1">&lt;s1&gt;</bpt>// fail anyhow<ept i="1">&lt;/s1&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T110921Z">
+        <seg><bpt i="1" x="1">&lt;s1&gt;</bpt>// データベースのすべてのエラーメッセージを無効化する<ept i="1">&lt;/s1&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="1" x="1">&lt;s1&gt;</bpt>// wxFile.Open() normally complains if file can't be opened, we don't want it<ept i="1">&lt;/s1&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T113225Z">
+        <seg><bpt i="1" x="1">&lt;s1&gt;</bpt>// 通常はファイルを開けなかった場合に wxFile.Open() がエラーメッセージを出力するが、そうさせたくない<ept i="1">&lt;/s1&gt;</ept></seg>
       </tuv>
     </tu>
     <tu>
@@ -2084,6 +2620,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="3" x="3">&lt;s3&gt;</bpt>if<ept i="3">&lt;/s3&gt;</ept> ( !file.<bpt i="4" x="4">&lt;a4&gt;</bpt>Open<ept i="4">&lt;/a4&gt;</ept>(<bpt i="5" x="5">&lt;s5&gt;</bpt>"bar"<ept i="5">&lt;/s5&gt;</ept>) )</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T113231Z">
+        <seg><bpt i="3" x="3">&lt;s3&gt;</bpt>if<ept i="3">&lt;/s3&gt;</ept> ( !file.<bpt i="4" x="4">&lt;a4&gt;</bpt>Open<ept i="4">&lt;/a4&gt;</ept>(<bpt i="5" x="5">&lt;s5&gt;</bpt>"bar"<ept i="5">&lt;/s5&gt;</ept>) )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="43" x="43">&lt;s43&gt;</bpt>new<ept i="43">&lt;/s43&gt;</ept> <bpt i="44" x="44">&lt;a44&gt;</bpt>wxButton<ept i="44">&lt;/a44&gt;</ept>( <bpt i="45" x="45">&lt;s45&gt;</bpt>this<ept i="45">&lt;/s45&gt;</ept>, <bpt i="46" x="46">&lt;a46&gt;</bpt>wxID_CANCEL<ept i="46">&lt;/a46&gt;</ept>, <bpt i="47" x="47">&lt;s47&gt;</bpt>"Cancel"<ept i="47">&lt;/s47&gt;</ept> ),</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T145535Z">
@@ -2132,6 +2676,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T145549Z">
         <seg><bpt i="50" x="50">&lt;s50&gt;</bpt>//サイザーを作成し、ボーダーなしで水平方向に中央揃えにする<ept i="50">&lt;/s50&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="5" x="5">&lt;s5&gt;</bpt>// but enable tracing for the transactions as somehow our changes don't<ept i="5">&lt;/s5&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T110833Z">
+        <seg><bpt i="5" x="5">&lt;s5&gt;</bpt>// しかし、どういうわけか時たま変更のコミットに失敗するため、<ept i="5">&lt;/s5&gt;</ept></seg>
       </tuv>
     </tu>
     <tu>
@@ -2190,12 +2742,28 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="6" x="6">&lt;s6&gt;</bpt>// ... process error ourselves ...<ept i="6">&lt;/s6&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T114638Z">
+        <seg><bpt i="6" x="6">&lt;s6&gt;</bpt>// ... 自分自身でエラー処理を行なう ...<ept i="6">&lt;/s6&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="6" x="6">&lt;s6&gt;</bpt>// do something with it<ept i="6">&lt;/s6&gt;</ept>
 }</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T035106Z">
         <seg><bpt i="6" x="6">&lt;s6&gt;</bpt>// なんらかの処理<ept i="6">&lt;/s6&gt;</ept>
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="6" x="6">&lt;s6&gt;</bpt>// get committed sometimes<ept i="6">&lt;/s6&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T110838Z">
+        <seg><bpt i="6" x="6">&lt;s6&gt;</bpt>// トランザクションのトレースは有効化する<ept i="6">&lt;/s6&gt;</ept></seg>
       </tuv>
     </tu>
     <tu>
@@ -2468,6 +3036,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>A special version of wxLogChain which uses itself as the new log target.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T130639Z">
+        <seg>wxLogChain の特別版で、自分自身を新しいログターゲットとして使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>A system colour change event</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T055543Z">
@@ -2612,10 +3188,34 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Additionally, you can customize the way full log messages are constructed from the components (such as time stamp, source file information, logging thread ID and so on).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T123024Z">
+        <seg>加えて、ログメッセージを (タイムスタンプ、ソースファイルの情報、スレッドID などの) 部品から構築する方法を完全にカスタマイズすることもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Adds a new page.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130516T155614Z">
         <seg>新しいページを追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>After having enumerated all the functions which are normally used to log the messages, and why would you want to use them we now describe how all this works.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T022130Z">
+        <seg>メッセージのロギングに通常使用するすべての関数と、それらを使用する理由について列挙したので、これらの動作方法について説明します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>After having enumerated all the functions which are normally used to log the messages, and why would you want to use them, we now describe how all this works.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T111348Z">
+        <seg>メッセージのロギングに通常使用するすべての関数と、それらを使用する理由について列挙したので、これらの動作方法について説明します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2644,6 +3244,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>All of them have the same syntax as <bpt i="2" x="2">&lt;e2&gt;</bpt>printf()<ept i="2">&lt;/e2&gt;</ept> or <bpt i="3" x="3">&lt;e3&gt;</bpt>vprintf()<ept i="3">&lt;/e3&gt;</ept> , i.e. they take the format string as the first argument and respectively a variable number of arguments or a variable argument list pointer.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131219Z">
+        <seg>これらの関数はすべて <bpt i="2" x="2">&lt;e2&gt;</bpt>printf()<ept i="2">&lt;/e2&gt;</ept> や <bpt i="3" x="3">&lt;e3&gt;</bpt>vprintf()<ept i="3">&lt;/e3&gt;</ept> と同じ構文を持ちます。つまり、第一引数にフォーマット文字列を取り、続けて可変引数か可変引数リストのポインタを取ります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>All of them have the same syntax as <bpt i="2" x="2">&lt;i2&gt;</bpt>printf()<ept i="2">&lt;/i2&gt;</ept> or <bpt i="3" x="3">&lt;i3&gt;</bpt>vprintf()<ept i="3">&lt;/i3&gt;</ept> , i.e. they take the format string as the first argument and respectively a variable number of arguments or a variable argument list pointer.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T005012Z">
+        <seg>これらの関数はすべて <bpt i="2" x="2">&lt;i2&gt;</bpt>printf()<ept i="2">&lt;/i2&gt;</ept> や <bpt i="3" x="3">&lt;i3&gt;</bpt>vprintf()<ept i="3">&lt;/i3&gt;</ept> と同じ構文を持ちます。つまり、第一引数にフォーマット文字列を取り、続けて可変引数か可変引数リストのポインタを取ります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>All sizers are containers, that is, they are used to lay out one dialog item (or several dialog items), which they contain.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130519T143422Z">
@@ -2664,6 +3280,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T042136Z">
         <seg>大事なことを一つ言い残しましたが、バインド対象についても柔軟性が向上しており、イベントを以下のものにバインドできます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Also notice that <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::EnableLogging()<ept i="0">&lt;/a0&gt;</ept> and <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogNull<ept i="1">&lt;/a1&gt;</ept> class which uses it only affect the current thread, i.e. logging messages may still be generated by the other threads after a call to <bpt i="2" x="2">&lt;c2&gt;</bpt>EnableLogging(false)<ept i="2">&lt;/c2&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T120458Z">
+        <seg>また、<bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::EnableLogging()<ept i="0">&lt;/a0&gt;</ept> と <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogNull<ept i="1">&lt;/a1&gt;</ept> クラスは現在のスレッドにのみ影響することに注意してください。つまり、<bpt i="2" x="2">&lt;c2&gt;</bpt>EnableLogging(false)<ept i="2">&lt;/c2&gt;</ept> を呼んだ後でも他のスレッドでは依然としてログメッセージが生成されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2732,6 +3356,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Although it works just fine under Unix, these messages go strictly nowhere under Windows where the stdout of GUI programs is not assigned to anything.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T085347Z">
+        <seg>ただし、これは Unix では正常に動作しますが、GUI プログラムの標準出力がどこにも割り当てられない Windows では厳密にどこにも出力されません.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Always enclose literal string constants in <bpt i="0" x="0">&lt;a0&gt;</bpt>wxT()<ept i="0">&lt;/a0&gt;</ept> macro unless they're already converted to the right representation (another standard wxWidgets macro <bpt i="1" x="1">&lt;a1&gt;</bpt>_()<ept i="1">&lt;/a1&gt;</ept> does it, for example, so there is no need for <bpt i="2" x="2">&lt;t2&gt;</bpt>wxT()<ept i="2">&lt;/t2&gt;</ept> in this case) or you intend to pass the constant directly to an external function which doesn't accept wide-character strings.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130502T151824Z">
@@ -2792,6 +3424,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T000110Z">
         <seg>静的関数やグローバル関数のような普通の関数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>And all components are children of the unnamed root component.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T105001Z">
+        <seg>そして、すべてのコンポーネントは無名のルートコンポーネントの子になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2940,6 +3580,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>As an example, trying to open a non-existing file will usually provoke an error message, but if for some reasons it is unwanted, just use this construction:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T025916Z">
+        <seg>例として、存在しないファイルを開こうとすると通常はエラーメッセージが表示されますが、何らかの理由でそれを望まない場合、次のようにするだけです:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>As an example, we will construct a dialog that will contain a text field at the top and two buttons at the bottom.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130520T162557Z">
@@ -2952,6 +3600,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130514T155001Z">
         <seg>各イベントはイベント型によって一意に定義されるため、カスタムインベントは新しいイベント型を定義するところから始まります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>As for the (real) trace messages, their handling depends on the currently enabled trace masks: if <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::AddTraceMask()<ept i="0">&lt;/a0&gt;</ept> was called for the mask of the given message, it will be logged, otherwise nothing happens.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T132927Z">
+        <seg>(本当の) トレースメッセージについては、現在有効になっているトレースマスクに応じて処理が行われます: 指定されたメッセージのマスクに対して <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::AddTraceMask()<ept i="0">&lt;/a0&gt;</ept> が呼ばれている場合はメッセージが記録されますが、そうでない場合は何も起こりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3032,6 +3688,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130501T145921Z">
         <seg>wxWidgets の対応しているすべてのプラットフォームで Unicode が (完全に) サポートされているわけではないため、Unicode 環境でのみ動作するプログラムを書くのは多くの場合で賢明ではないでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>As such, it implements the virtual functions of the base class which are called when a message is logged.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T022449Z">
+        <seg>そのため、メッセージのロギング時に呼ばれる基底クラスの仮想関数を実装ています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3120,6 +3784,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T071254Z">
         <seg>他の処理を行う前に <bpt i="0" x="0">&lt;a0&gt;</bpt>wxApp::FilterEvent()<ept i="0">&lt;/a0&gt;</ept> を呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Before showing how this can be useful, let us explain what log components are: they are simply arbitrary strings identifying the component, or module, which generated the message.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T140532Z">
+        <seg>これがどれほど役立つか説明する前に、ログコンポーネントについて説明しましょう: ログコンポーネントとは単純に、メッセージを生成するコンポーネントやモジュールを識別する任意の文字列のことです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3336,6 +4008,46 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>By default, all messages logged by wxWidgets originate from "wx" component or one of its subcomponents such as "wx/net/ftp", while the messages logged by your own code are assigned empty log component.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T140648Z">
+        <seg>デフォルトでは wxWidgets によって記録されるすべてのメッセージは "wx" コンポーネントかそのサブコンポーネント ("wx/net/ftp" など) に割り当てられており、あなた自身のコードによって記録されるメッセージは空のログコンポーネントに割り当てられています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>By default, most log messages are enabled.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T092231Z">
+        <seg>デフォルトでは大半のログメッセージが有効化されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Called to log a new record.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T111512Z">
+        <seg>新しいレコードを記録するために呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Called to log the specified string at given level.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T111537Z">
+        <seg>指定されたレベルで与えられた文字列を記録するために呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Called to log the specified string.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T111550Z">
+        <seg>指定された文字列を記録するために呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Calls wxFileTranslationsLoader::AddCatalogLookupPathPrefix().</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T041226Z">
@@ -3412,6 +4124,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T004435Z">
         <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxListCtrl<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxImageList<ept i="1">&lt;/a1&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Classes: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogStderr<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxLogStream<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxLogTextCtrl<ept i="3">&lt;/a3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxLogWindow<ept i="4">&lt;/a4&gt;</ept>, <bpt i="5" x="5">&lt;a5&gt;</bpt>wxLogGui<ept i="5">&lt;/a5&gt;</ept>, <bpt i="6" x="6">&lt;a6&gt;</bpt>wxLogNull<ept i="6">&lt;/a6&gt;</ept>, <bpt i="7" x="7">&lt;a7&gt;</bpt>wxLogBuffer<ept i="7">&lt;/a7&gt;</ept>, <bpt i="8" x="8">&lt;a8&gt;</bpt>wxLogChain<ept i="8">&lt;/a8&gt;</ept>, <bpt i="9" x="9">&lt;a9&gt;</bpt>wxLogInterposer<ept i="9">&lt;/a9&gt;</ept>, <bpt i="10" x="10">&lt;a10&gt;</bpt>wxLogInterposerTemp<ept i="10">&lt;/a10&gt;</ept>, <bpt i="11" x="11">&lt;a11&gt;</bpt>wxStreamToTextRedirector<ept i="11">&lt;/a11&gt;</ept>, <bpt i="12" x="12">&lt;a12&gt;</bpt>wxLogFormatter<ept i="12">&lt;/a12&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131003Z">
+        <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogStderr<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxLogStream<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxLogTextCtrl<ept i="3">&lt;/a3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxLogWindow<ept i="4">&lt;/a4&gt;</ept>, <bpt i="5" x="5">&lt;a5&gt;</bpt>wxLogGui<ept i="5">&lt;/a5&gt;</ept>, <bpt i="6" x="6">&lt;a6&gt;</bpt>wxLogNull<ept i="6">&lt;/a6&gt;</ept>, <bpt i="7" x="7">&lt;a7&gt;</bpt>wxLogBuffer<ept i="7">&lt;/a7&gt;</ept>, <bpt i="8" x="8">&lt;a8&gt;</bpt>wxLogChain<ept i="8">&lt;/a8&gt;</ept>, <bpt i="9" x="9">&lt;a9&gt;</bpt>wxLogInterposer<ept i="9">&lt;/a9&gt;</ept>, <bpt i="10" x="10">&lt;a10&gt;</bpt>wxLogInterposerTemp<ept i="10">&lt;/a10&gt;</ept>, <bpt i="11" x="11">&lt;a11&gt;</bpt>wxStreamToTextRedirector<ept i="11">&lt;/a11&gt;</ept>, <bpt i="12" x="12">&lt;a12&gt;</bpt>wxLogFormatter<ept i="12">&lt;/a12&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Classes: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept>,<it pos="begin" x="1">&lt;br1&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T003250Z">
+        <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept>,<it pos="begin" x="1">&lt;br1&gt;</it></seg>
       </tuv>
     </tu>
     <tu>
@@ -3582,6 +4310,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T145917Z">
         <seg>標準ボタンを含むサイザーを作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Creates a wxLog class for the application to use for logging errors.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T120838Z">
+        <seg>エラーを記録するためにアプリケーション用の wxLog クラスを作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Creates the wxAppTraits object when GetTraits() needs it for the first time.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T120908Z">
+        <seg>最初に GetTraits() が必要とした時に wxAppTraits オブジェクトを作成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4212,10 +4956,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Finally, if even more control over the output format is needed, then DoLogRecord() can be overridden as it allows to construct custom messages depending on the log level or even do completely different things depending on the message severity (for example, throw away all messages except warnings and errors, show warnings on the screen and forward the error messages to the user's (or programmer's) cell phone -- maybe depending on whether the timestamp tells us if it is day or night in the current time zone).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T144950Z">
+        <seg>最後に、出力形式をさらに制御する必要がある場合、DoLogRecord() をオーバーライドすることでログレベルに応じてカスタムメッセージを構築したり、メッセージの重要度に応じてまったく別のことを行なうことさえできます。(例えば警告とエラー以外のメッセージを破棄し、警告は画面に表示して、エラーメッセージはユーザ (もしくはプログラマ) の携帯電話へ転送するなどです。ただ、これは現在のタイムゾーンにおいて昼か夜かがタイムスタンプで分かるかどうかによりますが)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Finally, if you don't like using macros for static initialization of the event tables you may also use <bpt i="0" x="0">&lt;a0&gt;</bpt>wxEvtHandler::Connect<ept i="0">&lt;/a0&gt;</ept> to connect the events to the handlers dynamically, during run-time.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T083026Z">
         <seg>最後に、マクロを使ってイベントテーブルを静的に初期化したくない場合、<bpt i="0" x="0">&lt;a0&gt;</bpt>wxEvtHandler::Connect<ept i="0">&lt;/a0&gt;</ept> を使用して動的に (実行時に) イベントとイベントハンドラを接続することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Finally, it is enough to override <bpt i="6" x="6">&lt;a6&gt;</bpt>wxLog::DoLogText()<ept i="6">&lt;/a6&gt;</ept> if you only want to redirect the log messages and the destination doesn't depend on the message log level.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T112346Z">
+        <seg>最後に、メッセージのログレベルに関係なく、ログメッセージをリダイレクトしたいだけの場合、<bpt i="6" x="6">&lt;a6&gt;</bpt>wxLog::DoLogText()<ept i="6">&lt;/a6&gt;</ept> をオーバーライドすれば充分です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4240,6 +5000,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130501T162941Z">
         <seg>最後に、プログラム中のリテラル文字列を囲む、特別な <bpt i="0" x="0">&lt;a0&gt;</bpt>wxT()<ept i="0">&lt;/a0&gt;</ept> マクロがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Finally, there is also a possibility to redirect the output sent to <bpt i="0" x="0">&lt;e0&gt;</bpt>cout<ept i="0">&lt;/e0&gt;</ept> to a <bpt i="1" x="1">&lt;a1&gt;</bpt>wxTextCtrl<ept i="1">&lt;/a1&gt;</ept> by using the <bpt i="2" x="2">&lt;a2&gt;</bpt>wxStreamToTextRedirector<ept i="2">&lt;/a2&gt;</ept> class.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091612Z">
+        <seg>最後に、<bpt i="2" x="2">&lt;a2&gt;</bpt>wxStreamToTextRedirector<ept i="2">&lt;/a2&gt;</ept> クラスを使用することで <bpt i="0" x="0">&lt;e0&gt;</bpt>cout<ept i="0">&lt;/e0&gt;</ept> へ出力した内容を <bpt i="1" x="1">&lt;a1&gt;</bpt>wxTextCtrl<ept i="1">&lt;/a1&gt;</ept> にリダイレクトすることもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Finally, there is also a possibility to redirect the output sent to <bpt i="0" x="0">&lt;i0&gt;</bpt>cout<ept i="0">&lt;/i0&gt;</ept> to a <bpt i="1" x="1">&lt;a1&gt;</bpt>wxTextCtrl<ept i="1">&lt;/a1&gt;</ept> by using the <bpt i="2" x="2">&lt;a2&gt;</bpt>wxStreamToTextRedirector<ept i="2">&lt;/a2&gt;</ept> class.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T015408Z">
+        <seg>最後に、<bpt i="2" x="2">&lt;a2&gt;</bpt>wxStreamToTextRedirector<ept i="2">&lt;/a2&gt;</ept> クラスを使用することで <bpt i="0" x="0">&lt;i0&gt;</bpt>cout<ept i="0">&lt;/i0&gt;</ept> へ出力した内容を <bpt i="1" x="1">&lt;a1&gt;</bpt>wxTextCtrl<ept i="1">&lt;/a1&gt;</ept> にリダイレクトすることもできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4300,10 +5076,34 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>First of all, no knowledge of <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept> classes is needed to use them.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131136Z">
+        <seg>まず最初に、<bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept> クラス郡を使用するのにその知識は必要とされません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>First of all, no knowledge of <bpt i="0" x="0">&lt;i0&gt;</bpt>wxLog<ept i="0">&lt;/i0&gt;</ept> classes is needed to use them.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T010433Z">
+        <seg>まず最初に、<bpt i="0" x="0">&lt;i0&gt;</bpt>wxLog<ept i="0">&lt;/i0&gt;</ept> クラス郡を使用するのにその知識は必要とされません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>First of all, you see that there are no more <bpt i="0" x="0">&lt;t0&gt;</bpt>#ifdef<ept i="0">&lt;/t0&gt;</ept>s at all.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130501T161813Z">
         <seg>最初に、<bpt i="0" x="0">&lt;t0&gt;</bpt>#ifdef<ept i="0">&lt;/t0&gt;</ept> がまったくないことが分かると思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>For all normal, informational messages.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131732Z">
+        <seg>すべての通常 (通知) メッセージ用。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4364,10 +5164,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>For example, only error messages, or only error messages and warnings might be logged, filtering out all informational messages.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T085651Z">
+        <seg>例えば、すべての通知メッセージをフィルタリングして、エラーメッセージのみ、もしくはエラーメッセージと警告メッセージのみを記録しても構いません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>For example, the <bpt i="3" x="3">&lt;c3&gt;</bpt>operator<ept i="3">&lt;/c3&gt;</ept>[] doesn't return neither a <bpt i="4" x="4">&lt;c4&gt;</bpt>char<ept i="4">&lt;/c4&gt;</ept> nor a <bpt i="5" x="5">&lt;c5&gt;</bpt>wchar_t<ept i="5">&lt;/c5&gt;</ept> but an object of a helper class <bpt i="6" x="6">&lt;a6&gt;</bpt>wxUniChar<ept i="6">&lt;/a6&gt;</ept> or <bpt i="7" x="7">&lt;a7&gt;</bpt>wxUniCharRef<ept i="7">&lt;/a7&gt;</ept> which is implicitly convertible to either.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T122042Z">
         <seg>例えば、[] <bpt i="3" x="3">&lt;c3&gt;</bpt>演算子<ept i="3">&lt;/c3&gt;</ept> が返却する型は <bpt i="4" x="4">&lt;c4&gt;</bpt>char<ept i="4">&lt;/c4&gt;</ept> でも<bpt i="5" x="5">&lt;c5&gt;</bpt>wchar_t<ept i="5">&lt;/c5&gt;</ept> でもなく、どちらの型にも変換可能なヘルパークラスである <bpt i="6" x="6">&lt;a6&gt;</bpt>wxUniChar<ept i="6">&lt;/a6&gt;</ept> か <bpt i="7" x="7">&lt;a7&gt;</bpt>wxUniCharRef<ept i="7">&lt;/a7&gt;</ept> です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>For example, you could define a class inheriting from <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept> which shows all the log messages in some part of your main application window reserved for the message output without interrupting the user work flow with modal message boxes.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T120750Z">
+        <seg>例えば、モーダルメッセージボックスでユーザの操作を妨げないようにするため、メインウィンドウの一部にすべてのログメッセージを表示するように <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept> を継承したクラスを定義することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4492,6 +5308,54 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>For this the <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogChain<ept i="0">&lt;/a0&gt;</ept> and <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogPassThrough<ept i="1">&lt;/a1&gt;</ept> can be used.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T030523Z">
+        <seg>このために <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogChain<ept i="0">&lt;/a0&gt;</ept> と <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogPassThrough<ept i="1">&lt;/a1&gt;</ept> を使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>For this the <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogChain<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogInterposer<ept i="1">&lt;/a1&gt;</ept>, and <bpt i="2" x="2">&lt;a2&gt;</bpt>wxLogInterposerTemp<ept i="2">&lt;/a2&gt;</ept> can be used.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T114628Z">
+        <seg>このために <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogChain<ept i="0">&lt;/a0&gt;</ept>、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogInterposer<ept i="1">&lt;/a1&gt;</ept>、<bpt i="2" x="2">&lt;a2&gt;</bpt>wxLogInterposerTemp<ept i="2">&lt;/a2&gt;</ept> を使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>For this, you should only know about <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogXXX() functions<ept i="1">&lt;/a1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131206Z">
+        <seg>そのため、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogXXX() 関数<ept i="1">&lt;/a1&gt;</ept> についてのみ、知っておく必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>For this, you should only know about <bpt i="1" x="1">&lt;i1&gt;</bpt>wxLogXXX()<ept i="1">&lt;/i1&gt;</ept> functions.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T004647Z">
+        <seg>そのため、<bpt i="1" x="1">&lt;i1&gt;</bpt>wxLogXXX()<ept i="1">&lt;/i1&gt;</ept> 関数についてのみ、知っておく必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>For verbose output.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131802Z">
+        <seg>詳細な出力用。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>For warnings - they are also normally shown to the user, but don't interrupt the program work...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131614Z">
+        <seg>警告メッセージ (通常はユーザに通知されますが、プログラムの動作を妨げないメッセージ) 用。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>From a practical point of view, using Unicode is almost a requirement when writing applications for international audience.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T031610Z">
@@ -4594,6 +5458,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T142314Z">
         <seg>(-1,-1) に初期化された wxSize のグルーバルインスタンス。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Globally enable or disable logging.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T092213Z">
+        <seg>ロギングをグローバルに有効化、または無効化します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Here are all of them:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T005029Z">
+        <seg>以下にすべての関数を示します:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4726,6 +5606,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>However if you define a custom log target, messages may be logged out of order, e.g. messages from the main thread with later timestamp may appear before messages with earlier timestamp logged from other threads.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T120049Z">
+        <seg>しかし、カスタムログターゲットを定義している場合、メッセージの記録される順がバラバラになる可能性があります。例えば、より後のタイムスタンプを持つメインスレッドのメッセージがより早いタイムスタンプを持つ他のスレッドのメッセージの前に表示されることがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>However initializing the string using <bpt i="0" x="0">&lt;a0&gt;</bpt>wxString::FromUTF8()<ept i="0">&lt;/a0&gt;</ept> method and then accessing it as a char string via its <bpt i="1" x="1">&lt;a1&gt;</bpt>wxString::c_str()<ept i="1">&lt;/a1&gt;</ept> method is a recipe for disaster as the program may work perfectly well during testing on Unix systems using UTF-8 locale but completely fail under Windows where UTF-8 locales are never used because <bpt i="2" x="2">&lt;a2&gt;</bpt>wxString::c_str()<ept i="2">&lt;/a2&gt;</ept> would return an empty string.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T034628Z">
@@ -4754,6 +5642,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T141603Z">
         <seg>しかし、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxSizer<ept i="1">&lt;/a1&gt;</ept> はそのコントロールのサイズを考慮しないようにする別の関数も提供しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>However, as wxWidgets uses <bpt i="2" x="2">&lt;a2&gt;</bpt>wxLogError()<ept i="2">&lt;/a2&gt;</ept> in this situation, the exact error code (and the corresponding error message) will be given to the user together with "high level" message about data file writing error.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091846Z">
+        <seg>しかし、このような状況で <bpt i="2" x="2">&lt;a2&gt;</bpt>wxLogError()<ept i="2">&lt;/a2&gt;</ept> を使用すれば、書き込みに失敗したファイルに関する "高レベル" なメッセージとともに正確なエラーコード (と対応するエラーメッセージ) が表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>However, as wxWidgets uses <bpt i="2" x="2">&lt;i2&gt;</bpt>wxLogError()<ept i="2">&lt;/i2&gt;</ept> in this situation, the exact error code (and the corresponding error message) will be given to the user together with "high level" message about data file writing error.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T021817Z">
+        <seg>しかし、このような状況で <bpt i="2" x="2">&lt;i2&gt;</bpt>wxLogError()<ept i="2">&lt;/i2&gt;</ept> を使用すれば、書き込みに失敗したファイルに関する "高レベル" なメッセージとともに正確なエラーコード (と対応するエラーメッセージ) が表示されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4914,6 +5818,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130502T144825Z">
         <seg>プログラムを ANSI モードでコンパイルした場合でも、 <bpt i="1" x="1">&lt;t1&gt;</bpt>wxUSE_WCHAR_T<ept i="1">&lt;/t1&gt;</ept> を定義することで <bpt i="2" x="2">&lt;t2&gt;</bpt>wchar_t<ept i="2">&lt;/t2&gt;</ept> の限定的な機能を利用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you do want to handle messages of different levels differently, then you should override <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::DoLogTextAtLevel()<ept i="0">&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T122739Z">
+        <seg>異なるレベルのメッセージを別々に処理したい場合、<bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::DoLogTextAtLevel()<ept i="0">&lt;/a0&gt;</ept> をオーバーライドしてください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5130,6 +6042,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T082020Z">
         <seg>特に、最近の Unix システムで最もよく使われているエンコーディングは UTF-8 であり、上記の文字列は正しい UTF-8 バイト列ではないため、この場合は何も表示されないでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>In particular, this means that errors logged by wxWidgets code itself (e.g. when it fails to perform some operation, for instance <bpt i="0" x="0">&lt;a0&gt;</bpt>wxFile::Open()<ept i="0">&lt;/a0&gt;</ept> logs an error when it fails to open a file) will be processed and shown to the user.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T092846Z">
+        <seg>特に、wxWidgets 自身の記録するエラー (何らかの処理の失敗時、例えば、<bpt i="0" x="0">&lt;a0&gt;</bpt>wxFile::Open()<ept i="0">&lt;/a0&gt;</ept> はファイルのオープンに失敗した場合にエラーを記録します) がユーザに通知されることを意味します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5486,6 +6406,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>It logs the specified message text as well as the last system error code (<bpt i="1" x="1">&lt;e1&gt;</bpt>errno<ept i="1">&lt;/e1&gt;</ept> or Windows' <bpt i="2" x="2">&lt;e2&gt;</bpt>GetLastError()<ept i="2">&lt;/e2&gt;</ept> depending on the platform) and the corresponding error message.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091010Z">
+        <seg>この関数は指定したメッセージとあわせて、最後のシステムエラーコード  (プラットフォームに応じて <bpt i="1" x="1">&lt;e1&gt;</bpt>errno<ept i="1">&lt;/e1&gt;</ept> または Windows の <bpt i="2" x="2">&lt;e2&gt;</bpt>::GetLastError()<ept i="2">&lt;/e2&gt;</ept> ) とそれに対応するエラーメッセージを出力します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It logs the specified message text as well as the last system error code (<bpt i="1" x="1">&lt;i1&gt;</bpt>errno<ept i="1">&lt;/i1&gt;</ept> or <bpt i="2" x="2">&lt;i2&gt;</bpt>::GetLastError()<ept i="2">&lt;/i2&gt;</ept> depending on the platform) and the corresponding error message.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T011457Z">
+        <seg>この関数は指定したメッセージとあわせて、最後のシステムエラーコード  (プラットフォームに応じて <bpt i="1" x="1">&lt;i1&gt;</bpt>errno<ept i="1">&lt;/i1&gt;</ept> または <bpt i="2" x="2">&lt;i2&gt;</bpt>::GetLastError()<ept i="2">&lt;/i2&gt;</ept> ) とそれに対応するエラーメッセージを出力します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>It may be noted that wxWidgets' event processing system implements something close to virtual methods in normal C++ in spirit: both of these mechanisms allow you to alter the behaviour of the base class by defining the event handling functions in the derived classes.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T122712Z">
@@ -5506,6 +6442,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T065828Z">
         <seg>このクラスを使って、すべてのファイル、特定のパターンに一致するファイル、隠しファイル以外のファイルを列挙することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It only does anything at all in the debug mode (when the preprocessor symbol <bpt i="2" x="2">&lt;c2&gt;</bpt>__WXDEBUG__<ept i="2">&lt;/c2&gt;</ept> is defined) and expands to nothing in release mode (otherwise).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091213Z">
+        <seg>デバッグモードの場合 (プリプロセッサシンボル <bpt i="2" x="2">&lt;c2&gt;</bpt>__WXDEBUG__<ept i="2">&lt;/c2&gt;</ept> が定義されている場合) のみ処理を行い、リリースモードの場合 (それ以外の場合) では空文字列に展開されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It only does anything at all in the debug mode (when the preprocessor symbol __WXDEBUG__ is defined) and expands to nothing in release mode (otherwise).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T011829Z">
+        <seg>デバッグモードの場合 (プリプロセッサシンボル __WXDEBUG__ が定義されている場合) のみ処理を行い、リリースモードの場合 (それ以外の場合) では空文字列に展開されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5566,10 +6518,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Let's take a quite simple but common case of a file error: suppose that you're writing your data file on disk and there is not enough space.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T020143Z">
+        <seg>非常に単純で、よくあるファイルエラーの場合を考えてみましょう: データをディスク上のファイルに書き込もうとして充分な空き容量がなかったときを想像してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Like with all the other GUI frameworks, the control of flow in wxWidgets applications is event-based: the program normally performs most of its actions in response to the events generated by the user.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130507T154236Z">
         <seg>他のすべての GUI フレームワークのように、wxWidgets アプリケーションはイベントベースで処理の制御を行います: 一般的に、プログラムの処理の大半はユーザの生成するイベントに応じて行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Like wxLogError(), but also terminates the program with the exit code 3.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131253Z">
+        <seg>wxLogError() と似ていますが、リターンコード 3 でプログラムを終了させます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5586,6 +6554,46 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130501T165612Z">
         <seg>リテラル文字列 (すなわち <bpt i="0" x="0">&lt;t0&gt;</bpt>"Hello, world!"<ept i="0">&lt;/t0&gt;</ept> や <bpt i="1" x="1">&lt;t1&gt;</bpt>'*'<ept i="1">&lt;/t1&gt;</ept>)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Log Messages Selection</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131034Z">
+        <seg>ログメッセージの選択</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Log Targets</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131038Z">
+        <seg>ログターゲット</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Log a message at wxLOG_Trace log level (see wxLogLevelValues enum).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091400Z">
+        <seg>wxLOG_Trace ログレベル (wxLogLevelValues enum 参照) のメッセージを記録します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Logging Customization</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131059Z">
+        <seg>ロギングのカスタマイズ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Logging in Multi-Threaded Applications</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131052Z">
+        <seg>マルチスレッドアプリケーションでのロギング</seg>
       </tuv>
     </tu>
     <tu>
@@ -5634,6 +6642,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T041139Z">
         <seg>メッセージカタログを表すリソースカテゴリ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Messages logged by this function will appear in the statusbar of the frame or of the top level applic...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T085759Z">
+        <seg>この関数でロギングされたメッセージはデフォルトでフレームまたはトップレベルウィンドウのステータスバーに表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Messages logged from threads other than the main one will be buffered until <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::Flush()<ept i="0">&lt;/a0&gt;</ept> is called in the main thread (which usually happens during idle time, i.e. after processing all pending events) and will be really output only then.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T115355Z">
+        <seg>メインスレッド以外のスレッドで記録されたメッセージはメインスレッドで <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::Flush()<ept i="0">&lt;/a0&gt;</ept> が呼ばれるまで (通常はアイドル時、つまり、未処理のイベントがすべて処理された後に呼ばれます) バッファリングされ、<bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::Flush()<ept i="0">&lt;/a0&gt;</ept> が呼ばれたときに初めて実際に出力されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5698,6 +6722,30 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130501T145642Z">
         <seg>さらに Windows NT/2000 の場合、標準的な ASCII モードのみを使用するプログラムであっても Unicode の恩恵を得ることができます。 なぜなら、システムコールを実行するたびにすべての文字列を Unicode に/から 変換する必要がないため、より効率的にプログラムが動作できるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Moreover, the log level can be set separately for different log components.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T101356Z">
+        <seg>さらに、異なるログコンポーネント間で別々にログレベルを設定することも可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Moreover, the second version of this function takes a trace mask as the first argument which allows to further restrict the amount of messages generated.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T013138Z">
+        <seg>くわえて、2 番目の形式では第一引数としてトレースマスクを指定できるため、生成されるメッセージの量をさらに制限することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Mostly used by wxWidgets itself, but might be handy for logging errors after system call (API functio...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T090915Z">
+        <seg>主に wxWidgets 自身で使用されますが、システムコール (API 関数) の失敗後のエラーログを記録するのに便利かもしれません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5772,6 +6820,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T060936Z">
         <seg>イベントを送信しない代替方法を持たない</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Normally, it is suppressed, but might be activated if the user wishes to know more details about the program progress (another, but possibly confusing name for the same function is <bpt i="1" x="1">&lt;b1&gt;</bpt> wxLogInfo<ept i="1">&lt;/b1&gt;</ept>).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T010737Z">
+        <seg>通常は出力されませんが、ユーザがプログラムの進捗状況についてより詳しく知りたい場合に有効化されるかもしれません。 (名前の紛らわしい同じ機能の関数として <bpt i="1" x="1">&lt;b1&gt;</bpt> wxLogInfo<ept i="1">&lt;/b1&gt;</ept> があります)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Normally, it is suppressed, but might be activated if the user wishes to know more details about the program progress (another, but possibly confusing name for the same function is wxLogInfo).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131821Z">
+        <seg>通常は出力されませんが、ユーザがプログラムの進捗状況についてより詳しく知りたい場合に有効化されるかもしれません。 (名前の紛らわしい同じ機能の関数として wxLogInfo があります)</seg>
       </tuv>
     </tu>
     <tu>
@@ -5896,6 +6960,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Note that under Windows, you must either run the program under debugger or use a 3rd party program such as DebugView (<bpt i="3" x="3">&lt;a3&gt;</bpt>http://www.microsoft.com/technet/sysinternals/Miscellaneous/DebugView.mspx<ept i="3">&lt;/a3&gt;</ept>) to actually see the debug output.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091318Z">
+        <seg>Windows でデバッグ出力を確認するためにはデバッガーを使用するか、DbgView (<bpt i="3" x="3">&lt;a3&gt;</bpt>http://www.microsoft.com/technet/sysinternals/Miscellaneous/DebugView.mspx<ept i="3">&lt;/a3&gt;</ept>) のようなサードパーティーのプログラムを使用する必要がある点に注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Note that wxSizer does not derive from wxWindow and thus does not interfere with tab ordering and requires very few resources compared to a real window on screen.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130519T123143Z">
@@ -5944,10 +7016,50 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Notice that if you just need to modify (or suppress) the time stamp display, overriding FormatTime() is enough.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T123343Z">
+        <seg>ただし、タイムスタンプの形式を変更 (または出力を抑制) したいだけの場合、FormatTime() をオーバーライドするだけで充分です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Notice that in the latter case you should be prepared for logging messages early during the program startup and also during program shutdown so you shouldn't rely on existence of the main application window, for example.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T121648Z">
+        <seg>後者の場合、例えばプログラムの起動時に早くメッセージのロギングの準備をする必要があり、プログラムの終了時にはメインウィンドウの存在に依存してはいけない点に注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Notice that the default GUI logger already only output the messages when it is flushed, so by default messages from the other threads will be shown more or less at the same moment as usual.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T115837Z">
+        <seg>デフォルトの GUI ロガーはフラッシュされるときに初めてメッセージを出力するようにすでになっているため、他スレッドのメッセージは通常どおり、ほぼ同時に表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Notice that the log level set explicitly for the transactions code overrides the log level of the parent component but that all other database code subcomponents inherit its setting by default and so won't generate any log messages at all.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T111340Z">
+        <seg>トランザクションコードで明示的に設定されたログレベルは親コンポーネントのログレベルを上書きしますが、データベースコードの他のサブコンポーネントはすべて親コンポーネントの値を継承するため、ログメッセージはまったく生成されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Notice that the narrow strings used with wxWidgets are <bpt i="0" x="0">&lt;e0&gt;</bpt>always<ept i="0">&lt;/e0&gt;</ept> assumed to be in the current locale encoding, so writing</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T080919Z">
         <seg>wxWidgets で使用されるナロー文字列は <bpt i="0" x="0">&lt;e0&gt;</bpt>常に<ept i="0">&lt;/e0&gt;</ept> 現在のロケールで符号化されていると仮定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Notice that the use of log trace masks is hardly necessary any longer in current wxWidgets version as the same effect can be achieved by using different log components for different log statements of any level.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T130536Z">
+        <seg>現在の wxWidgets では、もはやトレースマスクを使用する必要性がほとんどないことに注意してください。なぜなら、異なるログ文に対して異なるログコンポーネントを使用することで同じ事を実現できるためです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6088,10 +7200,34 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Only one log target is <bpt i="2" x="2">&lt;e2&gt;</bpt>active<ept i="2">&lt;/e2&gt;</ept> at any moment, this is the one used by <bpt i="3" x="3">&lt;a3&gt;</bpt>wxLogXXX() functions<ept i="3">&lt;/a3&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T111418Z">
+        <seg>いつでも <bpt i="2" x="2">&lt;e2&gt;</bpt>有効な<ept i="2">&lt;/e2&gt;</ept> ログターゲットはひとつだけで、これが <bpt i="3" x="3">&lt;a3&gt;</bpt>wxLogXXX()<ept i="3">&lt;/a3&gt;</ept> 関数によって使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Only one log target is <bpt i="2" x="2">&lt;i2&gt;</bpt>active<ept i="2">&lt;/i2&gt;</ept> at any moment, this is the one used by <bpt i="3" x="3">&lt;i3&gt;</bpt>wxLogXXX()<ept i="3">&lt;/i3&gt;</ept> functions.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T022742Z">
+        <seg>いつでも <bpt i="2" x="2">&lt;i2&gt;</bpt>有効な<ept i="2">&lt;/i2&gt;</ept> ログターゲットはひとつだけで、これが <bpt i="3" x="3">&lt;i3&gt;</bpt>wxLogXXX()<ept i="3">&lt;/i3&gt;</ept> 関数によって使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Only the binary files are needed during program execution.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130502T235357Z">
         <seg>プログラム実行時にはバイナリファイルだけが必要です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Opens the file, returning true if successful.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T092037Z">
+        <seg>ファイルをオープンします。オープンに成功したら true を返却します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6164,6 +7300,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T003033Z">
         <seg>Bind&lt;&gt;() についての議論は <bpt i="0" x="0">&lt;a0&gt;</bpt>動的イベント処理<ept i="0">&lt;/a0&gt;</ept> を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Please see <bpt i="0" x="0">&lt;a0&gt;</bpt>Log Messages Selection<ept i="0">&lt;/a0&gt;</ept> for more information about the log components.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T130609Z">
+        <seg>ログコンポーネントについての詳細は <bpt i="0" x="0">&lt;a0&gt;</bpt>ログメッセージの選択<ept i="0">&lt;/a0&gt;</ept> を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6548,6 +7692,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Sets the log level for the given component.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T105021Z">
+        <seg>指定されたコンポーネントのログレベルを設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Sets the new text control value.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130516T160428Z">
@@ -6576,6 +7728,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130516T155326Z">
         <seg>ピクセル単位でウィンドウサイズを設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Sets the specified log target as the active one.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091549Z">
+        <seg>指定されたログターゲットを有効なログターゲットとして設定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6724,6 +7884,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Some of advantages in using wxWidgets log functions are:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T013939Z">
+        <seg>wxWidgets のログ関数を使用するいくつかの利点は以下の通りです:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Some of wxLog implementations, most notably the standard wxLogGui class, buffer the messages (for exa...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T114946Z">
+        <seg>いくつかの wxLog の実装、特に標準の wxLogGui クラスではメッセージを (例えば無数のメッセージダイアログが次々と表示されるのを防止するために) バッファリングします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Sometimes it is also necessary to go from ANSI strings to wxStrings.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130502T144136Z">
@@ -6748,10 +7924,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Specifies that log messages with level greater (numerically) than logLevel should be ignored and not ...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T100124Z">
+        <seg>(数値的に) logLevel より大きいログレベルを持つメッセージを無視し、有効なログターゲットに送信されないようにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Standard button and menu IDs.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T142809Z">
         <seg>標準ボタンとメニュー ID。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Starting with wxWidgets 2.9.1, logging functions can be safely called from any thread.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T115025Z">
+        <seg>wxWidgets 2.9.1 から、どのスレッドからでも安全にロギング関数を呼べるようになりました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6796,6 +7988,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Table of contents:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131027Z">
+        <seg>目次:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Test if this event should be propagated or not, i.e.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130513T154413Z">
@@ -6816,6 +8016,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T023717Z">
         <seg><bpt i="0" x="0">&lt;c0&gt;</bpt>EVT_BUTTON<ept i="0">&lt;/c0&gt;</ept> マクロはイベントの発生元がウィンドウクラスである必要がないことを表しています。イベントテーブルの検索はウィンドウ階層をたどりながら行われるため、イベントの発生元がフレーム内のパネルにあるボタンである場合でも動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The <bpt i="0" x="0">&lt;e0&gt;</bpt>dialog<ept i="0">&lt;/e0&gt;</ept> sample illustrates this approach by defining a custom log target customizing the dialog used by <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogGui<ept i="1">&lt;/a1&gt;</ept> for the single messages.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T130128Z">
+        <seg><bpt i="0" x="0">&lt;e0&gt;</bpt>ダイアログ<ept i="0">&lt;/e0&gt;</ept> サンプルでは <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogGui<ept i="1">&lt;/a1&gt;</ept> でダイアログを使用するようにカスタマイズしたカスタムログターゲットを定義する例を解説しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6972,6 +8180,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The actual error might have been detected inside wxWidgets code (say, in <bpt i="1" x="1">&lt;a1&gt;</bpt>wxFile::Write<ept i="1">&lt;/a1&gt;</ept>), so the calling function doesn't really know the exact reason of the failure, it only knows that the data file couldn't be written to the disk.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091833Z">
+        <seg>実際のエラーは wxWidgets コード (<bpt i="1" x="1">&lt;a1&gt;</bpt>wxFile::Write<ept i="1">&lt;/a1&gt;</ept>) 内で検知されるため、呼び出し元の関数では失敗の正確な原因を実際に知ることはできず、ディスクへの書き込みに失敗したことしか分かりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The actual error might have been detected inside wxWidgets code (say, in <bpt i="1" x="1">&lt;i1&gt;</bpt>wxFile::Write<ept i="1">&lt;/i1&gt;</ept>), so the calling function doesn't really know the exact reason of the failure, it only knows that the data file couldn't be written to the disk.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T021516Z">
+        <seg>実際のエラーは wxWidgets コード (<bpt i="1" x="1">&lt;i1&gt;</bpt>wxFile::Write<ept i="1">&lt;/i1&gt;</ept>) 内で検知されるため、呼び出し元の関数では失敗の正確な原因を実際に知ることはできず、ディスクへの書き込みに失敗したことしか分かりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The automatically generated identifiers are always negative and so will never conflict with the user-specified identifiers which must be always positive.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T075520Z">
@@ -7016,6 +8240,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130523T155505Z">
         <seg>デフォルトは <bpt i="3" x="3">&lt;t3&gt;</bpt>640x480-16<ept i="3">&lt;/t3&gt;</ept> です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The default processing is to pop up a message box to inform the user about it.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T005459Z">
+        <seg>デフォルトの処理ではメッセージボックスをポップアップして通知します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7088,6 +8320,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T161038Z">
         <seg>最初の関数は文字列に 7 ビット ASCII 文字のみが含まれる場合にだけ使用してください。ASCII 文字以外の文字はなんらかの置換文字に置き換えられます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The first one is the most flexible and allows you to change the formatting of the messages, dynamically filter and redirect them and so on -- all log messages, except for those generated by <bpt i="4" x="4">&lt;a4&gt;</bpt>wxLogFatalError()<ept i="4">&lt;/a4&gt;</ept>, pass by this function.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T112123Z">
+        <seg>最初の関数はもっとも柔軟で、メッセージ形式の変更、メッセージの動的なフィルタリングやリダイレクトなどを行なうことができます。<bpt i="4" x="4">&lt;a4&gt;</bpt>wxLogFatalError()<ept i="4">&lt;/a4&gt;</ept> で生成されたメッセージを除いて、すべてのメッセージがこの関数に引き渡されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The first one may be overridden to do whatever you want but you have to distinguish between the different message types yourself.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T023745Z">
+        <seg>最初の関数をオーバーライドすると何でもできますが、異なるメッセージ型を自分で区別する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7172,6 +8420,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The functions below allow some limited customization of <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept> behaviour without writing a new log target class (which, aside from being a matter of several minutes, allows you to do anything you want).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T132007Z">
+        <seg>以下の関数は新しいログターゲットを作成することなく、<bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept> の振る舞いを限定的に変更することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The functions to use for error messages, i.e.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131401Z">
+        <seg>エラーメッセージ用の関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The gettext Manual: <bpt i="0" x="0">&lt;a0&gt;</bpt>http://www.gnu.org/software/gettext/manual/gettext.html<ept i="0">&lt;/a0&gt;</ept></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T041513Z">
@@ -7204,6 +8468,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The last method is the simplest one: you should override it if you simply want to redirect the log output elsewhere, without taking into account the level of the message.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T122658Z">
+        <seg>最後の関数が一番単純です: メッセージのログレベルを考慮せず、単純にログ出力を他の場所へリダイレクトしたい場合はこの関数をオーバーライドします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The layout algorithm used by sizers in wxWidgets is closely related to layout systems in other GUI toolkits, such as Java's AWT, the GTK toolkit or the Qt toolkit.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T122918Z">
@@ -7216,6 +8488,38 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T135819Z">
         <seg>動的イベントハンドラ (つまり、Bind&lt;&gt;() でバインドしたイベントハンドラ) の一覧を調べます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The log targets can also be combined: for example you may wish to redirect the messages somewhere else (for example, to a log file) but also process them as normally.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T030443Z">
+        <seg>ログターゲットは組み合わせて使用することもできます: 例えば、メッセージを他の場所 (例えばログファイルなど) にリダイレクトしつつ、通常通りの方法でも処理したいとします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The log window frame has a menu allowing user to clear the log, close it completely or save all messages to file.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T025529Z">
+        <seg>ログウィンドウフレームはメニューを持ち、ログの消去、終了、メッセージの保存を選択することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The logging facilities included in wxWidgets provide the base <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept> class which defines the standard interface for a <bpt i="1" x="1">&lt;e1&gt;</bpt>log<ept i="1">&lt;/e1&gt;</ept> target as well as several standard implementations of it and a family of functions to use with them.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131505Z">
+        <seg>wxWidgets のロギング機能では <bpt i="1" x="1">&lt;e1&gt;</bpt>ログ<ept i="1">&lt;/e1&gt;</ept> ターゲットに対する標準的なインタフェースを定義する基底 <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept> クラスや、いくつかのログクラスの標準的な実装とそれを使用する関数群を提供しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The logging facilities included in wxWidgets provide the base <bpt i="0" x="0">&lt;i0&gt;</bpt>wxLog<ept i="0">&lt;/i0&gt;</ept> class which defines the standard interface for a <bpt i="1" x="1">&lt;i1&gt;</bpt>log target<ept i="1">&lt;/i1&gt;</ept> as well as several standard implementations of it and a family of functions to use with them.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T074728Z">
+        <seg>wxWidgets のロギング機能では <bpt i="1" x="1">&lt;i1&gt;</bpt>ログターゲット<ept i="1">&lt;/i1&gt;</ept> に対する標準的なインタフェースを定義する基底 <bpt i="0" x="0">&lt;i0&gt;</bpt>wxLog<ept i="0">&lt;/i0&gt;</ept> クラスや、いくつかのログクラスの標準的な実装とそれを使用する関数群を提供しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7256,6 +8560,38 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T065623Z">
         <seg>通常、ProcessEvent() によるイベントテーブルの検索順は以下のように行われ、イベントハンドラが見つかると処理を終了します。 (ただし、イベントハンドラで <bpt i="1" x="1">&lt;a1&gt;</bpt>wxEvent::Skip()<ept i="1">&lt;/a1&gt;</ept> を呼ぶとイベントが処理されていないものとして扱われ、引き続き検索が行われます):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The normal usage of a log object (i.e. object of a class derived from <bpt i="4" x="4">&lt;a4&gt;</bpt>wxLog<ept i="4">&lt;/a4&gt;</ept>) is to install it as the active target with a call to <bpt i="5" x="5">&lt;e5&gt;</bpt>SetActiveTarget()<ept i="5">&lt;/e5&gt;</ept> and it will be used automatically by all subsequent calls to <bpt i="6" x="6">&lt;a6&gt;</bpt>wxLogXXX() functions<ept i="6">&lt;/a6&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T112509Z">
+        <seg>ログオブジェクト (つまり、<bpt i="4" x="4">&lt;a4&gt;</bpt>wxLog<ept i="4">&lt;/a4&gt;</ept> を継承したクラスのオブジェクト) の通常の使用方法は <bpt i="5" x="5">&lt;e5&gt;</bpt>SetActiveTarget()<ept i="5">&lt;/e5&gt;</ept> を使用して有効なターゲットとして設定することで、それ以降に呼び出された <bpt i="6" x="6">&lt;a6&gt;</bpt>wxLogXXX() 関数<ept i="6">&lt;/a6&gt;</ept>で自動的に使用されるようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The normal usage of a log object (i.e. object of a class derived from wxLog) is to install it as the active target with a call to <bpt i="4" x="4">&lt;i4&gt;</bpt> SetActiveTarget()<ept i="4">&lt;/i4&gt;</ept> and it will be used automatically by all subsequent calls to <bpt i="5" x="5">&lt;i5&gt;</bpt>wxLogXXX()<ept i="5">&lt;/i5&gt;</ept> functions.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T023118Z">
+        <seg>ログオブジェクト (つまり、wxLog を継承したクラスのオブジェクト) の通常の使用方法は <bpt i="4" x="4">&lt;i4&gt;</bpt> SetActiveTarget()<ept i="4">&lt;/i4&gt;</ept> を使用して有効なターゲットとして設定することで、それ以降に呼び出された <bpt i="5" x="5">&lt;i5&gt;</bpt>wxLogXXX()<ept i="5">&lt;/i5&gt;</ept> 関数で自動的に使用されるようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The objects of this class may be instantiated to (temporarily) suppress output of <bpt i="1" x="1">&lt;e1&gt;</bpt>wxLogXXX()<ept i="1">&lt;/e1&gt;</ept> functions.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T113141Z">
+        <seg>このクラスのオブジェクトは <bpt i="1" x="1">&lt;e1&gt;</bpt>wxLogXXX()<ept i="1">&lt;/e1&gt;</ept> 関数の出力を (一時的に) 抑制する場合にインスタンス化されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The objects of this class may be instantiated to (temporarily) suppress output of <bpt i="1" x="1">&lt;i1&gt;</bpt>wxLogXXX()<ept i="1">&lt;/i1&gt;</ept> functions.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T030249Z">
+        <seg>このクラスのオブジェクトは <bpt i="1" x="1">&lt;i1&gt;</bpt>wxLogXXX()<ept i="1">&lt;/i1&gt;</ept> 関数の出力を (一時的に) 抑制する場合にインスタンス化されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7380,10 +8716,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The reason for making it a separate function from it is that usually there are a lot of trace messages, so it might make sense to separate them from other debug messages which would be flooded in them.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T085236Z">
+        <seg>これを別の関数とした理由は、通常、トレースメッセージを大量に出力するため、同じように大量に出力する他のデバッグ出力と区別することに意味があるはずだからです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The result of <bpt i="0" x="0">&lt;c0&gt;</bpt>c_str()<ept i="0">&lt;/c0&gt;</ept> cannot be cast to <bpt i="1" x="1">&lt;c1&gt;</bpt>char*<ept i="1">&lt;/c1&gt;</ept> but only to <bpt i="2" x="2">&lt;c2&gt;</bpt>const<ept i="2">&lt;/c2&gt;</ept> <bpt i="3" x="3">&lt;c3&gt;</bpt><bpt i="4" x="4">&lt;c4&gt;</bpt>char*<ept i="4">&lt;/c4&gt;</ept>.<ept i="3">&lt;/c3&gt;</ept> Of course, modifying the string via the pointer returned by this method has never been possible but unfortunately it was occasionally useful to use a <bpt i="5" x="5">&lt;c5&gt;</bpt>const_cast<ept i="5">&lt;/c5&gt;</ept> here to pass the value to const-incorrect functions.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T034344Z">
         <seg><bpt i="0" x="0">&lt;c0&gt;</bpt>c_str()<ept i="0">&lt;/c0&gt;</ept> の戻り値は <bpt i="1" x="1">&lt;c1&gt;</bpt>char*<ept i="1">&lt;/c1&gt;</ept> にはキャストできず、<bpt i="2" x="2">&lt;c2&gt;</bpt>const<ept i="2">&lt;/c2&gt;</ept> <bpt i="3" x="3">&lt;c3&gt;</bpt><bpt i="4" x="4">&lt;c4&gt;</bpt>char*<ept i="4">&lt;/c4&gt;</ept><ept i="3">&lt;/c3&gt;</ept> にのみキャスト可能です。もちろん、この関数の戻り値のポインタを通して文字列を変更することはできませんが、残念なことに、正しく const を受け取らない関数へ値を渡すために <bpt i="5" x="5">&lt;c5&gt;</bpt>const_cast<ept i="5">&lt;/c5&gt;</ept> を使用するときに役立ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The right functions for debug output.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091143Z">
+        <seg>デバッグ出力に適切な関数です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7476,6 +8828,30 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The second form of this function takes the error code explicitly as the first argument.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T013147Z">
+        <seg>この関数の 2 番目の形式では第一引数として明示的にエラーコードを指定できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The second one is enough if you're happy with the standard wxLog message formatting (prepending "Error:" or "Warning:", timestamping &amp;c) but just want to send the messages somewhere else.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T023616Z">
+        <seg>標準的な wxLog メッセージの形式 (先頭に "Error:" か "Warning:" とタイムスタンプが付きます) で充分だが、メッセージを他の場所へ送りたい場合は 2 番目の関数を実装するだけで充分です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The short answer is that they're all very good generic mechanisms, but are not really adapted for wxWidgets, while the log classes are.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T013853Z">
+        <seg>簡単に答えれば、それらの関数やストリームは確かに優れた汎用的な仕組みを持っていますが、本当に wxWidgets に適しているとは言えないためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The simplest of them is <bpt i="2" x="2">&lt;b2&gt;</bpt>UTF-32<ept i="2">&lt;/b2&gt;</ept> where each code unit is composed by 32 bits (4 bytes) and each code point is always represented by a single code unit (fixed length encoding).</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T031955Z">
@@ -7496,6 +8872,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T111045Z">
         <seg>ボーダーの太さも伝える必要があり、Add() 関数の第三引数に指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The standard trace masks are given in <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogTrace()<ept i="0">&lt;/a0&gt;</ept> documentation.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T133125Z">
+        <seg>標準のトレースマスクは <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogTrace()<ept i="0">&lt;/a0&gt;</ept> のドキュメントに記載しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7540,6 +8924,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The usage of these functions should be fairly straightforward, however it may be asked why not use the other logging facilities, such as C standard stdio functions or C++ streams.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T013341Z">
+        <seg>これらの関数の用途はかなり明確ですが、なぜ C の標準入出力関数や C++ のストリームといった他のロギング機能を使用しないのか疑問に思うかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The value must be in form <bpt i="0" x="0">&lt;i0&gt;</bpt>width<ept i="0">&lt;/i0&gt;</ept>x<bpt i="1" x="1">&lt;i1&gt;</bpt>height<ept i="1">&lt;/i1&gt;</ept>-<bpt i="2" x="2">&lt;i2&gt;</bpt>depth<ept i="2">&lt;/i2&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130523T155512Z">
@@ -7548,10 +8940,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The verbose messages are the trace messages which are not disabled in the release mode and are generated by <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogVerbose()<ept i="1">&lt;/a1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T132141Z">
+        <seg>詳細メッセージとはリリースモードでも無効化されないトレースメッセージのことで、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogVerbose()<ept i="1">&lt;/a1&gt;</ept> によって生成されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The width of each column and the height of each row are calculated individually according to the minimal requirements from the respectively biggest child.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130520T153619Z">
         <seg>それぞれの最大の子コントロールの必要とする最小サイズに応じて、各列の幅と各行の高さが個別に計算されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The word logging here has a broad sense, including all of the program output, not only non-interactive messages.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T003652Z">
+        <seg>ここでのロギングという言葉は広い意味を持っており、非対話形式のメッセージに限らず、プログラムの出力すべてを含んでいます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7636,6 +9044,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Then you could use <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog::SetComponentLevel()<ept i="1">&lt;/a1&gt;</ept> in the following ways:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T141916Z">
+        <seg>そして、以下のように <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog::SetComponentLevel()<ept i="1">&lt;/a1&gt;</ept> を使用します:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>There are also events which don't directly correspond to the user actions, such as <bpt i="2" x="2">&lt;a2&gt;</bpt>wxTimerEvent<ept i="2">&lt;/a2&gt;</ept> or <bpt i="3" x="3">&lt;a3&gt;</bpt>wxSocketEvent<ept i="3">&lt;/a3&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130507T155557Z">
@@ -7648,6 +9064,30 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130519T124220Z">
         <seg>今のところ、wxWidgets では 5 種類のサイザーが利用可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>There are several methods which may be overridden in the derived class to customize log messages handling: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::DoLogRecord()<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog::DoLogTextAtLevel()<ept i="1">&lt;/a1&gt;</ept> and <bpt i="2" x="2">&lt;a2&gt;</bpt>wxLog::DoLogText()<ept i="2">&lt;/a2&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T122530Z">
+        <seg>ログメッセージの処理方法をカスタマイズするためには継承クラスでいくつかの関数をオーバーライドします: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::DoLogRecord()<ept i="0">&lt;/a0&gt;</ept>、 <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog::DoLogTextAtLevel()<ept i="1">&lt;/a1&gt;</ept>、<bpt i="2" x="2">&lt;a2&gt;</bpt>wxLog::DoLogText()<ept i="2">&lt;/a2&gt;</ept>。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>There are some predefined classes deriving from <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept> and which might be helpful to see how you can create a new log target class and, of course, may also be used without any change.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T112404Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept> を継承したクラスがいくつか事前に定義されており、新しいログターゲットクラスを作成する際の参考になると思います。もちろん、そのまま使用することも可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>There are some predefined classes deriving from wxLog and which might be helpful to see how you can create a new log target class and, of course, may also be used without any change.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T023947Z">
+        <seg>wxLog を継承したクラスがいくつか事前に定義されており、新しいログターゲットクラスを作成する際の参考になると思います。もちろん、そのまま使用することも可能です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7672,6 +9112,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130511T235318Z">
         <seg>wxWIdgets でイベントを処理する方法として、主に 2 種類の方法があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>There are:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T023959Z">
+        <seg>以下にその一覧を示します:</seg>
       </tuv>
     </tu>
     <tu>
@@ -7772,6 +9220,30 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>They also appear in a message box by default (but it can be changed, see below).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T010006Z">
+        <seg>この関数もデフォルトでメッセージボックスを表示します。 (ただし、この振る舞いは変更可能です。以下を参照してください)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>They are also normally shown to the user, but don't interrupt the program work.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T134918Z">
+        <seg>警告メッセージは普通、ユーザに通知されますが、プログラムの動作を妨げません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>They are hierarchical in the sense that "foo/bar/baz" component is supposed to be a child of "foo".</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T104515Z">
+        <seg>ログコンポーネントは "foo/bar/baz" コンポーネントが "foo" コンポーネントの子として扱われるという意味では階層的です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>They are just simple methods of the class that take as a parameter a reference to an object of a wxEvent-derived class and have no return value (any return information is passed via the argument, which is why it is non-const).</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T014246Z">
@@ -7780,10 +9252,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>They are not normally shown to the user because they present little interest, but may be activated, for example, in order to help the user find some program problem.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T132503Z">
+        <seg>ユーザがこれらのメッセージに関心を示すことがないため、通常はユーザに通知されません。しかし、ユーザがプログラムの問題を見つける際の手助けとして有効化されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>They can be used to create a <bpt i="3" x="3">&lt;a3&gt;</bpt>wxString<ept i="3">&lt;/a3&gt;</ept> from arbitrary binary data without supposing that it is in current locale encoding, and then get it back, again, without any conversion or, rather, undoing the conversion used by <bpt i="4" x="4">&lt;a4&gt;</bpt>wxString::From8BitData()<ept i="4">&lt;/a4&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T035228Z">
         <seg>これらの関数は任意のバイナリデータをもとに <bpt i="3" x="3">&lt;a3&gt;</bpt>wxString<ept i="3">&lt;/a3&gt;</ept> を作成しますが、その際にバイナリデータが現在のロケールのエンコーディングで符号化されていると仮定しません。そして、なんらかの変換や <bpt i="4" x="4">&lt;a4&gt;</bpt>wxString::From8BitData()<ept i="4">&lt;/a4&gt;</ept> で行われた変換の逆変換を行うことなく、元のバイナリデータを取得することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>They will go into the status bar of the active or specified (as the first argument) <bpt i="1" x="1">&lt;a1&gt;</bpt>wxFrame<ept i="1">&lt;/a1&gt;</ept> if it has one.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T085900Z">
+        <seg>これらのメッセージはアクティブまたは第一引数で指定された <bpt i="1" x="1">&lt;a1&gt;</bpt>wxFrame<ept i="1">&lt;/a1&gt;</ept> がステータスバーを持つ場合に、ステータスバーへ出力されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7884,6 +9372,38 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This class allows you to temporarily suspend logging.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T125533Z">
+        <seg>このクラスを用いて一時的にロギングを中断することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This class can be used to (temporarily) redirect all output sent to a C++ ostream object to a wxTextC...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T130927Z">
+        <seg>このクラスは (一時的に) C++ ostream オブジェクトへ送信されたすべての出力を代わりに wxTextCtrl へリダイレクトするのに使用できます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This class can be used to redirect the log messages to a C file stream (not to be confused with C++ s...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T124706Z">
+        <seg>このクラスはログメッセージを C のファイルストリーム (C++ のストリームと混同しないでください) へリダイレクトするのに使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This class can be used to redirect the log messages to a C++ stream.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T124726Z">
+        <seg>このクラスはログメッセージを C++ のストリームへリダイレクトするのに使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This class greatly eases the burden of passing flags to a <bpt i="2" x="2">&lt;a2&gt;</bpt>wxSizer<ept i="2">&lt;/a2&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T145330Z">
@@ -7904,6 +9424,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T012636Z">
         <seg>このクラスはイベントハンドラ自身では使用されませんが、(wxBookCtrlEvent などの) 他のイベントクラスの基底クラスです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This class represents a background log window: to be precise, it collects all log messages in the log...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T125427Z">
+        <seg>このクラスはバックグラウンドで動作するログウィンドウを表します。正確に言うと、このログウィンドウではログフレーム内のすべてのメッセージを収集するとともに、このクラスオブジェクトの生成時に有効だったログターゲットへ収集したメッセージを引き渡します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7996,6 +9524,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This is a general overview of logging classes provided by wxWidgets.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T003415Z">
+        <seg>これは wxWidgets の提供するロギングクラス全般の概要です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This is a kind of paragraph layout box, used to represent the whole buffer.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T014057Z">
@@ -8080,6 +9616,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T141651Z">
         <seg>これは <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBoxSizer<ept i="0">&lt;/a0&gt;</ept> と <bpt i="1" x="1">&lt;a1&gt;</bpt>wxFlexGridSizer<ept i="1">&lt;/a1&gt;</ept> でのみサポートされています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This is the default log target for the GUI wxWidgets applications.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T125452Z">
+        <seg>これは GUI wxWidgets アプリケーションのデフォルトのログターゲットです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8188,10 +9732,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This simple class allows you to chain log sinks, that is to install a new sink but keep passing log m...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T130452Z">
+        <seg>この単純なクラスを用いることでログ出力先を連鎖させることが可能になります。つまり、wxLog::SetActiveTarget のようにログ出力先を置き換える代わりに、新しい出力先を設定しつつ、 古い出力先にもログメッセージを渡すことが可能になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This sizer in turn will query its children (which can be normal windows, empty space or other sizers) so that a hierarchy of sizers can be constructed.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130519T142121Z">
         <seg>このサイザーは順に子コントロール (通常のウィンドウや空白スペース、他のサイザーかもしれません) に対して問い合わせを行うため、サイザーの階層が構築されることになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This task is performed by <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogFormatter<ept i="0">&lt;/a0&gt;</ept> class so you need to derive a custom class from it and override its Format() method to build the log messages in desired way.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T123227Z">
+        <seg>これは <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLogFormatter<ept i="0">&lt;/a0&gt;</ept> クラスによって行われるため、このクラスを継承し、望む方法でログメッセージを構築するように Fortmat() 関数をオーバーライドする必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8276,6 +9836,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Thus, you might view <bpt i="2" x="2">&lt;a2&gt;</bpt>wxLogMessage()<ept i="2">&lt;/a2&gt;</ept> as a simple substitute for <bpt i="3" x="3">&lt;e3&gt;</bpt>printf()<ept i="3">&lt;/e3&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091445Z">
+        <seg>したがって、<bpt i="2" x="2">&lt;a2&gt;</bpt>wxLogMessage()<ept i="2">&lt;/a2&gt;</ept> を <bpt i="3" x="3">&lt;e3&gt;</bpt> printf()<ept i="3">&lt;/e3&gt;</ept> の単純な代替として考えてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Thus, you might view <bpt i="2" x="2">&lt;i2&gt;</bpt>wxLogMessage()<ept i="2">&lt;/i2&gt;</ept> as a simple substitute for <bpt i="3" x="3">&lt;i3&gt;</bpt> printf()<ept i="3">&lt;/i3&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T015102Z">
+        <seg>したがって、<bpt i="2" x="2">&lt;i2&gt;</bpt>wxLogMessage()<ept i="2">&lt;/i2&gt;</ept> を <bpt i="3" x="3">&lt;i3&gt;</bpt> printf()<ept i="3">&lt;/i3&gt;</ept> の単純な代替として考えてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>To be more precise, each event is described by:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130507T160744Z">
@@ -8292,10 +9868,50 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>To change this, you need to define <bpt i="0" x="0">&lt;c0&gt;</bpt>wxLOG_COMPONENT<ept i="0">&lt;/c0&gt;</ept> to a string uniquely identifying each component, e.g. you could give it the value "MyProgram" by default and re-define it as "MyProgram/DB" in the module working with the database and "MyProgram/DB/Trans" in its part managing the transactions.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T141850Z">
+        <seg>これを変更するためには、 <bpt i="0" x="0">&lt;c0&gt;</bpt>wxLOG_COMPONENT<ept i="0">&lt;/c0&gt;</ept> として各コンポーネントを一意に識別する文字列を定義する必要があります。この文字列は例えばデフォルトで "MyProgram" を指定し、データベースを利用するモジュールでは "MyProgram/DB" に、さらにトランザクションを扱う部分では "MyProgram/DB/Trans" に再定義する、というようにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To completely change the logging behaviour you may define a custom log target.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T120523Z">
+        <seg>ロギングの振る舞いを完全に変更するためにはカスタムログターゲットを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>To correct this you should use</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T171237Z">
         <seg>これを正しく動作させるためには、以下のようにする必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To create a new log target class you only need to derive it from <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept> and override one or several of <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog::DoLogRecord()<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxLog::DoLogTextAtLevel()<ept i="2">&lt;/a2&gt;</ept> and <bpt i="3" x="3">&lt;a3&gt;</bpt>wxLog::DoLogText()<ept i="3">&lt;/a3&gt;</ept> in it.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T112527Z">
+        <seg>新しいログターゲットクラスを作成する場合、<bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept> を継承し、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog::DoLogRecord()<ept i="1">&lt;/a1&gt;</ept>、<bpt i="2" x="2">&lt;a2&gt;</bpt>wxLog::DoLogTextAtLevel()<ept i="2">&lt;/a2&gt;</ept>、<bpt i="3" x="3">&lt;a3&gt;</bpt>wxLog::DoLogText()<ept i="3">&lt;/a3&gt;</ept> のいずれか (または複数) をオーバーライドするだけです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To create a new log target class you only need to derive it from wxLog and implement one (or both) of <bpt i="0" x="0">&lt;i0&gt;</bpt>DoLog()<ept i="0">&lt;/i0&gt;</ept> and <bpt i="1" x="1">&lt;i1&gt;</bpt>DoLogString()<ept i="1">&lt;/i1&gt;</ept> in it.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T111852Z">
+        <seg>新しいログターゲットクラスを作成する場合、wxLog を継承し、<bpt i="0" x="0">&lt;i0&gt;</bpt>DoLog()<ept i="0">&lt;/i0&gt;</ept> と <bpt i="1" x="1">&lt;i1&gt;</bpt>DoLogString()<ept i="1">&lt;/i1&gt;</ept> のどちらか (または両方) を実装するだけです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To disable the logging entirely you can use <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog::EnableLogging()<ept i="1">&lt;/a1&gt;</ept> method or, more usually, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxLogNull<ept i="2">&lt;/a2&gt;</ept> class which temporarily disables logging and restores it back to the original setting when it is destroyed.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T140214Z">
+        <seg>完全にロギングを無効化するためには <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog::EnableLogging()<ept i="1">&lt;/a1&gt;</ept> か、普通は一時的にロギングを無効化し、オブジェクトが破棄される時に元の設定を復元する <bpt i="2" x="2">&lt;a2&gt;</bpt>wxLogNull<ept i="2">&lt;/a2&gt;</ept> クラスを使用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8328,6 +9944,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T141617Z">
         <seg>サイザーを使用してウィンドウを非表示にするためには <bpt i="2" x="2">&lt;a2&gt;</bpt>wxSizer::Show<ept i="2">&lt;/a2&gt;</ept> を呼び出してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To limit logging to important messages only, you may use <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::SetLogLevel()<ept i="0">&lt;/a0&gt;</ept> with e.g. wxLOG_Warning value -- this will completely disable all logging messages with the severity less than warnings, so <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogMessage()<ept i="1">&lt;/a1&gt;</ept> output won't be shown to the user any more.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T140449Z">
+        <seg>重要なメッセージのみを記録するためには <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::SetLogLevel()<ept i="0">&lt;/a0&gt;</ept> に wxLOG_Warning などを指定します。こうすることで、重要度が警告未満であるすべてのメッセージのロギングが無効になり、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogMessage()<ept i="1">&lt;/a1&gt;</ept> の出力はもはやユーザに通知されなくなります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8400,6 +10024,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T060656Z">
         <seg>イベントハンドラとして普通の関数や静的メンバ関数を使用する場合、以下のように書いてください:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To use your custom log target you may either call <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::SetActiveTarget()<ept i="0">&lt;/a0&gt;</ept> with your custom log object or create a wxAppTraits-derived class and override <bpt i="1" x="1">&lt;a1&gt;</bpt>wxAppTraits::CreateLogTarget()<ept i="1">&lt;/a1&gt;</ept> virtual method in it and also override <bpt i="2" x="2">&lt;a2&gt;</bpt>wxApp::CreateTraits()<ept i="2">&lt;/a2&gt;</ept> to return an instance of your custom traits object.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T144504Z">
+        <seg>作成したカスタムログターゲットを使用するためには、カスタムログターゲットのオブジェクトを指定して <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::SetActiveTarget()<ept i="0">&lt;/a0&gt;</ept> を呼ぶか、wxAppTraits を継承したクラスを作成して <bpt i="1" x="1">&lt;a1&gt;</bpt>wxAppTraits::CreateLogTarget()<ept i="1">&lt;/a1&gt;</ept> 仮想関数をオーバーライドし、自作の特性オブジェクトのインスタンスを返却するように <bpt i="2" x="2">&lt;a2&gt;</bpt>wxApp::CreateTraits()<ept i="2">&lt;/a2&gt;</ept> をオーバーライドします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8628,6 +10260,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Unlike for all the other logging functions, this function can't be overridden by a log target.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T005311Z">
+        <seg>他のすべてのロギング関数と異なり、この関数はログターゲットによってオーバーライドすることができません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Unlike the original wxWidgets Dialog Editor, editors such as wxDesigner, DialogBlocks, XRCed and wxWorkshop create dialogs based exclusively on sizers, practically forcing the user to create platform independent layouts without compromises.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130519T114516Z">
@@ -8752,6 +10392,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T154608Z">
         <seg>既存のイベントクラスの使用</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Using these target all the log messages can be redirected to a text control.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T125000Z">
+        <seg>これらのターゲットを使用してログメッセージをテキストコントロールへリダイレクトできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Using trace masks</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T131107Z">
+        <seg>トレースマスクの使用</seg>
       </tuv>
     </tu>
     <tu>
@@ -9012,6 +10668,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Write data to the file (descriptor).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091803Z">
+        <seg>ファイル (ディスクリプタ) へデータを書き込みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Writeable reference to a character in wxString.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T121343Z">
@@ -9060,6 +10724,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>You can also redirect the <bpt i="4" x="4">&lt;e4&gt;</bpt>wxLogXXX<ept i="4">&lt;/e4&gt;</ept> calls to <bpt i="5" x="5">&lt;e5&gt;</bpt>cout<ept i="5">&lt;/e5&gt;</ept> by just writing:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T091504Z">
+        <seg>以下のように書くことで <bpt i="4" x="4">&lt;e4&gt;</bpt>wxLogXXX<ept i="4">&lt;/e4&gt;</ept> 呼び出しを <bpt i="5" x="5">&lt;e5&gt;</bpt>cout<ept i="5">&lt;/e5&gt;</ept> へリダイレクトすることもできます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You can also redirect the <bpt i="0" x="0">&lt;i0&gt;</bpt>wxLogXXX<ept i="0">&lt;/i0&gt;</ept> calls to <bpt i="1" x="1">&lt;i1&gt;</bpt>cout<ept i="1">&lt;/i1&gt;</ept> by just writing:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T015131Z">
+        <seg>以下のように書くことで <bpt i="0" x="0">&lt;i0&gt;</bpt>wxLogXXX<ept i="0">&lt;/i0&gt;</ept> 呼び出しを <bpt i="1" x="1">&lt;i1&gt;</bpt>cout<ept i="1">&lt;/i1&gt;</ept> へリダイレクトすることもできます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>You can derive a new class from <bpt i="0" x="0">&lt;a0&gt;</bpt>wxEvtHandler<ept i="0">&lt;/a0&gt;</ept> instead, defining the appropriate event table, and then call <bpt i="1" x="1">&lt;a1&gt;</bpt>wxWindow::SetEventHandler<ept i="1">&lt;/a1&gt;</ept> (or, preferably, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxWindow::PushEventHandler<ept i="2">&lt;/a2&gt;</ept>) to make this event handler the object that responds to events.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130519T072042Z">
@@ -9096,6 +10776,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130519T151534Z">
         <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxWindow::Show<ept i="0">&lt;/a0&gt;</ept> を用いて任意のコントロールを非表示にするのと同じ方法で、サイザー内のコントロールを非表示にすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You can however safely assume that GUI is (already/still) available when your log target as used as wxWidgets automatically switches to using <bpt i="3" x="3">&lt;a3&gt;</bpt>wxLogStderr<ept i="3">&lt;/a3&gt;</ept> if it isn't.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T122008Z">
+        <seg>しかし、ログターゲットを使用するときに (すでに/まだ) GUI が存在すると安全に仮定することができます。なぜなら、 GUI が存在しない場合は <bpt i="3" x="3">&lt;a3&gt;</bpt>wxLogStderr<ept i="3">&lt;/a3&gt;</ept> を使用するように wxWidgets がログターゲットを自動的に切り替えるためです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9400,6 +11088,14 @@ public:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>if ( !file.Open("bar") )</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T030138Z">
+        <seg>if ( !file.Open("bar") )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>if ( isalpha( event.KeyCode() ) )</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T022522Z">
@@ -9658,6 +11354,14 @@ public:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>program can't continue, abort immediately</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T110410Z">
+        <seg>プログラムを継続できないため、ただちに中断します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>s.<bpt i="0" x="0">&lt;a0&gt;</bpt>c_str<ept i="0">&lt;/a0&gt;</ept>() + n</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T123831Z">
@@ -9740,6 +11444,14 @@ public:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>trace messages are also only enabled in debug mode</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T110441Z">
+        <seg>トレースメッセージもデバッグモード時のみ有効化されます</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>void MyTextCtrl::OnChar(wxKeyEvent&amp; event)
 {</seg>
       </tuv>
@@ -9798,6 +11510,14 @@ protected:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T171317Z">
         <seg>これは正常に動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>will log the message if it was preceded by:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T133057Z">
+        <seg>このメッセージは先に以下の処理を行なっている場合に記録されます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -10114,6 +11834,14 @@ private:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxFile file;</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T025918Z">
+        <seg>wxFile file;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxFile may be used for low-level IO.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T055758Z">
@@ -10210,10 +11938,66 @@ private:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxLog *logger=new wxLogStream(&amp;cout);</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T015309Z">
+        <seg>wxLog *logger=new wxLogStream(&amp;cout);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxLog class defines the interface for the log targets used by wxWidgets logging functions as explaine...</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T072429Z">
         <seg>wxLog クラスは wxWidgets のロギング関数で使用されるログターゲットのインタフェースを定義するクラスです。 詳細は wxLog クラスの概要を参照してください、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxLog classes overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T003245Z">
+        <seg>wxLog クラスの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxLog::SetActiveTarget(logger);</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T015312Z">
+        <seg>wxLog::SetActiveTarget(logger);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxLogBuffer is a very simple implementation of log sink which simply collects all the logged messages...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T130142Z">
+        <seg>wxLogBuffer はログ出力先の非常に単純な実装で、すべてのログメッセージを単純に文字列へ集めます。 (ただし、デバッグメッセージは除きます。なぜなら、普通、デバッグメッセージはただちに出力されるので、後で集めることにおそらく関心がないためです)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxLogFormatter class is used to format the log messages.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T130957Z">
+        <seg>wxLogFormatter クラスはログメッセージをフォーマットするのに使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxLogMessage("..."); // ok</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T030253Z">
+        <seg>wxLogMessage("..."); // ok</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxLogNull logNo;</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T030137Z">
+        <seg>wxLogNull logNo;</seg>
       </tuv>
     </tu>
     <tu>
@@ -10708,6 +12492,22 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxWidgets has the notion of a <bpt i="0" x="0">&lt;e0&gt;</bpt>log target<ept i="0">&lt;/e0&gt;</ept>: it is just a class deriving from <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog<ept i="1">&lt;/a1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T111358Z">
+        <seg>wxWidgets では <bpt i="0" x="0">&lt;e0&gt;</bpt>ログターゲット<ept i="0">&lt;/e0&gt;</ept> という考え方があります: これは単純に <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog<ept i="1">&lt;/a1&gt;</ept> を継承したクラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxWidgets has the notion of a <bpt i="0" x="0">&lt;i0&gt;</bpt>log target<ept i="0">&lt;/i0&gt;</ept>: it is just a class deriving from <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog<ept i="1">&lt;/a1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T022242Z">
+        <seg>wxWidgets では <bpt i="0" x="0">&lt;i0&gt;</bpt>ログターゲット<ept i="0">&lt;/i0&gt;</ept> という考え方があります: これは単純に <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog<ept i="1">&lt;/a1&gt;</ept> を継承したクラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxWidgets provides facilities for message translation with it's <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLocale<ept i="0">&lt;/a0&gt;</ept> class and is itself fully translated into several languages.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T040006Z">
@@ -10804,6 +12604,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxWidgets: wxWidgets: wxLog Classes Overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T090608Z">
+        <seg>wxWidgets: wxWidgets: wxLog クラスの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxWindow is the base class for all windows and represents any visible object on screen.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130507T152539Z">
@@ -10886,6 +12694,22 @@ MyFunctor myFunctor;
 
 MyFrame::MyFrame()
 {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>} // ~wxLogNull called, old log sink restored</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130525T030224Z">
+        <seg>} // ~wxLogNull が呼ばれ、古いログ出力先が元に戻される</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>} <bpt i="7" x="7">&lt;s7&gt;</bpt>// ~wxLogNull called, old log sink restored<ept i="7">&lt;/s7&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130526T114545Z">
+        <seg>} <bpt i="7" x="7">&lt;s7&gt;</bpt>// ~wxLogNull が呼ばれ、古いログ出力先が元に戻される<ept i="7">&lt;/s7&gt;</ept></seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
