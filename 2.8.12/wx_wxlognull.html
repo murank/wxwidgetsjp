@@ -22,12 +22,12 @@ For instance, the example of the overview:<P>
 <PRE>
   wxFile file;
 
-  // wxFile.Open() normally complains if file can't be opened, we don't want it
+  // 通常はファイルを開けなかった場合に wxFile.Open() がエラーメッセージを出力するが、そうさせたくない
   {
     wxLogNull logNo;
     if ( !file.Open("bar") )
-      ... process error ourselves ...
-  } // ~wxLogNull called, old log sink restored
+      ... 自分自身でエラー処理を行なう ...
+  } // ~wxLogNull が呼ばれ、古いログ出力先が元に戻される
 
   wxLogMessage("..."); // ok
 </PRE>

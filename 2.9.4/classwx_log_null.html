@@ -124,20 +124,20 @@ function toggleVisibility(linkObj) {
 
 <p><code>#include &lt;/home/zeitlin/src/wx/github/interface/wx/log.h&gt;</code></p>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>This class allows you to temporarily suspend logging.  </p>
+<div class="textblock"><p>このクラスを用いて一時的にロギングを中断することができます。 </p>
 <p>All calls to the log functions during the life time of an object of this class are just ignored.</p>
 <p>In particular, it can be used to suppress the log messages given by wxWidgets itself but it should be noted that it is rarely the best way to cope with this problem as <b>all</b> log messages are suppressed, even if they indicate a completely different error than the one the programmer wanted to suppress.</p>
 <p>For instance, the example of the overview:</p>
 <div class="fragment"><pre class="fragment">      <a class="code" href="classwx_file.html" title="wxFile は低レベルファイル入出力を行います。">wxFile</a> file;
 
-      <span class="comment">// wxFile.Open() normally complains if file can't be opened, we don't want it</span>
+      <span class="comment">// 通常はファイルを開けなかった場合に wxFile.Open() がエラーメッセージを出力するが、そうさせたくない</span>
       {
-        <a class="code" href="classwx_log_null.html" title="This class allows you to temporarily suspend logging.">wxLogNull</a> logNo;
-        <span class="keywordflow">if</span> ( !file.<a class="code" href="classwx_file.html#a70f2abe0e310dcf77ea6aeaac60df25b" title="Opens the file, returning true if successful.">Open</a>(<span class="stringliteral">"bar"</span>) )
-          ... process error ourselves ...
+        <a class="code" href="classwx_log_null.html" title="このクラスを用いて一時的にロギングを中断することができます。">wxLogNull</a> logNo;
+        <span class="keywordflow">if</span> ( !file.<a class="code" href="classwx_file.html#a70f2abe0e310dcf77ea6aeaac60df25b" title="ファイルをオープンします。オープンに成功したら true を返却します。">Open</a>(<span class="stringliteral">"bar"</span>) )
+          ... 自分自身でエラー処理を行なう ...
       } <span class="comment">// ~wxLogNull called, old log sink restored</span>
 
-      <a class="code" href="group__group__funcmacro__log.html#ga249358701f3c2d410088ddf7a61d8564" title="For all normal, informational messages.">wxLogMessage</a>(<span class="stringliteral">"..."</span>); <span class="comment">// ok</span>
+      <a class="code" href="group__group__funcmacro__log.html#ga249358701f3c2d410088ddf7a61d8564" title="すべての通常 (通知) メッセージ用。">wxLogMessage</a>(<span class="stringliteral">"..."</span>); <span class="comment">// ok</span>
 </pre></div><p>would be better written as:</p>
 <div class="fragment"><pre class="fragment">      <a class="code" href="classwx_file.html" title="wxFile は低レベルファイル入出力を行います。">wxFile</a> file;
 
@@ -146,7 +146,7 @@ function toggleVisibility(linkObj) {
       <span class="keywordflow">if</span> ( <a class="code" href="classwx_file.html#ad6530a4db084b157d81a1314c4a62420" title="Returns true if the given name specifies an existing regular file (not a directory or a link)...">wxFile::Exists</a>(<span class="stringliteral">"bar"</span>) )
       {
           <span class="comment">// gives an error message if the file couldn't be opened</span>
-          file.<a class="code" href="classwx_file.html#a70f2abe0e310dcf77ea6aeaac60df25b" title="Opens the file, returning true if successful.">Open</a>(<span class="stringliteral">"bar"</span>);
+          file.<a class="code" href="classwx_file.html#a70f2abe0e310dcf77ea6aeaac60df25b" title="ファイルをオープンします。オープンに成功したら true を返却します。">Open</a>(<span class="stringliteral">"bar"</span>);
       }
       <span class="keywordflow">else</span>
       {

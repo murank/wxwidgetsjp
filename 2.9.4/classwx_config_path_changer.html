@@ -134,7 +134,7 @@ function toggleVisibility(linkObj) {
         <a class="code" href="classwx_config_path_changer.html" title="A handy little class which changes the current path in a wxConfig object and restores it in dtor...">wxConfigPathChanger</a> changer(cfg, <span class="stringliteral">"/Foo/Data/SomeString"</span>);
         <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> str;
         <span class="keywordflow">if</span> ( !config-&gt;<a class="code" href="classwx_config_base.html#af89fb6c338f200bec028480ac0f3b1d8" title="Read a string from the key, returning true if the value was read.">Read</a>(<span class="stringliteral">"SomeString"</span>, &amp;str) ) {
-            <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError</a>(<span class="stringliteral">"Couldn't read SomeString!"</span>);
+            <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<span class="stringliteral">"Couldn't read SomeString!"</span>);
             <span class="keywordflow">return</span> <span class="keyword">false</span>;     
                 <span class="comment">// NOTE: without wxConfigPathChanger it would be easy to forget to</span>
                 <span class="comment">//       set the old path back into the wxConfig object before this return!</span>

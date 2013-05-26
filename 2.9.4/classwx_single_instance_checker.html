@@ -132,7 +132,7 @@ function toggleVisibility(linkObj) {
         m_checker = <span class="keyword">new</span> <a class="code" href="classwx_single_instance_checker.html#ab5a56ad3ace10afc97d1c1608e40ef0c" title="Default constructor.">wxSingleInstanceChecker</a>;
         <span class="keywordflow">if</span> ( m_checker-<a class="code" href="classwx_single_instance_checker.html#ad3588a5ae39131a129f5b886236f6c40" title="Returns true if another copy of this program is already running and false otherwise.">IsAnotherRunning</a>() )
         {
-            <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError</a>(<a class="code" href="group__group__funcmacro__string.html#ga8a02b8875a521df57263a9e6f090f2d0" title="翻訳対象となるすべてのリテラル文字列に対して使用するマクロです。">_</a>(<span class="stringliteral">"Another program instance is already running, aborting."</span>));
+            <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<a class="code" href="group__group__funcmacro__string.html#ga8a02b8875a521df57263a9e6f090f2d0" title="翻訳対象となるすべてのリテラル文字列に対して使用するマクロです。">_</a>(<span class="stringliteral">"Another program instance is already running, aborting."</span>));
 
             <span class="keyword">delete</span> m_checker; <span class="comment">// OnExit() won't be called if we return false</span>
             m_checker = NULL;

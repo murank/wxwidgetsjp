@@ -133,7 +133,7 @@ function toggleVisibility(linkObj) {
 
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_protocol_log.html#a449abb899cb6413c968bbda18cef6144">wxProtocolLog</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;traceMask)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Create object doing the logging using <a class="el" href="group__group__funcmacro__log.html#ga947e317db477914c12b13c4534867ec9" title="Log a message at wxLOG_Trace log level (see wxLogLevelValues enum).">wxLogTrace()</a> with the specified trace mask.    <a href="#a449abb899cb6413c968bbda18cef6144"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Create object doing the logging using <a class="el" href="group__group__funcmacro__log.html#ga947e317db477914c12b13c4534867ec9" title="wxLOG_Trace ログレベル (wxLogLevelValues enum 参照) のメッセージを記録します。">wxLogTrace()</a> with the specified trace mask.    <a href="#a449abb899cb6413c968bbda18cef6144"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_protocol_log.html#addf45beaed76b87ccbf6b43022076bf6">LogRequest</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;str)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Called by wxProtocol-derived objects to log strings sent to the server.    <a href="#addf45beaed76b87ccbf6b43022076bf6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_protocol_log.html#af4d66c55be1aa518626bbc97982d756b">LogResponse</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;str)</td></tr>
@@ -162,7 +162,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Create object doing the logging using <a class="el" href="group__group__funcmacro__log.html#ga947e317db477914c12b13c4534867ec9" title="Log a message at wxLOG_Trace log level (see wxLogLevelValues enum).">wxLogTrace()</a> with the specified trace mask.  </p>
+<p>Create object doing the logging using <a class="el" href="group__group__funcmacro__log.html#ga947e317db477914c12b13c4534867ec9" title="wxLOG_Trace ログレベル (wxLogLevelValues enum 参照) のメッセージを記録します。">wxLogTrace()</a> with the specified trace mask.  </p>
 <p>If you override <a class="el" href="classwx_protocol_log.html#aca6e0f45b42affec868c8f5128813967" title="Log the given string.">DoLogString()</a> in your class the <em>traceMask</em> may be left empty but it must have a valid value if you rely on the default <a class="el" href="classwx_protocol_log.html#aca6e0f45b42affec868c8f5128813967" title="Log the given string.">DoLogString()</a> implementation.  </p>
 
 </div>
@@ -184,7 +184,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Log the given string.  </p>
-<p>This function is called from <a class="el" href="classwx_protocol_log.html#addf45beaed76b87ccbf6b43022076bf6" title="Called by wxProtocol-derived objects to log strings sent to the server.">LogRequest()</a> and <a class="el" href="classwx_protocol_log.html#af4d66c55be1aa518626bbc97982d756b" title="Called by wxProtocol-derived objects to log strings received from the server.">LogResponse()</a> and by default uses <a class="el" href="group__group__funcmacro__log.html#ga947e317db477914c12b13c4534867ec9" title="Log a message at wxLOG_Trace log level (see wxLogLevelValues enum).">wxLogTrace()</a> with the trace mask specified in the constructor but can be overridden to do something different by the derived classes.  </p>
+<p>This function is called from <a class="el" href="classwx_protocol_log.html#addf45beaed76b87ccbf6b43022076bf6" title="Called by wxProtocol-derived objects to log strings sent to the server.">LogRequest()</a> and <a class="el" href="classwx_protocol_log.html#af4d66c55be1aa518626bbc97982d756b" title="Called by wxProtocol-derived objects to log strings received from the server.">LogResponse()</a> and by default uses <a class="el" href="group__group__funcmacro__log.html#ga947e317db477914c12b13c4534867ec9" title="wxLOG_Trace ログレベル (wxLogLevelValues enum 参照) のメッセージを記録します。">wxLogTrace()</a> with the trace mask specified in the constructor but can be overridden to do something different by the derived classes.  </p>
 
 </div>
 </div><!-- doxytag: member="wxProtocolLog::LogRequest" ref="addf45beaed76b87ccbf6b43022076bf6" args="(const wxString &amp;str)" -->

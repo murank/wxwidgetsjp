@@ -147,7 +147,7 @@ function toggleVisibility(linkObj) {
 
         <span class="keywordflow">if</span> ( !ftp.<a class="code" href="classwx_f_t_p.html#adf97ae110d01e048aa55da6f6e7a8185" title="Connect to the FTP server to default port (21) of the specified host.">Connect</a>(<span class="stringliteral">"ftp.wxwidgets.org"</span>) )
         {
-            <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError</a>(<span class="stringliteral">"Couldn't connect"</span>);
+            <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<span class="stringliteral">"Couldn't connect"</span>);
             <span class="keywordflow">return</span>;
         }
 
@@ -156,20 +156,20 @@ function toggleVisibility(linkObj) {
         <span class="keywordtype">int</span> size = ftp.<a class="code" href="classwx_f_t_p.html#a54f6a620edf5d5ea6850c05dbb78f6cd" title="Returns the file size in bytes or -1 if the file doesn't exist or the size couldn't be determined...">GetFileSize</a>(filename);
         <span class="keywordflow">if</span> ( size == -1 )
         {
-            <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError</a>(<span class="stringliteral">"Couldn't get the file size for \"%s\""</span>, filename);
+            <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<span class="stringliteral">"Couldn't get the file size for \"%s\""</span>, filename);
         }
 
         <a class="code" href="classwx_input_stream.html" title="wxInputStream is an abstract base class which may not be used directly.">wxInputStream</a> *in = ftp.<a class="code" href="classwx_f_t_p.html#a97d34cb6df2b6075e49a50b88d4a54b9" title="Creates a new input stream on the specified path.">GetInputStream</a>(filename);
         <span class="keywordflow">if</span> ( !in )
         {
-            <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError</a>(<span class="stringliteral">"Couldn't get the file"</span>);
+            <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<span class="stringliteral">"Couldn't get the file"</span>);
         }
         <span class="keywordflow">else</span>
         {
             <span class="keywordtype">char</span> *data = <span class="keyword">new</span> <span class="keywordtype">char</span>[size];
             <span class="keywordflow">if</span> ( !in-&gt;<a class="code" href="classwx_input_stream.html#a72f24d0f50c7f07bb68dedf5e8690f4e" title="Reads the specified amount of bytes and stores the data in buffer.">Read</a>(data, size) )
             {
-                <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError</a>(<span class="stringliteral">"Read error: %d"</span>, ftp.<a class="code" href="classwx_protocol.html#a06994af171fb3f497f384a4002dbfc3c" title="Returns the last occurred error.">GetError</a>());
+                <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<span class="stringliteral">"Read error: %d"</span>, ftp.<a class="code" href="classwx_protocol.html#a06994af171fb3f497f384a4002dbfc3c" title="Returns the last occurred error.">GetError</a>());
             }
             <span class="keywordflow">else</span>
             {

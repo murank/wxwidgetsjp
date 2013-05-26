@@ -139,7 +139,7 @@ function toggleVisibility(linkObj) {
 <div class="textblock"><p>This class is essential for writing console-only or hybrid apps without having to define <code>wxUSE_GUI=0</code>.  </p>
 <p>It is used to:  </p>
 <ul>
-<li>set and get application-wide properties (see <a class="el" href="classwx_app_console.html#ab2811644bfee7a93d0564a09397c4408" title="Creates the wxAppTraits object when GetTraits() needs it for the first time.">wxAppConsole::CreateTraits</a> and wxAppConsole::SetXXX functions)  </li>
+<li>set and get application-wide properties (see <a class="el" href="classwx_app_console.html#ab2811644bfee7a93d0564a09397c4408" title="最初に GetTraits() が必要とした時に wxAppTraits オブジェクトを作成します。">wxAppConsole::CreateTraits</a> and wxAppConsole::SetXXX functions)  </li>
 <li>implement the windowing system message or event loop: events in fact are supported even in console-mode applications (see <a class="el" href="classwx_app_console.html#a78a6f9e56b77addf8251f0f5c10004fb" title="This function simply invokes the given method func of the specified event handler handler with the ev...">wxAppConsole::HandleEvent</a> and <a class="el" href="classwx_app_console.html#ab62db8e6265c1e841220c47b9778ab7e" title="Process all pending events; it is necessary to call this function to process events posted with wxEvt...">wxAppConsole::ProcessPendingEvents</a>);  </li>
 <li>initiate application processing via <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">wxApp::OnInit</a>;  </li>
 <li>allow default processing of events not handled by other objects in the application (see <a class="el" href="classwx_app_console.html#ada7ab606e014a10d46e4b3c6f602e20c" title="wxEventFilter をオーバーライドした関数。">wxAppConsole::FilterEvent</a>)  </li>
@@ -482,7 +482,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns a pointer to the <a class="el" href="classwx_app_traits.html" title="The wxAppTraits class defines various configurable aspects of a wxApp.">wxAppTraits</a> object for the application.  </p>
-<p>If you want to customize the <a class="el" href="classwx_app_traits.html" title="The wxAppTraits class defines various configurable aspects of a wxApp.">wxAppTraits</a> object, you must override the <a class="el" href="classwx_app_console.html#ab2811644bfee7a93d0564a09397c4408" title="Creates the wxAppTraits object when GetTraits() needs it for the first time.">CreateTraits()</a> function.  </p>
+<p>If you want to customize the <a class="el" href="classwx_app_traits.html" title="The wxAppTraits class defines various configurable aspects of a wxApp.">wxAppTraits</a> object, you must override the <a class="el" href="classwx_app_console.html#ab2811644bfee7a93d0564a09397c4408" title="最初に GetTraits() が必要とした時に wxAppTraits オブジェクトを作成します。">CreateTraits()</a> function.  </p>
 
 </div>
 </div><!-- doxytag: member="wxAppConsole::GetVendorDisplayName" ref="aff0e285cecca295bc6de1ad8323093df" args="() const " -->

@@ -1,208 +1,71 @@
 <HTML>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>wxLog classes overview</title></head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>wxLog クラスの概要</title></head>
 
 <BODY BGCOLOR=#FFFFFF>
 <A NAME="wxlogoverview"></A><CENTER>
 <A HREF="wx_contents.html"><img align=center src="contents.gif" BORDER=0 ALT="Contents"></A> <A HREF="wx_overviews.html#overviews"><img align=center src="up.gif" BORDER=0 ALT="Up"></A> <A HREF="wx_wxstreamoverview.html#wxstreamoverview"><img align=center src="back.gif" BORDER=0 ALT="Previous"></A> <A HREF="wx_debuggingoverview.html#debuggingoverview"><img align=center src="forward.gif" BORDER=0 ALT="Next"></A> </CENTER><HR>
 
-<H2>wxLog classes overview</H2>
+<H2>wxLog クラスの概要</H2>
 <P>
-
-Classes: <A HREF="wx_wxlog.html#wxlog">wxLog</A>,<BR>
-
-<A HREF="wx_wxlogstderr.html#wxlogstderr">wxLogStderr</A>,<BR>
-
-<A HREF="wx_wxlogstream.html#wxlogstream">wxLogStream</A>,<BR>
-
-<A HREF="wx_wxlogtextctrl.html#wxlogtextctrl">wxLogTextCtrl</A>,<BR>
-
-<A HREF="wx_wxlogwindow.html#wxlogwindow">wxLogWindow</A>,<BR>
-
-<A HREF="wx_wxloggui.html#wxloggui">wxLogGui</A>,<BR>
-
-<A HREF="wx_wxlognull.html#wxlognull">wxLogNull</A>,<BR>
-
-<A HREF="wx_wxlogchain.html#wxlogchain">wxLogChain</A>,<BR>
-
-<A HREF="wx_wxlogpassthrough.html#wxlogpassthrough">wxLogPassThrough</A>,<BR>
-
-<A HREF="wx_wxstreamtotextredirector.html#wxstreamtotextredirector">wxStreamToTextRedirector</A><P>
-
-This is a general overview of logging classes provided by wxWidgets. The word
-logging here has a broad sense, including all of the program output, not only
-non-interactive messages. The logging facilities included in wxWidgets provide
-the base <I>wxLog</I> class which defines the standard interface for a <I>log
-target</I> as well as several standard implementations of it and a family of
-functions to use with them.<P>
-
-First of all, no knowledge of <I>wxLog</I> classes is needed to use them. For
-this, you should only know about <I>wxLogXXX()</I> functions. All of them have
-the same syntax as <I>printf()</I> or <I>vprintf()</I> , i.e. they take the
-format string as the first argument and respectively a variable number of
-arguments or a variable argument list pointer. Here are all of them:<P>
+クラス: <A HREF="wx_wxlog.html#wxlog">wxLog</A>,<BR><A HREF="wx_wxlogstderr.html#wxlogstderr">wxLogStderr</A>,<BR><A HREF="wx_wxlogstream.html#wxlogstream">wxLogStream</A>,<BR><A HREF="wx_wxlogtextctrl.html#wxlogtextctrl">wxLogTextCtrl</A>,<BR><A HREF="wx_wxlogwindow.html#wxlogwindow">wxLogWindow</A>,<BR><A HREF="wx_wxloggui.html#wxloggui">wxLogGui</A>,<BR><A HREF="wx_wxlognull.html#wxlognull">wxLogNull</A>,<BR><A HREF="wx_wxlogchain.html#wxlogchain">wxLogChain</A>,<BR><A HREF="wx_wxlogpassthrough.html#wxlogpassthrough">wxLogPassThrough</A>,<BR><A HREF="wx_wxstreamtotextredirector.html#wxstreamtotextredirector">wxStreamToTextRedirector</A><P>
+これは wxWidgets の提供するロギングクラス全般の概要です。ここでのロギングという言葉は広い意味を持っており、非対話形式のメッセージに限らず、プログラムの出力すべてを含んでいます。wxWidgets のロギング機能では <I>ログターゲット</I> に対する標準的なインタフェースを定義する基底 <I>wxLog</I> クラスや、いくつかのログクラスの標準的な実装とそれを使用する関数群を提供しています。<P>
+まず最初に、<I>wxLog</I> クラス郡を使用するのにその知識は必要とされません。そのため、<I>wxLogXXX()</I> 関数についてのみ、知っておく必要があります。これらの関数はすべて <I>printf()</I> や <I>vprintf()</I> と同じ構文を持ちます。つまり、第一引数にフォーマット文字列を取り、続けて可変引数か可変引数リストのポインタを取ります。以下にすべての関数を示します:<P>
 <UL>
 
-<LI><B>wxLogFatalError</B> which is like <I>wxLogError</I>, but also
-terminates the program with the exit code 3 (using <I>abort()</I> standard
-function). Unlike for all the other logging functions, this function can't be
-overridden by a log target.
-
-</LI><LI><B>wxLogError</B> is the function to use for error messages, i.e. the
-messages that must be shown to the user. The default processing is to pop up a
-message box to inform the user about it.
-
-</LI><LI><B>wxLogWarning</B> for warnings - they are also normally shown to the
-user, but don't interrupt the program work.
-
-</LI><LI><B>wxLogMessage</B> is for all normal, informational messages. They also
-appear in a message box by default (but it can be changed, see below).
-
-</LI><LI><B>wxLogVerbose</B> is for verbose output. Normally, it is suppressed, but
-might be activated if the user wishes to know more details about the program
-progress (another, but possibly confusing name for the same function is <B>
-wxLogInfo</B>).
-
-</LI><LI><B>wxLogStatus</B> is for status messages - they will go into the status
-bar of the active or specified (as the first argument) <A HREF="wx_wxframe.html#wxframe">wxFrame</A> if it has one.
-
-</LI><LI><B>wxLogSysError</B> is mostly used by wxWidgets itself, but might be
-handy for logging errors after system call (API function) failure. It logs the
-specified message text as well as the last system error
-code (<I>errno</I> or <I>::GetLastError()</I> depending on the platform) and
-the corresponding error message. The second form of this function takes the
-error code explicitly as the first argument.
-
-</LI><LI><B>wxLogDebug</B> is <B>the</B> right function for debug output. It only
-does anything at all in the debug mode (when the preprocessor symbol
-__WXDEBUG__ is defined) and expands to nothing in release mode (otherwise).
-<B>Tip:</B> under Windows, you must either run the program under debugger or
-use a 3rd party program such as <A HREF="http://www.sysinternals.com">DbgView</A> 
-to actually see the debug output.
-
-</LI><LI><B>wxLogTrace</B> as <B>wxLogDebug</B> only does something in debug
-build. The reason for making it a separate function from it is that usually
-there are a lot of trace messages, so it might make sense to separate them
-from other debug messages which would be flooded in them. Moreover, the second
-version of this function takes a trace mask as the first argument which allows
-to further restrict the amount of messages generated.
-
+<LI><B>wxLogFatalError</B> は <I>wxLogError</I> と似ていますが、(<I>abort()</I> 標準関数を使用して) リターンコード 3 でプログラムを終了させます。他のすべてのロギング関数と異なり、この関数はログターゲットによってオーバーライドすることができません。
+</LI><LI><B>wxLogError</B> はエラーメッセージ (ユーザに通知しなければならないメッセージ) 用の関数です。デフォルトの処理ではメッセージボックスをポップアップして通知します。
+</LI><LI><B>wxLogWarning</B> は警告メッセージ (通常はユーザに通知されますが、プログラムの動作を妨げないメッセージ） 用の関数です。
+</LI><LI><B>wxLogMessage</B> はすべての通常 (通知) メッセージ用の関数です。この関数もデフォルトでメッセージボックスを表示します。 (ただし、この振る舞いは変更可能です。以下を参照してください)
+</LI><LI><B>wxLogVerbose</B> は詳細な出力用の関数です。通常は出力されませんが、ユーザがプログラムの進捗状況についてより詳しく知りたい場合に有効化されるかもしれません。 (名前の紛らわしい同じ機能の関数として <B> wxLogInfo</B> があります)
+</LI><LI><B>wxLogStatus</B> はステータスメッセージ用の関数で、このメッセージはアクティブまたは第一引数で指定された <A HREF="wx_wxframe.html#wxframe">wxFrame</A> がステータスバーを持つ場合に、ステータスバーへ出力されます。
+</LI><LI><B>wxLogSysError</B> は主に wxWidgets 自身で使用されますが、システムコール (API 関数) の失敗後のエラーログを記録するのに便利かもしれません。この関数は指定したメッセージとあわせて、最後のシステムエラーコード  (プラットフォームに応じて <I>errno</I> または <I>::GetLastError()</I> ) とそれに対応するエラーメッセージを出力します。この関数の 2 番目の形式では第一引数として明示的にエラーコードを指定できます。
+</LI><LI><B>wxLogDebug</B> は <B>まさに</B> デバッグ出力に適切な関数です。デバッグモードの場合 (プリプロセッサシンボル __WXDEBUG__ が定義されている場合) のみ処理を行い、リリースモードの場合 (それ以外の場合) では空文字列に展開されます。<B>ヒント:</B> Windows でデバッグ出力を確認するためにはデバッガーを使用するか、<A HREF="http://www.sysinternals.com">DbgView</A> のようなサードパーティーのプログラムを使用する必要があります。
+</LI><LI><B>wxLogTrace</B> も <B>wxLogDebug</B> と同じようにデバッグビルド時のみ動作します。これを別の関数とした理由は、通常、トレースメッセージを大量に出力するため、同じように大量に出力する他のデバッグ出力と区別することに意味があるはずだからです。くわえて、2 番目の形式では第一引数としてトレースマスクを指定できるため、生成されるメッセージの量をさらに制限することができます。
 </LI></UL>
 <P>
-
-The usage of these functions should be fairly straightforward, however it may
-be asked why not use the other logging facilities, such as C standard stdio
-functions or C++ streams. The short answer is that they're all very good
-generic mechanisms, but are not really adapted for wxWidgets, while the log
-classes are. Some of advantages in using wxWidgets log functions are:<P>
+これらの関数の用途はかなり明確ですが、なぜ C の標準入出力関数や C++ のストリームといった他のロギング機能を使用しないのか疑問に思うかもしれません。簡単に答えれば、それらの関数やストリームは確かに優れた汎用的な仕組みを持っていますが、本当に wxWidgets に適しているとは言えないためです。wxWidgets のログ関数を使用するいくつかの利点は以下の通りです:<P>
 <UL>
 
-<LI><B>Portability</B> It is a common practice to use <I>printf()</I>
-statements or cout/cerr C++ streams for writing out some (debug or otherwise)
-information.
-Although it works just fine under Unix, these messages go strictly nowhere
-under Windows where the stdout of GUI programs is not assigned to anything.
-Thus, you might view <I>wxLogMessage()</I> as a simple substitute for <I>
-printf()</I>.<P>
-
-You can also redirect the <I>wxLogXXX</I> calls to <I>cout</I> by just writing:
-
+<LI><B>移植性</B> デバッグ情報や他の情報の出力に <I>printf()</I> や cout/cerr などの C++ ストリームを使用するのはごく普通のことです。ただし、これは Unix では正常に動作しますが、GUI プログラムの標準出力がどこにも割り当てられない Windows では厳密にどこにも出力されません. したがって、<I>wxLogMessage()</I> を <I> printf()</I> の単純な代替として考えてください。<P>
+以下のように書くことで <I>wxLogXXX</I> 呼び出しを <I>cout</I> へリダイレクトすることもできます:
 <FONT SIZE=2>
 <PRE>
   wxLog *logger=new wxLogStream(&amp;cout);
   wxLog::SetActiveTarget(logger);
 </PRE>
 </FONT><P>
-
-Finally, there is also a possibility to redirect the output sent to <I>cout</I> 
-to a <A HREF="wx_wxtextctrl.html#wxtextctrl">wxTextCtrl</A> by using the 
-<A HREF="wx_wxstreamtotextredirector.html#wxstreamtotextredirector">wxStreamToTextRedirector</A> class.
-
-</LI><LI><B>Flexibility</B> The output of wxLog functions can be redirected or
-suppressed entirely based on their importance, which is either impossible or
-difficult to do with traditional methods. For example, only error messages, or
-only error messages and warnings might be logged, filtering out all
-informational messages.
-
-</LI><LI><B>Completeness</B> Usually, an error message should be presented to the user
-when some operation fails. Let's take a quite simple but common case of a file
-error: suppose that you're writing your data file on disk and there is not
-enough space. The actual error might have been detected inside wxWidgets code
-(say, in <I>wxFile::Write</I>), so the calling function doesn't really know the
-exact reason of the failure, it only knows that the data file couldn't be
-written to the disk. However, as wxWidgets uses <I>wxLogError()</I> in this
-situation, the exact error code (and the corresponding error message) will be
-given to the user together with "high level" message about data file writing
-error.
-
+最後に、<A HREF="wx_wxstreamtotextredirector.html#wxstreamtotextredirector">wxStreamToTextRedirector</A> クラスを使用することで <I>cout</I> へ出力した内容を <A HREF="wx_wxtextctrl.html#wxtextctrl">wxTextCtrl</A> にリダイレクトすることもできます。
+</LI><LI><B>柔軟性</B> wxLog 関数の出力はその重要度に応じてリダイレクトしたり抑制したりできます。これは従来の関数では不可能、もしくは困難なことです。例えば、すべての通知メッセージをフィルタリングして、エラーメッセージのみ、もしくはエラーメッセージと警告メッセージのみを記録しても構いません。
+</LI><LI><B>完全性</B> 通常、処理が失敗した場合にはエラーメッセージが表示されるべきです。非常に単純で、よくあるファイルエラーの場合を考えてみましょう: データをディスク上のファイルに書き込もうとして充分な空き容量がなかったときを想像してください。実際のエラーは wxWidgets コード (<I>wxFile::Write</I>) 内で検知されるため、呼び出し元の関数では失敗の正確な原因を実際に知ることはできず、ディスクへの書き込みに失敗したことしか分かりません。しかし、このような状況で <I>wxLogError()</I> を使用すれば、書き込みに失敗したファイルに関する "高レベル" なメッセージとともに正確なエラーコード (と対応するエラーメッセージ) が表示されます。
 </LI></UL>
 <P>
-
-After having enumerated all the functions which are normally used to log the
-messages, and why would you want to use them we now describe how all this
-works.<P>
-
-wxWidgets has the notion of a <I>log target</I>: it is just a class deriving
-from <A HREF="wx_wxlog.html#wxlog">wxLog</A>. As such, it implements the virtual functions of
-the base class which are called when a message is logged. Only one log target
-is <I>active</I> at any moment, this is the one used by <I>wxLogXXX()</I>
-functions. The normal usage of a log object (i.e. object of a class derived
-from wxLog) is to install it as the active target with a call to <I>
-SetActiveTarget()</I> and it will be used automatically by all subsequent calls
-to <I>wxLogXXX()</I> functions.<P>
-
-To create a new log target class you only need to derive it from wxLog and
-implement one (or both) of <I>DoLog()</I> and <I>DoLogString()</I> in it. The
-second one is enough if you're happy with the standard wxLog message
-formatting (prepending "Error:" or "Warning:", timestamping &amp;c) but just want
-to send the messages somewhere else. The first one may be overridden to do
-whatever you want but you have to distinguish between the different message
-types yourself.<P>
-
-There are some predefined classes deriving from wxLog and which might be
-helpful to see how you can create a new log target class and, of course, may
-also be used without any change. There are:<P>
+メッセージのロギングに通常使用するすべての関数と、それらを使用する理由について列挙したので、これらの動作方法について説明します。<P>
+wxWidgets では <I>ログターゲット</I> という考え方があります: これは単純に <A HREF="wx_wxlog.html#wxlog">wxLog</A> を継承したクラスです。そのため、メッセージのロギング時に呼ばれる基底クラスの仮想関数を実装ています。いつでも <I>有効な</I> ログターゲットはひとつだけで、これが <I>wxLogXXX()</I> 関数によって使用されます。ログオブジェクト (つまり、wxLog を継承したクラスのオブジェクト) の通常の使用方法は <I> SetActiveTarget()</I> を使用して有効なターゲットとして設定することで、それ以降に呼び出された <I>wxLogXXX()</I> 関数で自動的に使用されるようになります。<P>
+新しいログターゲットクラスを作成する場合、wxLog を継承し、<I>DoLog()</I> と <I>DoLogString()</I> のどちらか (または両方) を実装するだけです。標準的な wxLog メッセージの形式 (先頭に "Error:" か "Warning:" とタイムスタンプが付きます) で充分だが、メッセージを他の場所へ送りたい場合は 2 番目の関数を実装するだけで充分です。最初の関数をオーバーライドすると何でもできますが、異なるメッセージ型を自分で区別する必要があります。<P>
+wxLog を継承したクラスがいくつか事前に定義されており、新しいログターゲットクラスを作成する際の参考になると思います。もちろん、そのまま使用することも可能です。以下にその一覧を示します:<P>
 <UL>
 
-<LI><B>wxLogStderr</B> This class logs messages to a <I>FILE *</I>, using
-stderr by default as its name suggests.
-
-</LI><LI><B>wxLogStream</B> This class has the same functionality as wxLogStderr,
-but uses <I>ostream</I> and cerr instead of <I>FILE *</I> and stderr.
-
-</LI><LI><B>wxLogGui</B> This is the standard log target for wxWidgets
-applications (it is used by default if you don't do anything) and provides the
-most reasonable handling of all types of messages for given platform.
-
-</LI><LI><B>wxLogWindow</B> This log target provides a "log console" which
-collects all messages generated by the application and also passes them to the
-previous active log target. The log window frame has a menu allowing user to
-clear the log, close it completely or save all messages to file.
-
-</LI><LI><B>wxLogNull</B> The last log class is quite particular: it doesn't do
-anything. The objects of this class may be instantiated to (temporarily)
-suppress output of <I>wxLogXXX()</I> functions. As an example, trying to open a
-non-existing file will usually provoke an error message, but if for some
-reasons it is unwanted, just use this construction:<P>
+<LI><B>wxLogStderr</B> このクラスはメッセージを <I>FILE *</I> へ出力します。その名の通り、デフォルトでは stderr へ出力します。
+</LI><LI><B>wxLogStream</B> このクラスは wxLogStderr と同じ機能を持ちますが、<I>FILE *</I> と stderr の代わりに <I>ostream</I> と cerr を使用します。
+</LI><LI><B>wxLogGui</B> これは wxWidgets アプリケーションの標準ログターゲット (何もしない場合にデフォルトで使用されます) で、指定されたプラットフォームについて、メッセージのすべての型に対してもっとも合理的な処理を行います。
+</LI><LI><B>wxLogWindow</B> このログターゲットはアプリケーションの生成するすべてのメッセージを収集する "ログコンソール" を提供するとともに、前に有効だったログターゲットに収集したメッセージを引き渡します。ログウィンドウフレームはメニューを持ち、ログの消去、終了、メッセージの保存を選択することができます。
+</LI><LI><B>wxLogNull</B> 最後のログクラスは極めて特殊です: これは何も行いません。このクラスのオブジェクトは <I>wxLogXXX()</I> 関数の出力を (一時的に) 抑制する場合にインスタンス化されます。例として、存在しないファイルを開こうとすると通常はエラーメッセージが表示されますが、何らかの理由でそれを望まない場合、次のようにするだけです:<P>
 <FONT SIZE=2><PRE>
   wxFile file;
 
-  // wxFile.Open() normally complains if file can't be opened, we don't want it
+  // 通常はファイルを開けなかった場合に wxFile.Open() がエラーメッセージを出力するが、そうさせたくない
   {
     wxLogNull logNo;
     if ( !file.Open("bar") )
-      ... process error ourselves ...
-  } // ~wxLogNull called, old log sink restored
+      ... 自分自身でエラー処理を行なう ...
+  } // ~wxLogNull が呼ばれ、古いログ出力先が元に戻される
   
   wxLogMessage("..."); // ok
 </PRE>
 </FONT></LI></UL>
 <P>
-
-The log targets can also be combined: for example you may wish to redirect the
-messages somewhere else (for example, to a log file) but also process them as
-normally. For this the <A HREF="wx_wxlogchain.html#wxlogchain">wxLogChain</A> and 
-<A HREF="wx_wxlogpassthrough.html#wxlogpassthrough">wxLogPassThrough</A> can be used.<P>
+ログターゲットは組み合わせて使用することもできます: 例えば、メッセージを他の場所 (例えばログファイルなど) にリダイレクトしつつ、通常通りの方法でも処理したいとします。このために <A HREF="wx_wxlogchain.html#wxlogchain">wxLogChain</A> と <A HREF="wx_wxlogpassthrough.html#wxlogpassthrough">wxLogPassThrough</A> を使用できます。<P>
 
 </FONT><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

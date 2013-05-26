@@ -176,14 +176,14 @@ function toggleVisibility(linkObj) {
             <span class="comment">// while it's executed, so we use a thread to do it.</span>
             <span class="keywordflow">if</span> (<a class="code" href="classwx_thread_helper.html#a3682b1b5a08741335aa8acc7feb0ece5" title="Creates a new thread of the given kind.">CreateThread</a>(<a class="code" href="interface_2wx_2thread_8h.html#a0dc9a167e8d084946512da99b37b5fd0ab5246cc8dc6eeb20bc69e4790e7b00a4" title="Joinable thread.">wxTHREAD_JOINABLE</a>) != <a class="code" href="interface_2wx_2thread_8h.html#a9e4ba0577f752fee0ba2133035f75ac2ad1525fe128b4989cb43a7e8112ac1b13" title="No error.">wxTHREAD_NO_ERROR</a>)
             {
-                <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError</a>(<span class="stringliteral">"Could not create the worker thread!"</span>);
+                <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<span class="stringliteral">"Could not create the worker thread!"</span>);
                 <span class="keywordflow">return</span>;
             }
 
             <span class="comment">// go!</span>
             <span class="keywordflow">if</span> (<a class="code" href="classwx_thread_helper.html#ac61fe16deda566773cdc7d4d38709370" title="This is a public function that returns the wxThread object associated with the thread.">GetThread</a>()-&gt;Run() != <a class="code" href="interface_2wx_2thread_8h.html#a9e4ba0577f752fee0ba2133035f75ac2ad1525fe128b4989cb43a7e8112ac1b13" title="No error.">wxTHREAD_NO_ERROR</a>)
             {
-                <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError</a>(<span class="stringliteral">"Could not run the worker thread!"</span>);
+                <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<span class="stringliteral">"Could not run the worker thread!"</span>);
                 <span class="keywordflow">return</span>;
             }
         }

@@ -483,7 +483,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implementation of XRC resources errors reporting.  </p>
 <p>This method is called by <a class="el" href="classwx_xml_resource.html#ad92d578f48f243e32227702e7003723f" title="Reports error in XRC resources to the user.">ReportError()</a> and shouldn't be called directly; use <a class="el" href="classwx_xml_resource.html#ad92d578f48f243e32227702e7003723f" title="Reports error in XRC resources to the user.">ReportError()</a> or <a class="el" href="classwx_xml_resource_handler.html#a0b4c148209e4fcf1e6940895902ac5eb" title="Reports error in XRC resources to the user.">wxXmlResourceHandler::ReportError()</a> to log errors.</p>
-<p>Default implementation uses <a class="el" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError()</a>.</p>
+<p>Default implementation uses <a class="el" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError()</a>.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">xrcFile</td><td>File the error occurred in or empty string if it couldn't be determined.  </td></tr>
@@ -689,7 +689,7 @@ Protected Member Functions</h2></td></tr>
 <p>Loads resources from XML files that match given filemask.  </p>
 <p>例: </p>
 <div class="fragment"><pre class="fragment">            <span class="keywordflow">if</span> (!<a class="code" href="classwx_xml_resource.html#ae9a487479dcd6204d12fbbf7be497561" title="Gets the global resources object or creates one if none exists.">wxXmlResource::Get</a>()-&gt;<a class="code" href="classwx_xml_resource.html#ac44a714ff459b7f3bd6c78d27482bb60" title="Loads resources from XML files that match given filemask.">Load</a>(<span class="stringliteral">"rc/*.xrc"</span>))
-                <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError</a>(<span class="stringliteral">"Couldn't load resources!"</span>);
+                <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<span class="stringliteral">"Couldn't load resources!"</span>);
 </pre></div><dl class="note"><dt><b>注:</b></dt><dd>If wxUSE_FILESYS is enabled, this method understands <a class="el" href="classwx_file_system.html" title="This class provides an interface for opening files on different file systems.">wxFileSystem</a> URLs (see <a class="el" href="classwx_file_system.html#a93f5d9fc8fe388213f8ed7dddc55db71" title="Works like wxFindFirstFile().">wxFileSystem::FindFirst()</a>).</dd>
 <dd>
 
@@ -1235,7 +1235,7 @@ If you are sure that the argument is name of single XRC file (rather than an URL
 <div class="memdoc">
 
 <p>Reports error in XRC resources to the user.  </p>
-<p>Any errors in XRC input files should be reported using this method (or its <a class="el" href="classwx_xml_resource_handler.html#a0b4c148209e4fcf1e6940895902ac5eb" title="Reports error in XRC resources to the user.">wxXmlResourceHandler::ReportError()</a> equivalent). Unlike <a class="el" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError()</a>, this method presents the error to the user in a more usable form. In particular, the output is compiler-like and contains information about the exact location of the error.</p>
+<p>Any errors in XRC input files should be reported using this method (or its <a class="el" href="classwx_xml_resource_handler.html#a0b4c148209e4fcf1e6940895902ac5eb" title="Reports error in XRC resources to the user.">wxXmlResourceHandler::ReportError()</a> equivalent). Unlike <a class="el" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError()</a>, this method presents the error to the user in a more usable form. In particular, the output is compiler-like and contains information about the exact location of the error.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>XML node the error occurred in or relates to. This can be <span class="literal">NULL</span>, but should be the most specific node possible, as its line number is what is reported to the user.  </td></tr>

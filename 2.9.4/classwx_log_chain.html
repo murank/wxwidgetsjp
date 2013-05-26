@@ -130,20 +130,20 @@ function toggleVisibility(linkObj) {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classwx_log_chain__inherit__graph.png" border="0" usemap="#wx_log_chain_inherit__map" alt="Inheritance graph"/></div>
 <map name="wx_log_chain_inherit__map" id="wx_log_chain_inherit__map">
-<area shape="rect" id="node5" href="classwx_log_interposer.html" title="A special version of wxLogChain which uses itself as the new log target." alt="" coords="5,166,123,197"/><area shape="rect" id="node9" href="classwx_log_interposer_temp.html" title="A special version of wxLogChain which uses itself as the new log target." alt="" coords="147,166,296,197"/><area shape="rect" id="node2" href="classwx_log.html" title="wxLog クラスは wxWidgets のロギング関数で使用されるログターゲットのインタフェースを定義するクラスです。 詳細は wxLog クラスの概要を参照してください、" alt="" coords="113,6,172,37"/><area shape="rect" id="node7" href="classwx_log_window.html" title="This class represents a background log window: to be precise, it collects all log messages in the log..." alt="" coords="12,246,116,277"/></map>
+<area shape="rect" id="node5" href="classwx_log_interposer.html" title="wxLogChain の特別版で、自分自身を新しいログターゲットとして使用します。" alt="" coords="5,166,123,197"/><area shape="rect" id="node9" href="classwx_log_interposer_temp.html" title="wxLogChain の特別版で、自分自身を新しいログターゲットとして使用します。" alt="" coords="147,166,296,197"/><area shape="rect" id="node2" href="classwx_log.html" title="wxLog クラスは wxWidgets のロギング関数で使用されるログターゲットのインタフェースを定義するクラスです。 詳細は wxLog クラスの概要を参照してください、" alt="" coords="113,6,172,37"/><area shape="rect" id="node7" href="classwx_log_window.html" title="このクラスはバックグラウンドで動作するログウィンドウを表します。正確に言うと、このログウィンドウではログフレーム内のすべてのメッセージを収集するとともに、このクラスオブジェクトの生成時に有効だったログターゲットへ収集したメッセージを引き渡します。" alt="" coords="12,246,116,277"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>This simple class allows you to chain log sinks, that is to install a new sink but keep passing log messages to the old one instead of replacing it completely as <a class="el" href="classwx_log.html#ac7ea85f71c8d3ecd4247f412be410505" title="Sets the specified log target as the active one.">wxLog::SetActiveTarget</a> does.  </p>
-<p>It is especially useful when you want to divert the logs somewhere (for example to a file or a log window) but also keep showing the error messages using the standard dialogs as <a class="el" href="classwx_log_gui.html" title="This is the default log target for the GUI wxWidgets applications.">wxLogGui</a> does by default.</p>
+<div class="textblock"><p>This simple class allows you to chain log sinks, that is to install a new sink but keep passing log messages to the old one instead of replacing it completely as <a class="el" href="classwx_log.html#ac7ea85f71c8d3ecd4247f412be410505" title="指定されたログターゲットを有効なログターゲットとして設定します。">wxLog::SetActiveTarget</a> does.  </p>
+<p>It is especially useful when you want to divert the logs somewhere (for example to a file or a log window) but also keep showing the error messages using the standard dialogs as <a class="el" href="classwx_log_gui.html" title="これは GUI wxWidgets アプリケーションのデフォルトのログターゲットです。">wxLogGui</a> does by default.</p>
 <p>Example of usage:</p>
-<div class="fragment"><pre class="fragment">    <a class="code" href="classwx_log_chain.html" title="This simple class allows you to chain log sinks, that is to install a new sink but keep passing log m...">wxLogChain</a> *logChain = <span class="keyword">new</span> <a class="code" href="classwx_log_chain.html#a0b13ad0a56791e4686cf13d759bcab23" title="Sets the specified logger (which may be NULL) as the default log target but the log messages are also...">wxLogChain</a>(<span class="keyword">new</span> <a class="code" href="classwx_log_stderr.html" title="This class can be used to redirect the log messages to a C file stream (not to be confused with C++ s...">wxLogStderr</a>);
+<div class="fragment"><pre class="fragment">    <a class="code" href="classwx_log_chain.html" title="この単純なクラスを用いることでログ出力先を連鎖させることが可能になります。つまり、wxLog::SetActiveTarget のようにログ出力先を置き換える代わりに、新しい出力先を設定しつつ、 古い出力先にもログメッセージを渡すことが可能になります。">wxLogChain</a> *logChain = <span class="keyword">new</span> <a class="code" href="classwx_log_chain.html#a0b13ad0a56791e4686cf13d759bcab23" title="Sets the specified logger (which may be NULL) as the default log target but the log messages are also...">wxLogChain</a>(<span class="keyword">new</span> <a class="code" href="classwx_log_stderr.html" title="このクラスはログメッセージを C のファイルストリーム (C++ のストリームと混同しないでください) へリダイレクトするのに使用できます。">wxLogStderr</a>);
 
     <span class="comment">// all the log messages are sent to stderr and also processed as usually</span>
     ...
 
     <span class="comment">// don't delete logChain directly as this would leave a dangling</span>
     <span class="comment">// pointer as active log target, use SetActiveTarget() instead</span>
-    <span class="keyword">delete</span> <a class="code" href="classwx_log.html#ac7ea85f71c8d3ecd4247f412be410505" title="Sets the specified log target as the active one.">wxLog::SetActiveTarget</a>(...something <span class="keywordflow">else</span> or NULL...);
+    <span class="keyword">delete</span> <a class="code" href="classwx_log.html#ac7ea85f71c8d3ecd4247f412be410505" title="指定されたログターゲットを有効なログターゲットとして設定します。">wxLog::SetActiveTarget</a>(...something <span class="keywordflow">else</span> or NULL...);
 </pre></div><h2></h2>
 <div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__logging.html">Logging</a></span></div> </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
@@ -154,7 +154,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_log_chain.html#a20f79de4c4e1e0e995b600d9dbcf3310">~wxLogChain</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destroys the previous log target.    <a href="#a20f79de4c4e1e0e995b600d9dbcf3310"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_log_chain.html#a29d346136ed27d0ed887a72057f96c15">DetachOldLog</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Detaches the old log target so it won't be destroyed when the <a class="el" href="classwx_log_chain.html" title="This simple class allows you to chain log sinks, that is to install a new sink but keep passing log m...">wxLogChain</a> object is destroyed.    <a href="#a29d346136ed27d0ed887a72057f96c15"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Detaches the old log target so it won't be destroyed when the <a class="el" href="classwx_log_chain.html" title="この単純なクラスを用いることでログ出力先を連鎖させることが可能になります。つまり、wxLog::SetActiveTarget のようにログ出力先を置き換える代わりに、新しい出力先を設定しつつ、 古い出力先にもログメッセージを渡すことが可能になります。">wxLogChain</a> object is destroyed.    <a href="#a29d346136ed27d0ed887a72057f96c15"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_log.html">wxLog</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_log_chain.html#a158915f59a400e201f8d56cd34623f71">GetOldLog</a> () const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the pointer to the previously active log target (which may be <span class="literal">NULL</span>).    <a href="#a158915f59a400e201f8d56cd34623f71"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_log_chain.html#a03ae2fb38e4e8ad315f301c1577f090a">IsPassingMessages</a> () const  </td></tr>
@@ -219,7 +219,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Detaches the old log target so it won't be destroyed when the <a class="el" href="classwx_log_chain.html" title="This simple class allows you to chain log sinks, that is to install a new sink but keep passing log m...">wxLogChain</a> object is destroyed.  </p>
+<p>Detaches the old log target so it won't be destroyed when the <a class="el" href="classwx_log_chain.html" title="この単純なクラスを用いることでログ出力先を連鎖させることが可能になります。つまり、wxLog::SetActiveTarget のようにログ出力先を置き換える代わりに、新しい出力先を設定しつつ、 古い出力先にもログメッセージを渡すことが可能になります。">wxLogChain</a> object is destroyed.  </p>
 
 </div>
 </div><!-- doxytag: member="wxLogChain::GetOldLog" ref="a158915f59a400e201f8d56cd34623f71" args="() const " -->
@@ -275,7 +275,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>By default, the log messages are passed to the previously active log target.  </p>
-<p>Calling this function with <span class="literal">false</span> parameter disables this behaviour (presumably temporarily, as you shouldn't use <a class="el" href="classwx_log_chain.html" title="This simple class allows you to chain log sinks, that is to install a new sink but keep passing log m...">wxLogChain</a> at all otherwise) and it can be reenabled by calling it again with <em>passMessages</em> set to <span class="literal">true</span>.  </p>
+<p>Calling this function with <span class="literal">false</span> parameter disables this behaviour (presumably temporarily, as you shouldn't use <a class="el" href="classwx_log_chain.html" title="この単純なクラスを用いることでログ出力先を連鎖させることが可能になります。つまり、wxLog::SetActiveTarget のようにログ出力先を置き換える代わりに、新しい出力先を設定しつつ、 古い出力先にもログメッセージを渡すことが可能になります。">wxLogChain</a> at all otherwise) and it can be reenabled by calling it again with <em>passMessages</em> set to <span class="literal">true</span>.  </p>
 
 </div>
 </div><!-- doxytag: member="wxLogChain::SetLog" ref="aecfefb1a2435a5372d4a317353b8a7e9" args="(wxLog *logger)" -->
@@ -295,7 +295,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Sets another log target to use (may be <span class="literal">NULL</span>).  </p>
-<p>The log target specified in the <a class="el" href="classwx_log_chain.html#a0b13ad0a56791e4686cf13d759bcab23" title="Sets the specified logger (which may be NULL) as the default log target but the log messages are also...">wxLogChain(wxLog*)</a> constructor or in a previous call to this function is deleted. This doesn't change the old log target value (the one the messages are forwarded to) which still remains the same as was active when <a class="el" href="classwx_log_chain.html" title="This simple class allows you to chain log sinks, that is to install a new sink but keep passing log m...">wxLogChain</a> object was created.  </p>
+<p>The log target specified in the <a class="el" href="classwx_log_chain.html#a0b13ad0a56791e4686cf13d759bcab23" title="Sets the specified logger (which may be NULL) as the default log target but the log messages are also...">wxLogChain(wxLog*)</a> constructor or in a previous call to this function is deleted. This doesn't change the old log target value (the one the messages are forwarded to) which still remains the same as was active when <a class="el" href="classwx_log_chain.html" title="この単純なクラスを用いることでログ出力先を連鎖させることが可能になります。つまり、wxLog::SetActiveTarget のようにログ出力先を置き換える代わりに、新しい出力先を設定しつつ、 古い出力先にもログメッセージを渡すことが可能になります。">wxLogChain</a> object was created.  </p>
 
 </div>
 </div>

@@ -125,11 +125,11 @@ function toggleVisibility(linkObj) {
 
 <p><code>#include &lt;/home/zeitlin/src/wx/github/interface/wx/log.h&gt;</code></p>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classwx_log_formatter.html" title="wxLogFormatter class is used to format the log messages.">wxLogFormatter</a> class is used to format the log messages.  </p>
+<div class="textblock"><p><a class="el" href="classwx_log_formatter.html" title="wxLogFormatter クラスはログメッセージをフォーマットするのに使用されます。">wxLogFormatter</a> class is used to format the log messages.  </p>
 <p>It implements the default formatting and can be derived from to create custom formatters.</p>
 <p>The default implementation formats the message into a string containing the time stamp, level-dependent prefix and the message itself.</p>
 <p>To change it, you can derive from it and override its <a class="el" href="classwx_log_formatter.html#aca9b346cd05f61cc09ee67fe5e0cf072" title="This function creates the full log message string.">Format()</a> method. For example, to include the thread id in the log messages you can use  </p>
-<div class="fragment"><pre class="fragment">        <span class="keyword">class </span>LogFormatterWithThread : <span class="keyword">public</span> <a class="code" href="classwx_log_formatter.html" title="wxLogFormatter class is used to format the log messages.">wxLogFormatter</a>
+<div class="fragment"><pre class="fragment">        <span class="keyword">class </span>LogFormatterWithThread : <span class="keyword">public</span> <a class="code" href="classwx_log_formatter.html" title="wxLogFormatter クラスはログメッセージをフォーマットするのに使用されます。">wxLogFormatter</a>
         {
             <span class="keyword">virtual</span> <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> <a class="code" href="classwx_log_formatter.html#aca9b346cd05f61cc09ee67fe5e0cf072" title="This function creates the full log message string.">Format</a>(<a class="code" href="interface_2wx_2log_8h.html#ae0480cde4ec31e0f2e502e6e3082e74c" title="The type used to specify a log level.">wxLogLevel</a> level,
                                     <span class="keyword">const</span> <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>&amp; msg,
@@ -140,7 +140,7 @@ function toggleVisibility(linkObj) {
             }
         };
 </pre></div><p>  And then associate it with <a class="el" href="classwx_log.html" title="wxLog クラスは wxWidgets のロギング関数で使用されるログターゲットのインタフェースを定義するクラスです。 詳細は wxLog クラスの概要を参照してください、">wxLog</a> instance using its SetFormatter(). Then, if you call:</p>
-<div class="fragment"><pre class="fragment">        <a class="code" href="group__group__funcmacro__log.html#ga249358701f3c2d410088ddf7a61d8564" title="For all normal, informational messages.">wxLogMessage</a>(<a class="code" href="group__group__funcmacro__string.html#ga8a02b8875a521df57263a9e6f090f2d0" title="翻訳対象となるすべてのリテラル文字列に対して使用するマクロです。">_</a>(<span class="stringliteral">"*** Application started ***"</span>));
+<div class="fragment"><pre class="fragment">        <a class="code" href="group__group__funcmacro__log.html#ga249358701f3c2d410088ddf7a61d8564" title="すべての通常 (通知) メッセージ用。">wxLogMessage</a>(<a class="code" href="group__group__funcmacro__string.html#ga8a02b8875a521df57263a9e6f090f2d0" title="翻訳対象となるすべてのリテラル文字列に対して使用するマクロです。">_</a>(<span class="stringliteral">"*** Application started ***"</span>));
 </pre></div><p>the log output could be something like:</p>
 <div class="fragment"><pre class="fragment">
         [7872] d:\testApp\src\testApp.cpp(85) : *** Application started ***

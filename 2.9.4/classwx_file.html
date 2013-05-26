@@ -182,7 +182,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__group__funcmacro__file.html#ga69d831b3febabc149c67b716c8e22de5">wxFileOffset</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_file.html#afc7eaf653255bf2db25f20626d3eedb1">Tell</a> () const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the current position or <a class="el" href="group__group__funcmacro__file.html#gab184c7199d93541d22ae42e515cbbcb7" title="A special return value of many wxWidgets classes to indicate that an invalid offset was given...">wxInvalidOffset</a> if file is not opened or if another error occurred.    <a href="#afc7eaf653255bf2db25f20626d3eedb1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_file.html#a0974a92a5c8793629fd9ee0f1735657c">Write</a> (const void *buffer, size_t count)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Write data to the file (descriptor).    <a href="#a0974a92a5c8793629fd9ee0f1735657c"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ファイル (ディスクリプタ) へデータを書き込みます。  <a href="#a0974a92a5c8793629fd9ee0f1735657c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_file.html#aac7158f2a854d1bac2a454e2851849b1">Write</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;s, const <a class="el" href="classwx_m_b_conv.html">wxMBConv</a> &amp;conv=wxConvUTF8)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Writes the contents of the string to the file, returns <span class="literal">true</span> on success.    <a href="#aac7158f2a854d1bac2a454e2851849b1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_file.html#a785378439ec028b40e6b5708e4b61c10">fd</a> () const  </td></tr>
@@ -851,7 +851,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Writes the contents of the string to the file, returns <span class="literal">true</span> on success.  </p>
 <p>The second argument is only meaningful in Unicode build of wxWidgets when <em>conv</em> is used to convert <em>s</em> to a multibyte representation.</p>
-<p>Note that this method only works with <code>NUL-terminated</code> strings, if you want to write data with embedded <code>NULs</code> to the file you should use the other <a class="el" href="classwx_file.html#a0974a92a5c8793629fd9ee0f1735657c" title="Write data to the file (descriptor).">Write()</a> overload.  </p>
+<p>Note that this method only works with <code>NUL-terminated</code> strings, if you want to write data with embedded <code>NULs</code> to the file you should use the other <a class="el" href="classwx_file.html#a0974a92a5c8793629fd9ee0f1735657c" title="ファイル (ディスクリプタ) へデータを書き込みます。">Write()</a> overload.  </p>
 
 </div>
 </div><!-- doxytag: member="wxFile::Write" ref="a0974a92a5c8793629fd9ee0f1735657c" args="(const void *buffer, size_t count)" -->
@@ -880,7 +880,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Write data to the file (descriptor).  </p>
+<p>ファイル (ディスクリプタ) へデータを書き込みます。 </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>Buffer from which to read data  </td></tr>

@@ -202,7 +202,7 @@ Types of wxThreads</h2>
 
         <span class="keywordflow">if</span> ( m_pThread-&gt;Create() != <a class="code" href="interface_2wx_2thread_8h.html#a9e4ba0577f752fee0ba2133035f75ac2ad1525fe128b4989cb43a7e8112ac1b13" title="No error.">wxTHREAD_NO_ERROR</a> )
         {
-            <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError</a>(<span class="stringliteral">"Can't create the thread!"</span>);
+            <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<span class="stringliteral">"Can't create the thread!"</span>);
             <span class="keyword">delete</span> m_pThread;
             m_pThread = NULL;
         }
@@ -210,7 +210,7 @@ Types of wxThreads</h2>
         {
             <span class="keywordflow">if</span> (m_pThread-&gt;Run() != <a class="code" href="interface_2wx_2thread_8h.html#a9e4ba0577f752fee0ba2133035f75ac2ad1525fe128b4989cb43a7e8112ac1b13" title="No error.">wxTHREAD_NO_ERROR</a> )
             {
-                <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError</a>(<span class="stringliteral">"Can't create the thread!"</span>);
+                <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<span class="stringliteral">"Can't create the thread!"</span>);
                 <span class="keyword">delete</span> m_pThread;
                 m_pThread = NULL;
             }
@@ -273,7 +273,7 @@ Types of wxThreads</h2>
             <span class="comment">// invalid the m_pThread pointer</span>
 
             <span class="keywordflow">if</span> (m_pThread-&gt;Pause() != <a class="code" href="interface_2wx_2thread_8h.html#a9e4ba0577f752fee0ba2133035f75ac2ad1525fe128b4989cb43a7e8112ac1b13" title="No error.">wxTHREAD_NO_ERROR</a> )
-                <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError</a>(<span class="stringliteral">"Can't pause the thread!"</span>);
+                <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<span class="stringliteral">"Can't pause the thread!"</span>);
         }
     }
 
@@ -287,7 +287,7 @@ Types of wxThreads</h2>
                 <a class="code" href="classwx_message_output_debug.html" title="Output messages to the system debug output channel.">wxMessageOutputDebug</a>().<a class="code" href="classwx_message_output.html#a233e76ce6c1b569f16b42b49151ab979" title="Output a message.">Printf</a>(<span class="stringliteral">"MYFRAME: deleting thread"</span>);
 
                 <span class="keywordflow">if</span> (m_pThread-&gt;Delete() != <a class="code" href="interface_2wx_2thread_8h.html#a9e4ba0577f752fee0ba2133035f75ac2ad1525fe128b4989cb43a7e8112ac1b13" title="No error.">wxTHREAD_NO_ERROR</a> )
-                    <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="The functions to use for error messages, i.e.">wxLogError</a>(<span class="stringliteral">"Can't delete the thread!"</span>);
+                    <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<span class="stringliteral">"Can't delete the thread!"</span>);
             }
         }       <span class="comment">// exit from the critical section to give the thread</span>
                 <span class="comment">// the possibility to enter its destructor</span>

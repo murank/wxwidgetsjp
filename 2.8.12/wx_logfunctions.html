@@ -100,10 +100,7 @@ wxWidgets errors. See also <A HREF="wx_logfunctions.html#wxerror">wxError</A>.<P
 <P>
 <B>void</B> <B>wxLogError</B>(<B>const char *</B><I>formatString</I>, <B>...</B><I></I>)<P>
 <B>void</B> <B>wxVLogError</B>(<B>const char *</B><I>formatString</I>, <B>va_list </B><I>argPtr</I>)<P>
-
-The functions to use for error messages, i.e. the messages that must be shown
-to the user. The default processing is to pop up a message box to inform the
-user about it.<P>
+The functions to use for error messages, i.e. the messages that must be shown to the user. デフォルトの処理ではメッセージボックスをポップアップして通知します。<P>
 
 
 <HR>
@@ -135,9 +132,7 @@ the program work.<P>
 <P>
 <B>void</B> <B>wxLogMessage</B>(<B>const char *</B><I>formatString</I>, <B>...</B><I></I>)<P>
 <B>void</B> <B>wxVLogMessage</B>(<B>const char *</B><I>formatString</I>, <B>va_list </B><I>argPtr</I>)<P>
-
-For all normal, informational messages. They also appear in a message box by
-default (but it can be changed).<P>
+すべての通常 (通知) メッセージ用。They also appear in a message box by default (but it can be changed).<P>
 
 <HR>
 <A NAME="wxlogverbose"></A>
@@ -145,10 +140,7 @@ default (but it can be changed).<P>
 <P>
 <B>void</B> <B>wxLogVerbose</B>(<B>const char *</B><I>formatString</I>, <B>...</B><I></I>)<P>
 <B>void</B> <B>wxVLogVerbose</B>(<B>const char *</B><I>formatString</I>, <B>va_list </B><I>argPtr</I>)<P>
-
-For verbose output. Normally, it is suppressed, but
-might be activated if the user wishes to know more details about the program
-progress (another, but possibly confusing name for the same function is <B>wxLogInfo</B>).<P>
+詳細な出力用。Normally, it is suppressed, but might be activated if the user wishes to know more details about the program progress (another, but possibly confusing name for the same function is <B>wxLogInfo</B>).<P>
 
 
 <HR>
@@ -173,12 +165,7 @@ If the target frame doesn't have a statusbar, the message will be lost.<P>
 <P>
 <B>void</B> <B>wxLogSysError</B>(<B>const char *</B><I>formatString</I>, <B>...</B><I></I>)<P>
 <B>void</B> <B>wxVLogSysError</B>(<B>const char *</B><I>formatString</I>, <B>va_list </B><I>argPtr</I>)<P>
-
-Mostly used by wxWidgets itself, but might be handy for logging errors after
-system call (API function) failure. It logs the specified message text as well
-as the last system error code (<I>errno</I> or <I>::GetLastError()</I> depending
-on the platform) and the corresponding error message. The second form
-of this function takes the error code explicitly as the first argument.<P>
+Mostly used by wxWidgets itself, but might be handy for logging errors after system call (API function) failure. It logs the specified message text as well as the last system error code (<I>errno</I> or <I>::GetLastError()</I> depending on the platform) and the corresponding error message. この関数の 2 番目の形式では第一引数として明示的にエラーコードを指定できます。<P>
 <B><FONT COLOR="#FF0000">参照</FONT></B><P>
 <A HREF="wx_logfunctions.html#wxsyserrorcode">wxSysErrorCode</A>,
 <A HREF="wx_logfunctions.html#wxsyserrormsg">wxSysErrorMsg</A><P>
@@ -190,10 +177,7 @@ of this function takes the error code explicitly as the first argument.<P>
 <P>
 <B>void</B> <B>wxLogDebug</B>(<B>const char *</B><I>formatString</I>, <B>...</B><I></I>)<P>
 <B>void</B> <B>wxVLogDebug</B>(<B>const char *</B><I>formatString</I>, <B>va_list </B><I>argPtr</I>)<P>
-
-The right functions for debug output. They only do something in debug
-mode (when the preprocessor symbol __WXDEBUG__ is defined) and expand to
-nothing in release mode (otherwise).<P>
+デバッグ出力に適切な関数です。They only do something in debug mode (when the preprocessor symbol __WXDEBUG__ is defined) and expand to nothing in release mode (otherwise).<P>
 
 
 <HR>
