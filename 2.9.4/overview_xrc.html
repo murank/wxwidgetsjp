@@ -212,7 +212,7 @@ Getting Started with XRC</h2>
 {
     <a class="code" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> dlg;
     <span class="keywordflow">if</span> (<a class="code" href="classwx_xml_resource.html#ae9a487479dcd6204d12fbbf7be497561" title="Gets the global resources object or creates one if none exists.">wxXmlResource::Get</a>()-&gt;LoadDialog(&amp;dlg, NULL, <span class="stringliteral">"SimpleDialog"</span>))
-        dlg.<a class="code" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="Shows an application-modal dialog.">ShowModal</a>();
+        dlg.<a class="code" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">ShowModal</a>();
 }
 </pre></div><p>See how simple the code is. All the instantiation is done invisibly by the XRC system.</p>
 <p>Though you'll most often use <a class="el" href="classwx_xml_resource.html#aa9f2603cb55bfb2c696972be9875e229" title="Loads a dialog.">wxXmlResource::LoadDialog</a>, there are also equivalents that load a frame, a menu etc; and the generic <a class="el" href="classwx_xml_resource.html#a92fb76bed2c93c283c940c0a02e0a543" title="Load an object from the resource specifying both the resource name and the class name.">wxXmlResource::LoadObject</a>. See <a class="el" href="classwx_xml_resource.html" title="This is the main class for interacting with the XML-based resource system.">wxXmlResource</a> for more details.</p>
@@ -228,7 +228,7 @@ Getting Started with XRC</h2>
     <span class="keywordflow">if</span> (pText)
         pText-&gt;<a class="code" href="classwx_text_entry.html#a8c52ab71f51c8f80556c2c8e763cbca1" title="テキストコントロールの新しい値を設定します。">ChangeValue</a>(<span class="stringliteral">"This is a simple dialog"</span>);
 
-    dlg.<a class="code" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="Shows an application-modal dialog.">ShowModal</a>();
+    dlg.<a class="code" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">ShowModal</a>();
 }
 </pre></div><p>XRCCTRL takes a reference to the parent container and uses <a class="el" href="classwx_window.html#a3468ef382c612b5f8e91c7c18d00a69f" title="Find a child of this window, by id.">wxWindow::FindWindow</a> to search inside it for a <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> with the supplied name (here "text"). It returns a pointer to that control, cast to the type in the third parameter; so a similar effect could be obtained by writing:</p>
 <div class="fragment"><pre class="fragment">pText = (<a class="code" href="classwx_text_ctrl.html" title="テキストの表示と編集が可能なテキストコントロール。">wxTextCtrl</a>*)(dlg.<a class="code" href="classwx_window.html#adbe4eea02f615313c12a2c00557a44c3" title="Find a window by its name (as given in a window constructor or Create() function call).">FindWindowByName</a>(<span class="stringliteral">"text"</span>));
@@ -246,7 +246,7 @@ Getting Started with XRC</h2>
     XRCCTRL(dlg, <span class="stringliteral">"clickme_btn"</span>, <a class="code" href="classwx_button.html" title="ボタンはテキストを含んだコントロールであり、もっとも一般的な GUI 要素のひとつです。">wxButton</a>)-&gt;Bind(<a class="code" href="group__group__funcmacro__events.html#gad4219768fc12379d138fc7dbba84118a">wxEVT_COMMAND_BUTTON_CLICKED</a>,
         wxCommandEventHandler(MyClass::OnClickme), <span class="keyword">this</span>, XRCID(<span class="stringliteral">"clickme_btn"</span>));
 
-    dlg.<a class="code" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="Shows an application-modal dialog.">ShowModal</a>();
+    dlg.<a class="code" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">ShowModal</a>();
 }
 </pre></div><p>A few points to note:  </p>
 <ul>

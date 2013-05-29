@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>wxWidgets: wxWidgets: wxDialog Overview</title>
+<title>wxWidgets: wxWidgets: wxDialog の概要</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="custom_stylesheet.css" rel="stylesheet" type="text/css" />
@@ -114,66 +114,62 @@ function toggleVisibility(linkObj) {
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title"><a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> Overview  </div>  </div>
+<div class="title"><a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> の概要 </div>  </div>
 </div>
 <div class="contents">
-<div class="textblock"><p>Classes: <a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a>, <a class="el" href="classwx_dialog_layout_adapter.html" title="This abstract class is the base for classes that help wxWidgets perform run-time layout adaptation of...">wxDialogLayoutAdapter</a></p>
-<p>A dialog box is similar to a panel, in that it is a window which can be used for placing controls, with the following exceptions:</p>
+<div class="textblock"><p>クラス: <a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a>, <a class="el" href="classwx_dialog_layout_adapter.html" title="この抽象クラスは wxWidgets が実行時にダイアログのレイアウト適応を行なうのを支援するクラスの基底です。">wxDialogLayoutAdapter</a></p>
+<p>ダイアログボックスはパネルに似ており、コントロールを配置するために使用するウィンドウですが、以下の例外があります:</p>
 <ul>
-<li>A surrounding frame is implicitly created.  </li>
-<li>Extra functionality is automatically given to the dialog box, such as tabbing between items (currently Windows only).  </li>
-<li>If the dialog box is <em>modal</em>, the calling program is blocked until the dialog box is dismissed.</li>
+<li>周囲を囲むフレームが暗黙的に作成される。 </li>
+<li>コントロール間のタブ遷移など、自動的に追加の機能が付与される。(Windows のみ) </li>
+<li>ダイアログボックスが <em>モーダル</em> の場合、ダイアログボックスが閉じられるまでプログラムがブロックする。</li>
 </ul>
-<p>For a set of dialog convenience functions, including file selection, see <a class="el" href="group__group__funcmacro__dialog.html">Dialogs</a>.</p>
-<p>See also <a class="el" href="classwx_top_level_window.html" title="wxTopLevelWindow is a common base class for wxDialog and wxFrame.">wxTopLevelWindow</a> and <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> for inherited member functions. Validation of data in controls is covered in <a class="el" href="overview_validator.html">wxValidator Overview</a>.</p>
+<p>ファイルの選択を含む、ダイアログの便利関数は <a class="el" href="group__group__funcmacro__dialog.html">ダイアログ</a> を参照してください。</p>
+<p>また、wxDialog が継承している関数については <a class="el" href="classwx_top_level_window.html" title="wxTopLevelWindow は wxDialog と wxFrame の共通の基底クラスです。">wxTopLevelWindow</a> と <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> を参照してください。コントロールのバリデーションは <a class="el" href="overview_validator.html">wxValidator の概要</a> で触れています。</p>
 <ul>
-<li><a class="el" href="overview_dialog.html#overview_dialog_autoscrolling">Automatic scrolling dialogs</a></li>
+<li><a class="el" href="overview_dialog.html#overview_dialog_autoscrolling">ダイアログの自動スクロール</a></li>
 </ul>
 <hr/>
 <h2><a class="anchor" id="overview_dialog_autoscrolling"></a>
-
-Automatic scrolling dialogs</h2>
-<p>As an ever greater variety of mobile hardware comes to market, it becomes more imperative for wxWidgets applications to adapt to these platforms without putting too much burden on the programmer. One area where wxWidgets can help is in adapting dialogs for the lower resolution screens that inevitably accompany a smaller form factor. <a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> therefore supplies a global <a class="el" href="classwx_dialog_layout_adapter.html" title="This abstract class is the base for classes that help wxWidgets perform run-time layout adaptation of...">wxDialogLayoutAdapter</a> class that implements automatic scrolling adaptation for most sizer-based custom dialogs.</p>
-<p>Many applications should therefore be able to adapt to small displays with little or no work, as far as dialogs are concerned. By default this adaptation is off. To switch scrolling adaptation on globally in your application, call the static function <a class="el" href="classwx_dialog.html#a016cfd686f75bcfc5f7b6f127be74c7c" title="A static function enabling or disabling layout adaptation for all dialogs.">wxDialog::EnableLayoutAdaptation</a> passing <span class="literal">true</span>. You can also adjust adaptation on a per-dialog basis by calling <a class="el" href="classwx_dialog.html#a9f949c545ca70571cec8cd2fcbfc0991" title="Sets the adaptation mode, overriding the global adaptation flag.">wxDialog::SetLayoutAdaptationMode</a> with one of <code>wxDIALOG_ADAPTATION_MODE_DEFAULT</code> (use the global setting), <code>wxDIALOG_ADAPTATION_MODE_ENABLED</code> or <code>wxDIALOG_ADAPTATION_MODE_DISABLED</code>.</p>
-<p>The last two modes override the global adaptation setting. With adaptation enabled, if the display size is too small for the dialog, wxWidgets (or rather the standard adapter class wxStandardDialogLayoutAdapter) will make part of the dialog scrolling, leaving standard buttons in a non-scrolling part at the bottom of the dialog. This is done as follows, in <a class="el" href="classwx_dialog_layout_adapter.html#adb59c3238b594b88faa4aab892b9bdd8" title="Override this to perform layout adaptation, such as making parts of the dialog scroll and resizing th...">wxDialogLayoutAdapter::DoLayoutAdaptation</a> called from within <a class="el" href="classwx_dialog.html#ae8e5fa98d473b812b8d1c2f163b65c67" title="Hides or shows the dialog.">wxDialog::Show</a> or <a class="el" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="Shows an application-modal dialog.">wxDialog::ShowModal</a>:</p>
+ダイアログの自動スクロール</h2>
+<p>様々なモバイル端末が市場に出回るにつれ、プログラマに過度の負担をかけることなく、アプリケーションをそれらのプラットフォームへ適応させることが wxWidgets に求められるようになってきました。wxWidgets が支援できることのひとつにダイアログを (より小さいフォームファクタに付きものな) より低解像度の画面に適応させることが挙げられます。そのために <a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> ではグローバルな <a class="el" href="classwx_dialog_layout_adapter.html" title="この抽象クラスは wxWidgets が実行時にダイアログのレイアウト適応を行なうのを支援するクラスの基底です。">wxDialogLayoutAdapter</a> クラスを提供しており、このクラスではサイザーを利用した大半のダイアログに対して自動スクロール機能を適用させることができます。</p>
+<p>したがって、ダイアログのことを気にかけている限り、少し、もしくはまったく手を加えることなく、多くのアプリケーションを小さな画面に適応させることができるはずです。デフォルトではこの適応は無効になっています。スクロールに関する適応をアプリケーション内でグローバルに切り替える場合、静的関数 <a class="el" href="classwx_dialog.html#a016cfd686f75bcfc5f7b6f127be74c7c" title="すべてのダイアログに対してレイアウトの適応を有効化・無効化する静的関数です。">wxDialog::EnableLayoutAdaptation</a> に <span class="literal">true</span> を渡します。また、ダイアログごとに適応を行なうかどうかを指定する場合は <a class="el" href="classwx_dialog.html#a9f949c545ca70571cec8cd2fcbfc0991" title="適応モードを設定し、グルーバルな適応フラグを上書きします。">wxDialog::SetLayoutAdaptationMode</a> に <code>wxDIALOG_ADAPTATION_MODE_DEFAULT</code> (グローバルな設定を使用)、 <code>wxDIALOG_ADAPTATION_MODE_ENABLED</code>、 <code>wxDIALOG_ADAPTATION_MODE_DISABLED</code> のいずれかを指定します。</p>
+<p>最後のふたつのモードは適応に関するグローバルな設定を上書きします。適応を有効にすると、ダイアログを表示するのに画面サイズが小さすぎる場合に wxWidgets (と言うより標準の適応クラスである wxStandardDialogLayoutAdapter) が標準ボタンをダイアログ下部の非スクロール領域に残してダイアログの一部をスクロールするようにします。<a class="el" href="classwx_dialog.html#ae8e5fa98d473b812b8d1c2f163b65c67" title="ダイアログの表示・非表示を切り替えます。">wxDialog::Show</a> や <a class="el" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">wxDialog::ShowModal</a>から呼ばれた <a class="el" href="classwx_dialog_layout_adapter.html#adb59c3238b594b88faa4aab892b9bdd8" title="ダイアログの一部をスクロールしたり、画面に合わせてダイアログをリサイズするなど、レイアウトの適応を行なう場合にこの関数をオーバーライドしてください。">wxDialogLayoutAdapter::DoLayoutAdaptation</a> の中では次のように処理が行われます:</p>
 <ul>
-<li>If <a class="el" href="classwx_dialog.html#aee73457b69fb24e29a9039b6506eb92e" title="Override this to return a window containing the main content of the dialog.">wxDialog::GetContentWindow</a> returns a window derived from <a class="el" href="classwx_book_ctrl_base.html" title="A book control is a convenient way of displaying multiple pages of information, displayed one page at...">wxBookCtrlBase</a>, the pages are made scrollable and no other adaptation is done.  </li>
-<li>wxWidgets looks for a <a class="el" href="classwx_std_dialog_button_sizer.html" title="This class creates button layouts which conform to the standard button spacing and ordering defined b...">wxStdDialogButtonSizer</a> and uses it for the non-scrolling part.  </li>
-<li>If that search failed, wxWidgets looks for a horizontal <a class="el" href="classwx_box_sizer.html" title="ボックスサイザーの基本的な考え方は、ほとんどの場合ウィンドウは とても単純で基本的な配置、よくあるのは行や列、またはその階層内にレイアウトされるという考えです。">wxBoxSizer</a> with one or more standard buttons, with identifiers such as <code>wxID_OK</code> and <code>wxID_CANCEL</code>.  </li>
-<li>If that search failed too, wxWidgets finds 'loose' standard buttons (in any kind of sizer) and adds them to a <a class="el" href="classwx_std_dialog_button_sizer.html" title="This class creates button layouts which conform to the standard button spacing and ordering defined b...">wxStdDialogButtonSizer</a>. If no standard buttons were found, the whole dialog content will scroll.  </li>
-<li>All the children apart from standard buttons are reparented onto a new <a class="el" href="group__group__class__miscwnd.html#ga695bec5996cd4d5512d1a01cfdcf96a5" title="Scrolled window derived from wxPanel.">wxScrolledWindow</a> object, using the old top-level sizer for the scrolled window and creating a new top-level sizer to lay out the scrolled window and standard button sizer.</li>
+<li><a class="el" href="classwx_dialog.html#aee73457b69fb24e29a9039b6506eb92e" title="ダイアログのメインコンテンツを含むウィンドウを返却するためにこの関数をオーバーライドしてください。">wxDialog::GetContentWindow</a> が <a class="el" href="classwx_book_ctrl_base.html" title="ブックコントロールは複数のページを持つ情報を表示する際に、一度にひとつのページを表示する便利な手段です。">wxBookCtrlBase</a> を継承したウィンドウを返却する場合、ページがスクロール可能になるだけで、それ以外の適応は行われません。 </li>
+<li>wxWidgets は <a class="el" href="classwx_std_dialog_button_sizer.html" title="このクラスはプラットフォームやツールキットのユーザガイドラインで定義されている標準ボタンの余白と順番に従ったレイアウトを作成します。(ただし、そのようなガイドラインが存在する場合に限ります)">wxStdDialogButtonSizer</a> を探してその部分を非スクロール領域として使用します。 </li>
+<li>もしも見つからなかった場合、<code>wxID_OK</code> や <code>wxID_CANCEL</code> などの識別子を持つ、ひとつ以上の標準ボタンを含む水平方向の <a class="el" href="classwx_box_sizer.html" title="ボックスサイザーの基本的な考え方は、ほとんどの場合ウィンドウは とても単純で基本的な配置、よくあるのは行や列、またはその階層内にレイアウトされるという考えです。">wxBoxSizer</a> を探します。 </li>
+<li>これも見つからなかった場合、wxWidgets は (任意の種類のサイザーに含まれる) 'ゆるい' 標準ボタンを探し、 <a class="el" href="classwx_std_dialog_button_sizer.html" title="このクラスはプラットフォームやツールキットのユーザガイドラインで定義されている標準ボタンの余白と順番に従ったレイアウトを作成します。(ただし、そのようなガイドラインが存在する場合に限ります)">wxStdDialogButtonSizer</a> に追加します。標準ボタンが見つからなかった場合、ダイアログ全体がスクロールされます。 </li>
+<li>標準ボタン以外のすべての子コントロールの親は新しい <a class="el" href="group__group__class__miscwnd.html#ga695bec5996cd4d5512d1a01cfdcf96a5" title="wxPanel を継承したスクロール可能なウィンドウ。">wxScrolledWindow</a> オブジェクトに変更されます。このとき、以前のトップレベルサイザーはスクロール可能なウィンドウに使用され、スクロール可能なウィンドウと標準ボタンサイザーを配置するために新しいトップレベルサイザーが作成されます。</li>
 </ul>
 <h3><a class="anchor" id="overview_dialog_autoscrolling_custom"></a>
-
-Customising scrolling adaptation</h3>
-<p>In addition to switching adaptation on and off globally and per dialog, you can choose how aggressively wxWidgets will search for standard buttons by setting <a class="el" href="classwx_dialog.html#a9eaef1625f225bc25f8c92449d123a67" title="Sets the aggressiveness of search for buttons and sizers to be in the non-scrolling part of a layout-...">wxDialog::SetLayoutAdaptationLevel</a>. By default, all the steps described above will be performed but by setting the level to 1, for example, you can choose to only look for <a class="el" href="classwx_std_dialog_button_sizer.html" title="This class creates button layouts which conform to the standard button spacing and ordering defined b...">wxStdDialogButtonSizer</a>.</p>
-<p>You can use <a class="el" href="classwx_dialog.html#af3a75b9d24abe5c79d1bb5397c67b108" title="Adds an identifier to be regarded as a main button for the non-scrolling area of a dialog...">wxDialog::AddMainButtonId</a> to add identifiers for buttons that should also be treated as standard buttons for the non-scrolling area.</p>
-<p>You can derive your own class from <a class="el" href="classwx_dialog_layout_adapter.html" title="This abstract class is the base for classes that help wxWidgets perform run-time layout adaptation of...">wxDialogLayoutAdapter</a> or wxStandardDialogLayoutAdapter and call <a class="el" href="classwx_dialog.html#a371e3d760ea9beb49b74c5ffee52a0ee" title="A static function for setting the current layout adapter object, returning the old adapter...">wxDialog::SetLayoutAdapter</a>, deleting the old object that this function returns. Override the functions CanDoLayoutAdaptation and DoLayoutAdaptation to test for adaptation applicability and perform the adaptation.</p>
-<p>You can also override <a class="el" href="classwx_dialog.html#a233dd280efa8ee93c61792e439904731" title="Returns true if this dialog can and should perform layout adaptation using DoLayoutAdaptation(), usually if the dialog is too large to fit on the display.">wxDialog::CanDoLayoutAdaptation</a> and <a class="el" href="classwx_dialog.html#a919613599a9e919913146e21d09b44c0" title="Performs layout adaptation, usually if the dialog is too large to fit on the display.">wxDialog::DoLayoutAdaptation</a> in a class derived from <a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a>.</p>
+スクロールの適応のカスタマイズ</h3>
+<p>グローバル、またはダイアログごとの適応の切り替えに加えて、<a class="el" href="classwx_dialog.html#a9eaef1625f225bc25f8c92449d123a67" title="レイアウトの適応を行なうダイアログで非スクロール領域内に配置するボタンやサイザーを探す際の積極性を設定します。">wxDialog::SetLayoutAdaptationLevel</a> を設定することでどれだけ積極的に標準ボタンを探しに行くかを選択することができます。デフォルトでは上で述べた処理がすべて行われますが、レベルを 1 に設定することで <a class="el" href="classwx_std_dialog_button_sizer.html" title="このクラスはプラットフォームやツールキットのユーザガイドラインで定義されている標準ボタンの余白と順番に従ったレイアウトを作成します。(ただし、そのようなガイドラインが存在する場合に限ります)">wxStdDialogButtonSizer</a> のみを探すようにできます。</p>
+<p><a class="el" href="classwx_dialog.html#af3a75b9d24abe5c79d1bb5397c67b108" title="ダイアログの非スクロール領域にするメインボタンとして扱う識別子を追加します。">wxDialog::AddMainButtonId</a> を使用することで非スクロール領域にする標準ボタンとして扱う識別子を追加することができます。</p>
+<p><a class="el" href="classwx_dialog_layout_adapter.html" title="この抽象クラスは wxWidgets が実行時にダイアログのレイアウト適応を行なうのを支援するクラスの基底です。">wxDialogLayoutAdapter</a> か wxStandardDialogLayoutAdapter を継承した独自のクラスを作成することができます。その場合、<a class="el" href="classwx_dialog.html#a371e3d760ea9beb49b74c5ffee52a0ee" title="現在のレイアウトアダプタオブジェクトを設定し、古いアダプタを返却する静的関数。">wxDialog::SetLayoutAdapter</a> を呼び出し、返却されてきた古いオブジェクトは削除します。適応の可否の確認や適応を行なうには CanDoLayoutAdaptation と DoLayoutAdaptation をオーバーライドします。</p>
+<p>また、<a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> を継承したクラスで <a class="el" href="classwx_dialog.html#a233dd280efa8ee93c61792e439904731" title="このダイアログが DoLayoutAdaptation() を用いてレイアウトの適応を行なうことができ、また、行なう必要がある場合に true を返却します。これは通常、画面サイズに対してダイアログが大きすぎる場合に行われます。">wxDialog::CanDoLayoutAdaptation</a> と <a class="el" href="classwx_dialog.html#a919613599a9e919913146e21d09b44c0" title="レイアウトの適応を行います。これは通常、画面サイズに対してダイアログが大きすぎる場合に行われます。">wxDialog::DoLayoutAdaptation</a> をオーバライドすることも可能です。</p>
 <h3><a class="anchor" id="overview_dialog_autoscrolling_fail"></a>
-
-Situations where automatic scrolling adaptation may fail</h3>
-<p>Because adaptation rearranges your sizer and window hierarchy, it is not fool-proof, and may fail in the following situations:</p>
+自動スクロールの適応に失敗する状況</h3>
+<p>適応はサイザーとウィンドウの階層構造を変更するため、これは確実に行えるものではなく、以下のような状況では適応に失敗します:</p>
 <ul>
-<li>The dialog doesn't use sizers.  </li>
-<li>The dialog implementation makes assumptions about the window hierarchy, for example getting the parent of a control and casting to the dialog class.  </li>
-<li>The dialog does custom painting and/or event handling not handled by the scrolled window. If this problem can be solved globally, you can derive a new adapter class from wxStandardDialogLayoutAdapter and override its CreateScrolledWindow function to return an instance of your own class.  </li>
-<li>The dialog has unusual layout, for example a vertical sizer containing a mixture of standard buttons and other controls.  </li>
-<li>The dialog makes assumptions about the sizer hierarchy, for example to show or hide children of the top-level sizer. However, the original sizer hierarchy will still hold until Show or ShowModal is called.</li>
+<li>ダイアログでサイザーを使用していない。 </li>
+<li>コントロールの親をダイアログにキャストするなど、ダイアログの実装でウィンドウの階層構造について仮定を立てている。 </li>
+<li>ダイアログでカスタムドローを行なっている。スクロール可能なウィンドウではイベント処理が行われません。アプリケーション全体でグローバルにこの問題を解決できるようであれば wxStandardDialogLayoutAdapter を継承した新しいアダプタクラスを作成し、作成したクラスのインスタンスを返却するように CreateScrolledWindow 関数をオーバーライドしてください。 </li>
+<li>標準ボタンと他のコントロールが混在する垂直方向のサイザーなど、通常とは異なるレイアウトを持っている。 </li>
+<li>トップレベルサイザーの子コントロールの表示・非表示を切り替えるなど、サイザーの階層構造について仮定を立てている。ただし、Show または ShowModal が呼ばれるまではサイザーの元の階層構造が保持されています。</li>
 </ul>
-<p>You can help make sure that your dialogs will continue to function after adaptation by:</p>
+<p>次のようにすることで、適応の実施後もダイアログが引き続き正常に動作するようにできます:</p>
 <ul>
-<li>avoiding the above situations and assumptions;  </li>
-<li>using <a class="el" href="classwx_std_dialog_button_sizer.html" title="This class creates button layouts which conform to the standard button spacing and ordering defined b...">wxStdDialogButtonSizer</a>;  </li>
-<li>only making assumptions about hierarchy immediately after the dialog is created;  </li>
-<li>using an intermediate sizer under the main sizer, a <span class="literal">false</span> top-level sizer that can be relied on to exist for the purposes of manipulating child sizers and windows;  </li>
-<li>overriding <a class="el" href="classwx_dialog.html#aee73457b69fb24e29a9039b6506eb92e" title="Override this to return a window containing the main content of the dialog.">wxDialog::GetContentWindow</a> to return a book control if your dialog implements pages: wxWidgets will then only make the pages scrollable.</li>
+<li>上記のような状況や仮定を避ける; </li>
+<li><a class="el" href="classwx_std_dialog_button_sizer.html" title="このクラスはプラットフォームやツールキットのユーザガイドラインで定義されている標準ボタンの余白と順番に従ったレイアウトを作成します。(ただし、そのようなガイドラインが存在する場合に限ります)">wxStdDialogButtonSizer</a> を使用する; </li>
+<li>ダイアログ内の階層構造について仮定するのはダイアログの作成直後だけにする; </li>
+<li>メインのサイザーの下に仲介サイザーを使用する; これは偽のトップレベルサイザーで、子サイザーとウィンドウを操作するために使用します。 </li>
+<li>ダイアログでページを実装している場合、ブックコントロールを返却するように <a class="el" href="classwx_dialog.html#aee73457b69fb24e29a9039b6506eb92e" title="ダイアログのメインコンテンツを含むウィンドウを返却するためにこの関数をオーバーライドしてください。">wxDialog::GetContentWindow</a> をオーバーライドする: その場合、wxWidgets はページのみをスクロール可能にします。</li>
 </ul>
 <h3><a class="anchor" id="overview_dialog_propertysheet"></a>
-
-wxPropertySheetDialog and wxWizard</h3>
-<p>Adaptation for <a class="el" href="classwx_property_sheet_dialog.html" title="This class represents a property sheet dialog: a tabbed dialog for showing settings.">wxPropertySheetDialog</a> is always done by simply making the pages scrollable, since <a class="el" href="classwx_dialog.html#aee73457b69fb24e29a9039b6506eb92e" title="Override this to return a window containing the main content of the dialog.">wxDialog::GetContentWindow</a> returns the dialog's book control and this is handled by the standard layout adapter.</p>
-<p><a class="el" href="classwx_wizard.html" title="wxWizard is the central class for implementing 'wizard-like' dialogs.">wxWizard</a> uses its own CanDoLayoutAdaptation and DoLayoutAdaptation functions rather than the global adapter: again, only the wizard pages are made scrollable.  </p>
+wxPropertySheetDialog と wxWizard</h3>
+<p><a class="el" href="classwx_property_sheet_dialog.html" title="このクラスはプロパティシートダイアログ (設定を表示するためのタブ付きダイアログ) を表しています。">wxPropertySheetDialog</a> に対する適応は単純にページをスクロール可能にするだけです。なぜなら、 <a class="el" href="classwx_dialog.html#aee73457b69fb24e29a9039b6506eb92e" title="ダイアログのメインコンテンツを含むウィンドウを返却するためにこの関数をオーバーライドしてください。">wxDialog::GetContentWindow</a> がダイアログのブックコントロールを返却し、このコントロールが標準のレイアウトアダプタで処理されるためです。</p>
+<p><a class="el" href="classwx_wizard.html" title="wxWizard はウィザード風のダイアログを実装するための中心的なクラスです。">wxWizard</a> はグローバルなアダプタではなく、独自の CanDoLayoutAdaptation と DoLayoutAdaptation 関数を使用します。繰り返しになりますが、ウィザードページのみがスクロール可能になります。 </p>
 </div></div><!-- window showing the filter options -->
 
 <div id="MSearchSelectWindow"
