@@ -131,7 +131,7 @@ Enumerations</h2></td></tr>
 
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__funcmacro__procctrl.html#ga3770f7ff142dab558f10ae354350874d">wxExit</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Exits application after calling <a class="el" href="classwx_app_console.html#a5ee60051c92b0b2933258799626a0485" title="Override this member function for any processing which needs to be done as the application is about t...">wxApp::OnExit</a>.    <a href="#ga3770f7ff142dab558f10ae354350874d"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Exits application after calling <a class="el" href="classwx_app_console.html#a5ee60051c92b0b2933258799626a0485" title="アプリケーションの終了時に処理を行なう必要がある場合にこのメンバ関数をオーバーライドしてください。">wxApp::OnExit</a>.    <a href="#ga3770f7ff142dab558f10ae354350874d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__funcmacro__procctrl.html#gaa276e9e676e26bafeec3141b73399b33">wxExecute</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;command, int flags=wxEXEC_ASYNC, <a class="el" href="classwx_process.html">wxProcess</a> *callback=NULL, const <a class="el" href="structwx_execute_env.html">wxExecuteEnv</a> *env=NULL)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Executes another program in Unix or Windows.    <a href="#gaa276e9e676e26bafeec3141b73399b33"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__funcmacro__procctrl.html#ga8116ca17aec4eea74b848f1544805960">wxExecute</a> (char **argv, int flags=wxEXEC_ASYNC, <a class="el" href="classwx_process.html">wxProcess</a> *callback=NULL, const <a class="el" href="structwx_execute_env.html">wxExecuteEnv</a> *env=NULL)</td></tr>
@@ -489,8 +489,8 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Exits application after calling <a class="el" href="classwx_app_console.html#a5ee60051c92b0b2933258799626a0485" title="Override this member function for any processing which needs to be done as the application is about t...">wxApp::OnExit</a>.  </p>
-<p>Should only be used in an emergency: normally the top-level frame should be deleted (after deleting all other frames) to terminate the application. See <a class="el" href="classwx_close_event.html" title="This event class contains information about window and session close events.">wxCloseEvent</a> and <a class="el" href="classwx_app.html" title="wxUSE_GUI=1 のとき、wxApp はアプリケーション自身を表します。">wxApp</a>.</p>
+<p>Exits application after calling <a class="el" href="classwx_app_console.html#a5ee60051c92b0b2933258799626a0485" title="アプリケーションの終了時に処理を行なう必要がある場合にこのメンバ関数をオーバーライドしてください。">wxApp::OnExit</a>.  </p>
+<p>Should only be used in an emergency: normally the top-level frame should be deleted (after deleting all other frames) to terminate the application. See <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a> and <a class="el" href="classwx_app.html" title="wxUSE_GUI=1 のとき、wxApp はアプリケーション自身を表します。">wxApp</a>.</p>
 <p>Include <a href="file:">file:</a> </p>
 <div class="fragment"><pre class="fragment">#include &lt;wx/app.h&gt; </pre></div> 
 </div>

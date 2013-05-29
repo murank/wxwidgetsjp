@@ -141,7 +141,7 @@ function toggleVisibility(linkObj) {
 <ul>
 <li>set and get application-wide properties (see <a class="el" href="classwx_app_console.html#ab2811644bfee7a93d0564a09397c4408" title="最初に GetTraits() が必要とした時に wxAppTraits オブジェクトを作成します。">wxAppConsole::CreateTraits</a> and wxAppConsole::SetXXX functions)  </li>
 <li>implement the windowing system message or event loop: events in fact are supported even in console-mode applications (see <a class="el" href="classwx_app_console.html#a78a6f9e56b77addf8251f0f5c10004fb" title="This function simply invokes the given method func of the specified event handler handler with the ev...">wxAppConsole::HandleEvent</a> and <a class="el" href="classwx_app_console.html#ab62db8e6265c1e841220c47b9778ab7e" title="Process all pending events; it is necessary to call this function to process events posted with wxEvt...">wxAppConsole::ProcessPendingEvents</a>);  </li>
-<li>initiate application processing via <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">wxApp::OnInit</a>;  </li>
+<li>initiate application processing via <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">wxApp::OnInit</a>;  </li>
 <li>allow default processing of events not handled by other objects in the application (see <a class="el" href="classwx_app_console.html#ada7ab606e014a10d46e4b3c6f602e20c" title="wxEventFilter をオーバーライドした関数。">wxAppConsole::FilterEvent</a>)  </li>
 <li>implement Apple-specific event handlers (see wxAppConsole::MacXXX functions)</li>
 </ul>
@@ -173,7 +173,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns <span class="literal">true</span> if the application is using an event loop.    <a href="#af393b68a318373e43ee731bec38bdc29"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Pending events</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Pending events are handled by <a class="el" href="classwx_app_console.html" title="This class is essential for writing console-only or hybrid apps without having to define wxUSE_GUI=0...">wxAppConsole</a> rather than <a class="el" href="classwx_event_loop_base.html" title="Base class for all event loop implementations.">wxEventLoopBase</a> to allow queuing of events even when there's no event loop (e.g.</p>
-<p>in <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">wxAppConsole::OnInit</a>).  </p>
+<p>in <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">wxAppConsole::OnInit</a>).  </p>
 </div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_app_console.html#ab62db8e6265c1e841220c47b9778ab7e">ProcessPendingEvents</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Process all pending events; it is necessary to call this function to process events posted with <a class="el" href="classwx_evt_handler.html#acffd03bf407a856166ea71ef0318b59a" title="あとで処理するためにイベントをキューに追加します。">wxEvtHandler::QueueEvent</a> or <a class="el" href="classwx_evt_handler.html#a0737c6d2cbcd5ded4b1ecdd53ed0def3" title="あとで処理されるイベントを送信します。">wxEvtHandler::AddPendingEvent</a>.    <a href="#ab62db8e6265c1e841220c47b9778ab7e"></a><br/></td></tr>
@@ -212,7 +212,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15">OnInit</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This must be provided by the application, and will usually create the application's main window, optionally calling SetTopWindow().    <a href="#a99953775a2fd83fa2456e390779afe15"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_app_console.html#a1708aeb916cbc3dc4a3333f1a6f33e04">OnInitCmdLine</a> (<a class="el" href="classwx_cmd_line_parser.html">wxCmdLineParser</a> &amp;parser)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Called from <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">OnInit()</a> and may be used to initialize the parser with the command line options for this application.    <a href="#a1708aeb916cbc3dc4a3333f1a6f33e04"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Called from <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">OnInit()</a> and may be used to initialize the parser with the command line options for this application.    <a href="#a1708aeb916cbc3dc4a3333f1a6f33e04"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_app_console.html#ac05a28c7cdb529f2cdfe77b3431c385c">OnRun</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This virtual function is where the execution of a program written in wxWidgets starts.    <a href="#ac05a28c7cdb529f2cdfe77b3431c385c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_app_console.html#a8c241ae1aa045da4470664813b7ec960">OnUnhandledException</a> ()</td></tr>
@@ -716,7 +716,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Called when command line parsing fails (i.e.  </p>
 <p>an incorrect command line option was specified by the user). The default behaviour is to show the program usage text and abort the program.</p>
-<p>Return <span class="literal">true</span> to continue normal execution or <span class="literal">false</span> to return <span class="literal">false</span> from <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">OnInit()</a> thus terminating the program.</p>
+<p>Return <span class="literal">true</span> to continue normal execution or <span class="literal">false</span> to return <span class="literal">false</span> from <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">OnInit()</a> thus terminating the program.</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_app_console.html#a1708aeb916cbc3dc4a3333f1a6f33e04" title="Called from OnInit() and may be used to initialize the parser with the command line options for this ...">OnInitCmdLine()</a> </dd></dl>
 
 </div>
@@ -738,7 +738,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Called when the help option (<code>--help</code>) was specified on the command line.  </p>
 <p>The default behaviour is to show the program usage text and abort the program.</p>
-<p>Return <span class="literal">true</span> to continue normal execution or <span class="literal">false</span> to return <span class="literal">false</span> from <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">OnInit()</a> thus terminating the program.</p>
+<p>Return <span class="literal">true</span> to continue normal execution or <span class="literal">false</span> to return <span class="literal">false</span> from <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">OnInit()</a> thus terminating the program.</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_app_console.html#a1708aeb916cbc3dc4a3333f1a6f33e04" title="Called from OnInit() and may be used to initialize the parser with the command line options for this ...">OnInitCmdLine()</a> </dd></dl>
 
 </div>
@@ -760,7 +760,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Called after the command line had been successfully parsed.  </p>
 <p>You may override this method to test for the values of the various parameters which could be set from the command line.</p>
-<p>Don't forget to call the base class version unless you want to suppress processing of the standard command line options. Return <span class="literal">true</span> to continue normal execution or <span class="literal">false</span> to return <span class="literal">false</span> from <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">OnInit()</a> thus terminating the program.</p>
+<p>Don't forget to call the base class version unless you want to suppress processing of the standard command line options. Return <span class="literal">true</span> to continue normal execution or <span class="literal">false</span> to return <span class="literal">false</span> from <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">OnInit()</a> thus terminating the program.</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_app_console.html#a1708aeb916cbc3dc4a3333f1a6f33e04" title="Called from OnInit() and may be used to initialize the parser with the command line options for this ...">OnInitCmdLine()</a> </dd></dl>
 
 </div>
@@ -842,7 +842,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Override this member function for any processing which needs to be done as the application is about to exit.  </p>
-<p>OnExit is called after destroying all application windows and controls, but before wxWidgets cleanup. Note that it is not called at all if <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">OnInit()</a> failed.</p>
+<p>OnExit is called after destroying all application windows and controls, but before wxWidgets cleanup. Note that it is not called at all if <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">OnInit()</a> failed.</p>
 <p>The return value of this function is currently ignored, return the same value as returned by the base class method if you override it.  </p>
 
 </div>
@@ -883,8 +883,8 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>This must be provided by the application, and will usually create the application's main window, optionally calling SetTopWindow().  </p>
-<p>You may use <a class="el" href="classwx_app_console.html#a5ee60051c92b0b2933258799626a0485" title="Override this member function for any processing which needs to be done as the application is about t...">OnExit()</a> to clean up anything initialized here, provided that the function returns <span class="literal">true</span>.</p>
-<p>Notice that if you want to use the command line processing provided by wxWidgets you have to call the base class version in the derived class <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">OnInit()</a>.</p>
+<p>You may use <a class="el" href="classwx_app_console.html#a5ee60051c92b0b2933258799626a0485" title="アプリケーションの終了時に処理を行なう必要がある場合にこのメンバ関数をオーバーライドしてください。">OnExit()</a> to clean up anything initialized here, provided that the function returns <span class="literal">true</span>.</p>
+<p>Notice that if you want to use the command line processing provided by wxWidgets you have to call the base class version in the derived class <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">OnInit()</a>.</p>
 <p>Return <span class="literal">true</span> to continue processing, <span class="literal">false</span> to exit the application immediately.  </p>
 
 </div>
@@ -904,7 +904,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Called from <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">OnInit()</a> and may be used to initialize the parser with the command line options for this application.  </p>
+<p>Called from <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">OnInit()</a> and may be used to initialize the parser with the command line options for this application.  </p>
 <p>The base class versions adds support for a few standard options only.  </p>
 
 </div>
@@ -944,8 +944,8 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>This function is called when an unhandled C++ exception occurs in user code called by wxWidgets.  </p>
-<p>Any unhandled exceptions thrown from (overridden versions of) <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">OnInit()</a> and <a class="el" href="classwx_app_console.html#a5ee60051c92b0b2933258799626a0485" title="Override this member function for any processing which needs to be done as the application is about t...">OnExit()</a> methods as well as any exceptions thrown from inside the main loop and re-thrown by <a class="el" href="classwx_app_console.html#a8c241ae1aa045da4470664813b7ec960" title="This function is called when an unhandled C++ exception occurs in user code called by wxWidgets...">OnUnhandledException()</a> will result in a call to this function.</p>
-<p>By the time this function is called, the program is already about to exit and the exception can't be handled nor ignored any more, override <a class="el" href="classwx_app_console.html#a8c241ae1aa045da4470664813b7ec960" title="This function is called when an unhandled C++ exception occurs in user code called by wxWidgets...">OnUnhandledException()</a> or use explicit <code>try/catch</code> blocks around <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">OnInit()</a> body to be able to handle the exception earlier.</p>
+<p>Any unhandled exceptions thrown from (overridden versions of) <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">OnInit()</a> and <a class="el" href="classwx_app_console.html#a5ee60051c92b0b2933258799626a0485" title="アプリケーションの終了時に処理を行なう必要がある場合にこのメンバ関数をオーバーライドしてください。">OnExit()</a> methods as well as any exceptions thrown from inside the main loop and re-thrown by <a class="el" href="classwx_app_console.html#a8c241ae1aa045da4470664813b7ec960" title="This function is called when an unhandled C++ exception occurs in user code called by wxWidgets...">OnUnhandledException()</a> will result in a call to this function.</p>
+<p>By the time this function is called, the program is already about to exit and the exception can't be handled nor ignored any more, override <a class="el" href="classwx_app_console.html#a8c241ae1aa045da4470664813b7ec960" title="This function is called when an unhandled C++ exception occurs in user code called by wxWidgets...">OnUnhandledException()</a> or use explicit <code>try/catch</code> blocks around <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">OnInit()</a> body to be able to handle the exception earlier.</p>
 <p>The default implementation dumps information about the exception using <a class="el" href="classwx_message_output_best.html" title="Output messages in the best possible way.">wxMessageOutputBest</a>.  </p>
 
 </div>

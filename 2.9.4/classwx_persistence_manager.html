@@ -538,7 +538,7 @@ template&lt;class T &gt;  </div>
 <div class="memdoc">
 
 <p>Set the global persistence manager to use.  </p>
-<p>Call this method to specify a non-default persistence manager to use. It should usually be called very early (e.g. in wxApp-derived class constructor or in the beginning of overridden <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">wxApp::OnInit()</a>) to affect creation of all persistent controls and the object passed to it must have a lifetime long enough to be still alive when the persistent controls are destroyed and need it to save their state so typically this would be a global or a <a class="el" href="classwx_app.html" title="wxUSE_GUI=1 のとき、wxApp はアプリケーション自身を表します。">wxApp</a> member.</p>
+<p>Call this method to specify a non-default persistence manager to use. It should usually be called very early (e.g. in wxApp-derived class constructor or in the beginning of overridden <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">wxApp::OnInit()</a>) to affect creation of all persistent controls and the object passed to it must have a lifetime long enough to be still alive when the persistent controls are destroyed and need it to save their state so typically this would be a global or a <a class="el" href="classwx_app.html" title="wxUSE_GUI=1 のとき、wxApp はアプリケーション自身を表します。">wxApp</a> member.</p>
 <dl class="since"><dt><b>Since:</b></dt><dd>2.9.3  </dd></dl>
 
 </div>

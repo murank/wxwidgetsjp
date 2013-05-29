@@ -170,7 +170,7 @@ Initializing file system handlers</h2>
 
 ...
 
-bool <a class="code" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">MyApp::OnInit</a>()
+bool <a class="code" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">MyApp::OnInit</a>()
 {
     <a class="code" href="classwx_file_system.html#a442d841b2baa5a0eb83c3a985b1e3119" title="This static function adds new handler into the list of handlers (see wxFileSystemHandler) which provi...">wxFileSystem::AddHandler</a>(<span class="keyword">new</span> <a class="code" href="classwx_memory_f_s_handler.html" title="This wxFileSystem handler can store arbitrary data in memory stream and make them accessible via an U...">wxMemoryFSHandler</a>);
 ...

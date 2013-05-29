@@ -151,7 +151,7 @@ function toggleVisibility(linkObj) {
             ...
             <span class="keywordtype">void</span> DoStartALongTask();
             <span class="keywordtype">void</span> OnThreadUpdate(<a class="code" href="classwx_thread_event.html" title="This class adds some simple functionality to wxEvent to facilitate inter-thread communication.">wxThreadEvent</a>&amp; evt);
-            <span class="keywordtype">void</span> OnClose(<a class="code" href="classwx_close_event.html" title="This event class contains information about window and session close events.">wxCloseEvent</a>&amp; evt);
+            <span class="keywordtype">void</span> OnClose(<a class="code" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a>&amp; evt);
             ...
 
         <span class="keyword">protected</span>:
@@ -225,7 +225,7 @@ function toggleVisibility(linkObj) {
             <span class="keywordflow">return</span> (<a class="code" href="classwx_thread.html#ade9497fa072fe19481086e6486dcc028" title="The return type for the thread functions.">wxThread::ExitCode</a>)0;
         }
 
-        <span class="keywordtype">void</span> MyFrame::OnClose(<a class="code" href="classwx_close_event.html" title="This event class contains information about window and session close events.">wxCloseEvent</a>&amp;)
+        <span class="keywordtype">void</span> MyFrame::OnClose(<a class="code" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a>&amp;)
         {
             <span class="comment">// important: before terminating, we _must_ wait for our joinable</span>
             <span class="comment">// thread to end, if it's running; in fact it uses variables of this</span>

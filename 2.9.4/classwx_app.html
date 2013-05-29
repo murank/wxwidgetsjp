@@ -139,8 +139,8 @@ function toggleVisibility(linkObj) {
 <h2>Events emitted by this class</h2>
 <p>Event macros for events emitted by this class:</p>
 <div> </div><ul>
-<li><span class="event">EVT_QUERY_END_SESSION(func)</span>:<div class="eventDesc">  Process a query end session event, supplying the member function. See <a class="el" href="classwx_close_event.html" title="This event class contains information about window and session close events.">wxCloseEvent</a>.  </div></li>
-<li><span class="event">EVT_END_SESSION(func)</span>:<div class="eventDesc">  Process an end session event, supplying the member function. See <a class="el" href="classwx_close_event.html" title="This event class contains information about window and session close events.">wxCloseEvent</a>.  </div></li>
+<li><span class="event">EVT_QUERY_END_SESSION(func)</span>:<div class="eventDesc">  Process a query end session event, supplying the member function. See <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a>.  </div></li>
+<li><span class="event">EVT_END_SESSION(func)</span>:<div class="eventDesc">  Process an end session event, supplying the member function. See <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a>.  </div></li>
 <li><span class="event">EVT_ACTIVATE_APP(func)</span>:<div class="eventDesc">  Process a <code>wxEVT_ACTIVATE_APP</code> event. See <a class="el" href="classwx_activate_event.html" title="An activate event is sent when a window or application is being activated or deactivated.">wxActivateEvent</a>.  </div></li>
 <li><span class="event">EVT_HIBERNATE(func)</span>:<div class="eventDesc">  Process a hibernate event. See <a class="el" href="classwx_activate_event.html" title="An activate event is sent when a window or application is being activated or deactivated.">wxActivateEvent</a>.  </div></li>
 <li><span class="event">EVT_DIALUP_CONNECTED(func)</span>:<div class="eventDesc">  A connection with the network was established. See <a class="el" href="classwx_dial_up_event.html" title="This is the event class for the dialup events sent by wxDialUpManager.">wxDialUpEvent</a>.  </div></li>
@@ -275,7 +275,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns <span class="literal">true</span> if the application will exit when the top-level frame is deleted.  </p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_app.html#aceb948ece9ba286f738ec3379a18bc52" title="Allows the programmer to specify whether the application will exit when the top-level frame is delete...">SetExitOnFrameDelete()</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_app.html#aceb948ece9ba286f738ec3379a18bc52" title="トップレベルウィンドウが削除されたときにアプリケーションを終了するかどうかをユーザが指定することができます。">SetExitOnFrameDelete()</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxApp::GetLayoutDirection" ref="a8e1165d81e9cd2304a9417d31836b9a5" args="() const " -->
@@ -651,7 +651,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Sets the 'top' window.  </p>
-<p>You can call this from within <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">OnInit()</a> to let wxWidgets know which is the main window. You don't have to set the top window; it is only a convenience so that (for example) certain dialogs without parents can use a specific window as the top window.</p>
+<p>You can call this from within <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">OnInit()</a> to let wxWidgets know which is the main window. You don't have to set the top window; it is only a convenience so that (for example) certain dialogs without parents can use a specific window as the top window.</p>
 <p>If no top window is specified by the application, wxWidgets just uses the first frame or dialog (or better, any <a class="el" href="classwx_top_level_window.html" title="wxTopLevelWindow is a common base class for wxDialog and wxFrame.">wxTopLevelWindow</a>) in its top-level window list, when it needs to use the top window. If you previously called <a class="el" href="classwx_app.html#a39033ec4c79bc1871c91ada7b31941e6" title="Sets the 'top' window.">SetTopWindow()</a> and now you need to restore this automatic behaviour you can call  </p>
 <div class="fragment"><pre class="fragment"> <a class="code" href="classwx_app.html#a39033ec4c79bc1871c91ada7b31941e6" title="Sets the 'top' window.">wxApp::SetTopWindow</a>(NULL) 
 </pre></div><p> </p>
@@ -661,7 +661,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_app.html#abc2b3305178f59f4024f492855c1bfdc" title="Returns a pointer to the top window.">GetTopWindow()</a>, <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">OnInit()</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_app.html#abc2b3305178f59f4024f492855c1bfdc" title="Returns a pointer to the top window.">GetTopWindow()</a>, <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">OnInit()</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxApp::SetUseBestVisual" ref="aaf48f6af563da066af2143afe6cf04c9" args="(bool flag, bool forceTrueColour=false)" -->

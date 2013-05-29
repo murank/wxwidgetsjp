@@ -195,7 +195,7 @@ Getting Started with XRC</h2>
 <p>Before you can use XRC in an app, it must first be loaded. This code fragment shows how to load a single XRC file "resource.xrc" from the current working directory, plus all the *.xrc files contained in the subdirectory "rc".</p>
 <div class="fragment"><pre class="fragment"><span class="preprocessor">#include "<a class="code" href="xmlres_8h.html">wx/xrc/xmlres.h</a>"</span>
 
-<span class="keywordtype">bool</span> <a class="code" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">MyApp::OnInit</a>()
+<span class="keywordtype">bool</span> <a class="code" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">MyApp::OnInit</a>()
 {
     ...
     <a class="code" href="classwx_xml_resource.html#ae9a487479dcd6204d12fbbf7be497561" title="Gets the global resources object or creates one if none exists.">wxXmlResource::Get</a>()-&gt;<a class="code" href="classwx_xml_resource.html#a1fea48a0061b93247b4869a55877862b" title="Initializes handlers for all supported controls/windows.">InitAllHandlers</a>();

@@ -658,7 +658,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the accessible for this window.    <a href="#a413220ead41f05a2ec2cfe10b3d573df"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Window deletion functions</div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a3e44f4a494fc9ef4346c4fba70c8de0c">Close</a> (bool force=false)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This function simply generates a <a class="el" href="classwx_close_event.html" title="This event class contains information about window and session close events.">wxCloseEvent</a> whose handler usually tries to close the window.    <a href="#a3e44f4a494fc9ef4346c4fba70c8de0c"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This function simply generates a <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a> whose handler usually tries to close the window.    <a href="#a3e44f4a494fc9ef4346c4fba70c8de0c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc">Destroy</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destroys the window safely.    <a href="#a6bf0c5be864544d9ce0560087667b7fc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#af918e6fe8565c2d5235973cc3de84a43">IsBeingDeleted</a> () const  </td></tr>
@@ -895,7 +895,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Destructor.  </p>
 <p>Deletes all sub-windows, then deletes itself. Instead of using the <b>delete</b> operator explicitly, you should normally use <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="Destroys the window safely.">Destroy()</a> so that wxWidgets can delete a window only when it is safe to do so, in idle time.</p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowdeletion.html">Window Deletion Overview</a>, <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="Destroys the window safely.">Destroy()</a>, <a class="el" href="classwx_close_event.html" title="This event class contains information about window and session close events.">wxCloseEvent</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowdeletion.html">Window Deletion Overview</a>, <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="Destroys the window safely.">Destroy()</a>, <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a> </dd></dl>
 
 </div>
 </div>
@@ -1347,7 +1347,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>This function simply generates a <a class="el" href="classwx_close_event.html" title="This event class contains information about window and session close events.">wxCloseEvent</a> whose handler usually tries to close the window.  </p>
+<p>This function simply generates a <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a> whose handler usually tries to close the window.  </p>
 <p>It doesn't close the window itself, however.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -1356,7 +1356,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="remark"><dt><b>Remarks:</b></dt><dd>Close calls the close handler for the window, providing an opportunity for the window to choose whether to destroy the window. Usually it is only used with the top level windows (<a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> and <a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> classes) as the others are not supposed to have any special OnClose() logic. The close handler should check whether the window is being deleted forcibly, using <a class="el" href="classwx_close_event.html#adaa0548df45e05e8487cc5664ac352cf" title="Returns true if you can veto a system shutdown or a window close event.">wxCloseEvent::CanVeto</a>, in which case it should destroy the window using <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="Destroys the window safely.">wxWindow::Destroy</a>. Note that calling Close does not guarantee that the window will be destroyed; but it provides a way to simulate a manual close of a window, which may or may not be implemented by destroying the window. The default implementation of wxDialog::OnCloseWindow does not necessarily delete the dialog, since it will simply simulate an wxID_CANCEL event which is handled by the appropriate button event handler and may do anything at all. To guarantee that the window will be destroyed, call <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="Destroys the window safely.">wxWindow::Destroy</a> instead</dd></dl>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowdeletion.html">Window Deletion Overview</a>, <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="Destroys the window safely.">Destroy()</a>, <a class="el" href="classwx_close_event.html" title="This event class contains information about window and session close events.">wxCloseEvent</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowdeletion.html">Window Deletion Overview</a>, <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="Destroys the window safely.">Destroy()</a>, <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::ConvertDialogToPixels" ref="acb6787b6c3c314f9e015658a89ad0265" args="(const wxPoint &amp;pt) const " -->

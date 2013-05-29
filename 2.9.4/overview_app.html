@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>wxWidgets: wxWidgets: wxApp Overview</title>
+<title>wxWidgets: wxWidgets: wxApp の概要</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="custom_stylesheet.css" rel="stylesheet" type="text/css" />
@@ -114,27 +114,27 @@ function toggleVisibility(linkObj) {
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title"><a class="el" href="classwx_app.html" title="wxUSE_GUI=1 のとき、wxApp はアプリケーション自身を表します。">wxApp</a> Overview  </div>  </div>
+<div class="title"><a class="el" href="classwx_app.html" title="wxUSE_GUI=1 のとき、wxApp はアプリケーション自身を表します。">wxApp</a> の概要 </div>  </div>
 </div>
 <div class="contents">
-<div class="textblock"><p>Classes: <a class="el" href="classwx_app.html" title="wxUSE_GUI=1 のとき、wxApp はアプリケーション自身を表します。">wxApp</a></p>
+<div class="textblock"><p>クラス: <a class="el" href="classwx_app.html" title="wxUSE_GUI=1 のとき、wxApp はアプリケーション自身を表します。">wxApp</a></p>
 <ul>
 <li><a class="el" href="overview_app.html#overview_app_intro">イントロダクション</a> </li>
-<li><a class="el" href="overview_app.html#overview_app_shutdown">Application Shutdown</a></li>
+<li><a class="el" href="overview_app.html#overview_app_shutdown">アプリケーションの終了</a></li>
 </ul>
 <hr/>
 <h2><a class="anchor" id="overview_app_intro"></a>
 イントロダクション</h2>
-<p>A wxWidgets application does not have a <em>main</em> procedure; the equivalent is the <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">wxApp::OnInit</a> member defined for a class derived from <a class="el" href="classwx_app.html" title="wxUSE_GUI=1 のとき、wxApp はアプリケーション自身を表します。">wxApp</a>.</p>
-<p><em>OnInit</em> will usually create a top window as a bare minimum. Unlike in earlier versions of wxWidgets, OnInit does not return a frame. Instead it returns a boolean value which indicates whether processing should continue (<span class="literal">true</span>) or not (<span class="literal">false</span>).</p>
-<p>Note that the program's command line arguments, represented by <em>argc</em> and <em>argv</em>, are available from within <a class="el" href="classwx_app.html" title="wxUSE_GUI=1 のとき、wxApp はアプリケーション自身を表します。">wxApp</a> member functions.</p>
-<p>An application closes by destroying all windows. Because all frames must be destroyed for the application to exit, it is advisable to use parent frames wherever possible when creating new frames, so that deleting the top level frame will automatically delete child frames. The alternative is to explicitly delete child frames in the top-level frame's <a class="el" href="classwx_close_event.html" title="This event class contains information about window and session close events.">wxCloseEvent</a> handler.</p>
-<p>In emergencies the wxExit function can be called to kill the application however normally the application shuts down automatically, see <a class="el" href="overview_app.html#overview_app_shutdown">Application Shutdown</a>.</p>
-<p>An example of defining an application follows:</p>
+<p>wxWidgets アプリケーションは <em>main</em> 関数を持ちません。それと同等の関数が wxApp を継承したクラスで定義される <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">wxApp::OnInit</a> メンバ関数です。</p>
+<p>通常、<em>OnInit</em> では最低限、トップウィンドウを作成します。wxWidgets の初期バージョンとは違い、OnInit はフレームを返却しません。代わりに処理を継続する (<span class="literal">true</span>) かしない (<span class="literal">false</span>) かを表す真偽値を返却します。</p>
+<p>プログラムのコマンドライン引数 (<em>argc</em> と <em>argv</em>) は <a class="el" href="classwx_app.html" title="wxUSE_GUI=1 のとき、wxApp はアプリケーション自身を表します。">wxApp</a> のメンバ関数から使用できます。</p>
+<p>アプリケーションはすべてのウィンドウを破棄することで終了します。アプリケーションを終了するためにはすべてのフレームを破棄しなければならないため、可能な限り、新しいフレームを作成するときは親フレームを使用するようにするべきです。こうすることで、トップレベルフレームの削除時に自動的に子フレームが削除されます。アプリケーションを終了する別の方法はトップレベルフレームの <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a> イベントハンドラで明示的に子フレームを削除することです。</p>
+<p>緊急の場合は wxExit 関数を使用してアプリケーションを強制終了させることができます。しかし、通常、アプリケーションは自動的にシャットダウンされます。 <a class="el" href="overview_app.html#overview_app_shutdown">アプリケーションの終了</a> を参照してください。</p>
+<p>アプリケーションを定義する例は以下の通りです:</p>
 <div class="fragment"><pre class="fragment"><span class="keyword">class </span>DerivedApp : <span class="keyword">public</span> <a class="code" href="classwx_app.html" title="wxUSE_GUI=1 のとき、wxApp はアプリケーション自身を表します。">wxApp</a>
 {
 <span class="keyword">public</span>:
-    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">OnInit</a>();
+    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">OnInit</a>();
 };
 
 IMPLEMENT_APP(DerivedApp)
@@ -147,22 +147,21 @@ bool DerivedApp::OnInit()
 
     <span class="keywordflow">return</span> <span class="keyword">true</span>;
 }
-</pre></div><p>Note the use of IMPLEMENT_APP(appClass), which allows wxWidgets to dynamically create an instance of the application object at the appropriate point in wxWidgets initialization. Previous versions of wxWidgets used to rely on the creation of a global application object, but this is no longer recommended, because required global initialization may not have been performed at application object construction time.</p>
-<p>You can also use DECLARE_APP(appClass) in a header file to declare the wxGetApp function which returns a reference to the application object. Otherwise you can only use the global <code>wxTheApp</code> pointer which is of type <code>wxApp*</code>.</p>
+</pre></div><p>IMPLEMENT_APP(appClass) を使用している点に注意してください。これにより、wxWidgets の初期化時の適切なタイミングでアプリケーションオブジェクトのインスタンスが動的に作成されるようになります。以前の wxWidgets ではグルーバルなアプリケーションオブジェクトを作成していましたが、もはやこれは非推奨です。なぜなら、期待したグローバルオブジェクトの初期化がアプリケーションオブジェクトの構築時に行われない可能性があるためです。</p>
+<p>また、ヘッダファイル内で DECLARE_APP(appClass) を使用することで、アプリケーションオブジェクトへの参照を返却する wxGetApp 関数を宣言できます。そうしない場合、<code>wxApp *</code> 型のグローバル変数である <code>wxTheApp</code> ポインタを使用するしかありません。</p>
 <h2><a class="anchor" id="overview_app_shutdown"></a>
-
-Application Shutdown</h2>
-<p>The application normally shuts down when the last of its top level windows is closed. This is normally the expected behaviour and means that it is enough to call <a class="el" href="classwx_window.html#a3e44f4a494fc9ef4346c4fba70c8de0c" title="This function simply generates a wxCloseEvent whose handler usually tries to close the window...">wxWindow::Close()</a> in response to the "Exit" menu command if your program has a single top level window. If this behaviour is not desirable <a class="el" href="classwx_app.html#aceb948ece9ba286f738ec3379a18bc52" title="Allows the programmer to specify whether the application will exit when the top-level frame is delete...">wxApp::SetExitOnFrameDelete</a> can be called to change it.</p>
-<p>Note that such logic doesn't apply for the windows shown before the program enters the main loop: in other words, you can safely show a dialog from <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">wxApp::OnInit</a> and not be afraid that your application terminates when this dialog -- which is the last top level window for the moment -- is closed.</p>
-<p>Another aspect of the application shutdown is <a class="el" href="classwx_app_console.html#a5ee60051c92b0b2933258799626a0485" title="Override this member function for any processing which needs to be done as the application is about t...">wxApp::OnExit</a> which is called when the application exits but <em>before</em> wxWidgets cleans up its internal structures. You should delete all wxWidgets object that you created by the time OnExit finishes.</p>
-<p>In particular, do <b>not</b> destroy them from application class' destructor! For example, this code may crash:</p>
+アプリケーションの終了</h2>
+<p>通常、アプリケーションは最後のトップレベルウィンドウが閉じられたときに終了します。これは通常期待する振る舞いであり、アプリケーションが単一のトップレベルウィンドウを持つ場合は "Exit" メニューが選択されたときに <a class="el" href="classwx_window.html#a3e44f4a494fc9ef4346c4fba70c8de0c" title="この関数は単純に wxCloseEvent を作成します。通常はこのイベントを受け取ったハンドラはウィンドウを閉じようとします。">wxWindow::Close()</a> を呼ぶだけで充分なことを意味します。この振る舞いが望ましくない場合、<a class="el" href="classwx_app.html#aceb948ece9ba286f738ec3379a18bc52" title="トップレベルウィンドウが削除されたときにアプリケーションを終了するかどうかをユーザが指定することができます。">wxApp::SetExitOnFrameDelete</a> を呼ぶことで振る舞いを変更することができます。</p>
+<p>このロジックはメインループに入る前のまだ表示されていないウィンドウには適用されないことに注意してください。つまり、 <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">wxApp::OnInit</a> の中で安全にダイアログを表示でき、ダイアログ (その時点における最後のトップレベルウィンドウ) を閉じるときにアプリケーションが終了することを心配しなくても良いということです。</p>
+<p>アプリケーションの終了の別の側面は <a class="el" href="classwx_app_console.html#a5ee60051c92b0b2933258799626a0485" title="アプリケーションの終了時に処理を行なう必要がある場合にこのメンバ関数をオーバーライドしてください。">wxApp::OnExit</a> です。この関数はアプリケーションの終了時に呼ばれますが、wxWidgets の内部構造が破棄される<em>前</em>に呼ばれます。作成した wxWidgets は OnExit が完了するまでにすべて削除するべきです。</p>
+<p>特に、アプリケーションクラスのデストラクタで削除しては <b>いけません</b>。例えば、このコードはクラッシュするでしょう:</p>
 <div class="fragment"><pre class="fragment"><span class="keyword">class </span>MyApp : <span class="keyword">public</span> <a class="code" href="classwx_app.html" title="wxUSE_GUI=1 のとき、wxApp はアプリケーション自身を表します。">wxApp</a>
 {
 <span class="keyword">public</span>:
     wxCHMHelpController m_helpCtrl;
     ...
 };
-</pre></div><p>The reason for that is that <code>m_helpCtrl</code> is a member object and is thus destroyed from MyApp destructor. But MyApp object is deleted after wxWidgets structures that wxCHMHelpController depends on were uninitialized! The solution is to destroy HelpCtrl in <em>OnExit:</em> </p>
+</pre></div><p>なぜなら、<code>m_helpCtrl</code> はメンバオブジェクトであり、MyApp のデストラクタで破棄されるためです。しかし、MyApp オブジェクトは wxCHMHelpController の依存する wxWidgets 構造が未初期化状態になった後に削除されます。この解決策は <em>OnExit</em> で HelpCtrl を削除することです: </p>
 <div class="fragment"><pre class="fragment"><span class="keyword">class </span>MyApp : <span class="keyword">public</span> <a class="code" href="classwx_app.html" title="wxUSE_GUI=1 のとき、wxApp はアプリケーション自身を表します。">wxApp</a>
 {
 <span class="keyword">public</span>:
@@ -170,14 +169,14 @@ Application Shutdown</h2>
     ...
 };
 
-<span class="keywordtype">bool</span> <a class="code" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">MyApp::OnInit</a>()
+<span class="keywordtype">bool</span> <a class="code" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">MyApp::OnInit</a>()
 {
     ...
     m_helpCtrl = <span class="keyword">new</span> wxCHMHelpController;
     ...
 }
 
-<span class="keywordtype">int</span> <a class="code" href="classwx_app_console.html#a5ee60051c92b0b2933258799626a0485" title="Override this member function for any processing which needs to be done as the application is about t...">MyApp::OnExit</a>()
+<span class="keywordtype">int</span> <a class="code" href="classwx_app_console.html#a5ee60051c92b0b2933258799626a0485" title="アプリケーションの終了時に処理を行なう必要がある場合にこのメンバ関数をオーバーライドしてください。">MyApp::OnExit</a>()
 {
     <span class="keyword">delete</span> m_helpCtrl;
     <span class="keywordflow">return</span> 0;

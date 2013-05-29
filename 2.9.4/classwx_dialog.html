@@ -162,7 +162,7 @@ Modal and Modeless</h2>
 
         <span class="comment">// no need to call Destroy() here</span>
     }
-</pre></div><p>An application can define a <a class="el" href="classwx_close_event.html" title="This event class contains information about window and session close events.">wxCloseEvent</a> handler for the dialog to respond to system close events.</p>
+</pre></div><p>An application can define a <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a> handler for the dialog to respond to system close events.</p>
 <h2>Styles</h2>
 <p>This class supports the following styles:</p>
 <div> </div><ul>
@@ -183,9 +183,9 @@ Modal and Modeless</h2>
 <p>Under Unix or Linux, MWM (the Motif Window Manager) or other window managers recognizing the MHM hints should be running for any of these styles to have an effect.</p>
 <h2>Events emitted by this class</h2>
 <p>The following event handler macros redirect the events to member function handlers '<b>func</b>' with prototypes like:  </p>
-<div class="eventHandler"><span>void&nbsp;handlerFuncName(<a class="el" href="classwx_close_event.html" title="This event class contains information about window and session close events.">wxCloseEvent</a>&amp;&nbsp;event)</span></div><p>Event macros for events emitted by this class:</p>
+<div class="eventHandler"><span>void&nbsp;handlerFuncName(<a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a>&amp;&nbsp;event)</span></div><p>Event macros for events emitted by this class:</p>
 <div> </div><ul>
-<li><span class="event">EVT_CLOSE(func)</span>:<div class="eventDesc">  The dialog is being closed by the user or programmatically (see <a class="el" href="classwx_window.html#a3e44f4a494fc9ef4346c4fba70c8de0c" title="This function simply generates a wxCloseEvent whose handler usually tries to close the window...">wxWindow::Close</a>). The user may generate this event clicking the close button (typically the 'X' on the top-right of the title bar) if it's present (see the <code>wxCLOSE_BOX</code> style) or by clicking a button with the <code>wxID_CANCEL</code> or <code>wxID_OK</code> ids.  </div></li>
+<li><span class="event">EVT_CLOSE(func)</span>:<div class="eventDesc">  The dialog is being closed by the user or programmatically (see <a class="el" href="classwx_window.html#a3e44f4a494fc9ef4346c4fba70c8de0c" title="この関数は単純に wxCloseEvent を作成します。通常はこのイベントを受け取ったハンドラはウィンドウを閉じようとします。">wxWindow::Close</a>). The user may generate this event clicking the close button (typically the 'X' on the top-right of the title bar) if it's present (see the <code>wxCLOSE_BOX</code> style) or by clicking a button with the <code>wxID_CANCEL</code> or <code>wxID_OK</code> ids.  </div></li>
 <li><span class="event">EVT_INIT_DIALOG(func)</span>:<div class="eventDesc">  Process a <code>wxEVT_INIT_DIALOG</code> event. See <a class="el" href="classwx_init_dialog_event.html" title="A wxInitDialogEvent is sent as a dialog or panel is being initialised.">wxInitDialogEvent</a>.  </div></li>
 </ul>
 <h2></h2>
@@ -674,7 +674,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>This function is called when the titlebar OK button is pressed (PocketPC only).  </p>
-<p>A command event for the identifier returned by <a class="el" href="classwx_dialog.html#ae1dfa9d9b983615e6f350dbbfafbabe6" title="Gets the identifier of the button which works like standard OK button in this dialog.">GetAffirmativeId()</a> is sent by default. You can override this function. If the function returns <span class="literal">false</span>, wxWidgets will call <a class="el" href="classwx_window.html#a3e44f4a494fc9ef4346c4fba70c8de0c" title="This function simply generates a wxCloseEvent whose handler usually tries to close the window...">Close()</a> for the dialog.</p>
+<p>A command event for the identifier returned by <a class="el" href="classwx_dialog.html#ae1dfa9d9b983615e6f350dbbfafbabe6" title="Gets the identifier of the button which works like standard OK button in this dialog.">GetAffirmativeId()</a> is sent by default. You can override this function. If the function returns <span class="literal">false</span>, wxWidgets will call <a class="el" href="classwx_window.html#a3e44f4a494fc9ef4346c4fba70c8de0c" title="この関数は単純に wxCloseEvent を作成します。通常はこのイベントを受け取ったハンドラはウィンドウを閉じようとします。">Close()</a> for the dialog.</p>
 <div><span class="avail">Availability:</span>&nbsp;&nbsp;only available for the <a class="el" href="page_port.html#page_port_wxmsw">wxMSW</a> port.</div>  
 </div>
 </div><!-- doxytag: member="wxDialog::EnableLayoutAdaptation" ref="a016cfd686f75bcfc5f7b6f127be74c7c" args="(bool enable)" -->

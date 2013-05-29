@@ -177,7 +177,7 @@ Types of wxThreads</h2>
 
         <span class="keywordtype">void</span> OnThreadUpdate(<a class="code" href="classwx_thread_event.html" title="This class adds some simple functionality to wxEvent to facilitate inter-thread communication.">wxThreadEvent</a>&amp;);
         <span class="keywordtype">void</span> OnThreadCompletion(<a class="code" href="classwx_thread_event.html" title="This class adds some simple functionality to wxEvent to facilitate inter-thread communication.">wxThreadEvent</a>&amp;);
-        <span class="keywordtype">void</span> OnClose(<a class="code" href="classwx_close_event.html" title="This event class contains information about window and session close events.">wxCloseEvent</a>&amp;);
+        <span class="keywordtype">void</span> OnClose(<a class="code" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a>&amp;);
 
     <span class="keyword">protected</span>:
         MyThread *m_pThread;
@@ -277,7 +277,7 @@ Types of wxThreads</h2>
         }
     }
 
-    <span class="keywordtype">void</span> MyFrame::OnClose(<a class="code" href="classwx_close_event.html" title="This event class contains information about window and session close events.">wxCloseEvent</a>&amp;)
+    <span class="keywordtype">void</span> MyFrame::OnClose(<a class="code" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a>&amp;)
     {
         {
             <a class="code" href="classwx_critical_section_locker.html" title="This is a small helper class to be used with wxCriticalSection objects.">wxCriticalSectionLocker</a> enter(m_pThreadCS);
@@ -319,7 +319,7 @@ wxThread Deletion</h2>
 <h2><a class="anchor" id="thread_secondary"></a>
 
 wxWidgets Calls in Secondary Threads</h2>
-<p>All threads other than the "main application thread" (the one running <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="This must be provided by the application, and will usually create the application's main window...">wxApp::OnInit()</a> or the one your main function runs in, for example) are considered "secondary threads". These include all threads created by <a class="el" href="classwx_thread.html#a88051a33aa3fa9ca9392ac7d47b43cf4" title="Creates a new thread.">Create()</a> or the corresponding constructors.</p>
+<p>All threads other than the "main application thread" (the one running <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">wxApp::OnInit()</a> or the one your main function runs in, for example) are considered "secondary threads". These include all threads created by <a class="el" href="classwx_thread.html#a88051a33aa3fa9ca9392ac7d47b43cf4" title="Creates a new thread.">Create()</a> or the corresponding constructors.</p>
 <p>GUI calls, such as those to a <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> or <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> are explicitly not safe at all in secondary threads and could end your application prematurely. This is due to several reasons, including the underlying native API and the fact that <a class="el" href="classwx_thread.html" title="A thread is basically a path of execution through a program.">wxThread</a> does not run a GUI event loop similar to other APIs as MFC.</p>
 <p>A workaround for some wxWidgets ports is calling wxMutexGUIEnter() before any GUI calls and then calling wxMutexGUILeave() afterwords. However, the recommended way is to simply process the GUI calls in the main thread through an event that is posted by <a class="el" href="group__group__funcmacro__events.html#gae921d7bd0e52fedbf3f253d2c408bce1" title="特定のオブジェクトで処理するためにイベントをキューへ追加します。">wxQueueEvent()</a>. This does not imply that calls to these classes are thread-safe, however, as most wxWidgets classes are not thread-safe, including <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>.</p>
 <h2><a class="anchor" id="thread_poll"></a>
