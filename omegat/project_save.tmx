@@ -376,6 +376,154 @@ protected:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>...
+}
+
+&lt;s7&gt;int&lt;/s7&gt; &lt;a8&gt;MyApp::OnExit&lt;/a8&gt;()
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124602Z">
+        <seg>...
+}
+
+&lt;s7&gt;int&lt;/s7&gt; &lt;a8&gt;MyApp::OnExit&lt;/a8&gt;()
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...
+}
+
+int MyApp::OnExit()
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162758Z">
+        <seg>...
+}
+
+int MyApp::OnExit()
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...
+};</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162439Z">
+        <seg>...
+};</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...
+};
+
+&lt;s4&gt;bool&lt;/s4&gt; &lt;a5&gt;MyApp::OnInit&lt;/a5&gt;()
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124559Z">
+        <seg>...
+};
+
+&lt;s4&gt;bool&lt;/s4&gt; &lt;a5&gt;MyApp::OnInit&lt;/a5&gt;()
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...
+};
+
+bool MyApp::OnInit()
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162754Z">
+        <seg>...
+};
+
+bool MyApp::OnInit()
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...
+}
+
+&lt;s7&gt;int&lt;/s7&gt; &lt;a8&gt;MyApp::OnExit&lt;/a8&gt;()
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124602Z">
+        <seg>...
+}
+
+&lt;s7&gt;int&lt;/s7&gt; &lt;a8&gt;MyApp::OnExit&lt;/a8&gt;()
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...
+}
+
+int MyApp::OnExit()
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162758Z">
+        <seg>...
+}
+
+int MyApp::OnExit()
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...
+};</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162439Z">
+        <seg>...
+};</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...
+};
+
+&lt;s4&gt;bool&lt;/s4&gt; &lt;a5&gt;MyApp::OnInit&lt;/a5&gt;()
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124559Z">
+        <seg>...
+};
+
+&lt;s4&gt;bool&lt;/s4&gt; &lt;a5&gt;MyApp::OnInit&lt;/a5&gt;()
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...
+};
+
+bool MyApp::OnInit()
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162754Z">
+        <seg>...
+};
+
+bool MyApp::OnInit()
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>... &lt;s55&gt;do&lt;/s55&gt; something with &lt;s56&gt;event&lt;/s56&gt;.GetPoint() ...
 }
 
@@ -768,6 +916,22 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T041638Z">
         <seg>&lt;a0&gt;非英語アプリケーションの作成&lt;/a0&gt; - 文字コードに関連した問題について取り組む場合に参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxApp&lt;/a0&gt; Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152201Z">
+        <seg>&lt;a0&gt;wxApp&lt;/a0&gt; の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxApp&lt;/a0&gt; Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152201Z">
+        <seg>&lt;a0&gt;wxApp&lt;/a0&gt; の概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -1288,6 +1452,22 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a12&gt;&lt;b13&gt;wxApp overview&lt;/b13&gt;&lt;/a12&gt;&lt;br14&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152025Z">
+        <seg>&lt;a12&gt;&lt;b13&gt;wxApp の概要&lt;/b13&gt;&lt;/a12&gt;&lt;br14&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a12&gt;&lt;b13&gt;wxApp overview&lt;/b13&gt;&lt;/a12&gt;&lt;br14&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152025Z">
+        <seg>&lt;a12&gt;&lt;b13&gt;wxApp の概要&lt;/b13&gt;&lt;/a12&gt;&lt;br14&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a12&gt;Custom event summary&lt;/a12&gt;&lt;br13&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T075046Z">
@@ -1684,6 +1864,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a6&gt;Application class: wxApp&lt;/a6&gt;&lt;br7&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T151947Z">
+        <seg>&lt;a6&gt;アプリケーションクラス: wxApp&lt;/a6&gt;&lt;br7&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a6&gt;Application class: wxApp&lt;/a6&gt;&lt;br7&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T151947Z">
+        <seg>&lt;a6&gt;アプリケーションクラス: wxApp&lt;/a6&gt;&lt;br7&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a6&gt;Pluggable event handlers&lt;/a6&gt;&lt;br7&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T074926Z">
@@ -1720,6 +1916,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T003252Z">
         <seg>&lt;a6&gt;wxLogTextCtrl&lt;/a6&gt;,&lt;br7&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a7&gt;wxFrame&lt;/a7&gt; *the_frame = &lt;s8&gt;new&lt;/s8&gt; &lt;a9&gt;wxFrame&lt;/a9&gt;(NULL, ID_MYFRAME, argv[0]);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152659Z">
+        <seg>&lt;a7&gt;wxFrame&lt;/a7&gt; *the_frame = &lt;s8&gt;new&lt;/s8&gt; &lt;a9&gt;wxFrame&lt;/a9&gt;(NULL, ID_MYFRAME, argv[0]);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a7&gt;wxFrame&lt;/a7&gt; *the_frame = &lt;s8&gt;new&lt;/s8&gt; &lt;a9&gt;wxFrame&lt;/a9&gt;(NULL, ID_MYFRAME, argv[0]);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152659Z">
+        <seg>&lt;a7&gt;wxFrame&lt;/a7&gt; *the_frame = &lt;s8&gt;new&lt;/s8&gt; &lt;a9&gt;wxFrame&lt;/a9&gt;(NULL, ID_MYFRAME, argv[0]);</seg>
       </tuv>
     </tu>
     <tu>
@@ -2116,6 +2328,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;e0&gt;OnInit&lt;/e0&gt; will usually create a top window as a bare minimum.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T123716Z">
+        <seg>通常、&lt;e0&gt;OnInit&lt;/e0&gt; では最低限、トップウィンドウを作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;e0&gt;OnInit&lt;/e0&gt; will usually create a top window as a bare minimum.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T123716Z">
+        <seg>通常、&lt;e0&gt;OnInit&lt;/e0&gt; では最低限、トップウィンドウを作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;e0&gt;Please pay close attention to step 6!&lt;/e0&gt; People often overlook or get confused by this powerful feature of the wxWidgets event processing system.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T145251Z">
@@ -2128,6 +2356,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T150042Z">
         <seg>列サイザー、行サイザーを作成する場合、 &lt;i0&gt;orient&lt;/i0&gt; はそれぞれ wxVERTICAL または wxHORIZONTAL になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;i2&gt;OnInit&lt;/i2&gt; will usually create a top window as a bare minimum.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T123741Z">
+        <seg>通常、&lt;i2&gt;OnInit&lt;/i2&gt; では最低限、トップウィンドウを作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;i2&gt;OnInit&lt;/i2&gt; will usually create a top window as a bare minimum.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T123741Z">
+        <seg>通常、&lt;i2&gt;OnInit&lt;/i2&gt; では最低限、トップウィンドウを作成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2188,6 +2432,54 @@ MyDialog::MyDialog(&lt;a2&gt;wxFrame&lt;/a2&gt; *parent, &lt;a3&gt;wxWindowID&lt
 
 &lt;s6&gt;// イベントテーブルによるイベント処理のコード例&lt;/s6&gt;
 &lt;a7&gt;wxBEGIN_EVENT_TABLE&lt;/a7&gt;(MyFrame, &lt;a8&gt;wxFrame&lt;/a8&gt;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;class &lt;/s0&gt;DerivedApp : &lt;s1&gt;public&lt;/s1&gt; &lt;a2&gt;wxApp&lt;/a2&gt;
+{
+&lt;s3&gt;public&lt;/s3&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152654Z">
+        <seg>&lt;s0&gt;class &lt;/s0&gt;DerivedApp : &lt;s1&gt;public&lt;/s1&gt; &lt;a2&gt;wxApp&lt;/a2&gt;
+{
+&lt;s3&gt;public&lt;/s3&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;class &lt;/s0&gt;MyApp : &lt;s1&gt;public&lt;/s1&gt; &lt;a2&gt;wxApp&lt;/a2&gt;
+{
+&lt;s3&gt;public&lt;/s3&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124532Z">
+        <seg>&lt;s0&gt;class &lt;/s0&gt;MyApp : &lt;s1&gt;public&lt;/s1&gt; &lt;a2&gt;wxApp&lt;/a2&gt;
+{
+&lt;s3&gt;public&lt;/s3&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;class &lt;/s0&gt;DerivedApp : &lt;s1&gt;public&lt;/s1&gt; &lt;a2&gt;wxApp&lt;/a2&gt;
+{
+&lt;s3&gt;public&lt;/s3&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152654Z">
+        <seg>&lt;s0&gt;class &lt;/s0&gt;DerivedApp : &lt;s1&gt;public&lt;/s1&gt; &lt;a2&gt;wxApp&lt;/a2&gt;
+{
+&lt;s3&gt;public&lt;/s3&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;class &lt;/s0&gt;MyApp : &lt;s1&gt;public&lt;/s1&gt; &lt;a2&gt;wxApp&lt;/a2&gt;
+{
+&lt;s3&gt;public&lt;/s3&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124532Z">
+        <seg>&lt;s0&gt;class &lt;/s0&gt;MyApp : &lt;s1&gt;public&lt;/s1&gt; &lt;a2&gt;wxApp&lt;/a2&gt;
+{
+&lt;s3&gt;public&lt;/s3&gt;:</seg>
       </tuv>
     </tu>
     <tu>
@@ -2332,6 +2624,26 @@ puts(p); &lt;s3&gt;// または const char * を受け取る他の関数の呼�
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s10&gt;return&lt;/s10&gt; 0;
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124606Z">
+        <seg>&lt;s10&gt;return&lt;/s10&gt; 0;
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s10&gt;return&lt;/s10&gt; 0;
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124606Z">
+        <seg>&lt;s10&gt;return&lt;/s10&gt; 0;
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s10&gt;void&lt;/s10&gt; OnExit(&lt;a11&gt;wxCommandEvent&lt;/a11&gt;&amp; event);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T024715Z">
@@ -2352,6 +2664,26 @@ puts(p); &lt;s3&gt;// または const char * を受け取る他の関数の呼�
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130515T150109Z">
         <seg>&lt;s12&gt;// 処理を行なう&lt;/s12&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s12&gt;return&lt;/s12&gt; &lt;s13&gt;true&lt;/s13&gt;;
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152703Z">
+        <seg>&lt;s12&gt;return&lt;/s12&gt; &lt;s13&gt;true&lt;/s13&gt;;
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s12&gt;return&lt;/s12&gt; &lt;s13&gt;true&lt;/s13&gt;;
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152703Z">
+        <seg>&lt;s12&gt;return&lt;/s12&gt; &lt;s13&gt;true&lt;/s13&gt;;
+}</seg>
       </tuv>
     </tu>
     <tu>
@@ -2812,6 +3144,46 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s4&gt;virtual&lt;/s4&gt; &lt;s5&gt;bool&lt;/s5&gt; &lt;a6&gt;OnInit&lt;/a6&gt;();
+};
+
+IMPLEMENT_APP(DerivedApp)
+
+bool DerivedApp::OnInit()
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152657Z">
+        <seg>&lt;s4&gt;virtual&lt;/s4&gt; &lt;s5&gt;bool&lt;/s5&gt; &lt;a6&gt;OnInit&lt;/a6&gt;();
+};
+
+IMPLEMENT_APP(DerivedApp)
+
+bool DerivedApp::OnInit()
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s4&gt;virtual&lt;/s4&gt; &lt;s5&gt;bool&lt;/s5&gt; &lt;a6&gt;OnInit&lt;/a6&gt;();
+};
+
+IMPLEMENT_APP(DerivedApp)
+
+bool DerivedApp::OnInit()
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152657Z">
+        <seg>&lt;s4&gt;virtual&lt;/s4&gt; &lt;s5&gt;bool&lt;/s5&gt; &lt;a6&gt;OnInit&lt;/a6&gt;();
+};
+
+IMPLEMENT_APP(DerivedApp)
+
+bool DerivedApp::OnInit()
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s50&gt;//create a sizer with no border and centered horizontally&lt;/s50&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T145549Z">
@@ -2972,6 +3344,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T015621Z">
         <seg>&lt;s9&gt;// する必要はありません。&lt;/s9&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s9&gt;delete&lt;/s9&gt; m_helpCtrl;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124605Z">
+        <seg>&lt;s9&gt;delete&lt;/s9&gt; m_helpCtrl;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s9&gt;delete&lt;/s9&gt; m_helpCtrl;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124605Z">
+        <seg>&lt;s9&gt;delete&lt;/s9&gt; m_helpCtrl;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3296,6 +3684,38 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A wxWidgets application does not have a &lt;e0&gt;main&lt;/e0&gt; procedure; the equivalent is the &lt;a1&gt;wxApp::OnInit&lt;/a1&gt; member defined for a class derived from &lt;a2&gt;wxApp&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T151105Z">
+        <seg>wxWidgets アプリケーションは &lt;e0&gt;main&lt;/e0&gt; 関数を持ちません。それと同等の関数が &lt;a2&gt;wxApp&lt;/a2&gt; を継承したクラスで定義される &lt;a1&gt;wxApp::OnInit&lt;/a1&gt; メンバ関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A wxWidgets application does not have a &lt;i0&gt;main&lt;/i0&gt; procedure; the equivalent is the &lt;a1&gt;OnInit&lt;/a1&gt; member defined for a class derived from wxApp.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T160017Z">
+        <seg>wxWidgets アプリケーションは &lt;i0&gt;main&lt;/i0&gt; 関数を持ちません。それと同等の関数が wxApp を継承したクラスで定義される &lt;a1&gt;OnInit&lt;/a1&gt; メンバ関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A wxWidgets application does not have a &lt;e0&gt;main&lt;/e0&gt; procedure; the equivalent is the &lt;a1&gt;wxApp::OnInit&lt;/a1&gt; member defined for a class derived from &lt;a2&gt;wxApp&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T133350Z">
+        <seg>wxWidgets アプリケーションは &lt;e0&gt;main&lt;/e0&gt; 関数を持ちません。それと同等の関数が wxApp を継承したクラスで定義される &lt;a1&gt;wxApp::OnInit&lt;/a1&gt; メンバ関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A wxWidgets application does not have a &lt;i0&gt;main&lt;/i0&gt; procedure; the equivalent is the &lt;a1&gt;OnInit&lt;/a1&gt; member defined for a class derived from wxApp.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T160017Z">
+        <seg>wxWidgets アプリケーションは &lt;i0&gt;main&lt;/i0&gt; 関数を持ちません。それと同等の関数が wxApp を継承したクラスで定義される &lt;a1&gt;OnInit&lt;/a1&gt; メンバ関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Acknowledgements</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T062043Z">
@@ -3404,6 +3824,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130519T143422Z">
         <seg>サイザーはすべてコンテナです。つまり、ひとつ (または複数) のダイアログアイテムを内部に配置するために使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Allows the programmer to specify whether the application will exit when the top-level frame is delete...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T153140Z">
+        <seg>トップレベルウィンドウが削除されたときにアプリケーションを終了するかどうかをユーザが指定することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Allows the programmer to specify whether the application will exit when the top-level frame is delete...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T153140Z">
+        <seg>トップレベルウィンドウが削除されたときにアプリケーションを終了するかどうかをユーザが指定することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3520,6 +3956,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An application closes by destroying all windows.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T160515Z">
+        <seg>アプリケーションはすべてのウィンドウを破棄することで終了します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An application closes by destroying all windows.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T160515Z">
+        <seg>アプリケーションはすべてのウィンドウを破棄することで終了します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An arbitrary functor like boost::function&lt;&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T000123Z">
@@ -3548,6 +4000,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T075334Z">
         <seg>イベントテーブルはソースファイルに配置され、wxWidgets にイベントとメンバ関数のマッピング方法を知らせます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An example of defining an application follows:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T160959Z">
+        <seg>アプリケーションを定義する例は以下の通りです:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An example of defining an application follows:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T160959Z">
+        <seg>アプリケーションを定義する例は以下の通りです:</seg>
       </tuv>
     </tu>
     <tu>
@@ -3604,6 +4072,38 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130507T160615Z">
         <seg>また、通常、イベントは wxWidgets 自身によって生成されますが、あなたがこれを行うことも可能です。これはカスタムイベントを使用する場合に特に有用です。 (&lt;a0&gt;カスタムイベントの概要&lt;/a0&gt; 参照) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Another aspect of the application shutdown is &lt;a0&gt;OnExit&lt;/a0&gt; which is called when the application exits but &lt;i1&gt;before&lt;/i1&gt; wxWidgets cleans up its internal structures.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162318Z">
+        <seg>アプリケーションの終了の別の側面は &lt;a0&gt;OnExit&lt;/a0&gt; です。この関数はアプリケーションの終了時に呼ばれますが、wxWidgets の内部構造が破棄される&lt;i1&gt;前&lt;/i1&gt;に呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Another aspect of the application shutdown is &lt;a0&gt;wxApp::OnExit&lt;/a0&gt; which is called when the application exits but &lt;e1&gt;before&lt;/e1&gt; wxWidgets cleans up its internal structures.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T133120Z">
+        <seg>アプリケーションの終了の別の側面は &lt;a0&gt;wxApp::OnExit&lt;/a0&gt; です。この関数はアプリケーションの終了時に呼ばれますが、wxWidgets の内部構造が破棄される&lt;e1&gt;前&lt;/e1&gt;に呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Another aspect of the application shutdown is &lt;a0&gt;OnExit&lt;/a0&gt; which is called when the application exits but &lt;i1&gt;before&lt;/i1&gt; wxWidgets cleans up its internal structures.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162318Z">
+        <seg>アプリケーションの終了の別の側面は &lt;a0&gt;OnExit&lt;/a0&gt; です。この関数はアプリケーションの終了時に呼ばれますが、wxWidgets の内部構造が破棄される&lt;i1&gt;前&lt;/i1&gt;に呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Another aspect of the application shutdown is &lt;a0&gt;wxApp::OnExit&lt;/a0&gt; which is called when the application exits but &lt;e1&gt;before&lt;/e1&gt; wxWidgets cleans up its internal structures.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T133120Z">
+        <seg>アプリケーションの終了の別の側面は &lt;a0&gt;wxApp::OnExit&lt;/a0&gt; です。この関数はアプリケーションの終了時に呼ばれますが、wxWidgets の内部構造が破棄される&lt;e1&gt;前&lt;/e1&gt;に呼ばれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3684,6 +4184,38 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T142326Z">
         <seg>サイザーに子コントロールを追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Application Shutdown</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152206Z">
+        <seg>アプリケーションの終了</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Application shutdown</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161738Z">
+        <seg>アプリケーションの終了</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Application Shutdown</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152206Z">
+        <seg>アプリケーションの終了</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Application shutdown</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161738Z">
+        <seg>アプリケーションの終了</seg>
       </tuv>
     </tu>
     <tu>
@@ -3922,6 +4454,22 @@ END_EVENT_TABLE()</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Because all frames must be destroyed for the application to exit, it is advisable to use parent frames wherever possible when creating new frames, so that deleting the top level frame will automatically delete child frames.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T160707Z">
+        <seg>アプリケーションを終了するためにはすべてのフレームを破棄しなければならないため、可能な限り、新しいフレームを作成するときは親フレームを使用するようにするべきです。こうすることで、トップレベルフレームの削除時に自動的に子フレームが削除されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Because all frames must be destroyed for the application to exit, it is advisable to use parent frames wherever possible when creating new frames, so that deleting the top level frame will automatically delete child frames.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T160707Z">
+        <seg>アプリケーションを終了するためにはすべてのフレームを破棄しなければならないため、可能な限り、新しいフレームを作成するときは親フレームを使用するようにするべきです。こうすることで、トップレベルフレームの削除時に自動的に子フレームが削除されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because of the need to support implicit conversions to both &lt;c0&gt;char&lt;/c0&gt; and &lt;c1&gt;wchar_t&lt;/c1&gt;, &lt;a2&gt;wxString&lt;/a2&gt; implementation is rather involved and many of its operators don't return the types which they could be naively expected to return.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T033944Z">
@@ -4066,6 +4614,22 @@ END_EVENT_TABLE()</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130514T155725Z">
         <seg>両方の戦略について、以下で詳細に述べています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>But MyApp object is deleted after wxWidgets structures that wxCHMHelpController depends on were uninitialized!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162718Z">
+        <seg>しかし、MyApp オブジェクトは wxCHMHelpController の依存する wxWidgets 構造が未初期化状態になった後に削除されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>But MyApp object is deleted after wxWidgets structures that wxCHMHelpController depends on were uninitialized!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162718Z">
+        <seg>しかし、MyApp オブジェクトは wxCHMHelpController の依存する wxWidgets 構造が未初期化状態になった後に削除されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4258,6 +4822,22 @@ END_EVENT_TABLE()</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T004641Z">
         <seg>クラス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Classes: &lt;a0&gt;wxApp&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T155917Z">
+        <seg>クラス: &lt;a0&gt;wxApp&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Classes: &lt;a0&gt;wxApp&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T155917Z">
+        <seg>クラス: &lt;a0&gt;wxApp&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5338,6 +5918,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, this code may crash:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162431Z">
+        <seg>例えば、このコードはクラッシュするでしょう:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, this code may crash:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162431Z">
+        <seg>例えば、このコードはクラッシュするでしょう:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, you could define a class inheriting from &lt;a0&gt;wxLog&lt;/a0&gt; which shows all the log messages in some part of your main application window reserved for the message output without interrupting the user work flow with modal message boxes.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T120750Z">
@@ -5924,6 +6520,38 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If this behaviour is not desirable &lt;a1&gt;wxApp::SetExitOnFrameDelete&lt;/a1&gt; can be called to change it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124028Z">
+        <seg>この振る舞いが望ましくない場合、&lt;a1&gt;wxApp::SetExitOnFrameDelete&lt;/a1&gt; を呼ぶことで振る舞いを変更することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If this behaviour is not desirable &lt;a2&gt;wxApp::SetExitOnFrameDelete&lt;/a2&gt; can be called to change it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162007Z">
+        <seg>この振る舞いが望ましくない場合、&lt;a2&gt;wxApp::SetExitOnFrameDelete&lt;/a2&gt; を呼ぶことで振る舞いを変更することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If this behaviour is not desirable &lt;a1&gt;wxApp::SetExitOnFrameDelete&lt;/a1&gt; can be called to change it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124028Z">
+        <seg>この振る舞いが望ましくない場合、&lt;a1&gt;wxApp::SetExitOnFrameDelete&lt;/a1&gt; を呼ぶことで振る舞いを変更することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If this behaviour is not desirable &lt;a2&gt;wxApp::SetExitOnFrameDelete&lt;/a2&gt; can be called to change it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162007Z">
+        <seg>この振る舞いが望ましくない場合、&lt;a2&gt;wxApp::SetExitOnFrameDelete&lt;/a2&gt; を呼ぶことで振る舞いを変更することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If this event handler is disabled via a call to &lt;a0&gt;wxEvtHandler::SetEvtHandlerEnabled()&lt;/a0&gt; the next three steps are skipped and the event handler resumes at step (5).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T071243Z">
@@ -6108,6 +6736,38 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In emergencies the &lt;a0&gt;wxExit&lt;/a0&gt; function can be called to kill the application however normally the application shuts down automatically, &lt;a1&gt;see below&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T160945Z">
+        <seg>緊急の場合は &lt;a0&gt;wxExit&lt;/a0&gt; 関数を使用してアプリケーションを強制終了させることができます。しかし、通常、アプリケーションは自動的にシャットダウンされます。 &lt;a1&gt;以下を参照してください&lt;/a1&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In emergencies the wxExit function can be called to kill the application however normally the application shuts down automatically, see &lt;a0&gt;Application Shutdown&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T133418Z">
+        <seg>緊急の場合は wxExit 関数を使用してアプリケーションを強制終了させることができます。しかし、通常、アプリケーションは自動的にシャットダウンされます。 &lt;a0&gt;アプリケーションの終了&lt;/a0&gt; を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In emergencies the &lt;a0&gt;wxExit&lt;/a0&gt; function can be called to kill the application however normally the application shuts down automatically, &lt;a1&gt;see below&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T160945Z">
+        <seg>緊急の場合は &lt;a0&gt;wxExit&lt;/a0&gt; 関数を使用してアプリケーションを強制終了させることができます。しかし、通常、アプリケーションは自動的にシャットダウンされます。 &lt;a1&gt;以下を参照してください&lt;/a1&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In emergencies the wxExit function can be called to kill the application however normally the application shuts down automatically, see &lt;a0&gt;Application Shutdown&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T133418Z">
+        <seg>緊急の場合は wxExit 関数を使用してアプリケーションを強制終了させることができます。しかし、通常、アプリケーションは自動的にシャットダウンされます。 &lt;a0&gt;アプリケーションの終了&lt;/a0&gt; を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In fact, identifiers do not need to be unique across your entire application as long they are unique within the particular context you're interested in, such as a frame and its children.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130517T171150Z">
@@ -6192,6 +6852,38 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T015610Z">
         <seg>特に、これらを public に&lt;/s8&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In particular, do &lt;b0&gt;not&lt;/b0&gt; destroy them from application class' destructor!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124528Z">
+        <seg>特に、アプリケーションクラスのデストラクタで削除しては &lt;b0&gt;いけません&lt;/b0&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In particular, do &lt;b2&gt;not&lt;/b2&gt; destroy them from application class' destructor!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162357Z">
+        <seg>特に、アプリケーションクラスのデストラクタで削除しては &lt;b2&gt;いけません&lt;/b2&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In particular, do &lt;b0&gt;not&lt;/b0&gt; destroy them from application class' destructor!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124528Z">
+        <seg>特に、アプリケーションクラスのデストラクタで削除しては &lt;b0&gt;いけません&lt;/b0&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In particular, do &lt;b2&gt;not&lt;/b2&gt; destroy them from application class' destructor!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162357Z">
+        <seg>特に、アプリケーションクラスのデストラクタで削除しては &lt;b2&gt;いけません&lt;/b2&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6368,6 +7060,38 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T041415Z">
         <seg>あなたのプログラムと一緒に .mo ファイルを対象システム内の適切な場所 (&lt;a0&gt;wxStandardPaths::GetLocalizedResourcesDir&lt;/a0&gt;( &lt;a1&gt;wxStandardPaths::ResourceCat_Messages&lt;/a1&gt; ) の返却する場所) にインストールする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Instead it returns a boolean value which indicates whether processing should continue (&lt;s1&gt;true&lt;/s1&gt;) or not (&lt;s2&gt;false&lt;/s2&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152514Z">
+        <seg>代わりに処理を継続する (&lt;s1&gt;true&lt;/s1&gt;) かしない (&lt;s2&gt;false&lt;/s2&gt;) かを表す真偽値を返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Instead it returns a boolean value which indicates whether processing should continue (true) or not (false).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T160313Z">
+        <seg>代わりに処理を継続する (true) かしない (false) かを表す真偽値を返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Instead it returns a boolean value which indicates whether processing should continue (&lt;s1&gt;true&lt;/s1&gt;) or not (&lt;s2&gt;false&lt;/s2&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152514Z">
+        <seg>代わりに処理を継続する (&lt;s1&gt;true&lt;/s1&gt;) かしない (&lt;s2&gt;false&lt;/s2&gt;) かを表す真偽値を返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Instead it returns a boolean value which indicates whether processing should continue (true) or not (false).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T160313Z">
+        <seg>代わりに処理を継続する (true) かしない (false) かを表す真偽値を返却します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7070,6 +7794,38 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that starting from wxWidgets 2.3.3 such logic doesn't apply for the windows shown before the program enters the main loop: in other words, you can safely show a dialog from &lt;a3&gt;wxApp::OnInit&lt;/a3&gt; and not be afraid that your application terminates when this dialog -- which is the last top level window for the moment -- is closed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T132741Z">
+        <seg>wxWidgets 2.3.3 から、このロジックはメインループに入る前のまだ表示されていないウィンドウには適用されなくなりました。つまり、 &lt;a3&gt;wxApp::OnInit&lt;/a3&gt; の中で安全にダイアログを表示でき、ダイアログ (その時点における最後のトップレベルウィンドウ) を閉じるときにアプリケーションが終了することを心配しなくても良いということです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that such logic doesn't apply for the windows shown before the program enters the main loop: in other words, you can safely show a dialog from &lt;a0&gt;wxApp::OnInit&lt;/a0&gt; and not be afraid that your application terminates when this dialog -- which is the last top level window for the moment -- is closed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T132719Z">
+        <seg>このロジックはメインループに入る前のまだ表示されていないウィンドウには適用されないことに注意してください。つまり、 &lt;a0&gt;wxApp::OnInit&lt;/a0&gt; の中で安全にダイアログを表示でき、ダイアログ (その時点における最後のトップレベルウィンドウ) を閉じるときにアプリケーションが終了することを心配しなくても良いということです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that starting from wxWidgets 2.3.3 such logic doesn't apply for the windows shown before the program enters the main loop: in other words, you can safely show a dialog from &lt;a3&gt;wxApp::OnInit&lt;/a3&gt; and not be afraid that your application terminates when this dialog -- which is the last top level window for the moment -- is closed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T132741Z">
+        <seg>wxWidgets 2.3.3 から、このロジックはメインループに入る前のまだ表示されていないウィンドウには適用されなくなりました。つまり、 &lt;a3&gt;wxApp::OnInit&lt;/a3&gt; の中で安全にダイアログを表示でき、ダイアログ (その時点における最後のトップレベルウィンドウ) を閉じるときにアプリケーションが終了することを心配しなくても良いということです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that such logic doesn't apply for the windows shown before the program enters the main loop: in other words, you can safely show a dialog from &lt;a0&gt;wxApp::OnInit&lt;/a0&gt; and not be afraid that your application terminates when this dialog -- which is the last top level window for the moment -- is closed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T132719Z">
+        <seg>このロジックはメインループに入る前のまだ表示されていないウィンドウには適用されないことに注意してください。つまり、 &lt;a0&gt;wxApp::OnInit&lt;/a0&gt; の中で安全にダイアログを表示でき、ダイアログ (その時点における最後のトップレベルウィンドウ) を閉じるときにアプリケーションが終了することを心配しなくても良いということです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that the new way of specifying flags to &lt;a0&gt;wxSizer&lt;/a0&gt; is via &lt;a1&gt;wxSizerFlags&lt;/a1&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130523T153032Z">
@@ -7082,6 +7838,38 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130523T153018Z">
         <seg>wxSizer にフラグを指定する新しい方法として &lt;a0&gt;wxSizerFlags&lt;/a0&gt; を使用する方法があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that the program's command line arguments, represented by &lt;e0&gt;argc&lt;/e0&gt; and &lt;e1&gt;argv&lt;/e1&gt;, are available from within &lt;a2&gt;wxApp&lt;/a2&gt; member functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152536Z">
+        <seg>プログラムのコマンドライン引数 (&lt;e0&gt;argc&lt;/e0&gt; と &lt;e1&gt;argv&lt;/e1&gt;) は &lt;a2&gt;wxApp&lt;/a2&gt; のメンバ関数から使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that the program's command line arguments, represented by &lt;i0&gt;argc&lt;/i0&gt; and &lt;i1&gt;argv&lt;/i1&gt;, are available from within wxApp member functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T160500Z">
+        <seg>プログラムのコマンドライン引数 (&lt;i0&gt;argc&lt;/i0&gt; と &lt;i1&gt;argv&lt;/i1&gt;) は wxApp のメンバ関数から使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that the program's command line arguments, represented by &lt;e0&gt;argc&lt;/e0&gt; and &lt;e1&gt;argv&lt;/e1&gt;, are available from within &lt;a2&gt;wxApp&lt;/a2&gt; member functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152536Z">
+        <seg>プログラムのコマンドライン引数 (&lt;e0&gt;argc&lt;/e0&gt; と &lt;e1&gt;argv&lt;/e1&gt;) は &lt;a2&gt;wxApp&lt;/a2&gt; のメンバ関数から使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that the program's command line arguments, represented by &lt;i0&gt;argc&lt;/i0&gt; and &lt;i1&gt;argv&lt;/i1&gt;, are available from within wxApp member functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T160500Z">
+        <seg>プログラムのコマンドライン引数 (&lt;i0&gt;argc&lt;/i0&gt; と &lt;i1&gt;argv&lt;/i1&gt;) は wxApp のメンバ関数から使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7146,6 +7934,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T052859Z">
         <seg>ProcessEvent をオーバーライドすることでイベント処理をリダイレクトしたいと思うかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note the use of IMPLEMENT_APP(appClass), which allows wxWidgets to dynamically create an instance of the application object at the appropriate point in wxWidgets initialization.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161134Z">
+        <seg>IMPLEMENT_APP(appClass) を使用している点に注意してください。これにより、wxWidgets の初期化時の適切なタイミングでアプリケーションオブジェクトのインスタンスが動的に作成されるようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note the use of IMPLEMENT_APP(appClass), which allows wxWidgets to dynamically create an instance of the application object at the appropriate point in wxWidgets initialization.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161134Z">
+        <seg>IMPLEMENT_APP(appClass) を使用している点に注意してください。これにより、wxWidgets の初期化時の適切なタイミングでアプリケーションオブジェクトのインスタンスが動的に作成されるようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7414,10 +8218,58 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Otherwise you can only use the global &lt;c0&gt;wxTheApp&lt;/c0&gt; pointer which is of type &lt;c1&gt;wxApp*&lt;/c1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152720Z">
+        <seg>そうしない場合、&lt;c1&gt;wxApp *&lt;/c1&gt; 型のグローバル変数である &lt;c0&gt;wxTheApp&lt;/c0&gt; ポインタを使用するしかありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Otherwise you can only use the global &lt;t0&gt;wxTheApp&lt;/t0&gt; pointer which is of type &lt;t1&gt;wxApp *&lt;/t1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161635Z">
+        <seg>そうしない場合、&lt;t1&gt;wxApp *&lt;/t1&gt; 型のグローバル変数である &lt;t0&gt;wxTheApp&lt;/t0&gt; ポインタを使用するしかありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Otherwise you can only use the global &lt;c0&gt;wxTheApp&lt;/c0&gt; pointer which is of type &lt;c1&gt;wxApp*&lt;/c1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152720Z">
+        <seg>そうしない場合、&lt;c1&gt;wxApp *&lt;/c1&gt; 型のグローバル変数である &lt;c0&gt;wxTheApp&lt;/c0&gt; ポインタを使用するしかありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Otherwise you can only use the global &lt;t0&gt;wxTheApp&lt;/t0&gt; pointer which is of type &lt;t1&gt;wxApp *&lt;/t1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161635Z">
+        <seg>そうしない場合、&lt;t1&gt;wxApp *&lt;/t1&gt; 型のグローバル変数である &lt;t0&gt;wxTheApp&lt;/t0&gt; ポインタを使用するしかありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Overridden wxEventFilter method.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T065638Z">
         <seg>wxEventFilter をオーバーライドした関数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Override this member function for any processing which needs to be done as the application is about t...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124236Z">
+        <seg>アプリケーションの終了時に処理を行なう必要がある場合にこのメンバ関数をオーバーライドしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Override this member function for any processing which needs to be done as the application is about t...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124236Z">
+        <seg>アプリケーションの終了時に処理を行なう必要がある場合にこのメンバ関数をオーバーライドしてください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7530,6 +8382,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T145431Z">
         <seg>Previous</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Previous versions of wxWidgets used to rely on the creation of a global application object, but this is no longer recommended, because required global initialization may not have been performed at application object construction time.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T132359Z">
+        <seg>以前の wxWidgets ではグルーバルなアプリケーションオブジェクトを作成していましたが、もはやこれは非推奨です。なぜなら、期待したグローバルオブジェクトの初期化がアプリケーションオブジェクトの構築時に行われない可能性があるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Previous versions of wxWidgets used to rely on the creation of a global application object, but this is no longer recommended, because required global initialization may not have been performed at application object construction time.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T132359Z">
+        <seg>以前の wxWidgets ではグルーバルなアプリケーションオブジェクトを作成していましたが、もはやこれは非推奨です。なぜなら、期待したグローバルオブジェクトの初期化がアプリケーションオブジェクトの構築時に行われない可能性があるためです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7838,6 +8706,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T144924Z">
         <seg>SetSizerAndFit(topsizer); &lt;s59&gt;// レイアウトにサイザーを使用して&lt;/s59&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SetTopWindow(the_frame);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161010Z">
+        <seg>SetTopWindow(the_frame);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SetTopWindow(the_frame);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161010Z">
+        <seg>SetTopWindow(the_frame);</seg>
       </tuv>
     </tu>
     <tu>
@@ -8350,6 +9234,38 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T021516Z">
         <seg>実際のエラーは wxWidgets コード (&lt;i1&gt;wxFile::Write&lt;/i1&gt;) 内で検知されるため、呼び出し元の関数では失敗の正確な原因を実際に知ることはできず、ディスクへの書き込みに失敗したことしか分かりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The alternative is to explicitly delete child frames in the top-level frame's &lt;a0&gt;wxCloseEvent&lt;/a0&gt; handler.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T160758Z">
+        <seg>アプリケーションを終了する別の方法はトップレベルフレームの &lt;a0&gt;wxCloseEvent&lt;/a0&gt; イベントハンドラで明示的に子フレームを削除することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The application normally shuts down when the last of its top level windows is closed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161802Z">
+        <seg>通常、アプリケーションは最後のトップレベルウィンドウが閉じられたときに終了します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The alternative is to explicitly delete child frames in the top-level frame's &lt;a0&gt;wxCloseEvent&lt;/a0&gt; handler.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T160758Z">
+        <seg>アプリケーションを終了する別の方法はトップレベルフレームの &lt;a0&gt;wxCloseEvent&lt;/a0&gt; イベントハンドラで明示的に子フレームを削除することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The application normally shuts down when the last of its top level windows is closed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161802Z">
+        <seg>通常、アプリケーションは最後のトップレベルウィンドウが閉じられたときに終了します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8882,6 +9798,38 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The reason for that is that &lt;c0&gt;m_helpCtrl&lt;/c0&gt; is a member object and is thus destroyed from MyApp destructor.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124542Z">
+        <seg>なぜなら、&lt;c0&gt;m_helpCtrl&lt;/c0&gt; はメンバオブジェクトであり、MyApp のデストラクタで破棄されるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The reason for that is that &lt;t0&gt;m_helpCtrl&lt;/t0&gt; is a member object and is thus destroyed from MyApp destructor.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162536Z">
+        <seg>なぜなら、&lt;t0&gt;m_helpCtrl&lt;/t0&gt; はメンバオブジェクトであり、MyApp のデストラクタで破棄されるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The reason for that is that &lt;c0&gt;m_helpCtrl&lt;/c0&gt; is a member object and is thus destroyed from MyApp destructor.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124542Z">
+        <seg>なぜなら、&lt;c0&gt;m_helpCtrl&lt;/c0&gt; はメンバオブジェクトであり、MyApp のデストラクタで破棄されるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The reason for that is that &lt;t0&gt;m_helpCtrl&lt;/t0&gt; is a member object and is thus destroyed from MyApp destructor.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162536Z">
+        <seg>なぜなら、&lt;t0&gt;m_helpCtrl&lt;/t0&gt; はメンバオブジェクトであり、MyApp のデストラクタで破棄されるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The result of &lt;c0&gt;c_str()&lt;/c0&gt; cannot be cast to &lt;c1&gt;char*&lt;/c1&gt; but only to &lt;c2&gt;const&lt;/c2&gt; &lt;c3&gt;&lt;c4&gt;char*&lt;/c4&gt;.&lt;/c3&gt; Of course, modifying the string via the pointer returned by this method has never been possible but unfortunately it was occasionally useful to use a &lt;c5&gt;const_cast&lt;/c5&gt; here to pass the value to const-incorrect functions.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T034344Z">
@@ -9030,6 +9978,38 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T111045Z">
         <seg>ボーダーの太さも伝える必要があり、Add() 関数の第三引数に指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The solution is to destroy HelpCtrl in &lt;e1&gt;OnExit:&lt;/e1&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124552Z">
+        <seg>この解決策は &lt;e1&gt;OnExit&lt;/e1&gt; で HelpCtrl を削除することです:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The solution is to destroy HelpCtrl in &lt;i1&gt;OnExit&lt;/i1&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162750Z">
+        <seg>この解決策は &lt;i1&gt;OnExit&lt;/i1&gt; で HelpCtrl を削除することです:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The solution is to destroy HelpCtrl in &lt;e1&gt;OnExit:&lt;/e1&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124552Z">
+        <seg>この解決策は &lt;e1&gt;OnExit&lt;/e1&gt; で HelpCtrl を削除することです:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The solution is to destroy HelpCtrl in &lt;i1&gt;OnExit&lt;/i1&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162750Z">
+        <seg>この解決策は &lt;i1&gt;OnExit&lt;/i1&gt; で HelpCtrl を削除することです:</seg>
       </tuv>
     </tu>
     <tu>
@@ -9666,10 +10646,42 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This event class contains information about window and session close events.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152613Z">
+        <seg>このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This event class contains information about window and session close events.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152613Z">
+        <seg>このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This event type ID is stored in a struct of type &lt;b1&gt;const wxEventType&lt;/b1&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T150744Z">
         <seg>このイベント ID は &lt;b1&gt;const wxEventType&lt;/b1&gt; 型の構造体に格納されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This function simply generates a wxCloseEvent whose handler usually tries to close the window...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T153025Z">
+        <seg>この関数は単純に wxCloseEvent を作成します。通常はこのイベントを受け取ったハンドラはウィンドウを閉じようとします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This function simply generates a wxCloseEvent whose handler usually tries to close the window...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T153025Z">
+        <seg>この関数は単純に wxCloseEvent を作成します。通常はこのイベントを受け取ったハンドラはウィンドウを閉じようとします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9770,6 +10782,38 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is normally the expected behaviour and means that it is enough to call &lt;a0&gt;Close()&lt;/a0&gt; in response to the &lt;t1&gt;"Exit"&lt;/t1&gt; menu command if your program has a single top level window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T123948Z">
+        <seg>これは通常期待する振る舞いであり、アプリケーションが単一のトップレベルウィンドウを持つ場合は &lt;t1&gt;"Exit"&lt;/t1&gt; メニューが選択されたときに &lt;a0&gt;Close()&lt;/a0&gt; を呼ぶだけで充分なことを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is normally the expected behaviour and means that it is enough to call &lt;a0&gt;wxWindow::Close()&lt;/a0&gt; in response to the "Exit" menu command if your program has a single top level window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124017Z">
+        <seg>これは通常期待する振る舞いであり、アプリケーションが単一のトップレベルウィンドウを持つ場合は "Exit" メニューが選択されたときに &lt;a0&gt;wxWindow::Close()&lt;/a0&gt; を呼ぶだけで充分なことを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is normally the expected behaviour and means that it is enough to call &lt;a0&gt;Close()&lt;/a0&gt; in response to the &lt;t1&gt;"Exit"&lt;/t1&gt; menu command if your program has a single top level window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T123948Z">
+        <seg>これは通常期待する振る舞いであり、アプリケーションが単一のトップレベルウィンドウを持つ場合は &lt;t1&gt;"Exit"&lt;/t1&gt; メニューが選択されたときに &lt;a0&gt;Close()&lt;/a0&gt; を呼ぶだけで充分なことを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is normally the expected behaviour and means that it is enough to call &lt;a0&gt;wxWindow::Close()&lt;/a0&gt; in response to the "Exit" menu command if your program has a single top level window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124017Z">
+        <seg>これは通常期待する振る舞いであり、アプリケーションが単一のトップレベルウィンドウを持つ場合は "Exit" メニューが選択されたときに &lt;a0&gt;wxWindow::Close()&lt;/a0&gt; を呼ぶだけで充分なことを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is supported only by &lt;a0&gt;wxBoxSizer&lt;/a0&gt; and &lt;a1&gt;wxFlexGridSizer&lt;/a1&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T141651Z">
@@ -9846,6 +10890,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T064047Z">
         <seg>この関数はイベントハンドラの中で使用し、現在のイベントハンドラの処理が終わった後にさらにイベントハンドラを呼び出すかどうかを制御します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This must be provided by the application, and will usually create the application's main window...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152428Z">
+        <seg>アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This must be provided by the application, and will usually create the application's main window...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152428Z">
+        <seg>アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10426,6 +11486,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Unlike in earlier versions of wxWidgets, OnInit does not return a frame.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T151214Z">
+        <seg>wxWidgets の初期バージョンとは違い、OnInit はフレームを返却しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike in earlier versions of wxWidgets, OnInit does not return a frame.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T151214Z">
+        <seg>wxWidgets の初期バージョンとは違い、OnInit はフレームを返却しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Unlike the original wxWidgets Dialog Editor, editors such as wxDesigner, DialogBlocks, XRCed and wxWorkshop create dialogs based exclusively on sizers, practically forcing the user to create platform independent layouts without compromises.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130519T114516Z">
@@ -10882,6 +11958,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You call &lt;a0&gt;wxApp::SetTopWindow&lt;/a0&gt; to let wxWidgets know about the top window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T151234Z">
+        <seg>wxWidgets へトップウィンドウを教えるためには &lt;a0&gt;wxApp::SetTopWindow&lt;/a0&gt; を使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You call &lt;a0&gt;wxApp::SetTopWindow&lt;/a0&gt; to let wxWidgets know about the top window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T151234Z">
+        <seg>wxWidgets へトップウィンドウを教えるためには &lt;a0&gt;wxApp::SetTopWindow&lt;/a0&gt; を使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can also redirect the &lt;e4&gt;wxLogXXX&lt;/e4&gt; calls to &lt;e5&gt;cout&lt;/e5&gt; by just writing:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T091504Z">
@@ -10894,6 +11986,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T015131Z">
         <seg>以下のように書くことで &lt;i0&gt;wxLogXXX&lt;/i0&gt; 呼び出しを &lt;i1&gt;cout&lt;/i1&gt; へリダイレクトすることもできます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can also use DECLARE_APP(appClass) in a header file to declare the wxGetApp function which returns a reference to the application object.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T151539Z">
+        <seg>また、ヘッダファイル内で DECLARE_APP(appClass) を使用することで、アプリケーションオブジェクトへの参照を返却する wxGetApp 関数を宣言できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can also use DECLARE_APP(appClass) in a header file to declare the wxGetApp function which returns a reference to the application object.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T151539Z">
+        <seg>また、ヘッダファイル内で DECLARE_APP(appClass) を使用することで、アプリケーションオブジェクトへの参照を返却する wxGetApp 関数を宣言できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11018,6 +12126,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You should delete all wxWidgets object that you created by the time OnExit finishes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162416Z">
+        <seg>作成した wxWidgets は OnExit が完了するまでにすべて削除するべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You should delete all wxWidgets object that you created by the time OnExit finishes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162416Z">
+        <seg>作成した wxWidgets は OnExit が完了するまでにすべて削除するべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You shouldn't pass &lt;c0&gt;c_str()&lt;/c0&gt; result to vararg functions such as standard &lt;c1&gt;printf()&lt;/c1&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T124508Z">
@@ -11126,6 +12250,50 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130501T160628Z">
         <seg>char ch = '*';</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>class DerivedApp : public wxApp
+{
+public:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161002Z">
+        <seg>class DerivedApp : public wxApp
+{
+public:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>class MyApp : public wxApp
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162433Z">
+        <seg>class MyApp : public wxApp
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>class DerivedApp : public wxApp
+{
+public:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161002Z">
+        <seg>class DerivedApp : public wxApp
+{
+public:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>class MyApp : public wxApp
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162433Z">
+        <seg>class MyApp : public wxApp
+{</seg>
       </tuv>
     </tu>
     <tu>
@@ -11322,6 +12490,22 @@ protected:
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T004610Z">
         <seg>custom_stylesheet.css</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>delete m_helpCtrl;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162759Z">
+        <seg>delete m_helpCtrl;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>delete m_helpCtrl;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162759Z">
+        <seg>delete m_helpCtrl;</seg>
       </tuv>
     </tu>
     <tu>
@@ -11578,6 +12762,38 @@ protected:
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T045726Z">
         <seg>m_child-&gt;Bind(&lt;a0&gt;wxEVT_LEAVE_WINDOW&lt;/a0&gt;, &amp;MyFrame::OnMouseLeave, &lt;s1&gt;this&lt;/s1&gt;);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>m_helpCtrl = &lt;s6&gt;new&lt;/s6&gt; wxCHMHelpController;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124601Z">
+        <seg>m_helpCtrl = &lt;s6&gt;new&lt;/s6&gt; wxCHMHelpController;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>m_helpCtrl = new wxCHMHelpController;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162755Z">
+        <seg>m_helpCtrl = new wxCHMHelpController;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>m_helpCtrl = &lt;s6&gt;new&lt;/s6&gt; wxCHMHelpController;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T124601Z">
+        <seg>m_helpCtrl = &lt;s6&gt;new&lt;/s6&gt; wxCHMHelpController;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>m_helpCtrl = new wxCHMHelpController;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162755Z">
+        <seg>m_helpCtrl = new wxCHMHelpController;</seg>
       </tuv>
     </tu>
     <tu>
@@ -11880,6 +13096,62 @@ protected:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>public:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162435Z">
+        <seg>public:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>return 0;
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162801Z">
+        <seg>return 0;
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>return true;
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161010Z">
+        <seg>return true;
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>public:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162435Z">
+        <seg>public:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>return 0;
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162801Z">
+        <seg>return 0;
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>return true;
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161010Z">
+        <seg>return true;
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>s.&lt;a0&gt;c_str&lt;/a0&gt;() + n</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T123831Z">
@@ -11940,6 +13212,38 @@ protected:
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T004609Z">
         <seg>tabs.css</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the_frame-&gt;&lt;a10&gt;Show&lt;/a10&gt;(&lt;s11&gt;true&lt;/s11&gt;);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152700Z">
+        <seg>the_frame-&gt;&lt;a10&gt;Show&lt;/a10&gt;(&lt;s11&gt;true&lt;/s11&gt;);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the_frame-&gt;Show(true);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161008Z">
+        <seg>the_frame-&gt;Show(true);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the_frame-&gt;&lt;a10&gt;Show&lt;/a10&gt;(&lt;s11&gt;true&lt;/s11&gt;);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152700Z">
+        <seg>the_frame-&gt;&lt;a10&gt;Show&lt;/a10&gt;(&lt;s11&gt;true&lt;/s11&gt;);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the_frame-&gt;Show(true);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161008Z">
+        <seg>the_frame-&gt;Show(true);</seg>
       </tuv>
     </tu>
     <tu>
@@ -12006,6 +13310,46 @@ protected:
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T145429Z">
         <seg>up.gif</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>virtual bool OnInit();
+};
+
+IMPLEMENT_APP(DerivedApp)
+
+bool DerivedApp::OnInit()
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161004Z">
+        <seg>virtual bool OnInit();
+};
+
+IMPLEMENT_APP(DerivedApp)
+
+bool DerivedApp::OnInit()
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>virtual bool OnInit();
+};
+
+IMPLEMENT_APP(DerivedApp)
+
+bool DerivedApp::OnInit()
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161004Z">
+        <seg>virtual bool OnInit();
+};
+
+IMPLEMENT_APP(DerivedApp)
+
+bool DerivedApp::OnInit()
+{</seg>
       </tuv>
     </tu>
     <tu>
@@ -12186,6 +13530,38 @@ protected:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxApp Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T135011Z">
+        <seg>wxApp の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxApp overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T155912Z">
+        <seg>wxApp の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxApp Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130529T135011Z">
+        <seg>wxApp の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxApp overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T155912Z">
+        <seg>wxApp の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxBACKWARD  // return wxID_BACKWARD</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T120016Z">
@@ -12262,6 +13638,38 @@ protected:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T115856Z">
         <seg>wxCANCEL // wxID_CANCEL を返却します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxCHMHelpController *m_helpCtrl;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162752Z">
+        <seg>wxCHMHelpController *m_helpCtrl;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxCHMHelpController m_helpCtrl;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162436Z">
+        <seg>wxCHMHelpController m_helpCtrl;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxCHMHelpController *m_helpCtrl;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162752Z">
+        <seg>wxCHMHelpController *m_helpCtrl;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxCHMHelpController m_helpCtrl;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T162436Z">
+        <seg>wxCHMHelpController m_helpCtrl;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12428,6 +13836,22 @@ private:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T055226Z">
         <seg>wxFocusEvent</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxFrame *the_frame = new wxFrame(NULL, ID_MYFRAME, argv[0]);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161006Z">
+        <seg>wxFrame *the_frame = new wxFrame(NULL, ID_MYFRAME, argv[0]);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxFrame *the_frame = new wxFrame(NULL, ID_MYFRAME, argv[0]);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130527T161006Z">
+        <seg>wxFrame *the_frame = new wxFrame(NULL, ID_MYFRAME, argv[0]);</seg>
       </tuv>
     </tu>
     <tu>
@@ -13166,6 +14590,22 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T004606Z">
         <seg>wxWidgets: wxWidgets: wxWidgets における Unicode 対応</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxWidgets: wxWidgets: wxApp Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152152Z">
+        <seg>wxWidgets: wxWidgets: wxApp の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxWidgets: wxWidgets: wxApp Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130528T152152Z">
+        <seg>wxWidgets: wxWidgets: wxApp の概要</seg>
       </tuv>
     </tu>
     <tu>
