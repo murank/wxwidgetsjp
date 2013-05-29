@@ -191,7 +191,7 @@ function toggleVisibility(linkObj) {
 <li><span class="event">EVT_MOUSE_CAPTURE_LOST(func)</span>:<div class="eventDesc">  Process a <code>wxEVT_MOUSE_CAPTURE_LOST</code> event. See <a class="el" href="classwx_mouse_capture_lost_event.html" title="A mouse capture lost event is sent to a window that had obtained mouse capture, which was subsequentl...">wxMouseCaptureLostEvent</a>.  </div></li>
 <li><span class="event">EVT_MOUSE_CAPTURE_CHANGED(func)</span>:<div class="eventDesc">  Process a <code>wxEVT_MOUSE_CAPTURE_CHANGED</code> event. See <a class="el" href="classwx_mouse_capture_changed_event.html" title="An mouse capture changed event is sent to a window that loses its mouse capture.">wxMouseCaptureChangedEvent</a>.  </div></li>
 <li><span class="event">EVT_MOUSE_*(func)</span>:<div class="eventDesc">  See <a class="el" href="classwx_mouse_event.html" title="このイベントクラスはマウスによって生成されるイベントに関する情報を含んでいます: これにはマウスボタンの押下、解放イベント、およびマウスの移動イベントが含まれます。">wxMouseEvent</a>.  </div></li>
-<li><span class="event">EVT_PAINT(func)</span>:<div class="eventDesc">  Process a <code>wxEVT_PAINT</code> event. See <a class="el" href="classwx_paint_event.html" title="A paint event is sent when a window's contents needs to be repainted.">wxPaintEvent</a>.  </div></li>
+<li><span class="event">EVT_PAINT(func)</span>:<div class="eventDesc">  Process a <code>wxEVT_PAINT</code> event. See <a class="el" href="classwx_paint_event.html" title="ペイントイベントはウィンドウのコンテンツを再描画する必要があるときに送信されます。">wxPaintEvent</a>.  </div></li>
 <li><span class="event">EVT_POWER_*(func)</span>:<div class="eventDesc">  The system power state changed. See <a class="el" href="classwx_power_event.html" title="The power events are generated when the system power state changes, e.g.">wxPowerEvent</a>.  </div></li>
 <li><span class="event">EVT_SCROLLWIN_*(func)</span>:<div class="eventDesc">  Process scroll events. See <a class="el" href="classwx_scroll_win_event.html" title="A scroll event holds information about events sent from scrolling windows.">wxScrollWinEvent</a>.  </div></li>
 <li><span class="event">EVT_SET_CURSOR(func)</span>:<div class="eventDesc">  Process a <code>wxEVT_SET_CURSOR</code> event. See <a class="el" href="classwx_set_cursor_event.html" title="A wxSetCursorEvent is generated from wxWindow when the mouse cursor is about to be set as a result of...">wxSetCursorEvent</a>.  </div></li>
@@ -1244,7 +1244,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears the window by filling it with the current background colour.  </p>
 <p>Does not cause an erase background event to be generated.</p>
-<p>Notice that this uses <a class="el" href="classwx_client_d_c.html" title="A wxClientDC must be constructed if an application wishes to paint on the client area of a window fro...">wxClientDC</a> to draw on the window and the results of doing it while also drawing on <a class="el" href="classwx_paint_d_c.html" title="A wxPaintDC must be constructed if an application wishes to paint on the client area of a window from...">wxPaintDC</a> for this window are undefined. Hence this method shouldn't be used from EVT_PAINT handlers, just use <a class="el" href="classwx_d_c.html#acf301dfd75b0f31d969ecb9daec21e85" title="Clears the device context using the current background brush.">wxDC::Clear()</a> on the <a class="el" href="classwx_paint_d_c.html" title="A wxPaintDC must be constructed if an application wishes to paint on the client area of a window from...">wxPaintDC</a> you already use there instead.  </p>
+<p>Notice that this uses <a class="el" href="classwx_client_d_c.html" title="wxClientDC は EVT_PAINT() イベントハンドラ以外の場所でクライアントエリアを描画する場合に使用する必要があります。">wxClientDC</a> to draw on the window and the results of doing it while also drawing on <a class="el" href="classwx_paint_d_c.html" title="wxClientDC は EVT_PAINT() イベントハンドラ内でクライアントエリアを描画する場合に使用する必要があります。">wxPaintDC</a> for this window are undefined. Hence this method shouldn't be used from EVT_PAINT handlers, just use <a class="el" href="classwx_d_c.html#acf301dfd75b0f31d969ecb9daec21e85" title="Clears the device context using the current background brush.">wxDC::Clear()</a> on the <a class="el" href="classwx_paint_d_c.html" title="wxClientDC は EVT_PAINT() イベントハンドラ内でクライアントエリアを描画する場合に使用する必要があります。">wxPaintDC</a> you already use there instead.  </p>
 
 </div>
 </div><!-- doxytag: member="wxWindow::ClientToScreen" ref="a29eac611e5f6b47db82bb4dd5450ba3d" args="(int *x, int *y) const " -->
@@ -3459,7 +3459,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clears the window by filling it with the current background colour.  </p>
 <p>Does not cause an erase background event to be generated.</p>
-<p>Notice that this uses <a class="el" href="classwx_client_d_c.html" title="A wxClientDC must be constructed if an application wishes to paint on the client area of a window fro...">wxClientDC</a> to draw on the window and the results of doing it while also drawing on <a class="el" href="classwx_paint_d_c.html" title="A wxPaintDC must be constructed if an application wishes to paint on the client area of a window from...">wxPaintDC</a> for this window are undefined. Hence this method shouldn't be used from EVT_PAINT handlers, just use <a class="el" href="classwx_d_c.html#acf301dfd75b0f31d969ecb9daec21e85" title="Clears the device context using the current background brush.">wxDC::Clear()</a> on the <a class="el" href="classwx_paint_d_c.html" title="A wxPaintDC must be constructed if an application wishes to paint on the client area of a window from...">wxPaintDC</a> you already use there instead.  </p>
+<p>Notice that this uses <a class="el" href="classwx_client_d_c.html" title="wxClientDC は EVT_PAINT() イベントハンドラ以外の場所でクライアントエリアを描画する場合に使用する必要があります。">wxClientDC</a> to draw on the window and the results of doing it while also drawing on <a class="el" href="classwx_paint_d_c.html" title="wxClientDC は EVT_PAINT() イベントハンドラ内でクライアントエリアを描画する場合に使用する必要があります。">wxPaintDC</a> for this window are undefined. Hence this method shouldn't be used from EVT_PAINT handlers, just use <a class="el" href="classwx_d_c.html#acf301dfd75b0f31d969ecb9daec21e85" title="Clears the device context using the current background brush.">wxDC::Clear()</a> on the <a class="el" href="classwx_paint_d_c.html" title="wxClientDC は EVT_PAINT() イベントハンドラ内でクライアントエリアを描画する場合に使用する必要があります。">wxPaintDC</a> you already use there instead.  </p>
 
 </div>
 </div><!-- doxytag: member="wxWindow::GetToolTip" ref="aae94155ccf8a6e4e72ad08527c89ba89" args="() const " -->
@@ -3532,7 +3532,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns the region specifying which parts of the window have been damaged.  </p>
-<p>Should only be called within an <a class="el" href="classwx_paint_event.html" title="A paint event is sent when a window's contents needs to be repainted.">wxPaintEvent</a> handler.</p>
+<p>Should only be called within an <a class="el" href="classwx_paint_event.html" title="ペイントイベントはウィンドウのコンテンツを再描画する必要があるときに送信されます。">wxPaintEvent</a> handler.</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_region.html" title="A wxRegion represents a simple or complex region on a device context or window.">wxRegion</a>, <a class="el" href="classwx_region_iterator.html" title="This class is used to iterate through the rectangles in a region, typically when examining the damage...">wxRegionIterator</a> </dd></dl>
 
 </div>
@@ -4130,7 +4130,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Returns <span class="literal">true</span> if the window contents is double-buffered by the system, i.e.  </p>
 <p>if any drawing done on the window is really done on a temporary backing surface and transferred to the screen all at once later.</p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_buffered_d_c.html" title="This class provides a simple way to avoid flicker: when drawing on it, everything is in fact first dr...">wxBufferedDC</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_buffered_d_c.html" title="このクラスはちらつきを防止するための単純な方法を提供します: 描画時には最初にメモリ上のバッファ (wxBitmap) へすべて描画し、それから関連する wxDC を使用してスクリーン上へ一度だけ、このオブジェクトの破棄時にコピーします。">wxBufferedDC</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::IsEnabled" ref="a59452a5bd42f5ea4b31d7fc4aa59644f" args="() const " -->
@@ -6037,7 +6037,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Sets the font for this window.  </p>
 <p>This function should not be called for the parent window if you don't want its font to be inherited by its children, use <a class="el" href="classwx_window.html#a89a4f62f23c1e7c845b8d07cecae4c43" title="Sets the font of the window but prevents it from being inherited by the children of this window...">SetOwnFont()</a> instead in this case and see <a class="el" href="classwx_window.html#a6b1bf9e099704e7a493b8c4666b1f7f7" title="This function is (or should be, in case of custom controls) called during window creation to intellig...">InheritAttributes()</a> for more explanations.</p>
-<p>Please notice that the given font is not automatically used for <a class="el" href="classwx_paint_d_c.html" title="A wxPaintDC must be constructed if an application wishes to paint on the client area of a window from...">wxPaintDC</a> objects associated with this window, you need to call <a class="el" href="classwx_d_c.html#afab18239d707cd403235b36a987171a8" title="Sets the current font for the DC.">wxDC::SetFont</a> too. However this font is used by any standard controls for drawing their text as well as by <a class="el" href="classwx_window.html#ac9cd7b4472d5419e518f69311914466f" title="Gets the dimensions of the string as it would be drawn on the window with the currently selected font...">GetTextExtent()</a>.</p>
+<p>Please notice that the given font is not automatically used for <a class="el" href="classwx_paint_d_c.html" title="wxClientDC は EVT_PAINT() イベントハンドラ内でクライアントエリアを描画する場合に使用する必要があります。">wxPaintDC</a> objects associated with this window, you need to call <a class="el" href="classwx_d_c.html#afab18239d707cd403235b36a987171a8" title="Sets the current font for the DC.">wxDC::SetFont</a> too. However this font is used by any standard controls for drawing their text as well as by <a class="el" href="classwx_window.html#ac9cd7b4472d5419e518f69311914466f" title="Gets the dimensions of the string as it would be drawn on the window with the currently selected font...">GetTextExtent()</a>.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">font</td><td>Font to associate with this window, pass wxNullFont to reset to the default font.</td></tr>

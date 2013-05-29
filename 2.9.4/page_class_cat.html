@@ -133,7 +133,7 @@ function toggleVisibility(linkObj) {
 <li><a class="el" href="page_class_cat.html#page_class_cat_miscwnd">Miscellaneous Windows</a> </li>
 </ul>
 </td><td><ul>
-<li><a class="el" href="page_class_cat.html#page_class_cat_dc">Device Contexts</a> </li>
+<li><a class="el" href="page_class_cat.html#page_class_cat_dc">デバイスコンテキスト</a> </li>
 <li><a class="el" href="page_class_cat.html#page_class_cat_gdi">Graphics Device Interface</a> </li>
 <li><a class="el" href="page_class_cat.html#page_class_cat_gc">Graphics Context classes</a> </li>
 <li><a class="el" href="page_class_cat.html#page_class_cat_image">Image and bitmap classes</a> </li>
@@ -384,24 +384,23 @@ HTML</h2>
 <li><a class="el" href="classwx_html_win_tag_handler.html" title="This is basically wxHtmlTagHandler except that it is extended with protected member m_WParser pointin...">wxHtmlWinTagHandler</a>: HTML tag handler, pluginable into <a class="el" href="classwx_html_win_parser.html" title="This class is derived from wxHtmlParser and its main goal is to parse HTML input so that it can be di...">wxHtmlWinParser</a></li>
 </ul>
 <h2><a class="anchor" id="page_class_cat_dc"></a>
-
-Device Contexts</h2>
+デバイスコンテキスト</h2>
 <p>Device contexts are surfaces that may be drawn on, and provide an abstraction that allows parameterisation of your drawing code by passing different device contexts.</p>
 <p>Related Overviews: <a class="el" href="overview_dc.html">Device Contexts</a></p>
 <ul>
 <li><a class="el" href="classwx_auto_buffered_paint_d_c.html" title="This wxDC derivative can be used inside of an EVT_PAINT() event handler to achieve double-buffered dr...">wxAutoBufferedPaintDC</a>: A helper device context for double buffered drawing inside <b>OnPaint()</b>.  </li>
-<li><a class="el" href="classwx_buffered_d_c.html" title="This class provides a simple way to avoid flicker: when drawing on it, everything is in fact first dr...">wxBufferedDC</a>: A helper device context for double buffered drawing.  </li>
-<li><a class="el" href="classwx_buffered_paint_d_c.html" title="This is a subclass of wxBufferedDC which can be used inside of an EVT_PAINT() event handler to achiev...">wxBufferedPaintDC</a>: A helper device context for double buffered drawing inside <b>OnPaint()</b>.  </li>
-<li><a class="el" href="classwx_client_d_c.html" title="A wxClientDC must be constructed if an application wishes to paint on the client area of a window fro...">wxClientDC</a>: A device context to access the client area outside <b>OnPaint()</b> events  </li>
-<li><a class="el" href="classwx_paint_d_c.html" title="A wxPaintDC must be constructed if an application wishes to paint on the client area of a window from...">wxPaintDC</a>: A device context to access the client area inside <b>OnPaint()</b> events  </li>
-<li><a class="el" href="classwx_window_d_c.html" title="A wxWindowDC must be constructed if an application wishes to paint on the whole area of a window (cli...">wxWindowDC</a>: A device context to access the non-client area  </li>
-<li><a class="el" href="classwx_screen_d_c.html" title="A wxScreenDC can be used to paint on the screen.">wxScreenDC</a>: A device context to access the entire screen  </li>
-<li><a class="el" href="classwx_d_c.html" title='A wxDC is a "device context" onto which graphics and text can be drawn.'>wxDC</a>: The device context base class  </li>
-<li><a class="el" href="classwx_memory_d_c.html" title="A memory device context provides a means to draw graphics onto a bitmap.">wxMemoryDC</a>: A device context for drawing into bitmaps  </li>
-<li><a class="el" href="classwx_metafile_d_c.html" title="This is a type of device context that allows a metafile object to be created (Windows only)...">wxMetafileDC</a>: A device context for drawing into metafiles  </li>
+<li><a class="el" href="classwx_buffered_d_c.html" title="このクラスはちらつきを防止するための単純な方法を提供します: 描画時には最初にメモリ上のバッファ (wxBitmap) へすべて描画し、それから関連する wxDC を使用してスクリーン上へ一度だけ、このオブジェクトの破棄時にコピーします。">wxBufferedDC</a>: A helper device context for double buffered drawing.  </li>
+<li><a class="el" href="classwx_buffered_paint_d_c.html" title="これは wxBufferedDC のサブクラスで、ダブルバッファリングを行なうために EVT_PAINT() イベントハンドラの内部で使用できます。">wxBufferedPaintDC</a>: A helper device context for double buffered drawing inside <b>OnPaint()</b>.  </li>
+<li><a class="el" href="classwx_client_d_c.html" title="wxClientDC は EVT_PAINT() イベントハンドラ以外の場所でクライアントエリアを描画する場合に使用する必要があります。">wxClientDC</a>: A device context to access the client area outside <b>OnPaint()</b> events  </li>
+<li><a class="el" href="classwx_paint_d_c.html" title="wxClientDC は EVT_PAINT() イベントハンドラ内でクライアントエリアを描画する場合に使用する必要があります。">wxPaintDC</a>: A device context to access the client area inside <b>OnPaint()</b> events  </li>
+<li><a class="el" href="classwx_window_d_c.html" title="wxWindowDC はウィンドウ全体 (クライアントエリアと装飾部分) を描画する場合に使用する必要があります。">wxWindowDC</a>: A device context to access the non-client area  </li>
+<li><a class="el" href="classwx_screen_d_c.html" title="wxScreenDC はスクリーン上へ描画するときに使用します。">wxScreenDC</a>: A device context to access the entire screen  </li>
+<li><a class="el" href="classwx_d_c.html" title="wxDC は図形やテキストを描画可能なデバイスコンテキストです。">wxDC</a>: The device context base class  </li>
+<li><a class="el" href="classwx_memory_d_c.html" title="メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。">wxMemoryDC</a>: A device context for drawing into bitmaps  </li>
+<li><a class="el" href="classwx_metafile_d_c.html" title="これはメタファイルオブジェクトを作成するためのデバイスコンテキスト型で (Windows のみ)、通常の wxDC の特徴の大半を備えています。">wxMetafileDC</a>: A device context for drawing into metafiles  </li>
 <li><a class="el" href="classwx_mirror_d_c.html" title="wxMirrorDC is a simple wrapper class which is always associated with a real wxDC object and either fo...">wxMirrorDC</a>: A proxy device context allowing for simple mirroring.  </li>
-<li><a class="el" href="classwx_post_script_d_c.html" title="This defines the wxWidgets Encapsulated PostScript device context, which can write PostScript files o...">wxPostScriptDC</a>: A device context for drawing into PostScript files  </li>
-<li><a class="el" href="classwx_printer_d_c.html" title="A printer device context is specific to MSW and Mac, and allows access to any printer with a Windows ...">wxPrinterDC</a>: A device context for drawing to printers</li>
+<li><a class="el" href="classwx_post_script_d_c.html" title="これは wxWidets がカプセル化した PostScript デバイスコンテキストを定義しており、どのプラットフォームにおいても PostScript ファイルを作成することができます。">wxPostScriptDC</a>: A device context for drawing into PostScript files  </li>
+<li><a class="el" href="classwx_printer_d_c.html" title="プリンタデバイスコンテキストは MSW と Mac に特有のデバイスコンテキストで、Windows や Macintosh のドライバを使用してプリンタへアクセスできます。">wxPrinterDC</a>: A device context for drawing to printers</li>
 </ul>
 <h2><a class="anchor" id="page_class_cat_gc"></a>
 
@@ -448,7 +447,7 @@ Image and bitmap classes</h2>
 <li><a class="el" href="classwx_image_handler.html" title="This is the base class for implementing image file loading/saving, and image creation from data...">wxImageHandler</a>: Class for loading a saving a <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> in a specific format  </li>
 <li><a class="el" href="classwx_image_list.html" title="A wxImageList contains a list of images, which are stored in an unspecified form.">wxImageList</a>: A list of images, used with some controls  </li>
 <li><a class="el" href="classwx_mask.html" title="This class encapsulates a monochrome mask bitmap, where the masked area is black and the unmasked are...">wxMask</a>: Represents a mask to be used with a bitmap for transparent drawing  </li>
-<li><a class="el" href="classwx_memory_d_c.html" title="A memory device context provides a means to draw graphics onto a bitmap.">wxMemoryDC</a>: A device context for drawing into bitmaps  </li>
+<li><a class="el" href="classwx_memory_d_c.html" title="メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。">wxMemoryDC</a>: A device context for drawing into bitmaps  </li>
 <li><a class="el" href="classwx_pixel_data.html" title="A class template with ready to use implementations for getting direct and efficient access to wxBitma...">wxPixelData</a>: Class template for direct access to wxBitmap's and wxImage's internal data</li>
 </ul>
 <h2><a class="anchor" id="page_class_cat_events"></a>
@@ -489,7 +488,7 @@ Events</h2>
 <li><a class="el" href="classwx_navigation_key_event.html" title="This event class contains information about navigation events, generated by navigation keys such as t...">wxNavigationKeyEvent</a>: An event set by navigation keys such as tab  </li>
 <li>wxNotebookEvent: A notebook control event  </li>
 <li><a class="el" href="classwx_notify_event.html" title="このクラスはイベントハンドラ自身では使用されませんが、(wxBookCtrlEvent などの) 他のイベントクラスの基底クラスです。 ">wxNotifyEvent</a>: A notification event, which can be vetoed  </li>
-<li><a class="el" href="classwx_paint_event.html" title="A paint event is sent when a window's contents needs to be repainted.">wxPaintEvent</a>: A paint event  </li>
+<li><a class="el" href="classwx_paint_event.html" title="ペイントイベントはウィンドウのコンテンツを再描画する必要があるときに送信されます。">wxPaintEvent</a>: A paint event  </li>
 <li><a class="el" href="classwx_process_event.html" title="A process event is sent to the wxEvtHandler specified to wxProcess when a process is terminated...">wxProcessEvent</a>: A process ending event  </li>
 <li><a class="el" href="classwx_query_layout_info_event.html" title="This event is sent when wxLayoutAlgorithm wishes to get the size, orientation and alignment of a wind...">wxQueryLayoutInfoEvent</a>: Used to query layout information  </li>
 <li><a class="el" href="classwx_rich_text_event.html" title="This is the event class for wxRichTextCtrl notifications.">wxRichTextEvent</a>: A rich text editing event  </li>
@@ -529,7 +528,7 @@ Printing Framework</h2>
 <li><a class="el" href="classwx_print_dialog.html" title="This class represents the print and print setup common dialogs.">wxPrintDialog</a>: Standard print dialog  </li>
 <li><a class="el" href="classwx_page_setup_dialog.html" title="This class represents the page setup common dialog.">wxPageSetupDialog</a>: Standard page setup dialog  </li>
 <li><a class="el" href="classwx_printer.html" title="This class represents the Windows or PostScript printer, and is the vehicle through which printing ma...">wxPrinter</a>: Class representing the printer  </li>
-<li><a class="el" href="classwx_printer_d_c.html" title="A printer device context is specific to MSW and Mac, and allows access to any printer with a Windows ...">wxPrinterDC</a>: Printer device context  </li>
+<li><a class="el" href="classwx_printer_d_c.html" title="プリンタデバイスコンテキストは MSW と Mac に特有のデバイスコンテキストで、Windows や Macintosh のドライバを使用してプリンタへアクセスできます。">wxPrinterDC</a>: Printer device context  </li>
 <li><a class="el" href="classwx_printout.html" title="This class encapsulates the functionality of printing out an application document.">wxPrintout</a>: Class representing a particular printout  </li>
 <li><a class="el" href="classwx_print_preview.html" title="Objects of this class manage the print preview process.">wxPrintPreview</a>: Class representing a print preview  </li>
 <li><a class="el" href="classwx_print_data.html" title="This class holds a variety of information related to printers and printer device contexts.">wxPrintData</a>: Represents information about the document being printed  </li>

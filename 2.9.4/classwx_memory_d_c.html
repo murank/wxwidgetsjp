@@ -118,7 +118,7 @@ function toggleVisibility(linkObj) {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">wxMemoryDC Class Reference<div class="ingroups"><a class="el" href="group__group__class__dc.html">Device Contexts</a></div></div>  </div>
+<div class="title">wxMemoryDC Class Reference<div class="ingroups"><a class="el" href="group__group__class__dc.html">デバイスコンテキスト</a></div></div>  </div>
 </div>
 <div class="contents"><!-- doxytag: class="wxMemoryDC" --><!-- doxytag: inherits="wxDC" -->
 
@@ -130,14 +130,14 @@ function toggleVisibility(linkObj) {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classwx_memory_d_c__inherit__graph.png" border="0" usemap="#wx_memory_d_c_inherit__map" alt="Inheritance graph"/></div>
 <map name="wx_memory_d_c_inherit__map" id="wx_memory_d_c_inherit__map">
-<area shape="rect" id="node7" href="classwx_buffered_d_c.html" title="This class provides a simple way to avoid flicker: when drawing on it, everything is in fact first dr..." alt="" coords="33,246,137,277"/><area shape="rect" id="node2" href="classwx_d_c.html" title='A wxDC is a "device context" onto which graphics and text can be drawn.' alt="" coords="57,86,113,117"/><area shape="rect" id="node4" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="48,6,123,37"/><area shape="rect" id="node9" href="classwx_buffered_paint_d_c.html" title="This is a subclass of wxBufferedDC which can be used inside of an EVT_PAINT() event handler to achiev..." alt="" coords="19,326,152,357"/><area shape="rect" id="node11" href="classwx_auto_buffered_paint_d_c.html" title="This wxDC derivative can be used inside of an EVT_PAINT() event handler to achieve double-buffered dr..." alt="" coords="5,406,165,437"/></map>
+<area shape="rect" id="node7" href="classwx_buffered_d_c.html" title="このクラスはちらつきを防止するための単純な方法を提供します: 描画時には最初にメモリ上のバッファ (wxBitmap) へすべて描画し、それから関連する wxDC を使用してスクリーン上へ一度だけ、このオブジェクトの破棄時にコピーします。" alt="" coords="33,246,137,277"/><area shape="rect" id="node2" href="classwx_d_c.html" title="wxDC は図形やテキストを描画可能なデバイスコンテキストです。" alt="" coords="57,86,113,117"/><area shape="rect" id="node4" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="48,6,123,37"/><area shape="rect" id="node9" href="classwx_buffered_paint_d_c.html" title="これは wxBufferedDC のサブクラスで、ダブルバッファリングを行なうために EVT_PAINT() イベントハンドラの内部で使用できます。" alt="" coords="19,326,152,357"/><area shape="rect" id="node11" href="classwx_auto_buffered_paint_d_c.html" title="This wxDC derivative can be used inside of an EVT_PAINT() event handler to achieve double-buffered dr..." alt="" coords="5,406,165,437"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>A memory device context provides a means to draw graphics onto a bitmap.  </p>
+<div class="textblock"><p>メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。 </p>
 <p>When drawing in to a mono-bitmap, using <code>wxWHITE</code>, <code>wxWHITE_PEN</code> and <code>wxWHITE_BRUSH</code> will draw the background colour (i.e. 0) whereas all other colours will draw the foreground colour (i.e. 1).</p>
 <p>A bitmap must be selected into the new memory DC before it may be used for anything. Typical usage is as follows:</p>
 <div class="fragment"><pre class="fragment">    <span class="comment">// Create a memory DC</span>
-    <a class="code" href="classwx_memory_d_c.html" title="A memory device context provides a means to draw graphics onto a bitmap.">wxMemoryDC</a> temp_dc;
+    <a class="code" href="classwx_memory_d_c.html" title="メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。">wxMemoryDC</a> temp_dc;
     temp_dc.<a class="code" href="classwx_memory_d_c.html#a93d218796ba9359eb4aec2ae46a813e6" title="Works exactly like SelectObjectAsSource() but this is the function you should use when you select a b...">SelectObject</a>(test_bitmap);
 
     <span class="comment">// We can now draw into the memory DC...</span>
@@ -146,9 +146,9 @@ function toggleVisibility(linkObj) {
 </pre></div><p>Note that the memory DC must be deleted (or the bitmap selected out of it) before a bitmap can be reselected into another memory DC.</p>
 <p>And, before performing any other operations on the bitmap data, the bitmap must be selected out of the memory DC:</p>
 <div class="fragment"><pre class="fragment">    temp_dc.<a class="code" href="classwx_memory_d_c.html#a93d218796ba9359eb4aec2ae46a813e6" title="Works exactly like SelectObjectAsSource() but this is the function you should use when you select a b...">SelectObject</a>(<a class="code" href="interface_2wx_2bitmap_8h.html#a2947690e84b8fdb2e37b79a4af8f8a21" title="An empty wxBitmap object.">wxNullBitmap</a>);
-</pre></div><p>This happens automatically when <a class="el" href="classwx_memory_d_c.html" title="A memory device context provides a means to draw graphics onto a bitmap.">wxMemoryDC</a> object goes out of scope.</p>
+</pre></div><p>This happens automatically when <a class="el" href="classwx_memory_d_c.html" title="メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。">wxMemoryDC</a> object goes out of scope.</p>
 <h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__dc.html">Device Contexts</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a>, <a class="el" href="classwx_d_c.html" title='A wxDC is a "device context" onto which graphics and text can be drawn.'>wxDC</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__dc.html">Device Contexts</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a>, <a class="el" href="classwx_d_c.html" title="wxDC は図形やテキストを描画可能なデバイスコンテキストです。">wxDC</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 

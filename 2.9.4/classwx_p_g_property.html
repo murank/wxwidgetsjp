@@ -2397,7 +2397,7 @@ Protected Member Functions</h2></td></tr>
 <p>NOTE: Following applies when <a class="el" href="classwx_p_g_property.html#a8c4008c4d7d148bd06f9db590301df76" title="Returns size of the custom painted image in front of property.">OnMeasureImage()</a> returns a "flexible" height ( using wxPG_FLEXIBLE_SIZE(W,H) macro), which implies variable height items: If rect.x is &lt; 0, then this is a measure item call, which means that dc is invalid and only thing that should be done is to set paintdata.m_drawnHeight to the height of the image of item at index paintdata.m_choiceItem. This call may be done even as often as once every drop-down popup show.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">dc</td><td><a class="el" href="classwx_d_c.html" title='A wxDC is a "device context" onto which graphics and text can be drawn.'>wxDC</a> to paint on.  </td></tr>
+    <tr><td class="paramname">dc</td><td><a class="el" href="classwx_d_c.html" title="wxDC は図形やテキストを描画可能なデバイスコンテキストです。">wxDC</a> to paint on.  </td></tr>
     <tr><td class="paramname">rect</td><td>Box reserved for custom graphics. Includes surrounding rectangle, if any. If x is &lt; 0, then this is a measure item call (see above).  </td></tr>
     <tr><td class="paramname">paintdata</td><td>wxPGPaintData structure with much useful data about painted item.  <div class="fragment"><pre class="fragment">        <span class="keyword">struct </span>wxPGPaintData
         {

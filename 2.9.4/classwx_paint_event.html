@@ -133,20 +133,20 @@ function toggleVisibility(linkObj) {
 <area shape="rect" id="node2" href="classwx_event.html" title="wxEvent はコールバック関数かメンバ関数に渡されるイベントの情報を格納した構造体です。" alt="" coords="20,86,89,117"/><area shape="rect" id="node4" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="17,6,92,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>A paint event is sent when a window's contents needs to be repainted.  </p>
-<p>The handler of this event must create a <a class="el" href="classwx_paint_d_c.html" title="A wxPaintDC must be constructed if an application wishes to paint on the client area of a window from...">wxPaintDC</a> object and use it for painting the window contents. 以下に例を示します: </p>
-<div class="fragment"><pre class="fragment">    <span class="keywordtype">void</span> MyWindow::OnPaint(<a class="code" href="classwx_paint_event.html" title="A paint event is sent when a window's contents needs to be repainted.">wxPaintEvent</a>&amp; event)
+<div class="textblock"><p>ペイントイベントはウィンドウのコンテンツを再描画する必要があるときに送信されます。 </p>
+<p>The handler of this event must create a <a class="el" href="classwx_paint_d_c.html" title="wxClientDC は EVT_PAINT() イベントハンドラ内でクライアントエリアを描画する場合に使用する必要があります。">wxPaintDC</a> object and use it for painting the window contents. 以下に例を示します: </p>
+<div class="fragment"><pre class="fragment">    <span class="keywordtype">void</span> MyWindow::OnPaint(<a class="code" href="classwx_paint_event.html" title="ペイントイベントはウィンドウのコンテンツを再描画する必要があるときに送信されます。">wxPaintEvent</a>&amp; event)
     {
-        <a class="code" href="classwx_paint_d_c.html" title="A wxPaintDC must be constructed if an application wishes to paint on the client area of a window from...">wxPaintDC</a> dc(<span class="keyword">this</span>);
+        <a class="code" href="classwx_paint_d_c.html" title="wxClientDC は EVT_PAINT() イベントハンドラ内でクライアントエリアを描画する場合に使用する必要があります。">wxPaintDC</a> dc(<span class="keyword">this</span>);
 
         DrawMyDocument(dc);
     }
-</pre></div><p>Notice that you must <em>not</em> create other kinds of <a class="el" href="classwx_d_c.html" title='A wxDC is a "device context" onto which graphics and text can be drawn.'>wxDC</a> (e.g. <a class="el" href="classwx_client_d_c.html" title="A wxClientDC must be constructed if an application wishes to paint on the client area of a window fro...">wxClientDC</a> or <a class="el" href="classwx_window_d_c.html" title="A wxWindowDC must be constructed if an application wishes to paint on the whole area of a window (cli...">wxWindowDC</a>) in EVT_PAINT handlers and also don't create <a class="el" href="classwx_paint_d_c.html" title="A wxPaintDC must be constructed if an application wishes to paint on the client area of a window from...">wxPaintDC</a> outside of this event handlers.</p>
+</pre></div><p>Notice that you must <em>not</em> create other kinds of <a class="el" href="classwx_d_c.html" title="wxDC は図形やテキストを描画可能なデバイスコンテキストです。">wxDC</a> (e.g. <a class="el" href="classwx_client_d_c.html" title="wxClientDC は EVT_PAINT() イベントハンドラ以外の場所でクライアントエリアを描画する場合に使用する必要があります。">wxClientDC</a> or <a class="el" href="classwx_window_d_c.html" title="wxWindowDC はウィンドウ全体 (クライアントエリアと装飾部分) を描画する場合に使用する必要があります。">wxWindowDC</a>) in EVT_PAINT handlers and also don't create <a class="el" href="classwx_paint_d_c.html" title="wxClientDC は EVT_PAINT() イベントハンドラ内でクライアントエリアを描画する場合に使用する必要があります。">wxPaintDC</a> outside of this event handlers.</p>
 <p>You can optimize painting by retrieving the rectangles that have been damaged and only repainting these. The rectangles are in terms of the client area, and are unscrolled, so you will need to do some calculations using the current view position to obtain logical, scrolled units. Here is an example of using the <a class="el" href="classwx_region_iterator.html" title="This class is used to iterate through the rectangles in a region, typically when examining the damage...">wxRegionIterator</a> class:  </p>
 <div class="fragment"><pre class="fragment">    <span class="comment">// Called when window needs to be repainted.</span>
-    <span class="keywordtype">void</span> MyWindow::OnPaint(<a class="code" href="classwx_paint_event.html" title="A paint event is sent when a window's contents needs to be repainted.">wxPaintEvent</a>&amp; event)
+    <span class="keywordtype">void</span> MyWindow::OnPaint(<a class="code" href="classwx_paint_event.html" title="ペイントイベントはウィンドウのコンテンツを再描画する必要があるときに送信されます。">wxPaintEvent</a>&amp; event)
     {
-        <a class="code" href="classwx_paint_d_c.html" title="A wxPaintDC must be constructed if an application wishes to paint on the client area of a window from...">wxPaintDC</a> dc(<span class="keyword">this</span>);
+        <a class="code" href="classwx_paint_d_c.html" title="wxClientDC は EVT_PAINT() イベントハンドラ内でクライアントエリアを描画する場合に使用する必要があります。">wxPaintDC</a> dc(<span class="keyword">this</span>);
 
         <span class="comment">// Find Out where the window is scrolled to</span>
         <span class="keywordtype">int</span> vbX,vbY;                     <span class="comment">// Top left corner of client</span>
@@ -174,7 +174,7 @@ function toggleVisibility(linkObj) {
 </pre></div><dl class="remark"><dt><b>Remarks:</b></dt><dd>Please notice that in general it is impossible to change the drawing of a standard control (such as <a class="el" href="classwx_button.html" title="ボタンはテキストを含んだコントロールであり、もっとも一般的な GUI 要素のひとつです。">wxButton</a>) and so you shouldn't attempt to handle paint events for them as even if it might work on some platforms, this is inherently not portable and won't work everywhere.</dd></dl>
 <h2>Events using this class</h2>
 <p>The following event handler macros redirect the events to member function handlers '<b>func</b>' with prototypes like:  </p>
-<div class="eventHandler"><span>void&nbsp;handlerFuncName(<a class="el" href="classwx_paint_event.html" title="A paint event is sent when a window's contents needs to be repainted.">wxPaintEvent</a>&amp;&nbsp;event)</span></div><p>Event macros:</p>
+<div class="eventHandler"><span>void&nbsp;handlerFuncName(<a class="el" href="classwx_paint_event.html" title="ペイントイベントはウィンドウのコンテンツを再描画する必要があるときに送信されます。">wxPaintEvent</a>&amp;&nbsp;event)</span></div><p>Event macros:</p>
 <div> </div><ul>
 <li><span class="event">EVT_PAINT(func)</span>:<div class="eventDesc">  Process a <code>wxEVT_PAINT</code> event.  </div></li>
 </ul>

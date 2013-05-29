@@ -279,7 +279,7 @@ Classes Implemented in wxPython</h2>
 <li><a class="el" href="classwx_check_box.html" title="A checkbox is a labelled box which by default is either on (checkmark is visible) or off (no checkmar...">wxCheckBox</a> </li>
 <li><a class="el" href="classwx_check_list_box.html" title="A wxCheckListBox is like a wxListBox, but allows items to be checked or unchecked.">wxCheckListBox</a> </li>
 <li><a class="el" href="classwx_choice.html" title="A choice item is used to select one of a list of strings.">wxChoice</a> </li>
-<li><a class="el" href="classwx_client_d_c.html" title="A wxClientDC must be constructed if an application wishes to paint on the client area of a window fro...">wxClientDC</a> </li>
+<li><a class="el" href="classwx_client_d_c.html" title="wxClientDC は EVT_PAINT() イベントハンドラ以外の場所でクライアントエリアを描画する場合に使用する必要があります。">wxClientDC</a> </li>
 <li><a class="el" href="classwx_clipboard.html" title="A class for manipulating the clipboard.">wxClipboard</a> </li>
 <li><a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a> </li>
 <li><a class="el" href="classwx_colour_data.html" title="This class holds a variety of information related to colour dialogs.">wxColourData</a> </li>
@@ -297,7 +297,7 @@ Classes Implemented in wxPython</h2>
 <li><a class="el" href="classwx_data_object_simple.html" title="This is the simplest possible implementation of the wxDataObject class.">wxDataObjectSimple</a> </li>
 <li><a class="el" href="classwx_date_time.html" title="wxDateTime class represents an absolute moment in time.">wxDateTime</a> </li>
 <li><a class="el" href="classwx_date_span.html" title='This class is a "logical time span" and is useful for implementing program logic for such things as...'>wxDateSpan</a> </li>
-<li><a class="el" href="classwx_d_c.html" title='A wxDC is a "device context" onto which graphics and text can be drawn.'>wxDC</a> </li>
+<li><a class="el" href="classwx_d_c.html" title="wxDC は図形やテキストを描画可能なデバイスコンテキストです。">wxDC</a> </li>
 <li><a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> </li>
 <li><a class="el" href="classwx_dir_dialog.html" title="This class represents the directory chooser dialog.">wxDirDialog</a> </li>
 <li><a class="el" href="classwx_drag_image.html" title="This class is used when you wish to drag an object on the screen, and a simple cursor is not enough...">wxDragImage</a> </li>
@@ -357,14 +357,14 @@ Classes Implemented in wxPython</h2>
 <li><a class="el" href="classwx_m_d_i_child_frame.html" title="An MDI child frame is a frame that can only exist inside a wxMDIClientWindow, which is itself a child...">wxMDIChildFrame</a> </li>
 <li><a class="el" href="classwx_m_d_i_client_window.html" title="An MDI client window is a child of wxMDIParentFrame, and manages zero or more wxMDIChildFrame objects...">wxMDIClientWindow</a> </li>
 <li><a class="el" href="classwx_m_d_i_parent_frame.html" title="An MDI (Multiple Document Interface) parent frame is a window which can contain MDI child frames in i...">wxMDIParentFrame</a> </li>
-<li><a class="el" href="classwx_memory_d_c.html" title="A memory device context provides a means to draw graphics onto a bitmap.">wxMemoryDC</a> </li>
+<li><a class="el" href="classwx_memory_d_c.html" title="メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。">wxMemoryDC</a> </li>
 <li><a class="el" href="classwx_memory_f_s_handler.html" title="This wxFileSystem handler can store arbitrary data in memory stream and make them accessible via an U...">wxMemoryFSHandler</a> </li>
 <li><a class="el" href="classwx_menu_bar.html" title="A menu bar is a series of menus accessible from the top of a frame.">wxMenuBar</a> </li>
 <li><a class="el" href="classwx_menu_event.html" title="This class is used for a variety of menu-related events.">wxMenuEvent</a> </li>
 <li><a class="el" href="classwx_menu_item.html" title="A menu item represents an item in a menu.">wxMenuItem</a> </li>
 <li><a class="el" href="classwx_menu.html" title="A menu is a popup (or pull down) list of items, one of which may be selected before the menu goes awa...">wxMenu</a> </li>
 <li><a class="el" href="classwx_message_dialog.html" title="This class represents a dialog that shows a single or multi-line message, with a choice of OK...">wxMessageDialog</a> </li>
-<li><a class="el" href="classwx_metafile_d_c.html" title="This is a type of device context that allows a metafile object to be created (Windows only)...">wxMetafileDC</a> </li>
+<li><a class="el" href="classwx_metafile_d_c.html" title="これはメタファイルオブジェクトを作成するためのデバイスコンテキスト型で (Windows のみ)、通常の wxDC の特徴の大半を備えています。">wxMetafileDC</a> </li>
 <li><a class="el" href="classwx_mini_frame.html" title="A miniframe is a frame with a small title bar.">wxMiniFrame</a> </li>
 <li><a class="el" href="classwx_mouse_event.html" title="このイベントクラスはマウスによって生成されるイベントに関する情報を含んでいます: これにはマウスボタンの押下、解放イベント、およびマウスの移動イベントが含まれます。">wxMouseEvent</a> </li>
 <li><a class="el" href="classwx_move_event.html" title="A move event holds information about wxTopLevelWindow move change events.">wxMoveEvent</a> </li>
@@ -372,21 +372,21 @@ Classes Implemented in wxPython</h2>
 <li><a class="el" href="classwx_notebook.html" title="This class represents a notebook control, which manages multiple windows with associated tabs...">wxNotebook</a> </li>
 <li><a class="el" href="classwx_page_setup_dialog_data.html" title="This class holds a variety of information related to wxPageSetupDialog.">wxPageSetupDialogData</a> </li>
 <li><a class="el" href="classwx_page_setup_dialog.html" title="This class represents the page setup common dialog.">wxPageSetupDialog</a> </li>
-<li><a class="el" href="classwx_paint_d_c.html" title="A wxPaintDC must be constructed if an application wishes to paint on the client area of a window from...">wxPaintDC</a> </li>
-<li><a class="el" href="classwx_paint_event.html" title="A paint event is sent when a window's contents needs to be repainted.">wxPaintEvent</a> </li>
+<li><a class="el" href="classwx_paint_d_c.html" title="wxClientDC は EVT_PAINT() イベントハンドラ内でクライアントエリアを描画する場合に使用する必要があります。">wxPaintDC</a> </li>
+<li><a class="el" href="classwx_paint_event.html" title="ペイントイベントはウィンドウのコンテンツを再描画する必要があるときに送信されます。">wxPaintEvent</a> </li>
 <li><a class="el" href="classwx_palette.html" title="A palette is a table that maps pixel values to RGB colours.">wxPalette</a> </li>
 <li><a class="el" href="classwx_panel.html" title="A panel is a window on which controls are placed.">wxPanel</a> </li>
 <li><a class="el" href="classwx_pen.html" title="A pen is a drawing tool for drawing outlines.">wxPen</a> </li>
 <li>wxPNGHandler  </li>
 <li><a class="el" href="classwx_point.html" title="wxPoint は図形操作のための有用なデータ構造です。">wxPoint</a> </li>
-<li><a class="el" href="classwx_post_script_d_c.html" title="This defines the wxWidgets Encapsulated PostScript device context, which can write PostScript files o...">wxPostScriptDC</a> </li>
+<li><a class="el" href="classwx_post_script_d_c.html" title="これは wxWidets がカプセル化した PostScript デバイスコンテキストを定義しており、どのプラットフォームにおいても PostScript ファイルを作成することができます。">wxPostScriptDC</a> </li>
 <li><a class="el" href="classwx_preview_frame.html" title="This class provides the default method of managing the print preview interface.">wxPreviewFrame</a> </li>
 <li><a class="el" href="classwx_print_data.html" title="This class holds a variety of information related to printers and printer device contexts.">wxPrintData</a> </li>
 <li><a class="el" href="classwx_print_dialog_data.html" title="This class holds information related to the visual characteristics of wxPrintDialog.">wxPrintDialogData</a> </li>
 <li><a class="el" href="classwx_print_dialog.html" title="This class represents the print and print setup common dialogs.">wxPrintDialog</a> </li>
 <li><a class="el" href="classwx_printer.html" title="This class represents the Windows or PostScript printer, and is the vehicle through which printing ma...">wxPrinter</a> </li>
 <li><a class="el" href="classwx_print_preview.html" title="Objects of this class manage the print preview process.">wxPrintPreview</a> </li>
-<li><a class="el" href="classwx_printer_d_c.html" title="A printer device context is specific to MSW and Mac, and allows access to any printer with a Windows ...">wxPrinterDC</a> </li>
+<li><a class="el" href="classwx_printer_d_c.html" title="プリンタデバイスコンテキストは MSW と Mac に特有のデバイスコンテキストで、Windows や Macintosh のドライバを使用してプリンタへアクセスできます。">wxPrinterDC</a> </li>
 <li><a class="el" href="classwx_printout.html" title="This class encapsulates the functionality of printing out an application document.">wxPrintout</a> </li>
 <li><a class="el" href="classwx_process.html" title="The objects of this class are used in conjunction with the wxExecute() function.">wxProcess</a> </li>
 <li><a class="el" href="classwx_query_layout_info_event.html" title="This event is sent when wxLayoutAlgorithm wishes to get the size, orientation and alignment of a wind...">wxQueryLayoutInfoEvent</a> </li>
@@ -399,7 +399,7 @@ Classes Implemented in wxPython</h2>
 <li><a class="el" href="classwx_sash_event.html" title="A sash event is sent when the sash of a wxSashWindow has been dragged by the user.">wxSashEvent</a> </li>
 <li><a class="el" href="classwx_sash_layout_window.html" title="wxSashLayoutWindow responds to OnCalculateLayout events generated by wxLayoutAlgorithm.">wxSashLayoutWindow</a> </li>
 <li><a class="el" href="classwx_sash_window.html" title="wxSashWindow allows any of its edges to have a sash which can be dragged to resize the window...">wxSashWindow</a> </li>
-<li><a class="el" href="classwx_screen_d_c.html" title="A wxScreenDC can be used to paint on the screen.">wxScreenDC</a> </li>
+<li><a class="el" href="classwx_screen_d_c.html" title="wxScreenDC はスクリーン上へ描画するときに使用します。">wxScreenDC</a> </li>
 <li><a class="el" href="classwx_scroll_bar.html" title="A wxScrollBar is a control that represents a horizontal or vertical scrollbar.">wxScrollBar</a> </li>
 <li><a class="el" href="classwx_scroll_event.html" title="A scroll event holds information about events sent from stand-alone scrollbars (see wxScrollBar) and ...">wxScrollEvent</a> </li>
 <li><a class="el" href="group__group__class__miscwnd.html#ga695bec5996cd4d5512d1a01cfdcf96a5" title="Scrolled window derived from wxPanel.">wxScrolledWindow</a> </li>
@@ -439,7 +439,7 @@ Classes Implemented in wxPython</h2>
 <li><a class="el" href="classwx_tree_item_id.html" title="An opaque reference to a tree item.">wxTreeItemId</a> </li>
 <li><a class="el" href="classwx_update_u_i_event.html" title="This class is used for pseudo-events which are called by wxWidgets to give an application the chance ...">wxUpdateUIEvent</a> </li>
 <li><a class="el" href="classwx_validator.html" title="wxValidator はコントロールクラスとアプリケーションデータを仲介する、バリデータクラスファミリーの基底クラスです。">wxValidator</a> </li>
-<li><a class="el" href="classwx_window_d_c.html" title="A wxWindowDC must be constructed if an application wishes to paint on the whole area of a window (cli...">wxWindowDC</a> </li>
+<li><a class="el" href="classwx_window_d_c.html" title="wxWindowDC はウィンドウ全体 (クライアントエリアと装飾部分) を描画する場合に使用する必要があります。">wxWindowDC</a> </li>
 <li><a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> </li>
 <li><a class="el" href="classwx_file_system.html">wxZipFSHandler</a></li>
 </ul>

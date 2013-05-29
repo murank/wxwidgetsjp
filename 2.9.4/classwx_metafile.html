@@ -135,9 +135,9 @@ function toggleVisibility(linkObj) {
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>A <b><a class="el" href="classwx_metafile.html" title="A wxMetafile represents the MS Windows metafile object, so metafile operations have no effect in X...">wxMetafile</a></b> represents the MS Windows metafile object, so metafile operations have no effect in X.  </p>
 <p>In wxWidgets, only sufficient functionality has been provided for copying a graphic to the clipboard; this may be extended in a future version.</p>
-<p>Presently, the only way of creating a metafile is to use a <a class="el" href="classwx_metafile_d_c.html" title="This is a type of device context that allows a metafile object to be created (Windows only)...">wxMetafileDC</a>.</p>
+<p>Presently, the only way of creating a metafile is to use a <a class="el" href="classwx_metafile_d_c.html" title="これはメタファイルオブジェクトを作成するためのデバイスコンテキスト型で (Windows のみ)、通常の wxDC の特徴の大半を備えています。">wxMetafileDC</a>.</p>
 <div><span class="avail">Availability:</span>&nbsp;&nbsp;only available for the <a class="el" href="page_port.html#page_port_wxmsw">wxMSW</a> port.</div> <h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__gdi.html">Graphics Device Interface (GDI)</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_metafile_d_c.html" title="This is a type of device context that allows a metafile object to be created (Windows only)...">wxMetafileDC</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__gdi.html">Graphics Device Interface (GDI)</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_metafile_d_c.html" title="これはメタファイルオブジェクトを作成するためのデバイスコンテキスト型で (Windows のみ)、通常の wxDC の特徴の大半を備えています。">wxMetafileDC</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
@@ -261,7 +261,7 @@ Public Member Functions</h2></td></tr>
 <p>Passes the metafile data to the clipboard.  </p>
 <p>The metafile can no longer be used for anything, but the <a class="el" href="classwx_metafile.html" title="A wxMetafile represents the MS Windows metafile object, so metafile operations have no effect in X...">wxMetafile</a> object must still be destroyed by the application.</p>
 <p>Below is a example of metafile, metafile device context and clipboard use from the <code>hello.cpp</code> example. Note the way the metafile dimensions are passed to the clipboard, making use of the device context's ability to keep track of the maximum extent of drawing commands.</p>
-<div class="fragment"><pre class="fragment">        <a class="code" href="classwx_metafile_d_c.html" title="This is a type of device context that allows a metafile object to be created (Windows only)...">wxMetafileDC</a> dc;
+<div class="fragment"><pre class="fragment">        <a class="code" href="classwx_metafile_d_c.html" title="これはメタファイルオブジェクトを作成するためのデバイスコンテキスト型で (Windows のみ)、通常の wxDC の特徴の大半を備えています。">wxMetafileDC</a> dc;
         <span class="keywordflow">if</span> (dc.<a class="code" href="classwx_d_c.html#aac2d04cf636651fbbc943d4236586e3a" title="Returns true if the DC is ok to use.">IsOk</a>())
         {
             Draw(dc, <span class="keyword">false</span>);

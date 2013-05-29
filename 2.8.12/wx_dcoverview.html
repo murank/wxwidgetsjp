@@ -1,45 +1,25 @@
 <HTML>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>Device context overview</title></head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>デバイスコンテキストの概要</title></head>
 
 <BODY BGCOLOR=#FFFFFF>
 <A NAME="dcoverview"></A><CENTER>
 <A HREF="wx_contents.html"><img align=center src="contents.gif" BORDER=0 ALT="Contents"></A> <A HREF="wx_overviews.html#overviews"><img align=center src="up.gif" BORDER=0 ALT="Up"></A> <A HREF="wx_wxbitmapoverview.html#wxbitmapoverview"><img align=center src="back.gif" BORDER=0 ALT="Previous"></A> <A HREF="wx_wxfontoverview.html#wxfontoverview"><img align=center src="forward.gif" BORDER=0 ALT="Next"></A> </CENTER><HR>
 
-<H2>Device context overview</H2>
+<H2>デバイスコンテキストの概要</H2>
 <P>
-
-Classes: <A HREF="wx_wxbuffereddc.html#wxbuffereddc">wxBufferedDC</A>, <A HREF="wx_wxbufferedpaintdc.html#wxbufferedpaintdc">wxBufferedPaintDC</A>, <A HREF="wx_wxdc.html#wxdc">wxDC</A>, <A HREF="wx_wxpostscriptdc.html#wxpostscriptdc">wxPostScriptDC</A>,
-<A HREF="wx_wxmetafiledc.html#wxmetafiledc">wxMetafileDC</A>, <A HREF="wx_wxmemorydc.html#wxmemorydc">wxMemoryDC</A>, <A HREF="wx_wxprinterdc.html#wxprinterdc">wxPrinterDC</A>,
-<A HREF="wx_wxscreendc.html#wxscreendc">wxScreenDC</A>, <A HREF="wx_wxclientdc.html#wxclientdc">wxClientDC</A>, <A HREF="wx_wxpaintdc.html#wxpaintdc">wxPaintDC</A>,
-<A HREF="wx_wxwindowdc.html#wxwindowdc">wxWindowDC</A>.<P>
-
-A wxDC is a <I>device context</I> onto which graphics and text can be drawn.
-The device context is intended to represent a number of output devices in a generic way,
-with the same API being used throughout.<P>
-
-Some device contexts are created temporarily in order to draw on a window.
-This is true of <A HREF="wx_wxscreendc.html#wxscreendc">wxScreenDC</A>, <A HREF="wx_wxclientdc.html#wxclientdc">wxClientDC</A>, <A HREF="wx_wxpaintdc.html#wxpaintdc">wxPaintDC</A>,
-and <A HREF="wx_wxwindowdc.html#wxwindowdc">wxWindowDC</A>. The following describes the differences between
-these device contexts and when you should use them.<P>
+クラス: <A HREF="wx_wxbuffereddc.html#wxbuffereddc">wxBufferedDC</A>, <A HREF="wx_wxbufferedpaintdc.html#wxbufferedpaintdc">wxBufferedPaintDC</A>, <A HREF="wx_wxdc.html#wxdc">wxDC</A>, <A HREF="wx_wxpostscriptdc.html#wxpostscriptdc">wxPostScriptDC</A>, <A HREF="wx_wxmetafiledc.html#wxmetafiledc">wxMetafileDC</A>, <A HREF="wx_wxmemorydc.html#wxmemorydc">wxMemoryDC</A>, <A HREF="wx_wxprinterdc.html#wxprinterdc">wxPrinterDC</A>, <A HREF="wx_wxscreendc.html#wxscreendc">wxScreenDC</A>, <A HREF="wx_wxclientdc.html#wxclientdc">wxClientDC</A>, <A HREF="wx_wxpaintdc.html#wxpaintdc">wxPaintDC</A>, <A HREF="wx_wxwindowdc.html#wxwindowdc">wxWindowDC</A>.<P>
+wxDC は図形やテキストを描画可能な <I>デバイスコンテキスト</I> です。デバイスコンテキストは汎用的な方法で、つまり同じ API を通して操作できる多くの出力デバイスを表現することを目的としています。<P>
+いくつかのデバイスコンテキストはウィンドウへの描画のために一時的に作成されます。これには <A HREF="wx_wxscreendc.html#wxscreendc">wxScreenDC</A>、<A HREF="wx_wxclientdc.html#wxclientdc">wxClientDC</A>、<A HREF="wx_wxpaintdc.html#wxpaintdc">wxPaintDC</A>、<A HREF="wx_wxwindowdc.html#wxwindowdc">wxWindowDC</A> が該当します。各デバイスコンテキストの違いと、それを使用するタイミングについて以下で説明します。<P>
 <UL>
 
-<LI> <B>wxScreenDC.</B> Use this to paint on the screen, as opposed to an individual window.
-
-</LI><LI> <B>wxClientDC.</B> Use this to paint on the client area of window (the part without
-borders and other decorations), but do not use it from within an <A HREF="wx_wxpaintevent.html#wxpaintevent">wxPaintEvent</A>.
-
-</LI><LI> <B>wxPaintDC.</B> Use this to paint on the client area of a window, but <I>only</I> from
-within a <A HREF="wx_wxpaintevent.html#wxpaintevent">wxPaintEvent</A>.
-
-</LI><LI> <B>wxWindowDC.</B> Use this to paint on the whole area of a window, including decorations.
-This may not be available on non-Windows platforms.
-
+<LI> <B>wxScreenDC</B>。個別のウィンドウではなく、スクリーン上に描画するときに使用します。
+</LI><LI> <B>wxClientDC</B>。ウィンドウのクライアントエリア (ボーダーや他の装飾を除いた部分) に描画するときに使用します。ただし、<A HREF="wx_wxpaintevent.html#wxpaintevent">wxPaintEvent</A> の中で使用しないでください。
+</LI><LI> <B>wxPaintDC</B>。ウィンドウのクライアントエリアに描画するときに使用しますが、<A HREF="wx_wxpaintevent.html#wxpaintevent">wxPaintEvent</A> の中で <I>のみ</I> 使用してください。
+</LI><LI> <B>wxWindowDC</B>。装飾を含む、ウィンドウ全体に描画するときに使用します。これは非 Windows 環境では使用できません。
 </LI></UL>
 <P>
-
-To use a client, paint or window device context, create an object on the stack with
-the window as argument, for example:<P>
+wxClientDC、wxPaintDC、wxWindowDC を使用する場合、以下のようにウィンドウを引数に指定してスタック上にオブジェクトを作成してください。<P>
 <PRE>
   void MyWindow::OnMyCmd(wxCommandEvent&amp; event)
   {
@@ -47,11 +27,7 @@ the window as argument, for example:<P>
     DrawMyPicture(dc);
   }
 </PRE>
-
-Try to write code so it is parameterised by wxDC - if you do this, the same piece of code may
-write to a number of different devices, by passing a different device context. This doesn't
-work for everything (for example not all device contexts support bitmap drawing) but
-will work most of the time.<P>
+なるべく wxDC 型を使用してパラメータ化するようにしてください。このようにした場合、異なるデバイスコンテキストを渡すことで多くのデバイスに対して同じコードを使用することができます。これはすべての場合に当てはまるわけではありません (例えば、すべてのデバイスコンテキストがビットマップの描画に対応しているわけではありません) が、大半の場合はうまく行きます。<P>
 
 </FONT><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

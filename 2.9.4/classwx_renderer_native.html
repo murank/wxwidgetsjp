@@ -142,11 +142,11 @@ function toggleVisibility(linkObj) {
 <p>All drawing functions take some standard parameters:</p>
 <ul>
 <li><em>win</em> - The window being drawn. It is normally not used and when it is it should only be used as a generic <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> (in order to get its low level handle, for example), but you should not assume that it is of some given type as the same renderer function may be reused for drawing different kinds of control.  </li>
-<li><em>dc</em> - The <a class="el" href="classwx_d_c.html" title='A wxDC is a "device context" onto which graphics and text can be drawn.'>wxDC</a> to draw on. Only this device context should be used for drawing. It is not necessary to restore pens and brushes for it on function exit but, on the other hand, you shouldn't assume that it is in any specific state on function entry: the rendering functions should always prepare it.  </li>
+<li><em>dc</em> - The <a class="el" href="classwx_d_c.html" title="wxDC は図形やテキストを描画可能なデバイスコンテキストです。">wxDC</a> to draw on. Only this device context should be used for drawing. It is not necessary to restore pens and brushes for it on function exit but, on the other hand, you shouldn't assume that it is in any specific state on function entry: the rendering functions should always prepare it.  </li>
 <li><em>rect</em> - The bounding rectangle for the element to be drawn.  </li>
 <li><em>flags</em> - The optional flags (none by default) which can be a combination of the <a class="el" href="renderer_8h.html#wxCONTROL_FLAGS">wxCONTROL_FLAGS</a>.</li>
 </ul>
-<p>Note that each drawing function restores the <a class="el" href="classwx_d_c.html" title='A wxDC is a "device context" onto which graphics and text can be drawn.'>wxDC</a> attributes if it changes them, so it is safe to assume that the same pen, brush and colours that were active before the call to this function are still in effect after it.</p>
+<p>Note that each drawing function restores the <a class="el" href="classwx_d_c.html" title="wxDC は図形やテキストを描画可能なデバイスコンテキストです。">wxDC</a> attributes if it changes them, so it is safe to assume that the same pen, brush and colours that were active before the call to this function are still in effect after it.</p>
 <h2></h2>
 <div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__gdi.html">Graphics Device Interface (GDI)</a></span></div> </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>

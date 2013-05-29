@@ -118,7 +118,7 @@ function toggleVisibility(linkObj) {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">wxMetafileDC Class Reference<div class="ingroups"><a class="el" href="group__group__class__dc.html">Device Contexts</a></div></div>  </div>
+<div class="title">wxMetafileDC Class Reference<div class="ingroups"><a class="el" href="group__group__class__dc.html">デバイスコンテキスト</a></div></div>  </div>
 </div>
 <div class="contents"><!-- doxytag: class="wxMetafileDC" --><!-- doxytag: inherits="wxDC" -->
 
@@ -130,15 +130,15 @@ function toggleVisibility(linkObj) {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classwx_metafile_d_c__inherit__graph.png" border="0" usemap="#wx_metafile_d_c_inherit__map" alt="Inheritance graph"/></div>
 <map name="wx_metafile_d_c_inherit__map" id="wx_metafile_d_c_inherit__map">
-<area shape="rect" id="node2" href="classwx_d_c.html" title='A wxDC is a "device context" onto which graphics and text can be drawn.' alt="" coords="28,86,84,117"/><area shape="rect" id="node4" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="19,6,93,37"/></map>
+<area shape="rect" id="node2" href="classwx_d_c.html" title="wxDC は図形やテキストを描画可能なデバイスコンテキストです。" alt="" coords="28,86,84,117"/><area shape="rect" id="node4" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="19,6,93,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>This is a type of device context that allows a metafile object to be created (Windows only), and has most of the characteristics of a normal <b><a class="el" href="classwx_d_c.html" title='A wxDC is a "device context" onto which graphics and text can be drawn.'>wxDC</a></b>.  </p>
+<div class="textblock"><p>This is a type of device context that allows a metafile object to be created (Windows only), and has most of the characteristics of a normal <b><a class="el" href="classwx_d_c.html" title="wxDC は図形やテキストを描画可能なデバイスコンテキストです。">wxDC</a></b>.  </p>
 <p>The <a class="el" href="classwx_metafile_d_c.html#a33b05bb7da88ada1bd4f3d4b05b1baf5" title="This must be called after the device context is finished with.">wxMetafileDC::Close</a> member must be called after drawing into the device context, to return a metafile. The only purpose for this at present is to allow the metafile to be copied to the clipboard (see <a class="el" href="classwx_metafile.html" title="A wxMetafile represents the MS Windows metafile object, so metafile operations have no effect in X...">wxMetafile</a>).</p>
-<p>Adding metafile capability to an application should be easy if you already write to a <a class="el" href="classwx_d_c.html" title='A wxDC is a "device context" onto which graphics and text can be drawn.'>wxDC</a>; simply pass the <a class="el" href="classwx_metafile_d_c.html" title="This is a type of device context that allows a metafile object to be created (Windows only)...">wxMetafileDC</a> to your drawing function instead. You may wish to conditionally compile this code so it is not compiled under X (although no harm will result if you leave it in).</p>
+<p>Adding metafile capability to an application should be easy if you already write to a <a class="el" href="classwx_d_c.html" title="wxDC は図形やテキストを描画可能なデバイスコンテキストです。">wxDC</a>; simply pass the <a class="el" href="classwx_metafile_d_c.html" title="これはメタファイルオブジェクトを作成するためのデバイスコンテキスト型で (Windows のみ)、通常の wxDC の特徴の大半を備えています。">wxMetafileDC</a> to your drawing function instead. You may wish to conditionally compile this code so it is not compiled under X (although no harm will result if you leave it in).</p>
 <p>Note that a metafile saved to disk is in standard Windows metafile format, and cannot be imported into most applications. To make it importable, call the function <a class="el" href="group__group__funcmacro__gdi.html#gab1948435f8ba3c1cac214e6599595c4f" title="Given a filename for an existing, valid metafile (as constructed using wxMetafileDC) makes it into a ...">wxMakeMetafilePlaceable</a> after closing your disk-based metafile device context.</p>
 <h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__dc.html">Device Contexts</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_metafile.html" title="A wxMetafile represents the MS Windows metafile object, so metafile operations have no effect in X...">wxMetafile</a>, <a class="el" href="classwx_d_c.html" title='A wxDC is a "device context" onto which graphics and text can be drawn.'>wxDC</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__dc.html">Device Contexts</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_metafile.html" title="A wxMetafile represents the MS Windows metafile object, so metafile operations have no effect in X...">wxMetafile</a>, <a class="el" href="classwx_d_c.html" title="wxDC は図形やテキストを描画可能なデバイスコンテキストです。">wxDC</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 

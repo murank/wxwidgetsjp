@@ -360,7 +360,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Return the attribute to be used for rendering.  </p>
 <p>This function may be called from <a class="el" href="classwx_data_view_custom_renderer.html#a0884c149dac5ff57137a5803eb6f72da" title="Override this to render the cell.">Render()</a> implementation to use the attributes defined for the item if the renderer supports them.</p>
-<p>Notice that when <a class="el" href="classwx_data_view_custom_renderer.html#a0884c149dac5ff57137a5803eb6f72da" title="Override this to render the cell.">Render()</a> is called, the <a class="el" href="classwx_d_c.html" title='A wxDC is a "device context" onto which graphics and text can be drawn.'>wxDC</a> object passed to it is already set up to use the correct attributes (e.g. its font is set to bold or italic version if wxDataViewItemAttr::GetBold() or GetItalic() returns true) so it may not be necessary to call it explicitly if you only want to render text using the items attributes.</p>
+<p>Notice that when <a class="el" href="classwx_data_view_custom_renderer.html#a0884c149dac5ff57137a5803eb6f72da" title="Override this to render the cell.">Render()</a> is called, the <a class="el" href="classwx_d_c.html" title="wxDC は図形やテキストを描画可能なデバイスコンテキストです。">wxDC</a> object passed to it is already set up to use the correct attributes (e.g. its font is set to bold or italic version if wxDataViewItemAttr::GetBold() or GetItalic() returns true) so it may not be necessary to call it explicitly if you only want to render text using the items attributes.</p>
 <dl class="since"><dt><b>Since:</b></dt><dd>2.9.1  </dd></dl>
 
 </div>

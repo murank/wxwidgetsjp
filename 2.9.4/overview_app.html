@@ -125,7 +125,7 @@ function toggleVisibility(linkObj) {
 <hr/>
 <h2><a class="anchor" id="overview_app_intro"></a>
 イントロダクション</h2>
-<p>wxWidgets アプリケーションは <em>main</em> 関数を持ちません。それと同等の関数が wxApp を継承したクラスで定義される <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">wxApp::OnInit</a> メンバ関数です。</p>
+<p>wxWidgets アプリケーションは <em>main</em> 関数を持ちません。それと同等の関数が <a class="el" href="classwx_app.html" title="wxUSE_GUI=1 のとき、wxApp はアプリケーション自身を表します。">wxApp</a> を継承したクラスで定義される <a class="el" href="classwx_app_console.html#a99953775a2fd83fa2456e390779afe15" title="アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。">wxApp::OnInit</a> メンバ関数です。</p>
 <p>通常、<em>OnInit</em> では最低限、トップウィンドウを作成します。wxWidgets の初期バージョンとは違い、OnInit はフレームを返却しません。代わりに処理を継続する (<span class="literal">true</span>) かしない (<span class="literal">false</span>) かを表す真偽値を返却します。</p>
 <p>プログラムのコマンドライン引数 (<em>argc</em> と <em>argv</em>) は <a class="el" href="classwx_app.html" title="wxUSE_GUI=1 のとき、wxApp はアプリケーション自身を表します。">wxApp</a> のメンバ関数から使用できます。</p>
 <p>アプリケーションはすべてのウィンドウを破棄することで終了します。アプリケーションを終了するためにはすべてのフレームを破棄しなければならないため、可能な限り、新しいフレームを作成するときは親フレームを使用するようにするべきです。こうすることで、トップレベルフレームの削除時に自動的に子フレームが削除されます。アプリケーションを終了する別の方法はトップレベルフレームの <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a> イベントハンドラで明示的に子フレームを削除することです。</p>
