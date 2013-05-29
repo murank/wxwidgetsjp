@@ -378,80 +378,6 @@ bool MyApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>...
-}
-
-<bpt i="7" x="7">&lt;s7&gt;</bpt>int<ept i="7">&lt;/s7&gt;</ept> <bpt i="8" x="8">&lt;a8&gt;</bpt>MyApp::OnExit<ept i="8">&lt;/a8&gt;</ept>()
-{</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T124602Z">
-        <seg>...
-}
-
-<bpt i="7" x="7">&lt;s7&gt;</bpt>int<ept i="7">&lt;/s7&gt;</ept> <bpt i="8" x="8">&lt;a8&gt;</bpt>MyApp::OnExit<ept i="8">&lt;/a8&gt;</ept>()
-{</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>...
-}
-
-int MyApp::OnExit()
-{</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162758Z">
-        <seg>...
-}
-
-int MyApp::OnExit()
-{</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>...
-};</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162439Z">
-        <seg>...
-};</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>...
-};
-
-<bpt i="4" x="4">&lt;s4&gt;</bpt>bool<ept i="4">&lt;/s4&gt;</ept> <bpt i="5" x="5">&lt;a5&gt;</bpt>MyApp::OnInit<ept i="5">&lt;/a5&gt;</ept>()
-{</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T124559Z">
-        <seg>...
-};
-
-<bpt i="4" x="4">&lt;s4&gt;</bpt>bool<ept i="4">&lt;/s4&gt;</ept> <bpt i="5" x="5">&lt;a5&gt;</bpt>MyApp::OnInit<ept i="5">&lt;/a5&gt;</ept>()
-{</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>...
-};
-
-bool MyApp::OnInit()
-{</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162754Z">
-        <seg>...
-};
-
-bool MyApp::OnInit()
-{</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>... <bpt i="55" x="55">&lt;s55&gt;</bpt>do<ept i="55">&lt;/s55&gt;</ept> something with <bpt i="56" x="56">&lt;s56&gt;</bpt>event<ept i="56">&lt;/s56&gt;</ept>.GetPoint() ...
 }
 
@@ -800,6 +726,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>Device contexts<ept i="0">&lt;/a0&gt;</ept><it pos="begin" x="1">&lt;br1&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T141947Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>デバイスコンテキスト<ept i="0">&lt;/a0&gt;</ept><it pos="begin" x="1">&lt;br1&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>Internationalization Sample<ept i="0">&lt;/a0&gt;</ept> - Shows you how all this looks in practice.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T043643Z">
@@ -844,14 +778,6 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T041638Z">
         <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>非英語アプリケーションの作成<ept i="0">&lt;/a0&gt;</ept> - 文字コードに関連した問題について取り組む場合に参照してください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxApp<ept i="0">&lt;/a0&gt;</ept> Overview</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T152201Z">
-        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxApp<ept i="0">&lt;/a0&gt;</ept> の概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -1388,14 +1314,6 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg><bpt i="12" x="12">&lt;a12&gt;</bpt><bpt i="13" x="13">&lt;b13&gt;</bpt>wxApp overview<ept i="13">&lt;/b13&gt;</ept><ept i="12">&lt;/a12&gt;</ept><it pos="begin" x="14">&lt;br14&gt;</it></seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T152025Z">
-        <seg><bpt i="12" x="12">&lt;a12&gt;</bpt><bpt i="13" x="13">&lt;b13&gt;</bpt>wxApp の概要<ept i="13">&lt;/b13&gt;</ept><ept i="12">&lt;/a12&gt;</ept><it pos="begin" x="14">&lt;br14&gt;</it></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg><bpt i="12" x="12">&lt;a12&gt;</bpt>Custom event summary<ept i="12">&lt;/a12&gt;</ept><it pos="begin" x="13">&lt;br13&gt;</it></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T075046Z">
@@ -1600,6 +1518,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>wxClientDC<ept i="2">&lt;/a2&gt;</ept> dc(window);</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T154319Z">
+        <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>wxClientDC<ept i="2">&lt;/a2&gt;</ept> dc(window);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>wxLog::SetComponentLevel<ept i="2">&lt;/a2&gt;</ept>(<bpt i="3" x="3">&lt;s3&gt;</bpt>"MyProgram/DB"<ept i="3">&lt;/s3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxLOG_FatalError<ept i="4">&lt;/a4&gt;</ept>);</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T110710Z">
@@ -1800,14 +1726,6 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg><bpt i="6" x="6">&lt;a6&gt;</bpt>Application class: wxApp<ept i="6">&lt;/a6&gt;</ept><it pos="begin" x="7">&lt;br7&gt;</it></seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T151947Z">
-        <seg><bpt i="6" x="6">&lt;a6&gt;</bpt>アプリケーションクラス: wxApp<ept i="6">&lt;/a6&gt;</ept><it pos="begin" x="7">&lt;br7&gt;</it></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg><bpt i="6" x="6">&lt;a6&gt;</bpt>Pluggable event handlers<ept i="6">&lt;/a6&gt;</ept><it pos="begin" x="7">&lt;br7&gt;</it></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T074926Z">
@@ -1844,14 +1762,6 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T003252Z">
         <seg><bpt i="6" x="6">&lt;a6&gt;</bpt>wxLogTextCtrl<ept i="6">&lt;/a6&gt;</ept>,<it pos="begin" x="7">&lt;br7&gt;</it></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg><bpt i="7" x="7">&lt;a7&gt;</bpt>wxFrame<ept i="7">&lt;/a7&gt;</ept> *the_frame = <bpt i="8" x="8">&lt;s8&gt;</bpt>new<ept i="8">&lt;/s8&gt;</ept> <bpt i="9" x="9">&lt;a9&gt;</bpt>wxFrame<ept i="9">&lt;/a9&gt;</ept>(NULL, ID_MYFRAME, argv[0]);</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T152659Z">
-        <seg><bpt i="7" x="7">&lt;a7&gt;</bpt>wxFrame<ept i="7">&lt;/a7&gt;</ept> *the_frame = <bpt i="8" x="8">&lt;s8&gt;</bpt>new<ept i="8">&lt;/s8&gt;</ept> <bpt i="9" x="9">&lt;a9&gt;</bpt>wxFrame<ept i="9">&lt;/a9&gt;</ept>(NULL, ID_MYFRAME, argv[0]);</seg>
       </tuv>
     </tu>
     <tu>
@@ -1936,10 +1846,50 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="99" x="99">&lt;a99&gt;</bpt><bpt i="100" x="100">&lt;b100&gt;</bpt>Device context overview<ept i="100">&lt;/b100&gt;</ept><ept i="99">&lt;/a99&gt;</ept><it pos="begin" x="101">&lt;br101&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T142001Z">
+        <seg><bpt i="99" x="99">&lt;a99&gt;</bpt><bpt i="100" x="100">&lt;b100&gt;</bpt>デバイスコンテキストの概要<ept i="100">&lt;/b100&gt;</ept><ept i="99">&lt;/a99&gt;</ept><it pos="begin" x="101">&lt;br101&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt><bpt i="1" x="1">&lt;a1&gt;</bpt>wxClientDC<ept i="1">&lt;/a1&gt;</ept><ept i="0">&lt;/b0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T154030Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt><bpt i="1" x="1">&lt;a1&gt;</bpt>wxClientDC<ept i="1">&lt;/a1&gt;</ept><ept i="0">&lt;/b0&gt;</ept>。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt><bpt i="1" x="1">&lt;a1&gt;</bpt>wxPaintDC<ept i="1">&lt;/a1&gt;</ept><ept i="0">&lt;/b0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T154136Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt><bpt i="1" x="1">&lt;a1&gt;</bpt>wxPaintDC<ept i="1">&lt;/a1&gt;</ept><ept i="0">&lt;/b0&gt;</ept>。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt><bpt i="1" x="1">&lt;a1&gt;</bpt>wxScreenDC<ept i="1">&lt;/a1&gt;</ept><ept i="0">&lt;/b0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T153911Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt><bpt i="1" x="1">&lt;a1&gt;</bpt>wxScreenDC<ept i="1">&lt;/a1&gt;</ept><ept i="0">&lt;/b0&gt;</ept>。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="0" x="0">&lt;b0&gt;</bpt><bpt i="1" x="1">&lt;a1&gt;</bpt>wxSize<ept i="1">&lt;/a1&gt;</ept><ept i="0">&lt;/b0&gt;</ept> <it pos="end" x="2">&lt;/b2&gt;</it> <bpt i="3" x="3">&lt;b3&gt;</bpt>CalcMin<ept i="3">&lt;/b3&gt;</ept>()</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130430T150638Z">
         <seg><bpt i="0" x="0">&lt;b0&gt;</bpt><bpt i="1" x="1">&lt;a1&gt;</bpt>wxSize<ept i="1">&lt;/a1&gt;</ept><ept i="0">&lt;/b0&gt;</ept> <it pos="end" x="2">&lt;/b2&gt;</it> <bpt i="3" x="3">&lt;b3&gt;</bpt>CalcMin<ept i="3">&lt;/b3&gt;</ept>()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt><bpt i="1" x="1">&lt;a1&gt;</bpt>wxWindowDC<ept i="1">&lt;/a1&gt;</ept><ept i="0">&lt;/b0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T154309Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt><bpt i="1" x="1">&lt;a1&gt;</bpt>wxWindowDC<ept i="1">&lt;/a1&gt;</ept><ept i="0">&lt;/b0&gt;</ept>。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2104,6 +2054,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxClientDC.<ept i="0">&lt;/b0&gt;</ept> Use this to paint on the client area of window (the part without borders and other decorations), but do not use it from within an <bpt i="1" x="1">&lt;a1&gt;</bpt>wxPaintEvent<ept i="1">&lt;/a1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T141425Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxClientDC<ept i="0">&lt;/b0&gt;</ept>。ウィンドウのクライアントエリア (ボーダーや他の装飾を除いた部分) に描画するときに使用します。ただし、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxPaintEvent<ept i="1">&lt;/a1&gt;</ept> の中で使用しないでください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxLogDebug<ept i="0">&lt;/b0&gt;</ept> is <bpt i="1" x="1">&lt;b1&gt;</bpt>the<ept i="1">&lt;/b1&gt;</ept> right function for debug output.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T011629Z">
@@ -2216,6 +2174,30 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxPaintDC.<ept i="0">&lt;/b0&gt;</ept> Use this to paint on the client area of a window, but <bpt i="1" x="1">&lt;i1&gt;</bpt>only<ept i="1">&lt;/i1&gt;</ept> from within a <bpt i="2" x="2">&lt;a2&gt;</bpt>wxPaintEvent<ept i="2">&lt;/a2&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T141422Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxPaintDC<ept i="0">&lt;/b0&gt;</ept>。ウィンドウのクライアントエリアに描画するときに使用しますが、<bpt i="2" x="2">&lt;a2&gt;</bpt>wxPaintEvent<ept i="2">&lt;/a2&gt;</ept> の中で <bpt i="1" x="1">&lt;i1&gt;</bpt>のみ<ept i="1">&lt;/i1&gt;</ept> 使用してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxScreenDC.<ept i="0">&lt;/b0&gt;</ept> Use this to paint on the screen, as opposed to an individual window.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T141428Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxScreenDC<ept i="0">&lt;/b0&gt;</ept>。個別のウィンドウではなく、スクリーン上に描画するときに使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxWindowDC.<ept i="0">&lt;/b0&gt;</ept> Use this to paint on the whole area of a window, including decorations.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T141502Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>wxWindowDC<ept i="0">&lt;/b0&gt;</ept>。装飾を含む、ウィンドウ全体に描画するときに使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="2" x="2">&lt;b2&gt;</bpt>Tip:<ept i="2">&lt;/b2&gt;</ept> under Windows, you must either run the program under debugger or use a 3rd party program such as <bpt i="3" x="3">&lt;a3&gt;</bpt>DbgView<ept i="3">&lt;/a3&gt;</ept> to actually see the debug output.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T012227Z">
@@ -2264,14 +2246,6 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg><bpt i="0" x="0">&lt;e0&gt;</bpt>OnInit<ept i="0">&lt;/e0&gt;</ept> will usually create a top window as a bare minimum.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T123716Z">
-        <seg>通常、<bpt i="0" x="0">&lt;e0&gt;</bpt>OnInit<ept i="0">&lt;/e0&gt;</ept> では最低限、トップウィンドウを作成します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg><bpt i="0" x="0">&lt;e0&gt;</bpt>Please pay close attention to step 6!<ept i="0">&lt;/e0&gt;</ept> People often overlook or get confused by this powerful feature of the wxWidgets event processing system.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T145251Z">
@@ -2284,14 +2258,6 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130430T150042Z">
         <seg>列サイザー、行サイザーを作成する場合、 <bpt i="0" x="0">&lt;i0&gt;</bpt>orient<ept i="0">&lt;/i0&gt;</ept> はそれぞれ wxVERTICAL または wxHORIZONTAL になります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg><bpt i="2" x="2">&lt;i2&gt;</bpt>OnInit<ept i="2">&lt;/i2&gt;</ept> will usually create a top window as a bare minimum.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T123741Z">
-        <seg>通常、<bpt i="2" x="2">&lt;i2&gt;</bpt>OnInit<ept i="2">&lt;/i2&gt;</ept> では最低限、トップウィンドウを作成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2360,30 +2326,6 @@ MyDialog::MyDialog(<bpt i="2" x="2">&lt;a2&gt;</bpt>wxFrame<ept i="2">&lt;/a2&gt
 
 <bpt i="6" x="6">&lt;s6&gt;</bpt>// イベントテーブルによるイベント処理のコード例<ept i="6">&lt;/s6&gt;</ept>
 <bpt i="7" x="7">&lt;a7&gt;</bpt>wxBEGIN_EVENT_TABLE<ept i="7">&lt;/a7&gt;</ept>(MyFrame, <bpt i="8" x="8">&lt;a8&gt;</bpt>wxFrame<ept i="8">&lt;/a8&gt;</ept>)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>class <ept i="0">&lt;/s0&gt;</ept>DerivedApp : <bpt i="1" x="1">&lt;s1&gt;</bpt>public<ept i="1">&lt;/s1&gt;</ept> <bpt i="2" x="2">&lt;a2&gt;</bpt>wxApp<ept i="2">&lt;/a2&gt;</ept>
-{
-<bpt i="3" x="3">&lt;s3&gt;</bpt>public<ept i="3">&lt;/s3&gt;</ept>:</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T152654Z">
-        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>class <ept i="0">&lt;/s0&gt;</ept>DerivedApp : <bpt i="1" x="1">&lt;s1&gt;</bpt>public<ept i="1">&lt;/s1&gt;</ept> <bpt i="2" x="2">&lt;a2&gt;</bpt>wxApp<ept i="2">&lt;/a2&gt;</ept>
-{
-<bpt i="3" x="3">&lt;s3&gt;</bpt>public<ept i="3">&lt;/s3&gt;</ept>:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>class <ept i="0">&lt;/s0&gt;</ept>MyApp : <bpt i="1" x="1">&lt;s1&gt;</bpt>public<ept i="1">&lt;/s1&gt;</ept> <bpt i="2" x="2">&lt;a2&gt;</bpt>wxApp<ept i="2">&lt;/a2&gt;</ept>
-{
-<bpt i="3" x="3">&lt;s3&gt;</bpt>public<ept i="3">&lt;/s3&gt;</ept>:</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T124532Z">
-        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>class <ept i="0">&lt;/s0&gt;</ept>MyApp : <bpt i="1" x="1">&lt;s1&gt;</bpt>public<ept i="1">&lt;/s1&gt;</ept> <bpt i="2" x="2">&lt;a2&gt;</bpt>wxApp<ept i="2">&lt;/a2&gt;</ept>
-{
-<bpt i="3" x="3">&lt;s3&gt;</bpt>public<ept i="3">&lt;/s3&gt;</ept>:</seg>
       </tuv>
     </tu>
     <tu>
@@ -2536,6 +2478,16 @@ puts(p); <bpt i="3" x="3">&lt;s3&gt;</bpt>// または const char * を受け取
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>void<ept i="0">&lt;/s0&gt;</ept> MyWindow::OnMyCmd(<bpt i="1" x="1">&lt;a1&gt;</bpt>wxCommandEvent<ept i="1">&lt;/a1&gt;</ept>&amp; event)
+{</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T154318Z">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>void<ept i="0">&lt;/s0&gt;</ept> MyWindow::OnMyCmd(<bpt i="1" x="1">&lt;a1&gt;</bpt>wxCommandEvent<ept i="1">&lt;/a1&gt;</ept>&amp; event)
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="10" x="10">&lt;s10&gt;</bpt>// accessors<ept i="10">&lt;/s10&gt;</ept></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130516T155555Z">
@@ -2548,16 +2500,6 @@ puts(p); <bpt i="3" x="3">&lt;s3&gt;</bpt>// または const char * を受け取
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T111013Z">
         <seg><bpt i="10" x="10">&lt;s10&gt;</bpt>// また、wxWidgets の動的モジュールロード機能の<ept i="10">&lt;/s10&gt;</ept></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg><bpt i="10" x="10">&lt;s10&gt;</bpt>return<ept i="10">&lt;/s10&gt;</ept> 0;
-}</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T124606Z">
-        <seg><bpt i="10" x="10">&lt;s10&gt;</bpt>return<ept i="10">&lt;/s10&gt;</ept> 0;
-}</seg>
       </tuv>
     </tu>
     <tu>
@@ -2592,16 +2534,6 @@ puts(p); <bpt i="3" x="3">&lt;s3&gt;</bpt>// または const char * を受け取
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130515T150109Z">
         <seg><bpt i="12" x="12">&lt;s12&gt;</bpt>// 処理を行なう<ept i="12">&lt;/s12&gt;</ept></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg><bpt i="12" x="12">&lt;s12&gt;</bpt>return<ept i="12">&lt;/s12&gt;</ept> <bpt i="13" x="13">&lt;s13&gt;</bpt>true<ept i="13">&lt;/s13&gt;</ept>;
-}</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T152703Z">
-        <seg><bpt i="12" x="12">&lt;s12&gt;</bpt>return<ept i="12">&lt;/s12&gt;</ept> <bpt i="13" x="13">&lt;s13&gt;</bpt>true<ept i="13">&lt;/s13&gt;</ept>;
-}</seg>
       </tuv>
     </tu>
     <tu>
@@ -3024,26 +2956,6 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg><bpt i="4" x="4">&lt;s4&gt;</bpt>virtual<ept i="4">&lt;/s4&gt;</ept> <bpt i="5" x="5">&lt;s5&gt;</bpt>bool<ept i="5">&lt;/s5&gt;</ept> <bpt i="6" x="6">&lt;a6&gt;</bpt>OnInit<ept i="6">&lt;/a6&gt;</ept>();
-};
-
-IMPLEMENT_APP(DerivedApp)
-
-bool DerivedApp::OnInit()
-{</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T152657Z">
-        <seg><bpt i="4" x="4">&lt;s4&gt;</bpt>virtual<ept i="4">&lt;/s4&gt;</ept> <bpt i="5" x="5">&lt;s5&gt;</bpt>bool<ept i="5">&lt;/s5&gt;</ept> <bpt i="6" x="6">&lt;a6&gt;</bpt>OnInit<ept i="6">&lt;/a6&gt;</ept>();
-};
-
-IMPLEMENT_APP(DerivedApp)
-
-bool DerivedApp::OnInit()
-{</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg><bpt i="50" x="50">&lt;s50&gt;</bpt>//create a sizer with no border and centered horizontally<ept i="50">&lt;/s50&gt;</ept></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T145549Z">
@@ -3216,18 +3128,18 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg><bpt i="9" x="9">&lt;s9&gt;</bpt>delete<ept i="9">&lt;/s9&gt;</ept> m_helpCtrl;</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T124605Z">
-        <seg><bpt i="9" x="9">&lt;s9&gt;</bpt>delete<ept i="9">&lt;/s9&gt;</ept> m_helpCtrl;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>&lt;wx/sizer.h&gt;</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130430T145850Z">
         <seg>&lt;wx/sizer.h&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDC<ept i="0">&lt;/a0&gt;</ept> is a <bpt i="1" x="1">&lt;e1&gt;</bpt>device<ept i="1">&lt;/e1&gt;</ept> context onto which graphics and text can be drawn.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T154211Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxDC<ept i="0">&lt;/a0&gt;</ept> は図形やテキストを描画可能な <bpt i="1" x="1">&lt;e1&gt;</bpt>デバイスコンテキスト<ept i="1">&lt;/e1&gt;</ept> です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3352,6 +3264,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>A memory device context provides a means to draw graphics onto a bitmap.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T145713Z">
+        <seg>メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>A menu event</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T055304Z">
@@ -3388,6 +3308,22 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T055325Z">
         <seg>描画イベント</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A paint event is sent when a window's contents needs to be repainted.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T154007Z">
+        <seg>ペイントイベントはウィンドウのコンテンツを再描画する必要があるときに送信されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A printer device context is specific to MSW and Mac, and allows access to any printer with a Windows ...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T150032Z">
+        <seg>プリンタデバイスコンテキストは MSW と Mac に特有のデバイスコンテキストで、Windows や Macintosh のドライバを使用してプリンタへアクセスできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3504,6 +3440,30 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>A wxClientDC must be constructed if an application wishes to paint on the client area of a window fro...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T150230Z">
+        <seg>wxClientDC は EVT_PAINT() イベントハンドラ以外の場所でクライアントエリアを描画する場合に使用する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A wxDC is a "device context" onto which graphics and text can be drawn.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T144316Z">
+        <seg>wxDC は図形やテキストを描画可能なデバイスコンテキストです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A wxDC is a <bpt i="0" x="0">&lt;i0&gt;</bpt>device context<ept i="0">&lt;/i0&gt;</ept> onto which graphics and text can be drawn.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T140552Z">
+        <seg>wxDC は図形やテキストを描画可能な <bpt i="0" x="0">&lt;i0&gt;</bpt>デバイスコンテキスト<ept i="0">&lt;/i0&gt;</ept> です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>A wxFile performs raw file I/O.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T070227Z">
@@ -3520,10 +3480,26 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>A wxPaintDC must be constructed if an application wishes to paint on the client area of a window from...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T150348Z">
+        <seg>wxClientDC は EVT_PAINT() イベントハンドラ内でクライアントエリアを描画する場合に使用する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>A wxPoint is a useful data structure for graphics operations.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130515T150355Z">
         <seg>wxPoint は図形操作のための有用なデータ構造です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A wxScreenDC can be used to paint on the screen.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T150056Z">
+        <seg>wxScreenDC はスクリーン上へ描画するときに使用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3560,18 +3536,10 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>A wxWidgets application does not have a <bpt i="0" x="0">&lt;e0&gt;</bpt>main<ept i="0">&lt;/e0&gt;</ept> procedure; the equivalent is the <bpt i="1" x="1">&lt;a1&gt;</bpt>wxApp::OnInit<ept i="1">&lt;/a1&gt;</ept> member defined for a class derived from <bpt i="2" x="2">&lt;a2&gt;</bpt>wxApp<ept i="2">&lt;/a2&gt;</ept>.</seg>
+        <seg>A wxWindowDC must be constructed if an application wishes to paint on the whole area of a window (cli...</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T133350Z">
-        <seg>wxWidgets アプリケーションは <bpt i="0" x="0">&lt;e0&gt;</bpt>main<ept i="0">&lt;/e0&gt;</ept> 関数を持ちません。それと同等の関数が wxApp を継承したクラスで定義される <bpt i="1" x="1">&lt;a1&gt;</bpt>wxApp::OnInit<ept i="1">&lt;/a1&gt;</ept> メンバ関数です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>A wxWidgets application does not have a <bpt i="0" x="0">&lt;i0&gt;</bpt>main<ept i="0">&lt;/i0&gt;</ept> procedure; the equivalent is the <bpt i="1" x="1">&lt;a1&gt;</bpt>OnInit<ept i="1">&lt;/a1&gt;</ept> member defined for a class derived from wxApp.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T160017Z">
-        <seg>wxWidgets アプリケーションは <bpt i="0" x="0">&lt;i0&gt;</bpt>main<ept i="0">&lt;/i0&gt;</ept> 関数を持ちません。それと同等の関数が wxApp を継承したクラスで定義される <bpt i="1" x="1">&lt;a1&gt;</bpt>OnInit<ept i="1">&lt;/a1&gt;</ept> メンバ関数です。</seg>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T150635Z">
+        <seg>wxWindowDC はウィンドウ全体 (クライアントエリアと装飾部分) を描画する場合に使用する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3684,14 +3652,6 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130519T143422Z">
         <seg>サイザーはすべてコンテナです。つまり、ひとつ (または複数) のダイアログアイテムを内部に配置するために使用されます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Allows the programmer to specify whether the application will exit when the top-level frame is delete...</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T153140Z">
-        <seg>トップレベルウィンドウが削除されたときにアプリケーションを終了するかどうかをユーザが指定することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3824,14 +3784,6 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>An application closes by destroying all windows.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T160515Z">
-        <seg>アプリケーションはすべてのウィンドウを破棄することで終了します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>An arbitrary functor like boost::function&lt;&gt;.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T000123Z">
@@ -3860,14 +3812,6 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T075334Z">
         <seg>イベントテーブルはソースファイルに配置され、wxWidgets にイベントとメンバ関数のマッピング方法を知らせます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>An example of defining an application follows:</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T160959Z">
-        <seg>アプリケーションを定義する例は以下の通りです:</seg>
       </tuv>
     </tu>
     <tu>
@@ -3932,22 +3876,6 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130507T160615Z">
         <seg>また、通常、イベントは wxWidgets 自身によって生成されますが、あなたがこれを行うことも可能です。これはカスタムイベントを使用する場合に特に有用です。 (<bpt i="0" x="0">&lt;a0&gt;</bpt>カスタムイベントの概要<ept i="0">&lt;/a0&gt;</ept> 参照) </seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Another aspect of the application shutdown is <bpt i="0" x="0">&lt;a0&gt;</bpt>OnExit<ept i="0">&lt;/a0&gt;</ept> which is called when the application exits but <bpt i="1" x="1">&lt;i1&gt;</bpt>before<ept i="1">&lt;/i1&gt;</ept> wxWidgets cleans up its internal structures.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162318Z">
-        <seg>アプリケーションの終了の別の側面は <bpt i="0" x="0">&lt;a0&gt;</bpt>OnExit<ept i="0">&lt;/a0&gt;</ept> です。この関数はアプリケーションの終了時に呼ばれますが、wxWidgets の内部構造が破棄される<bpt i="1" x="1">&lt;i1&gt;</bpt>前<ept i="1">&lt;/i1&gt;</ept>に呼ばれます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Another aspect of the application shutdown is <bpt i="0" x="0">&lt;a0&gt;</bpt>wxApp::OnExit<ept i="0">&lt;/a0&gt;</ept> which is called when the application exits but <bpt i="1" x="1">&lt;e1&gt;</bpt>before<ept i="1">&lt;/e1&gt;</ept> wxWidgets cleans up its internal structures.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T133120Z">
-        <seg>アプリケーションの終了の別の側面は <bpt i="0" x="0">&lt;a0&gt;</bpt>wxApp::OnExit<ept i="0">&lt;/a0&gt;</ept> です。この関数はアプリケーションの終了時に呼ばれますが、wxWidgets の内部構造が破棄される<bpt i="1" x="1">&lt;e1&gt;</bpt>前<ept i="1">&lt;/e1&gt;</ept>に呼ばれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4044,22 +3972,6 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T142326Z">
         <seg>サイザーに子コントロールを追加します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Application Shutdown</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T152206Z">
-        <seg>アプリケーションの終了</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Application shutdown</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T161738Z">
-        <seg>アプリケーションの終了</seg>
       </tuv>
     </tu>
     <tu>
@@ -4304,14 +4216,6 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Because all frames must be destroyed for the application to exit, it is advisable to use parent frames wherever possible when creating new frames, so that deleting the top level frame will automatically delete child frames.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T160707Z">
-        <seg>アプリケーションを終了するためにはすべてのフレームを破棄しなければならないため、可能な限り、新しいフレームを作成するときは親フレームを使用するようにするべきです。こうすることで、トップレベルフレームの削除時に自動的に子フレームが削除されます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>Because of the need to support implicit conversions to both <bpt i="0" x="0">&lt;c0&gt;</bpt>char<ept i="0">&lt;/c0&gt;</ept> and <bpt i="1" x="1">&lt;c1&gt;</bpt>wchar_t<ept i="1">&lt;/c1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxString<ept i="2">&lt;/a2&gt;</ept> implementation is rather involved and many of its operators don't return the types which they could be naively expected to return.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T033944Z">
@@ -4456,14 +4360,6 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130514T155725Z">
         <seg>両方の戦略について、以下で詳細に述べています。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>But MyApp object is deleted after wxWidgets structures that wxCHMHelpController depends on were uninitialized!</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162718Z">
-        <seg>しかし、MyApp オブジェクトは wxCHMHelpController の依存する wxWidgets 構造が未初期化状態になった後に削除されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4676,10 +4572,10 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Classes: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxApp<ept i="0">&lt;/a0&gt;</ept></seg>
+        <seg>Classes: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBufferedDC<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBufferedPaintDC<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDC<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxPostScriptDC<ept i="3">&lt;/a3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxMetafileDC<ept i="4">&lt;/a4&gt;</ept>, <bpt i="5" x="5">&lt;a5&gt;</bpt>wxMemoryDC<ept i="5">&lt;/a5&gt;</ept>, <bpt i="6" x="6">&lt;a6&gt;</bpt>wxPrinterDC<ept i="6">&lt;/a6&gt;</ept>, <bpt i="7" x="7">&lt;a7&gt;</bpt>wxScreenDC<ept i="7">&lt;/a7&gt;</ept>, <bpt i="8" x="8">&lt;a8&gt;</bpt>wxClientDC<ept i="8">&lt;/a8&gt;</ept>, <bpt i="9" x="9">&lt;a9&gt;</bpt>wxPaintDC<ept i="9">&lt;/a9&gt;</ept>, <bpt i="10" x="10">&lt;a10&gt;</bpt>wxWindowDC<ept i="10">&lt;/a10&gt;</ept>.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T155917Z">
-        <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxApp<ept i="0">&lt;/a0&gt;</ept></seg>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T140522Z">
+        <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBufferedDC<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBufferedPaintDC<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDC<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxPostScriptDC<ept i="3">&lt;/a3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxMetafileDC<ept i="4">&lt;/a4&gt;</ept>, <bpt i="5" x="5">&lt;a5&gt;</bpt>wxMemoryDC<ept i="5">&lt;/a5&gt;</ept>, <bpt i="6" x="6">&lt;a6&gt;</bpt>wxPrinterDC<ept i="6">&lt;/a6&gt;</ept>, <bpt i="7" x="7">&lt;a7&gt;</bpt>wxScreenDC<ept i="7">&lt;/a7&gt;</ept>, <bpt i="8" x="8">&lt;a8&gt;</bpt>wxClientDC<ept i="8">&lt;/a8&gt;</ept>, <bpt i="9" x="9">&lt;a9&gt;</bpt>wxPaintDC<ept i="9">&lt;/a9&gt;</ept>, <bpt i="10" x="10">&lt;a10&gt;</bpt>wxWindowDC<ept i="10">&lt;/a10&gt;</ept>.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5060,6 +4956,22 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Device Contexts</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T142857Z">
+        <seg>デバイスコンテキスト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Device context overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T140518Z">
+        <seg>デバイスコンテキストの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Directories</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T004713Z">
@@ -5088,6 +5000,24 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T025608Z">
         <seg>これは単純な方法では実現できません:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>DrawMyPicture(dc);</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T141640Z">
+        <seg>DrawMyPicture(dc);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>DrawMyPicture(dc);
+}</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T154321Z">
+        <seg>DrawMyPicture(dc);
+}</seg>
       </tuv>
     </tu>
     <tu>
@@ -5768,14 +5698,6 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>For example, this code may crash:</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162431Z">
-        <seg>例えば、このコードはクラッシュするでしょう:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>For example, you could define a class inheriting from <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept> which shows all the log messages in some part of your main application window reserved for the message output without interrupting the user work flow with modal message boxes.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T120750Z">
@@ -6378,22 +6300,6 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>If this behaviour is not desirable <bpt i="1" x="1">&lt;a1&gt;</bpt>wxApp::SetExitOnFrameDelete<ept i="1">&lt;/a1&gt;</ept> can be called to change it.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T124028Z">
-        <seg>この振る舞いが望ましくない場合、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxApp::SetExitOnFrameDelete<ept i="1">&lt;/a1&gt;</ept> を呼ぶことで振る舞いを変更することができます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>If this behaviour is not desirable <bpt i="2" x="2">&lt;a2&gt;</bpt>wxApp::SetExitOnFrameDelete<ept i="2">&lt;/a2&gt;</ept> can be called to change it.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162007Z">
-        <seg>この振る舞いが望ましくない場合、<bpt i="2" x="2">&lt;a2&gt;</bpt>wxApp::SetExitOnFrameDelete<ept i="2">&lt;/a2&gt;</ept> を呼ぶことで振る舞いを変更することができます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>If this event handler is disabled via a call to <bpt i="0" x="0">&lt;a0&gt;</bpt>wxEvtHandler::SetEvtHandlerEnabled()<ept i="0">&lt;/a0&gt;</ept> the next three steps are skipped and the event handler resumes at step (5).</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T071243Z">
@@ -6594,22 +6500,6 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>In emergencies the <bpt i="0" x="0">&lt;a0&gt;</bpt>wxExit<ept i="0">&lt;/a0&gt;</ept> function can be called to kill the application however normally the application shuts down automatically, <bpt i="1" x="1">&lt;a1&gt;</bpt>see below<ept i="1">&lt;/a1&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T160945Z">
-        <seg>緊急の場合は <bpt i="0" x="0">&lt;a0&gt;</bpt>wxExit<ept i="0">&lt;/a0&gt;</ept> 関数を使用してアプリケーションを強制終了させることができます。しかし、通常、アプリケーションは自動的にシャットダウンされます。 <bpt i="1" x="1">&lt;a1&gt;</bpt>以下を参照してください<ept i="1">&lt;/a1&gt;</ept>。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>In emergencies the wxExit function can be called to kill the application however normally the application shuts down automatically, see <bpt i="0" x="0">&lt;a0&gt;</bpt>Application Shutdown<ept i="0">&lt;/a0&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T133418Z">
-        <seg>緊急の場合は wxExit 関数を使用してアプリケーションを強制終了させることができます。しかし、通常、アプリケーションは自動的にシャットダウンされます。 <bpt i="0" x="0">&lt;a0&gt;</bpt>アプリケーションの終了<ept i="0">&lt;/a0&gt;</ept> を参照してください。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>In fact, identifiers do not need to be unique across your entire application as long they are unique within the particular context you're interested in, such as a frame and its children.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130517T171150Z">
@@ -6694,22 +6584,6 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T015610Z">
         <seg>特に、これらを public に<it pos="end" x="8">&lt;/s8&gt;</it></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>In particular, do <bpt i="0" x="0">&lt;b0&gt;</bpt>not<ept i="0">&lt;/b0&gt;</ept> destroy them from application class' destructor!</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T124528Z">
-        <seg>特に、アプリケーションクラスのデストラクタで削除しては <bpt i="0" x="0">&lt;b0&gt;</bpt>いけません<ept i="0">&lt;/b0&gt;</ept>。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>In particular, do <bpt i="2" x="2">&lt;b2&gt;</bpt>not<ept i="2">&lt;/b2&gt;</ept> destroy them from application class' destructor!</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162357Z">
-        <seg>特に、アプリケーションクラスのデストラクタで削除しては <bpt i="2" x="2">&lt;b2&gt;</bpt>いけません<ept i="2">&lt;/b2&gt;</ept>。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6902,22 +6776,6 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T041415Z">
         <seg>あなたのプログラムと一緒に .mo ファイルを対象システム内の適切な場所 (<bpt i="0" x="0">&lt;a0&gt;</bpt>wxStandardPaths::GetLocalizedResourcesDir<ept i="0">&lt;/a0&gt;</ept>( <bpt i="1" x="1">&lt;a1&gt;</bpt>wxStandardPaths::ResourceCat_Messages<ept i="1">&lt;/a1&gt;</ept> ) の返却する場所) にインストールする。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Instead it returns a boolean value which indicates whether processing should continue (<bpt i="1" x="1">&lt;s1&gt;</bpt>true<ept i="1">&lt;/s1&gt;</ept>) or not (<bpt i="2" x="2">&lt;s2&gt;</bpt>false<ept i="2">&lt;/s2&gt;</ept>).</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T152514Z">
-        <seg>代わりに処理を継続する (<bpt i="1" x="1">&lt;s1&gt;</bpt>true<ept i="1">&lt;/s1&gt;</ept>) かしない (<bpt i="2" x="2">&lt;s2&gt;</bpt>false<ept i="2">&lt;/s2&gt;</ept>) かを表す真偽値を返却します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Instead it returns a boolean value which indicates whether processing should continue (true) or not (false).</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T160313Z">
-        <seg>代わりに処理を継続する (true) かしない (false) かを表す真偽値を返却します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7652,22 +7510,6 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Note that starting from wxWidgets 2.3.3 such logic doesn't apply for the windows shown before the program enters the main loop: in other words, you can safely show a dialog from <bpt i="3" x="3">&lt;a3&gt;</bpt>wxApp::OnInit<ept i="3">&lt;/a3&gt;</ept> and not be afraid that your application terminates when this dialog -- which is the last top level window for the moment -- is closed.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T132741Z">
-        <seg>wxWidgets 2.3.3 から、このロジックはメインループに入る前のまだ表示されていないウィンドウには適用されなくなりました。つまり、 <bpt i="3" x="3">&lt;a3&gt;</bpt>wxApp::OnInit<ept i="3">&lt;/a3&gt;</ept> の中で安全にダイアログを表示でき、ダイアログ (その時点における最後のトップレベルウィンドウ) を閉じるときにアプリケーションが終了することを心配しなくても良いということです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Note that such logic doesn't apply for the windows shown before the program enters the main loop: in other words, you can safely show a dialog from <bpt i="0" x="0">&lt;a0&gt;</bpt>wxApp::OnInit<ept i="0">&lt;/a0&gt;</ept> and not be afraid that your application terminates when this dialog -- which is the last top level window for the moment -- is closed.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T132719Z">
-        <seg>このロジックはメインループに入る前のまだ表示されていないウィンドウには適用されないことに注意してください。つまり、 <bpt i="0" x="0">&lt;a0&gt;</bpt>wxApp::OnInit<ept i="0">&lt;/a0&gt;</ept> の中で安全にダイアログを表示でき、ダイアログ (その時点における最後のトップレベルウィンドウ) を閉じるときにアプリケーションが終了することを心配しなくても良いということです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>Note that the new way of specifying flags to <bpt i="0" x="0">&lt;a0&gt;</bpt>wxSizer<ept i="0">&lt;/a0&gt;</ept> is via <bpt i="1" x="1">&lt;a1&gt;</bpt>wxSizerFlags<ept i="1">&lt;/a1&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130523T153032Z">
@@ -7680,22 +7522,6 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130523T153018Z">
         <seg>wxSizer にフラグを指定する新しい方法として <bpt i="0" x="0">&lt;a0&gt;</bpt>wxSizerFlags<ept i="0">&lt;/a0&gt;</ept> を使用する方法があります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Note that the program's command line arguments, represented by <bpt i="0" x="0">&lt;e0&gt;</bpt>argc<ept i="0">&lt;/e0&gt;</ept> and <bpt i="1" x="1">&lt;e1&gt;</bpt>argv<ept i="1">&lt;/e1&gt;</ept>, are available from within <bpt i="2" x="2">&lt;a2&gt;</bpt>wxApp<ept i="2">&lt;/a2&gt;</ept> member functions.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T152536Z">
-        <seg>プログラムのコマンドライン引数 (<bpt i="0" x="0">&lt;e0&gt;</bpt>argc<ept i="0">&lt;/e0&gt;</ept> と <bpt i="1" x="1">&lt;e1&gt;</bpt>argv<ept i="1">&lt;/e1&gt;</ept>) は <bpt i="2" x="2">&lt;a2&gt;</bpt>wxApp<ept i="2">&lt;/a2&gt;</ept> のメンバ関数から使用できます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Note that the program's command line arguments, represented by <bpt i="0" x="0">&lt;i0&gt;</bpt>argc<ept i="0">&lt;/i0&gt;</ept> and <bpt i="1" x="1">&lt;i1&gt;</bpt>argv<ept i="1">&lt;/i1&gt;</ept>, are available from within wxApp member functions.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T160500Z">
-        <seg>プログラムのコマンドライン引数 (<bpt i="0" x="0">&lt;i0&gt;</bpt>argc<ept i="0">&lt;/i0&gt;</ept> と <bpt i="1" x="1">&lt;i1&gt;</bpt>argv<ept i="1">&lt;/i1&gt;</ept>) は wxApp のメンバ関数から使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7776,14 +7602,6 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T052859Z">
         <seg>ProcessEvent をオーバーライドすることでイベント処理をリダイレクトしたいと思うかもしれません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Note the use of IMPLEMENT_APP(appClass), which allows wxWidgets to dynamically create an instance of the application object at the appropriate point in wxWidgets initialization.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T161134Z">
-        <seg>IMPLEMENT_APP(appClass) を使用している点に注意してください。これにより、wxWidgets の初期化時の適切なタイミングでアプリケーションオブジェクトのインスタンスが動的に作成されるようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8076,34 +7894,10 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Otherwise you can only use the global <bpt i="0" x="0">&lt;c0&gt;</bpt>wxTheApp<ept i="0">&lt;/c0&gt;</ept> pointer which is of type <bpt i="1" x="1">&lt;c1&gt;</bpt>wxApp*<ept i="1">&lt;/c1&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T152720Z">
-        <seg>そうしない場合、<bpt i="1" x="1">&lt;c1&gt;</bpt>wxApp *<ept i="1">&lt;/c1&gt;</ept> 型のグローバル変数である <bpt i="0" x="0">&lt;c0&gt;</bpt>wxTheApp<ept i="0">&lt;/c0&gt;</ept> ポインタを使用するしかありません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Otherwise you can only use the global <bpt i="0" x="0">&lt;t0&gt;</bpt>wxTheApp<ept i="0">&lt;/t0&gt;</ept> pointer which is of type <bpt i="1" x="1">&lt;t1&gt;</bpt>wxApp *<ept i="1">&lt;/t1&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T161635Z">
-        <seg>そうしない場合、<bpt i="1" x="1">&lt;t1&gt;</bpt>wxApp *<ept i="1">&lt;/t1&gt;</ept> 型のグローバル変数である <bpt i="0" x="0">&lt;t0&gt;</bpt>wxTheApp<ept i="0">&lt;/t0&gt;</ept> ポインタを使用するしかありません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>Overridden wxEventFilter method.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T065638Z">
         <seg>wxEventFilter をオーバーライドした関数。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Override this member function for any processing which needs to be done as the application is about t...</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T124236Z">
-        <seg>アプリケーションの終了時に処理を行なう必要がある場合にこのメンバ関数をオーバーライドしてください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8224,14 +8018,6 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130430T145431Z">
         <seg>Previous</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Previous versions of wxWidgets used to rely on the creation of a global application object, but this is no longer recommended, because required global initialization may not have been performed at application object construction time.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T132359Z">
-        <seg>以前の wxWidgets ではグルーバルなアプリケーションオブジェクトを作成していましたが、もはやこれは非推奨です。なぜなら、期待したグローバルオブジェクトの初期化がアプリケーションオブジェクトの構築時に行われない可能性があるためです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8560,14 +8346,6 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>SetTopWindow(the_frame);</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T161010Z">
-        <seg>SetTopWindow(the_frame);</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>Sets the event handler for this window.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130517T170833Z">
@@ -8764,6 +8542,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130519T133610Z">
         <seg>(単一行テキストコントロールなど) いくつかのコントロールでは自身の高さを計算できても、幅を計算することができません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Some device contexts are created temporarily in order to draw on a window.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T140825Z">
+        <seg>いくつかのデバイスコンテキストはウィンドウへの描画のために一時的に作成されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9096,22 +8882,6 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>The alternative is to explicitly delete child frames in the top-level frame's <bpt i="0" x="0">&lt;a0&gt;</bpt>wxCloseEvent<ept i="0">&lt;/a0&gt;</ept> handler.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T160758Z">
-        <seg>アプリケーションを終了する別の方法はトップレベルフレームの <bpt i="0" x="0">&lt;a0&gt;</bpt>wxCloseEvent<ept i="0">&lt;/a0&gt;</ept> イベントハンドラで明示的に子フレームを削除することです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>The application normally shuts down when the last of its top level windows is closed.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T161802Z">
-        <seg>通常、アプリケーションは最後のトップレベルウィンドウが閉じられたときに終了します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>The automatically generated identifiers are always negative and so will never conflict with the user-specified identifiers which must be always positive.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T075520Z">
@@ -9172,6 +8942,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T145337Z">
         <seg>ウィンドウ階層内におけるイベント伝播についての詳細は次の章で述べます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The device context is intended to represent a number of output devices in a generic way, with the same API being used throughout.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T140810Z">
+        <seg>デバイスコンテキストは汎用的な方法で、つまり同じ API を通して操作できる多くの出力デバイスを表現することを目的としています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9260,6 +9038,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T075626Z">
         <seg>最初の 2 つのエントリはメニューコマンドを異なる 2 つのメンバ関数にマッピングしています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The following describes the differences between these device contexts and when you should use them.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T140928Z">
+        <seg>各デバイスコンテキストの違いと、それを使用するタイミングについて以下で説明します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9656,22 +9442,6 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>The reason for that is that <bpt i="0" x="0">&lt;c0&gt;</bpt>m_helpCtrl<ept i="0">&lt;/c0&gt;</ept> is a member object and is thus destroyed from MyApp destructor.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T124542Z">
-        <seg>なぜなら、<bpt i="0" x="0">&lt;c0&gt;</bpt>m_helpCtrl<ept i="0">&lt;/c0&gt;</ept> はメンバオブジェクトであり、MyApp のデストラクタで破棄されるためです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>The reason for that is that <bpt i="0" x="0">&lt;t0&gt;</bpt>m_helpCtrl<ept i="0">&lt;/t0&gt;</ept> is a member object and is thus destroyed from MyApp destructor.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162536Z">
-        <seg>なぜなら、<bpt i="0" x="0">&lt;t0&gt;</bpt>m_helpCtrl<ept i="0">&lt;/t0&gt;</ept> はメンバオブジェクトであり、MyApp のデストラクタで破棄されるためです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>The result of <bpt i="0" x="0">&lt;c0&gt;</bpt>c_str()<ept i="0">&lt;/c0&gt;</ept> cannot be cast to <bpt i="1" x="1">&lt;c1&gt;</bpt>char*<ept i="1">&lt;/c1&gt;</ept> but only to <bpt i="2" x="2">&lt;c2&gt;</bpt>const<ept i="2">&lt;/c2&gt;</ept> <bpt i="3" x="3">&lt;c3&gt;</bpt><bpt i="4" x="4">&lt;c4&gt;</bpt>char*<ept i="4">&lt;/c4&gt;</ept>.<ept i="3">&lt;/c3&gt;</ept> Of course, modifying the string via the pointer returned by this method has never been possible but unfortunately it was occasionally useful to use a <bpt i="5" x="5">&lt;c5&gt;</bpt>const_cast<ept i="5">&lt;/c5&gt;</ept> here to pass the value to const-incorrect functions.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T034344Z">
@@ -9820,22 +9590,6 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T111045Z">
         <seg>ボーダーの太さも伝える必要があり、Add() 関数の第三引数に指定します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>The solution is to destroy HelpCtrl in <bpt i="1" x="1">&lt;e1&gt;</bpt>OnExit:<ept i="1">&lt;/e1&gt;</ept></seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T124552Z">
-        <seg>この解決策は <bpt i="1" x="1">&lt;e1&gt;</bpt>OnExit<ept i="1">&lt;/e1&gt;</ept> で HelpCtrl を削除することです:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>The solution is to destroy HelpCtrl in <bpt i="1" x="1">&lt;i1&gt;</bpt>OnExit<ept i="1">&lt;/i1&gt;</ept>:</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162750Z">
-        <seg>この解決策は <bpt i="1" x="1">&lt;i1&gt;</bpt>OnExit<ept i="1">&lt;/i1&gt;</ept> で HelpCtrl を削除することです:</seg>
       </tuv>
     </tu>
     <tu>
@@ -10408,6 +10162,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This class provides a simple way to avoid flicker: when drawing on it, everything is in fact first dr...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T143806Z">
+        <seg>このクラスはちらつきを防止するための単純な方法を提供します: 描画時には最初にメモリ上のバッファ (wxBitmap) へすべて描画し、それから関連する wxDC を使用してスクリーン上へ一度だけ、このオブジェクトの破棄時にコピーします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This class represents a background log window: to be precise, it collects all log messages in the log...</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T125427Z">
@@ -10444,6 +10206,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130502T145031Z">
         <seg>これは今のところ、wxMSW、wxGTK、wxMac、wxX11 で動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This defines the wxWidgets Encapsulated PostScript device context, which can write PostScript files o...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T145433Z">
+        <seg>これは wxWidets がカプセル化した PostScript デバイスコンテキストを定義しており、どのプラットフォームにおいても PostScript ファイルを作成することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This doesn't work for everything (for example not all device contexts support bitmap drawing) but will work most of the time.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T141904Z">
+        <seg>これはすべての場合に当てはまるわけではありません (例えば、すべてのデバイスコンテキストがビットマップの描画に対応しているわけではありません) が、大半の場合はうまく行きます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10496,14 +10274,6 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>This event class contains information about window and session close events.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T152613Z">
-        <seg>このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>This event type ID is stored in a struct of type <bpt i="1" x="1">&lt;b1&gt;</bpt>const wxEventType<ept i="1">&lt;/b1&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T150744Z">
@@ -10520,18 +10290,18 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>This function simply generates a wxCloseEvent whose handler usually tries to close the window...</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T153025Z">
-        <seg>この関数は単純に wxCloseEvent を作成します。通常はこのイベントを受け取ったハンドラはウィンドウを閉じようとします。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>This further reduces the code size and removes the need for conversions in more cases.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T102257Z">
         <seg>これはコードサイズをさらに削減させるとともに、より多くの場合で変換が不要になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This is <bpt i="0" x="0">&lt;s0&gt;</bpt>true<ept i="0">&lt;/s0&gt;</ept> of <bpt i="1" x="1">&lt;a1&gt;</bpt>wxScreenDC<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxClientDC<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxPaintDC<ept i="3">&lt;/a3&gt;</ept>, and <bpt i="4" x="4">&lt;a4&gt;</bpt>wxWindowDC<ept i="4">&lt;/a4&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T150723Z">
+        <seg>これには <bpt i="1" x="1">&lt;a1&gt;</bpt>wxScreenDC<ept i="1">&lt;/a1&gt;</ept>、<bpt i="2" x="2">&lt;a2&gt;</bpt>wxClientDC<ept i="2">&lt;/a2&gt;</ept>、<bpt i="3" x="3">&lt;a3&gt;</bpt>wxPaintDC<ept i="3">&lt;/a3&gt;</ept>、<bpt i="4" x="4">&lt;a4&gt;</bpt>wxWindowDC<ept i="4">&lt;/a4&gt;</ept> が該当します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10564,6 +10334,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T170040Z">
         <seg>これは wchar_t 型による wxCharTypeBuffer&lt;T&gt; の特殊化です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This is a subclass of wxBufferedDC which can be used inside of an EVT_PAINT() event handler to achiev...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T144304Z">
+        <seg>これは wxBufferedDC のサブクラスで、ダブルバッファリングを行なうために EVT_PAINT() イベントハンドラの内部で使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This is a type of device context that allows a metafile object to be created (Windows only)...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T145636Z">
+        <seg>これはメタファイルオブジェクトを作成するためのデバイスコンテキスト型で (Windows のみ)、通常の wxDC の特徴の大半を備えています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10640,22 +10426,6 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>This is normally the expected behaviour and means that it is enough to call <bpt i="0" x="0">&lt;a0&gt;</bpt>Close()<ept i="0">&lt;/a0&gt;</ept> in response to the <bpt i="1" x="1">&lt;t1&gt;</bpt>"Exit"<ept i="1">&lt;/t1&gt;</ept> menu command if your program has a single top level window.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T123948Z">
-        <seg>これは通常期待する振る舞いであり、アプリケーションが単一のトップレベルウィンドウを持つ場合は <bpt i="1" x="1">&lt;t1&gt;</bpt>"Exit"<ept i="1">&lt;/t1&gt;</ept> メニューが選択されたときに <bpt i="0" x="0">&lt;a0&gt;</bpt>Close()<ept i="0">&lt;/a0&gt;</ept> を呼ぶだけで充分なことを意味します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>This is normally the expected behaviour and means that it is enough to call <bpt i="0" x="0">&lt;a0&gt;</bpt>wxWindow::Close()<ept i="0">&lt;/a0&gt;</ept> in response to the "Exit" menu command if your program has a single top level window.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T124017Z">
-        <seg>これは通常期待する振る舞いであり、アプリケーションが単一のトップレベルウィンドウを持つ場合は "Exit" メニューが選択されたときに <bpt i="0" x="0">&lt;a0&gt;</bpt>wxWindow::Close()<ept i="0">&lt;/a0&gt;</ept> を呼ぶだけで充分なことを意味します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>This is supported only by <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBoxSizer<ept i="0">&lt;/a0&gt;</ept> and <bpt i="1" x="1">&lt;a1&gt;</bpt>wxFlexGridSizer<ept i="1">&lt;/a1&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T141651Z">
@@ -10668,6 +10438,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T125452Z">
         <seg>これは GUI wxWidgets アプリケーションのデフォルトのログターゲットです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This is true of <bpt i="0" x="0">&lt;a0&gt;</bpt>wxScreenDC<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxClientDC<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxPaintDC<ept i="2">&lt;/a2&gt;</ept>, and <bpt i="3" x="3">&lt;a3&gt;</bpt>wxWindowDC<ept i="3">&lt;/a3&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T140857Z">
+        <seg>これには <bpt i="0" x="0">&lt;a0&gt;</bpt>wxScreenDC<ept i="0">&lt;/a0&gt;</ept>、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxClientDC<ept i="1">&lt;/a1&gt;</ept>、<bpt i="2" x="2">&lt;a2&gt;</bpt>wxPaintDC<ept i="2">&lt;/a2&gt;</ept>、<bpt i="3" x="3">&lt;a3&gt;</bpt>wxWindowDC<ept i="3">&lt;/a3&gt;</ept> が該当します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10692,6 +10470,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T124554Z">
         <seg>コントロールの生成するイベントを処理しない場合や、イベントを一箇所で処理する場合 (このときはイベントテーブルに <bpt i="1" x="1">&lt;c1&gt;</bpt>wxID_ANY<ept i="1">&lt;/c1&gt;</ept> を指定するか、同じように <bpt i="2" x="2">&lt;a2&gt;</bpt>wxEvtHandler::Bind<ept i="2">&lt;/a2&gt;</ept> を呼ぶ必要があります) など、コントロールの正確な識別子が必要でないときにこれは役立ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This may not be available on non-Windows platforms.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T141529Z">
+        <seg>これは非 Windows 環境では使用できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10732,14 +10518,6 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T064047Z">
         <seg>この関数はイベントハンドラの中で使用し、現在のイベントハンドラの処理が終わった後にさらにイベントハンドラを呼び出すかどうかを制御します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>This must be provided by the application, and will usually create the application's main window...</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T152428Z">
-        <seg>アプリケーションはこの関数を必ず提供する必要があり、通常はアプリケーションのメインウィンドウを (任意に SetTopWindow() を呼んで) 作成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11072,6 +10850,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>To use a client, paint or window device context, create an object on the stack with the window as argument, for example:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T141637Z">
+        <seg>wxClientDC、wxPaintDC、wxWindowDC を使用する場合、以下のようにウィンドウを引数に指定してスタック上にオブジェクトを作成してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>To use an <bpt i="0" x="0">&lt;e0&gt;</bpt>event table<ept i="0">&lt;/e0&gt;</ept> you must first decide in which class you wish to handle the events.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T010545Z">
@@ -11156,6 +10942,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T040059Z">
         <seg>アプリケーションの翻訳にはいくつかのステップが含まれます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Try to write code so it is parameterised by <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDC<ept i="0">&lt;/a0&gt;</ept> - if you do this, the same piece of code may write to a number of different devices, by passing a different device context.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T154335Z">
+        <seg>なるべく <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDC<ept i="0">&lt;/a0&gt;</ept> 型を使用してパラメータ化するようにしてください。このようにした場合、異なるデバイスコンテキストを渡すことで多くのデバイスに対して同じコードを使用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Try to write code so it is parameterised by wxDC - if you do this, the same piece of code may write to a number of different devices, by passing a different device context.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T141738Z">
+        <seg>なるべく wxDC 型を使用してパラメータ化するようにしてください。このようにした場合、異なるデバイスコンテキストを渡すことで多くのデバイスに対して同じコードを使用することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11336,14 +11138,6 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Unlike in earlier versions of wxWidgets, OnInit does not return a frame.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T151214Z">
-        <seg>wxWidgets の初期バージョンとは違い、OnInit はフレームを返却しません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>Unlike the original wxWidgets Dialog Editor, editors such as wxDesigner, DialogBlocks, XRCed and wxWorkshop create dialogs based exclusively on sizers, practically forcing the user to create platform independent layouts without compromises.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130519T114516Z">
@@ -11412,6 +11206,38 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T014717Z">
         <seg>静的イベントテーブルを宣言するために、クラス宣言の中でこのマクロを使用してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Use this to paint on the client area of a window, but <bpt i="2" x="2">&lt;e2&gt;</bpt>only<ept i="2">&lt;/e2&gt;</ept> from within a <bpt i="3" x="3">&lt;a3&gt;</bpt>wxPaintEvent<ept i="3">&lt;/a3&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T154306Z">
+        <seg>ウィンドウのクライアントエリアに描画するときに使用しますが、<bpt i="3" x="3">&lt;a3&gt;</bpt>wxPaintEvent<ept i="3">&lt;/a3&gt;</ept> の中で <bpt i="2" x="2">&lt;e2&gt;</bpt>のみ<ept i="2">&lt;/e2&gt;</ept> 使用してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Use this to paint on the client area of window (the part without borders and other decorations), but do not use it from within an <bpt i="2" x="2">&lt;a2&gt;</bpt>wxPaintEvent<ept i="2">&lt;/a2&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T154132Z">
+        <seg>ウィンドウのクライアントエリア (ボーダーや他の装飾を除いた部分) に描画するときに使用します。ただし、<bpt i="2" x="2">&lt;a2&gt;</bpt>wxPaintEvent<ept i="2">&lt;/a2&gt;</ept> の中で使用しないでください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Use this to paint on the screen, as opposed to an individual window.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T153925Z">
+        <seg>個別のウィンドウではなく、スクリーン上に描画するときに使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Use this to paint on the whole area of a window, including decorations.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T154315Z">
+        <seg>装飾を含む、ウィンドウ全体に描画するときに使用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11808,14 +11634,6 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>You call <bpt i="0" x="0">&lt;a0&gt;</bpt>wxApp::SetTopWindow<ept i="0">&lt;/a0&gt;</ept> to let wxWidgets know about the top window.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T151234Z">
-        <seg>wxWidgets へトップウィンドウを教えるためには <bpt i="0" x="0">&lt;a0&gt;</bpt>wxApp::SetTopWindow<ept i="0">&lt;/a0&gt;</ept> を使用します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>You can also redirect the <bpt i="4" x="4">&lt;e4&gt;</bpt>wxLogXXX<ept i="4">&lt;/e4&gt;</ept> calls to <bpt i="5" x="5">&lt;e5&gt;</bpt>cout<ept i="5">&lt;/e5&gt;</ept> by just writing:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T091504Z">
@@ -11828,14 +11646,6 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T015131Z">
         <seg>以下のように書くことで <bpt i="0" x="0">&lt;i0&gt;</bpt>wxLogXXX<ept i="0">&lt;/i0&gt;</ept> 呼び出しを <bpt i="1" x="1">&lt;i1&gt;</bpt>cout<ept i="1">&lt;/i1&gt;</ept> へリダイレクトすることもできます:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>You can also use DECLARE_APP(appClass) in a header file to declare the wxGetApp function which returns a reference to the application object.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T151539Z">
-        <seg>また、ヘッダファイル内で DECLARE_APP(appClass) を使用することで、アプリケーションオブジェクトへの参照を返却する wxGetApp 関数を宣言できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11976,14 +11786,6 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>You should delete all wxWidgets object that you created by the time OnExit finishes.</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162416Z">
-        <seg>作成した wxWidgets は OnExit が完了するまでにすべて削除するべきです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>You shouldn't pass <bpt i="0" x="0">&lt;c0&gt;</bpt>c_str()<ept i="0">&lt;/c0&gt;</ept> result to vararg functions such as standard <bpt i="1" x="1">&lt;c1&gt;</bpt>printf()<ept i="1">&lt;/c1&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T124508Z">
@@ -12102,28 +11904,6 @@ public:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>class DerivedApp : public wxApp
-{
-public:</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T161002Z">
-        <seg>class DerivedApp : public wxApp
-{
-public:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>class MyApp : public wxApp
-{</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162433Z">
-        <seg>class MyApp : public wxApp
-{</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>class MyFrame : public wxFrame
 {
 public:</seg>
@@ -12156,14 +11936,6 @@ public:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130501T160623Z">
         <seg>const wchar_t *ws = L"Hello, world!";</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>delete m_helpCtrl;</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162759Z">
-        <seg>delete m_helpCtrl;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12332,22 +12104,6 @@ public:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T045726Z">
         <seg>m_child-&gt;Bind(<bpt i="0" x="0">&lt;a0&gt;</bpt>wxEVT_LEAVE_WINDOW<ept i="0">&lt;/a0&gt;</ept>, &amp;MyFrame::OnMouseLeave, <bpt i="1" x="1">&lt;s1&gt;</bpt>this<ept i="1">&lt;/s1&gt;</ept>);</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>m_helpCtrl = <bpt i="6" x="6">&lt;s6&gt;</bpt>new<ept i="6">&lt;/s6&gt;</ept> wxCHMHelpController;</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T124601Z">
-        <seg>m_helpCtrl = <bpt i="6" x="6">&lt;s6&gt;</bpt>new<ept i="6">&lt;/s6&gt;</ept> wxCHMHelpController;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>m_helpCtrl = new wxCHMHelpController;</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162755Z">
-        <seg>m_helpCtrl = new wxCHMHelpController;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12606,34 +12362,6 @@ public:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>public:</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162435Z">
-        <seg>public:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>return 0;
-}</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162801Z">
-        <seg>return 0;
-}</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>return true;
-}</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T161010Z">
-        <seg>return true;
-}</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>s.<bpt i="0" x="0">&lt;a0&gt;</bpt>c_str<ept i="0">&lt;/a0&gt;</ept>() + n</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T123831Z">
@@ -12662,22 +12390,6 @@ public:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T015006Z">
         <seg>クラス宣言内のどこかに挿入する必要があります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>the_frame-&gt;<bpt i="10" x="10">&lt;a10&gt;</bpt>Show<ept i="10">&lt;/a10&gt;</ept>(<bpt i="11" x="11">&lt;s11&gt;</bpt>true<ept i="11">&lt;/s11&gt;</ept>);</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T152700Z">
-        <seg>the_frame-&gt;<bpt i="10" x="10">&lt;a10&gt;</bpt>Show<ept i="10">&lt;/a10&gt;</ept>(<bpt i="11" x="11">&lt;s11&gt;</bpt>true<ept i="11">&lt;/s11&gt;</ept>);</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>the_frame-&gt;Show(true);</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T161008Z">
-        <seg>the_frame-&gt;Show(true);</seg>
       </tuv>
     </tu>
     <tu>
@@ -12776,32 +12488,20 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>virtual bool OnInit();
-};
-
-IMPLEMENT_APP(DerivedApp)
-
-bool DerivedApp::OnInit()
-{</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T161004Z">
-        <seg>virtual bool OnInit();
-};
-
-IMPLEMENT_APP(DerivedApp)
-
-bool DerivedApp::OnInit()
-{</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>void MyTextCtrl::OnChar(wxKeyEvent&amp; event)
 {</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T022521Z">
         <seg>void MyTextCtrl::OnChar(wxKeyEvent&amp; event)
 {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>void MyWindow::OnMyCmd(wxCommandEvent&amp; event)</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T141638Z">
+        <seg>void MyWindow::OnMyCmd(wxCommandEvent&amp; event)</seg>
       </tuv>
     </tu>
     <tu>
@@ -12980,22 +12680,6 @@ protected:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>wxApp Overview</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130529T135011Z">
-        <seg>wxApp の概要</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>wxApp overview</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T155912Z">
-        <seg>wxApp の概要</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>wxBACKWARD  // return wxID_BACKWARD</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T120016Z">
@@ -13092,22 +12776,6 @@ protected:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>wxCHMHelpController *m_helpCtrl;</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162752Z">
-        <seg>wxCHMHelpController *m_helpCtrl;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>wxCHMHelpController m_helpCtrl;</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T162436Z">
-        <seg>wxCHMHelpController m_helpCtrl;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>wxChar ch = wxT('*');</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130501T161652Z">
@@ -13120,6 +12788,14 @@ protected:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T123159Z">
         <seg>wxChar は次のように定義されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxClientDC dc(window);</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T141639Z">
+        <seg>wxClientDC dc(window);</seg>
       </tuv>
     </tu>
     <tu>
@@ -13270,14 +12946,6 @@ private:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T055226Z">
         <seg>wxFocusEvent</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>wxFrame *the_frame = new wxFrame(NULL, ID_MYFRAME, argv[0]);</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130527T161006Z">
-        <seg>wxFrame *the_frame = new wxFrame(NULL, ID_MYFRAME, argv[0]);</seg>
       </tuv>
     </tu>
     <tu>
@@ -13980,6 +13648,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxWidgets: wxWidgets: Device Contexts</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130529T143051Z">
+        <seg>wxWidgets: wxWidgets: デバイスコンテキスト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxWidgets: wxWidgets: Environment Variables</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130523T155606Z">
@@ -14024,14 +13700,6 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T004606Z">
         <seg>wxWidgets: wxWidgets: wxWidgets における Unicode 対応</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>wxWidgets: wxWidgets: wxApp Overview</seg>
-      </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130528T152152Z">
-        <seg>wxWidgets: wxWidgets: wxApp の概要</seg>
       </tuv>
     </tu>
     <tu>
