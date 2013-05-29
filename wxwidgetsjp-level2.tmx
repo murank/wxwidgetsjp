@@ -822,6 +822,22 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog<ept i="0">&lt;/a0&gt;</ept> Overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T151537Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog<ept i="0">&lt;/a0&gt;</ept> の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog<ept i="0">&lt;/a0&gt;</ept> therefore supplies a global <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDialogLayoutAdapter<ept i="1">&lt;/a1&gt;</ept> class that implements automatic scrolling adaptation for most sizer-based custom dialogs.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T152657Z">
+        <seg>そのために <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog<ept i="0">&lt;/a0&gt;</ept> ではグローバルな <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDialogLayoutAdapter<ept i="1">&lt;/a1&gt;</ept> クラスを提供しており、このクラスではサイザーを利用した大半のダイアログに対して自動スクロール機能を適用させることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxDir<ept i="0">&lt;/a0&gt;</ept> is a helper class for enumerating the files or subdirectories of a directory.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T072758Z">
@@ -1246,6 +1262,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130516T160330Z">
         <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxTreeCtrl::EditLabel<ept i="0">&lt;/a0&gt;</ept>: イベントを送信しない代替方法を持たない</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxWizard<ept i="0">&lt;/a0&gt;</ept> uses its own CanDoLayoutAdaptation and DoLayoutAdaptation functions rather than the global adapter: again, only the wizard pages are made scrollable.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T154424Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxWizard<ept i="0">&lt;/a0&gt;</ept> はグローバルなアダプタではなく、独自の CanDoLayoutAdaptation と DoLayoutAdaptation 関数を使用します。繰り返しになりますが、ウィザードページのみがスクロール可能になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1766,6 +1790,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="78" x="78">&lt;a78&gt;</bpt><bpt i="79" x="79">&lt;b79&gt;</bpt>wxDialog overview<ept i="79">&lt;/b79&gt;</ept><ept i="78">&lt;/a78&gt;</ept><it pos="begin" x="80">&lt;br80&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T151413Z">
+        <seg><bpt i="78" x="78">&lt;a78&gt;</bpt><bpt i="79" x="79">&lt;b79&gt;</bpt>wxDialog の概要<ept i="79">&lt;/b79&gt;</ept><ept i="78">&lt;/a78&gt;</ept><it pos="begin" x="80">&lt;br80&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="7" x="7">&lt;a7&gt;</bpt>wxFrame<ept i="7">&lt;/a7&gt;</ept> *the_frame = <bpt i="8" x="8">&lt;s8&gt;</bpt>new<ept i="8">&lt;/s8&gt;</ept> <bpt i="9" x="9">&lt;a9&gt;</bpt>wxFrame<ept i="9">&lt;/a9&gt;</ept>(NULL, ID_MYFRAME, argv[0]);</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130528T152659Z">
@@ -1786,6 +1818,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T132236Z">
         <seg><bpt i="87" x="87">&lt;a87&gt;</bpt><bpt i="88" x="88">&lt;b88&gt;</bpt>サイザーの概要<ept i="88">&lt;/b88&gt;</ept><ept i="87">&lt;/a87&gt;</ept><it pos="begin" x="89">&lt;br89&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="8" x="8">&lt;a8&gt;</bpt>Dialogs<ept i="8">&lt;/a8&gt;</ept><it pos="begin" x="9">&lt;br9&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T151401Z">
+        <seg><bpt i="8" x="8">&lt;a8&gt;</bpt>ダイアログ<ept i="8">&lt;/a8&gt;</ept><it pos="begin" x="9">&lt;br9&gt;</it></seg>
       </tuv>
     </tu>
     <tu>
@@ -3168,6 +3208,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>A book control is a convenient way of displaying multiple pages of information, displayed one page at...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T150935Z">
+        <seg>ブックコントロールは複数のページを持つ情報を表示する際に、一度にひとつのページを表示する便利な手段です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>A button is a control that contains a text string, and is one of the most common elements of a GUI...</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130507T153555Z">
@@ -3204,6 +3252,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T142222Z">
         <seg>ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A dialog box is similar to a panel, in that it is a window which can be used for placing controls, with the following exceptions:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T145610Z">
+        <seg>ダイアログボックスはパネルに似ており、コントロールを配置するために使用するウィンドウですが、以下の例外があります:</seg>
       </tuv>
     </tu>
     <tu>
@@ -3364,6 +3420,30 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T130639Z">
         <seg>wxLogChain の特別版で、自分自身を新しいログターゲットとして使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A static function enabling or disabling layout adaptation for all dialogs.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T144348Z">
+        <seg>すべてのダイアログに対してレイアウトの適応を有効化・無効化する静的関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A static function for setting the current layout adapter object, returning the old adapter...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T153419Z">
+        <seg>現在のレイアウトアダプタオブジェクトを設定し、古いアダプタを返却する静的関数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A surrounding frame is implicitly created.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T145647Z">
+        <seg>周囲を囲むフレームが暗黙的に作成される。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3552,6 +3632,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Adaptation for <bpt i="0" x="0">&lt;a0&gt;</bpt>wxPropertySheetDialog<ept i="0">&lt;/a0&gt;</ept> is always done by simply making the pages scrollable, since <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDialog::GetContentWindow<ept i="1">&lt;/a1&gt;</ept> returns the dialog's book control and this is handled by the standard layout adapter.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T154359Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxPropertySheetDialog<ept i="0">&lt;/a0&gt;</ept> に対する適応は単純にページをスクロール可能にするだけです。なぜなら、 <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDialog::GetContentWindow<ept i="1">&lt;/a1&gt;</ept> がダイアログのブックコントロールを返却し、このコントロールが標準のレイアウトアダプタで処理されるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Add the mask to the list of allowed masks for wxLogTrace().</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130523T155753Z">
@@ -3588,6 +3676,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130516T155614Z">
         <seg>新しいページを追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Adds an identifier to be regarded as a main button for the non-scrolling area of a dialog...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T153038Z">
+        <seg>ダイアログの非スクロール領域にするメインボタンとして扱う識別子を追加します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3652,6 +3748,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130519T143422Z">
         <seg>サイザーはすべてコンテナです。つまり、ひとつ (または複数) のダイアログアイテムを内部に配置するために使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>All the children apart from standard buttons are reparented onto a new <bpt i="0" x="0">&lt;a0&gt;</bpt>wxScrolledWindow<ept i="0">&lt;/a0&gt;</ept> object, using the old top-level sizer for the scrolled window and creating a new top-level sizer to lay out the scrolled window and standard button sizer.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T152307Z">
+        <seg>標準ボタン以外のすべての子コントロールの親は新しい <bpt i="0" x="0">&lt;a0&gt;</bpt>wxScrolledWindow<ept i="0">&lt;/a0&gt;</ept> オブジェクトに変更されます。このとき、以前のトップレベルサイザーはスクロール可能なウィンドウに使用され、スクロール可能なウィンドウと標準ボタンサイザーを配置するために新しいトップレベルサイザーが作成されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4024,6 +4128,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>As an ever greater variety of mobile hardware comes to market, it becomes more imperative for wxWidgets applications to adapt to these platforms without putting too much burden on the programmer.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T144118Z">
+        <seg>様々なモバイル端末が市場に出回るにつれ、プログラマに過度の負担をかけることなく、アプリケーションをそれらのプラットフォームへ適応させることが wxWidgets に求められるようになってきました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>As an example, trying to open a non-existing file will usually provoke an error message, but if for some reasons it is unwanted, just use this construction:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T025916Z">
@@ -4184,6 +4296,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Automatic scrolling dialogs</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T154712Z">
+        <seg>ダイアログの自動スクロール</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T075538Z">
@@ -4204,6 +4324,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130501T150539Z">
         <seg>基本的には、気をつけなければならないことはごく僅かです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Because adaptation rearranges your sizer and window hierarchy, it is not fool-proof, and may fail in the following situations:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T145413Z">
+        <seg>適応はサイザーとウィンドウの階層構造を変更するため、これは確実に行えるものではなく、以下のような状況では適応に失敗します:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4452,6 +4580,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>By default this adaptation is off.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T145238Z">
+        <seg>デフォルトではこの適応は無効になっています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>By default, <bpt i="3" x="3">&lt;c3&gt;</bpt>wxUSE_UNICODE_WCHAR<ept i="3">&lt;/c3&gt;</ept> is also defined as 1, however in UTF-8 build (described in the previous section), it is set to 0 and <bpt i="4" x="4">&lt;c4&gt;</bpt>wxUSE_UNICODE_UTF8<ept i="4">&lt;/c4&gt;</ept>, which is usually 0, is set to 1 instead.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T120930Z">
@@ -4472,6 +4608,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T140648Z">
         <seg>デフォルトでは wxWidgets によって記録されるすべてのメッセージは "wx" コンポーネントかそのサブコンポーネント ("wx/net/ftp" など) に割り当てられており、あなた自身のコードによって記録されるメッセージは空のログコンポーネントに割り当てられています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>By default, all the steps described above will be performed but by setting the level to 1, for example, you can choose to only look for <bpt i="1" x="1">&lt;a1&gt;</bpt>wxStdDialogButtonSizer<ept i="1">&lt;/a1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T152910Z">
+        <seg>デフォルトでは上で述べた処理がすべて行われますが、レベルを 1 に設定することで <bpt i="1" x="1">&lt;a1&gt;</bpt>wxStdDialogButtonSizer<ept i="1">&lt;/a1&gt;</ept> のみを探すようにできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4576,6 +4720,22 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130529T140522Z">
         <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBufferedDC<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBufferedPaintDC<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDC<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxPostScriptDC<ept i="3">&lt;/a3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxMetafileDC<ept i="4">&lt;/a4&gt;</ept>, <bpt i="5" x="5">&lt;a5&gt;</bpt>wxMemoryDC<ept i="5">&lt;/a5&gt;</ept>, <bpt i="6" x="6">&lt;a6&gt;</bpt>wxPrinterDC<ept i="6">&lt;/a6&gt;</ept>, <bpt i="7" x="7">&lt;a7&gt;</bpt>wxScreenDC<ept i="7">&lt;/a7&gt;</ept>, <bpt i="8" x="8">&lt;a8&gt;</bpt>wxClientDC<ept i="8">&lt;/a8&gt;</ept>, <bpt i="9" x="9">&lt;a9&gt;</bpt>wxPaintDC<ept i="9">&lt;/a9&gt;</ept>, <bpt i="10" x="10">&lt;a10&gt;</bpt>wxWindowDC<ept i="10">&lt;/a10&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Classes: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog<ept i="0">&lt;/a0&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T145543Z">
+        <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog<ept i="0">&lt;/a0&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Classes: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDialogLayoutAdapter<ept i="1">&lt;/a1&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T154459Z">
+        <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDialogLayoutAdapter<ept i="1">&lt;/a1&gt;</ept></seg>
       </tuv>
     </tu>
     <tu>
@@ -4818,6 +4978,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T130143Z">
         <seg>カスタムイベントの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Customising scrolling adaptation</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T152318Z">
+        <seg>スクロールの適応のカスタマイズ</seg>
       </tuv>
     </tu>
     <tu>
@@ -5386,6 +5554,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Extra functionality is automatically given to the dialog box, such as tabbing between items (currently Windows only).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T145801Z">
+        <seg>コントロール間のタブ遷移など、自動的に追加の機能が付与される。(Windows のみ)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Extracting the strings to be translated from the program: this uses the work done in the previous step because <bpt i="0" x="0">&lt;c0&gt;</bpt>xgettext<ept i="0">&lt;/c0&gt;</ept> program used for string extraction recognises the standard <bpt i="1" x="1">&lt;c1&gt;</bpt><bpt i="2" x="2">&lt;a2&gt;</bpt>_()<ept i="2">&lt;/a2&gt;</ept><ept i="1">&lt;/c1&gt;</ept> as well as (using its <bpt i="3" x="3">&lt;c3&gt;</bpt>-k<ept i="3">&lt;/c3&gt;</ept> option) our wxGetTranslation and extracts all strings inside the calls to these functions.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T040541Z">
@@ -5606,6 +5782,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130501T161813Z">
         <seg>最初に、<bpt i="0" x="0">&lt;t0&gt;</bpt>#ifdef<ept i="0">&lt;/t0&gt;</ept> がまったくないことが分かると思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>For a set of dialog convenience functions, including file selection, see <bpt i="0" x="0">&lt;a0&gt;</bpt>Dialog functions<ept i="0">&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T150652Z">
+        <seg>ファイルの選択を含む、ダイアログの便利関数は <bpt i="0" x="0">&lt;a0&gt;</bpt>ダイアログ関数<ept i="0">&lt;/a0&gt;</ept> を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>For a set of dialog convenience functions, including file selection, see <bpt i="0" x="0">&lt;a0&gt;</bpt>Dialogs<ept i="0">&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T154535Z">
+        <seg>ファイルの選択を含む、ダイアログの便利関数は <bpt i="0" x="0">&lt;a0&gt;</bpt>ダイアログ<ept i="0">&lt;/a0&gt;</ept> を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6060,6 +6252,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Hides or shows the dialog.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T150116Z">
+        <seg>ダイアログの表示・非表示を切り替えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Hiding Controls Using Sizers</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T140945Z">
@@ -6180,6 +6380,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>However, the original sizer hierarchy will still hold until Show or ShowModal is called.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T154259Z">
+        <seg>ただし、Show または ShowModal が呼ばれるまではサイザーの元の階層構造が保持されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>However, unlike the Unicode build mode of the previous versions of wxWidgets, this support is mostly transparent: you can still continue to work with the <bpt i="0" x="0">&lt;b0&gt;</bpt>narrow<ept i="0">&lt;/b0&gt;</ept> (i.e. current locale-encoded <bpt i="1" x="1">&lt;c1&gt;</bpt>char*<ept i="1">&lt;/c1&gt;</ept>) strings even if <bpt i="2" x="2">&lt;b2&gt;</bpt>wide<ept i="2">&lt;/b2&gt;</ept> (i.e. UTF16-encoded <bpt i="3" x="3">&lt;c3&gt;</bpt>wchar_t*<ept i="3">&lt;/c3&gt;</ept> or UTF8-encoded <bpt i="4" x="4">&lt;c4&gt;</bpt>char*<ept i="4">&lt;/c4&gt;</ept>) strings are also supported.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T041201Z">
@@ -6204,6 +6412,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>If <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog::GetContentWindow<ept i="0">&lt;/a0&gt;</ept> returns a window derived from <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBookCtrlBase<ept i="1">&lt;/a1&gt;</ept>, the pages are made scrollable and no other adaptation is done.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T151049Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog::GetContentWindow<ept i="0">&lt;/a0&gt;</ept> が <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBookCtrlBase<ept i="1">&lt;/a1&gt;</ept> を継承したウィンドウを返却する場合、ページがスクロール可能になるだけで、それ以外の適応は行われません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>If it returns anything but -1 (default), the event handling stops immediately.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T071056Z">
@@ -6212,10 +6428,50 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>If no standard buttons were found, the whole dialog content will scroll.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T152036Z">
+        <seg>標準ボタンが見つからなかった場合、ダイアログ全体がスクロールされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>If several windows have a value above zero, the value is interpreted relative to the sum of all weight factors of the sizer, so when adding two windows with a value of 1, they will both get resized equally much and each half as much as the sizer owning them.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T130620Z">
         <seg>いくつかのウィンドウが 0 より大きい値を持つ場合、その値はサイザーのすべての重み係数の和に対する相対値として解釈されます。そのため、値が 1 であるウィンドウをふたつ追加する場合、両方とも同じようにリサイズされ、それぞれサイザーの半分の大きさになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If that search failed too, wxWidgets finds 'loose' standard buttons (in any kind of sizer) and adds them to a <bpt i="0" x="0">&lt;a0&gt;</bpt>wxStdDialogButtonSizer<ept i="0">&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T152020Z">
+        <seg>これも見つからなかった場合、wxWidgets は (任意の種類のサイザーに含まれる) 'ゆるい' 標準ボタンを探し、 <bpt i="0" x="0">&lt;a0&gt;</bpt>wxStdDialogButtonSizer<ept i="0">&lt;/a0&gt;</ept> に追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If that search failed, wxWidgets looks for a horizontal <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBoxSizer<ept i="0">&lt;/a0&gt;</ept> with one or more standard buttons, with identifiers such as <bpt i="1" x="1">&lt;c1&gt;</bpt>wxID_OK<ept i="1">&lt;/c1&gt;</ept> and <bpt i="2" x="2">&lt;c2&gt;</bpt>wxID_CANCEL<ept i="2">&lt;/c2&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T151803Z">
+        <seg>もしも見つからなかった場合、<bpt i="1" x="1">&lt;c1&gt;</bpt>wxID_OK<ept i="1">&lt;/c1&gt;</ept> や <bpt i="2" x="2">&lt;c2&gt;</bpt>wxID_CANCEL<ept i="2">&lt;/c2&gt;</ept> などの識別子を持つ、ひとつ以上の標準ボタンを含む水平方向の <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBoxSizer<ept i="0">&lt;/a0&gt;</ept> を探します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If the dialog box is <bpt i="0" x="0">&lt;e0&gt;</bpt>modal<ept i="0">&lt;/e0&gt;</ept>, the calling program is blocked until the dialog box is dismissed.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T154505Z">
+        <seg>ダイアログボックスが <bpt i="0" x="0">&lt;e0&gt;</bpt>モーダル<ept i="0">&lt;/e0&gt;</ept> の場合、ダイアログボックスが閉じられるまでプログラムがブロックする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If the dialog box is <bpt i="0" x="0">&lt;i0&gt;</bpt>modal<ept i="0">&lt;/i0&gt;</ept>, the calling program is blocked until the dialog box is dismissed.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T145938Z">
+        <seg>ダイアログボックスが <bpt i="0" x="0">&lt;i0&gt;</bpt>モーダル<ept i="0">&lt;/i0&gt;</ept> の場合、ダイアログボックスが閉じられるまでプログラムがブロックする。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6320,6 +6576,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T143204Z">
         <seg>このオブジェクトがウィンドウでないが次のイベントハンドラが存在する場合、親コントロールがウィンドウであれば親コントロールにイベントを引き渡します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If this problem can be solved globally, you can derive a new adapter class from wxStandardDialogLayoutAdapter and override its CreateScrolledWindow function to return an instance of your own class.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T154114Z">
+        <seg>アプリケーション全体でグローバルにこの問題を解決できるようであれば wxStandardDialogLayoutAdapter を継承した新しいアダプタクラスを作成し、作成したクラスのインスタンスを返却するように CreateScrolledWindow 関数をオーバーライドしてください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6464,6 +6728,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T090940Z">
         <seg>同様に、<bpt i="1" x="1">&lt;c1&gt;</bpt>wchar_t<ept i="1">&lt;/c1&gt;</ept> と <bpt i="2" x="2">&lt;c2&gt;</bpt>char<ept i="2">&lt;/c2&gt;</ept> のどちらででも <bpt i="0" x="0">&lt;a0&gt;</bpt>wxString<ept i="0">&lt;/a0&gt;</ept> の保持する文字列にアクセスできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>In addition to switching adaptation on and off globally and per dialog, you can choose how aggressively wxWidgets will search for standard buttons by setting <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog::SetLayoutAdaptationLevel<ept i="0">&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T152753Z">
+        <seg>グローバル、またはダイアログごとの適応の切り替えに加えて、<bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog::SetLayoutAdaptationLevel<ept i="0">&lt;/a0&gt;</ept> を設定することでどれだけ積極的に標準ボタンを探しに行くかを選択することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7220,6 +7492,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Many applications should therefore be able to adapt to small displays with little or no work, as far as dialogs are concerned.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T145230Z">
+        <seg>したがって、ダイアログのことを気にかけている限り、少し、もしくはまったく手を加えることなく、多くのアプリケーションを小さな画面に適応させることができるはずです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Message catalog resources category.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T041139Z">
@@ -7790,6 +8070,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>One area where wxWidgets can help is in adapting dialogs for the lower resolution screens that inevitably accompany a smaller form factor.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T152627Z">
+        <seg>wxWidgets が支援できることのひとつにダイアログを (より小さいフォームファクタに付きものな) より低解像度の画面に適応させることが挙げられます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>One is to define a entirely new event class (typically deriving from <bpt i="0" x="0">&lt;a0&gt;</bpt>wxEvent<ept i="0">&lt;/a0&gt;</ept> or <bpt i="1" x="1">&lt;a1&gt;</bpt>wxCommandEvent<ept i="1">&lt;/a1&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130506T042051Z">
@@ -7902,6 +8190,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Override the functions CanDoLayoutAdaptation and DoLayoutAdaptation to test for adaptation applicability and perform the adaptation.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T144851Z">
+        <seg>適応の可否の確認や適応を行なうには CanDoLayoutAdaptation と DoLayoutAdaptation をオーバーライドします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Override this member function for any processing which needs to be done as the application is about t...</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130529T124236Z">
@@ -7910,10 +8206,34 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Override this to perform layout adaptation, such as making parts of the dialog scroll and resizing th...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T150015Z">
+        <seg>ダイアログの一部をスクロールしたり、画面に合わせてダイアログをリサイズするなど、レイアウトの適応を行なう場合にこの関数をオーバーライドしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Override this to return a window containing the main content of the dialog.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T150658Z">
+        <seg>ダイアログのメインコンテンツを含むウィンドウを返却するためにこの関数をオーバーライドしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Performance Implications of Using UTF-8</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T141437Z">
         <seg>UTF-8 を使用することによる性能への影響</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Performs layout adaptation, usually if the dialog is too large to fit on the display.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T145004Z">
+        <seg>レイアウトの適応を行います。これは通常、画面サイズに対してダイアログが大きすぎる場合に行われます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8208,10 +8528,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Returns true if this dialog can and should perform layout adaptation using DoLayoutAdaptation(), usually if the dialog is too large to fit on the display.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T144940Z">
+        <seg>このダイアログが DoLayoutAdaptation() を用いてレイアウトの適応を行なうことができ、また、行なう必要がある場合に true を返却します。これは通常、画面サイズに対してダイアログが大きすぎる場合に行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Same as utf8_str().</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T083030Z">
         <seg>utf8_str() と同じです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Scrolled window derived from wxPanel.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T152057Z">
+        <seg>wxPanel を継承したスクロール可能なウィンドウ。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8260,6 +8596,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T035405Z">
         <seg>上で述べた用語の正式な定義は <bpt i="0" x="0">&lt;a0&gt;</bpt>http://unicode.org/glossary/<ept i="0">&lt;/a0&gt;</ept> を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>See also <bpt i="0" x="0">&lt;a0&gt;</bpt>wxPanel<ept i="0">&lt;/a0&gt;</ept> and <bpt i="1" x="1">&lt;a1&gt;</bpt>wxWindow<ept i="1">&lt;/a1&gt;</ept> for inherited member functions.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T152511Z">
+        <seg>また、wxDialog が継承している関数については <bpt i="0" x="0">&lt;a0&gt;</bpt>wxPanel<ept i="0">&lt;/a0&gt;</ept> と <bpt i="1" x="1">&lt;a1&gt;</bpt>wxWindow<ept i="1">&lt;/a1&gt;</ept> を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>See also <bpt i="0" x="0">&lt;a0&gt;</bpt>wxTopLevelWindow<ept i="0">&lt;/a0&gt;</ept> and <bpt i="1" x="1">&lt;a1&gt;</bpt>wxWindow<ept i="1">&lt;/a1&gt;</ept> for inherited member functions.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T152501Z">
+        <seg>また、wxDialog が継承している関数については <bpt i="0" x="0">&lt;a0&gt;</bpt>wxTopLevelWindow<ept i="0">&lt;/a0&gt;</ept> と <bpt i="1" x="1">&lt;a1&gt;</bpt>wxWindow<ept i="1">&lt;/a1&gt;</ept> を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8346,6 +8698,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Sets the adaptation mode, overriding the global adaptation flag.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T144410Z">
+        <seg>適応モードを設定し、グルーバルな適応フラグを上書きします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Sets the aggressiveness of search for buttons and sizers to be in the non-scrolling part of a layout-...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T152624Z">
+        <seg>レイアウトの適応を行なうダイアログで非スクロール領域内に配置するボタンやサイザーを探す際の積極性を設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Sets the event handler for this window.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130517T170833Z">
@@ -8418,6 +8786,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Shows an application-modal dialog.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T150143Z">
+        <seg>モーダルダイアログを表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Shows or hides the window.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T141550Z">
@@ -8462,6 +8838,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T035942Z">
         <seg>wxWidgets 3.0 からは Unicode が常に有効になります。Unicode を使用せずにライブラリをビルドすることはまだ可能ですが、もはや非推奨であり、近い将来、サポートされなくなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Situations where automatic scrolling adaptation may fail</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T145140Z">
+        <seg>自動スクロールの適応に失敗する状況</seg>
       </tuv>
     </tu>
     <tu>
@@ -8954,6 +9338,46 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The dialog does custom painting and/or event handling not handled by the scrolled window.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T145954Z">
+        <seg>ダイアログでカスタムドローを行なっている。スクロール可能なウィンドウではイベント処理が行われません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The dialog doesn't use sizers.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T145420Z">
+        <seg>ダイアログでサイザーを使用していない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The dialog has unusual layout, for example a vertical sizer containing a mixture of standard buttons and other controls.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T150244Z">
+        <seg>標準ボタンと他のコントロールが混在する垂直方向のサイザーなど、通常とは異なるレイアウトを持っている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The dialog implementation makes assumptions about the window hierarchy, for example getting the parent of a control and casting to the dialog class.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T150331Z">
+        <seg>コントロールの親をダイアログにキャストするなど、ダイアログの実装でウィンドウの階層構造について仮定を立てている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The dialog makes assumptions about the sizer hierarchy, for example to show or hide children of the top-level sizer.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T150324Z">
+        <seg>トップレベルサイザーの子コントロールの表示・非表示を切り替えるなど、サイザーの階層構造について仮定を立てている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The documentation for specific event macros is organised by event class.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T080526Z">
@@ -9174,6 +9598,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T122658Z">
         <seg>最後の関数が一番単純です: メッセージのログレベルを考慮せず、単純にログ出力を他の場所へリダイレクトしたい場合はこの関数をオーバーライドします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The last two modes override the global adaptation setting.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T150254Z">
+        <seg>最後のふたつのモードは適応に関するグローバルな設定を上書きします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10010,6 +10442,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This abstract class is the base for classes that help wxWidgets perform run-time layout adaptation of...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T153539Z">
+        <seg>この抽象クラスは wxWidgets が実行時にダイアログのレイアウト適応を行なうのを支援するクラスの基底です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This allows enough code points (see below for the definition) sufficient to encode all of the world languages at once.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T095338Z">
@@ -10138,6 +10578,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This class creates button layouts which conform to the standard button spacing and ordering defined b...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T151629Z">
+        <seg>このクラスはプラットフォームやツールキットのユーザガイドラインで定義されている標準ボタンの余白と順番に従ったレイアウトを作成します。(ただし、そのようなガイドラインが存在する場合に限ります)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This class greatly eases the burden of passing flags to a <bpt i="2" x="2">&lt;a2&gt;</bpt>wxSizer<ept i="2">&lt;/a2&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T145330Z">
@@ -10174,6 +10622,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T125427Z">
         <seg>このクラスはバックグラウンドで動作するログウィンドウを表します。正確に言うと、このログウィンドウではログフレーム内のすべてのメッセージを収集するとともに、このクラスオブジェクトの生成時に有効だったログターゲットへ収集したメッセージを引き渡します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This class represents a property sheet dialog: a tabbed dialog for showing settings.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T151425Z">
+        <seg>このクラスはプロパティシートダイアログ (設定を表示するためのタブ付きダイアログ) を表しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10370,6 +10826,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This is because Windows 3 expects the contents of a modal dialog to be loaded from a resource file or created on receipt of a dialog initialization message.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T150148Z">
+        <seg>これは、Windows 3 ではモーダルダイアログの内容はリソースファイルから読み込みか、ダイアログの初期化メッセージを受信したときに作成する必要があるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This is determined by the <bpt i="1" x="1">&lt;e1&gt;</bpt>proportion<ept i="1">&lt;/e1&gt;</ept> parameter when adding a window (or another sizer) to a sizer.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T141844Z">
@@ -10382,6 +10846,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130521T160129Z">
         <seg>これはウィンドウ (または他のサイザー) をサイザーへ追加するときの <bpt i="1" x="1">&lt;i1&gt;</bpt>プロポーション<ept i="1">&lt;/i1&gt;</ept> パラメータによって決定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This is done as follows, in <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialogLayoutAdapter::DoLayoutAdaptation<ept i="0">&lt;/a0&gt;</ept> called from within <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDialog::Show<ept i="1">&lt;/a1&gt;</ept> or <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDialog::ShowModal<ept i="2">&lt;/a2&gt;</ept>:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T150637Z">
+        <seg><bpt i="1" x="1">&lt;a1&gt;</bpt>wxDialog::Show<ept i="1">&lt;/a1&gt;</ept> や <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDialog::ShowModal<ept i="2">&lt;/a2&gt;</ept>から呼ばれた <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialogLayoutAdapter::DoLayoutAdaptation<ept i="0">&lt;/a0&gt;</ept> の中では次のように処理が行われます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -10438,6 +10910,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T125452Z">
         <seg>これは GUI wxWidgets アプリケーションのデフォルトのログターゲットです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This is too restrictive for wxWidgets, where any window may be created and displayed before its contents are created.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T150536Z">
+        <seg>wxWidgets ではウィンドウの内容が作成される前にウィンドウを作成して表示するため、これは wxWIdgets にとって制約になってしまいます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10842,6 +11322,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>To switch scrolling adaptation on globally in your application, call the static function <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog::EnableLayoutAdaptation<ept i="0">&lt;/a0&gt;</ept> passing <bpt i="1" x="1">&lt;s1&gt;</bpt>true<ept i="1">&lt;/s1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T145718Z">
+        <seg>スクロールに関する適応をアプリケーション内でグローバルに切り替える場合、静的関数 <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog::EnableLayoutAdaptation<ept i="0">&lt;/a0&gt;</ept> に <bpt i="1" x="1">&lt;s1&gt;</bpt>true<ept i="1">&lt;/s1&gt;</ept> を渡します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>To test for command events (which will probably be the only events you wish to redirect), you may use <bpt i="0" x="0">&lt;a0&gt;</bpt>wxEvent::IsCommandEvent<ept i="0">&lt;/a0&gt;</ept> for efficiency, instead of using the slower run-time type system.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T054449Z">
@@ -10998,6 +11486,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T093135Z">
         <seg>Mac OS X を含む Unix システムでは、デフォルトで (UTF-32 としても知られる) UCS-4 が使用されますが、設定に <bpt i="3" x="3">&lt;c3&gt;</bpt>--enable-utf8<ept i="3">&lt;/c3&gt;</ept> オプションを渡すことで内部に UTF-8 を使用するように wxWidgets をビルドすることも可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under Windows 3, modal dialogs have to be emulated using modeless dialogs and a message loop.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T150038Z">
+        <seg>Windows 3 ではモーダルダイアログはモードレスダイアログとメッセージループを使用してエミュレートしなければなりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11338,6 +11834,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Validation of data in controls is covered in <bpt i="2" x="2">&lt;a2&gt;</bpt>Validator overview<ept i="2">&lt;/a2&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T150753Z">
+        <seg>コントロールのバリデーションは <bpt i="2" x="2">&lt;a2&gt;</bpt>バリデータの概要<ept i="2">&lt;/a2&gt;</ept> で触れています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Validation of data in controls is covered in <bpt i="2" x="2">&lt;a2&gt;</bpt>wxValidator Overview<ept i="2">&lt;/a2&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T154630Z">
+        <seg>コントロールのバリデーションは <bpt i="2" x="2">&lt;a2&gt;</bpt>wxValidator の概要<ept i="2">&lt;/a2&gt;</ept> で触れています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Version: 2.9.4</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T004613Z">
@@ -11530,6 +12042,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>With adaptation enabled, if the display size is too small for the dialog, wxWidgets (or rather the standard adapter class wxStandardDialogLayoutAdapter) will make part of the dialog scrolling, leaving standard buttons in a non-scrolling part at the bottom of the dialog.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T150459Z">
+        <seg>適応を有効にすると、ダイアログを表示するのに画面サイズが小さすぎる場合に wxWidgets (と言うより標準の適応クラスである wxStandardDialogLayoutAdapter) が標準ボタンをダイアログ下部の非スクロール領域に残してダイアログの一部をスクロールするようにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>With the aid of boost::bind&lt;&gt;() you can even use methods or functions which don't quite have the correct signature:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T030546Z">
@@ -11634,6 +12154,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>You can also adjust adaptation on a per-dialog basis by calling <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDialog::SetLayoutAdaptationMode<ept i="2">&lt;/a2&gt;</ept> with one of <bpt i="3" x="3">&lt;c3&gt;</bpt>wxDIALOG_ADAPTATION_MODE_DEFAULT<ept i="3">&lt;/c3&gt;</ept> (use the global setting), <bpt i="4" x="4">&lt;c4&gt;</bpt>wxDIALOG_ADAPTATION_MODE_ENABLED<ept i="4">&lt;/c4&gt;</ept> or <bpt i="5" x="5">&lt;c5&gt;</bpt>wxDIALOG_ADAPTATION_MODE_DISABLED<ept i="5">&lt;/c5&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T145832Z">
+        <seg>また、ダイアログごとに適応を行なうかどうかを指定する場合は <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDialog::SetLayoutAdaptationMode<ept i="2">&lt;/a2&gt;</ept> に <bpt i="3" x="3">&lt;c3&gt;</bpt>wxDIALOG_ADAPTATION_MODE_DEFAULT<ept i="3">&lt;/c3&gt;</ept> (グローバルな設定を使用)、 <bpt i="4" x="4">&lt;c4&gt;</bpt>wxDIALOG_ADAPTATION_MODE_ENABLED<ept i="4">&lt;/c4&gt;</ept>、 <bpt i="5" x="5">&lt;c5&gt;</bpt>wxDIALOG_ADAPTATION_MODE_DISABLED<ept i="5">&lt;/c5&gt;</ept> のいずれかを指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You can also override <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog::CanDoLayoutAdaptation<ept i="0">&lt;/a0&gt;</ept> and <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDialog::DoLayoutAdaptation<ept i="1">&lt;/a1&gt;</ept> in a class derived from <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDialog<ept i="2">&lt;/a2&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T145045Z">
+        <seg>また、<bpt i="2" x="2">&lt;a2&gt;</bpt>wxDialog<ept i="2">&lt;/a2&gt;</ept> を継承したクラスで <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog::CanDoLayoutAdaptation<ept i="0">&lt;/a0&gt;</ept> と <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDialog::DoLayoutAdaptation<ept i="1">&lt;/a1&gt;</ept> をオーバライドすることも可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>You can also redirect the <bpt i="4" x="4">&lt;e4&gt;</bpt>wxLogXXX<ept i="4">&lt;/e4&gt;</ept> calls to <bpt i="5" x="5">&lt;e5&gt;</bpt>cout<ept i="5">&lt;/e5&gt;</ept> by just writing:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T091504Z">
@@ -11674,6 +12210,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>You can derive your own class from <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialogLayoutAdapter<ept i="0">&lt;/a0&gt;</ept> or wxStandardDialogLayoutAdapter and call <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDialog::SetLayoutAdapter<ept i="1">&lt;/a1&gt;</ept>, deleting the old object that this function returns.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T155111Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialogLayoutAdapter<ept i="0">&lt;/a0&gt;</ept> か wxStandardDialogLayoutAdapter を継承した独自のクラスを作成することができます。その場合、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxDialog::SetLayoutAdapter<ept i="1">&lt;/a1&gt;</ept> を呼び出し、返却されてきた古いオブジェクトは削除します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>You can either choose a single approach that you find preferable or freely combine both methods in your program in different classes or even in one and the same class, although this is probably sufficiently confusing to be a bad idea.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T021925Z">
@@ -11686,6 +12230,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T124411Z">
         <seg>その場合、既存のダイアログの振る舞いを元に戻す前にすべての入力を取得し、"その場で" 編集することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You can help make sure that your dialogs will continue to function after adaptation by:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T150447Z">
+        <seg>次のようにすることで、適応の実施後もダイアログが引き続き正常に動作するようにできます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -11726,6 +12278,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T005506Z">
         <seg>すでに Unicode について詳しい場合、最初の 2 つの章は飛ばして、直接ライブラリの対応内容の詳細に飛んでください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You can use <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog::AddMainButtonId<ept i="0">&lt;/a0&gt;</ept> to add identifiers for buttons that should also be treated as standard buttons for the non-scrolling area.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T153026Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog::AddMainButtonId<ept i="0">&lt;/a0&gt;</ept> を使用することで非スクロール領域にする標準ボタンとして扱う識別子を追加することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11814,6 +12374,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T041535Z">
         <seg>そして、若干、一般的ではないですが、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>avoiding the above situations and assumptions;</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T150520Z">
+        <seg>上記のような状況や仮定を避ける;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12156,10 +12724,26 @@ public:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>only making assumptions about hierarchy immediately after the dialog is created;</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T150639Z">
+        <seg>ダイアログ内の階層構造について仮定するのはダイアログの作成直後だけにする;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>otherwise.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T123840Z">
         <seg> </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>overriding <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog::GetContentWindow<ept i="0">&lt;/a0&gt;</ept> to return a book control if your dialog implements pages: wxWidgets will then only make the pages scrollable.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T151317Z">
+        <seg>ダイアログでページを実装している場合、ブックコントロールを返却するように <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog::GetContentWindow<ept i="0">&lt;/a0&gt;</ept> をオーバーライドする: その場合、wxWidgets はページのみをスクロール可能にします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12464,6 +13048,22 @@ public:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T110441Z">
         <seg>トレースメッセージもデバッグモード時のみ有効化されます</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>using <bpt i="0" x="0">&lt;a0&gt;</bpt>wxStdDialogButtonSizer<ept i="0">&lt;/a0&gt;</ept>;</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T150528Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxStdDialogButtonSizer<ept i="0">&lt;/a0&gt;</ept> を使用する;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>using an intermediate sizer under the main sizer, a <bpt i="0" x="0">&lt;s0&gt;</bpt>false<ept i="0">&lt;/s0&gt;</ept> top-level sizer that can be relied on to exist for the purposes of manipulating child sizers and windows;</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T154305Z">
+        <seg>メインのサイザーの下に仲介サイザーを使用する; これは偽のトップレベルサイザーで、子サイザーとウィンドウを操作するために使用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12842,6 +13442,22 @@ protected:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxDialog Overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T143724Z">
+        <seg>wxDialog の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxDialog overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T145538Z">
+        <seg>wxDialog の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxDir is a helper class for enumerating the files or subdirectories of a directory.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T065649Z">
@@ -13034,6 +13650,14 @@ private:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T015309Z">
         <seg>wxLog *logger=new wxLogStream(&amp;cout);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxLog Classes Overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T143645Z">
+        <seg>wxLog クラスの概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -13282,6 +13906,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxPropertySheetDialog and wxWizard</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T151329Z">
+        <seg>wxPropertySheetDialog と wxWizard</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxQueryLayoutInfoEvent</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T055326Z">
@@ -13504,6 +14136,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxTopLevelWindow is a common base class for wxDialog and wxFrame.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T154557Z">
+        <seg>wxTopLevelWindow は wxDialog と wxFrame の共通の基底クラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxTreeCtrl::Delete</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T061011Z">
@@ -13596,6 +14236,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T022242Z">
         <seg>wxWidgets では <bpt i="0" x="0">&lt;i0&gt;</bpt>ログターゲット<ept i="0">&lt;/i0&gt;</ept> という考え方があります: これは単純に <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog<ept i="1">&lt;/a1&gt;</ept> を継承したクラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxWidgets looks for a <bpt i="0" x="0">&lt;a0&gt;</bpt>wxStdDialogButtonSizer<ept i="0">&lt;/a0&gt;</ept> and uses it for the non-scrolling part.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130604T151656Z">
+        <seg>wxWidgets は <bpt i="0" x="0">&lt;a0&gt;</bpt>wxStdDialogButtonSizer<ept i="0">&lt;/a0&gt;</ept> を探してその部分を非スクロール領域として使用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13712,6 +14360,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxWidgets: wxWidgets: wxDialog Overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130531T151530Z">
+        <seg>wxWidgets: wxWidgets: wxDialog の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxWidgets: wxWidgets: wxLog Classes Overview</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T090608Z">
@@ -13732,6 +14388,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T172216Z">
         <seg>wxWindow's sizers hierarchy is parallel to the <bpt i="1" x="1">&lt;a1&gt;</bpt>wxWindow<ept i="1">&lt;/a1&gt;</ept> children hierarchy: child windows are children of their parent window and the sizer (or sizers) form separate hierarchy attached to the window with <bpt i="2" x="2">&lt;a2&gt;</bpt>wxWindow::SetSizer()<ept i="2">&lt;/a2&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxWizard is the central class for implementing 'wizard-like' dialogs.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130606T151645Z">
+        <seg>wxWizard はウィザード風のダイアログを実装するための中心的なクラスです。</seg>
       </tuv>
     </tu>
     <tu>
