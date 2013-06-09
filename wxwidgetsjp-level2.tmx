@@ -144,6 +144,22 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>#include "mondrian.xpm"</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T135751Z">
+        <seg>#include "mondrian.xpm"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>#include "sample.xpm"</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T154217Z">
+        <seg>#include "sample.xpm"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>&amp;myFrameHandler, wxID_EXIT );
 }</seg>
       </tuv>
@@ -444,6 +460,22 @@ bool MyApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T164223Z">
         <seg>// アクセサ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>// an easy and portable way to create a bitmap
+wxBitmap bmp(wxBITMAP(bmpname));
+
+// which is roughly equivalent to the following
+#if defined(__WXMSW__) || defined(__WXPM__)</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T140806Z">
+        <seg>// ビットマップを作成する、簡単で移植性のある方法
+wxBitmap bmp(wxBITMAP(bmpname));
+
+// これは以下のコードと大体同じです
+#if defined(__WXMSW__) || defined(__WXPM__)</seg>
       </tuv>
     </tu>
     <tu>
@@ -758,6 +790,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>Supported bitmap file formats<ept i="0">&lt;/a0&gt;</ept><it pos="begin" x="1">&lt;br1&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T141054Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>対応しているビットマップファイル形式<ept i="0">&lt;/a0&gt;</ept><it pos="begin" x="1">&lt;br1&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>The idea behind sizers<ept i="0">&lt;/a0&gt;</ept><it pos="begin" x="1">&lt;br1&gt;</it></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T122848Z">
@@ -890,6 +930,34 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130520T152816Z">
         <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxGridSizer<ept i="0">&lt;/a0&gt;</ept> は 2 次元のサイザーです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxIcon<ept i="0">&lt;/a0&gt;</ept> icon(<bpt i="1" x="1">&lt;a1&gt;</bpt>wxICON<ept i="1">&lt;/a1&gt;</ept>(sample));
+
+<bpt i="2" x="2">&lt;s2&gt;</bpt>// The above line is equivalent to this:<ept i="2">&lt;/s2&gt;</ept>
+
+<bpt i="3" x="3">&lt;s3&gt;</bpt>#if defined(__WXGTK__) || defined(__WXMOTIF__)<ept i="3">&lt;/s3&gt;</ept>
+<bpt i="4" x="4">&lt;s4&gt;</bpt><ept i="4">&lt;/s4&gt;</ept>    <bpt i="5" x="5">&lt;a5&gt;</bpt>wxIcon<ept i="5">&lt;/a5&gt;</ept> icon(sample_xpm);
+<bpt i="6" x="6">&lt;s6&gt;</bpt>#endif<ept i="6">&lt;/s6&gt;</ept>
+<bpt i="7" x="7">&lt;s7&gt;</bpt><ept i="7">&lt;/s7&gt;</ept>
+<bpt i="8" x="8">&lt;s8&gt;</bpt>#if defined(__WXMSW__)<ept i="8">&lt;/s8&gt;</ept>
+<bpt i="9" x="9">&lt;s9&gt;</bpt><ept i="9">&lt;/s9&gt;</ept>    <bpt i="10" x="10">&lt;a10&gt;</bpt>wxIcon<ept i="10">&lt;/a10&gt;</ept> icon(<bpt i="11" x="11">&lt;s11&gt;</bpt>"sample"<ept i="11">&lt;/s11&gt;</ept>);
+<bpt i="12" x="12">&lt;s12&gt;</bpt>#endif<ept i="12">&lt;/s12&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T154539Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxIcon<ept i="0">&lt;/a0&gt;</ept> icon(<bpt i="1" x="1">&lt;a1&gt;</bpt>wxICON<ept i="1">&lt;/a1&gt;</ept>(sample));
+
+<bpt i="2" x="2">&lt;s2&gt;</bpt>// 上の行はこれと同等:<ept i="2">&lt;/s2&gt;</ept>
+
+<bpt i="3" x="3">&lt;s3&gt;</bpt>#if defined(__WXGTK__) || defined(__WXMOTIF__)<ept i="3">&lt;/s3&gt;</ept>
+<bpt i="4" x="4">&lt;s4&gt;</bpt><ept i="4">&lt;/s4&gt;</ept>    <bpt i="5" x="5">&lt;a5&gt;</bpt>wxIcon<ept i="5">&lt;/a5&gt;</ept> icon(sample_xpm);
+<bpt i="6" x="6">&lt;s6&gt;</bpt>#endif<ept i="6">&lt;/s6&gt;</ept>
+<bpt i="7" x="7">&lt;s7&gt;</bpt><ept i="7">&lt;/s7&gt;</ept>
+<bpt i="8" x="8">&lt;s8&gt;</bpt>#if defined(__WXMSW__)<ept i="8">&lt;/s8&gt;</ept>
+<bpt i="9" x="9">&lt;s9&gt;</bpt><ept i="9">&lt;/s9&gt;</ept>    <bpt i="10" x="10">&lt;a10&gt;</bpt>wxIcon<ept i="10">&lt;/a10&gt;</ept> icon(<bpt i="11" x="11">&lt;s11&gt;</bpt>"sample"<ept i="11">&lt;/s11&gt;</ept>);
+<bpt i="12" x="12">&lt;s12&gt;</bpt>#endif<ept i="12">&lt;/s12&gt;</ept></seg>
       </tuv>
     </tu>
     <tu>
@@ -1510,6 +1578,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>Bitmap format handlers<ept i="2">&lt;/a2&gt;</ept><it pos="begin" x="3">&lt;br3&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T141105Z">
+        <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>ビットマップ形式ハンドラ<ept i="2">&lt;/a2&gt;</ept><it pos="begin" x="3">&lt;br3&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>Bitmaps and icons<ept i="2">&lt;/a2&gt;</ept><it pos="begin" x="3">&lt;br3&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T134107Z">
+        <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>ビットマップとアイコン<ept i="2">&lt;/a2&gt;</ept><it pos="begin" x="3">&lt;br3&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>How events are processed<ept i="2">&lt;/a2&gt;</ept><it pos="begin" x="3">&lt;br3&gt;</it></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T074703Z">
@@ -1886,6 +1970,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="96" x="96">&lt;a96&gt;</bpt><bpt i="97" x="97">&lt;b97&gt;</bpt>Bitmaps and icons overview<ept i="97">&lt;/b97&gt;</ept><ept i="96">&lt;/a96&gt;</ept><it pos="begin" x="98">&lt;br98&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T134134Z">
+        <seg><bpt i="96" x="96">&lt;a96&gt;</bpt><bpt i="97" x="97">&lt;b97&gt;</bpt>ビットマップとアイコンの概要<ept i="97">&lt;/b97&gt;</ept><ept i="96">&lt;/a96&gt;</ept><it pos="begin" x="98">&lt;br98&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="99" x="99">&lt;a99&gt;</bpt><bpt i="100" x="100">&lt;b100&gt;</bpt>Device context overview<ept i="100">&lt;/b100&gt;</ept><ept i="99">&lt;/a99&gt;</ept><it pos="begin" x="101">&lt;br101&gt;</it></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130529T142001Z">
@@ -2026,6 +2118,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T090235Z">
         <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>柔軟性<ept i="0">&lt;/b0&gt;</ept> wxLog 関数の出力はその重要度に応じてリダイレクトしたり抑制したりできます。これは従来の関数では不可能、もしくは困難なことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Note:<ept i="0">&lt;/b0&gt;</ept> bitmap handlers are not implemented on all platforms, and new ones rarely need to be implemented since wxImage can be used for loading most formats, as noted earlier.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T143314Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>注:<ept i="0">&lt;/b0&gt;</ept> ビットマップハンドラはすべてのプラットフォームで実装されているわけでありませんし、新しいものを実装する必要もほとんどないでしょう。なぜなら、前で述べたように wxImage を使用することで大半の形式を読み込むことができるためです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2322,6 +2422,30 @@ MyDialog::MyDialog(<bpt i="2" x="2">&lt;a2&gt;</bpt>wxFrame<ept i="2">&lt;/a2&gt
 
 MyDialog::MyDialog(<bpt i="2" x="2">&lt;a2&gt;</bpt>wxFrame<ept i="2">&lt;/a2&gt;</ept> *parent, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxWindowID<ept i="3">&lt;/a3&gt;</ept> <bpt i="4" x="4">&lt;s4&gt;</bpt>id<ept i="4">&lt;/s4&gt;</ept>, <bpt i="5" x="5">&lt;s5&gt;</bpt>const<ept i="5">&lt;/s5&gt;</ept> <bpt i="6" x="6">&lt;a6&gt;</bpt>wxString<ept i="6">&lt;/a6&gt;</ept> &amp;title )
 : <bpt i="7" x="7">&lt;a7&gt;</bpt>wxDialog<ept i="7">&lt;/a7&gt;</ept>(parent, id, title, <bpt i="8" x="8">&lt;a8&gt;</bpt>wxDefaultPosition<ept i="8">&lt;/a8&gt;</ept>, <bpt i="9" x="9">&lt;a9&gt;</bpt>wxDefaultSize<ept i="9">&lt;/a9&gt;</ept>,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>// an easy and portable way to create a bitmap<ept i="0">&lt;/s0&gt;</ept>
+<bpt i="1" x="1">&lt;a1&gt;</bpt>wxBitmap<ept i="1">&lt;/a1&gt;</ept> bmp(<bpt i="2" x="2">&lt;a2&gt;</bpt>wxBITMAP<ept i="2">&lt;/a2&gt;</ept>(bmpname));
+
+<bpt i="3" x="3">&lt;s3&gt;</bpt>// which is roughly equivalent to the following<ept i="3">&lt;/s3&gt;</ept>
+<bpt i="4" x="4">&lt;s4&gt;</bpt>#if defined(__WXMSW__) || defined(__WXPM__)<ept i="4">&lt;/s4&gt;</ept>
+<bpt i="5" x="5">&lt;s5&gt;</bpt><ept i="5">&lt;/s5&gt;</ept>    <bpt i="6" x="6">&lt;a6&gt;</bpt>wxBitmap<ept i="6">&lt;/a6&gt;</ept> bmp(<bpt i="7" x="7">&lt;s7&gt;</bpt>"bmpname"<ept i="7">&lt;/s7&gt;</ept>, <bpt i="8" x="8">&lt;a8&gt;</bpt>wxBITMAP_TYPE_BMP_RESOURCE<ept i="8">&lt;/a8&gt;</ept>);
+<bpt i="9" x="9">&lt;s9&gt;</bpt>#else // Unix<ept i="9">&lt;/s9&gt;</ept>
+<bpt i="10" x="10">&lt;s10&gt;</bpt><ept i="10">&lt;/s10&gt;</ept>    <bpt i="11" x="11">&lt;a11&gt;</bpt>wxBitmap<ept i="11">&lt;/a11&gt;</ept> bmp(bmpname_xpm, <bpt i="12" x="12">&lt;a12&gt;</bpt>wxBITMAP_TYPE_XPM<ept i="12">&lt;/a12&gt;</ept>);
+<bpt i="13" x="13">&lt;s13&gt;</bpt>#endif<ept i="13">&lt;/s13&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T154736Z">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>// ビットマップを作成する、簡単で移植性のある方法<ept i="0">&lt;/s0&gt;</ept>
+<bpt i="1" x="1">&lt;a1&gt;</bpt>wxBitmap<ept i="1">&lt;/a1&gt;</ept> bmp(<bpt i="2" x="2">&lt;a2&gt;</bpt>wxBITMAP<ept i="2">&lt;/a2&gt;</ept>(bmpname));
+
+<bpt i="3" x="3">&lt;s3&gt;</bpt>// これは以下のコードと大体同じです<ept i="3">&lt;/s3&gt;</ept>
+<bpt i="4" x="4">&lt;s4&gt;</bpt>#if defined(__WXMSW__) || defined(__WXPM__)<ept i="4">&lt;/s4&gt;</ept>
+<bpt i="5" x="5">&lt;s5&gt;</bpt><ept i="5">&lt;/s5&gt;</ept>    <bpt i="6" x="6">&lt;a6&gt;</bpt>wxBitmap<ept i="6">&lt;/a6&gt;</ept> bmp(<bpt i="7" x="7">&lt;s7&gt;</bpt>"bmpname"<ept i="7">&lt;/s7&gt;</ept>, <bpt i="8" x="8">&lt;a8&gt;</bpt>wxBITMAP_TYPE_BMP_RESOURCE<ept i="8">&lt;/a8&gt;</ept>);
+<bpt i="9" x="9">&lt;s9&gt;</bpt>#else // Unix<ept i="9">&lt;/s9&gt;</ept>
+<bpt i="10" x="10">&lt;s10&gt;</bpt><ept i="10">&lt;/s10&gt;</ept>    <bpt i="11" x="11">&lt;a11&gt;</bpt>wxBitmap<ept i="11">&lt;/a11&gt;</ept> bmp(bmpname_xpm, <bpt i="12" x="12">&lt;a12&gt;</bpt>wxBITMAP_TYPE_XPM<ept i="12">&lt;/a12&gt;</ept>);
+<bpt i="13" x="13">&lt;s13&gt;</bpt>#endif<ept i="13">&lt;/s13&gt;</ept></seg>
       </tuv>
     </tu>
     <tu>
@@ -3208,6 +3332,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>A bitmap created dynamically or loaded from a file can be selected into a memory device context (instance of <bpt i="0" x="0">&lt;a0&gt;</bpt>wxMemoryDC<ept i="0">&lt;/a0&gt;</ept>).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T135209Z">
+        <seg>動的に作成した、またはファイルから読み込んだビットマップはメモリデバイスコンテキスト (<bpt i="0" x="0">&lt;a0&gt;</bpt>wxMemoryDC<ept i="0">&lt;/a0&gt;</ept> のインスタンス) で選択可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>A book control is a convenient way of displaying multiple pages of information, displayed one page at...</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130604T150935Z">
@@ -3244,6 +3376,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T060913Z">
         <seg>ファンクタの一般的な例は boost::function&lt;&gt; です:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A cursor is a small bitmap usually used for denoting where the mouse pointer is, with a picture that ...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T153806Z">
+        <seg>カーソルは小さな矩形のビットマップで、マウスポインタの位置を表すためにマウスクリックを示す画像付きでよく使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3316,6 +3456,22 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T055239Z">
         <seg>キー押下イベント</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A macro, <bpt i="0" x="0">&lt;a0&gt;</bpt>wxICON()<ept i="0">&lt;/a0&gt;</ept>, is available which creates an icon using an XPM on the appropriate platform, or an icon resource on Windows:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T154640Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxICON()<ept i="0">&lt;/a0&gt;</ept> マクロを使用すると、適切なプラットフォームでは XPM を、Windows ではアイコンリソースを利用してアイコンを作成することができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A macro, <bpt i="0" x="0">&lt;a0&gt;</bpt>wxICON<ept i="0">&lt;/a0&gt;</ept>, is available which creates an icon using an XPM on the appropriate platform, or an icon resource on Windows.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T140323Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxICON<ept i="0">&lt;/a0&gt;</ept> マクロを使用すると、適切なプラットフォームでは XPM を、Windows ではアイコンリソースを利用してアイコンを作成することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3672,6 +3828,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Adds a handler to the end of the static list of format handlers.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T155206Z">
+        <seg>形式ハンドラの静的一覧の末尾にハンドラを追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Adds a new page.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130516T155614Z">
@@ -3728,6 +3892,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>All formats that are supported by the <bpt i="0" x="0">&lt;a0&gt;</bpt>wxImage<ept i="0">&lt;/a0&gt;</ept> class.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142028Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxImage<ept i="0">&lt;/a0&gt;</ept> クラスの対応するすべての形式</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>All of them have the same syntax as <bpt i="2" x="2">&lt;e2&gt;</bpt>printf()<ept i="2">&lt;/e2&gt;</ept> or <bpt i="3" x="3">&lt;e3&gt;</bpt>vprintf()<ept i="3">&lt;/e3&gt;</ept> , i.e. they take the format string as the first argument and respectively a variable number of arguments or a variable argument list pointer.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T131219Z">
@@ -3756,6 +3928,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130604T152307Z">
         <seg>標準ボタン以外のすべての子コントロールの親は新しい <bpt i="0" x="0">&lt;a0&gt;</bpt>wxScrolledWindow<ept i="0">&lt;/a0&gt;</ept> オブジェクトに変更されます。このとき、以前のトップレベルサイザーはスクロール可能なウィンドウに使用され、スクロール可能なウィンドウと標準ボタンサイザーを配置するために新しいトップレベルサイザーが作成されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>All wxWidgets platforms support XPMs for small bitmaps and icons.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T140218Z">
+        <seg>小さなビットマップやアイコンに使用される XPM について、wxWidgets はすべてのプラットフォームで対応しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3924,6 +4104,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130527T160959Z">
         <seg>アプリケーションを定義する例は以下の通りです:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>An icon is a small rectangular bitmap usually used for denoting a minimized application.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T153354Z">
+        <seg>アイコンは小さな矩形のビットマップで、最小化されたアプリケーションを表すためによく使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4484,6 +4672,46 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Bitmap Format Handlers</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T154824Z">
+        <seg>ビットマップ形式ハンドラ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Bitmap format handlers</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142400Z">
+        <seg>ビットマップ形式ハンドラ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Bitmap handlers are not implemented on all platforms, and new ones rarely need to be implemented since <bpt i="0" x="0">&lt;a0&gt;</bpt>wxImage<ept i="0">&lt;/a0&gt;</ept> can be used for loading most formats, as noted earlier.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T155802Z">
+        <seg>ビットマップハンドラはすべてのプラットフォームで実装されているわけでありませんし、新しいものを実装する必要もほとんどないでしょう。なぜなら、前で述べたように <bpt i="0" x="0">&lt;a0&gt;</bpt>wxImage<ept i="0">&lt;/a0&gt;</ept> を使用することで大半の形式を読み込むことができるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Bitmaps and Icons</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T151804Z">
+        <seg>ビットマップとアイコン</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Bitmaps and icons overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T134211Z">
+        <seg>ビットマップとアイコンの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Both strategies are described in details below.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130514T155725Z">
@@ -4708,10 +4936,26 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Classes:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T152931Z">
+        <seg>クラス:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Classes: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxApp<ept i="0">&lt;/a0&gt;</ept></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130527T155917Z">
         <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxApp<ept i="0">&lt;/a0&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Classes: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBitmapHandler<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxIcon<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxCursor<ept i="3">&lt;/a3&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T134216Z">
+        <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBitmapHandler<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxIcon<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxCursor<ept i="3">&lt;/a3&gt;</ept>.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4922,6 +5166,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T153001Z">
         <seg>文字列をワイド文字表現に変換したものを一時的な wxWCharBuffer オブジェクト (Unix と OS X の場合)、またはワイド文字列である内部文字列のポインタ (Windows の場合) として返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Copy from a source DC to this DC.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T153857Z">
+        <seg>コピー元 DC からこの DC へコピーします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5430,6 +5682,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130523T154427Z">
         <seg>環境変数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Even better, use the same XPMs on all platforms.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T150906Z">
+        <seg>もっと良い方法はすべてのプラットフォームで同じ XPM を使用することです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7124,6 +7384,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>It assumes that bitmaps live in resources under Windows or OS2 and XPM files under all other platforms (for XPMs, the corresponding file must be included before this macro is used, of course, and the name of the bitmap should be the same as the resource name under Windows with <bpt i="2" x="2">&lt;c2&gt;</bpt>_xpm<ept i="2">&lt;/c2&gt;</ept> suffix).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T154659Z">
+        <seg>このマクロは Windows と OS2 ではリソース内に、それ以外のプラットフォームでは XPM ファイルとしてビットマップが存在するものとして処理を行います。(もちろん、XPM を使用するときはこのマクロを使用する前に対応するファイルをインクルードしておく必要があり、ビットマップの名前は Windows のリソース名の末尾に <bpt i="2" x="2">&lt;c2&gt;</bpt>_xpm<ept i="2">&lt;/c2&gt;</ept> を付けたものにしてください) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It assumes that bitmaps live in resources under Windows or OS2 and XPM files under all other platforms (for XPMs, the corresponding file must be included before this macro is used, of course, and the name of the bitmap should be the same as the resource name under Windows with <bpt i="2" x="2">&lt;t2&gt;</bpt>_xpm<ept i="2">&lt;/t2&gt;</ept> suffix).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T150353Z">
+        <seg>このマクロは Windows と OS2 ではリソース内に、それ以外のプラットフォームでは XPM ファイルとしてビットマップが存在するものとして処理を行います。(もちろん、XPM を使用するときはこのマクロを使用する前に対応するファイルをインクルードしておく必要があり、ビットマップの名前は Windows のリソース名の末尾に <bpt i="2" x="2">&lt;t2&gt;</bpt>_xpm<ept i="2">&lt;/t2&gt;</ept> を付けたものにしてください) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>It can be also used to work with files with "non native" line termination characters and write them as "native" files if needed (in fact, the files may be written in any format).</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T065601Z">
@@ -7686,6 +7962,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>None (stock cursors only).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142336Z">
+        <seg>なし (既存のカーソルのみ)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Normally, it is suppressed, but might be activated if the user wishes to know more details about the program progress (another, but possibly confusing name for the same function is <bpt i="1" x="1">&lt;b1&gt;</bpt> wxLogInfo<ept i="1">&lt;/b1&gt;</ept>).</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T010737Z">
@@ -7762,6 +8046,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T033845Z">
         <seg>C/C++ プログラマの観点からすれば、状況はもっと複雑です。というのも、C/C++ で Unicode ( "ワイド" ) 文字列を表現するためによく使われる <bpt i="0" x="0">&lt;c0&gt;</bpt>wchar_t<ept i="0">&lt;/c0&gt;</ept> 型は、すべてのプラットフォームで同じサイズとは限らないためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Note that missing or partially-implemented formats are automatically supplemented by the <bpt i="0" x="0">&lt;a0&gt;</bpt>wxImage<ept i="0">&lt;/a0&gt;</ept> to load the data, and then converting it to wxBitmap form.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T151011Z">
+        <seg>対応していない、または部分的にしか実装されていない形式は自動的に <bpt i="0" x="0">&lt;a0&gt;</bpt>wxImage<ept i="0">&lt;/a0&gt;</ept> を使用してデータの読み込みと wxBitmap 形式への変換が行われることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Note that missing or partially-implemented formats are automatically supplemented by using <bpt i="0" x="0">&lt;a0&gt;</bpt>wxImage<ept i="0">&lt;/a0&gt;</ept> to load the data, and then converting it to <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBitmap<ept i="1">&lt;/a1&gt;</ept> form.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T154900Z">
+        <seg>対応していない、または部分的にしか実装されていない形式は自動的に <bpt i="0" x="0">&lt;a0&gt;</bpt>wxImage<ept i="0">&lt;/a0&gt;</ept> を使用してデータの読み込みと <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBitmap<ept i="1">&lt;/a1&gt;</ept> 形式への変換が行われることに注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7858,6 +8158,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T091318Z">
         <seg>Windows でデバッグ出力を確認するためにはデバッガーを使用するか、DbgView (<bpt i="3" x="3">&lt;a3&gt;</bpt>http://www.microsoft.com/technet/sysinternals/Miscellaneous/DebugView.mspx<ept i="3">&lt;/a3&gt;</ept>) のようなサードパーティーのプログラムを使用する必要がある点に注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Note that using <bpt i="2" x="2">&lt;a2&gt;</bpt>wxImage<ept i="2">&lt;/a2&gt;</ept> is the preferred way to load images in wxWidgets, with the exception of resources (XPM-files or native Windows resources).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T154913Z">
+        <seg>wxWidgets で画像を読み込む場合、リソース (XPM ファイルや Windows のリソース) から読み込む場合を除くと、<bpt i="2" x="2">&lt;a2&gt;</bpt>wxImage<ept i="2">&lt;/a2&gt;</ept> を利用した方が良いことにも注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Note that using wxImage is the preferred way to load images in wxWidgets, with the exception of resources (XPM-files or native Windows resources).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T151034Z">
+        <seg>wxWidgets で画像を読み込む場合、リソース (XPM ファイルや Windows のリソース) から読み込む場合を除くと、wxImage を利用した方が良いことにも注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8246,6 +8562,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Platform-specific methods for creating a <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBitmap<ept i="1">&lt;/a1&gt;</ept> object from an existing file are catered for, and this is an occasion where conditional compilation will sometimes be required.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T153829Z">
+        <seg>既存のファイルから <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBitmap<ept i="1">&lt;/a1&gt;</ept> オブジェクトを作成するのにプラットフォーム独自の関数が提供されていますが、ときにこれは条件付きコンパイルを必要とすることがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Platform-specific methods for creating a wxBitmap object from an existing file are catered for, and this is an occasion where conditional compilation will sometimes be required.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T150030Z">
+        <seg>既存のファイルから wxBitmap オブジェクトを作成するのにプラットフォーム独自の関数が提供されていますが、ときにこれは条件付きコンパイルを必要とすることがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Please consult wxWidgets home page for the most up-to-date translations - and if you translate it into one of the languages not done yet, your translations would be gratefully accepted for inclusion into future versions of the library!</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T043125Z">
@@ -8564,6 +8896,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T124650Z">
         <seg>使用可能な標準識別子のリストは <bpt i="0" x="0">&lt;a0&gt;</bpt>標準イベント識別子<ept i="0">&lt;/a0&gt;</ept> を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>See <bpt i="0" x="0">&lt;a0&gt;</bpt>wxMemoryDC<ept i="0">&lt;/a0&gt;</ept> for an example of drawing onto a bitmap.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T135238Z">
+        <seg>ビットマップへの描画の例は <bpt i="0" x="0">&lt;a0&gt;</bpt>wxMemoryDC<ept i="0">&lt;/a0&gt;</ept> を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8938,6 +9278,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Some handlers are provided as standard, but if you have special requirements, you may wish to initialise the <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap<ept i="0">&lt;/a0&gt;</ept> class with some extra handlers which you write yourself or receive from a third party.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T155145Z">
+        <seg>いくつかのハンドラは標準で提供されていますが、特別な要件がある場合に自分で書いたハンドラやサードパーティーのハンドラを使用して <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap<ept i="0">&lt;/a0&gt;</ept> クラスを初期化したいと思うかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Some handlers are provided as standard, but if you have special requirements, you may wish to initialise the wxBitmap class with some extra handlers which you write yourself or receive from a third party.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142958Z">
+        <seg>いくつかのハンドラは標準で提供されていますが、特別な要件がある場合に自分で書いたハンドラやサードパーティーのハンドラを使用して wxBitmap クラスを初期化したいと思うかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Some of advantages in using wxWidgets log functions are:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T013939Z">
@@ -8958,6 +9314,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130502T144136Z">
         <seg>時々、ANSI 文字列を wxString に変換する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Sometimes you wish to use a .ico resource on Windows, and XPMs on other platforms (for example to take advantage of Windows' support for multiple icon resolutions).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T150248Z">
+        <seg>Windows では .ico リソースを、それ以外のプラットフォームでは xpm を使用したいと思うことがあるかもしれません。(例えば、Windows の対応している多重解像度のアイコンを有効活用するためにです) </seg>
       </tuv>
     </tu>
     <tu>
@@ -9034,6 +9398,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Supported Bitmap File Formats</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T154820Z">
+        <seg>対応しているビットマップファイル形式</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Supported bitmap file formats</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T141111Z">
+        <seg>対応しているビットマップファイル形式</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>TODO: Probably deprecated, Bind() provides a better way to do this</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130517T170821Z">
@@ -9054,6 +9434,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130513T154413Z">
         <seg>イベントを伝播させる必要があるかどうかを確認します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap<ept i="0">&lt;/a0&gt;</ept> class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T153817Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap<ept i="0">&lt;/a0&gt;</ept> クラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9478,6 +9866,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T115722Z">
         <seg>この関数には以下のフラグを指定できます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The following lists the formats handled on different platforms.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T141211Z">
+        <seg>各プラットフォームで対応している形式の一覧を以下に示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10138,6 +10534,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The wxBitmap class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T152908Z">
+        <seg>wxBitmap クラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The wxDocChildFrame class provides a default frame for displaying documents on separate windows...</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130513T150631Z">
@@ -10286,6 +10690,38 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T023959Z">
         <seg>以下にその一覧を示します:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>There is a static list of handlers which <bpt i="2" x="2">&lt;a2&gt;</bpt>wxBitmap<ept i="2">&lt;/a2&gt;</ept> examines when a file load/save operation is requested.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T155132Z">
+        <seg>これらのハンドラの静的な一覧が存在し、ファイルの読み書きが要求された時に <bpt i="2" x="2">&lt;a2&gt;</bpt>wxBitmap<ept i="2">&lt;/a2&gt;</ept> がこの一覧を調べます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>There is a static list of handlers which wxBitmap examines when a file load/save operation is requested.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142757Z">
+        <seg>これらのハンドラの静的な一覧が存在し、ファイルの読み書きが要求された時に wxBitmap がこの一覧を調べます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>There is also a corresponding <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBITMAP()<ept i="0">&lt;/a0&gt;</ept> macro which allows to create the bitmaps in much the same way as <bpt i="1" x="1">&lt;a1&gt;</bpt>wxICON()<ept i="1">&lt;/a1&gt;</ept> creates icons.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T154626Z">
+        <seg>これと対応するマクロに <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBITMAP()<ept i="0">&lt;/a0&gt;</ept> マクロがあり、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxICON()<ept i="1">&lt;/a1&gt;</ept> がアイコンを作成するのと同じ方法でビットマップを作成することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>There is also a corresponding <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBITMAP<ept i="0">&lt;/a0&gt;</ept> macro which allows to create the bitmaps in much the same way as <bpt i="1" x="1">&lt;a1&gt;</bpt>wxICON<ept i="1">&lt;/a1&gt;</ept> creates icons.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T140448Z">
+        <seg>これと対応するマクロに <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBITMAP<ept i="0">&lt;/a0&gt;</ept> マクロがあり、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxICON<ept i="1">&lt;/a1&gt;</ept> がアイコンを作成するのと同じ方法でビットマップを作成することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10586,6 +11022,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This class encapsulates a platform-independent image.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T154843Z">
+        <seg>このクラスはプラットフォーム非依存の画像をカプセル化します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T152952Z">
+        <seg>このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This class greatly eases the burden of passing flags to a <bpt i="2" x="2">&lt;a2&gt;</bpt>wxSizer<ept i="2">&lt;/a2&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T145330Z">
@@ -10678,6 +11130,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130529T141904Z">
         <seg>これはすべての場合に当てはまるわけではありません (例えば、すべてのデバイスコンテキストがビットマップの描画に対応しているわけではありません) が、大半の場合はうまく行きます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This enables the bitmap to be copied to a window or memory device context using <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDC::Blit()<ept i="1">&lt;/a1&gt;</ept>, or to be used as a drawing surface.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T153940Z">
+        <seg>これにより、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxDC::Blit()<ept i="1">&lt;/a1&gt;</ept> を使用してビットマップをウィンドウやメモリデバイスコンテキストにコピーしたり、描画先として使用したりすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This enables the bitmap to be copied to a window or memory device context using <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDC::Blit<ept i="1">&lt;/a1&gt;</ept>, or to be used as a drawing surface.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T135222Z">
+        <seg>これにより、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxDC::Blit<ept i="1">&lt;/a1&gt;</ept> を使用してビットマップをウィンドウやメモリデバイスコンテキストにコピーしたり、描画先として使用したりすることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10906,6 +11374,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This is the base class for implementing bitmap file loading/saving, and bitmap creation from data...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T153116Z">
+        <seg>これはビットマップファイルの読み書き、およびデータからのビットマップの作成を実装するための基底クラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This is the default log target for the GUI wxWidgets applications.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T125452Z">
@@ -10950,6 +11426,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T124554Z">
         <seg>コントロールの生成するイベントを処理しない場合や、イベントを一箇所で処理する場合 (このときはイベントテーブルに <bpt i="1" x="1">&lt;c1&gt;</bpt>wxID_ANY<ept i="1">&lt;/c1&gt;</ept> を指定するか、同じように <bpt i="2" x="2">&lt;a2&gt;</bpt>wxEvtHandler::Bind<ept i="2">&lt;/a2&gt;</ept> を呼ぶ必要があります) など、コントロールの正確な識別子が必要でないときにこれは役立ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This macro loads a bitmap from either application resources (on the platforms for which they exist...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T154553Z">
+        <seg>このマクロはアプリケーションリソース (アプリケーションリソースが存在するプラットフォーム、つまり Windows と OS2 の場合) または XPM ファイルからビットマップを読み込みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This macro loads an icon from either application resources (on the platforms for which they exist...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T154445Z">
+        <seg>このマクロはアプリケーションリソース (アプリケーションリソースが存在するプラットフォーム、つまり Windows と OS2 の場合) または XPM ファイルからアイコンを読み込みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11170,6 +11662,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>To add a handler object to <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap<ept i="0">&lt;/a0&gt;</ept>, your application needs to include the header which implements it, and then call the static function <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBitmap::AddHandler()<ept i="1">&lt;/a1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T155245Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap<ept i="0">&lt;/a0&gt;</ept> のハンドラを追加する場合、ハンドラクラスを実装しているヘッダファイルをインクルードし、静的関数 <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBitmap::AddHandler()<ept i="1">&lt;/a1&gt;</ept> を呼ぶ必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To add a handler object to wxBitmap, your application needs to include the header which implements it, and then call the static function <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap::AddHandler<ept i="0">&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T143127Z">
+        <seg>wxBitmap のハンドラを追加する場合、ハンドラクラスを実装しているヘッダファイルをインクルードし、静的関数 <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap::AddHandler<ept i="0">&lt;/a0&gt;</ept> を呼ぶ必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>To be more precise, each event is described by:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130507T160744Z">
@@ -11278,6 +11786,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130501T154039Z">
         <seg>もう少しだけ可読性を上げるために、 <bpt i="4" x="4">&lt;t4&gt;</bpt>'L'<ept i="4">&lt;/t4&gt;</ept> を定数の後ろではなく、前に付けることも可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To provide extensibility, the functionality for loading and saving bitmap formats is not implemented in the <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap<ept i="0">&lt;/a0&gt;</ept> class, but in a number of handler classes, derived from <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBitmapHandler<ept i="1">&lt;/a1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T155122Z">
+        <seg>拡張性のため、ビットマップ形式の読み書きは <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap<ept i="0">&lt;/a0&gt;</ept> クラスで実装されておらず、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxBitmapHandler<ept i="1">&lt;/a1&gt;</ept> を継承した多数のハンドラクラスで実装されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To provide extensibility, the functionality for loading and saving bitmap formats is not implemented in the wxBitmap class, but in a number of handler classes, derived from wxBitmapHandler.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142547Z">
+        <seg>拡張性のため、ビットマップ形式の読み書きは wxBitmap クラスで実装されておらず、wxBitmapHandler を継承した多数のハンドラクラスで実装されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11498,6 +12022,54 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Under Windows, <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap<ept i="0">&lt;/a0&gt;</ept> may load the following formats:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T154959Z">
+        <seg>Windows では <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap<ept i="0">&lt;/a0&gt;</ept> は以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under Windows, <bpt i="0" x="0">&lt;a0&gt;</bpt>wxCursor<ept i="0">&lt;/a0&gt;</ept> may load the following formats:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T155048Z">
+        <seg>Windows では <bpt i="0" x="0">&lt;a0&gt;</bpt>wxCursor<ept i="0">&lt;/a0&gt;</ept> は以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under Windows, <bpt i="0" x="0">&lt;a0&gt;</bpt>wxIcon<ept i="0">&lt;/a0&gt;</ept> may load the following formats:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T155024Z">
+        <seg>Windows では <bpt i="0" x="0">&lt;a0&gt;</bpt>wxIcon<ept i="0">&lt;/a0&gt;</ept> は以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under Windows, wxBitmap may load the following formats:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T141924Z">
+        <seg>Windows では wxBitmap は以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under Windows, wxCursor may load the following formats:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142222Z">
+        <seg>Windows では wxCursor は以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under Windows, wxIcon may load the following formats:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142134Z">
+        <seg>Windows では wxIcon は以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Under certain circumstances, it will be required to define your own event class e.g. for sending more complex data from one place to another.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T163058Z">
@@ -11510,6 +12082,102 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T033840Z">
         <seg>(より複雑なデータをある場所から別の場所へ送るといった) 特定の状況下では独自のイベントクラスを定義する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under wxGTK, <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap<ept i="0">&lt;/a0&gt;</ept> may load the following formats:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T155007Z">
+        <seg>wxGTK では <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap<ept i="0">&lt;/a0&gt;</ept> は以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under wxGTK, <bpt i="0" x="0">&lt;a0&gt;</bpt>wxCursor<ept i="0">&lt;/a0&gt;</ept> may load the following formats (in addition to stock cursors):</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T155055Z">
+        <seg>wxGTK では <bpt i="0" x="0">&lt;a0&gt;</bpt>wxCursor<ept i="0">&lt;/a0&gt;</ept> は (既存のカーソルに加えて) 以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under wxGTK, <bpt i="0" x="0">&lt;a0&gt;</bpt>wxIcon<ept i="0">&lt;/a0&gt;</ept> may load the following formats:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T155032Z">
+        <seg>wxGTK では <bpt i="0" x="0">&lt;a0&gt;</bpt>wxIcon<ept i="0">&lt;/a0&gt;</ept> は以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under wxGTK, wxBitmap may load the following formats:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142050Z">
+        <seg>wxGTK では wxBitmap は以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under wxGTK, wxCursor may load the following formats (in additional to stock cursors):</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142320Z">
+        <seg>wxGTK では wxCursor は (既存のカーソルに加えて) 以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under wxGTK, wxIcon may load the following formats:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142202Z">
+        <seg>wxGTK では wxIcon は以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under wxMotif and wxX11, <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap<ept i="0">&lt;/a0&gt;</ept> may load the following formats:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T155015Z">
+        <seg>wxMotif と wxX11 では <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap<ept i="0">&lt;/a0&gt;</ept> は以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under wxMotif and wxX11, <bpt i="0" x="0">&lt;a0&gt;</bpt>wxCursor<ept i="0">&lt;/a0&gt;</ept> may load the following formats:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T155103Z">
+        <seg>wxMotif と wxX11 では <bpt i="0" x="0">&lt;a0&gt;</bpt>wxCursor<ept i="0">&lt;/a0&gt;</ept> は以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under wxMotif and wxX11, <bpt i="0" x="0">&lt;a0&gt;</bpt>wxIcon<ept i="0">&lt;/a0&gt;</ept> may load the following formats:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T155040Z">
+        <seg>wxMotif と wxX11 では <bpt i="0" x="0">&lt;a0&gt;</bpt>wxImage<ept i="0">&lt;/a0&gt;</ept> は以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under wxMotif and wxX11, wxBitmap may load the following formats:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142108Z">
+        <seg>wxMotif と wxX11 では wxBitmap は以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under wxMotif and wxX11, wxCursor may load the following formats:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142349Z">
+        <seg>wxMotif と wxX11 では wxCursor は以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Under wxMotif and wxX11, wxIcon may load the following formats:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142212Z">
+        <seg>wxMotif と wxX11 では wxImage は以下の形式を読み込むことができます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -12034,6 +12702,54 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Windows bitmap file (wxBITMAP_TYPE_BMP)</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T141948Z">
+        <seg>Windows ビットマップファイル (wxBITMAP_TYPE_BMP)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Windows bitmap resource (wxBITMAP_TYPE_BMP_RESOURCE)</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T141938Z">
+        <seg>Windows ビットマップリソース (wxBITMAP_TYPE_BMP_RESOURCE)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Windows cursor file (wxBITMAP_TYPE_CUR)</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142241Z">
+        <seg>Windows カーソルファイル (wxBITMAP_TYPE_CUR)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Windows cursor resource (wxBITMAP_TYPE_CUR_RESOURCE)</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142231Z">
+        <seg>Windows カーソルリソース (wxBITMAP_TYPE_CUR_RESOURCE)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Windows icon file (wxBITMAP_TYPE_ICO)</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142150Z">
+        <seg>Windows アイコンファイル (wxBITMAP_TYPE_ICO)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Windows icon resource (wxBITMAP_TYPE_ICO_RESOURCE)</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142142Z">
+        <seg>Windows アイコンリソース (wxBITMAP_TYPE_ICO_RESOURCE)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>With Bind&lt;&gt;() they simply won't be called if it wasn't correctly initialized.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T025528Z">
@@ -12130,10 +12846,42 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Writing an image format handler for <bpt i="0" x="0">&lt;a0&gt;</bpt>wxImage<ept i="0">&lt;/a0&gt;</ept> is also far easier than writing one for <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBitmap<ept i="1">&lt;/a1&gt;</ept>, because <bpt i="2" x="2">&lt;a2&gt;</bpt>wxImage<ept i="2">&lt;/a2&gt;</ept> has exactly one format on all platforms whereas <bpt i="3" x="3">&lt;a3&gt;</bpt>wxBitmap<ept i="3">&lt;/a3&gt;</ept> can store pixel data very differently, depending on colour depths and platform.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T154951Z">
+        <seg>また、<bpt i="0" x="0">&lt;a0&gt;</bpt>wxImage<ept i="0">&lt;/a0&gt;</ept> 用の画像形式ハンドラは <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBitmap<ept i="1">&lt;/a1&gt;</ept> のものより簡単に書くことができます。なぜなら、<bpt i="2" x="2">&lt;a2&gt;</bpt>wxImage<ept i="2">&lt;/a2&gt;</ept> はすべてのプラットフォームでただひとつの形式を使用するのに対し、<bpt i="3" x="3">&lt;a3&gt;</bpt>wxBitmap<ept i="3">&lt;/a3&gt;</ept> は色深度やプラットフォームに応じて様々な形式でピクセルデータを格納できるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Writing an image format handler for wxImage is also far easier than writing one for wxBitmap, because wxImage has exactly one format on all platforms whereas wxBitmap can store pixel data very differently, depending on colour depths and platform.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T151145Z">
+        <seg>また、wxImage 用の画像形式ハンドラは wxBitmap のものより簡単に書くことができます。なぜなら、wxImage はすべてのプラットフォームでただひとつの形式を使用するのに対し、wxBitmap は色深度やプラットフォームに応じて様々な形式でピクセルデータを格納できるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Writing internationalized programs is much easier with Unicode and, as the support for it improves, it should become more and more so.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130501T154342Z">
         <seg>Unicode を使うことで、国際化対応のプログラムをより簡単に書くことができます。そして、 Unicode 対応が進むにつれ、それはますます簡単になっていくことでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>XBM data and file (wxBITMAP_TYPE_XBM)</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142123Z">
+        <seg>XBM データおよび XBM ファイル (wxBITMAP_TYPE_XBM)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>XPM data and file (wxBITMAP_TYPE_XPM)</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142000Z">
+        <seg>XPM データおよび XPM ファイル (wxBITMAP_TYPE_XPM)</seg>
       </tuv>
     </tu>
     <tu>
@@ -12306,6 +13054,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>You may include the XPM inline as below, since it's C code, or you can load it at run-time.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T140213Z">
+        <seg>XPM は C のコードであるため、以下のようにして XPM をインラインでインクルードしたり、実行時に読み込むことが可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>You may use the <bpt i="0" x="0">&lt;c0&gt;</bpt>wxID_OK<ept i="0">&lt;/c0&gt;</ept> identifier, for example, on any number of dialogs as long as you don't have several within the same dialog.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130517T171208Z">
@@ -12326,6 +13082,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130520T145952Z">
         <seg>その後、強制的に更新するためにサイザーの Layout 関数を呼び出す必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You should always use <bpt i="0" x="0">&lt;a0&gt;</bpt>wxICON()<ept i="0">&lt;/a0&gt;</ept> and <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBITMAP()<ept i="1">&lt;/a1&gt;</ept> macros because they work for any platform (unlike the code above which doesn't deal with wxMac, wxX11, ...) and are shorter and more clear than versions with many <bpt i="2" x="2">&lt;s2&gt;</bpt>#ifdef<ept i="2">&lt;/s2&gt;</ept> blocks.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T155738Z">
+        <seg>常に <bpt i="0" x="0">&lt;a0&gt;</bpt>wxICON()<ept i="0">&lt;/a0&gt;</ept> マクロと <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBITMAP()<ept i="1">&lt;/a1&gt;</ept> マクロを使用するべきです。なぜなら、これらのマクロはどのプラットフォームでも動作しますし (上記のコードは wxMac、wxX11、... に対応していません)、<bpt i="2" x="2">&lt;s2&gt;</bpt>#ifdef<ept i="2">&lt;/s2&gt;</ept> を使用したものより簡潔で明確だからです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You should always use wxICON and wxBITMAP macros because they work for any platform (unlike the code above which doesn't deal with wxMac, wxX11, ...) and are more short and clear than versions with <bpt i="0" x="0">&lt;t0&gt;</bpt>#ifdef<ept i="0">&lt;/t0&gt;</ept>s.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T150859Z">
+        <seg>常に wxICON マクロと wxBITMAP マクロを使用するべきです。なぜなら、これらのマクロはどのプラットフォームでも動作しますし (上記のコードは wxMac、wxX11、... に対応していません)、<bpt i="0" x="0">&lt;t0&gt;</bpt>#ifdef<ept i="0">&lt;/t0&gt;</ept> を使用したものより簡潔で明確だからです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13296,6 +14068,42 @@ protected:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxBitmap</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T141839Z">
+        <seg>wxBitmap</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxBitmap bmp("bmpname", wxBITMAP_TYPE_RESOURCE);
+#else // Unix</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T140810Z">
+        <seg>wxBitmap bmp("bmpname", wxBITMAP_TYPE_RESOURCE);
+#else // Unix</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxBitmap bmp(bmpname_xpm, wxBITMAP_TYPE_XPM);
+#endif</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T140813Z">
+        <seg>wxBitmap bmp(bmpname_xpm, wxBITMAP_TYPE_XPM);
+#endif</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxBitmapHandler</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T153117Z">
+        <seg>wxBitmapHandler</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxBoxSizer</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130430T145417Z">
@@ -13420,6 +14228,14 @@ protected:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T155830Z">
         <seg>wxCommandEvent event( wxEVT_MY_EVENT, GetId() );</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxCursor</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142214Z">
+        <seg>wxCursor</seg>
       </tuv>
     </tu>
     <tu>
@@ -13586,6 +14402,42 @@ private:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T115957Z">
         <seg>wxHELP   // wxID_HELP を返却します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxIcon</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T142124Z">
+        <seg>wxIcon</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxIcon icon(wxICON(mondrian));
+
+// Equivalent to:
+
+#if defined(__WXGTK__) || defined(__WXMOTIF__)
+wxIcon icon(mondrian_xpm);
+#endif
+
+#if defined(__WXMSW__)
+wxIcon icon("mondrian");
+#endif</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T140344Z">
+        <seg>wxIcon icon(wxICON(mondrian));
+
+// これは以下と同等:
+
+#if defined(__WXGTK__) || defined(__WXMOTIF__)
+wxIcon icon(mondrian_xpm);
+#endif
+
+#if defined(__WXMSW__)
+wxIcon icon("mondrian");
+#endif</seg>
       </tuv>
     </tu>
     <tu>
@@ -14292,6 +15144,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T092511Z">
         <seg>すべてのシステムにおいて、wxWidgets はデフォルトで <bpt i="1" x="1">&lt;a1&gt;</bpt>wxString<ept i="1">&lt;/a1&gt;</ept> の実装に <bpt i="0" x="0">&lt;c0&gt;</bpt>wchar_t<ept i="0">&lt;/c0&gt;</ept> を使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxWidgets: wxWidgets: Bitmaps and Icons</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130609T152925Z">
+        <seg>wxWidgets: wxWidgets: ビットマップとアイコン</seg>
       </tuv>
     </tu>
     <tu>

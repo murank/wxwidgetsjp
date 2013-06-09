@@ -18,3 +18,4 @@ Programming with Sizers	サイザーを用いたプログラミング
 empty space	空白スペース
 interface	インタフェース
 portability	移植性
+third party	サードパーティー
