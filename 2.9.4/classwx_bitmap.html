@@ -136,18 +136,18 @@ function toggleVisibility(linkObj) {
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or colour with alpha channel support.  </p>
 <p>If you need direct access the bitmap data instead going through drawing to it using <a class="el" href="classwx_memory_d_c.html" title="メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。">wxMemoryDC</a> you need to use the <a class="el" href="classwx_pixel_data.html" title="A class template with ready to use implementations for getting direct and efficient access to wxBitma...">wxPixelData</a> class (either wxNativePixelData for RGB bitmaps or wxAlphaPixelData for bitmaps with an additionally alpha channel).</p>
-<p>Note that many <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> functions take a <em>type</em> parameter, which is a value of the <a class="el" href="gdicmn_8h.html#a90a1eb6d85b5044a99b706fd979f27f5" title="Bitmap type flags.">wxBitmapType</a> enumeration. The validity of those values depends however on the platform where your program is running and from the wxWidgets configuration. If all possible wxWidgets settings are used:</p>
+<p>Note that many <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> functions take a <em>type</em> parameter, which is a value of the <a class="el" href="gdicmn_8h.html#a90a1eb6d85b5044a99b706fd979f27f5" title="Bitmap type flags.">wxBitmapType</a> enumeration. The validity of those values depends however on the platform where your program is running and from the wxWidgets configuration. If all possible wxWidgets settings are used:</p>
 <ul>
 <li>wxMSW supports BMP and ICO files, BMP and ICO resources;</li>
 <li>wxGTK supports XPM files;</li>
 <li>wxMac supports PICT resources;</li>
 <li>wxX11 supports XPM files, XPM data, XBM data;</li>
 </ul>
-<p>In addition, <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> can load and save all formats that <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> can; see <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> for more info. Of course, you must have loaded the <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> handlers (see <a class="el" href="group__group__funcmacro__appinitterm.html#ga27f6c78d5d13374a28022b7bd44c6823" title="Initializes all available image handlers.">wxInitAllImageHandlers()</a> and <a class="el" href="classwx_image.html#ab39fb3747dfb8c2d444eff9fe41fa205" title="Register an image handler.">wxImage::AddHandler</a>). Note that all available wxBitmapHandlers for a given wxWidgets port are automatically loaded at startup so you won't need to use <a class="el" href="classwx_bitmap.html#a6418825ad15574229188e0c5f97a4f3a" title="Adds a handler to the end of the static list of format handlers.">wxBitmap::AddHandler</a>.</p>
-<p>More on the difference between <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> and <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a>: <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> is just a buffer of RGB bytes with an optional buffer for the alpha bytes. It is all generic, platform independent and image file format independent code. It includes generic code for scaling, resizing, clipping, and other manipulations of the image data. OTOH, <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> is intended to be a wrapper of whatever is the native image format that is quickest/easiest to draw to a DC or to be the target of the drawing operations performed on a <a class="el" href="classwx_memory_d_c.html" title="メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。">wxMemoryDC</a>. By splitting the responsibilities between wxImage/wxBitmap like this then it's easier to use generic code shared by all platforms and image types for generic operations and platform specific code where performance or compatibility is needed.</p>
+<p>In addition, <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> can load and save all formats that <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> can; see <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> for more info. Of course, you must have loaded the <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> handlers (see <a class="el" href="group__group__funcmacro__appinitterm.html#ga27f6c78d5d13374a28022b7bd44c6823" title="Initializes all available image handlers.">wxInitAllImageHandlers()</a> and <a class="el" href="classwx_image.html#ab39fb3747dfb8c2d444eff9fe41fa205" title="Register an image handler.">wxImage::AddHandler</a>). Note that all available wxBitmapHandlers for a given wxWidgets port are automatically loaded at startup so you won't need to use <a class="el" href="classwx_bitmap.html#a6418825ad15574229188e0c5f97a4f3a" title="形式ハンドラの静的一覧の末尾にハンドラを追加します。">wxBitmap::AddHandler</a>.</p>
+<p>More on the difference between <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> and <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a>: <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> is just a buffer of RGB bytes with an optional buffer for the alpha bytes. It is all generic, platform independent and image file format independent code. It includes generic code for scaling, resizing, clipping, and other manipulations of the image data. OTOH, <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> is intended to be a wrapper of whatever is the native image format that is quickest/easiest to draw to a DC or to be the target of the drawing operations performed on a <a class="el" href="classwx_memory_d_c.html" title="メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。">wxMemoryDC</a>. By splitting the responsibilities between wxImage/wxBitmap like this then it's easier to use generic code shared by all platforms and image types for generic operations and platform specific code where performance or compatibility is needed.</p>
 <h2></h2>
 <div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__gdi.html">Graphics Device Interface (GDI)</a></span></div><p><span class="stdobj">Predefined objects/pointers:</span> <a class="el" href="interface_2wx_2bitmap_8h.html#a2947690e84b8fdb2e37b79a4af8f8a21" title="An empty wxBitmap object.">wxNullBitmap</a></p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_bitmap.html">Bitmaps and Icons</a>, <a class="el" href="overview_bitmap.html#overview_bitmap_supportedformats">Supported Bitmap File Formats</a>, <a class="el" href="classwx_d_c.html#a12bed94a15136b9080683f4151042a34" title="Copy from a source DC to this DC.">wxDC::Blit</a>, <a class="el" href="classwx_icon.html" title="An icon is a small rectangular bitmap usually used for denoting a minimized application.">wxIcon</a>, <a class="el" href="classwx_cursor.html" title="A cursor is a small bitmap usually used for denoting where the mouse pointer is, with a picture that ...">wxCursor</a>, <a class="el" href="classwx_memory_d_c.html" title="メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。">wxMemoryDC</a>, <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a>, <a class="el" href="classwx_pixel_data.html" title="A class template with ready to use implementations for getting direct and efficient access to wxBitma...">wxPixelData</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_bitmap.html">Bitmaps and Icons</a>, <a class="el" href="overview_bitmap.html#overview_bitmap_supportedformats">Supported Bitmap File Formats</a>, <a class="el" href="classwx_d_c.html#a12bed94a15136b9080683f4151042a34" title="コピー元 DC からこの DC へコピーします。">wxDC::Blit</a>, <a class="el" href="classwx_icon.html" title="アイコンは小さな矩形のビットマップで、最小化されたアプリケーションを表すためによく使用されます。">wxIcon</a>, <a class="el" href="classwx_cursor.html" title="カーソルは小さな矩形のビットマップで、マウスポインタの位置を表すためにマウスクリックを示す画像付きでよく使用されます。">wxCursor</a>, <a class="el" href="classwx_memory_d_c.html" title="メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。">wxMemoryDC</a>, <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a>, <a class="el" href="classwx_pixel_data.html" title="A class template with ready to use implementations for getting direct and efficient access to wxBitma...">wxPixelData</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
@@ -214,7 +214,7 @@ Public Member Functions</h2></td></tr>
 
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_bitmap.html#a6418825ad15574229188e0c5f97a4f3a">AddHandler</a> (<a class="el" href="classwx_bitmap_handler.html">wxBitmapHandler</a> *handler)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a handler to the end of the static list of format handlers.    <a href="#a6418825ad15574229188e0c5f97a4f3a"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">形式ハンドラの静的一覧の末尾にハンドラを追加します。  <a href="#a6418825ad15574229188e0c5f97a4f3a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_bitmap.html#a62381d78867e552f713ae712fd23bc81">CleanUpHandlers</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deletes all bitmap handlers.    <a href="#a62381d78867e552f713ae712fd23bc81"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwx_bitmap_handler.html">wxBitmapHandler</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_bitmap.html#aae67381581ac0ad8378adc23d01f593e">FindHandler</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;name)</td></tr>
@@ -271,7 +271,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Copy constructor, uses <a class="el" href="overview_refcount.html">reference counting</a>.  </p>
 <p>To make a real copy, you can use:</p>
-<div class="fragment"><pre class="fragment">        <a class="code" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> newBitmap = oldBitmap.<a class="code" href="classwx_bitmap.html#a8745c687705511f1432d9f36ad26f95b" title="Returns a sub bitmap of the current one as long as the rect belongs entirely to the bitmap...">GetSubBitmap</a>(
+<div class="fragment"><pre class="fragment">        <a class="code" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> newBitmap = oldBitmap.<a class="code" href="classwx_bitmap.html#a8745c687705511f1432d9f36ad26f95b" title="Returns a sub bitmap of the current one as long as the rect belongs entirely to the bitmap...">GetSubBitmap</a>(
                              <a class="code" href="classwx_rect.html" title="A class for manipulating rectangles.">wxRect</a>(0, 0, oldBitmap.GetWidth(), oldBitmap.GetHeight()));
 </pre></div> 
 </div>
@@ -315,7 +315,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Creates a bitmap from the given array <em>bits</em>.  </p>
 <p>You should only use this function for monochrome bitmaps (depth 1) in portable programs: in this case the bits parameter should contain an XBM image.</p>
-<p>For other bit depths, the behaviour is platform dependent: under Windows, the data is passed without any changes to the underlying CreateBitmap() API. Under other platforms, only monochrome bitmaps may be created using this constructor and <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> should be used for creating colour bitmaps from static data.</p>
+<p>For other bit depths, the behaviour is platform dependent: under Windows, the data is passed without any changes to the underlying CreateBitmap() API. Under other platforms, only monochrome bitmaps may be created using this constructor and <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> should be used for creating colour bitmaps from static data.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">bits</td><td>Specifies an array of pixel values.  </td></tr>
@@ -482,10 +482,10 @@ Static Public Member Functions</h2></td></tr>
 <p>This has to be done to actually display an image as you cannot draw an image directly on a window.</p>
 <p>The resulting bitmap will use the provided colour depth (or that of the current system if depth is <a class="el" href="interface_2wx_2bitmap_8h.html#a92f17e2abdf285ce14f0ef47997fdb06" title='In wxBitmap and wxBitmapHandler context this value means: "use the screen depth".'>wxBITMAP_SCREEN_DEPTH</a>) which entails that a colour reduction may take place.</p>
 <p>When in 8-bit mode (PseudoColour mode), the GTK port will use a color cube created on program start-up to look up colors. This ensures a very fast conversion, but the image quality won't be perfect (and could be better for photo images using more sophisticated dithering algorithms).</p>
-<p>On Windows, if there is a palette present (set with SetPalette), it will be used when creating the <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> (most useful in 8-bit display mode). On other platforms, the palette is currently ignored.</p>
+<p>On Windows, if there is a palette present (set with SetPalette), it will be used when creating the <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> (most useful in 8-bit display mode). On other platforms, the palette is currently ignored.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">img</td><td>Platform-independent <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> object.  </td></tr>
+    <tr><td class="paramname">img</td><td>Platform-independent <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> object.  </td></tr>
     <tr><td class="paramname">depth</td><td>Specifies the depth of the bitmap. If this is omitted, the display depth of the screen is used.  </td></tr>
   </table>
   </dd>
@@ -530,7 +530,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Adds a handler to the end of the static list of format handlers.  </p>
+<p>形式ハンドラの静的一覧の末尾にハンドラを追加します。 </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">handler</td><td>A new bitmap format handler object. There is usually only one instance of a given handler class in an application session.</td></tr>
@@ -538,8 +538,8 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Note that unlike <a class="el" href="classwx_image.html#ab39fb3747dfb8c2d444eff9fe41fa205" title="Register an image handler.">wxImage::AddHandler</a>, there's no documented list of the wxBitmapHandlers available in wxWidgets. This is because they are platform-specific and most important, they are all automatically loaded at startup.</p>
-<p>If you want to be sure that <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> can load a certain type of image, you'd better use <a class="el" href="classwx_image.html#ab39fb3747dfb8c2d444eff9fe41fa205" title="Register an image handler.">wxImage::AddHandler</a>.</p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_bitmap_handler.html" title="This is the base class for implementing bitmap file loading/saving, and bitmap creation from data...">wxBitmapHandler</a> </dd></dl>
+<p>If you want to be sure that <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> can load a certain type of image, you'd better use <a class="el" href="classwx_image.html#ab39fb3747dfb8c2d444eff9fe41fa205" title="Register an image handler.">wxImage::AddHandler</a>.</p>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_bitmap_handler.html" title="これはビットマップファイルの読み書き、およびデータからのビットマップの作成を実装するための基底クラスです。">wxBitmapHandler</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxBitmap::CleanUpHandlers" ref="a62381d78867e552f713ae712fd23bc81" args="()" -->
@@ -747,7 +747,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>A pointer to the handler if found, <span class="literal">NULL</span> otherwise.</dd></dl>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_bitmap_handler.html" title="This is the base class for implementing bitmap file loading/saving, and bitmap creation from data...">wxBitmapHandler</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_bitmap_handler.html" title="これはビットマップファイルの読み書き、およびデータからのビットマップの作成を実装するための基底クラスです。">wxBitmapHandler</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxBitmap::FindHandler" ref="aae67381581ac0ad8378adc23d01f593e" args="(const wxString &amp;name)" -->
@@ -805,7 +805,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns the static list of bitmap format handlers.  </p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_bitmap_handler.html" title="This is the base class for implementing bitmap file loading/saving, and bitmap creation from data...">wxBitmapHandler</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_bitmap_handler.html" title="これはビットマップファイルの読み書き、およびデータからのビットマップの作成を実装するための基底クラスです。">wxBitmapHandler</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxBitmap::GetHeight" ref="a43fa1cfa77a428259d68e6a237aaeba2" args="() const " -->
@@ -941,7 +941,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Adds the standard bitmap format handlers, which, depending on wxWidgets configuration, can be handlers for Windows bitmap, Windows bitmap resource, and XPM.  </p>
 <p>This function is called by wxWidgets on startup.</p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_bitmap_handler.html" title="This is the base class for implementing bitmap file loading/saving, and bitmap creation from data...">wxBitmapHandler</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_bitmap_handler.html" title="これはビットマップファイルの読み書き、およびデータからのビットマップの作成を実装するための基底クラスです。">wxBitmapHandler</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxBitmap::InsertHandler" ref="a228a76708d605d22ed82c889f15859a4" args="(wxBitmapHandler *handler)" -->
@@ -967,7 +967,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_bitmap_handler.html" title="This is the base class for implementing bitmap file loading/saving, and bitmap creation from data...">wxBitmapHandler</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_bitmap_handler.html" title="これはビットマップファイルの読み書き、およびデータからのビットマップの作成を実装するための基底クラスです。">wxBitmapHandler</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxBitmap::IsOk" ref="ab825460a217d250db53df0c9ca293068" args="() const " -->
@@ -1052,7 +1052,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if the handler was found and removed, <span class="literal">false</span> otherwise.</dd></dl>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_bitmap_handler.html" title="This is the base class for implementing bitmap file loading/saving, and bitmap creation from data...">wxBitmapHandler</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_bitmap_handler.html" title="これはビットマップファイルの読み書き、およびデータからのビットマップの作成を実装するための基底クラスです。">wxBitmapHandler</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxBitmap::SaveFile" ref="a48617712dd0f5a6a51bb1897a49ae273" args="(const wxString &amp;name, wxBitmapType type, const wxPalette *palette=NULL) const " -->

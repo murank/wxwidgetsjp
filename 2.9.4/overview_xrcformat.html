@@ -1715,17 +1715,17 @@ Other Objects</h2>
 <h3><a class="anchor" id="overview_xrcformat_bitmap"></a>
 
 wxBitmap</h3>
-<p>Bitmaps are stored in <code>&lt;object&gt;</code> element with class set to <code><a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a></code>. Such bitmaps can then be loaded using <a class="el" href="classwx_xml_resource.html#a1afb7dad6af9fe2230184d755b4abc47" title="Loads a bitmap resource from a file.">wxXmlResource::LoadBitmap()</a>. The content of the element is exactly same as in the case of <a class="el" href="overview_xrcformat.html#overview_xrcformat_type_bitmap">bitmap properties</a>, except that toplevel <code>&lt;object&gt;</code> is used.</p>
+<p>Bitmaps are stored in <code>&lt;object&gt;</code> element with class set to <code><a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a></code>. Such bitmaps can then be loaded using <a class="el" href="classwx_xml_resource.html#a1afb7dad6af9fe2230184d755b4abc47" title="Loads a bitmap resource from a file.">wxXmlResource::LoadBitmap()</a>. The content of the element is exactly same as in the case of <a class="el" href="overview_xrcformat.html#overview_xrcformat_type_bitmap">bitmap properties</a>, except that toplevel <code>&lt;object&gt;</code> is used.</p>
 <p>For example, instead of:  </p>
 <div class="fragment"><pre class="fragment">&lt;bitmap&gt;mybmp.png&lt;/bitmap&gt;
 &lt;bitmap stock_id=<span class="stringliteral">"wxART_NEW"</span>/&gt;
-</pre></div><p>  toplevel <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> resources would look like:  </p>
+</pre></div><p>  toplevel <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> resources would look like:  </p>
 <div class="fragment"><pre class="fragment">&lt;<span class="keywordtype">object</span> <span class="keyword">class</span>=<span class="stringliteral">"wxBitmap"</span> name=<span class="stringliteral">"my_bitmap"</span>&gt;mybmp.png&lt;/<span class="keywordtype">object</span>&gt;
 &lt;<span class="keywordtype">object</span> <span class="keyword">class</span>=<span class="stringliteral">"wxBitmap"</span> name=<span class="stringliteral">"my_new_bitmap"</span> stock_id=<span class="stringliteral">"wxART_NEW"</span>/&gt;
 </pre></div><h3><a class="anchor" id="overview_xrcformat_icon"></a>
 
 wxIcon</h3>
-<p><a class="el" href="classwx_icon.html" title="An icon is a small rectangular bitmap usually used for denoting a minimized application.">wxIcon</a> resources are identical to <a class="el" href="overview_xrcformat.html#overview_xrcformat_bitmap">wxBitmap ones</a>, except that the class is <code><a class="el" href="classwx_icon.html" title="An icon is a small rectangular bitmap usually used for denoting a minimized application.">wxIcon</a></code>.</p>
+<p><a class="el" href="classwx_icon.html" title="アイコンは小さな矩形のビットマップで、最小化されたアプリケーションを表すためによく使用されます。">wxIcon</a> resources are identical to <a class="el" href="overview_xrcformat.html#overview_xrcformat_bitmap">wxBitmap ones</a>, except that the class is <code><a class="el" href="classwx_icon.html" title="アイコンは小さな矩形のビットマップで、最小化されたアプリケーションを表すためによく使用されます。">wxIcon</a></code>.</p>
 <h2><a class="anchor" id="overview_xrcformat_platform"></a>
 
 Platform Specific Content</h2>

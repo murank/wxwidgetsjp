@@ -136,7 +136,7 @@ function toggleVisibility(linkObj) {
 <div class="textblock"><p><a class="el" href="classwx_splash_screen.html" title="wxSplashScreen shows a window with a thin border, displaying a bitmap describing your application...">wxSplashScreen</a> shows a window with a thin border, displaying a bitmap describing your application.  </p>
 <p>Show it in application initialisation, and then either explicitly destroy it or let it time-out.</p>
 <p>Example usage:</p>
-<div class="fragment"><pre class="fragment">      <a class="code" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> bitmap;
+<div class="fragment"><pre class="fragment">      <a class="code" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> bitmap;
       <span class="keywordflow">if</span> (bitmap.<a class="code" href="classwx_bitmap.html#ab4d271d200338e9274cebfee474fbd7f" title="Loads a bitmap from a file or resource.">LoadFile</a>(<span class="stringliteral">"splash16.png"</span>, <a class="code" href="gdicmn_8h.html#a90a1eb6d85b5044a99b706fd979f27f5a1640e623b6d19cc731b6e1d1dddbb799">wxBITMAP_TYPE_PNG</a>))
       {
           <a class="code" href="classwx_splash_screen.html" title="wxSplashScreen shows a window with a thin border, displaying a bitmap describing your application...">wxSplashScreen</a>* splash = <span class="keyword">new</span> <a class="code" href="classwx_splash_screen.html#a05a1d1af1dac400c659d41bd033d8566" title="Construct the splash screen passing a bitmap, a style, a timeout, a window id, optional position and ...">wxSplashScreen</a>(bitmap,

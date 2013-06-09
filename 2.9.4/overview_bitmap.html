@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>wxWidgets: wxWidgets: Bitmaps and Icons</title>
+<title>wxWidgets: wxWidgets: ビットマップとアイコン</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="custom_stylesheet.css" rel="stylesheet" type="text/css" />
@@ -114,121 +114,119 @@ function toggleVisibility(linkObj) {
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title">Bitmaps and Icons  </div>  </div>
+<div class="title">ビットマップとアイコン </div>  </div>
 </div>
 <div class="contents">
-<div class="textblock"><p>Classes:</p>
+<div class="textblock"><p>クラス:</p>
 <ul>
-<li><a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> </li>
-<li><a class="el" href="classwx_bitmap_handler.html" title="This is the base class for implementing bitmap file loading/saving, and bitmap creation from data...">wxBitmapHandler</a> </li>
-<li><a class="el" href="classwx_icon.html" title="An icon is a small rectangular bitmap usually used for denoting a minimized application.">wxIcon</a> </li>
-<li><a class="el" href="classwx_cursor.html" title="A cursor is a small bitmap usually used for denoting where the mouse pointer is, with a picture that ...">wxCursor</a></li>
+<li><a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> </li>
+<li><a class="el" href="classwx_bitmap_handler.html" title="これはビットマップファイルの読み書き、およびデータからのビットマップの作成を実装するための基底クラスです。">wxBitmapHandler</a> </li>
+<li><a class="el" href="classwx_icon.html" title="アイコンは小さな矩形のビットマップで、最小化されたアプリケーションを表すためによく使用されます。">wxIcon</a> </li>
+<li><a class="el" href="classwx_cursor.html" title="カーソルは小さな矩形のビットマップで、マウスポインタの位置を表すためにマウスクリックを示す画像付きでよく使用されます。">wxCursor</a></li>
 </ul>
-<p>The <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour. Platform-specific methods for creating a <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> object from an existing file are catered for, and this is an occasion where conditional compilation will sometimes be required.</p>
-<p>A bitmap created dynamically or loaded from a file can be selected into a memory device context (instance of <a class="el" href="classwx_memory_d_c.html" title="メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。">wxMemoryDC</a>). This enables the bitmap to be copied to a window or memory device context using <a class="el" href="classwx_d_c.html#a12bed94a15136b9080683f4151042a34" title="Copy from a source DC to this DC.">wxDC::Blit()</a>, or to be used as a drawing surface.</p>
-<p>See <a class="el" href="classwx_memory_d_c.html" title="メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。">wxMemoryDC</a> for an example of drawing onto a bitmap.</p>
-<p>All wxWidgets platforms support XPMs for small bitmaps and icons. You may include the XPM inline as below, since it's C code, or you can load it at run-time.</p>
+<p><a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> クラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。既存のファイルから <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> オブジェクトを作成するのにプラットフォーム独自の関数が提供されていますが、ときにこれは条件付きコンパイルを必要とすることがあります。</p>
+<p>動的に作成した、またはファイルから読み込んだビットマップはメモリデバイスコンテキスト (<a class="el" href="classwx_memory_d_c.html" title="メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。">wxMemoryDC</a> のインスタンス) で選択可能です。これにより、<a class="el" href="classwx_d_c.html#a12bed94a15136b9080683f4151042a34" title="コピー元 DC からこの DC へコピーします。">wxDC::Blit()</a> を使用してビットマップをウィンドウやメモリデバイスコンテキストにコピーしたり、描画先として使用したりすることができます。</p>
+<p>ビットマップへの描画の例は <a class="el" href="classwx_memory_d_c.html" title="メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。">wxMemoryDC</a> を参照してください。</p>
+<p>小さなビットマップやアイコンに使用される XPM について、wxWidgets はすべてのプラットフォームで対応しています。XPM は C のコードであるため、以下のようにして XPM をインラインでインクルードしたり、実行時に読み込むことが可能です。</p>
 <div class="fragment"><pre class="fragment"><span class="preprocessor">#include "sample.xpm"</span>
-</pre></div><p>Sometimes you wish to use a .ico resource on Windows, and XPMs on other platforms (for example to take advantage of Windows' support for multiple icon resolutions).</p>
-<p>A macro, <a class="el" href="group__group__funcmacro__gdi.html#ga1f22eefa44998cbeb8f018978cf5d375" title="This macro loads an icon from either application resources (on the platforms for which they exist...">wxICON()</a>, is available which creates an icon using an XPM on the appropriate platform, or an icon resource on Windows:</p>
-<div class="fragment"><pre class="fragment"><a class="code" href="classwx_icon.html" title="An icon is a small rectangular bitmap usually used for denoting a minimized application.">wxIcon</a> icon(<a class="code" href="group__group__funcmacro__gdi.html#ga1f22eefa44998cbeb8f018978cf5d375" title="This macro loads an icon from either application resources (on the platforms for which they exist...">wxICON</a>(sample));
+</pre></div><p>Windows では .ico リソースを、それ以外のプラットフォームでは xpm を使用したいと思うことがあるかもしれません。(例えば、Windows の対応している多重解像度のアイコンを有効活用するためにです) </p>
+<p><a class="el" href="group__group__funcmacro__gdi.html#ga1f22eefa44998cbeb8f018978cf5d375" title="このマクロはアプリケーションリソース (アプリケーションリソースが存在するプラットフォーム、つまり Windows と OS2 の場合) または XPM ファイルからアイコンを読み込みます。">wxICON()</a> マクロを使用すると、適切なプラットフォームでは XPM を、Windows ではアイコンリソースを利用してアイコンを作成することができます:</p>
+<div class="fragment"><pre class="fragment"><a class="code" href="classwx_icon.html" title="アイコンは小さな矩形のビットマップで、最小化されたアプリケーションを表すためによく使用されます。">wxIcon</a> icon(<a class="code" href="group__group__funcmacro__gdi.html#ga1f22eefa44998cbeb8f018978cf5d375" title="このマクロはアプリケーションリソース (アプリケーションリソースが存在するプラットフォーム、つまり Windows と OS2 の場合) または XPM ファイルからアイコンを読み込みます。">wxICON</a>(sample));
 
-<span class="comment">// The above line is equivalent to this:</span>
+<span class="comment">// 上の行はこれと同等:</span>
 
 <span class="preprocessor">#if defined(__WXGTK__) || defined(__WXMOTIF__)</span>
-<span class="preprocessor"></span>    <a class="code" href="classwx_icon.html" title="An icon is a small rectangular bitmap usually used for denoting a minimized application.">wxIcon</a> icon(sample_xpm);
+<span class="preprocessor"></span>    <a class="code" href="classwx_icon.html" title="アイコンは小さな矩形のビットマップで、最小化されたアプリケーションを表すためによく使用されます。">wxIcon</a> icon(sample_xpm);
 <span class="preprocessor">#endif</span>
 <span class="preprocessor"></span>
 <span class="preprocessor">#if defined(__WXMSW__)</span>
-<span class="preprocessor"></span>    <a class="code" href="classwx_icon.html" title="An icon is a small rectangular bitmap usually used for denoting a minimized application.">wxIcon</a> icon(<span class="stringliteral">"sample"</span>);
+<span class="preprocessor"></span>    <a class="code" href="classwx_icon.html" title="アイコンは小さな矩形のビットマップで、最小化されたアプリケーションを表すためによく使用されます。">wxIcon</a> icon(<span class="stringliteral">"sample"</span>);
 <span class="preprocessor">#endif</span>
-</pre></div><p>There is also a corresponding <a class="el" href="group__group__funcmacro__gdi.html#ga309f860d17c1a8c4cc54c6e772a2fd09" title="This macro loads a bitmap from either application resources (on the platforms for which they exist...">wxBITMAP()</a> macro which allows to create the bitmaps in much the same way as <a class="el" href="group__group__funcmacro__gdi.html#ga1f22eefa44998cbeb8f018978cf5d375" title="This macro loads an icon from either application resources (on the platforms for which they exist...">wxICON()</a> creates icons. It assumes that bitmaps live in resources under Windows or OS2 and XPM files under all other platforms (for XPMs, the corresponding file must be included before this macro is used, of course, and the name of the bitmap should be the same as the resource name under Windows with <code>_xpm</code> suffix). 以下に例を示します:</p>
-<div class="fragment"><pre class="fragment"><span class="comment">// an easy and portable way to create a bitmap</span>
-<a class="code" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> bmp(<a class="code" href="group__group__funcmacro__gdi.html#ga309f860d17c1a8c4cc54c6e772a2fd09" title="This macro loads a bitmap from either application resources (on the platforms for which they exist...">wxBITMAP</a>(bmpname));
+</pre></div><p>これと対応するマクロに <a class="el" href="group__group__funcmacro__gdi.html#ga309f860d17c1a8c4cc54c6e772a2fd09" title="このマクロはアプリケーションリソース (アプリケーションリソースが存在するプラットフォーム、つまり Windows と OS2 の場合) または XPM ファイルからビットマップを読み込みます。">wxBITMAP()</a> マクロがあり、<a class="el" href="group__group__funcmacro__gdi.html#ga1f22eefa44998cbeb8f018978cf5d375" title="このマクロはアプリケーションリソース (アプリケーションリソースが存在するプラットフォーム、つまり Windows と OS2 の場合) または XPM ファイルからアイコンを読み込みます。">wxICON()</a> がアイコンを作成するのと同じ方法でビットマップを作成することができます。このマクロは Windows と OS2 ではリソース内に、それ以外のプラットフォームでは XPM ファイルとしてビットマップが存在するものとして処理を行います。(もちろん、XPM を使用するときはこのマクロを使用する前に対応するファイルをインクルードしておく必要があり、ビットマップの名前は Windows のリソース名の末尾に <code>_xpm</code> を付けたものにしてください) 以下に例を示します:</p>
+<div class="fragment"><pre class="fragment"><span class="comment">// ビットマップを作成する、簡単で移植性のある方法</span>
+<a class="code" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> bmp(<a class="code" href="group__group__funcmacro__gdi.html#ga309f860d17c1a8c4cc54c6e772a2fd09" title="このマクロはアプリケーションリソース (アプリケーションリソースが存在するプラットフォーム、つまり Windows と OS2 の場合) または XPM ファイルからビットマップを読み込みます。">wxBITMAP</a>(bmpname));
 
-<span class="comment">// which is roughly equivalent to the following</span>
+<span class="comment">// これは以下のコードと大体同じです</span>
 <span class="preprocessor">#if defined(__WXMSW__) || defined(__WXPM__)</span>
-<span class="preprocessor"></span>    <a class="code" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> bmp(<span class="stringliteral">"bmpname"</span>, <a class="code" href="gdicmn_8h.html#a90a1eb6d85b5044a99b706fd979f27f5aa6e62442a214629e2f34c2ab71e696ff">wxBITMAP_TYPE_BMP_RESOURCE</a>);
+<span class="preprocessor"></span>    <a class="code" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> bmp(<span class="stringliteral">"bmpname"</span>, <a class="code" href="gdicmn_8h.html#a90a1eb6d85b5044a99b706fd979f27f5aa6e62442a214629e2f34c2ab71e696ff">wxBITMAP_TYPE_BMP_RESOURCE</a>);
 <span class="preprocessor">#else // Unix</span>
-<span class="preprocessor"></span>    <a class="code" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> bmp(bmpname_xpm, <a class="code" href="gdicmn_8h.html#a90a1eb6d85b5044a99b706fd979f27f5a8ec4c227cd732472c3593215edd3dbf0">wxBITMAP_TYPE_XPM</a>);
+<span class="preprocessor"></span>    <a class="code" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> bmp(bmpname_xpm, <a class="code" href="gdicmn_8h.html#a90a1eb6d85b5044a99b706fd979f27f5a8ec4c227cd732472c3593215edd3dbf0">wxBITMAP_TYPE_XPM</a>);
 <span class="preprocessor">#endif</span>
-</pre></div><p>You should always use <a class="el" href="group__group__funcmacro__gdi.html#ga1f22eefa44998cbeb8f018978cf5d375" title="This macro loads an icon from either application resources (on the platforms for which they exist...">wxICON()</a> and <a class="el" href="group__group__funcmacro__gdi.html#ga309f860d17c1a8c4cc54c6e772a2fd09" title="This macro loads a bitmap from either application resources (on the platforms for which they exist...">wxBITMAP()</a> macros because they work for any platform (unlike the code above which doesn't deal with wxMac, wxX11, ...) and are shorter and more clear than versions with many <span class="literal">#ifdef</span> blocks. Even better, use the same XPMs on all platforms.</p>
+</pre></div><p>常に <a class="el" href="group__group__funcmacro__gdi.html#ga1f22eefa44998cbeb8f018978cf5d375" title="このマクロはアプリケーションリソース (アプリケーションリソースが存在するプラットフォーム、つまり Windows と OS2 の場合) または XPM ファイルからアイコンを読み込みます。">wxICON()</a> マクロと <a class="el" href="group__group__funcmacro__gdi.html#ga309f860d17c1a8c4cc54c6e772a2fd09" title="このマクロはアプリケーションリソース (アプリケーションリソースが存在するプラットフォーム、つまり Windows と OS2 の場合) または XPM ファイルからビットマップを読み込みます。">wxBITMAP()</a> マクロを使用するべきです。なぜなら、これらのマクロはどのプラットフォームでも動作しますし (上記のコードは wxMac、wxX11、... に対応していません)、<span class="literal">#ifdef</span> を使用したものより簡潔で明確だからです。もっと良い方法はすべてのプラットフォームで同じ XPM を使用することです。</p>
 <ul>
-<li><a class="el" href="overview_bitmap.html#overview_bitmap_supportedformats">Supported Bitmap File Formats</a> </li>
-<li><a class="el" href="overview_bitmap.html#overview_bitmap_handlers">Bitmap Format Handlers</a></li>
+<li><a class="el" href="overview_bitmap.html#overview_bitmap_supportedformats">対応しているビットマップファイル形式</a> </li>
+<li><a class="el" href="overview_bitmap.html#overview_bitmap_handlers">ビットマップ形式ハンドラ</a></li>
 </ul>
 <hr/>
 <h2><a class="anchor" id="overview_bitmap_supportedformats"></a>
-
-Supported Bitmap File Formats</h2>
-<p>The following lists the formats handled on different platforms. Note that missing or partially-implemented formats are automatically supplemented by using <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> to load the data, and then converting it to <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> form. Note that using <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> is the preferred way to load images in wxWidgets, with the exception of resources (XPM-files or native Windows resources).</p>
-<p>Writing an image format handler for <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> is also far easier than writing one for <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a>, because <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> has exactly one format on all platforms whereas <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> can store pixel data very differently, depending on colour depths and platform.</p>
+対応しているビットマップファイル形式</h2>
+<p>各プラットフォームで対応している形式の一覧を以下に示します。対応していない、または部分的にしか実装されていない形式は自動的に <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> を使用してデータの読み込みと <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> 形式への変換が行われることに注意してください。wxWidgets で画像を読み込む場合、リソース (XPM ファイルや Windows のリソース) から読み込む場合を除くと、<a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> を利用した方が良いことにも注意してください。</p>
+<p>また、<a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> 用の画像形式ハンドラは <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> のものより簡単に書くことができます。なぜなら、<a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> はすべてのプラットフォームでただひとつの形式を使用するのに対し、<a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> は色深度やプラットフォームに応じて様々な形式でピクセルデータを格納できるためです。</p>
 <h3><a class="anchor" id="overview_bitmap_supportedformats_bmp"></a>
 
 wxBitmap</h3>
-<p>Under Windows, <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> may load the following formats:</p>
+<p>Windows では <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> は以下の形式を読み込むことができます:</p>
 <ul>
-<li>Windows bitmap resource (wxBITMAP_TYPE_BMP_RESOURCE)  </li>
-<li>Windows bitmap file (wxBITMAP_TYPE_BMP)  </li>
-<li>XPM data and file (wxBITMAP_TYPE_XPM)  </li>
-<li>All formats that are supported by the <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> class.</li>
+<li>Windows ビットマップリソース (wxBITMAP_TYPE_BMP_RESOURCE) </li>
+<li>Windows ビットマップファイル (wxBITMAP_TYPE_BMP) </li>
+<li>XPM データおよび XPM ファイル (wxBITMAP_TYPE_XPM) </li>
+<li><a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> クラスの対応するすべての形式</li>
 </ul>
-<p>Under wxGTK, <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> may load the following formats:</p>
+<p>wxGTK では <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> は以下の形式を読み込むことができます:</p>
 <ul>
-<li>XPM data and file (wxBITMAP_TYPE_XPM)  </li>
-<li>All formats that are supported by the <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> class.</li>
+<li>XPM データおよび XPM ファイル (wxBITMAP_TYPE_XPM) </li>
+<li><a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> クラスの対応するすべての形式</li>
 </ul>
-<p>Under wxMotif and wxX11, <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> may load the following formats:</p>
+<p>wxMotif と wxX11 では <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> は以下の形式を読み込むことができます:</p>
 <ul>
-<li>XBM data and file (wxBITMAP_TYPE_XBM)  </li>
-<li>XPM data and file (wxBITMAP_TYPE_XPM)  </li>
-<li>All formats that are supported by the <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> class.</li>
+<li>XBM データおよび XBM ファイル (wxBITMAP_TYPE_XBM) </li>
+<li>XPM データおよび XPM ファイル (wxBITMAP_TYPE_XPM) </li>
+<li><a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> クラスの対応するすべての形式</li>
 </ul>
 <h3><a class="anchor" id="overview_bitmap_supportedformats_icon"></a>
 
 wxIcon</h3>
-<p>Under Windows, <a class="el" href="classwx_icon.html" title="An icon is a small rectangular bitmap usually used for denoting a minimized application.">wxIcon</a> may load the following formats:</p>
+<p>Windows では <a class="el" href="classwx_icon.html" title="アイコンは小さな矩形のビットマップで、最小化されたアプリケーションを表すためによく使用されます。">wxIcon</a> は以下の形式を読み込むことができます:</p>
 <ul>
-<li>Windows icon resource (wxBITMAP_TYPE_ICO_RESOURCE)  </li>
-<li>Windows icon file (wxBITMAP_TYPE_ICO)  </li>
-<li>XPM data and file (wxBITMAP_TYPE_XPM)</li>
+<li>Windows アイコンリソース (wxBITMAP_TYPE_ICO_RESOURCE) </li>
+<li>Windows アイコンファイル (wxBITMAP_TYPE_ICO) </li>
+<li>XPM データおよび XPM ファイル (wxBITMAP_TYPE_XPM)</li>
 </ul>
-<p>Under wxGTK, <a class="el" href="classwx_icon.html" title="An icon is a small rectangular bitmap usually used for denoting a minimized application.">wxIcon</a> may load the following formats:</p>
+<p>wxGTK では <a class="el" href="classwx_icon.html" title="アイコンは小さな矩形のビットマップで、最小化されたアプリケーションを表すためによく使用されます。">wxIcon</a> は以下の形式を読み込むことができます:</p>
 <ul>
-<li>XPM data and file (wxBITMAP_TYPE_XPM)  </li>
-<li>All formats that are supported by the <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> class.</li>
+<li>XPM データおよび XPM ファイル (wxBITMAP_TYPE_XPM) </li>
+<li><a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> クラスの対応するすべての形式</li>
 </ul>
-<p>Under wxMotif and wxX11, <a class="el" href="classwx_icon.html" title="An icon is a small rectangular bitmap usually used for denoting a minimized application.">wxIcon</a> may load the following formats:</p>
+<p>wxMotif と wxX11 では <a class="el" href="classwx_icon.html" title="アイコンは小さな矩形のビットマップで、最小化されたアプリケーションを表すためによく使用されます。">wxImage</a> は以下の形式を読み込むことができます:</p>
 <ul>
-<li>XBM data and file (wxBITMAP_TYPE_XBM)  </li>
-<li>XPM data and file (wxBITMAP_TYPE_XPM)  </li>
-<li>All formats that are supported by the <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> class.</li>
+<li>XBM データおよび XBM ファイル (wxBITMAP_TYPE_XBM) </li>
+<li>XPM データおよび XPM ファイル (wxBITMAP_TYPE_XPM) </li>
+<li><a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> クラスの対応するすべての形式</li>
 </ul>
 <h3><a class="anchor" id="overview_bitmap_supportedformats_cursor"></a>
 
 wxCursor</h3>
-<p>Under Windows, <a class="el" href="classwx_cursor.html" title="A cursor is a small bitmap usually used for denoting where the mouse pointer is, with a picture that ...">wxCursor</a> may load the following formats:</p>
+<p>Windows では <a class="el" href="classwx_cursor.html" title="カーソルは小さな矩形のビットマップで、マウスポインタの位置を表すためにマウスクリックを示す画像付きでよく使用されます。">wxCursor</a> は以下の形式を読み込むことができます:</p>
 <ul>
-<li>Windows cursor resource (wxBITMAP_TYPE_CUR_RESOURCE)  </li>
-<li>Windows cursor file (wxBITMAP_TYPE_CUR)  </li>
-<li>Windows icon file (wxBITMAP_TYPE_ICO)  </li>
-<li>Windows bitmap file (wxBITMAP_TYPE_BMP)</li>
+<li>Windows カーソルリソース (wxBITMAP_TYPE_CUR_RESOURCE) </li>
+<li>Windows カーソルファイル (wxBITMAP_TYPE_CUR) </li>
+<li>Windows アイコンファイル (wxBITMAP_TYPE_ICO) </li>
+<li>Windows ビットマップファイル (wxBITMAP_TYPE_BMP)</li>
 </ul>
-<p>Under wxGTK, <a class="el" href="classwx_cursor.html" title="A cursor is a small bitmap usually used for denoting where the mouse pointer is, with a picture that ...">wxCursor</a> may load the following formats (in addition to stock cursors):</p>
+<p>wxGTK では <a class="el" href="classwx_cursor.html" title="カーソルは小さな矩形のビットマップで、マウスポインタの位置を表すためにマウスクリックを示す画像付きでよく使用されます。">wxCursor</a> は (既存のカーソルに加えて) 以下の形式を読み込むことができます:</p>
 <ul>
-<li>None (stock cursors only).</li>
+<li>なし (既存のカーソルのみ)</li>
 </ul>
-<p>Under wxMotif and wxX11, <a class="el" href="classwx_cursor.html" title="A cursor is a small bitmap usually used for denoting where the mouse pointer is, with a picture that ...">wxCursor</a> may load the following formats:</p>
+<p>wxMotif と wxX11 では <a class="el" href="classwx_cursor.html" title="カーソルは小さな矩形のビットマップで、マウスポインタの位置を表すためにマウスクリックを示す画像付きでよく使用されます。">wxCursor</a> は以下の形式を読み込むことができます:</p>
 <ul>
-<li>XBM data and file (wxBITMAP_TYPE_XBM)</li>
+<li>XBM データおよび XBM ファイル (wxBITMAP_TYPE_XBM)</li>
 </ul>
 <h2><a class="anchor" id="overview_bitmap_handlers"></a>
-
-Bitmap Format Handlers</h2>
-<p>To provide extensibility, the functionality for loading and saving bitmap formats is not implemented in the <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> class, but in a number of handler classes, derived from <a class="el" href="classwx_bitmap_handler.html" title="This is the base class for implementing bitmap file loading/saving, and bitmap creation from data...">wxBitmapHandler</a>. There is a static list of handlers which <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> examines when a file load/save operation is requested.</p>
-<p>Some handlers are provided as standard, but if you have special requirements, you may wish to initialise the <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> class with some extra handlers which you write yourself or receive from a third party.</p>
-<p>To add a handler object to <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a>, your application needs to include the header which implements it, and then call the static function <a class="el" href="classwx_bitmap.html#a6418825ad15574229188e0c5f97a4f3a" title="Adds a handler to the end of the static list of format handlers.">wxBitmap::AddHandler()</a>.</p>
-<dl class="note"><dt><b>注:</b></dt><dd>Bitmap handlers are not implemented on all platforms, and new ones rarely need to be implemented since <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> can be used for loading most formats, as noted earlier.  </dd></dl>
+ビットマップ形式ハンドラ</h2>
+<p>拡張性のため、ビットマップ形式の読み書きは <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> クラスで実装されておらず、<a class="el" href="classwx_bitmap_handler.html" title="これはビットマップファイルの読み書き、およびデータからのビットマップの作成を実装するための基底クラスです。">wxBitmapHandler</a> を継承した多数のハンドラクラスで実装されています。これらのハンドラの静的な一覧が存在し、ファイルの読み書きが要求された時に <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> がこの一覧を調べます。</p>
+<p>いくつかのハンドラは標準で提供されていますが、特別な要件がある場合に自分で書いたハンドラやサードパーティーのハンドラを使用して <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> クラスを初期化したいと思うかもしれません。</p>
+<p><a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> のハンドラを追加する場合、ハンドラクラスを実装しているヘッダファイルをインクルードし、静的関数 <a class="el" href="classwx_bitmap.html#a6418825ad15574229188e0c5f97a4f3a" title="形式ハンドラの静的一覧の末尾にハンドラを追加します。">wxBitmap::AddHandler()</a> を呼ぶ必要があります。</p>
+<dl class="note"><dt><b>注:</b></dt><dd>ビットマップハンドラはすべてのプラットフォームで実装されているわけでありませんし、新しいものを実装する必要もほとんどないでしょう。なぜなら、前で述べたように <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> を使用することで大半の形式を読み込むことができるためです。 </dd></dl>
 </div></div><!-- window showing the filter options -->
 
 <div id="MSearchSelectWindow"

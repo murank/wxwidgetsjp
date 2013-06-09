@@ -8,15 +8,7 @@
 
 <H2>wxIcon</H2>
 <P>
-
-An icon is a small rectangular bitmap usually used for denoting a
-minimized application. It differs from a wxBitmap in always
-having a mask associated with it for transparent drawing. On some platforms,
-icons and bitmaps are implemented identically, since there is no real distinction between
-a wxBitmap with a mask and an icon; and there is no specific icon format on
-some platforms (X-based applications usually standardize on XPMs for small bitmaps
-and icons). However, some platforms (such as Windows) make the distinction, so
-a separate class is provided.<P>
+アイコンは小さな矩形のビットマップで、最小化されたアプリケーションを表すためによく使用されます。It differs from a wxBitmap in always having a mask associated with it for transparent drawing. On some platforms, icons and bitmaps are implemented identically, since there is no real distinction between a wxBitmap with a mask and an icon; and there is no specific icon format on some platforms (X-based applications usually standardize on XPMs for small bitmaps and icons). However, some platforms (such as Windows) make the distinction, so a separate class is provided.<P>
 <B><FONT COLOR="#FF0000">継承元</FONT></B><P>
 <A HREF="wx_wxbitmap.html#wxbitmap">wxBitmap</A><BR>
 
@@ -255,7 +247,7 @@ on the appropriate platform, or an icon resource on Windows.<P>
 <PRE>
 wxIcon icon(wxICON(mondrian));
 
-// Equivalent to:
+// これは以下と同等:
 
 #if defined(__WXGTK__) || defined(__WXMOTIF__)
 wxIcon icon(mondrian_xpm);

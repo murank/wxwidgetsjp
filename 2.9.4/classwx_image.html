@@ -135,15 +135,15 @@ function toggleVisibility(linkObj) {
 <area shape="rect" id="node2" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="5,6,80,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>This class encapsulates a platform-independent image.  </p>
+<div class="textblock"><p>このクラスはプラットフォーム非依存の画像をカプセル化します。 </p>
 <p>An image can be created from data, or using <a class="el" href="classwx_bitmap.html#a063fed54a77f63d2cfa69d12f9035fe2" title="Creates an image from a platform-dependent bitmap.">wxBitmap::ConvertToImage</a>. An image can be loaded from a file in a variety of formats, and is extensible to new formats via image format handlers. Functions are available to set and get image bits, so it can be used for basic image manipulation.</p>
-<p>A <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> cannot (currently) be drawn directly to a <a class="el" href="classwx_d_c.html" title="wxDC は図形やテキストを描画可能なデバイスコンテキストです。">wxDC</a>. Instead, a platform-specific <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> object must be created from it using the wxBitmap::wxBitmap(wxImage,int depth) constructor. This bitmap can then be drawn in a device context, using <a class="el" href="classwx_d_c.html#af982eb2d3b10c5617ef3559d51a1defc" title="Draw a bitmap on the device context at the specified point.">wxDC::DrawBitmap</a>.</p>
-<p>More on the difference between <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> and <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a>: <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> is just a buffer of RGB bytes with an optional buffer for the alpha bytes. It is all generic, platform independent and image file format independent code. It includes generic code for scaling, resizing, clipping, and other manipulations of the image data. OTOH, <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> is intended to be a wrapper of whatever is the native image format that is quickest/easiest to draw to a DC or to be the target of the drawing operations performed on a <a class="el" href="classwx_memory_d_c.html" title="メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。">wxMemoryDC</a>. By splitting the responsibilities between wxImage/wxBitmap like this then it's easier to use generic code shared by all platforms and image types for generic operations and platform specific code where performance or compatibility is needed.</p>
+<p>A <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> cannot (currently) be drawn directly to a <a class="el" href="classwx_d_c.html" title="wxDC は図形やテキストを描画可能なデバイスコンテキストです。">wxDC</a>. Instead, a platform-specific <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> object must be created from it using the wxBitmap::wxBitmap(wxImage,int depth) constructor. This bitmap can then be drawn in a device context, using <a class="el" href="classwx_d_c.html#af982eb2d3b10c5617ef3559d51a1defc" title="Draw a bitmap on the device context at the specified point.">wxDC::DrawBitmap</a>.</p>
+<p>More on the difference between <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> and <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a>: <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> is just a buffer of RGB bytes with an optional buffer for the alpha bytes. It is all generic, platform independent and image file format independent code. It includes generic code for scaling, resizing, clipping, and other manipulations of the image data. OTOH, <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> is intended to be a wrapper of whatever is the native image format that is quickest/easiest to draw to a DC or to be the target of the drawing operations performed on a <a class="el" href="classwx_memory_d_c.html" title="メモリデバイスコンテキストはビットマップ上に描画するための方法を提供します。">wxMemoryDC</a>. By splitting the responsibilities between wxImage/wxBitmap like this then it's easier to use generic code shared by all platforms and image types for generic operations and platform specific code where performance or compatibility is needed.</p>
 <p>One colour value of the image may be used as a mask colour which will lead to the automatic creation of a <a class="el" href="classwx_mask.html" title="This class encapsulates a monochrome mask bitmap, where the masked area is black and the unmasked are...">wxMask</a> object associated to the bitmap object.</p>
 <h2><a class="anchor" id="image_alpha"></a>
 
 Alpha channel support</h2>
-<p>Starting from wxWidgets 2.5.0 <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> supports alpha channel data, that is in addition to a byte for the red, green and blue colour components for each pixel it also stores a byte representing the pixel opacity.</p>
+<p>Starting from wxWidgets 2.5.0 <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> supports alpha channel data, that is in addition to a byte for the red, green and blue colour components for each pixel it also stores a byte representing the pixel opacity.</p>
 <p>An alpha value of 0 corresponds to a transparent pixel (null opacity) while a value of 255 means that the pixel is 100% opaque. The constants <a class="el" href="image_8h.html#a3fc15ee0d01004d2ffcce5f303c53694" title="Constant used to indicate the alpha value conventionally defined as the complete transparency.">wxIMAGE_ALPHA_TRANSPARENT</a> and <a class="el" href="image_8h.html#a8d30dfb344ca95ced11109cc37c17d67" title="Constant used to indicate the alpha value conventionally defined as the complete opacity.">wxIMAGE_ALPHA_OPAQUE</a> can be used to indicate those values in a more readable form.</p>
 <p>While all images have RGB data, not all images have an alpha channel. Before using <a class="el" href="classwx_image.html#a8e68eb081e49f51cc0410431385f9be9" title="Returns pointer to the array storing the alpha values for this image.">wxImage::GetAlpha</a> you should check if this image contains an alpha channel with <a class="el" href="classwx_image.html#abd42fd2c579837850ab5909ab2bf200c" title="Returns true if this image has alpha channel, false otherwise.">wxImage::HasAlpha</a>. Currently the BMP, PNG, TGA, and TIFF format handlers have full alpha channel support for loading so if you want to use alpha you have to use one of these formats. If you initialize the image alpha channel yourself using <a class="el" href="classwx_image.html#ab46f59f69221258da1397fd7c59e8671" title="This function is similar to SetData() and has similar restrictions.">wxImage::SetAlpha</a>, you should save it in either PNG, TGA, or TIFF format to avoid losing it as these are the only handlers that currently support saving with alpha.</p>
 <h2><a class="anchor" id="image_handlers"></a>
@@ -170,7 +170,7 @@ Available image handlers</h2>
 <p>Saving GIFs requires images of maximum 8 bpp (see <a class="el" href="classwx_quantize.html" title="Performs quantization, or colour reduction, on a wxImage.">wxQuantize</a>), and the alpha channel converted to a mask (see <a class="el" href="classwx_image.html#a3951b3fc49b0ff7154b109d63533a31f" title="If the image has alpha channel, this method converts it to mask.">wxImage::ConvertAlphaToMask</a>). Saving an animated GIF requires images of the same size (see wxGIFHandler::SaveAnimation)</p>
 <h2></h2>
 <div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__gdi.html">Graphics Device Interface (GDI)</a></span></div><p><span class="stdobj">Predefined objects/pointers:</span> <a class="el" href="image_8h.html#aea75fc2e13965b07bf9369ac4c5d1343" title="An instance of an empty image without an alpha channel.">wxNullImage</a></p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a>, <a class="el" href="group__group__funcmacro__appinitterm.html#ga27f6c78d5d13374a28022b7bd44c6823" title="Initializes all available image handlers.">wxInitAllImageHandlers()</a>, <a class="el" href="classwx_pixel_data.html" title="A class template with ready to use implementations for getting direct and efficient access to wxBitma...">wxPixelData</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a>, <a class="el" href="group__group__funcmacro__appinitterm.html#ga27f6c78d5d13374a28022b7bd44c6823" title="Initializes all available image handlers.">wxInitAllImageHandlers()</a>, <a class="el" href="classwx_pixel_data.html" title="A class template with ready to use implementations for getting direct and efficient access to wxBitma...">wxPixelData</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 クラス</h2></td></tr>
@@ -182,7 +182,7 @@ Available image handlers</h2>
 
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_image.html#a0a2febdc997f1d09c98f76fdaf85113d">wxImage</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates an empty <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> object without an alpha channel.    <a href="#a0a2febdc997f1d09c98f76fdaf85113d"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates an empty <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> object without an alpha channel.    <a href="#a0a2febdc997f1d09c98f76fdaf85113d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_image.html#a21652c36c8e51bc696756afeaefe2d01">wxImage</a> (int width, int height, bool clear=true)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates an image with the given size and clears it if requested.    <a href="#a21652c36c8e51bc696756afeaefe2d01"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_image.html#ae071c8cdd85a48655ba59a70aeced3d4">wxImage</a> (const <a class="el" href="classwx_size.html">wxSize</a> &amp;sz, bool clear=true)</td></tr>
@@ -427,7 +427,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Creates an empty <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> object without an alpha channel.  </p>
+<p>Creates an empty <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> object without an alpha channel.  </p>
 
 </div>
 </div><!-- doxytag: member="wxImage::wxImage" ref="a21652c36c8e51bc696756afeaefe2d01" args="(int width, int height, bool clear=true)" -->
@@ -542,7 +542,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Creates an image from data in memory.  </p>
-<p>If <em>static_data</em> is <span class="literal">false</span> then the <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> will take ownership of the data and free it afterwards. For this, it has to be allocated with <em>malloc</em>.</p>
+<p>If <em>static_data</em> is <span class="literal">false</span> then the <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> will take ownership of the data and free it afterwards. For this, it has to be allocated with <em>malloc</em>.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">width</td><td>Specifies the width of the image.  </td></tr>
@@ -634,7 +634,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Creates an image from data in memory.  </p>
-<p>If <em>static_data</em> is <span class="literal">false</span> then the <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> will take ownership of the data and free it afterwards. For this, it has to be allocated with <em>malloc</em>.</p>
+<p>If <em>static_data</em> is <span class="literal">false</span> then the <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> will take ownership of the data and free it afterwards. For this, it has to be allocated with <em>malloc</em>.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">width</td><td>Specifies the width of the image.  </td></tr>
@@ -948,7 +948,7 @@ Static Public Member Functions</h2></td></tr>
 </pre></div><p>See <a class="el" href="classwx_image.html#image_handlers">Available image handlers</a> for a list of the available handlers. You can also use <a class="el" href="group__group__funcmacro__appinitterm.html#ga27f6c78d5d13374a28022b7bd44c6823" title="Initializes all available image handlers.">wxInitAllImageHandlers()</a> to add handlers for all the image formats supported by wxWidgets at once.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">handler</td><td>A heap-allocated handler object which will be deleted by <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> if it is removed later by <a class="el" href="classwx_image.html#a70ef86ff481bc18c0a32f5467a071e42" title="Finds the handler with the given name, and removes it.">RemoveHandler()</a> or at program shutdown.  </td></tr>
+    <tr><td class="paramname">handler</td><td>A heap-allocated handler object which will be deleted by <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> if it is removed later by <a class="el" href="classwx_image.html#a70ef86ff481bc18c0a32f5467a071e42" title="Finds the handler with the given name, and removes it.">RemoveHandler()</a> or at program shutdown.  </td></tr>
   </table>
   </dd>
 </dl>
@@ -2266,8 +2266,8 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns the palette associated with the image.  </p>
-<p>Currently the palette is only used when converting to <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> under Windows.</p>
-<p>Some of the <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> handlers have been modified to set the palette if one exists in the image file (usually 256 or less colour images in GIF or PNG format).  </p>
+<p>Currently the palette is only used when converting to <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> under Windows.</p>
+<p>Some of the <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> handlers have been modified to set the palette if one exists in the image file (usually 256 or less colour images in GIF or PNG format).  </p>
 
 </div>
 </div><!-- doxytag: member="wxImage::GetRed" ref="ade7e4b89f960bffbc09a88863145397a" args="(int x, int y) const " -->
@@ -2489,7 +2489,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Internal use only.  </p>
-<p>Adds standard image format handlers. It only install wxBMPHandler for the time being, which is used by <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a>.</p>
+<p>Adds standard image format handlers. It only install wxBMPHandler for the time being, which is used by <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a>.</p>
 <p>This function is called by wxWidgets on startup, and shouldn't be called by the user.</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_image_handler.html" title="This is the base class for implementing image file loading/saving, and image creation from data...">wxImageHandler</a>, <a class="el" href="group__group__funcmacro__appinitterm.html#ga27f6c78d5d13374a28022b7bd44c6823" title="Initializes all available image handlers.">wxInitAllImageHandlers()</a>, <a class="el" href="classwx_quantize.html" title="Performs quantization, or colour reduction, on a wxImage.">wxQuantize</a> </dd></dl>
 
@@ -3365,13 +3365,13 @@ Static Public Member Functions</h2></td></tr>
 <p>It should also be noted that the high quality scaling may not work as expected when using a single mask colour for transparency, as the scaling will blur the image and will therefore remove the mask partially. Using the alpha channel will work.</p>
 <p>例: </p>
 <div class="fragment"><pre class="fragment">        <span class="comment">// get the bitmap from somewhere</span>
-        <a class="code" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> bmp = ...;
+        <a class="code" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> bmp = ...;
 
         <span class="comment">// rescale it to have size of 32*32</span>
         <span class="keywordflow">if</span> ( bmp.<a class="code" href="classwx_bitmap.html#a513b5dc67c3ffa7c9a6a5aacbc5ed0f2" title="Gets the width of the bitmap in pixels.">GetWidth</a>() != 32 || bmp.<a class="code" href="classwx_bitmap.html#a43fa1cfa77a428259d68e6a237aaeba2" title="Gets the height of the bitmap in pixels.">GetHeight</a>() != 32 )
         {
-            <a class="code" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> image = bmp.<a class="code" href="classwx_bitmap.html#a063fed54a77f63d2cfa69d12f9035fe2" title="Creates an image from a platform-dependent bitmap.">ConvertToImage</a>();
-            bmp = <a class="code" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a>(image.<a class="code" href="classwx_image.html#aaf10a9f0a8284a9ccfe988d0a470d4e9" title="Returns a scaled version of the image.">Scale</a>(32, 32));
+            <a class="code" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> image = bmp.<a class="code" href="classwx_bitmap.html#a063fed54a77f63d2cfa69d12f9035fe2" title="Creates an image from a platform-dependent bitmap.">ConvertToImage</a>();
+            bmp = <a class="code" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a>(image.<a class="code" href="classwx_image.html#aaf10a9f0a8284a9ccfe988d0a470d4e9" title="Returns a scaled version of the image.">Scale</a>(32, 32));
 
             <span class="comment">// another possibility:</span>
             image.<a class="code" href="classwx_image.html#a35227071eb0de3c0c035324838071001" title="Changes the size of the image in-place by scaling it: after a call to this function,the image will have the given width and height.">Rescale</a>(32, 32);
@@ -3408,7 +3408,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>This function is similar to <a class="el" href="classwx_image.html#a736a8fc26d32e5eab70682b115bacacf" title="Sets the image data without performing checks.">SetData()</a> and has similar restrictions.  </p>
 <p>The pointer passed to it may however be <span class="literal">NULL</span> in which case the function will allocate the alpha array internally -- this is useful to add alpha channel data to an image which doesn't have any.</p>
-<p>If the pointer is not <span class="literal">NULL</span>, it must have one byte for each image pixel and be allocated with malloc(). <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> takes ownership of the pointer and will free it unless <em>static_data</em> parameter is set to <span class="literal">true</span> -- in this case the caller should do it.  </p>
+<p>If the pointer is not <span class="literal">NULL</span>, it must have one byte for each image pixel and be allocated with malloc(). <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> takes ownership of the pointer and will free it unless <em>static_data</em> parameter is set to <span class="literal">true</span> -- in this case the caller should do it.  </p>
 
 </div>
 </div><!-- doxytag: member="wxImage::SetAlpha" ref="a882406861db4666fb619af90a1cb4b45" args="(int x, int y, unsigned char alpha)" -->
@@ -3517,7 +3517,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Sets the image data without performing checks.  </p>
 <p>The data given must have the size (width*height*3) or results will be unexpected. Don't use this method if you aren't sure you know what you are doing.</p>
 <p>The data must have been allocated with <code>malloc()</code>, <b>NOT</b> with <code>operator</code> new.</p>
-<p>If <em>static_data</em> is <span class="literal">false</span>, after this call the pointer to the data is owned by the <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> object, that will be responsible for deleting it. Do not pass to this function a pointer obtained through <a class="el" href="classwx_image.html#a5cac38e8fd2536852406d9c8daa55023" title="Returns the image data as an array.">GetData()</a>.  </p>
+<p>If <em>static_data</em> is <span class="literal">false</span>, after this call the pointer to the data is owned by the <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> object, that will be responsible for deleting it. Do not pass to this function a pointer obtained through <a class="el" href="classwx_image.html#a5cac38e8fd2536852406d9c8daa55023" title="Returns the image data as an array.">GetData()</a>.  </p>
 
 </div>
 </div><!-- doxytag: member="wxImage::SetMask" ref="a62645fe559149a8ee6b27ddc07cfc220" args="(bool hasMask=true)" -->
@@ -3700,7 +3700,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Associates a palette with the image.  </p>
-<p>The palette may be used when converting <a class="el" href="classwx_image.html" title="This class encapsulates a platform-independent image.">wxImage</a> to <a class="el" href="classwx_bitmap.html" title="This class encapsulates the concept of a platform-dependent bitmap, either monochrome or colour or co...">wxBitmap</a> (MSW only at present) or in file save operations (none as yet).  </p>
+<p>The palette may be used when converting <a class="el" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> to <a class="el" href="classwx_bitmap.html" title="このクラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。">wxBitmap</a> (MSW only at present) or in file save operations (none as yet).  </p>
 
 </div>
 </div><!-- doxytag: member="wxImage::SetRGB" ref="a17f90246727d089675e7f44a414280d1" args="(const wxRect &amp;rect, unsigned char red, unsigned char green, unsigned char blue)" -->
