@@ -1,65 +1,27 @@
 <HTML>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>wxConfig classes overview</title></head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>wxConfig クラスの概要</title></head>
 
 <BODY BGCOLOR=#FFFFFF>
 <A NAME="wxconfigoverview"></A><CENTER>
 <A HREF="wx_contents.html"><img align=center src="contents.gif" BORDER=0 ALT="Contents"></A> <A HREF="wx_overviews.html#overviews"><img align=center src="up.gif" BORDER=0 ALT="Up"></A> <A HREF="wx_debuggingoverview.html#debuggingoverview"><img align=center src="back.gif" BORDER=0 ALT="Previous"></A> <A HREF="wx_fs.html#fs"><img align=center src="forward.gif" BORDER=0 ALT="Next"></A> </CENTER><HR>
 
-<H2>wxConfig classes overview</H2>
+<H2>wxConfig クラスの概要</H2>
 <P>
-
-Classes: <A HREF="wx_wxconfigbase.html#wxconfigbase">wxConfig</A><P>
-
-This overview briefly describes what the config classes are and what they are
-for. All the details about how to use them may be found in the description of
-the <A HREF="wx_wxconfigbase.html#wxconfigbase">wxConfigBase</A> class and the documentation of the
-file, registry and INI file based implementations mentions all the
-features/limitations specific to each one of these versions.<P>
-
-The config classes provide a way to store some application configuration
-information. They were especially designed for this usage and, although may
-probably be used for many other things as well, should be limited to it. It
-means that this information should be:<P>
+クラス: <A HREF="wx_wxconfigbase.html#wxconfigbase">wxConfig</A><P>
+この概要ではコンフィグクラスとは何で、何のために使用するのかについて簡潔に説明します。使用方法についての詳細は <A HREF="wx_wxconfigbase.html#wxconfigbase">wxConfigBase</A> クラスの説明の中で記載しています。また、ファイル、レジストリ、INI ファイルベースの実装についてのドキュメントでは、それぞれのバージョン独自の機能/制限について触れています。<P>
+コンフィグクラスではアプリケーションの設定情報を格納するための方法を提供します。これらのクラスはこの用途に特化して設計されており、他のことにも使用されるかもしれませんが、この用途に限定して使用するべきです。つまり、取り扱う情報は次の条件を満たすべきです:<P>
 <OL>
 
-<LI>  Typed, i.e. strings or numbers for the moment. You can not store
-binary data, for example.
-
-</LI><LI>  Small. For instance, it is not recommended to use the Windows
-registry for amounts of data more than a couple of kilobytes.
-
-</LI><LI>  Not performance critical, neither from speed nor from a memory
-consumption point of view.
-
+<LI> 型を持つ。今のところ、文字列か数値であるべきです。例えば、バイナリデータを格納することはできません。
+</LI><LI> 小さい。例えば、Windows のレジストリに数キロバイト以上のデータを格納することは推奨されていません。
+</LI><LI> 実行速度やメモリ消費量といった観点の性能が重要視されない。
 </LI></OL>
 <P>
-
-On the other hand, the features provided make them very useful for storing all
-kinds of small to medium volumes of hierarchically-organized, heterogeneous
-data. In short, this is a place where you can conveniently stuff all your data
-(numbers and strings) organizing it in a tree where you use the
-filesystem-like paths to specify the location of a piece of data. In
-particular, these classes were designed to be as easy to use as possible.<P>
-
-From another point of view, they provide an interface which hides the
-differences between the Windows registry and the standard Unix text format
-configuration files. Other (future) implementations of wxConfigBase might also
-understand GTK resource files or their analogues on the KDE side.<P>
-
-In any case, each implementation of wxConfigBase does its best to
-make the data look the same way everywhere. Due to limitations of the underlying 
-physical storage, it may not implement 100% of the base class functionality.<P>
-
-There are groups of entries and the entries themselves. Each entry contains either a string or a number
-(or a boolean value; support for other types of data such as dates or
-timestamps is planned) and is identified by the full path to it: something
-like /MyApp/UserPreferences/Colors/Foreground. The previous elements in the
-path are the group names, and each name may contain an arbitrary number of entries
-and subgroups. The path components are <B>always</B> separated with a slash,
-even though some implementations use the backslash internally. Further
-details (including how to read/write these entries) may be found in 
-the documentation for <A HREF="wx_wxconfigbase.html#wxconfigbase">wxConfigBase</A>.<P>
+一方で、階層構造を持ち、小規模から中規模であるすべての種類のデータを格納するのにこれらの提供機能が非常に役立ちます。要するに、ファイルシステムのようなパスを使用してデータの場所を指定する木構造にすべてのデータ (数値や文字列) を詰め込むことができるということです。特に、これらのクラスはできるだけ簡単に使用できるように設計されています。<P>
+別の見方をすれば、これらのクラスは Windows のレジストリと Unix のテキスト形式の設定ファイルの差異を隠蔽するインタフェースを提供しています。他の (将来の) wxConfigBase の実装では GTK リソースファイルや、KDE におけるその類似品も扱えるようになるかもしれません。<P>
+どのような場合でも、wxConfigBase の各実装はどこでも同じ方法でデータを扱えるように最善を尽くします。根底にある物理ストレージの制約のため、基底クラスの機能を 100% 実装しているわけではありません。<P>
+設定にはエントリとエントリのグループが存在します。各エントリは文字列か数値 (もしくは真偽値; 日付やタイムスタンプなど、他の型にも対応する予定です) のいずれかを含み、それらは (/MyApp/UserPreferences/Colors/Foreground のような) フルパスで識別されます。パスの前の要素はグループ名です。各グループには任意の数のエントリやサブグループが含まれます。パスの要素は <B>常に</B> スラッシュで区切られます。一部の実装で内部的にバックスラッシュを使用していてもこれは変わりません。(エントリの読み書きの仕方を含む) より詳しい情報は <A HREF="wx_wxconfigbase.html#wxconfigbase">wxConfigBase</A> のドキュメントにあります。<P>
 
 </FONT><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
