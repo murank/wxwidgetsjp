@@ -1464,6 +1464,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="14" x="14">&lt;a14&gt;</bpt>Working with program options: wxConfig<ept i="14">&lt;/a14&gt;</ept><it pos="begin" x="15">&lt;br15&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T145441Z">
+        <seg><bpt i="14" x="14">&lt;a14&gt;</bpt>プログラムオプションの使用: wxConfig<ept i="14">&lt;/a14&gt;</ept><it pos="begin" x="15">&lt;br15&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="14" x="14">&lt;a14&gt;</bpt>wxLogChain<ept i="14">&lt;/a14&gt;</ept>,<it pos="begin" x="15">&lt;br15&gt;</it></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T003254Z">
@@ -1814,6 +1822,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T112214Z">
         <seg>メッセージの形式を変更することなく、ログメッセージを単純に他の場所へリダイレクトしたいだけの場合、<bpt i="5" x="5">&lt;a5&gt;</bpt>wxLog::DoLogTextAtLevel()<ept i="5">&lt;/a5&gt;</ept> をオーバーライドします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="60" x="60">&lt;a60&gt;</bpt><bpt i="61" x="61">&lt;b61&gt;</bpt>wxConfig classes overview<ept i="61">&lt;/b61&gt;</ept><ept i="60">&lt;/a60&gt;</ept><it pos="begin" x="62">&lt;br62&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T145503Z">
+        <seg><bpt i="60" x="60">&lt;a60&gt;</bpt><bpt i="61" x="61">&lt;b61&gt;</bpt>wxConfig クラスの概要<ept i="61">&lt;/b61&gt;</ept><ept i="60">&lt;/a60&gt;</ept><it pos="begin" x="62">&lt;br62&gt;</it></seg>
       </tuv>
     </tu>
     <tu>
@@ -3932,6 +3948,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>All the details about how to use them may be found in the description of the <bpt i="0" x="0">&lt;a0&gt;</bpt>wxConfigBase<ept i="0">&lt;/a0&gt;</ept> class and the documentation of the file, registry and INI file based implementations mentions all the features/limitations specific to each one of these versions.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T145852Z">
+        <seg>使用方法についての詳細は <bpt i="0" x="0">&lt;a0&gt;</bpt>wxConfigBase<ept i="0">&lt;/a0&gt;</ept> クラスの説明の中で記載しています。また、ファイル、レジストリ、INI ファイルベースの実装についてのドキュメントでは、それぞれのバージョン独自の機能/制限について触れています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>All wxWidgets platforms support XPMs for small bitmaps and icons.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130609T140218Z">
@@ -4968,6 +4992,22 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Classes: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxConfig<ept i="0">&lt;/a0&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T145550Z">
+        <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxConfig<ept i="0">&lt;/a0&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Classes: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxConfigBase<ept i="0">&lt;/a0&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130612T153832Z">
+        <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxConfigBase<ept i="0">&lt;/a0&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Classes: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDialog<ept i="0">&lt;/a0&gt;</ept></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130531T145543Z">
@@ -5442,6 +5482,14 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Due to limitations of the underlying physical storage, it may not implement 100% of the base class functionality.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T151817Z">
+        <seg>根底にある物理ストレージの制約のため、基底クラスの機能を 100% 実装しているわけではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>During program development you will need the gettext package for working with message catalogs.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130502T160435Z">
@@ -5642,6 +5690,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T024810Z">
         <seg>EVT_SIZE(MyFrame::OnSize)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Each entry contains either a string or a number (or a boolean value; support for other types of data such as dates or timestamps is planned) and is identified by the full path to it: something like /MyApp/UserPreferences/Colors/Foreground.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T152016Z">
+        <seg>各エントリは文字列か数値 (もしくは真偽値; 日付やタイムスタンプなど、他の型にも対応する予定です) のいずれかを含み、それらは (/MyApp/UserPreferences/Colors/Foreground のような) フルパスで識別されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Each entry contains either a string or a number (or a boolean value; support for other types of data such as dates or timestamps is planned) and is identified by the full path to it: something like <bpt i="0" x="0">&lt;c0&gt;</bpt>/MyApp/UserPreferences/Colors/Foreground<ept i="0">&lt;/c0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130612T153929Z">
+        <seg>各エントリは文字列か数値 (もしくは真偽値; 日付やタイムスタンプなど、他の型にも対応する予定です) のいずれかを含み、それらは (<bpt i="0" x="0">&lt;c0&gt;</bpt>/MyApp/UserPreferences/Colors/Foreground<ept i="0">&lt;/c0&gt;</ept> のような) フルパスで識別されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6190,6 +6254,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>For instance, it is not recommended to use the Windows registry for amounts of data more than a couple of kilobytes.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T150545Z">
+        <seg>例えば、Windows のレジストリに数キロバイト以上のデータを格納することは推奨されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>For menu commands and most control commands (such as button presses), <bpt i="1" x="1">&lt;a1&gt;</bpt>wxCommandEvent<ept i="1">&lt;/a1&gt;</ept> is used.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T081510Z">
@@ -6334,6 +6406,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>From another point of view, they provide an interface which hides the differences between the Windows registry and the standard Unix text format configuration files.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T151327Z">
+        <seg>別の見方をすれば、これらのクラスは Windows のレジストリと Unix のテキスト形式の設定ファイルの差異を隠蔽するインタフェースを提供しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>From wxWidgets 2.0, <bpt i="0" x="0">&lt;i0&gt;</bpt>event tables<ept i="0">&lt;/i0&gt;</ept> are used instead, with a few exceptions.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T075240Z">
@@ -6354,6 +6434,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T072621Z">
         <seg>関数: <bpt i="0" x="0">&lt;a0&gt;</bpt>ファイル関数<ept i="0">&lt;/a0&gt;</ept> を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Further details (including how to read/write these entries) may be found in the documentation for <bpt i="1" x="1">&lt;a1&gt;</bpt>wxConfigBase<ept i="1">&lt;/a1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T152236Z">
+        <seg>(エントリの読み書きの仕方を含む) より詳しい情報は <bpt i="1" x="1">&lt;a1&gt;</bpt>wxConfigBase<ept i="1">&lt;/a1&gt;</ept> のドキュメントにあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7016,6 +7104,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>In any case, each implementation of <bpt i="0" x="0">&lt;a0&gt;</bpt>wxConfigBase<ept i="0">&lt;/a0&gt;</ept> does its best to make the data look the same way everywhere.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130612T153913Z">
+        <seg>どのような場合でも、<bpt i="0" x="0">&lt;a0&gt;</bpt>wxConfigBase<ept i="0">&lt;/a0&gt;</ept> の各実装はどこでも同じ方法でデータを扱えるように最善を尽くします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>In any case, each implementation of wxConfigBase does its best to make the data look the same way everywhere.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T151718Z">
+        <seg>どのような場合でも、wxConfigBase の各実装はどこでも同じ方法でデータを扱えるように最善を尽くします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>In emergencies the <bpt i="0" x="0">&lt;a0&gt;</bpt>wxExit<ept i="0">&lt;/a0&gt;</ept> function can be called to kill the application however normally the application shuts down automatically, <bpt i="1" x="1">&lt;a1&gt;</bpt>see below<ept i="1">&lt;/a1&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130527T160945Z">
@@ -7144,6 +7248,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>In particular, these classes were designed to be as easy to use as possible.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T151151Z">
+        <seg>特に、これらのクラスはできるだけ簡単に使用できるように設計されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>In particular, this means that errors logged by wxWidgets code itself (e.g. when it fails to perform some operation, for instance <bpt i="0" x="0">&lt;a0&gt;</bpt>wxFile::Open()<ept i="0">&lt;/a0&gt;</ept> logs an error when it fails to open a file) will be processed and shown to the user.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T092846Z">
@@ -7156,6 +7268,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T022520Z">
         <seg>実際に、テキストコントロールで 'a' から 'z' と 'A' から 'Z' までのみを受け付ける場合、以下のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>In short, this is a place where you can conveniently stuff all your data (numbers and strings) organizing it in a tree where you use the filesystem-like paths to specify the location of a piece of data.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T153944Z">
+        <seg>要するに、 ファイルシステムのようなパスを使用してデータの場所を指定する木構造にすべてのデータ (数値や文字列) を詰め込むことができるということです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7572,6 +7692,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T065828Z">
         <seg>このクラスを使って、すべてのファイル、特定のパターンに一致するファイル、隠しファイル以外のファイルを列挙することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It means that this information should be:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T150158Z">
+        <seg>つまり、取り扱う情報は次の条件を満たすべきです:</seg>
       </tuv>
     </tu>
     <tu>
@@ -8002,6 +8130,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Not performance critical, neither from speed nor from a memory consumption point of view.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T150728Z">
+        <seg>実行速度やメモリ消費量といった観点の性能が重要視されない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Not so with Bind&lt;&gt;() which can be used to specify these handlers which will handle the event.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T043258Z">
@@ -8378,6 +8514,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>On the other hand, the features provided make them very useful for storing all kinds of small to medium volumes of hierarchically-organized, heterogeneous data.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T150843Z">
+        <seg>一方で、階層構造を持ち、小規模から中規模であるすべての種類のデータを格納するのにこれらの提供機能が非常に役立ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>On the other hand, you still need to know about the event tables if only because you are going to see them in many samples and examples.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T023007Z">
@@ -8462,6 +8606,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T080108Z">
         <seg>もしくは wxID_LOWEST 以下の識別子を使用することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Other (future) implementations of <bpt i="0" x="0">&lt;a0&gt;</bpt>wxConfigBase<ept i="0">&lt;/a0&gt;</ept> might also understand GTK resource files or their analogues on the KDE side.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130612T153903Z">
+        <seg>他の (将来の) <bpt i="0" x="0">&lt;a0&gt;</bpt>wxConfigBase<ept i="0">&lt;/a0&gt;</ept> の実装では GTK リソースファイルや、KDE におけるその類似品も扱えるようになるかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Other (future) implementations of wxConfigBase might also understand GTK resource files or their analogues on the KDE side.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T151604Z">
+        <seg>他の (将来の) wxConfigBase の実装では GTK リソースファイルや、KDE におけるその類似品も扱えるようになるかもしれません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9222,6 +9382,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Small.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T150454Z">
+        <seg>小さい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>So before you make the choice between static event tables and dynamically connecting the event handlers, let us discuss these two ways in more detail.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T022437Z">
@@ -9690,6 +9858,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130513T153151Z">
         <seg>子フレームクラスはイベントを関連するビューへ直接送信し、このビューがさらに関連するドキュメントへイベントを転送します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The config classes provide a way to store some application configuration information.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T153634Z">
+        <seg>コンフィグクラスではアプリケーションの設定情報を格納するための方法を提供します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10190,10 +10366,34 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The path components are <bpt i="0" x="0">&lt;b0&gt;</bpt>always<ept i="0">&lt;/b0&gt;</ept> separated with a slash, even though some implementations use the backslash internally.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T152156Z">
+        <seg>パスの要素は <bpt i="0" x="0">&lt;b0&gt;</bpt>常に<ept i="0">&lt;/b0&gt;</ept> スラッシュで区切られます。一部の実装で内部的にバックスラッシュを使用していてもこれは変わりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The path components are <bpt i="0" x="0">&lt;e0&gt;</bpt>always<ept i="0">&lt;/e0&gt;</ept> separated with a slash, even though some implementations use the backslash internally.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130612T153938Z">
+        <seg>パスの要素は <bpt i="0" x="0">&lt;e0&gt;</bpt>常に<ept i="0">&lt;/e0&gt;</ept> スラッシュで区切られます。一部の実装で内部的にバックスラッシュを使用していてもこれは変わりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The possibilities of handling events in this way are rather different.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T024547Z">
         <seg>この方法ではイベント処理のやり方が大きく異なります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The previous elements in the path are the group names, and each name may contain an arbitrary number of entries and subgroups.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T152106Z">
+        <seg>パスの前の要素はグループ名です。各グループには任意の数のエントリやサブグループが含まれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10638,6 +10838,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>There are groups of entries and the entries themselves.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T151858Z">
+        <seg>設定にはエントリとエントリのグループが存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>There are several methods which may be overridden in the derived class to customize log messages handling: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::DoLogRecord()<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog::DoLogTextAtLevel()<ept i="1">&lt;/a1&gt;</ept> and <bpt i="2" x="2">&lt;a2&gt;</bpt>wxLog::DoLogText()<ept i="2">&lt;/a2&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T122530Z">
@@ -10866,6 +11074,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T035228Z">
         <seg>これらの関数は任意のバイナリデータをもとに <bpt i="3" x="3">&lt;a3&gt;</bpt>wxString<ept i="3">&lt;/a3&gt;</ept> を作成しますが、その際にバイナリデータが現在のロケールのエンコーディングで符号化されていると仮定しません。そして、なんらかの変換や <bpt i="4" x="4">&lt;a4&gt;</bpt>wxString::From8BitData()<ept i="4">&lt;/a4&gt;</ept> で行われた変換の逆変換を行うことなく、元のバイナリデータを取得することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>They were especially designed for this usage and, although may probably be used for many other things as well, should be limited to it.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T150140Z">
+        <seg>これらのクラスはこの用途に特化して設計されており、他のことにも使用されるかもしれませんが、この用途に限定して使用するべきです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11510,6 +11726,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This overview briefly describes what the config classes are and what they are for.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T145624Z">
+        <seg>この概要ではコンフィグクラスとは何で、何のために使用するのかについて簡潔に説明します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This section briefly describes the state of the Unicode support in wxWidgets.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130430T154902Z">
@@ -11970,6 +12194,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130529T141738Z">
         <seg>なるべく wxDC 型を使用してパラメータ化するようにしてください。このようにした場合、異なるデバイスコンテキストを渡すことで多くのデバイスに対して同じコードを使用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Typed, i.e. strings or numbers for the moment.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T150434Z">
+        <seg>型を持つ。今のところ、文字列か数値であるべきです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13014,6 +13246,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>You can not store binary data, for example.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T150447Z">
+        <seg>例えば、バイナリデータを格納することはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>You can set WXPREFIX if you are for example distributing a binary version of an application and you don't know in advance where it will be installed.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130523T155354Z">
@@ -13042,6 +13282,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T080114Z">
         <seg>新たな識別子を定義する場合、wxID_HIGHEST 以上の値を使用することで安全に値を決定することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You cannot store binary data, for example.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130612T153851Z">
+        <seg>例えば、バイナリデータを格納することはできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14232,6 +14480,30 @@ protected:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxConfig Overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130612T153747Z">
+        <seg>wxConfig の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxConfig classes overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130610T145546Z">
+        <seg>wxConfig クラスの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxConfigBase defines the basic interface of all config classes.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130612T153829Z">
+        <seg>wxConfigBase はすべてのコンフィグクラスの基本インタフェースを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxCursor</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130609T142214Z">
@@ -15216,6 +15488,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130528T152152Z">
         <seg>wxWidgets: wxWidgets: wxApp の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxWidgets: wxWidgets: wxConfig Overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130612T153807Z">
+        <seg>wxWidgets: wxWidgets: wxConfig の概要</seg>
       </tuv>
     </tu>
     <tu>
