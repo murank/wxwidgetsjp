@@ -134,7 +134,7 @@ function toggleVisibility(linkObj) {
 <ul>
 <li><em>イベント型</em> : イベントの型を一意に識別するための wxEventType 型の値です。例えば、ボタンクリック、リストボックスの選択、キー押下はすべて別々のイベント型のイベントを生成します。</li>
 <li><em>イベントクラス</em> : 各イベントは自分自身に関連する情報を持っており、これは <a class="el" href="classwx_event.html" title="wxEvent はコールバック関数かメンバ関数に渡されるイベントの情報を格納した構造体です。">wxEvent</a> の継承クラスで表現されます。同じイベントクラスを別のイベント型に使用することができます。例えば、ボタンのクリックイベントとリストボックスの選択イベントは両方とも <a class="el" href="classwx_command_event.html" title="このイベントクラスは様々な単純コントロールから送信されるコマンドイベントに関する情報を含んでいます。">wxCommandEvent</a> クラスを使用しています (し、他のすべての単純なコントロールイベントも同じものを使用しています) が、キー押下イベントはイベントに関連する情報が異なるため、<a class="el" href="classwx_key_event.html" title="このイベントクラスはキーの押下イベントや解放イベントに関する情報を含んでいます。">wxKeyEvent</a> を使用しています。</li>
-<li><em>Event 発生元</em> : <a class="el" href="classwx_event.html" title="wxEvent はコールバック関数かメンバ関数に渡されるイベントの情報を格納した構造体です。">wxEvent</a> はイベントを生成したオブジェクトや、生成元がウィンドウの場合はその識別子 (<a class="el" href="overview_events.html#overview_events_winid">ウィンドウ識別子</a> 参照) を格納しています。複数のオブジェクトが同じ型のイベントを生成すること (例えば、一般的なウィンドウは複数のボタンを持ちますが、それらはすべて同じボタンクリックイベントを生成します) はよくあるため、イベントの生成元オブジェクトやその識別子を確認することで生成元を区別することができます。</li>
+<li><em>イベント発生元</em> : <a class="el" href="classwx_event.html" title="wxEvent はコールバック関数かメンバ関数に渡されるイベントの情報を格納した構造体です。">wxEvent</a> はイベントを生成したオブジェクトや、生成元がウィンドウの場合はその識別子 (<a class="el" href="overview_events.html#overview_events_winid">ウィンドウ識別子</a> 参照) を格納しています。複数のオブジェクトが同じ型のイベントを生成すること (例えば、一般的なウィンドウは複数のボタンを持ちますが、それらはすべて同じボタンクリックイベントを生成します) はよくあるため、イベントの生成元オブジェクトやその識別子を確認することで生成元を区別することができます。</li>
 </ul>
 <h2><a class="anchor" id="overview_events_eventhandling"></a>
 イベント処理</h2>
