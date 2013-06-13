@@ -2452,8 +2452,8 @@ MyFrame::MyFrame()
       <tuv lang="EN-US">
         <seg>&lt;e0&gt;Event source&lt;/e0&gt;: &lt;a1&gt;wxEvent&lt;/a1&gt; stores the object which generated the event and, for windows, its identifier (see &lt;a2&gt;Window Identifiers&lt;/a2&gt;).</seg>
       </tuv>
-      <tuv lang="JA" changeid="owner" changedate="20130518T021644Z">
-        <seg>&lt;e0&gt;Event 発生元&lt;/e0&gt; : &lt;a1&gt;wxEvent&lt;/a1&gt; はイベントを生成したオブジェクトや、生成元がウィンドウの場合はその識別子 (&lt;a2&gt;ウィンドウ識別子&lt;/a2&gt; 参照) を格納しています。</seg>
+      <tuv lang="JA" changeid="owner" changedate="20130613T142755Z">
+        <seg>&lt;e0&gt;イベント発生元&lt;/e0&gt; : &lt;a1&gt;wxEvent&lt;/a1&gt; はイベントを生成したオブジェクトや、生成元がウィンドウの場合はその識別子 (&lt;a2&gt;ウィンドウ識別子&lt;/a2&gt; 参照) を格納しています。</seg>
       </tuv>
     </tu>
     <tu>

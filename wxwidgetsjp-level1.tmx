@@ -2380,8 +2380,8 @@ MyFrame::MyFrame()
       <tuv lang="EN-US">
         <seg>Event source: wxEvent stores the object which generated the event and, for windows, its identifier (see Window Identifiers).</seg>
       </tuv>
-      <tuv lang="JA" changeid="owner" changedate="20130518T021644Z">
-        <seg>Event 発生元 : wxEvent はイベントを生成したオブジェクトや、生成元がウィンドウの場合はその識別子 (ウィンドウ識別子 参照) を格納しています。</seg>
+      <tuv lang="JA" changeid="owner" changedate="20130613T142755Z">
+        <seg>イベント発生元 : wxEvent はイベントを生成したオブジェクトや、生成元がウィンドウの場合はその識別子 (ウィンドウ識別子 参照) を格納しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7274,8 +7274,8 @@ MyFrame::MyFrame()
       <tuv lang="EN-US">
         <seg>In short, this is a place where you can conveniently stuff all your data (numbers and strings) organizing it in a tree where you use the filesystem-like paths to specify the location of a piece of data.</seg>
       </tuv>
-      <tuv lang="JA" changeid="owner" changedate="20130610T153944Z">
-        <seg>要するに、 ファイルシステムのようなパスを使用してデータの場所を指定する木構造にすべてのデータ (数値や文字列) を詰め込むことができるということです。</seg>
+      <tuv lang="JA" changeid="owner" changedate="20130612T154039Z">
+        <seg>要するに、ファイルシステムのようなパスを使用してデータの場所を指定する木構造にすべてのデータ (数値や文字列) を詰め込むことができるということです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10840,8 +10840,8 @@ MyFrame::MyFrame()
       <tuv lang="EN-US">
         <seg>There are groups of entries and the entries themselves.</seg>
       </tuv>
-      <tuv lang="JA" changeid="owner" changedate="20130610T151858Z">
-        <seg>設定にはエントリとエントリのグループが存在します。</seg>
+      <tuv lang="JA" changeid="owner" changedate="20130612T154146Z">
+        <seg>コンフィグにはエントリとエントリのグループが存在します。</seg>
       </tuv>
     </tu>
     <tu>
