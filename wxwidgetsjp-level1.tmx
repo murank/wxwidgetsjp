@@ -6,6 +6,14 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="EN-US">
+        <seg>"Save changed data?", "My app", wxYES_NO|wxCANCEL);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T160314Z">
+        <seg>"Save changed data?", "My app", wxYES_NO|wxCANCEL);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#define wxID_ANY                -1
 
 #define wxID_LOWEST             4999
@@ -1546,6 +1554,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Window deletion overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T033648Z">
+        <seg>ウィンドウ削除の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxEXPAND |    // make horizontally stretchable</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130523T152907Z">
@@ -1886,6 +1902,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T003252Z">
         <seg>wxLogTextCtrl,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Window deletion overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T033659Z">
+        <seg>ウィンドウ削除の概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -3772,6 +3796,14 @@ wxMORE      // wxID_MORE を返却します</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A wxWidgets application automatically exits when the last top level window (wxFrame or wxDialog), is destroyed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T142403Z">
+        <seg>wxWidgets アプリケーションは最後のトップレベルウィンドウ (wxFrame または wxDialog) が破棄されたときに自動的に終了します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A wxWidgets application does not have a main procedure; the equivalent is the wxApp::OnInit member defined for a class derived from wxApp.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T151105Z">
@@ -4460,6 +4492,14 @@ wxMORE      // wxID_MORE を返却します</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As reinforced in the next section, calling Close does not guarantee that the window will be destroyed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T150847Z">
+        <seg>次の章で補足しますが、Close の呼び出しはウィンドウが破棄されることを保証しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As such, it implements the virtual functions of the base class which are called when a message is logged.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T022449Z">
@@ -4504,6 +4544,14 @@ wxMORE      // wxID_MORE を返却します</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130506T032754Z">
         <seg>イベントテーブルをソースファイルに配置するように、クラス宣言のどこかに DECLARE_EVENT_TABLE マクロを配置しなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Automatic Deletion of Child Windows</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T034144Z">
+        <seg>子ウィンドウの自動削除</seg>
       </tuv>
     </tu>
     <tu>
@@ -4880,6 +4928,22 @@ void MyFrame::OnPlot(MyPlotEvent&amp; event)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Call wxWindow::Destroy if you want to be certain that the window is destroyed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T150935Z">
+        <seg>確実にウィンドウを破棄する場合、wxWindow::Destroy を呼び出してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Call this from your event handler to veto a system shutdown or to signal to the calling application t...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T034528Z">
+        <seg>システムシャットダウンを拒否したり、ウィンドウを終了しないことを呼び出し元へ通知したりするためにイベントハンドラ内でこの関数を呼び出してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Called to log a new record.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T111512Z">
@@ -4900,6 +4964,14 @@ void MyFrame::OnPlot(MyPlotEvent&amp; event)
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T111550Z">
         <seg>指定された文字列を記録するために呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Calling this provides useful information to the calling code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T145407Z">
+        <seg>この関数を呼ぶことで呼び出し元へ有用な情報を提供します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4940,6 +5012,14 @@ void MyFrame::OnPlot(MyPlotEvent&amp; event)
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130501T150637Z">
         <seg>文字型 (char または wchar_t)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Child windows are deleted from within the parent destructor.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T040931Z">
+        <seg>子ウィンドウは親ウィンドウのデストラクタで削除されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4988,6 +5068,14 @@ void MyFrame::OnPlot(MyPlotEvent&amp; event)
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T140522Z">
         <seg>クラス: wxBufferedDC, wxBufferedPaintDC, wxDC, wxPostScriptDC, wxMetafileDC, wxMemoryDC, wxPrinterDC, wxScreenDC, wxClientDC, wxPaintDC, wxWindowDC.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Classes: wxCloseEvent, wxWindow</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T144244Z">
+        <seg>クラス: wxCloseEvent, wxWindow</seg>
       </tuv>
     </tu>
     <tu>
@@ -5080,12 +5168,36 @@ void MyFrame::OnPlot(MyPlotEvent&amp; event)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Close can be vetoed by this process (return false), whereas Destroy definitely destroys the window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T040359Z">
+        <seg>Close は (false を返却したときに) 終了処理を拒否できるのに対し、Destroy は確実にウィンドウを削除します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Close can be vetoed by this process (return false), whereas Destroy definitely destroys the window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T153319Z">
+        <seg>Close は (false を返却したときに) 終了処理を拒否できるのに対し、Destroy は確実にウィンドウを削除します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Close(true);
 }</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T034309Z">
         <seg>Close(true);
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Closing Windows</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T033851Z">
+        <seg>ウィンドウの終了</seg>
       </tuv>
     </tu>
     <tu>
@@ -5344,6 +5456,14 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Default Window Close Behaviour</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T033936Z">
+        <seg>ウィンドウ終了時のデフォルトの振る舞い</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Default alignment is wxALIGN_LEFT | wxALIGN_TOP.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130521T162139Z">
@@ -5416,6 +5536,14 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Destroys the window safely.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T040125Z">
+        <seg>安全にウィンドウを破棄します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Device Contexts</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T142857Z">
@@ -5436,6 +5564,14 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T004713Z">
         <seg>ディレクトリ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Do child windows get deleted automatically?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T050202Z">
+        <seg>子ウィンドウは自動的に削除されますか?</seg>
       </tuv>
     </tu>
     <tu>
@@ -5878,6 +6014,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Exiting the Application Gracefully</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T034138Z">
+        <seg>正しいアプリケーションの終了方法</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Extra functionality is automatically given to the dialog box, such as tabbing between items (currently Windows only).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130531T145801Z">
@@ -6134,6 +6278,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For consistency, continue to use the wxWindow::Destroy function instead of the delete operator when deleting these kinds of windows explicitly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T143925Z">
+        <seg>一貫性を保つために、これらの種類のウィンドウを明示的に削除するときは delete 演算子の代わりに引き続き wxWindow::Destroy 関数を使用してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For consistency, continue to use the wxWindow::Destroy function instead of the delete operator when deleting these kinds of windows explicitly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T040940Z">
+        <seg>一貫性を保つために、これらの種類のウィンドウを明示的に削除するときは delete 演算子の代わりに引き続き wxWindow::Destroy 関数を使用してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example a typical loop:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T151546Z">
@@ -6218,6 +6378,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T120750Z">
         <seg>例えば、モーダルメッセージボックスでユーザの操作を妨げないようにするため、メインウィンドウの一部にすべてのログメッセージを表示するように wxLog を継承したクラスを定義することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, you may wish to check that all files have been saved.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T155719Z">
+        <seg>例えば、すべてのファイルが保存されているか確認したいと思うかもしれません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6504,6 +6672,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Give the user a chance to save and quit, to not save but quit anyway, or to cancel the exit command altogether.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T155927Z">
+        <seg>保存して終了するか、保存せずに終了するか、終了コマンドを完全にキャンセルするかをユーザが選択できるようにしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Global instance of a wxPoint initialized with values (-1,-1).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T142254Z">
@@ -6636,6 +6812,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130507T153305Z">
         <seg>イベント処理の仕組み</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How can the application close a window itself?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T045949Z">
+        <seg>どのようにしてアプリケーションからウィンドウを削除できますか?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How do I exit the application gracefully?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T050140Z">
+        <seg>アプリケーションを正しく終了するにはどうすれば良いですか?</seg>
       </tuv>
     </tu>
     <tu>
@@ -6808,6 +7000,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the application is for some reason forcing the application to close (wxCloseEvent::CanVeto returns false), the window should always be destroyed, otherwise there is the option to ignore the request, or maybe wait until the user has answered a question before deciding whether it is safe to close.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T034545Z">
+        <seg>なんらかの理由で強制的にアプリケーションを終了させる場合 (wxCloseEvent::CanVeto が false を返却する場合)、常にウィンドウを破棄するべきです。それ以外の場合では終了要求を無視するか、安全に終了できるか決定する前にユーザへ確認するという選択肢があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the application is for some reason forcing the application to close (wxCloseEvent::CanVeto returns false), the window should always be destroyed, otherwise there is the option to ignore the request, or maybe wait until the user has answered a question before deciding whether it is safe to close.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T145241Z">
+        <seg>なんらかの理由で強制的にアプリケーションを終了させる場合 (wxCloseEvent::CanVeto が false を返却する場合)、常にウィンドウを破棄するべきです。それ以外の場合では終了要求を無視するか、安全に終了できるか決定する前にユーザへ確認するという選択肢があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the dialog box is modal, the calling program is blocked until the dialog box is dismissed.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130531T154505Z">
@@ -6948,6 +7156,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T030211Z">
         <seg>検索に成功した場合、処理を終了します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If using Close(), you can pass a true argument to this function to tell the event handler that we definitely want to delete the frame and it cannot be vetoed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T040336Z">
+        <seg>Close() を使用している場合は引数に true を渡すことで、このフレームを確実に破棄したいと考えており、終了要求を拒否できないことをイベントハンドラへ通知できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If using Close(), you can pass a true argument to this function to tell the event handler that we definitely want to delete the frame and it cannot be vetoed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T144724Z">
+        <seg>Close() を使用している場合は引数に true を渡すことで、このフレームを確実に破棄したいと考えており、終了要求を拒否できないことをイベントハンドラへ通知できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7200,6 +7424,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In other words, by default, the dialog is not destroyed (it might have been created on the stack, so the assumption of dynamic creation cannot be made).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T040908Z">
+        <seg>言い換えると、デフォルトではダイアログは破棄されません。(ダイアログはスタック上に作られるかもしれないので、動的に生成されると仮定することはできません)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In other words, by default, the dialog is not destroyed (it might have been created on the stack, so the assumption of dynamic creation cannot be made).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T154834Z">
+        <seg>言い換えると、デフォルトではダイアログは 破棄されません。(ダイアログはスタック上に作られるかもしれないので、動的に生成されると仮定することはできません)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In our case, we want the text area to grow with the dialog, whereas the button shall have a fixed size.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130521T154608Z">
@@ -7372,6 +7612,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T033430Z">
         <seg>この場合では、UTF8 は UTF16 よりも多くの領域が必要となります。 (2 バイトではなく 3 バイト)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In wxWidgets 1.xx, the OnClose function did not actually delete 'this', but signaled to the calling function (either Close, or the wxWidgets framework) to delete or not delete the window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T160146Z">
+        <seg>wxWidgets 1.xx では OnClose 関数は実際に 'this' を削除せず、呼び出し元 (Close または wxWidgets フレームワーク) へウィンドウを削除するかどうかを通知していました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7628,6 +7876,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130521T160524Z">
         <seg>これは重み係数として解釈されます。つまり、値を 0 (この場合、ウィンドウはまったくリサイズされません) か、0 より大きい値にすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is the duty of the application to define a suitable event handler, and decide whether or not to destroy the window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T144315Z">
+        <seg>適切なイベントハンドラを定義し、ウィンドウを破棄するか決定するのはアプリケーションの責務です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8626,6 +8882,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Other Kinds of Windows</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T034156Z">
+        <seg>他の種類のウィンドウ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Other Types of Sizers</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T141008Z">
@@ -8900,6 +9164,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Put any application-wide cleanup code in wxApp::OnExit (this is a virtual function, not an event handler).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T142459Z">
+        <seg>アプリケーション全体の後処理は wxApp::OnExit (これは仮想関数であって、イベントハンドラではありません) に配置してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Putting the same line in a child event table will crash during run-time because the MyFrame method will be called on a wrong object -- it's easy to convince oneself that the only object that can be used here is the pointer to the child, as wxWidgets has nothing else.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T030015Z">
@@ -9028,10 +9300,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Returns true if you can veto a system shutdown or a window close event.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T034228Z">
+        <seg>システムシャットダウンやウィンドウの終了イベントを拒否できる場合に true を返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Same as utf8_str().</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T083030Z">
         <seg>utf8_str() と同じです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SaveMyData();</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T160340Z">
+        <seg>SaveMyData();</seg>
       </tuv>
     </tu>
     <tu>
@@ -9160,6 +9448,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130506T032908Z">
         <seg>これを行なっているサンプルとして イベントサンプル を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sequence of Events During Window Deletion</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T033847Z">
+        <seg>ウィンドウ削除時における一連のイベント</seg>
       </tuv>
     </tu>
     <tu>
@@ -9326,6 +9622,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since the handler for this cancel event might itself call Close, there is a check for infinite looping.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T154515Z">
+        <seg>このキャンセルイベントのハンドラ自身が Close を呼ぶため、無限ループのチェックが行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since the handler for this cancel event might itself call Close, there is a check for infinite looping.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T040835Z">
+        <seg>このキャンセルイベントのハンドラ自身が Close を呼ぶため、無限ループのチェックが行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since version 2.2.x of wxWidgets, each event type is identified by ID which is given to the event type at runtime which makes it possible to add new event types to the library or application without risking ID clashes (two different event types mistakingly getting the same event ID).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T150704Z">
@@ -9402,6 +9714,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130506T041724Z">
         <seg>そのため、アプリケーションの振る舞いをカスタマイズするために新しいクラスを継承していたとしても、あなたのユーティリティから自由に振る舞いを変更することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So far we've been talking about 'managed' windows, i.e. frames and dialogs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T143008Z">
+        <seg>これまでは 'マネージド' ウィンドウ、つまりフレームやダイアログについて話してきました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9614,6 +9934,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The wxCloseEvent handler should only call wxWindow::Destroy to delete the window, and not use the delete operator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T040317Z">
+        <seg>wxCloseEvent ハンドラではウィンドウを破棄するときに wxWindow::Destroy のみを使用するようにし、delete 演算子を使用しないでください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The UTF or Unicode Transformation Formats are algorithms mapping the Unicode code points to code unit sequences.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T030604Z">
@@ -9806,6 +10134,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The advantage of using Close instead of Destroy is that it will call any clean-up code defined by the EVT_CLOSE handler; for example it may close a document contained in a window after first asking the user whether the work should be saved.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T144912Z">
+        <seg>Destroy の代わりに Close を使用する利点は EVT_CLOSE イベントハンドラで任意の後処理を行える点です。例えば、ユーザに作業中のドキュメントを保存するように確認した後でドキュメントを閉じるといったことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The alternative is to explicitly delete child frames in the top-level frame's wxCloseEvent handler.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130527T160758Z">
@@ -9866,6 +10202,46 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130610T153634Z">
         <seg>コンフィグクラスではアプリケーションの設定情報を格納するための方法を提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The default close event handler for wxDialog simulates a Cancel command, generating a wxID_CANCEL event.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T040824Z">
+        <seg>wxDialog のデフォルトの終了イベントハンドラは wxID_CANCEL イベントを生成する Cancel コマンドを模倣します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The default close event handler for wxFrame destroys the frame using Destroy().</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T040917Z">
+        <seg>wxFrame のデフォルトの終了ハンドラは Destroy() を使用してフレームを破棄します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The default close event handler for wxDialog simulates a Cancel command, generating a wxID_CANCEL event.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T040458Z">
+        <seg>wxDialog のデフォルトの終了イベントハンドラは wxID_CANCEL イベントを生成する Cancel コマンドを模倣します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The default close event handler for wxFrame destroys the frame using Destroy().</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T155144Z">
+        <seg>wxFrame のデフォルトの終了ハンドラは Destroy() を使用してフレームを破棄します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The default handler for wxID_CANCEL hides the dialog (if modeless) or calls EndModal(wxID_CANCEL) (if modal).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T154652Z">
+        <seg>wxID_CANCEL のデフォルトハンドラは (モードレスの場合に) ダイアログを非表示にするか、(モーダルの場合に) EndModal(wxID_CANCEL) を呼びます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9962,6 +10338,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T055055Z">
         <seg>イベントの基底クラス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The event handler function might look like this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T160303Z">
+        <seg>イベントハンドラ関数は以下のようになります:</seg>
       </tuv>
     </tu>
     <tu>
@@ -10138,6 +10522,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T041513Z">
         <seg>gettext マニュアル: http://www.gnu.org/software/gettext/manual/gettext.html</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The handler for EVT_CLOSE should signal to the calling code if it does not destroy the window, by calling wxCloseEvent::Veto.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T144429Z">
+        <seg>ウィンドウを破棄しない場合、EVT_CLOSE ハンドラで wxCloseEvent::Veto を呼び出し、呼び出し元へそのことを通知するようにしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The handler for EVT_CLOSE should signal to the calling code if it does not destroy the window, by calling wxCloseEvent::Veto.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T034552Z">
+        <seg>ウィンドウを破棄しない場合、EVT_CLOSE ハンドラで wxCloseEvent::Veto を呼び出し、呼び出し元へそのことを通知するようにしてください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10738,6 +11138,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T152908Z">
         <seg>wxBitmap クラスはモノクロとカラーの両方について、プラットフォームに依存するビットマップの概念をカプセル化するものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The wxCloseEvent handler should only call wxWindow::Destroy to delete the window, and not use the delete operator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T145524Z">
+        <seg>wxCloseEvent ハンドラではウィンドウを破棄するときに wxWindow::Destroy のみを使用するようにし、delete 演算子を使用しないでください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11438,6 +11846,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This in turn generates an EVT_CLOSE event: see wxCloseEvent.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T144235Z">
+        <seg>そして、これは EVT_CLOSE イベントを生成します: wxCloseEvent 参照。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This includes any children that are themselves frames or dialogs, so you may wish to close these child frame or dialog windows explicitly from within the parent close handler.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T142741Z">
+        <seg>これは子ウィンドウであればフレームやダイアログも含みます。そのため、親ウィンドウの終了ハンドラで明示的に子フレームや子ダイアログを終了させたいと思うかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is true of wxScreenDC, wxClientDC, wxPaintDC, and wxWindowDC.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T150723Z">
@@ -11514,6 +11938,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130531T150148Z">
         <seg>これは、Windows 3 ではモーダルダイアログの内容はリソースファイルから読み込みか、ダイアログの初期化メッセージを受信したときに作成する必要があるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is because for some window classes, wxWidgets delays actual deletion of the window until all events have been processed, since otherwise there is the danger that events will be sent to a non-existent window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T044436Z">
+        <seg>これは、いくつかのウィンドウクラスではすべてのイベントが処理されるまでウィンドウを実際に削除しないためです。このようにしない場合、イベントが存在しないウィンドウに送信される危険性があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11830,6 +12262,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This will invoke your own close event handler which may destroy the frame.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T155500Z">
+        <seg>これにより、フレームを破棄する独自の終了イベントハンドラが実行されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This will most often mean that the programmer does not set the start-up size of a dialog, the dialog will rather be assigned a sizer and this sizer will be queried about the recommended size.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130519T121141Z">
@@ -12082,6 +12522,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T054449Z">
         <seg>コマンドイベントかどうか (おそらくリダイレクト対象のイベントかどうかだと思いますが) を調べるため、遅い実行時型情報の代わりに wxEvent::IsCommandEvent を使用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To update your code, you should provide an event table entry in your frame or dialog, using the EVT_CLOSE macro.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T160251Z">
+        <seg>コードをアップグレードするには EVT_CLOSE マクロを使用してフレームやダイアログ内でイベントテーブルのエントリを定義してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12654,6 +13102,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>User Calls to Exit From a Menu</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T034127Z">
+        <seg>終了メニューのユーザ呼び出し</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>User Generated Events vs Programmatically Generated Events</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130516T155312Z">
@@ -12814,6 +13270,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>What about other kinds of window?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T050255Z">
+        <seg>他の種類のウィンドウについてはどうでしょう?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>What happens here?</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130502T151527Z">
@@ -12830,10 +13294,42 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>What is the default behaviour?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T050325Z">
+        <seg>デフォルトの振る舞いどのようなものですか?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What is the sequence of events in a window deletion?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T045925Z">
+        <seg>ウィンドウ削除時に発生する一連のイベントにはどのようなものがありますか?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>What makes sizers so well fitted for use in wxWidgets is the fact that every control reports its own minimal size and the algorithm can handle differences in font sizes or different window (dialog item) sizes on different platforms without problems.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130519T143344Z">
         <seg>サイザーが wxWidgets に非常に適している理由は、すべてのコントロールが自身の最小サイズを通知し、このアルゴリズムが異なるプラットフォームのフォントサイズやウィンドウ (ダイアログのアイテム) のサイズの違いを問題なく取り扱うことができるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What should I do to upgrade my 1.xx OnClose to 2.0?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T050008Z">
+        <seg>1.xx の OnClose を 2.0 にアップグレードするには何をすべきですか?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What should I do when the user calls up Exit from a menu?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T044654Z">
+        <seg>ユーザがメニューから終了を選んだときに何をすべきですか?</seg>
       </tuv>
     </tu>
     <tu>
@@ -12866,6 +13362,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T081654Z">
         <seg>より複雑なコントロールのときには特定のイベントクラスが使用されます。例えば、wxTreeCtrl から発生するイベントには wxTreeEvent が使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the user clicks on the system close button or system close command, in a frame or a dialog, wxWidgets calls wxWindow::Close.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T143852Z">
+        <seg>ユーザがフレームやダイアログの閉じるボタンを押下したときや、終了コマンドを実行したときに wxWidgets は wxWindow::Close を呼び出します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12910,10 +13414,34 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Window Deletion</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T033806Z">
+        <seg>ウィンドウの削除</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Window Identifiers</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130517T171133Z">
         <seg>ウィンドウ識別子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Window deletion can be a confusing subject, so this overview is provided to help make it clear when and how you delete windows, or respond to user requests to close windows.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T144456Z">
+        <seg>ウィンドウの削除は混乱しやすいテーマなので、この概要ではいつ、どのようにウィンドウを削除するか、もしくはユーザの要求に応じてウィンドウを閉じるかについて、理解の手助けになる情報を提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Window deletion overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T033706Z">
+        <seg>ウィンドウ削除の概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -12978,6 +13506,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T142142Z">
         <seg>Windows アイコンリソース (wxBITMAP_TYPE_ICO_RESOURCE)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Windows with parents, such as controls, don't have delayed destruction and don't usually have close event handlers, though you can implement them if you wish.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T143126Z">
+        <seg>コントロールなど、親を持つウィンドウは直ちに削除され、通常は終了イベントハンドラを持ちません。とはいえ、必要であればそれらを実装することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13118,6 +13654,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Yes, child windows are deleted from within the parent destructor.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T142521Z">
+        <seg>はい、子ウィンドウは親ウィンドウのデストラクタで削除されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You also need to insert a macro</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T014624Z">
@@ -13198,6 +13742,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can do checking to see if your application can be safely exited at this point, either from within your close event handler, or from within your exit menu command handler.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T155706Z">
+        <seg>このときにアプリケーションを安全に終了できるかどうかを自前の終了イベントハンドラ、もしくは終了メニューコマンドハンドラから確認することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can either choose a single approach that you find preferable or freely combine both methods in your program in different classes or even in one and the same class, although this is probably sufficiently confusing to be a bad idea.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T021925Z">
@@ -13258,6 +13810,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130523T155354Z">
         <seg>例えば、アプリケーションのバイナリを配布するときにどこへインストールされるか分からないような場合に WXPREFIX を設定することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can simply call wxWindow::Close on the frame.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T155225Z">
+        <seg>フレームの wxWindow::Close を単純に呼ぶことができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13390,6 +13950,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Your application can either use wxWindow::Close event just as the framework does, or it can call wxWindow::Destroy directly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T151124Z">
+        <seg>アプリケーションではフレームワークが行なうように wxWindow::Close イベントを使用するか、もしくは直接 wxWindow::Destroy を呼び出すことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>and the somewhat less usual</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T041535Z">
@@ -13410,6 +13978,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T061218Z">
         <seg>bind( &amp;MyHandler::OnExit, &amp;myHandler, EXIT_FAILURE, _1, "Bye" ));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>break;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T160341Z">
+        <seg>break;</seg>
       </tuv>
     </tu>
     <tu>
@@ -13458,6 +14034,31 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T112307Z">
         <seg>button_sizer-&gt;Add(</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>case wxID_CANCEL:   // Do nothing - so don't quit app.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T140533Z">
+        <seg>case wxID_CANCEL:   // 何もしない - そのため、アプリケーションを終了しない
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>case wxID_NO:       // Don't save; just destroy, quitting app</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T160403Z">
+        <seg>case wxID_NO:       // 保存しない; 破棄してアプリケーションを終了する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>case wxID_YES:      // Save, then destroy, quitting app</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T160339Z">
+        <seg>case wxID_YES:      // 保存し、アプリケーションを終了する</seg>
       </tuv>
     </tu>
     <tu>
@@ -13528,10 +14129,26 @@ public:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>default:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T160445Z">
+        <seg>default:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>delete m_helpCtrl;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130527T162759Z">
         <seg>delete m_helpCtrl;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>dialog-&gt;Destroy();</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T160314Z">
+        <seg>dialog-&gt;Destroy();</seg>
       </tuv>
     </tu>
     <tu>
@@ -13608,6 +14225,15 @@ public:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>event.Veto();     // Notify the calling code that we didn't delete the frame.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T140549Z">
+        <seg>event.Veto();     // フレームを削除しなかったことを呼び出し元へ通知する
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>function&lt; void ( wxCommandEvent &amp; ) &gt; exitHandler(</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T061208Z">
@@ -13648,10 +14274,35 @@ public:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>if (!event.CanVeto()) // Test if we can veto this deletion</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T140539Z">
+        <seg>if (!event.CanVeto()) // この削除が拒否可能か確認する
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if (MyDataHasBeenModified())</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T160305Z">
+        <seg>if (MyDataHasBeenModified())</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>int       m_count;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T081804Z">
         <seg>int       m_count;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>int ans = dialog-&gt;ShowModal();</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T160314Z">
+        <seg>int ans = dialog-&gt;ShowModal();</seg>
       </tuv>
     </tu>
     <tu>
@@ -13998,6 +14649,14 @@ public:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>switch (ans)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T160315Z">
+        <seg>switch (ans)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>the_frame-&gt;Show(true);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130528T152700Z">
@@ -14010,6 +14669,23 @@ public:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130527T161008Z">
         <seg>the_frame-&gt;Show(true);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>this-&gt;Destroy();</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T160340Z">
+        <seg>this-&gt;Destroy();</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>this-&gt;Destroy();    // If not, destroy the window anyway.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130614T140545Z">
+        <seg>this-&gt;Destroy();    // 拒否不可の場合、とにかくウィンドウを破棄する
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -14104,6 +14780,14 @@ IMPLEMENT_APP(DerivedApp)
 
 bool DerivedApp::OnInit()
 {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>void MyFrame::OnCloseWindow(wxCloseEvent&amp; event)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T160304Z">
+        <seg>void MyFrame::OnCloseWindow(wxCloseEvent&amp; event)</seg>
       </tuv>
     </tu>
     <tu>
@@ -14858,6 +15542,14 @@ wxIcon icon("mondrian");
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxMessageDialog* dialog = new wxMessageDialog(this,</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130613T160306Z">
+        <seg>wxMessageDialog* dialog = new wxMessageDialog(this,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxMouseEvent</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T055304Z">
@@ -15480,6 +16172,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T004606Z">
         <seg>wxWidgets: wxWidgets: wxWidgets における Unicode 対応</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxWidgets: wxWidgets: Window Deletion</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130615T033828Z">
+        <seg>wxWidgets: wxWidgets: ウィンドウの削除</seg>
       </tuv>
     </tu>
     <tu>
