@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>wxWidgets: wxWidgets: Window Deletion</title>
+<title>wxWidgets: wxWidgets: ウィンドウの削除</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="custom_stylesheet.css" rel="stylesheet" type="text/css" />
@@ -114,55 +114,48 @@ function toggleVisibility(linkObj) {
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title">Window Deletion  </div>  </div>
+<div class="title">ウィンドウの削除 </div>  </div>
 </div>
 <div class="contents">
-<div class="textblock"><p>Classes: <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a>, <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a></p>
-<p>Window deletion can be a confusing subject, so this overview is provided to help make it clear when and how you delete windows, or respond to user requests to close windows.</p>
+<div class="textblock"><p>クラス: <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a>, <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a></p>
+<p>ウィンドウの削除は混乱しやすいテーマなので、この概要ではいつ、どのようにウィンドウを削除するか、もしくはユーザの要求に応じてウィンドウを閉じるかについて、理解の手助けになる情報を提供します。</p>
 <ul>
-<li><a class="el" href="overview_windowdeletion.html#overview_windowdeletion_sequence">Sequence of Events During Window Deletion</a> </li>
-<li><a class="el" href="overview_windowdeletion.html#overview_windowdeletion_close">Closing Windows</a> </li>
-<li><a class="el" href="overview_windowdeletion.html#overview_windowdeletion_default">Default Window Close Behaviour</a> </li>
-<li><a class="el" href="overview_windowdeletion.html#overview_windowdeletion_menuexit">User Calls to Exit From a Menu</a> </li>
-<li><a class="el" href="overview_windowdeletion.html#overview_windowdeletion_exitapp">Exiting the Application Gracefully</a> </li>
-<li><a class="el" href="overview_windowdeletion.html#overview_windowdeletion_deletion">Automatic Deletion of Child Windows</a> </li>
-<li><a class="el" href="overview_windowdeletion.html#overview_windowdeletion_windowkinds">Other Kinds of Windows</a></li>
+<li><a class="el" href="overview_windowdeletion.html#overview_windowdeletion_sequence">ウィンドウ削除時における一連のイベント</a> </li>
+<li><a class="el" href="overview_windowdeletion.html#overview_windowdeletion_close">ウィンドウの終了</a> </li>
+<li><a class="el" href="overview_windowdeletion.html#overview_windowdeletion_default">ウィンドウ終了時のデフォルトの振る舞い</a> </li>
+<li><a class="el" href="overview_windowdeletion.html#overview_windowdeletion_menuexit">終了メニューのユーザ呼び出し</a> </li>
+<li><a class="el" href="overview_windowdeletion.html#overview_windowdeletion_exitapp">正しいアプリケーションの終了方法</a> </li>
+<li><a class="el" href="overview_windowdeletion.html#overview_windowdeletion_deletion">子ウィンドウの自動削除</a> </li>
+<li><a class="el" href="overview_windowdeletion.html#overview_windowdeletion_windowkinds">他の種類のウィンドウ</a></li>
 </ul>
 <hr/>
 <h2><a class="anchor" id="overview_windowdeletion_sequence"></a>
-
-Sequence of Events During Window Deletion</h2>
-<p>When the user clicks on the system close button or system close command, in a frame or a dialog, wxWidgets calls <a class="el" href="classwx_window.html#a3e44f4a494fc9ef4346c4fba70c8de0c" title="この関数は単純に wxCloseEvent を作成します。通常はこのイベントを受け取ったハンドラはウィンドウを閉じようとします。">wxWindow::Close</a>. This in turn generates an EVT_CLOSE event: see <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a>.</p>
-<p>It is the duty of the application to define a suitable event handler, and decide whether or not to destroy the window. If the application is for some reason forcing the application to close (<a class="el" href="classwx_close_event.html#adaa0548df45e05e8487cc5664ac352cf" title="Returns true if you can veto a system shutdown or a window close event.">wxCloseEvent::CanVeto</a> returns <span class="literal">false</span>), the window should always be destroyed, otherwise there is the option to ignore the request, or maybe wait until the user has answered a question before deciding whether it is safe to close. The handler for EVT_CLOSE should signal to the calling code if it does not destroy the window, by calling <a class="el" href="classwx_close_event.html#a0ec337c77613d5d8407831cd64e16417" title="Call this from your event handler to veto a system shutdown or to signal to the calling application t...">wxCloseEvent::Veto</a>. Calling this provides useful information to the calling code.</p>
-<p>The <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a> handler should only call <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="Destroys the window safely.">wxWindow::Destroy</a> to delete the window, and not use the <code>delete</code> operator. This is because for some window classes, wxWidgets delays actual deletion of the window until all events have been processed, since otherwise there is the danger that events will be sent to a non-existent window.</p>
-<p>As reinforced in the next section, calling Close does not guarantee that the window will be destroyed. Call <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="Destroys the window safely.">wxWindow::Destroy</a> if you want to be certain that the window is destroyed.</p>
+ウィンドウ削除時における一連のイベント</h2>
+<p>ユーザがフレームやダイアログの閉じるボタンを押下したときや、終了コマンドを実行したときに wxWidgets は <a class="el" href="classwx_window.html#a3e44f4a494fc9ef4346c4fba70c8de0c" title="この関数は単純に wxCloseEvent を作成します。通常はこのイベントを受け取ったハンドラはウィンドウを閉じようとします。">wxWindow::Close</a> を呼び出します。そして、これは EVT_CLOSE イベントを生成します: <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a> 参照。</p>
+<p>適切なイベントハンドラを定義し、ウィンドウを破棄するか決定するのはアプリケーションの責務です。なんらかの理由で強制的にアプリケーションを終了させる場合 (<a class="el" href="classwx_close_event.html#adaa0548df45e05e8487cc5664ac352cf" title="システムシャットダウンやウィンドウの終了イベントを拒否できる場合に true を返却します。">wxCloseEvent::CanVeto</a> が <span class="literal">false</span> を返却する場合)、常にウィンドウを破棄するべきです。それ以外の場合では終了要求を無視するか、安全に終了できるか決定する前にユーザへ確認するという選択肢があります。ウィンドウを破棄しない場合、EVT_CLOSE ハンドラで <a class="el" href="classwx_close_event.html#a0ec337c77613d5d8407831cd64e16417" title="システムシャットダウンを拒否したり、ウィンドウを終了しないことを呼び出し元へ通知したりするためにイベントハンドラ内でこの関数を呼び出してください。">wxCloseEvent::Veto</a> を呼び出し、呼び出し元へそのことを通知するようにしてください。この関数を呼ぶことで呼び出し元へ有用な情報を提供します。</p>
+<p><a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a> ハンドラではウィンドウを破棄するときに <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="安全にウィンドウを破棄します。">wxWindow::Destroy</a> のみを使用するようにし、<code>delete</code> 演算子を使用しないでください。これは、いくつかのウィンドウクラスではすべてのイベントが処理されるまでウィンドウを実際に削除しないためです。このようにしない場合、イベントが存在しないウィンドウに送信される危険性があります。</p>
+<p>次の章で補足しますが、Close の呼び出しはウィンドウが破棄されることを保証しません。確実にウィンドウを破棄する場合、<a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="安全にウィンドウを破棄します。">wxWindow::Destroy</a> を呼び出してください。</p>
 <h2><a class="anchor" id="overview_windowdeletion_close"></a>
-
-Closing Windows</h2>
-<p>Your application can either use <a class="el" href="classwx_window.html#a3e44f4a494fc9ef4346c4fba70c8de0c" title="この関数は単純に wxCloseEvent を作成します。通常はこのイベントを受け取ったハンドラはウィンドウを閉じようとします。">wxWindow::Close</a> event just as the framework does, or it can call <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="Destroys the window safely.">wxWindow::Destroy</a> directly. If using Close(), you can pass a <span class="literal">true</span> argument to this function to tell the event handler that we definitely want to delete the frame and it cannot be vetoed.</p>
-<p>The advantage of using Close instead of Destroy is that it will call any clean-up code defined by the EVT_CLOSE handler; for example it may close a document contained in a window after first asking the user whether the work should be saved. Close can be vetoed by this process (return <span class="literal">false</span>), whereas Destroy definitely destroys the window.</p>
+ウィンドウの終了</h2>
+<p>アプリケーションではフレームワークが行なうように <a class="el" href="classwx_window.html#a3e44f4a494fc9ef4346c4fba70c8de0c" title="この関数は単純に wxCloseEvent を作成します。通常はこのイベントを受け取ったハンドラはウィンドウを閉じようとします。">wxWindow::Close</a> イベントを使用するか、もしくは直接 <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="安全にウィンドウを破棄します。">wxWindow::Destroy</a> を呼び出すことができます。Close() を使用している場合は引数に <span class="literal">true</span> を渡すことで、このフレームを確実に破棄したいと考えており、終了要求を拒否できないことをイベントハンドラへ通知できます。</p>
+<p>Destroy の代わりに Close を使用する利点は EVT_CLOSE イベントハンドラで任意の後処理を行える点です。例えば、ユーザに作業中のドキュメントを保存するように確認した後でドキュメントを閉じるといったことができます。Close は (<span class="literal">false</span> を返却したときに) 終了処理を拒否できるのに対し、Destroy は確実にウィンドウを削除します。</p>
 <h2><a class="anchor" id="overview_windowdeletion_default"></a>
-
-Default Window Close Behaviour</h2>
-<p>The default close event handler for <a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> simulates a Cancel command, generating a wxID_CANCEL event. Since the handler for this cancel event might itself call Close, there is a check for infinite looping. The default handler for wxID_CANCEL hides the dialog (if modeless) or calls EndModal(wxID_CANCEL) (if modal). In other words, by default, the dialog <em>is</em> not destroyed (it might have been created on the stack, so the assumption of dynamic creation cannot be made).</p>
-<p>The default close event handler for <a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> destroys the frame using Destroy().</p>
+ウィンドウ終了時のデフォルトの振る舞い</h2>
+<p><a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> のデフォルトの終了イベントハンドラは wxID_CANCEL イベントを生成する Cancel コマンドを模倣します。このキャンセルイベントのハンドラ自身が Close を呼ぶため、無限ループのチェックが行われます。wxID_CANCEL のデフォルトハンドラは (モードレスの場合に) ダイアログを非表示にするか、(モーダルの場合に) EndModal(wxID_CANCEL) を呼びます。言い換えると、デフォルトではダイアログは破棄され<em>ません</em>。(ダイアログはスタック上に作られるかもしれないので、動的に生成されると仮定することはできません)</p>
+<p><a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> のデフォルトの終了ハンドラは Destroy() を使用してフレームを破棄します。</p>
 <h2><a class="anchor" id="overview_windowdeletion_menuexit"></a>
-
-User Calls to Exit From a Menu</h2>
-<p>What should I do when the user calls up Exit from a menu? You can simply call <a class="el" href="classwx_window.html#a3e44f4a494fc9ef4346c4fba70c8de0c" title="この関数は単純に wxCloseEvent を作成します。通常はこのイベントを受け取ったハンドラはウィンドウを閉じようとします。">wxWindow::Close</a> on the frame. This will invoke your own close event handler which may destroy the frame.</p>
-<p>You can do checking to see if your application can be safely exited at this point, either from within your close event handler, or from within your exit menu command handler. For example, you may wish to check that all files have been saved. Give the user a chance to save and quit, to not save but quit anyway, or to cancel the exit command altogether.</p>
+終了メニューのユーザ呼び出し</h2>
+<p>ユーザがメニューから終了を選んだときに何をすべきですか?フレームの <a class="el" href="classwx_window.html#a3e44f4a494fc9ef4346c4fba70c8de0c" title="この関数は単純に wxCloseEvent を作成します。通常はこのイベントを受け取ったハンドラはウィンドウを閉じようとします。">wxWindow::Close</a> を単純に呼ぶことができます。これにより、フレームを破棄する独自の終了イベントハンドラが実行されます。</p>
+<p>このときにアプリケーションを安全に終了できるかどうかを自前の終了イベントハンドラ、もしくは終了メニューコマンドハンドラから確認することができます。例えば、すべてのファイルが保存されているか確認したいと思うかもしれません。保存して終了するか、保存せずに終了するか、終了コマンドを完全にキャンセルするかをユーザが選択できるようにしてください。</p>
 <h2><a class="anchor" id="overview_windowdeletion_exitapp"></a>
-
-Exiting the Application Gracefully</h2>
-<p>A wxWidgets application automatically exits when the last top level window (<a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> or <a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a>), is destroyed. Put any application-wide cleanup code in <a class="el" href="classwx_app_console.html#a5ee60051c92b0b2933258799626a0485" title="アプリケーションの終了時に処理を行なう必要がある場合にこのメンバ関数をオーバーライドしてください。">wxApp::OnExit</a> (this is a virtual function, not an event handler).</p>
+正しいアプリケーションの終了方法</h2>
+<p>wxWidgets アプリケーションは最後のトップレベルウィンドウ (<a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> または <a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a>) が破棄されたときに自動的に終了します。アプリケーション全体の後処理は <a class="el" href="classwx_app_console.html#a5ee60051c92b0b2933258799626a0485" title="アプリケーションの終了時に処理を行なう必要がある場合にこのメンバ関数をオーバーライドしてください。">wxApp::OnExit</a> (これは仮想関数であって、イベントハンドラではありません) に配置してください。</p>
 <h2><a class="anchor" id="overview_windowdeletion_deletion"></a>
-
-Automatic Deletion of Child Windows</h2>
-<p>Child windows are deleted from within the parent destructor. This includes any children that are themselves frames or dialogs, so you may wish to close these child frame or dialog windows explicitly from within the parent close handler.</p>
+子ウィンドウの自動削除</h2>
+<p>子ウィンドウは親ウィンドウのデストラクタで削除されます。これは子ウィンドウであればフレームやダイアログも含みます。そのため、親ウィンドウの終了ハンドラで明示的に子フレームや子ダイアログを終了させたいと思うかもしれません。</p>
 <h2><a class="anchor" id="overview_windowdeletion_windowkinds"></a>
-
-Other Kinds of Windows</h2>
-<p>So far we've been talking about 'managed' windows, i.e. frames and dialogs. Windows with parents, such as controls, don't have delayed destruction and don't usually have close event handlers, though you can implement them if you wish. For consistency, continue to use the <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="Destroys the window safely.">wxWindow::Destroy</a> function instead of the <code>delete</code> operator when deleting these kinds of windows explicitly.  </p>
+他の種類のウィンドウ</h2>
+<p>これまでは 'マネージド' ウィンドウ、つまりフレームやダイアログについて話してきました。コントロールなど、親を持つウィンドウは直ちに削除され、通常は終了イベントハンドラを持ちません。とはいえ、必要であればそれらを実装することができます。一貫性を保つために、これらの種類のウィンドウを明示的に削除するときは <code>delete</code> 演算子の代わりに引き続き <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="安全にウィンドウを破棄します。">wxWindow::Destroy</a> 関数を使用してください。 </p>
 </div></div><!-- window showing the filter options -->
 
 <div id="MSearchSelectWindow"

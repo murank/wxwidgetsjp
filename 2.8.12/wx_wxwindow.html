@@ -1001,13 +1001,7 @@ Accepts and returns a wxSize
 <H3>wxWindow::Destroy</H3>
 <P>
 <B>virtual bool</B> <B>Destroy</B>()<P>
-
-Destroys the window safely. Use this function instead of the delete operator, since
-different window classes can be destroyed differently. Frames and dialogs
-are not destroyed immediately when this function is called -- they are added
-to a list of windows to be deleted on idle time, when all the window's events
-have been processed. This prevents problems with events being sent to non-existent
-windows.<P>
+安全にウィンドウを破棄します。Use this function instead of the delete operator, since different window classes can be destroyed differently. Frames and dialogs are not destroyed immediately when this function is called -- they are added to a list of windows to be deleted on idle time, when all the window's events have been processed. This prevents problems with events being sent to non-existent windows.<P>
 <B><FONT COLOR="#FF0000">Return value</FONT></B><P>
 <TT>true</TT> if the window has either been successfully deleted, or it has been added
 to the list of windows pending real deletion.<P>

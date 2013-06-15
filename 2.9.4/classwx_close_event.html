@@ -135,13 +135,13 @@ function toggleVisibility(linkObj) {
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。 </p>
 <p>The handler function for EVT_CLOSE is called when the user has tried to close a a frame or dialog box using the window manager (X) or system menu (Windows). It can also be invoked by the application itself programmatically, for example by calling the <a class="el" href="classwx_window.html#a3e44f4a494fc9ef4346c4fba70c8de0c" title="この関数は単純に wxCloseEvent を作成します。通常はこのイベントを受け取ったハンドラはウィンドウを閉じようとします。">wxWindow::Close</a> function.</p>
-<p>You should check whether the application is forcing the deletion of the window using <a class="el" href="classwx_close_event.html#adaa0548df45e05e8487cc5664ac352cf" title="Returns true if you can veto a system shutdown or a window close event.">wxCloseEvent::CanVeto</a>. If this is <span class="literal">false</span>, you <em>must</em> destroy the window using <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="Destroys the window safely.">wxWindow::Destroy</a>.</p>
+<p>You should check whether the application is forcing the deletion of the window using <a class="el" href="classwx_close_event.html#adaa0548df45e05e8487cc5664ac352cf" title="システムシャットダウンやウィンドウの終了イベントを拒否できる場合に true を返却します。">wxCloseEvent::CanVeto</a>. If this is <span class="literal">false</span>, you <em>must</em> destroy the window using <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="安全にウィンドウを破棄します。">wxWindow::Destroy</a>.</p>
 <p>If the return value is <span class="literal">true</span>, it is up to you whether you respond by destroying the window.</p>
-<p>If you don't destroy the window, you should call <a class="el" href="classwx_close_event.html#a0ec337c77613d5d8407831cd64e16417" title="Call this from your event handler to veto a system shutdown or to signal to the calling application t...">wxCloseEvent::Veto</a> to let the calling code know that you did not destroy the window. This allows the <a class="el" href="classwx_window.html#a3e44f4a494fc9ef4346c4fba70c8de0c" title="この関数は単純に wxCloseEvent を作成します。通常はこのイベントを受け取ったハンドラはウィンドウを閉じようとします。">wxWindow::Close</a> function to return <span class="literal">true</span> or <span class="literal">false</span> depending on whether the close instruction was honoured or not.</p>
+<p>If you don't destroy the window, you should call <a class="el" href="classwx_close_event.html#a0ec337c77613d5d8407831cd64e16417" title="システムシャットダウンを拒否したり、ウィンドウを終了しないことを呼び出し元へ通知したりするためにイベントハンドラ内でこの関数を呼び出してください。">wxCloseEvent::Veto</a> to let the calling code know that you did not destroy the window. This allows the <a class="el" href="classwx_window.html#a3e44f4a494fc9ef4346c4fba70c8de0c" title="この関数は単純に wxCloseEvent を作成します。通常はこのイベントを受け取ったハンドラはウィンドウを閉じようとします。">wxWindow::Close</a> function to return <span class="literal">true</span> or <span class="literal">false</span> depending on whether the close instruction was honoured or not.</p>
 <p>Example of a <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a> handler:</p>
 <div class="fragment"><pre class="fragment">        <span class="keywordtype">void</span> MyFrame::OnClose(<a class="code" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a>&amp; event)
         {
-            <span class="keywordflow">if</span> ( event.<a class="code" href="classwx_close_event.html#adaa0548df45e05e8487cc5664ac352cf" title="Returns true if you can veto a system shutdown or a window close event.">CanVeto</a>() &amp;&amp; m_bFileNotSaved )
+            <span class="keywordflow">if</span> ( event.<a class="code" href="classwx_close_event.html#adaa0548df45e05e8487cc5664ac352cf" title="システムシャットダウンやウィンドウの終了イベントを拒否できる場合に true を返却します。">CanVeto</a>() &amp;&amp; m_bFileNotSaved )
             {
                 <span class="keywordflow">if</span> ( <a class="code" href="group__group__funcmacro__dialog.html#ga193c64ed4802e379799cdb42de252647" title="汎用的なメッセージダイアログを表示します。">wxMessageBox</a>(<span class="stringliteral">"The file has not been saved... continue closing?"</span>,
                                   <span class="stringliteral">"Please confirm"</span>,
@@ -308,7 +308,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Call this from your event handler to veto a system shutdown or to signal to the calling application that a window close did not happen.  </p>
-<p>You can only veto a shutdown if <a class="el" href="classwx_close_event.html#adaa0548df45e05e8487cc5664ac352cf" title="Returns true if you can veto a system shutdown or a window close event.">CanVeto()</a> returns <span class="literal">true</span>.  </p>
+<p>You can only veto a shutdown if <a class="el" href="classwx_close_event.html#adaa0548df45e05e8487cc5664ac352cf" title="システムシャットダウンやウィンドウの終了イベントを拒否できる場合に true を返却します。">CanVeto()</a> returns <span class="literal">true</span>.  </p>
 
 </div>
 </div>

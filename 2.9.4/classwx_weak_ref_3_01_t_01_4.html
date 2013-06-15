@@ -140,7 +140,7 @@ class wxWeakRef&lt; T &gt;</h3>
     wnd-&gt;<a class="code" href="classwx_window.html#a7fbc92ce240a8d4f6956b6e0276ef07f" title="ウィンドウの表示非表示を切り替えます。">Show</a>( <span class="keyword">true</span> );
     <span class="comment">// Weak ref is used like an ordinary pointer</span>
     wr-&gt;Show( <span class="keyword">false</span> );
-    wnd-&gt;<a class="code" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="Destroys the window safely.">Destroy</a>();
+    wnd-&gt;<a class="code" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="安全にウィンドウを破棄します。">Destroy</a>();
     <span class="comment">// Now the weak ref has been reset, so we don't risk accessing</span>
     <span class="comment">// a dangling pointer:</span>
     <a class="code" href="group__group__funcmacro__debug.html#ga204cc264ee560b67e6c6467ba8ffee5f" title="Assert macro.">wxASSERT</a>( wr==NULL );
