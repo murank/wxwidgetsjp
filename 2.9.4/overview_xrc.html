@@ -455,12 +455,12 @@ MyControlXmlHandler::MyControlXmlHandler()
     <span class="comment">//</span>
     <span class="comment">// And the code to read your custom tags from the XRC file is just:</span>
     control-&gt;Create(m_parentAsWindow, GetID(),
-                    GetBitmap(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>("first-bitmap")),
-                    GetPosition(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>("first-pos")),
-                    GetBitmap(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>("second-bitmap")),
-                    GetPosition(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>("second-pos")),
-                    GetText(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>("the-title")),
-                    GetFont(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>("title-font")),
+                    GetBitmap(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>("first-bitmap")),
+                    GetPosition(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>("first-pos")),
+                    GetBitmap(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>("second-bitmap")),
+                    GetPosition(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>("second-pos")),
+                    GetText(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>("the-title")),
+                    GetFont(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>("title-font")),
                     GetPosition(), GetSize(), GetStyle(), GetName());
 
     SetupWindow(control);
@@ -472,7 +472,7 @@ MyControlXmlHandler::MyControlXmlHandler()
 {
     <span class="comment">// this function tells XRC system that this handler can parse</span>
     <span class="comment">// the &lt;object class="MyControl"&gt; tags</span>
-    <span class="keywordflow">return</span> IsOfClass(node, <a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>(<span class="stringliteral">"MyControl"</span>));
+    <span class="keywordflow">return</span> IsOfClass(node, <a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"MyControl"</span>));
 }
 </pre></div><p>You may want to check the <a class="el" href="classwx_xml_resource_handler.html" title="wxSizerXmlHandler is a class for resource handlers capable of creating a wxSizer object from an XML n...">wxXmlResourceHandler</a> documentation to see how many built-in getters it contains. It's very easy to retrieve also complex structures out of XRC files using them.  </p>
 </div></div><!-- window showing the filter options -->

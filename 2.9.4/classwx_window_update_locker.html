@@ -124,7 +124,7 @@ function toggleVisibility(linkObj) {
 
 <p><code>#include &lt;/home/zeitlin/src/wx/github/interface/wx/wupdlock.h&gt;</code></p>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>This tiny class prevents redrawing of a <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> during its lifetime by using <a class="el" href="classwx_window.html#a15c678314cfc1d807196bc298b713ed3" title="Freezes the window or, in other words, prevents any updates from taking place on screen, the window is not redrawn at all.">wxWindow::Freeze()</a> and <a class="el" href="classwx_window.html#a279a532124073261b28131b6afb59a1e" title="Re-enables window updating after a previous call to Freeze().">wxWindow::Thaw()</a> methods.  </p>
+<div class="textblock"><p>This tiny class prevents redrawing of a <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> during its lifetime by using <a class="el" href="classwx_window.html#a15c678314cfc1d807196bc298b713ed3" title="ウィンドウをフリーズ、つまり、画面上のいかなる更新も行われないようにします。これを行なうとウィンドウはまったく再描画されなくなります。">wxWindow::Freeze()</a> and <a class="el" href="classwx_window.html#a279a532124073261b28131b6afb59a1e" title="Re-enables window updating after a previous call to Freeze().">wxWindow::Thaw()</a> methods.  </p>
 <p>It is typically used for creating automatic objects to temporarily suppress window updates before a batch of operations is performed:</p>
 <div class="fragment"><pre class="fragment">    <span class="keywordtype">void</span> MyFrame::Foo()
         {
@@ -135,7 +135,7 @@ function toggleVisibility(linkObj) {
             ... many other operations with m_text...
             m_text-WriteText();
         }
-</pre></div><p>Using this class is easier and safer than calling <a class="el" href="classwx_window.html#a15c678314cfc1d807196bc298b713ed3" title="Freezes the window or, in other words, prevents any updates from taking place on screen, the window is not redrawn at all.">wxWindow::Freeze()</a> and <a class="el" href="classwx_window.html#a279a532124073261b28131b6afb59a1e" title="Re-enables window updating after a previous call to Freeze().">wxWindow::Thaw()</a> because you don't risk to forget calling the latter.</p>
+</pre></div><p>Using this class is easier and safer than calling <a class="el" href="classwx_window.html#a15c678314cfc1d807196bc298b713ed3" title="ウィンドウをフリーズ、つまり、画面上のいかなる更新も行われないようにします。これを行なうとウィンドウはまったく再描画されなくなります。">wxWindow::Freeze()</a> and <a class="el" href="classwx_window.html#a279a532124073261b28131b6afb59a1e" title="Re-enables window updating after a previous call to Freeze().">wxWindow::Thaw()</a> because you don't risk to forget calling the latter.</p>
 <h2></h2>
 <div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__misc.html">Miscellaneous</a></span></div> </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>

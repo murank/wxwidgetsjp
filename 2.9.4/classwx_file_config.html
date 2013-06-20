@@ -134,7 +134,7 @@ function toggleVisibility(linkObj) {
 <area shape="rect" id="node2" href="classwx_config_base.html" title="wxConfigBase はすべてのコンフィグクラスの基本インタフェースを定義します。" alt="" coords="5,86,109,117"/><area shape="rect" id="node4" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="20,6,95,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classwx_file_config.html" title="wxFileConfig implements wxConfigBase interface for storing and retrieving configuration information u...">wxFileConfig</a> implements <a class="el" href="classwx_config_base.html" title="wxConfigBase はすべてのコンフィグクラスの基本インタフェースを定義します。">wxConfigBase</a> interface for storing and retrieving configuration information using plain text files.  </p>
+<div class="textblock"><p><a class="el" href="classwx_file_config.html" title="wxFileConfig は wxConfigBase インタフェースを実装しており、プレインテキストファイルを使用して設定情報を格納、取得するためのクラスです。">wxFileConfig</a> implements <a class="el" href="classwx_config_base.html" title="wxConfigBase はすべてのコンフィグクラスの基本インタフェースを定義します。">wxConfigBase</a> interface for storing and retrieving configuration information using plain text files.  </p>
 <p>The files have a simple format reminiscent of Windows INI files with lines of the form <code>"key = value"</code> defining the keys and lines of special form <code>"[group]"</code> indicating the start of each group.</p>
 <p>This class is used by default for wxConfig on Unix platforms but may also be used explicitly if you want to use files and not the registry even under Windows.</p>
 <h2></h2>
@@ -185,9 +185,9 @@ Public Member Functions</h2></td></tr>
 
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwx_file_name.html">wxFileName</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_file_config.html#af67ee0d35efdc5486c09682e4385dfb1">GetGlobalFile</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;basename)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the full path to the file which would be used by <a class="el" href="classwx_file_config.html" title="wxFileConfig implements wxConfigBase interface for storing and retrieving configuration information u...">wxFileConfig</a> as global, system-wide, file if it were constructed with <em>basename</em> as "global filename" parameter in the constructor.    <a href="#af67ee0d35efdc5486c09682e4385dfb1"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the full path to the file which would be used by <a class="el" href="classwx_file_config.html" title="wxFileConfig は wxConfigBase インタフェースを実装しており、プレインテキストファイルを使用して設定情報を格納、取得するためのクラスです。">wxFileConfig</a> as global, system-wide, file if it were constructed with <em>basename</em> as "global filename" parameter in the constructor.    <a href="#af67ee0d35efdc5486c09682e4385dfb1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwx_file_name.html">wxFileName</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_file_config.html#a479f242f67dca8149dfbd7e9b6394fe9">GetLocalFile</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;basename, int style=0)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the full path to the file which would be used by <a class="el" href="classwx_file_config.html" title="wxFileConfig implements wxConfigBase interface for storing and retrieving configuration information u...">wxFileConfig</a> as local, user-specific, file if it were constructed with <em>basename</em> as "local filename" parameter in the constructor.    <a href="#a479f242f67dca8149dfbd7e9b6394fe9"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the full path to the file which would be used by <a class="el" href="classwx_file_config.html" title="wxFileConfig は wxConfigBase インタフェースを実装しており、プレインテキストファイルを使用して設定情報を格納、取得するためのクラスです。">wxFileConfig</a> as local, user-specific, file if it were constructed with <em>basename</em> as "local filename" parameter in the constructor.    <a href="#a479f242f67dca8149dfbd7e9b6394fe9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwx_string.html">wxString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_file_config.html#ae70471e1167791f26bdc88175476674f">GetGlobalFileName</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;szFile)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwx_string.html">wxString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_file_config.html#a50ecc124ab06aa5e6461e70f0673b06a">GetLocalFileName</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;szFile, int style=0)</td></tr>
 </table>
@@ -453,7 +453,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Return the full path to the file which would be used by <a class="el" href="classwx_file_config.html" title="wxFileConfig implements wxConfigBase interface for storing and retrieving configuration information u...">wxFileConfig</a> as global, system-wide, file if it were constructed with <em>basename</em> as "global filename" parameter in the constructor.  </p>
+<p>Return the full path to the file which would be used by <a class="el" href="classwx_file_config.html" title="wxFileConfig は wxConfigBase インタフェースを実装しており、プレインテキストファイルを使用して設定情報を格納、取得するためのクラスです。">wxFileConfig</a> as global, system-wide, file if it were constructed with <em>basename</em> as "global filename" parameter in the constructor.  </p>
 <p>Notice that this function cannot be used if <em>basename</em> is already a full path name.  </p>
 
 </div>
@@ -500,7 +500,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Return the full path to the file which would be used by <a class="el" href="classwx_file_config.html" title="wxFileConfig implements wxConfigBase interface for storing and retrieving configuration information u...">wxFileConfig</a> as local, user-specific, file if it were constructed with <em>basename</em> as "local filename" parameter in the constructor.  </p>
+<p>Return the full path to the file which would be used by <a class="el" href="classwx_file_config.html" title="wxFileConfig は wxConfigBase インタフェースを実装しており、プレインテキストファイルを使用して設定情報を格納、取得するためのクラスです。">wxFileConfig</a> as local, user-specific, file if it were constructed with <em>basename</em> as "local filename" parameter in the constructor.  </p>
 <p><em>style</em> has the same meaning as in <a class="el" href="classwx_config_base.html#a7c3ce1f79df2837bc532c0ff551e7bac">wxConfig constructor</a> and can contain any combination of styles but only wxCONFIG_USE_SUBDIR bit is examined by this function.</p>
 <p>Notice that this function cannot be used if <em>basename</em> is already a full path name.  </p>
 

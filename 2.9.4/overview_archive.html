@@ -142,16 +142,16 @@ function toggleVisibility(linkObj) {
 
 Creating an Archive</h2>
 <p>Call <a class="el" href="classwx_archive_output_stream.html#a4a5dd11b0dbd57b78a94315c9e841ceb" title="Takes ownership of entry and uses it to create a new entry in the archive.">wxArchiveOutputStream::PutNextEntry()</a> to create each new entry in the archive, then write the entry's data. Another call to PutNextEntry() closes the current entry and begins the next. 以下に例を示します:</p>
-<div class="fragment"><pre class="fragment"><a class="code" href="classwx_f_file_output_stream.html" title="This class represents data written to a file.">wxFFileOutputStream</a> out(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>(<span class="stringliteral">"test.zip"</span>));
+<div class="fragment"><pre class="fragment"><a class="code" href="classwx_f_file_output_stream.html" title="This class represents data written to a file.">wxFFileOutputStream</a> out(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
 <a class="code" href="classwx_zip_output_stream.html" title="Output stream for writing zip files.">wxZipOutputStream</a> zip(out);
 <a class="code" href="classwx_text_output_stream.html" title="This class provides functions that write text data using an output stream, allowing you to write text...">wxTextOutputStream</a> txt(zip);
 <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> sep(<a class="code" href="classwx_file_name.html#ad6f9ae274e12729fc5689128ea94d16e" title="Returns the usually used path separator for this format.">wxFileName::GetPathSeparator</a>());
 
-zip.PutNextEntry(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>(<span class="stringliteral">"entry1.txt"</span>));
-txt &lt;&lt; <a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>(<span class="stringliteral">"Some text for entry1.txt\n"</span>);
+zip.PutNextEntry(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"entry1.txt"</span>));
+txt &lt;&lt; <a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"Some text for entry1.txt\n"</span>);
 
-zip.PutNextEntry(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>(<span class="stringliteral">"subdir"</span>) + sep + <a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>(<span class="stringliteral">"entry2.txt"</span>));
-txt &lt;&lt; <a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>(<span class="stringliteral">"Some text for subdir/entry2.txt\n"</span>);
+zip.PutNextEntry(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"subdir"</span>) + sep + <a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"entry2.txt"</span>));
+txt &lt;&lt; <a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"Some text for subdir/entry2.txt\n"</span>);
 </pre></div><p>The name of each entry can be a full path, which makes it possible to store entries in subdirectories.</p>
 <h2><a class="anchor" id="overview_archive_extract"></a>
 
@@ -161,7 +161,7 @@ Extracting an Archive</h2>
 <p>When there are no more entries, GetNextEntry() returns <span class="literal">NULL</span> and sets Eof().</p>
 <div class="fragment"><pre class="fragment">auto_ptr&lt;wxZipEntry&gt; entry;
 
-<a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a> in(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>(<span class="stringliteral">"test.zip"</span>));
+<a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a> in(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
 <a class="code" href="classwx_zip_input_stream.html" title="Input stream for reading zip files.">wxZipInputStream</a> zip(in);
 
 <span class="keywordflow">while</span> (entry.reset(zip.GetNextEntry()), entry.get() != NULL)
@@ -177,8 +177,8 @@ Modifying an Archive</h2>
 <p>For archive types which compress entry data, CopyEntry() is likely to be much more efficient than transferring the data using Read() and Write() since it will copy them without decompressing and recompressing them.</p>
 <p>In general modifications are not possible without rewriting the archive, though it may be possible in some limited cases. Even then, rewriting the archive is usually a better choice since a failure can be handled without losing the whole archive. <a class="el" href="classwx_temp_file_output_stream.html" title="wxTempFileOutputStream is an output stream based on wxTempFile.">wxTempFileOutputStream</a> can be helpful to do this.</p>
 <p>For example to delete all entries matching the pattern "*.txt":</p>
-<div class="fragment"><pre class="fragment">auto_ptr&lt;wxFFileInputStream&gt; in(<span class="keyword">new</span> <a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a>(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>(<span class="stringliteral">"test.zip"</span>)));
-<a class="code" href="classwx_temp_file_output_stream.html" title="wxTempFileOutputStream is an output stream based on wxTempFile.">wxTempFileOutputStream</a> out(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>(<span class="stringliteral">"test.zip"</span>));
+<div class="fragment"><pre class="fragment">auto_ptr&lt;wxFFileInputStream&gt; in(<span class="keyword">new</span> <a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a>(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>)));
+<a class="code" href="classwx_temp_file_output_stream.html" title="wxTempFileOutputStream is an output stream based on wxTempFile.">wxTempFileOutputStream</a> out(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
 
 <a class="code" href="classwx_zip_input_stream.html" title="Input stream for reading zip files.">wxZipInputStream</a> inzip(*in);
 <a class="code" href="classwx_zip_output_stream.html" title="Output stream for writing zip files.">wxZipOutputStream</a> outzip(out);
@@ -191,7 +191,7 @@ outzip.CopyArchiveMetaData(inzip);
 
 <span class="comment">// call CopyEntry for each entry except those matching the pattern</span>
 <span class="keywordflow">while</span> (entry.reset(inzip.GetNextEntry()), entry.get() != NULL)
-    <span class="keywordflow">if</span> (!entry-&gt;GetName().Matches(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>(<span class="stringliteral">"*.txt"</span>)))
+    <span class="keywordflow">if</span> (!entry-&gt;GetName().Matches(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"*.txt"</span>)))
         <span class="keywordflow">if</span> (!outzip.CopyEntry(entry.release(), inzip))
             <span class="keywordflow">break</span>;
 
@@ -214,7 +214,7 @@ Looking Up an Archive Entry by Name</h2>
 <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> name = <a class="code" href="classwx_zip_entry.html#a74d8509df7beb653ab2e22c05f0cdb3d" title="Returns the entry's filename in the internal format used within the archive.">wxZipEntry::GetInternalName</a>(localname);
 
 <span class="comment">// open the zip</span>
-<a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a> in(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>(<span class="stringliteral">"test.zip"</span>));
+<a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a> in(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
 <a class="code" href="classwx_zip_input_stream.html" title="Input stream for reading zip files.">wxZipInputStream</a> zip(in);
 
 <span class="comment">// call GetNextEntry() until the required internal name is found</span>
@@ -235,7 +235,7 @@ ZipCatalog::iterator it;
 ZipCatalog cat;
 
 <span class="comment">// open the zip</span>
-<a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a> in(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>(<span class="stringliteral">"test.zip"</span>));
+<a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a> in(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
 <a class="code" href="classwx_zip_input_stream.html" title="Input stream for reading zip files.">wxZipInputStream</a> zip(in);
 
 <span class="comment">// load the zip catalog</span>
@@ -257,7 +257,7 @@ ZipCatalog cat;
 </pre></div><p>To open more than one entry simultaneously you need more than one underlying stream on the same archive:</p>
 <div class="fragment"><pre class="fragment"><span class="comment">// opening another entry without closing the first requires another</span>
 <span class="comment">// input stream for the same file</span>
-<a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a> in2(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>(<span class="stringliteral">"test.zip"</span>));
+<a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a> in2(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
 <a class="code" href="classwx_zip_input_stream.html" title="Input stream for reading zip files.">wxZipInputStream</a> zip2(in2);
 <span class="keywordflow">if</span> ((it = cat.find(<a class="code" href="classwx_zip_entry.html#a74d8509df7beb653ab2e22c05f0cdb3d" title="Returns the entry's filename in the internal format used within the archive.">wxZipEntry::GetInternalName</a>(local2))) != cat.end())
     zip2.OpenEntry(*it-&gt;second);
@@ -317,7 +317,7 @@ factory = <a class="code" href="classwx_archive_class_factory.html#ad9f083561596
     }
     <span class="keywordflow">else</span>
     {
-        <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="This macro can be used with character and string literals (in other words, 'x' or &quot;foo&quot;) to automatic...">wxT</a>(<span class="stringliteral">"can't handle '%s'"</span>), filename.c_str());
+        <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"can't handle '%s'"</span>), filename.c_str());
     }
 }
 </pre></div><h2><a class="anchor" id="overview_archive_noseek"></a>
