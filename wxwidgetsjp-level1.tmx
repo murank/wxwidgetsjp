@@ -862,6 +862,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxCalendarCtrl has native implementation in wxGTK, but it has less features than the generic one.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T152211Z">
+        <seg>wxCalendarCtrl は wxGTK でネイティブ実装を持つようになりました。ただし、汎用のものと比べて機能は少ないです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxDECLARE_EVENT_TABLE()</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T014946Z">
@@ -1234,6 +1242,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxString wxToString(Colour col)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T153108Z">
+        <seg>wxString wxToString(Colour col)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxString API provides implicit conversion of the internal Unicode string contents to narrow, char strings.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T134230Z">
@@ -1338,6 +1354,22 @@ for ( wxString::const_iterator i = s.begin(); i != s.end(); ++i )
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130516T160330Z">
         <seg>wxTreeCtrl::EditLabel: イベントを送信しない代替方法を持たない</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxWindow::Freeze/Thaw() are not virtual any more, if you overrode them in your code you need to override DoFreeze/Thaw() instead now.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T152121Z">
+        <seg>wxWindow::Freeze/Thaw() はもはや仮想関数ではなくなりました。コードの中でそれらをオーバーライドしている場合、代わりに DoFreeze/Thaw() をオーバーライドする必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxWindow::IsEnabled() now returns false if a window parent (and not necessarily the window itself) is disabled, new function IsThisEnabled() with the same behaviour as old IsEnabled() was added.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T144713Z">
+        <seg>wxWindow::IsEnabled() はウィンドウの親 (ウィンドウ自身である必要はありません) が無効化されている場合に false を返却するようになりました。そのため、以前の IsEnabled() と同じ振る舞いをする新しい関数 IsThisEnabled() が追加されました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1906,6 +1938,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxString s;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T142517Z">
+        <seg>wxString s;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Window deletion overview</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130615T033659Z">
@@ -2450,6 +2490,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>    #include &lt;fstream&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T143010Z">
+        <seg>    #include &lt;fstream&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// We want to get a dialog that is stretchable because it
 // has a text ctrl at the top and two buttons at the bottom.
 
@@ -2592,6 +2640,14 @@ puts(p); // または const char * を受け取る他の関数の呼び出し</s
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>enum Colour { Red, Green, Blue };</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T152921Z">
+        <seg>enum Colour { Red, Green, Blue };</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>enum { Red, Green, Blue };</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T130832Z">
@@ -2692,6 +2748,14 @@ void MyHandler::OnExit( wxCommandEvent &amp; )
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>void OpenLogFile(const char *filename);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T142514Z">
+        <seg>void OpenLogFile(const char *filename);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// accessors</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130516T155555Z">
@@ -2704,6 +2768,14 @@ void MyHandler::OnExit( wxCommandEvent &amp; )
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T111013Z">
         <seg>// また、wxWidgets の動的モジュールロード機能の</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if ( s.length() != 1 )</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T153115Z">
+        <seg>if ( s.length() != 1 )</seg>
       </tuv>
     </tu>
     <tu>
@@ -2742,6 +2814,14 @@ void MyHandler::OnExit( wxCommandEvent &amp; )
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>return false;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T153117Z">
+        <seg>return false;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>return true;
 }</seg>
       </tuv>
@@ -2768,10 +2848,26 @@ void MyHandler::OnExit( wxCommandEvent &amp; )
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>switch ( s[0].GetValue() )</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T153119Z">
+        <seg>switch ( s[0].GetValue() )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>void OnSize(wxSizeEvent&amp; event);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T020037Z">
         <seg>void OnSize(wxSizeEvent&amp; event);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>case 'R': *col = Red; return true;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T153121Z">
+        <seg>case 'R': *col = Red; return true;</seg>
       </tuv>
     </tu>
     <tu>
@@ -2844,6 +2940,14 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>case 'G': *col = Green; return true;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T153122Z">
+        <seg>case 'G': *col = Green; return true;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>new wxTextCtrl( this, -1, "My text.", wxDefaultPosition, wxSize(100,60), wxTE_MULTILINE),</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T145454Z">
@@ -2868,6 +2972,14 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>void MyFunc(const wxString&amp; filename)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T143012Z">
+        <seg>void MyFunc(const wxString&amp; filename)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>void operator()( wxCommandEvent &amp; )</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T060812Z">
@@ -2888,6 +3000,14 @@ private:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130516T155523Z">
         <seg>// 何か値を設定する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>case 'B': *col = Blue; return true;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T153123Z">
+        <seg>case 'B': *col = Blue; return true;</seg>
       </tuv>
     </tu>
     <tu>
@@ -2976,6 +3096,14 @@ wxBEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>return false;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T153124Z">
+        <seg>return false;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// Do something useful.
 }
 
@@ -3020,6 +3148,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>return col == Red ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T153110Z">
+        <seg>return col == Red ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>//create two buttons that are horizontally unstretchable,</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T145510Z">
@@ -3048,6 +3184,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T143820Z">
         <seg>new wxButton( this, wxID_OK, "OK" ),</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>"R" : col == Green ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T153111Z">
+        <seg>"R" : col == Green ?</seg>
       </tuv>
     </tu>
     <tu>
@@ -3096,6 +3240,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>void OpenLogFile(const wchar_t *filename);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T142516Z">
+        <seg>void OpenLogFile(const wchar_t *filename);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>new wxButton( this, wxID_CANCEL, "Cancel" ),</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T145535Z">
@@ -3108,6 +3260,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T143855Z">
         <seg>new wxButton( this, wxID_CANCEL, "Cancel" ),</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>"G" : "B";</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T153112Z">
+        <seg>"G" : "B";</seg>
       </tuv>
     </tu>
     <tu>
@@ -3252,6 +3412,14 @@ private:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T110838Z">
         <seg>// トランザクションのトレースは有効化する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>bool wxFromString(const wxString&amp; s, Colour* col)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T153113Z">
+        <seg>bool wxFromString(const wxString&amp; s, Colour* col)</seg>
       </tuv>
     </tu>
     <tu>
@@ -3416,6 +3584,14 @@ wxMORE      // wxID_MORE を返却します</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T060913Z">
         <seg>ファンクタの一般的な例は boost::function&lt;&gt; です:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A common example of such problem arises with std::fstream class constructor in Microsoft Visual C++ standard library implementation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T142847Z">
+        <seg>この問題の一般的な例は Microsoft Visual C++  標準ライブラリにおける std::fstream クラスのコンストラクタです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3916,6 +4092,14 @@ wxMORE      // wxID_MORE を返却します</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Again, the best way to ensure that this problem doesn't arise is to rebuild your code using a compiler which warns about function signature mismatch (you can use -Woverloaded-virtual g++ option).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T143948Z">
+        <seg>繰り返しますが、この問題が発生しないようにする最良の方法は、関数のシグネチャの不一致を警告するコンパイラでリビルドすることです。(これには -Woverloaded-virtual g++ オプションを使用できます。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Again, this mostly will be unnoticeable but can result in some problems:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T124419Z">
@@ -3984,6 +4168,14 @@ wxMORE      // wxID_MORE を返却します</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130610T145852Z">
         <seg>使用方法についての詳細は wxConfigBase クラスの説明の中で記載しています。また、ファイル、レジストリ、INI ファイルベースの実装についてのドキュメントでは、それぞれのバージョン独自の機能/制限について触れています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All wxWidgets functions, such as wxPrintf(), wxLogMessage() &amp;c still work with it, but passing it to printf() will now result in a crash.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130618T152354Z">
+        <seg>wxPrintf()、wxLogMessage() など、すべての wxWidgets 関数は引き続き動作しますが、printf() にこの戻り値を渡すとプログラムがクラッシュするでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4248,6 +4440,14 @@ wxMORE      // wxID_MORE を返却します</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T034210Z">
         <seg>発生しうる別の問題は c_str() 自身の返却する値もまたバッファのポインタではなく、暗黙的にナロー文字列やワイド文字列へ変換可能なヘルパークラス wxCStrData であることに関連しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Another possibility which exists now is to provide an overload of wxToString() (and wxFromString()) for your own type, e.g.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T153105Z">
+        <seg>別の方法としては、独自の型用に wxToString() (と wxFromString()) をオーバーロードすることです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4588,6 +4788,14 @@ wxMORE      // wxID_MORE を返却します</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Basically, you can remove them from any code which used them.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130620T123316Z">
+        <seg>基本的にはどのコードからも取り除くことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because adaptation rearranges your sizer and window hierarchy, it is not fool-proof, and may fail in the following situations:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130606T145413Z">
@@ -4616,6 +4824,22 @@ wxMORE      // wxID_MORE を返却します</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T165304Z">
         <seg>このため、wxString::From8BitData() は wxString::To8BitData() によって作られた文字列に対してのみ、使用するべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Because of this, code like the following</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T143005Z">
+        <seg>このため、次のようなコードは</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Because of this, you cannot pass its result to any standard vararg functions such as printf() any more as described in Unicode-Related Compilation Errors.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130618T152226Z">
+        <seg>このため、Unicode 関連のコンパイルエラー で説明している通り、この戻り値を printf() といった標準の可変引数関数に渡すことはもはやできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4944,6 +5168,14 @@ void MyFrame::OnPlot(MyPlotEvent&amp; event)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Call this function to tell wxScrolled to perform the actual scrolling on a different window (and not ...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130620T124624Z">
+        <seg>異なるウィンドウ (同じウィンドウではありません) 上の wxScrolled を実際にスクロールさせるためにはこの関数を呼び出してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Called to log a new record.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T111512Z">
@@ -4976,6 +5208,14 @@ void MyFrame::OnPlot(MyPlotEvent&amp; event)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Calling wxConfig::Write() with an enum value will fail to compile because wxConfig now tries to convert all unknown types to wxString automatically using wxToString() function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T152841Z">
+        <seg>wxConfig は wxToString() を使用して不明な型を自動的に wxString へ変換するようになったため、wxConfig::Write() に enum 値を渡すとコンパイルに失敗します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Calls wxFileTranslationsLoader::AddCatalogLookupPathPrefix().</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T041226Z">
@@ -4996,6 +5236,14 @@ void MyFrame::OnPlot(MyPlotEvent&amp; event)
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T024505Z">
         <seg>C++ RTTI を使用しない場合の注意点</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Changes Since wxWidgets 2.8</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130618T145933Z">
+        <seg>wxWidgets 2.8 からの変更点</seg>
       </tuv>
     </tu>
     <tu>
@@ -5290,6 +5538,22 @@ void MyFrame::OnPlot(MyPlotEvent&amp; event)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Converts string to a wxColour best represented by the given string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T153010Z">
+        <seg>指定された文字列で表現される wxColour へ文字列を変換します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Converts the given wxColour into a string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T152707Z">
+        <seg>指定された wxColour を文字列に変換します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Converts the string to an 8-bit string in ISO-8859-1 encoding in the form of a wxCharBuffer (Unicode ...</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T162243Z">
@@ -5468,6 +5732,14 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130521T162139Z">
         <seg>デフォルトのアライメントは wxALIGN_LEFT | wxALIGN_TOP です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Default location of wxFileConfig files has changed under Windows, you will need to update your code if you access these files directly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T144445Z">
+        <seg>Windows における wxFileConfig ファイルのデフォルトの場所が変更されたため、これらのファイルに直接アクセスしている場合はコードを更新する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6022,6 +6294,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Explicit conversion to C string in the internal representation (either wchar_t* or UTF-8-encoded char...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T142502Z">
+        <seg>C 文字列を明示的に内部表現 (ビルドに応じて wchar_t* もしくは UTF-8 でエンコードされた char* のいずれか) へ変換します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Extra functionality is automatically given to the dialog box, such as tabbing between items (currently Windows only).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130531T145801Z">
@@ -6098,6 +6378,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T030557Z">
         <seg>最後に、wxApp オブジェクトの ProcessEvent が呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Finally, a few structure fields, notable wxCmdLineEntryDesc::shortName, longName and description fields have been changed to be of type const char* instead of const wxChar* so you will need to remove wxT() or _T() if you used it with their initializers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130620T124014Z">
+        <seg>最後に、いくつかの構造体のフィールド、特に wxCmdLineEntryDesc::shortName、longName、 description フィールドの型が const wxChar* から const char* に変更されました。そのため、それらのフィールドの初期化に wxT() や _T() を使用している場合、それらを取り除く必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6366,6 +6654,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, the notorious (due to the confusion they created) macros wxT() and _T() are not needed at all any longer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130618T151144Z">
+        <seg>例えば、(何を作成するのか分かりづらいことで) 悪名高い wxT() マクロと _T() マクロはもはや完全に不要になりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, this code may crash:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130527T162431Z">
@@ -6566,6 +6862,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Freezes the window or, in other words, prevents any updates from taking place on screen, the window is not redrawn at all.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T152001Z">
+        <seg>ウィンドウをフリーズ、つまり、画面上のいかなる更新も行われないようにします。これを行なうとウィンドウはまったく再描画されなくなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>From a practical point of view, using Unicode is almost a requirement when writing applications for international audience.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T031610Z">
@@ -6586,6 +6890,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T075240Z">
         <seg>wxWidgets 2.0 からは一部の例外を除き、代わりに イベントテーブル が使用されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Function which must be overridden to implement the size available for the scroll target for the given...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130620T124849Z">
+        <seg>指定されたメインウィンドウのサイズに対して、スクロール対象が使用可能なサイズを計算するために必ずオーバーライドする必要がある関数。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6634,6 +6946,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T033555Z">
         <seg>一般的に言うと、リソースが限られており、変換にかかるオーバーヘッド (と、ヨーロッパ言語において UTF-32 の代わりに UTF-8 を使用することによるメモリ消費量の削減) が重要となる、といった特殊な状況下でのみ、非標準の UTF-8 ビルドを使用するべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Generating wxNavigationKeyEvent events doesn't work any more under wxGTK (and other platforms in the future), use wxWindow::Navigate() or NavigateIn() instead.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130620T124216Z">
+        <seg>wxGTK では (将来的には他のプラットフォームでも) wxNavigationKeyEvent イベントを生成しても動作しません。代わりに wxWindow::Navigate() か NavigateIn() を使用してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7264,10 +7584,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you use wxScrolled&lt;T&gt;::SetTargetWindow() you must override wxScrolled&lt;T&gt;::GetSizeAvailableForScrollTarget() method to compute the size available for the scroll target as function of the main window size, please see the documentation of this method for more details.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T154004Z">
+        <seg>wxScrolled&lt;T&gt;::SetTargetWindow() を使用している場合、スクロール対象が使用できるサイズをメインウィンドウのサイズから計算するために wxScrolled&lt;T&gt;::GetSizeAvailableForScrollTarget() 関数をオーバーライドする必要があります。詳細はこの関数のドキュメントを参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you use wxNewId() consistently in your application, you can be sure that your identifiers don't conflict accidentally.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T012416Z">
         <seg>もしアプリケーション内で一貫して wxNewId() を使用するようにすれば、偶発的な識別子の衝突を避けることが可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you used Unicode build of wxWidgets 2.8 or previous version, please read Unicode Support in wxWidgets for the details about how the API changed in 3.0 as a lot of the information which was correct before doesn't apply any longer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130618T150417Z">
+        <seg>wxWidgets 2.8 やそれ以前のバージョンで Unicode ビルドを使用していた場合、3.0 における API の変更点の詳細について wxWidgets における Unicode 対応 を参照してください。これまで正しかった多くの情報が 3.0 ではもはや当てはまりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7300,6 +7636,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T090940Z">
         <seg>同様に、wchar_t と char のどちらででも wxString の保持する文字列にアクセスできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In addition to a constructor from const char * which this class must have, it also provides a constructor taking a wide character file name.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T142956Z">
+        <seg>このクラスが必ず持たねばならない const char * のコンストラクタに加えて、ワイド文字列のファイル名を受け取るコンストラクタもこのクラスは提供しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7880,6 +8224,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is strongly advised to recompile your code with a compiler warning about passing non-POD objects to vararg functions, such as g++.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130618T152514Z">
+        <seg>g++ など、非 POD オブジェクトを可変引数関数に渡すと警告を出すコンパイラを使用してコードをコンパイルし直すことを強く推奨します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is the duty of the application to define a suitable event handler, and decide whether or not to destroy the window.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130614T144315Z">
@@ -8072,6 +8424,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Loads the file history from the given config object.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T152402Z">
+        <seg>指定されたコンフィグオブジェクトからファイルの履歴を読み込みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Log Messages Selection</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T131034Z">
@@ -8188,6 +8548,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130507T153449Z">
         <seg>雑多な覚書</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Miscellaneous Other Changes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130618T150118Z">
+        <seg>他の雑多な変更</seg>
       </tuv>
     </tu>
     <tu>
@@ -8754,6 +9122,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Of course, this will change the format of the wxConfig output which may be undesirable.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T153206Z">
+        <seg>もちろん、これは望ましくない wxConfig の出力形式を変更します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>On the other hand, event tables are more succinct and centralize all event handler bindings in one place.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T021901Z">
@@ -8774,6 +9150,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130610T150843Z">
         <seg>一方で、階層構造を持ち、小規模から中規模であるすべての種類のデータを格納するのにこれらの提供機能が非常に役立ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>On the other hand, there is no particular harm in leaving them neither as the code will still compile and work correctly -- you only need to remove them if you think that your code looks tidier without them.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130618T151431Z">
+        <seg>一方で、これらのマクロを残しておいても以前としてコンパイルできますし、正しく動作するため、特に害はありません。これらのマクロを削除してコードを綺麗にしたい場合だけ、マクロを削除する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8846,6 +9230,46 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130502T235357Z">
         <seg>プログラム実行時にはバイナリファイルだけが必要です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OpenLogFile(s);             // ERROR: ambiguity</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T142529Z">
+        <seg>OpenLogFile(s);             // エラー: 曖昧</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OpenLogFile(s.wx_str());    // OK: function called depends on the build</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T142623Z">
+        <seg>OpenLogFile(s.wx_str());    // OK: ビルドに応じて関数が呼ばれる</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OpenLogFile(s.mb_str());    // OK: always calls narrow string overload</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T142650Z">
+        <seg>OpenLogFile(s.mb_str());    // OK: 常にナロー文字列用のオーバーロードが呼ばれる</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OpenLogFile(s.wc_str());    // OK: always calls wide string overload</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T142710Z">
+        <seg>OpenLogFile(s.wc_str());    // OK: 常にワイド文字列用のオーバーロードが呼ばれる</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OpenLogFile(s.c_str());     // ERROR: ambiguity</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T142544Z">
+        <seg>OpenLogFile(s.c_str());     // エラー: 曖昧</seg>
       </tuv>
     </tu>
     <tu>
@@ -8954,6 +9378,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Override this to react to a left click.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T154200Z">
+        <seg>左クリックに反応するにはこの関数をオーバーライドしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Override this to react to cell activation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T154235Z">
+        <seg>セルのアクティブ化に反応するにはこの関数をオーバーライドしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Override this to return a window containing the main content of the dialog.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130604T150658Z">
@@ -8962,10 +9402,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Override this to start a drag operation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T154209Z">
+        <seg>ドラッグ操作を開始するにはこの関数をオーバーライドしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Performance Implications of Using UTF-8</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T141437Z">
         <seg>UTF-8 を使用することによる性能への影響</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Performs a keyboard navigation action starting from this window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T145021Z">
+        <seg>このウィンドウから始まるキーボードナビゲーション処理を実行します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9292,6 +9748,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Returns true if the window is enabled, i.e.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T144515Z">
+        <seg>ウィンドウが有効化されている場合に true を返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Returns true if this dialog can and should perform layout adaptation using DoLayoutAdaptation(), usually if the dialog is too large to fit on the display.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130606T144940Z">
@@ -9598,6 +10062,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Signature of wxDataViewCustomRenderer::StartDrag() virtual method changed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T154053Z">
+        <seg>wxDataViewCustomRenderer::StartDrag() 仮想関数のシグネチャが変更されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Similarly,</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T123350Z">
@@ -9674,6 +10146,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T135006Z">
         <seg>サイザーの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sizers distribute only the extra space between the stretchable items according to their proportions and not all available space.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130620T124239Z">
+        <seg>サイザーは利用可能なすべてのスペースではなく、余剰スペースのみを伸長可能なコントロール間でプロポーションにしたがって分配します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10190,6 +10670,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The calendar control allows the user to pick a date.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T152131Z">
+        <seg>カレンダコントロールはユーザが日付を選択できるようにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The change of the type of wxString::c_str() can also result in compilation errors when passing its result to a function overloaded to take both narrow and wide strings and in this case you must select the version which you really want to use, e.g.:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T142232Z">
+        <seg>また、wxString::c_str() の戻り値の型を変更したことで、ナロー文字列とワイド文字列の両方を受け取るオーバーロード関数にこの戻り値を引き渡すとコンパイルエラーが発生するようになります。この場合はどちらの型を使用したいか選択する必要があります:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The child frame classes send the event directly to the associated view which still forwards it to its document object.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130513T153151Z">
@@ -10558,6 +11054,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The incompatible changes can be grouped into the following categories:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130618T150101Z">
+        <seg>互換性のない変更は次のカテゴリに分類できます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The interface provided by wxString is the same independently of the format used internally.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T093231Z">
@@ -10626,6 +11130,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T074728Z">
         <seg>wxWidgets のロギング機能では ログターゲット に対する標準的なインタフェースを定義する基底 wxLog クラスや、いくつかのログクラスの標準的な実装とそれを使用する関数群を提供しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The most serious backwards-incompatible change is related to the change of return type of wxString::c_str() method: it returns a special proxy object instead of a simple char* or wchar_t* now.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130620T123617Z">
+        <seg>もっとも深刻な後方互換性のない変更は wxString::c_str() 関数の戻り値の型に関する変更です: 現在は単純な char* や wchar_t* の代わりに特別なプロキシオブジェクトを返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The native implementation is used by default, but you can still use wxGenericCalendarCtrl instead of wxCalendarCtrl in your code if you need the extra features.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T152339Z">
+        <seg>デフォルトでネイティブ実装が使用されますが、追加の機能が必要な場合は wxCalendarCtrl の代わりに wxGenericCalendarCtrl を引き続き使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10722,6 +11242,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T022636Z">
         <seg>wxWidgets が唯一要求することとして、イベントを処理するクラスは wxEvtHandler を継承していなければなりません。したがって、wxWindow はこのクラスを継承していることを考慮すると、ウィンドウを表すクラスはどれもイベントを処理することができるということです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The other class of incompatible changes is due to modifying some virtual methods to use wxString parameters instead of const wxChar* ones to make them accept both narrow and wide strings.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T143659Z">
+        <seg>他の互換性のない変更は、いくつかの仮想関数を const wxChar* の代わりに wxString を引数に取るように修正したことによるものです。この変更はナロー文字列とワイド文字列の両方を受け取るために行いました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11006,6 +11534,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The simplest solution is to cast the enum value to int, e.g.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T152920Z">
+        <seg>もっとも簡単な解決策は enum 値を int へキャストすることです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The simplest way to ensure that this doesn't happen is to avoid conversions to char* completely by using wxString throughout your program.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T140833Z">
@@ -11090,6 +11626,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T013341Z">
         <seg>これらの関数の用途はかなり明確ですが、なぜ C の標準入出力関数や C++ のストリームといった他のロギング機能を使用しないのか疑問に思うかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The usual, short, name of the switch or the option.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T144018Z">
+        <seg>スイッチやオプションのよくある、短い名前。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11798,6 +12342,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This event class contains information about navigation events, generated by navigation keys such as t...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T144908Z">
+        <seg>このイベントクラスはナビゲーションイベントに関する情報を含んでおり、タブやページダウンなどのナビゲーションキーから生成されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This event class contains information about socket events.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130507T153816Z">
@@ -12014,6 +12566,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is not a problem if you simply call these functions but you need to change the signature of the derived class versions if you override them as otherwise they wouldn't be called any more.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T143834Z">
+        <seg>関数を単純に呼び出しているのであれば問題になりませんが、これらの関数をオーバーライドしている場合、そのシグネチャの関数はもはや呼び出されなくなるため、継承クラスのシグネチャを変更する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is supported only by wxBoxSizer and wxFlexGridSizer.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T141651Z">
@@ -12074,6 +12634,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T124554Z">
         <seg>コントロールの生成するイベントを処理しない場合や、イベントを一箇所で処理する場合 (このときはイベントテーブルに wxID_ANY を指定するか、同じように wxEvtHandler::Bind を呼ぶ必要があります) など、コントロールの正確な識別子が必要でないときにこれは役立ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This macro can be used with character and string literals (in other words, 'x' or "foo") to automatic...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130618T150545Z">
+        <seg>このマクロは文字やリテラル文字列 (つまり、'x' や "foo") を Unicode ビルド時に自動的にワイド文字列へ変換します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This macro is exactly the same as wxT() and is defined in wxWidgets simply because it may be more int...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130618T150936Z">
+        <seg>このマクロは wxT() と完全に同じです。これが wxWidgets で定義されている理由は、単純に標準の Win32 ヘッダでも定義されており、Windows プログラマにとって直感的だからです。(同様に、同じマクロが他の名前 (_TEXT()) でも定義されています)</seg>
       </tuv>
     </tu>
     <tu>
@@ -12218,6 +12794,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T123227Z">
         <seg>これは wxLogFormatter クラスによって行われるため、このクラスを継承し、望む方法でログメッセージを構築するように Fortmat() 関数をオーバーライドする必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This topic describes backwards-incompatible changes in wxWidgets 3.0 compared to the last stable release.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130618T150044Z">
+        <seg>この概要では wxWidgets 3.0 と最後の安定リリースとの間の後方互換性のない変更について説明します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12958,6 +13542,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Unicode-related Changes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130618T150109Z">
+        <seg>Unicode に関連する変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Unicode-related compilation settings</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130502T144526Z">
@@ -13250,6 +13842,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130506T042446Z">
         <seg>継承したイベント関数へのキャストが必要なことも忘れないでください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We believe the new behaviour corresponds better to user expectations but if you did rely on the old behaviour you will have to update your code to set the minimal sizes of the sizer items to be in the same proportion as the items proportions to return to the old behaviour.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T151903Z">
+        <seg>この新しい振る舞いはユーザの予想により一致するものだと信じていますが、以前の振る舞いに依存している場合、コントロールのプロポーションと同じ比率でコントロールの最小サイズを設定するようにコードを更新する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13662,6 +14262,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You also don't need to use wxChar any longer but can directly use the standard wchar_t type even if, again, wxChar continues to work.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130620T123452Z">
+        <seg>また、wxChar ももはや使用する必要がありません。ただし、繰り返しますが、標準の wchar_t を直接使用できるとはいえ、wxChar は引き続き動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You also need to insert a macro</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T014624Z">
@@ -13942,6 +14550,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You will need to change it in your derived renderer class accordingly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T154336Z">
+        <seg>これにあわせて継承クラスを変更する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You will need to change it in your derived renderer class too if you override it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T154124Z">
+        <seg>この関数をオーバーライドしている場合、継承クラスのシグネチャも変更する必要があります。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You'll have to define and declare a new event type using either way, and this is done using the following macros:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T162809Z">
@@ -14105,6 +14729,22 @@ public:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>conf.Write("MyFavouriteColour", Red);       // ERROR: no match</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130620T124434Z">
+        <seg>conf.Write("MyFavouriteColour", Red);       // エラー: 一致しない</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>conf.Write("MyFavouriteColour", int(Red));  // OK</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T152928Z">
+        <seg>conf.Write("MyFavouriteColour", int(Red));  // OK</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>const char *s = "Hello, world!";</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130501T160629Z">
@@ -14157,6 +14797,14 @@ public:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T171118Z">
         <seg>動作 しません。これは、wxString::ToUTF8() の返却した一時バッファが破棄され、p が存在しないアドレスを指したままになるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>does not compile when using Microsoft Visual C++ and needs to be changed to use mb_str() (which will not work for file names containing Unicode characters, consider using wxWidgets classes and functions to work with such file names as they are not supported by standard C++ library).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130620T123835Z">
+        <seg>Microsoft Visual C++ を使用するとコンパイルされないため、mb_str() を使用するように変更する必要があります。(mb_str() は Unicode 文字を含むファイル名では動作しません。標準の C++ ライブラリではそのようなフィアル名に対応していないため、これらを取り扱える wxWidgets のクラスと関数を使用することを検討してください)</seg>
       </tuv>
     </tu>
     <tu>
@@ -14645,6 +15293,14 @@ public:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T015006Z">
         <seg>クラス宣言内のどこかに挿入する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>std::ifstream ifs(filename.c_str());</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T143013Z">
+        <seg>std::ifstream ifs(filename.c_str());</seg>
       </tuv>
     </tu>
     <tu>
@@ -15180,6 +15836,14 @@ protected:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxConfig conf;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T152922Z">
+        <seg>wxConfig conf;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxConfigBase defines the basic interface of all config classes.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130612T153829Z">
@@ -15202,6 +15866,14 @@ protected:</seg>
       <tuv lang="JA" changeid="owner" changedate="20130522T112043Z">
         <seg>wxDEFAULT_DIALOG_STYLE | wxRESIZE_BORDER)
 {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxDataViewCustomRenderer::Activate() and wxDataViewCustomRenderer::LeftClick() were replaced with the new wxDataViewCustomRenderer::ActivateCell() method.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T154308Z">
+        <seg>wxDataViewCustomRenderer::Activate() と wxDataViewCustomRenderer::LeftClick() は新しい wxDataViewCustomRenderer::ActivateCell() 関数に置き換えられました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15242,6 +15914,14 @@ protected:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T070654Z">
         <seg>wxDir は ファイルやディレクトリの列挙を行う Unix の open/read/closedir 関数と同じことを行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxDocument::FileHistoryLoad() and wxFileHistory::Load() now take const reference to wxConfigBase argument and not just a reference, please update your code if you overrode these functions and change the functions in the derived classes to use const reference as well.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T152648Z">
+        <seg>wxDocument::FileHistoryLoad() と wxFileHistory::Load() は wxConfigBase の単なる参照ではなく、const 参照を受け取るようになりました。そのため、これらの関数をオーバーライドしている場合は const 参照を使用するように継承クラスの関数を変更してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15318,6 +15998,14 @@ private:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T055758Z">
         <seg>wxFile は低レベル入出力のために使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxFileConfig implements wxConfigBase interface for storing and retrieving configuration information u...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130619T144342Z">
+        <seg>wxFileConfig は wxConfigBase インタフェースを実装しており、プレインテキストファイルを使用して設定情報を格納、取得するためのクラスです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15920,6 +16608,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxTE_AUTO_SCROLL style is deprecated as it's always on by default anyhow in the ports which support it so you should simply remove any mentions of it from your code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130620T124604Z">
+        <seg>wxTE_AUTO_SCROLL スタイルはこれに対応している移植版ではデフォルトで常に有効になっているため、非推奨になりました。そのため、単純にコードから削除してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxTempFile is a very small file designed to make replacing the files contents safer - see its documentation for more details.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T064731Z">
@@ -16116,6 +16812,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T152925Z">
         <seg>wxWidgets: wxWidgets: ビットマップとアイコン</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxWidgets: wxWidgets: Changes Since wxWidgets 2.8</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130618T145947Z">
+        <seg>wxWidgets: wxWidgets: wxWidgets 2.8 からの変更点</seg>
       </tuv>
     </tu>
     <tu>
