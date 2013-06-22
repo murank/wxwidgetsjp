@@ -130,17 +130,17 @@ function toggleVisibility(linkObj) {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classwx_memory_output_stream__inherit__graph.png" border="0" usemap="#wx_memory_output_stream_inherit__map" alt="Inheritance graph"/></div>
 <map name="wx_memory_output_stream_inherit__map" id="wx_memory_output_stream_inherit__map">
-<area shape="rect" id="node2" href="classwx_output_stream.html" title="wxOutputStream is an abstract base class which may not be used directly." alt="" coords="29,86,147,117"/><area shape="rect" id="node4" href="classwx_stream_base.html" title="This class is the base class of most stream related classes in wxWidgets." alt="" coords="33,6,143,37"/></map>
+<area shape="rect" id="node2" href="classwx_output_stream.html" title="wxOutputStream は抽象クラスであり、直接使用することはありません。" alt="" coords="29,86,147,117"/><area shape="rect" id="node4" href="classwx_stream_base.html" title="このクラスは wxWidgets における大半のストリームクラスの基底クラスです。" alt="" coords="33,6,143,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>This class allows to use all methods taking a <a class="el" href="classwx_output_stream.html" title="wxOutputStream is an abstract base class which may not be used directly.">wxOutputStream</a> reference to write to in-memory data.  </p>
+<div class="textblock"><p>This class allows to use all methods taking a <a class="el" href="classwx_output_stream.html" title="wxOutputStream は抽象クラスであり、直接使用することはありません。">wxOutputStream</a> reference to write to in-memory data.  </p>
 <p>例: </p>
-<div class="fragment"><pre class="fragment">        <a class="code" href="classwx_memory_output_stream.html" title="This class allows to use all methods taking a wxOutputStream reference to write to in-memory data...">wxMemoryOutputStream</a> stream;
+<div class="fragment"><pre class="fragment">        <a class="code" href="classwx_memory_output_stream.html" title="このクラスを使用することで、メモリ内へデータを書き込むために wxOutputStream のすべての関数を使用できます。 ">wxMemoryOutputStream</a> stream;
         <span class="keywordflow">if</span> (!my_wxImage.SaveFile(stream))
             <span class="keywordflow">return</span>;
 
         <span class="comment">// now we can access the saved image bytes:</span>
-        <a class="code" href="classwx_stream_buffer.html" title="wxStreamBuffer is a cache manager for wxStreamBase: it manages a stream buffer linked to a stream...">wxStreamBuffer</a>* theBuffer = stream.<a class="code" href="classwx_memory_output_stream.html#ad8848291967d46abc6bb3fce3d9bbb39" title="Returns the pointer to the stream object used as an internal buffer for this stream.">GetOutputStreamBuffer</a>();
+        <a class="code" href="classwx_stream_buffer.html" title="wxStreamBuffer は wxStreamBase 用のキャッシュマネージャです: このクラスはストリームに関連付けられたストリームバッファを管理します。">wxStreamBuffer</a>* theBuffer = stream.<a class="code" href="classwx_memory_output_stream.html#ad8848291967d46abc6bb3fce3d9bbb39" title="Returns the pointer to the stream object used as an internal buffer for this stream.">GetOutputStreamBuffer</a>();
         <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> byte;
         <span class="keywordflow">if</span> (theBuffer-&gt;<a class="code" href="classwx_stream_buffer.html#a5c5772b548442c2a86c8f154c6b27dff" title="Reads a block of the specified size and stores the data in buffer.">Read</a>(byte, 1) != 1)
             <span class="keywordflow">return</span>;
@@ -150,7 +150,7 @@ function toggleVisibility(linkObj) {
         <span class="comment">// remember that ~wxMemoryOutputStream will destroy the internal</span>
         <span class="comment">// buffer since we didn't provide our own when constructing it</span>
 </pre></div><h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__streams.html">Streams</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_stream_buffer.html" title="wxStreamBuffer is a cache manager for wxStreamBase: it manages a stream buffer linked to a stream...">wxStreamBuffer</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__streams.html">Streams</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_stream_buffer.html" title="wxStreamBuffer は wxStreamBase 用のキャッシュマネージャです: このクラスはストリームに関連付けられたストリームバッファを管理します。">wxStreamBuffer</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
@@ -160,7 +160,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_memory_output_stream.html#a619e3e36463589e813df94910b6f6d4c">~wxMemoryOutputStream</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.    <a href="#a619e3e36463589e813df94910b6f6d4c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_memory_output_stream.html#a820285ceb1462674c9e3ea958295f28d">CopyTo</a> (void *buffer, size_t len) const  </td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Allows you to transfer data from the internal buffer of <a class="el" href="classwx_memory_output_stream.html" title="This class allows to use all methods taking a wxOutputStream reference to write to in-memory data...">wxMemoryOutputStream</a> to an external buffer.    <a href="#a820285ceb1462674c9e3ea958295f28d"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Allows you to transfer data from the internal buffer of <a class="el" href="classwx_memory_output_stream.html" title="このクラスを使用することで、メモリ内へデータを書き込むために wxOutputStream のすべての関数を使用できます。 ">wxMemoryOutputStream</a> to an external buffer.    <a href="#a820285ceb1462674c9e3ea958295f28d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_stream_buffer.html">wxStreamBuffer</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_memory_output_stream.html#ad8848291967d46abc6bb3fce3d9bbb39">GetOutputStreamBuffer</a> () const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the pointer to the stream object used as an internal buffer for this stream.    <a href="#ad8848291967d46abc6bb3fce3d9bbb39"></a><br/></td></tr>
 </table>
@@ -193,7 +193,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>If <em>data</em> is <span class="literal">NULL</span>, then it will initialize a new empty buffer which will grow if required.  </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>If the buffer is created by <a class="el" href="classwx_memory_output_stream.html" title="This class allows to use all methods taking a wxOutputStream reference to write to in-memory data...">wxMemoryOutputStream</a>, it will be destroyed at the destruction of the stream.  </dd></dl>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>If the buffer is created by <a class="el" href="classwx_memory_output_stream.html" title="このクラスを使用することで、メモリ内へデータを書き込むために wxOutputStream のすべての関数を使用できます。 ">wxMemoryOutputStream</a>, it will be destroyed at the destruction of the stream.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxMemoryOutputStream::~wxMemoryOutputStream" ref="a619e3e36463589e813df94910b6f6d4c" args="()" -->
@@ -242,7 +242,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Allows you to transfer data from the internal buffer of <a class="el" href="classwx_memory_output_stream.html" title="This class allows to use all methods taking a wxOutputStream reference to write to in-memory data...">wxMemoryOutputStream</a> to an external buffer.  </p>
+<p>Allows you to transfer data from the internal buffer of <a class="el" href="classwx_memory_output_stream.html" title="このクラスを使用することで、メモリ内へデータを書き込むために wxOutputStream のすべての関数を使用できます。 ">wxMemoryOutputStream</a> to an external buffer.  </p>
 <p><em>len</em> specifies the size of the buffer.  </p>
 
 </div>

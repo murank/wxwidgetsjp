@@ -471,7 +471,7 @@ connection only allow forward scrolling cursors.</UL></UL>
 
 This is the constructor for the wxDb class.  The wxDb object must
 be created and opened before any database activity can occur.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
    wxDbConnectInf ConnectInf;
    ....Set values for member variables of ConnectInf here
@@ -510,7 +510,7 @@ the DB catalog to.  Default is SQL_CATALOG_FILENAME.</UL></UL>
 
 Returns true if the catalog request was successful, or false if there was some
 reason that the catalog could not be generated.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
 ============== ============== ================ ========= =======
 TABLE NAME     COLUMN NAME    DATA TYPE        PRECISION  LENGTH
@@ -538,7 +538,7 @@ four steps involved in doing this as illustrated in the example.<P>
 
 Any wxDbTable instances which use this connection must be deleted before
 closing the database connection.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
    // Commit any open transactions on the datasource
    sampleDB.CommitTrans();
@@ -636,7 +636,7 @@ any other table in the database.<P>
 
 NOTE: Views are not available with all datasources.  Oracle is one example
 of a datasource which does support views.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
    // Incomplete code sample
    db.CreateView("PARTS_SD1", "PN, PD, QTY",
@@ -714,7 +714,7 @@ in the return statement of a code block in the event of a failure to
 perform an action (see the example below).<P>
 <B><FONT COLOR="#FF0000">参照</FONT></B><P>
 <A HREF="wx_wxdb.html#wxdbsetsqllogging">wxDb::SetSqlLogging</A>, wxDbSqlLog<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
    if (SQLExecDirect(hstmt, (UCHAR FAR *) pSqlStmt, SQL_NTS) != SQL_SUCCESS)
       // Display all ODBC errors for this stmt
@@ -739,7 +739,7 @@ display the error retrieved, DispNextError() could then be called.
 The combination of GetNextError() and DispNextError() can be used to
 iteratively step through the errors returned from ODBC evaluating each
 one in context and displaying the ones you choose.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
    // Drop the table before attempting to create it
    sprintf(sqlStmt, "DROP TABLE %s", tableName);
@@ -942,7 +942,7 @@ to avoid undesired unbinding of columns.<HR><P>
 <P>
 <B><FONT COLOR="#FF0000">参照</FONT></B><P>
 <A HREF="wx_wxdbcolinf.html#wxdbcolinf">wxDbColInf</A><P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
    wxChar *tableList[] = {"PARTS", 0};
    wxDbColInf *colInf = pDb-&gt;GetColumns(tableList);
@@ -995,7 +995,7 @@ actual data returned.  If this value comes back as SQL_NULL_DATA, then the
 <P>
 <B><FONT COLOR="#FF0000">参照</FONT></B><P>
 <A HREF="wx_wxdb.html#wxdbgetnext">wxDb::GetNext</A>, <A HREF="wx_wxdb.html#wxdbexecsql">wxDb::ExecSql</A><P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
     SDWORD cb;
     ULONG reqQty;
@@ -1134,7 +1134,7 @@ in if the ODBC function call that failed required a hdbc or hstmt argument.</UL>
 against.  Pass this in if the ODBC function call that failed requires a
 hstmt argument.</UL></UL>
 <P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
    if (SQLExecDirect(hstmt, (UCHAR FAR *) pSqlStmt, SQL_NTS) != SQL_SUCCESS)
    {
@@ -1212,7 +1212,7 @@ Some databases require user names to be specified in all capital letters (i.e. O
 
 The currently logged in user must have sufficient grantor privileges for this
 function to be able to successfully grant the indicated privileges.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
    db.Grant(DB_GRANT_SELECT | DB_GRANT_INSERT, "PARTS", "mary, sue");
 </PRE>
@@ -1343,7 +1343,7 @@ currently have data stored in that column.  Those datasources that do allow colu
 to be changed with data in the rows many handle truncation and/or expansion in
 different ways.  Please refer to the reference material for the datasource being
 used for behavioral descriptions.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
     ok = pDb-&gt;ModifyColumn("CONTACTS", "ADDRESS2",
                             DB_, colDefs[j].SzDataObj,
@@ -1464,7 +1464,7 @@ The <I>Dsn</I>, <I>Uid</I>, and <I>AuthStr</I> string pointers that are passed i
 are copied.  NOT the strings themselves, only the pointers.  The calling routine
 must maintain the memory for these three strings for the life of the wxDb instance.<HR><P>
 <P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
    wxDb sampleDB(DbConnectInf.GetHenv());
    if (!sampleDB.Open("Oracle 7.1 HP/UX", "gtasker", "myPassword"))

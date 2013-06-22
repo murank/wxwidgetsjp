@@ -142,9 +142,9 @@ function toggleVisibility(linkObj) {
 
 Creating an Archive</h2>
 <p>Call <a class="el" href="classwx_archive_output_stream.html#a4a5dd11b0dbd57b78a94315c9e841ceb" title="Takes ownership of entry and uses it to create a new entry in the archive.">wxArchiveOutputStream::PutNextEntry()</a> to create each new entry in the archive, then write the entry's data. Another call to PutNextEntry() closes the current entry and begins the next. 以下に例を示します:</p>
-<div class="fragment"><pre class="fragment"><a class="code" href="classwx_f_file_output_stream.html" title="This class represents data written to a file.">wxFFileOutputStream</a> out(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
+<div class="fragment"><pre class="fragment"><a class="code" href="classwx_f_file_output_stream.html" title="このクラスはファイルへのデータ書き込みを表しています。">wxFFileOutputStream</a> out(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
 <a class="code" href="classwx_zip_output_stream.html" title="Output stream for writing zip files.">wxZipOutputStream</a> zip(out);
-<a class="code" href="classwx_text_output_stream.html" title="This class provides functions that write text data using an output stream, allowing you to write text...">wxTextOutputStream</a> txt(zip);
+<a class="code" href="classwx_text_output_stream.html" title="このクラスは出力ストリームを利用したテキストデータの書き込み機能を提供しており、テキスト、浮動小数点、整数を書き込むことができます。">wxTextOutputStream</a> txt(zip);
 <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> sep(<a class="code" href="classwx_file_name.html#ad6f9ae274e12729fc5689128ea94d16e" title="Returns the usually used path separator for this format.">wxFileName::GetPathSeparator</a>());
 
 zip.PutNextEntry(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"entry1.txt"</span>));
@@ -161,7 +161,7 @@ Extracting an Archive</h2>
 <p>When there are no more entries, GetNextEntry() returns <span class="literal">NULL</span> and sets Eof().</p>
 <div class="fragment"><pre class="fragment">auto_ptr&lt;wxZipEntry&gt; entry;
 
-<a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a> in(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
+<a class="code" href="classwx_f_file_input_stream.html" title="このクラスはファイルからのデータ読み込みを表しています。">wxFFileInputStream</a> in(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
 <a class="code" href="classwx_zip_input_stream.html" title="Input stream for reading zip files.">wxZipInputStream</a> zip(in);
 
 <span class="keywordflow">while</span> (entry.reset(zip.GetNextEntry()), entry.get() != NULL)
@@ -177,7 +177,7 @@ Modifying an Archive</h2>
 <p>For archive types which compress entry data, CopyEntry() is likely to be much more efficient than transferring the data using Read() and Write() since it will copy them without decompressing and recompressing them.</p>
 <p>In general modifications are not possible without rewriting the archive, though it may be possible in some limited cases. Even then, rewriting the archive is usually a better choice since a failure can be handled without losing the whole archive. <a class="el" href="classwx_temp_file_output_stream.html" title="wxTempFileOutputStream is an output stream based on wxTempFile.">wxTempFileOutputStream</a> can be helpful to do this.</p>
 <p>For example to delete all entries matching the pattern "*.txt":</p>
-<div class="fragment"><pre class="fragment">auto_ptr&lt;wxFFileInputStream&gt; in(<span class="keyword">new</span> <a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a>(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>)));
+<div class="fragment"><pre class="fragment">auto_ptr&lt;wxFFileInputStream&gt; in(<span class="keyword">new</span> <a class="code" href="classwx_f_file_input_stream.html" title="このクラスはファイルからのデータ読み込みを表しています。">wxFFileInputStream</a>(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>)));
 <a class="code" href="classwx_temp_file_output_stream.html" title="wxTempFileOutputStream is an output stream based on wxTempFile.">wxTempFileOutputStream</a> out(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
 
 <a class="code" href="classwx_zip_input_stream.html" title="Input stream for reading zip files.">wxZipInputStream</a> inzip(*in);
@@ -214,7 +214,7 @@ Looking Up an Archive Entry by Name</h2>
 <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> name = <a class="code" href="classwx_zip_entry.html#a74d8509df7beb653ab2e22c05f0cdb3d" title="Returns the entry's filename in the internal format used within the archive.">wxZipEntry::GetInternalName</a>(localname);
 
 <span class="comment">// open the zip</span>
-<a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a> in(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
+<a class="code" href="classwx_f_file_input_stream.html" title="このクラスはファイルからのデータ読み込みを表しています。">wxFFileInputStream</a> in(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
 <a class="code" href="classwx_zip_input_stream.html" title="Input stream for reading zip files.">wxZipInputStream</a> zip(in);
 
 <span class="comment">// call GetNextEntry() until the required internal name is found</span>
@@ -235,7 +235,7 @@ ZipCatalog::iterator it;
 ZipCatalog cat;
 
 <span class="comment">// open the zip</span>
-<a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a> in(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
+<a class="code" href="classwx_f_file_input_stream.html" title="このクラスはファイルからのデータ読み込みを表しています。">wxFFileInputStream</a> in(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
 <a class="code" href="classwx_zip_input_stream.html" title="Input stream for reading zip files.">wxZipInputStream</a> zip(in);
 
 <span class="comment">// load the zip catalog</span>
@@ -257,7 +257,7 @@ ZipCatalog cat;
 </pre></div><p>To open more than one entry simultaneously you need more than one underlying stream on the same archive:</p>
 <div class="fragment"><pre class="fragment"><span class="comment">// opening another entry without closing the first requires another</span>
 <span class="comment">// input stream for the same file</span>
-<a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a> in2(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
+<a class="code" href="classwx_f_file_input_stream.html" title="このクラスはファイルからのデータ読み込みを表しています。">wxFFileInputStream</a> in2(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"test.zip"</span>));
 <a class="code" href="classwx_zip_input_stream.html" title="Input stream for reading zip files.">wxZipInputStream</a> zip2(in2);
 <span class="keywordflow">if</span> ((it = cat.find(<a class="code" href="classwx_zip_entry.html#a74d8509df7beb653ab2e22c05f0cdb3d" title="Returns the entry's filename in the internal format used within the archive.">wxZipEntry::GetInternalName</a>(local2))) != cat.end())
     zip2.OpenEntry(*it-&gt;second);
@@ -285,11 +285,11 @@ auto_ptr&lt;wxArchiveEntry&gt; entry(factory-&gt;NewEntry());
 factory = <a class="code" href="classwx_archive_class_factory.html#ad9f083561596ee377cea71a0125d3c3b" title="A static member that finds a factory that can handle a given protocol, MIME type or file extension...">wxArchiveClassFactory::Find</a>(filename, <a class="code" href="interface_2wx_2stream_8h.html#af43964582cc2e87658bf792727dceff8a6a7551247424d0c62b240da47daee204" title="File extensions the stream handles.">wxSTREAM_FILEEXT</a>);
 
 <span class="keywordflow">if</span> (factory)
-    stream = factory-&gt;<a class="code" href="classwx_archive_class_factory.html#a658607861fc4bd7a8e787a8de35e89fb" title="Create a new input or output stream to read or write an archive.">NewStream</a>(<span class="keyword">new</span> <a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a>(filename));
+    stream = factory-&gt;<a class="code" href="classwx_archive_class_factory.html#a658607861fc4bd7a8e787a8de35e89fb" title="Create a new input or output stream to read or write an archive.">NewStream</a>(<span class="keyword">new</span> <a class="code" href="classwx_f_file_input_stream.html" title="このクラスはファイルからのデータ読み込みを表しています。">wxFFileInputStream</a>(filename));
 </pre></div><p><em>Find()</em> does not give away ownership of the returned pointer, so it does not need to be deleted.</p>
 <p>There are similar class factories for the filter streams that handle the compression and decompression of a single stream, such as wxGzipInputStream. These can be found using <a class="el" href="classwx_filter_class_factory.html#a689a3e8a0ea3bd8678f020cfb723f54f" title="A static member that finds a factory that can handle a given protocol, MIME type, HTTP encoding or fi...">wxFilterClassFactory::Find()</a>.</p>
 <p>For example, to list the contents of archive <em>filename:</em> </p>
-<div class="fragment"><pre class="fragment">auto_ptr&lt;wxInputStream&gt; in(<span class="keyword">new</span> <a class="code" href="classwx_f_file_input_stream.html" title="This class represents data read in from a file.">wxFFileInputStream</a>(filename));
+<div class="fragment"><pre class="fragment">auto_ptr&lt;wxInputStream&gt; in(<span class="keyword">new</span> <a class="code" href="classwx_f_file_input_stream.html" title="このクラスはファイルからのデータ読み込みを表しています。">wxFFileInputStream</a>(filename));
 
 <span class="keywordflow">if</span> (in-&gt;IsOk())
 {

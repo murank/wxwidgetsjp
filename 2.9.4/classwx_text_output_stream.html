@@ -126,15 +126,15 @@ function toggleVisibility(linkObj) {
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>This class provides functions that write text data using an output stream, allowing you to write text, floats, and integers.  </p>
 <p>You can also simulate the C++ <code>std::cout</code> class:</p>
-<div class="fragment"><pre class="fragment">    <a class="code" href="classwx_f_file_output_stream.html" title="This class represents data written to a file.">wxFFileOutputStream</a> output( stderr );
-    <a class="code" href="classwx_text_output_stream.html" title="This class provides functions that write text data using an output stream, allowing you to write text...">wxTextOutputStream</a> cout( output );
+<div class="fragment"><pre class="fragment">    <a class="code" href="classwx_f_file_output_stream.html" title="このクラスはファイルへのデータ書き込みを表しています。">wxFFileOutputStream</a> output( stderr );
+    <a class="code" href="classwx_text_output_stream.html" title="このクラスは出力ストリームを利用したテキストデータの書き込み機能を提供しており、テキスト、浮動小数点、整数を書き込むことができます。">wxTextOutputStream</a> cout( output );
 
     cout &lt;&lt; <span class="stringliteral">"This is a text line"</span> &lt;&lt; endl;
     cout &lt;&lt; 1234;
     cout &lt;&lt; 1.23456;
-</pre></div><p>The <a class="el" href="classwx_text_output_stream.html" title="This class provides functions that write text data using an output stream, allowing you to write text...">wxTextOutputStream</a> writes text files (or streams) on DOS, Macintosh and Unix in their native formats (concerning the line ending).</p>
+</pre></div><p>The <a class="el" href="classwx_text_output_stream.html" title="このクラスは出力ストリームを利用したテキストデータの書き込み機能を提供しており、テキスト、浮動小数点、整数を書き込むことができます。">wxTextOutputStream</a> writes text files (or streams) on DOS, Macintosh and Unix in their native formats (concerning the line ending).</p>
 <h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__streams.html">Streams</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_text_input_stream.html" title="This class provides functions that reads text data using an input stream, allowing you to read text...">wxTextInputStream</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__streams.html">Streams</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_text_input_stream.html" title="このクラスは入力ストリームを利用したテキストデータの読み込み機能を提供しており、テキスト、浮動小数点、整数を読み込むことができます。">wxTextInputStream</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
@@ -142,7 +142,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_text_output_stream.html#a6d82156c87886aab87b495cd1f74f2cd">wxTextOutputStream</a> (<a class="el" href="classwx_output_stream.html">wxOutputStream</a> &amp;stream, <a class="el" href="txtstrm_8h.html#a4b64b170cc32ba60ccef13c2a64fec70">wxEOL</a> mode=wxEOL_NATIVE, const <a class="el" href="classwx_m_b_conv.html">wxMBConv</a> &amp;conv=<a class="el" href="classwx_conv_auto.html">wxConvAuto</a>())</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructs a text stream object associated to the given output stream.    <a href="#a6d82156c87886aab87b495cd1f74f2cd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_text_output_stream.html#aaceb51d3e3089494fe97531167a6f5d3">~wxTextOutputStream</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destroys the <a class="el" href="classwx_text_output_stream.html" title="This class provides functions that write text data using an output stream, allowing you to write text...">wxTextOutputStream</a> object.    <a href="#aaceb51d3e3089494fe97531167a6f5d3"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destroys the <a class="el" href="classwx_text_output_stream.html" title="このクラスは出力ストリームを利用したテキストデータの書き込み機能を提供しており、テキスト、浮動小数点、整数を書き込むことができます。">wxTextOutputStream</a> object.    <a href="#aaceb51d3e3089494fe97531167a6f5d3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_text_output_stream.html#a67d9ed4f8cecc757be163a9ca9005442">Flush</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Flushes the stream.    <a href="#a67d9ed4f8cecc757be163a9ca9005442"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classwx_output_stream.html">wxOutputStream</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_text_output_stream.html#ab1585b7951a614ba2b477adec0e99661">GetOutputStream</a> () const  </td></tr>
@@ -224,7 +224,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Destroys the <a class="el" href="classwx_text_output_stream.html" title="This class provides functions that write text data using an output stream, allowing you to write text...">wxTextOutputStream</a> object.  </p>
+<p>Destroys the <a class="el" href="classwx_text_output_stream.html" title="このクラスは出力ストリームを利用したテキストデータの書き込み機能を提供しており、テキスト、浮動小数点、整数を書き込むことができます。">wxTextOutputStream</a> object.  </p>
 <p>Also calls <a class="el" href="classwx_text_output_stream.html#a67d9ed4f8cecc757be163a9ca9005442" title="Flushes the stream.">Flush()</a>.  </p>
 
 </div>

@@ -124,13 +124,13 @@ function toggleVisibility(linkObj) {
 
 <p><code>#include &lt;/home/zeitlin/src/wx/github/interface/wx/datstrm.h&gt;</code></p>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>This class provides functions that read binary data types in a portable way.  </p>
+<div class="textblock"><p>このクラスは移植性のある方法でバイナリデータを読み込む機能を提供します。 </p>
 <p>Data can be read in either big-endian or little-endian format, little-endian being the default on all architectures.</p>
-<p>If you want to read data from text files (or streams) use <a class="el" href="classwx_text_input_stream.html" title="This class provides functions that reads text data using an input stream, allowing you to read text...">wxTextInputStream</a> instead.</p>
+<p>If you want to read data from text files (or streams) use <a class="el" href="classwx_text_input_stream.html" title="このクラスは入力ストリームを利用したテキストデータの読み込み機能を提供しており、テキスト、浮動小数点、整数を読み込むことができます。">wxTextInputStream</a> instead.</p>
 <p>The "&gt;&gt;" operator is overloaded and you can use this class like a standard C++ iostream. Note, however, that the arguments are the fixed size types wxUint32, wxInt32 etc and on a typical 32-bit computer, none of these match to the "long" type (wxInt32 is defined as signed int on 32-bit architectures) so that you cannot use long. To avoid problems (here and elsewhere), make use of the wxInt32, wxUint32, etc types.</p>
 <p>以下に例を示します:</p>
-<div class="fragment"><pre class="fragment">    <a class="code" href="classwx_file_input_stream.html" title="This class represents data read in from a file.">wxFileInputStream</a> input( <span class="stringliteral">"mytext.dat"</span> );
-    <a class="code" href="classwx_data_input_stream.html" title="This class provides functions that read binary data types in a portable way.">wxDataInputStream</a> store( input );
+<div class="fragment"><pre class="fragment">    <a class="code" href="classwx_file_input_stream.html" title="このクラスはファイルからのデータ読み込みを表しています。">wxFileInputStream</a> input( <span class="stringliteral">"mytext.dat"</span> );
+    <a class="code" href="classwx_data_input_stream.html" title="このクラスは移植性のある方法でバイナリデータを読み込む機能を提供します。">wxDataInputStream</a> store( input );
     <a class="code" href="defs_8h.html#aad88e290b822df511ad8025ee2e45263" title="8 bit type (the mapping is more complex than a simple typedef and is not shown here).">wxUint8</a> i1;
     <span class="keywordtype">float</span> f2;
     <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> line;
@@ -139,7 +139,7 @@ function toggleVisibility(linkObj) {
     store &gt;&gt; i1 &gt;&gt; f2; <span class="comment">// read a 8 bit integer followed by float.</span>
     store &gt;&gt; line;     <span class="comment">// read a text line</span>
 </pre></div><h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__streams.html">Streams</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_data_output_stream.html" title="This class provides functions that write binary data types in a portable way.">wxDataOutputStream</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__streams.html">Streams</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_data_output_stream.html" title="このクラスは移植性のある方法でバイナリデータを書き込む機能を提供します。">wxDataOutputStream</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
@@ -147,7 +147,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_data_input_stream.html#a45c961ecf5c9ec061343e2c3fd20288f">wxDataInputStream</a> (<a class="el" href="classwx_input_stream.html">wxInputStream</a> &amp;stream, const <a class="el" href="classwx_m_b_conv.html">wxMBConv</a> &amp;conv=wxConvUTF8)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructs a datastream object from an input stream.    <a href="#a45c961ecf5c9ec061343e2c3fd20288f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_data_input_stream.html#af4f67a3f04e782dc22326df5b15df3cd">~wxDataInputStream</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destroys the <a class="el" href="classwx_data_input_stream.html" title="This class provides functions that read binary data types in a portable way.">wxDataInputStream</a> object.    <a href="#af4f67a3f04e782dc22326df5b15df3cd"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destroys the <a class="el" href="classwx_data_input_stream.html" title="このクラスは移植性のある方法でバイナリデータを読み込む機能を提供します。">wxDataInputStream</a> object.    <a href="#af4f67a3f04e782dc22326df5b15df3cd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_data_input_stream.html#ad88bdb3fd5085080ea7c917181aa64cf">BigEndianOrdered</a> (bool be_order)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">If <em>be_order</em> is <span class="literal">true</span>, all data will be read in big-endian order, such as written by programs on a big endian architecture (e.g.    <a href="#ad88bdb3fd5085080ea7c917181aa64cf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_m_b_conv.html">wxMBConv</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_data_input_stream.html#adc121737c4951234bcd61d88272d1d58">GetConv</a> () const  </td></tr>
@@ -211,7 +211,7 @@ Public Member Functions</h2></td></tr>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">stream</td><td>The input stream.  </td></tr>
-    <tr><td class="paramname">conv</td><td>Charset conversion object used to decode strings in Unicode mode (see <a class="el" href="classwx_data_input_stream.html#a65d59e47586519047d59e2f2ea4aa4b4" title="Reads a string from a stream.">ReadString()</a> for a detailed description). Note that you must not destroy <em>conv</em> before you destroy this <a class="el" href="classwx_data_input_stream.html" title="This class provides functions that read binary data types in a portable way.">wxDataInputStream</a> instance!  </td></tr>
+    <tr><td class="paramname">conv</td><td>Charset conversion object used to decode strings in Unicode mode (see <a class="el" href="classwx_data_input_stream.html#a65d59e47586519047d59e2f2ea4aa4b4" title="Reads a string from a stream.">ReadString()</a> for a detailed description). Note that you must not destroy <em>conv</em> before you destroy this <a class="el" href="classwx_data_input_stream.html" title="このクラスは移植性のある方法でバイナリデータを読み込む機能を提供します。">wxDataInputStream</a> instance!  </td></tr>
   </table>
   </dd>
 </dl>
@@ -232,7 +232,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Destroys the <a class="el" href="classwx_data_input_stream.html" title="This class provides functions that read binary data types in a portable way.">wxDataInputStream</a> object.  </p>
+<p>Destroys the <a class="el" href="classwx_data_input_stream.html" title="このクラスは移植性のある方法でバイナリデータを読み込む機能を提供します。">wxDataInputStream</a> object.  </p>
 
 </div>
 </div>

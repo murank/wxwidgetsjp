@@ -130,14 +130,14 @@ function toggleVisibility(linkObj) {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classwx_memory_input_stream__inherit__graph.png" border="0" usemap="#wx_memory_input_stream_inherit__map" alt="Inheritance graph"/></div>
 <map name="wx_memory_input_stream_inherit__map" id="wx_memory_input_stream_inherit__map">
-<area shape="rect" id="node2" href="classwx_input_stream.html" title="wxInputStream is an abstract base class which may not be used directly." alt="" coords="28,86,137,117"/><area shape="rect" id="node4" href="classwx_stream_base.html" title="This class is the base class of most stream related classes in wxWidgets." alt="" coords="28,6,137,37"/></map>
+<area shape="rect" id="node2" href="classwx_input_stream.html" title="wxInputStream は抽象クラスであり、直接使用することはありません。" alt="" coords="28,86,137,117"/><area shape="rect" id="node4" href="classwx_stream_base.html" title="このクラスは wxWidgets における大半のストリームクラスの基底クラスです。" alt="" coords="28,6,137,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>This class allows to use all methods taking a <a class="el" href="classwx_input_stream.html" title="wxInputStream is an abstract base class which may not be used directly.">wxInputStream</a> reference to read in-memory data.  </p>
+<div class="textblock"><p>This class allows to use all methods taking a <a class="el" href="classwx_input_stream.html" title="wxInputStream は抽象クラスであり、直接使用することはありません。">wxInputStream</a> reference to read in-memory data.  </p>
 <p>例: </p>
 <div class="fragment"><pre class="fragment">        <span class="comment">// we've got a block of memory containing a BMP image and we want</span>
         <span class="comment">// to use wxImage to load it:</span>
-        <a class="code" href="classwx_memory_input_stream.html" title="This class allows to use all methods taking a wxInputStream reference to read in-memory data...">wxMemoryInputStream</a> stream(my_memory_block, size);
+        <a class="code" href="classwx_memory_input_stream.html" title="このクラスを使用することで、メモリ内のデータを読み込むために wxInputStream のすべての関数を使用できます。 ">wxMemoryInputStream</a> stream(my_memory_block, size);
 
         <a class="code" href="classwx_image.html" title="このクラスはプラットフォーム非依存の画像をカプセル化します。">wxImage</a> theBitmap;
         <span class="keywordflow">if</span> (!theBitmap.<a class="code" href="classwx_image.html#aa249e657259fe6518d68a5208b9043d0" title="Loads an image from an input stream.">LoadFile</a>(stream, <a class="code" href="gdicmn_8h.html#a90a1eb6d85b5044a99b706fd979f27f5abc0025c3eb363982583934a404706cb0">wxBITMAP_TYPE_BMP</a>))
@@ -147,7 +147,7 @@ function toggleVisibility(linkObj) {
         <span class="comment">// has been decoded by wxImage:</span>
         <span class="keyword">delete</span> [] my_memory_block;
 </pre></div><h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__streams.html">Streams</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_stream_buffer.html" title="wxStreamBuffer is a cache manager for wxStreamBase: it manages a stream buffer linked to a stream...">wxStreamBuffer</a>, <a class="el" href="classwx_memory_output_stream.html" title="This class allows to use all methods taking a wxOutputStream reference to write to in-memory data...">wxMemoryOutputStream</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__streams.html">Streams</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_stream_buffer.html" title="wxStreamBuffer は wxStreamBase 用のキャッシュマネージャです: このクラスはストリームに関連付けられたストリームバッファを管理します。">wxStreamBuffer</a>, <a class="el" href="classwx_memory_output_stream.html" title="このクラスを使用することで、メモリ内へデータを書き込むために wxOutputStream のすべての関数を使用できます。 ">wxMemoryOutputStream</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 

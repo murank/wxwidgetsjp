@@ -159,8 +159,7 @@ The MS Windows Colour Selector</h3>
 The Generic Colour Selector</h3>
 <p>Under non-MS Windows platforms, the colour selector is a simulation of most of the features of the MS Windows selector. Two palettes of 48 standard and 16 custom colours are presented, with the right-hand area containing three sliders for the user to select a colour from red, green and blue components. This colour may be added to the custom colour palette, and will replace either the currently selected custom colour, or the first one in the palette if none is selected. The RGB colour sliders are not optional in the generic colour selector. The generic colour selector is also available under MS Windows; use the name wxGenericColourDialog.</p>
 <h3><a class="anchor" id="overview_cmndlg_colour_example"></a>
-
-Example</h3>
+例</h3>
 <p>In the samples/dialogs directory, there is an example of using the <a class="el" href="classwx_colour_dialog.html" title="This class represents the colour chooser dialog.">wxColourDialog</a> class. Here is an excerpt, which sets various parameters of a <a class="el" href="classwx_colour_data.html" title="This class holds a variety of information related to colour dialogs.">wxColourData</a> object, including a grey scale for the custom colours. If the user did not cancel the dialog, the application retrieves the selected colour and uses it to set the background of a window.</p>
 <div class="fragment"><pre class="fragment"><a class="code" href="classwx_colour_data.html" title="This class holds a variety of information related to colour dialogs.">wxColourData</a> data;
 data.<a class="code" href="classwx_colour_data.html#a2e5e80d982cbcb17cac113a72efef2bf" title="Under Windows, tells the Windows colour dialog to display the full dialog with custom colour selectio...">SetChooseFull</a>(<span class="keyword">true</span>);
@@ -194,8 +193,7 @@ The MS Windows Font Selector</h3>
 The Generic Font Selector</h3>
 <p>Under non-MS Windows platforms, the font selector is simpler. Controls for font family, point size, style, weight, underlining and text foreground colour are provided, and a sample is shown upon a white background. The generic font selector is also available under MS Windows; use the name wxGenericFontDialog.</p>
 <h3><a class="anchor" id="overview_cmndlg_font_example"></a>
-
-Example</h3>
+例</h3>
 <p>In the samples/dialogs directory, there is an example of using the <a class="el" href="classwx_font_dialog.html" title="This class represents the font chooser dialog.">wxFontDialog</a> class. The application uses the returned font and colour for drawing text on a canvas. Here is an excerpt:</p>
 <div class="fragment"><pre class="fragment"><a class="code" href="classwx_font_data.html" title="This class holds a variety of information related to font dialogs.">wxFontData</a> data;
 data.<a class="code" href="classwx_font_data.html#a24fd79c0a3eb6764cc7d525acba9aaeb" title="Sets the font that will be initially used by the font dialog.">SetInitialFont</a>(canvasFont);

@@ -132,8 +132,7 @@ class wxObjectDataPtr&lt; T &gt;</h3>
 <p>The difference to <a class="el" href="classwx_shared_ptr_3_01_t_01_4.html" title="A smart pointer with non-intrusive reference counting.">wxSharedPtr&lt;T&gt;</a> is that <a class="el" href="classwx_object_data_ptr_3_01_t_01_4.html" title="This is an helper template class primarily written to avoid memory leaks because of missing calls to ...">wxObjectDataPtr&lt;T&gt;</a> relies on the reference counting to be in the class pointed to, where instead <a class="el" href="classwx_shared_ptr_3_01_t_01_4.html" title="A smart pointer with non-intrusive reference counting.">wxSharedPtr&lt;T&gt;</a> implements the reference counting itself.</p>
 <p>Below is an example illustrating how to implement reference counted data using <a class="el" href="classwx_ref_counter.html" title="This class is used to manage reference-counting providing a simple interface and a counter...">wxRefCounter</a> and <a class="el" href="classwx_object_data_ptr_3_01_t_01_4.html" title="This is an helper template class primarily written to avoid memory leaks because of missing calls to ...">wxObjectDataPtr&lt;T&gt;</a> with copy-on-write semantics.</p>
 <h2><a class="anchor" id="objectdataptr_example"></a>
-
-Example</h2>
+例</h2>
 <div class="fragment"><pre class="fragment">    <span class="keyword">class </span>MyCarRefData: <span class="keyword">public</span> <a class="code" href="classwx_ref_counter.html" title="This class is used to manage reference-counting providing a simple interface and a counter...">wxRefCounter</a>
     {
     <span class="keyword">public</span>:

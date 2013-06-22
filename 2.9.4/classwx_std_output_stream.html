@@ -124,21 +124,21 @@ function toggleVisibility(linkObj) {
 
 <p><code>#include &lt;/home/zeitlin/src/wx/github/interface/wx/stdstream.h&gt;</code></p>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classwx_std_output_stream.html" title="wxStdOutputStream is a std::ostream derived stream which writes to a wxOutputStream.">wxStdOutputStream</a> is a std::ostream derived stream which writes to a <a class="el" href="classwx_output_stream.html" title="wxOutputStream is an abstract base class which may not be used directly.">wxOutputStream</a>.  </p>
+<div class="textblock"><p><a class="el" href="classwx_std_output_stream.html" title="wxStdOutputStream は std::ostream を継承したストリームで、wxOutputStream へデータを書き込みます。">wxStdOutputStream</a> is a std::ostream derived stream which writes to a <a class="el" href="classwx_output_stream.html" title="wxOutputStream は抽象クラスであり、直接使用することはありません。">wxOutputStream</a>.  </p>
 <p>例: </p>
-<div class="fragment"><pre class="fragment">    <a class="code" href="classwx_f_file_output_stream.html" title="This class represents data written to a file.">wxFFileOutputStream</a> file(<span class="stringliteral">"out.txt.gz"</span>);
+<div class="fragment"><pre class="fragment">    <a class="code" href="classwx_f_file_output_stream.html" title="このクラスはファイルへのデータ書き込みを表しています。">wxFFileOutputStream</a> file(<span class="stringliteral">"out.txt.gz"</span>);
     <a class="code" href="classwx_zlib_output_stream.html" title="This stream compresses all data written to it.">wxZlibOutputStream</a> gzipOutput(file, -1, <a class="code" href="zstream_8h.html#a64bea75633419f58a90931e19349c384af7aa5280cec791d2ee89d8fa62a6eae9" title="gzip header and checksum, requires zlib 1.2.1+">wxZLIB_GZIP</a>);
-    <a class="code" href="classwx_std_output_stream.html" title="wxStdOutputStream is a std::ostream derived stream which writes to a wxOutputStream.">wxStdOutputStream</a> out(gzipOutput);
+    <a class="code" href="classwx_std_output_stream.html" title="wxStdOutputStream は std::ostream を継承したストリームで、wxOutputStream へデータを書き込みます。">wxStdOutputStream</a> out(gzipOutput);
 
     out &lt;&lt; <span class="stringliteral">"Hello world!"</span> &lt;&lt; std::endl;
 </pre></div><h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__streams.html">Streams</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_output_stream.html" title="wxOutputStream is an abstract base class which may not be used directly.">wxOutputStream</a>, <a class="el" href="classwx_std_output_stream_buffer.html" title="wxStdOutputStreamBuffer is a std::streambuf derived stream buffer which writes to a wxOutputStream...">wxStdOutputStreamBuffer</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__streams.html">Streams</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_output_stream.html" title="wxOutputStream は抽象クラスであり、直接使用することはありません。">wxOutputStream</a>, <a class="el" href="classwx_std_output_stream_buffer.html" title="wxStdOutputStreamBuffer is a std::streambuf derived stream buffer which writes to a wxOutputStream...">wxStdOutputStreamBuffer</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_std_output_stream.html#a9e38e64274028ae4fc12908a98bc8293">wxStdOutputStream</a> (<a class="el" href="classwx_output_stream.html">wxOutputStream</a> &amp;stream)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a std::ostream derived stream which writes to a <a class="el" href="classwx_output_stream.html" title="wxOutputStream is an abstract base class which may not be used directly.">wxOutputStream</a>.    <a href="#a9e38e64274028ae4fc12908a98bc8293"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates a std::ostream derived stream which writes to a <a class="el" href="classwx_output_stream.html" title="wxOutputStream は抽象クラスであり、直接使用することはありません。">wxOutputStream</a>.    <a href="#a9e38e64274028ae4fc12908a98bc8293"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_std_output_stream.html#aedd715f0036f9e2ee263998505aeda50">~wxStdOutputStream</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor.    <a href="#aedd715f0036f9e2ee263998505aeda50"></a><br/></td></tr>
 </table>
@@ -160,7 +160,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Creates a std::ostream derived stream which writes to a <a class="el" href="classwx_output_stream.html" title="wxOutputStream is an abstract base class which may not be used directly.">wxOutputStream</a>.  </p>
+<p>Creates a std::ostream derived stream which writes to a <a class="el" href="classwx_output_stream.html" title="wxOutputStream は抽象クラスであり、直接使用することはありません。">wxOutputStream</a>.  </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">stream</td><td>Stream to write to.  </td></tr>

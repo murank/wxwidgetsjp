@@ -130,14 +130,14 @@ function toggleVisibility(linkObj) {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classwx_buffered_output_stream__inherit__graph.png" border="0" usemap="#wx_buffered_output_stream_inherit__map" alt="Inheritance graph"/></div>
 <map name="wx_buffered_output_stream_inherit__map" id="wx_buffered_output_stream_inherit__map">
-<area shape="rect" id="node2" href="classwx_filter_output_stream.html" title="A filter stream has the capability of a normal stream but it can be placed on top of another stream..." alt="" coords="16,166,163,197"/><area shape="rect" id="node4" href="classwx_output_stream.html" title="wxOutputStream is an abstract base class which may not be used directly." alt="" coords="31,86,148,117"/><area shape="rect" id="node6" href="classwx_stream_base.html" title="This class is the base class of most stream related classes in wxWidgets." alt="" coords="35,6,144,37"/></map>
+<area shape="rect" id="node2" href="classwx_filter_output_stream.html" title="フィルタストリームは通常のストリームと同じ機能を持っていますが、他のストリームの上に配置することができます。" alt="" coords="16,166,163,197"/><area shape="rect" id="node4" href="classwx_output_stream.html" title="wxOutputStream は抽象クラスであり、直接使用することはありません。" alt="" coords="31,86,148,117"/><area shape="rect" id="node6" href="classwx_stream_base.html" title="このクラスは wxWidgets における大半のストリームクラスの基底クラスです。" alt="" coords="35,6,144,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>This stream acts as a cache.  </p>
-<p>It caches the bytes to be written to the specified output stream (See <a class="el" href="classwx_filter_output_stream.html" title="A filter stream has the capability of a normal stream but it can be placed on top of another stream...">wxFilterOutputStream</a>). The data is only written when the cache is full, when the buffered stream is destroyed or when calling <a class="el" href="classwx_buffered_output_stream.html#a309319db903fbd2476dd5d7a6b800051" title="Calls Sync() and changes the stream position.">SeekO()</a>.</p>
+<p>It caches the bytes to be written to the specified output stream (See <a class="el" href="classwx_filter_output_stream.html" title="フィルタストリームは通常のストリームと同じ機能を持っていますが、他のストリームの上に配置することができます。">wxFilterOutputStream</a>). The data is only written when the cache is full, when the buffered stream is destroyed or when calling <a class="el" href="classwx_buffered_output_stream.html#a309319db903fbd2476dd5d7a6b800051" title="Calls Sync() and changes the stream position.">SeekO()</a>.</p>
 <p>This class may not be used without some other stream to write the data to (such as a file stream or a memory stream).</p>
 <h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__streams.html">Streams</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_stream_buffer.html" title="wxStreamBuffer is a cache manager for wxStreamBase: it manages a stream buffer linked to a stream...">wxStreamBuffer</a>, <a class="el" href="classwx_output_stream.html" title="wxOutputStream is an abstract base class which may not be used directly.">wxOutputStream</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__streams.html">Streams</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_stream_buffer.html" title="wxStreamBuffer は wxStreamBase 用のキャッシュマネージャです: このクラスはストリームに関連付けられたストリームバッファを管理します。">wxStreamBuffer</a>, <a class="el" href="classwx_output_stream.html" title="wxOutputStream は抽象クラスであり、直接使用することはありません。">wxOutputStream</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
@@ -218,7 +218,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Constructor allowing to specify the size of the buffer.  </p>
-<p>This is just a more convenient alternative to creating a <a class="el" href="classwx_stream_buffer.html" title="wxStreamBuffer is a cache manager for wxStreamBase: it manages a stream buffer linked to a stream...">wxStreamBuffer</a> of the given size and using the other overloaded constructor of this class.</p>
+<p>This is just a more convenient alternative to creating a <a class="el" href="classwx_stream_buffer.html" title="wxStreamBuffer は wxStreamBase 用のキャッシュマネージャです: このクラスはストリームに関連付けられたストリームバッファを管理します。">wxStreamBuffer</a> of the given size and using the other overloaded constructor of this class.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">stream</td><td>The associated low-level stream.  </td></tr>

@@ -390,7 +390,7 @@ part of the column definitions for the wxDbTable object.<P>
 The decision to include the ROWID in your SQL SELECT statement must be
 deferred until runtime since it depends on whether you are connected
 to an Oracle datasource or not.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
     // Incomplete code sample
     wxDbTable parts;
@@ -503,7 +503,7 @@ WHERE and FROM clauses specified using
 <A HREF="wx_wxdbtable.html#wxdbtablesetwhereclause">wxDbTable::SetWhereClause</A>
 and <A HREF="wx_wxdbtable.html#wxdbtablesetfromclause">wxDbTable::SetFromClause</A> ARE used by
 this function.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
     USERS TABLE
 
@@ -607,7 +607,7 @@ is created.<P>
 
 It is not necessary to call <A HREF="wx_wxdb.html#wxdbcommittrans">wxDb::CommitTrans</A>
 after executing this function.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
     // Create a secondary index on the PARTS table
     wxDbIdxDef  IndexDef[2];  // 2 columns make up the index
@@ -765,7 +765,7 @@ segment varies from database to database, and is user configurable in
 most databases.  Therefore it is usually best to try to perform a commit
 or rollback at relatively small intervals when processing a larger number
 of actions that insert/update/delete rows in a table.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
     // Incomplete code sample to delete all users with a first name
     // of "JOHN"
@@ -819,7 +819,7 @@ of actions that insert/update/delete rows in a table.<P>
 WHERE and FROM clauses specified using <A HREF="wx_wxdbtable.html#wxdbtablesetwhereclause">wxDbTable::SetWhereClause</A>
 and <A HREF="wx_wxdbtable.html#wxdbtablesetfromclause">wxDbTable::SetFromClause</A> are ignored by
 this function.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
     // Delete parts 1 thru 10 from containers 'X', 'Y' and 'Z' that
     // are magenta in color
@@ -1182,7 +1182,7 @@ inserted into the columns of the new row in the database.<P>
 A <A HREF="wx_wxdb.html#wxdbcommittrans">wxDb::CommitTrans</A> or
 <A HREF="wx_wxdb.html#wxdbrollbacktrans">wxDb::RollbackTrans</A> must be called after use of
 this function to commit or rollback the insertion.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
     // Incomplete code snippet
     wxStrcpy(parts-&gt;PartName, "10");
@@ -1416,7 +1416,7 @@ the results returned may have unexpected results (or no results) due to
 improper or incorrect query parameters constructed from the uninitialized
 clauses.<HR><P>
 <P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
     // Incomplete code sample
     parts-&gt;SetWhereClause("DESCRIPTION = 'FOOD'");
@@ -1492,7 +1492,7 @@ After this function has been called, the cursor is positioned before the
 first record in the record set.  To retrieve the first record, call
 either <A HREF="wx_wxdbtable.html#wxdbtablegetfirst">wxDbTable::GetFirst</A> or
 <A HREF="wx_wxdbtable.html#wxdbtablegetnext">wxDbTable::GetNext</A>.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
     // Incomplete code samples
 	 wxString sqlStmt;
@@ -1583,7 +1583,7 @@ either <A HREF="wx_wxdbtable.html#wxdbtablegetfirst">wxDbTable::GetFirst</A> or
 WHERE and FROM clauses specified using <A HREF="wx_wxdbtable.html#wxdbtablesetwhereclause">wxDbTable::SetWhereClause</A>
 and <A HREF="wx_wxdbtable.html#wxdbtablesetfromclause">wxDbTable::SetFromClause</A> are ignored by
 this function.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
     // Incomplete code sample
     parts-&gt;ClearMemberVars();           // Set all columns to zero
@@ -1635,7 +1635,7 @@ either <A HREF="wx_wxdbtable.html#wxdbtablegetfirst">wxDbTable::GetFirst</A> or
 WHERE and FROM clauses specified using <A HREF="wx_wxdbtable.html#wxdbtablesetwhereclause">wxDbTable::SetWhereClause</A>
 and <A HREF="wx_wxdbtable.html#wxdbtablesetfromclause">wxDbTable::SetFromClause</A> are ignored by
 this function.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
     // Incomplete code sample
     wxStrcpy(parts-&gt;PartNumber, "32");
@@ -1780,7 +1780,7 @@ already stored in wxDbColInf form.  One example use of using
 <A HREF="wx_wxdb.html#wxdbgetcolumns">wxDb::GetColumns</A> then using this function is if
 a data table existed in one datasource, and the table's column definitions
 were to be copied over to another datasource or table.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
     // Long way not using this function
     wxStrcpy(colDefs[0].ColName, "PART_NUM");
@@ -1859,7 +1859,7 @@ If using the FROM clause when performing a query, be certain to include in
 the corresponding WHERE clause a comparison of a column from either the base
 table or one of the other joined tables to each other joined table to ensure
 the datasource knows on which column values the tables should be joined on.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
     ...
     // Base table is the "LOCATION" table, and it is being
@@ -1932,7 +1932,7 @@ belongs using DOT notation (TABLE_NAME.COLUMN_NAME).</UL></UL>
 <B><FONT COLOR="#FF0000">Remarks</FONT></B><P>
 
 Do <B>not</B> include the keywords "ORDER BY" when setting the ORDER BY clause.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
     ...
     parts-&gt;SetOrderByClause("PART_DESCRIP, QUANTITY");
@@ -1987,7 +1987,7 @@ prefaced with the table name to which the column belongs using DOT notation
 <B><FONT COLOR="#FF0000">Remarks</FONT></B><P>
 
 Do <B>not</B> include the keywords "WHERE" when setting the WHERE clause.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
     ...
     // Simple where clause
@@ -2044,7 +2044,7 @@ Pointer to SQL UPDATE statement to be executed.</UL></UL>
 A <A HREF="wx_wxdb.html#wxdbcommittrans">wxDb::CommitTrans</A> or
 <A HREF="wx_wxdb.html#wxdbrollbacktrans">wxDb::RollbackTrans</A> must be called after use of
 this function to commit or rollback the update.<P>
-<B><FONT COLOR="#FF0000">Example</FONT></B><P>
+<B><FONT COLOR="#FF0000">例</FONT></B><P>
 <PRE>
 	 wxString sqlStmt;
     sqlStmt = "update PART set QTY = 0 where PART_NUMBER = '32'";

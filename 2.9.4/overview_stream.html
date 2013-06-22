@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>wxWidgets: wxWidgets: Stream classes overview</title>
+<title>wxWidgets: wxWidgets: ストリームクラスの概要</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="custom_stylesheet.css" rel="stylesheet" type="text/css" />
@@ -114,82 +114,79 @@ function toggleVisibility(linkObj) {
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title">Stream classes overview  </div>  </div>
+<div class="title">ストリームクラスの概要 </div>  </div>
 </div>
 <div class="contents">
 <div class="textblock"><p>クラス:</p>
 <ul>
-<li><a class="el" href="classwx_stream_base.html" title="This class is the base class of most stream related classes in wxWidgets.">wxStreamBase</a> </li>
-<li><a class="el" href="classwx_stream_buffer.html" title="wxStreamBuffer is a cache manager for wxStreamBase: it manages a stream buffer linked to a stream...">wxStreamBuffer</a> </li>
-<li><a class="el" href="classwx_input_stream.html" title="wxInputStream is an abstract base class which may not be used directly.">wxInputStream</a> </li>
-<li><a class="el" href="classwx_output_stream.html" title="wxOutputStream is an abstract base class which may not be used directly.">wxOutputStream</a> </li>
-<li><a class="el" href="classwx_filter_input_stream.html" title="A filter stream has the capability of a normal stream but it can be placed on top of another stream...">wxFilterInputStream</a> </li>
-<li><a class="el" href="classwx_filter_output_stream.html" title="A filter stream has the capability of a normal stream but it can be placed on top of another stream...">wxFilterOutputStream</a> </li>
-<li><a class="el" href="classwx_file_input_stream.html" title="This class represents data read in from a file.">wxFileInputStream</a> </li>
-<li><a class="el" href="classwx_file_output_stream.html" title="This class represents data written to a file.">wxFileOutputStream</a> </li>
-<li><a class="el" href="classwx_text_input_stream.html" title="This class provides functions that reads text data using an input stream, allowing you to read text...">wxTextInputStream</a> </li>
-<li><a class="el" href="classwx_text_output_stream.html" title="This class provides functions that write text data using an output stream, allowing you to write text...">wxTextOutputStream</a> </li>
-<li><a class="el" href="classwx_data_input_stream.html" title="This class provides functions that read binary data types in a portable way.">wxDataInputStream</a> </li>
-<li><a class="el" href="classwx_data_output_stream.html" title="This class provides functions that write binary data types in a portable way.">wxDataOutputStream</a></li>
+<li><a class="el" href="classwx_stream_base.html" title="このクラスは wxWidgets における大半のストリームクラスの基底クラスです。">wxStreamBase</a> </li>
+<li><a class="el" href="classwx_stream_buffer.html" title="wxStreamBuffer は wxStreamBase 用のキャッシュマネージャです: このクラスはストリームに関連付けられたストリームバッファを管理します。">wxStreamBuffer</a> </li>
+<li><a class="el" href="classwx_input_stream.html" title="wxInputStream は抽象クラスであり、直接使用することはありません。">wxInputStream</a> </li>
+<li><a class="el" href="classwx_output_stream.html" title="wxOutputStream は抽象クラスであり、直接使用することはありません。">wxOutputStream</a> </li>
+<li><a class="el" href="classwx_filter_input_stream.html" title="フィルタストリームは通常のストリームと同じ機能を持っていますが、他のストリームの上に配置することができます。">wxFilterInputStream</a> </li>
+<li><a class="el" href="classwx_filter_output_stream.html" title="フィルタストリームは通常のストリームと同じ機能を持っていますが、他のストリームの上に配置することができます。">wxFilterOutputStream</a> </li>
+<li><a class="el" href="classwx_file_input_stream.html" title="このクラスはファイルからのデータ読み込みを表しています。">wxFileInputStream</a> </li>
+<li><a class="el" href="classwx_file_output_stream.html" title="このクラスはファイルへのデータ書き込みを表しています。">wxFileOutputStream</a> </li>
+<li><a class="el" href="classwx_text_input_stream.html" title="このクラスは入力ストリームを利用したテキストデータの読み込み機能を提供しており、テキスト、浮動小数点、整数を読み込むことができます。">wxTextInputStream</a> </li>
+<li><a class="el" href="classwx_text_output_stream.html" title="このクラスは出力ストリームを利用したテキストデータの書き込み機能を提供しており、テキスト、浮動小数点、整数を書き込むことができます。">wxTextOutputStream</a> </li>
+<li><a class="el" href="classwx_data_input_stream.html" title="このクラスは移植性のある方法でバイナリデータを読み込む機能を提供します。">wxDataInputStream</a> </li>
+<li><a class="el" href="classwx_data_output_stream.html" title="このクラスは移植性のある方法でバイナリデータを書き込む機能を提供します。">wxDataOutputStream</a></li>
 </ul>
 <ul>
 <li><a class="el" href="overview_stream.html#overview_stream_intro">イントロダクション</a> </li>
-<li><a class="el" href="overview_stream.html#overview_stream_example">Example</a></li>
+<li><a class="el" href="overview_stream.html#overview_stream_example">例</a></li>
 </ul>
 <hr/>
 <h2><a class="anchor" id="overview_stream_intro"></a>
 イントロダクション</h2>
 <h3><a class="anchor" id="overview_stream_intro_std"></a>
-
-wxWidgets and Standard Streams</h3>
-<p>wxWidgets provides its own set of stream classes in order to support platforms not providing standard C++ streams implementation and also to make it possible to provide binary versions of wxWidgets application not depending on any particular standard library version. The wxWidgets stream classes also provide some functionality not available in the standard library such as support for several compression formats and possibility to work with sockets or text controls (for output only in the latter case).</p>
-<p>Nevertheless wxWidgets programs can also use standard stream classes and are encouraged to do so if the above considerations don't apply. Moreover, <a class="el" href="classwx_std_input_stream.html" title="wxStdInputStream is a std::istream derived stream which reads from a wxInputStream.">wxStdInputStream</a> and <a class="el" href="classwx_std_output_stream.html" title="wxStdOutputStream is a std::ostream derived stream which writes to a wxOutputStream.">wxStdOutputStream</a> classes are provided to provide a degree of interoperability between the two and make it possible to use any wxWidgets stream as a standard stream (the converse possibility to use a standard stream as a wxWidgets stream is planned for a future release).</p>
+wxWidgets と標準ストリーム</h3>
+<p>wxWidgets は標準の C++ ストリームを提供していないプラットフォームに対応するためと、標準ライブラリの特定のバージョンに依存することなく、wxWidgets アプリケーションのバイナリ版を提供可能にするために独自のストリームクラス群を提供しています。また、wxWidgets のストリームクラスは標準ライブラリでは利用できない機能をいくつか提供しており、これにはいくつかの圧縮形式への対応や、ソケットやテキストコントロールの利用 (後者は出力のみです) が含まれます。</p>
+<p>とは言え、wxWidgets プログラムで標準ストリームクラスを使用することも可能ですし、上記の事項が当てはまらない場合は使用が推奨されています。さらに、ある程度の相互運用性を wxWidgets と 標準ストリームクラスとの間に提供するため、<a class="el" href="classwx_std_input_stream.html" title="wxStdInputStream は std::istream を継承したストリームで、wxInputStream からデータを読み込みます。">wxStdInputStream</a> クラスと <a class="el" href="classwx_std_output_stream.html" title="wxStdOutputStream は std::ostream を継承したストリームで、wxOutputStream へデータを書き込みます。">wxStdOutputStream</a> クラスが提供されています。これらのクラスにより、任意の wxWidgets ストリームを標準ストリームとして使用できます。(逆に標準ストリームを wxWidgets ストリームとして使用する機能は将来的に提供する予定です)</p>
 <h3><a class="anchor" id="overview_stream_intro_overview"></a>
-
-Stream Classes</h3>
-<p>wxStream classes are divided in two main groups:</p>
+ストリームクラス</h3>
+<p>wxStream クラスはふたつの主なグループに分けられます:</p>
 <ul>
-<li>The core: <a class="el" href="classwx_stream_base.html" title="This class is the base class of most stream related classes in wxWidgets.">wxStreamBase</a>, <a class="el" href="classwx_stream_buffer.html" title="wxStreamBuffer is a cache manager for wxStreamBase: it manages a stream buffer linked to a stream...">wxStreamBuffer</a>, <a class="el" href="classwx_input_stream.html" title="wxInputStream is an abstract base class which may not be used directly.">wxInputStream</a>, <a class="el" href="classwx_output_stream.html" title="wxOutputStream is an abstract base class which may not be used directly.">wxOutputStream</a>, <a class="el" href="classwx_filter_input_stream.html" title="A filter stream has the capability of a normal stream but it can be placed on top of another stream...">wxFilterInputStream</a>, <a class="el" href="classwx_filter_output_stream.html" title="A filter stream has the capability of a normal stream but it can be placed on top of another stream...">wxFilterOutputStream</a> </li>
-<li>The "IO" classes: <a class="el" href="classwx_socket_input_stream.html" title="This class implements an input stream which reads data from a connected socket.">wxSocketInputStream</a>, <a class="el" href="classwx_socket_output_stream.html" title="This class implements an output stream which writes data from a connected socket.">wxSocketOutputStream</a>, <a class="el" href="classwx_file_input_stream.html" title="This class represents data read in from a file.">wxFileInputStream</a>, <a class="el" href="classwx_file_output_stream.html" title="This class represents data written to a file.">wxFileOutputStream</a>, ...  </li>
-<li>Classes for reading text or binary data from a particular stream such as <a class="el" href="classwx_text_input_stream.html" title="This class provides functions that reads text data using an input stream, allowing you to read text...">wxTextInputStream</a>, <a class="el" href="classwx_text_output_stream.html" title="This class provides functions that write text data using an output stream, allowing you to write text...">wxTextOutputStream</a>, <a class="el" href="classwx_data_input_stream.html" title="This class provides functions that read binary data types in a portable way.">wxDataInputStream</a> and <a class="el" href="classwx_data_output_stream.html" title="This class provides functions that write binary data types in a portable way.">wxDataOutputStream</a></li>
+<li>コアクラス: <a class="el" href="classwx_stream_base.html" title="このクラスは wxWidgets における大半のストリームクラスの基底クラスです。">wxStreamBase</a>, <a class="el" href="classwx_stream_buffer.html" title="wxStreamBuffer は wxStreamBase 用のキャッシュマネージャです: このクラスはストリームに関連付けられたストリームバッファを管理します。">wxStreamBuffer</a>, <a class="el" href="classwx_input_stream.html" title="wxInputStream は抽象クラスであり、直接使用することはありません。">wxInputStream</a>, <a class="el" href="classwx_output_stream.html" title="wxOutputStream は抽象クラスであり、直接使用することはありません。">wxOutputStream</a>, <a class="el" href="classwx_filter_input_stream.html" title="フィルタストリームは通常のストリームと同じ機能を持っていますが、他のストリームの上に配置することができます。">wxFilterInputStream</a>, <a class="el" href="classwx_filter_output_stream.html" title="フィルタストリームは通常のストリームと同じ機能を持っていますが、他のストリームの上に配置することができます。">wxFilterOutputStream</a> </li>
+<li>"IO" クラス: <a class="el" href="classwx_socket_input_stream.html" title="このクラスは入力ストリームを実装しており、接続されたソケットからデータを読み込みます。">wxSocketInputStream</a>, <a class="el" href="classwx_socket_output_stream.html" title="このクラスは出力ストリームを実装しており、接続されたソケットへデータを書き込みます。">wxSocketOutputStream</a>, <a class="el" href="classwx_file_input_stream.html" title="このクラスはファイルからのデータ読み込みを表しています。">wxFileInputStream</a>, <a class="el" href="classwx_file_output_stream.html" title="このクラスはファイルへのデータ書き込みを表しています。">wxFileOutputStream</a>, ... </li>
+<li>特定のストリームからテキストデータやバイナリデータを読み込むクラス:  <a class="el" href="classwx_text_input_stream.html" title="このクラスは入力ストリームを利用したテキストデータの読み込み機能を提供しており、テキスト、浮動小数点、整数を読み込むことができます。">wxTextInputStream</a>, <a class="el" href="classwx_text_output_stream.html" title="このクラスは出力ストリームを利用したテキストデータの書き込み機能を提供しており、テキスト、浮動小数点、整数を書き込むことができます。">wxTextOutputStream</a>, <a class="el" href="classwx_data_input_stream.html" title="このクラスは移植性のある方法でバイナリデータを読み込む機能を提供します。">wxDataInputStream</a>, <a class="el" href="classwx_data_output_stream.html" title="このクラスは移植性のある方法でバイナリデータを書き込む機能を提供します。">wxDataOutputStream</a></li>
 </ul>
-<p><a class="el" href="classwx_stream_base.html" title="This class is the base class of most stream related classes in wxWidgets.">wxStreamBase</a> is the base definition of a stream. It defines, for example, the API of OnSysRead(), OnSysWrite(), OnSysSeek() and OnSysTell(). These functions are really implemented by the "IO" classes. <a class="el" href="classwx_input_stream.html" title="wxInputStream is an abstract base class which may not be used directly.">wxInputStream</a> and <a class="el" href="classwx_output_stream.html" title="wxOutputStream is an abstract base class which may not be used directly.">wxOutputStream</a> classes inherit from <a class="el" href="classwx_stream_base.html" title="This class is the base class of most stream related classes in wxWidgets.">wxStreamBase</a> and provide specialized methods for input and output.</p>
-<p><a class="el" href="classwx_stream_buffer.html" title="wxStreamBuffer is a cache manager for wxStreamBase: it manages a stream buffer linked to a stream...">wxStreamBuffer</a> is a cache manager for <a class="el" href="classwx_stream_base.html" title="This class is the base class of most stream related classes in wxWidgets.">wxStreamBase</a>: it manages a stream buffer linked to a stream. One stream can have multiple stream buffers but one stream has always one autoinitialized stream buffer.</p>
-<p><a class="el" href="classwx_input_stream.html" title="wxInputStream is an abstract base class which may not be used directly.">wxInputStream</a> is the base class for read-only streams. It implements Read(), SeekI() (I for Input), and all read or IO generic related functions. <a class="el" href="classwx_output_stream.html" title="wxOutputStream is an abstract base class which may not be used directly.">wxOutputStream</a> does the same thing for write-only streams.</p>
-<p><a class="el" href="classwx_filter_input_stream.html" title="A filter stream has the capability of a normal stream but it can be placed on top of another stream...">wxFilterInputStream</a> and wxFileterOutputStream are the base class definitions for stream filtering. Stream filtering means a stream which does no syscall but filters data which are passed to it and then pass them to another stream. For example, wxZLibInputStream is an inline stream decompressor.</p>
-<p>The "IO" classes implements the specific parts of the stream. This could be nothing in the case of <a class="el" href="classwx_memory_input_stream.html" title="This class allows to use all methods taking a wxInputStream reference to read in-memory data...">wxMemoryInputStream</a> and <a class="el" href="classwx_memory_output_stream.html" title="This class allows to use all methods taking a wxOutputStream reference to write to in-memory data...">wxMemoryOutputStream</a> which base themselves on <a class="el" href="classwx_stream_buffer.html" title="wxStreamBuffer is a cache manager for wxStreamBase: it manages a stream buffer linked to a stream...">wxStreamBuffer</a>. This could also be a simple link to the true syscall (for example read(...), write(...)).</p>
+<p><a class="el" href="classwx_stream_base.html" title="このクラスは wxWidgets における大半のストリームクラスの基底クラスです。">wxStreamBase</a> はストリームの基底クラスです。このクラスは例えば OnSysRead()、OnSysWrite()、OnSysSeek()、OnSysTell() などの API を定義しています。これらのクラスは実際には "IO" クラスで実装されています。<a class="el" href="classwx_input_stream.html" title="wxInputStream は抽象クラスであり、直接使用することはありません。">wxInputStream</a> クラスと <a class="el" href="classwx_output_stream.html" title="wxOutputStream は抽象クラスであり、直接使用することはありません。">wxOutputStream</a> クラスは <a class="el" href="classwx_stream_base.html" title="このクラスは wxWidgets における大半のストリームクラスの基底クラスです。">wxStreamBase</a> を継承しており、入出力に関する専用の関数を提供します。</p>
+<p><a class="el" href="classwx_stream_buffer.html" title="wxStreamBuffer は wxStreamBase 用のキャッシュマネージャです: このクラスはストリームに関連付けられたストリームバッファを管理します。">wxStreamBuffer</a> は <a class="el" href="classwx_stream_base.html" title="このクラスは wxWidgets における大半のストリームクラスの基底クラスです。">wxStreamBase</a> 用のキャッシュマネージャです: このクラスはストリームに関連付けられたストリームバッファを管理します。ひとつのストリームは複数のストリームバッファを持つことができますが、ストリームは常にひとつの自動初期化済みのストリームバッファを持ちます。</p>
+<p><a class="el" href="classwx_input_stream.html" title="wxInputStream は抽象クラスであり、直接使用することはありません。">wxInputStream</a> は読み取り専用ストリームの基底クラスです。このクラスでは Read()、SeekI() (I は Input を表します) と、読み取りや入出力に関するすべての関数を実装しています。<a class="el" href="classwx_output_stream.html" title="wxOutputStream は抽象クラスであり、直接使用することはありません。">wxOutputStream</a> も同じことを行いますが、こちらは書き込み専用のストリーム用です。</p>
+<p><a class="el" href="classwx_filter_input_stream.html" title="フィルタストリームは通常のストリームと同じ機能を持っていますが、他のストリームの上に配置することができます。">wxFilterInputStream</a> と wxFilterOutputStream はフィルタリング用の基底クラスです。ストリームのフィルタリングとは、システムコールは行いませんが、渡されたデータをフィルタリングし、他のストリームへ引き渡すストリームを意味します。例えば、wxZLibInputStream はインラインでストリームを展開します。</p>
+<p>"IO" クラスはストリームの特定の部分を実装しています。<a class="el" href="classwx_stream_buffer.html" title="wxStreamBuffer は wxStreamBase 用のキャッシュマネージャです: このクラスはストリームに関連付けられたストリームバッファを管理します。">wxStreamBuffer</a> に基づく <a class="el" href="classwx_memory_input_stream.html" title="このクラスを使用することで、メモリ内のデータを読み込むために wxInputStream のすべての関数を使用できます。 ">wxMemoryInputStream</a>、<a class="el" href="classwx_memory_output_stream.html" title="このクラスを使用することで、メモリ内へデータを書き込むために wxOutputStream のすべての関数を使用できます。 ">wxMemoryOutputStream</a> の場合は何も行いません。また、この実装は単純に本当のシステムコール (read(...)、write(...) など) に関連付けられています。</p>
 <h2><a class="anchor" id="overview_stream_example"></a>
-
-Example</h2>
-<p>Usage is simple. We can take the example of <a class="el" href="classwx_file_input_stream.html" title="This class represents data read in from a file.">wxFileInputStream</a> and here is some sample code:</p>
+例</h2>
+<p>使用方法は単純です。例として <a class="el" href="classwx_file_input_stream.html" title="このクラスはファイルからのデータ読み込みを表しています。">wxFileInputStream</a> のサンプルコードを以下に示します:</p>
 <div class="fragment"><pre class="fragment">...
-<span class="comment">// The constructor initializes the stream buffer and open the file descriptor</span>
-<span class="comment">// associated to the name of the file.</span>
+<span class="comment">// コンストラクタではストリームバッファの初期化と</span>
+<span class="comment">// ファイル名に関連付けられたファイルディスクリプタのオープンが行われる。</span>
 wxFileInputStream in_stream(<span class="stringliteral">"the_file_to_be_read"</span>);
 
-<span class="comment">// Ok, read some bytes ... nb_datas is expressed in bytes.</span>
+<span class="comment">// Ok、データを読み込む ... nb_datas はバイト単位で表す。</span>
 in_stream.Read(data, nb_datas);
 <span class="keywordflow">if</span> (in_stream.LastError() != wxSTREAM_NOERROR) {
-    <span class="comment">// Oh oh, something bad happens.</span>
-    <span class="comment">// For a complete list, look into the documentation at wxStreamBase.</span>
+    <span class="comment">// おっと、何か良くないことが起こった。</span>
+    <span class="comment">// 完全な一覧は wxStreamBase のドキュメントを参照のこと。</span>
 }
 
-<span class="comment">// You can also inline all like this.</span>
+<span class="comment">// このようにインラインにすることもできる。</span>
 <span class="keywordflow">if</span> (in_stream.Read(data, nb_datas).LastError() != wxSTREAM_NOERROR) {
-    <span class="comment">// Do something.</span>
+    <span class="comment">// 処理を行なう。</span>
 }
 
-<span class="comment">// You can also get the last number of bytes REALLY put into the buffer.</span>
+<span class="comment">// また、バッファへ実際に書き込んだバイト数を取得することもできる。</span>
 <span class="keywordtype">size_t</span> really_read = in_stream.LastRead();
 
-<span class="comment">// Ok, moves to the beginning of the stream. SeekI returns the last position</span>
-<span class="comment">// in the stream counted from the beginning.</span>
+<span class="comment">// Ok、ストリームの先頭へ移動する。SeekI はストリームの先頭から数えた </span>
+<span class="comment">// 最後の位置を返却する。</span>
 off_t old_position = in_stream.SeekI(0, wxFromBeginning);
 
-<span class="comment">// What is my current position ?</span>
+<span class="comment">// 現在位置はどこ?</span>
 off_t position = in_stream.TellI();
 
-<span class="comment">// wxFileInputStream will close the file descriptor on destruction.</span>
+<span class="comment">// wxFileInputStream はデストラクタでファイルディスクリプタを閉じる。</span>
 </pre></div> </div></div><!-- window showing the filter options -->
 
 <div id="MSearchSelectWindow"

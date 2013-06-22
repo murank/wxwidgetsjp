@@ -156,7 +156,7 @@ function toggleVisibility(linkObj) {
         
         <span class="comment">// proceed loading the file chosen by the user;</span>
         <span class="comment">// this can be done with e.g. wxWidgets input streams:</span>
-        <a class="code" href="classwx_file_input_stream.html" title="This class represents data read in from a file.">wxFileInputStream</a> input_stream(openFileDialog.GetPath());
+        <a class="code" href="classwx_file_input_stream.html" title="このクラスはファイルからのデータ読み込みを表しています。">wxFileInputStream</a> input_stream(openFileDialog.GetPath());
         <span class="keywordflow">if</span> (!input_stream.IsOk())
         {
             <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<span class="stringliteral">"Cannot open file '%s'."</span>, openFileDialog.GetPath());
@@ -177,7 +177,7 @@ function toggleVisibility(linkObj) {
         
         <span class="comment">// save the current contents in the file;</span>
         <span class="comment">// this can be done with e.g. wxWidgets output streams:</span>
-        <a class="code" href="classwx_file_output_stream.html" title="This class represents data written to a file.">wxFileOutputStream</a> output_stream(saveFileDialog.GetPath());
+        <a class="code" href="classwx_file_output_stream.html" title="このクラスはファイルへのデータ書き込みを表しています。">wxFileOutputStream</a> output_stream(saveFileDialog.GetPath());
         <span class="keywordflow">if</span> (!output_stream.IsOk())
         {
             <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<span class="stringliteral">"Cannot save current contents in file '%s'."</span>, saveFileDialog.GetPath());

@@ -159,7 +159,7 @@ function toggleVisibility(linkObj) {
             <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<span class="stringliteral">"Couldn't get the file size for \"%s\""</span>, filename);
         }
 
-        <a class="code" href="classwx_input_stream.html" title="wxInputStream is an abstract base class which may not be used directly.">wxInputStream</a> *in = ftp.<a class="code" href="classwx_f_t_p.html#a97d34cb6df2b6075e49a50b88d4a54b9" title="Creates a new input stream on the specified path.">GetInputStream</a>(filename);
+        <a class="code" href="classwx_input_stream.html" title="wxInputStream は抽象クラスであり、直接使用することはありません。">wxInputStream</a> *in = ftp.<a class="code" href="classwx_f_t_p.html#a97d34cb6df2b6075e49a50b88d4a54b9" title="Creates a new input stream on the specified path.">GetInputStream</a>(filename);
         <span class="keywordflow">if</span> ( !in )
         {
             <a class="code" href="group__group__funcmacro__log.html#ga0dd3c633f990f794e76065c9a7af4c87" title="エラーメッセージ用の関数です。">wxLogError</a>(<span class="stringliteral">"Couldn't get the file"</span>);
@@ -184,7 +184,7 @@ function toggleVisibility(linkObj) {
         <span class="comment">// gracefully close the connection to the server</span>
         ftp.<a class="code" href="classwx_f_t_p.html#ae7e072cefb173542f20946cd50ef6213" title="Gracefully closes the connection with the server.">Close</a>();
 </pre></div><p>To upload a file you would do (assuming the connection to the server was opened successfully):</p>
-<div class="fragment"><pre class="fragment">        <a class="code" href="classwx_output_stream.html" title="wxOutputStream is an abstract base class which may not be used directly.">wxOutputStream</a> *out = ftp.<a class="code" href="classwx_f_t_p.html#a76277252a7bbc21efe6eaa6948dbda98" title="Initializes an output stream to the specified file.">GetOutputStream</a>(<span class="stringliteral">"filename"</span>);
+<div class="fragment"><pre class="fragment">        <a class="code" href="classwx_output_stream.html" title="wxOutputStream は抽象クラスであり、直接使用することはありません。">wxOutputStream</a> *out = ftp.<a class="code" href="classwx_f_t_p.html#a76277252a7bbc21efe6eaa6948dbda98" title="Initializes an output stream to the specified file.">GetOutputStream</a>(<span class="stringliteral">"filename"</span>);
         <span class="keywordflow">if</span> ( out )
         {
             out-&gt;<a class="code" href="classwx_output_stream.html#a22154f02408431ffe8b1590407c3b011" title="Writes up to the specified amount of bytes using the data of buffer.">Write</a>(...); <span class="comment">// your data</span>
@@ -599,7 +599,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Creates a new input stream on the specified path.  </p>
-<p>You can use all but the seek functionality of <a class="el" href="classwx_stream_base.html" title="This class is the base class of most stream related classes in wxWidgets.">wxStreamBase</a>. wxStreamBase::Seek() isn't available on all streams. For example, HTTP or FTP streams do not deal with it. Other functions like wxStreamBase::Tell() are not available for this sort of stream, at present.</p>
+<p>You can use all but the seek functionality of <a class="el" href="classwx_stream_base.html" title="このクラスは wxWidgets における大半のストリームクラスの基底クラスです。">wxStreamBase</a>. wxStreamBase::Seek() isn't available on all streams. For example, HTTP or FTP streams do not deal with it. Other functions like wxStreamBase::Tell() are not available for this sort of stream, at present.</p>
 <p>You will be notified when the EOF is reached by an error.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns <span class="literal">NULL</span> if an error occurred (it could be a network failure or the fact that the file doesn't exist).  </dd></dl>
 

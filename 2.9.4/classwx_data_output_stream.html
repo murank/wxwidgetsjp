@@ -124,12 +124,12 @@ function toggleVisibility(linkObj) {
 
 <p><code>#include &lt;/home/zeitlin/src/wx/github/interface/wx/datstrm.h&gt;</code></p>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>This class provides functions that write binary data types in a portable way.  </p>
+<div class="textblock"><p>このクラスは移植性のある方法でバイナリデータを書き込む機能を提供します。 </p>
 <p>Data can be written in either big-endian or little-endian format, little-endian being the default on all architectures.</p>
-<p>If you want to write data to text files (or streams) use <a class="el" href="classwx_text_output_stream.html" title="This class provides functions that write text data using an output stream, allowing you to write text...">wxTextOutputStream</a> instead.</p>
-<p>The "&lt;&lt;" operator is overloaded and you can use this class like a standard C++ iostream. See <a class="el" href="classwx_data_input_stream.html" title="This class provides functions that read binary data types in a portable way.">wxDataInputStream</a> for its usage and caveats.</p>
+<p>If you want to write data to text files (or streams) use <a class="el" href="classwx_text_output_stream.html" title="このクラスは出力ストリームを利用したテキストデータの書き込み機能を提供しており、テキスト、浮動小数点、整数を書き込むことができます。">wxTextOutputStream</a> instead.</p>
+<p>The "&lt;&lt;" operator is overloaded and you can use this class like a standard C++ iostream. See <a class="el" href="classwx_data_input_stream.html" title="このクラスは移植性のある方法でバイナリデータを読み込む機能を提供します。">wxDataInputStream</a> for its usage and caveats.</p>
 <h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__streams.html">Streams</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_data_input_stream.html" title="This class provides functions that read binary data types in a portable way.">wxDataInputStream</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__streams.html">Streams</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_data_input_stream.html" title="このクラスは移植性のある方法でバイナリデータを読み込む機能を提供します。">wxDataInputStream</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
@@ -137,7 +137,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_data_output_stream.html#a7fb37c717609de9f339321d186afe547">wxDataOutputStream</a> (<a class="el" href="classwx_output_stream.html">wxOutputStream</a> &amp;stream, const <a class="el" href="classwx_m_b_conv.html">wxMBConv</a> &amp;conv=wxConvUTF8)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructs a datastream object from an output stream.    <a href="#a7fb37c717609de9f339321d186afe547"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_data_output_stream.html#a8373bef51ad9b57f635ad6d66055ef65">~wxDataOutputStream</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destroys the <a class="el" href="classwx_data_output_stream.html" title="This class provides functions that write binary data types in a portable way.">wxDataOutputStream</a> object.    <a href="#a8373bef51ad9b57f635ad6d66055ef65"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destroys the <a class="el" href="classwx_data_output_stream.html" title="このクラスは移植性のある方法でバイナリデータを書き込む機能を提供します。">wxDataOutputStream</a> object.    <a href="#a8373bef51ad9b57f635ad6d66055ef65"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_data_output_stream.html#a2e81f24ae13610bcc4adc566946a47d1">BigEndianOrdered</a> (bool be_order)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">If <em>be_order</em> is <span class="literal">true</span>, all data will be written in big-endian order, e.g.    <a href="#a2e81f24ae13610bcc4adc566946a47d1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_m_b_conv.html">wxMBConv</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_data_output_stream.html#ac77976709d7884b21d5afcab6857f53b">GetConv</a> () const  </td></tr>
@@ -201,7 +201,7 @@ Public Member Functions</h2></td></tr>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">stream</td><td>The output stream.  </td></tr>
-    <tr><td class="paramname">conv</td><td>Charset conversion object used to encoding Unicode strings before writing them to the stream in Unicode mode (see <a class="el" href="classwx_data_output_stream.html#ad59954476921dd0f4a480e4d212ed61a" title="Writes string to the stream.">WriteString()</a> for a detailed description). Note that you must not destroy <em>conv</em> before you destroy this <a class="el" href="classwx_data_output_stream.html" title="This class provides functions that write binary data types in a portable way.">wxDataOutputStream</a> instance! It is recommended to use the default value (UTF-8).  </td></tr>
+    <tr><td class="paramname">conv</td><td>Charset conversion object used to encoding Unicode strings before writing them to the stream in Unicode mode (see <a class="el" href="classwx_data_output_stream.html#ad59954476921dd0f4a480e4d212ed61a" title="Writes string to the stream.">WriteString()</a> for a detailed description). Note that you must not destroy <em>conv</em> before you destroy this <a class="el" href="classwx_data_output_stream.html" title="このクラスは移植性のある方法でバイナリデータを書き込む機能を提供します。">wxDataOutputStream</a> instance! It is recommended to use the default value (UTF-8).  </td></tr>
   </table>
   </dd>
 </dl>
@@ -222,7 +222,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Destroys the <a class="el" href="classwx_data_output_stream.html" title="This class provides functions that write binary data types in a portable way.">wxDataOutputStream</a> object.  </p>
+<p>Destroys the <a class="el" href="classwx_data_output_stream.html" title="このクラスは移植性のある方法でバイナリデータを書き込む機能を提供します。">wxDataOutputStream</a> object.  </p>
 
 </div>
 </div>
