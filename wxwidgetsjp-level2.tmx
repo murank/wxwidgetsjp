@@ -329,6 +329,28 @@ protected:</seg>
     <tu>
       <tuv xml:lang="EN-US">
         <seg>...
+<bpt i="0" x="0">&lt;s0&gt;</bpt>// The constructor initializes the stream buffer and open the file descriptor<ept i="0">&lt;/s0&gt;</ept>
+<bpt i="1" x="1">&lt;s1&gt;</bpt>// associated to the name of the file.<ept i="1">&lt;/s1&gt;</ept>
+wxFileInputStream in_stream(<bpt i="2" x="2">&lt;s2&gt;</bpt>"the_file_to_be_read"<ept i="2">&lt;/s2&gt;</ept>);
+
+<bpt i="3" x="3">&lt;s3&gt;</bpt>// Ok, read some bytes ... nb_datas is expressed in bytes.<ept i="3">&lt;/s3&gt;</ept>
+in_stream.Read(data, nb_datas);
+<bpt i="4" x="4">&lt;s4&gt;</bpt>if<ept i="4">&lt;/s4&gt;</ept> (in_stream.LastError() != wxSTREAM_NOERROR) {</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T141352Z">
+        <seg>...
+<bpt i="0" x="0">&lt;s0&gt;</bpt>// コンストラクタではストリームバッファの初期化と<ept i="0">&lt;/s0&gt;</ept>
+<bpt i="1" x="1">&lt;s1&gt;</bpt>// ファイル名に関連付けられたファイルディスクリプタのオープンが行われる。<ept i="1">&lt;/s1&gt;</ept>
+wxFileInputStream in_stream(<bpt i="2" x="2">&lt;s2&gt;</bpt>"the_file_to_be_read"<ept i="2">&lt;/s2&gt;</ept>);
+
+<bpt i="3" x="3">&lt;s3&gt;</bpt>// Ok、データを読み込む ... nb_datas はバイト単位で表す。<ept i="3">&lt;/s3&gt;</ept>
+in_stream.Read(data, nb_datas);
+<bpt i="4" x="4">&lt;s4&gt;</bpt>if<ept i="4">&lt;/s4&gt;</ept> (in_stream.LastError() != wxSTREAM_NOERROR) {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>...
 }
 
 <bpt i="7" x="7">&lt;s7&gt;</bpt>int<ept i="7">&lt;/s7&gt;</ept> <bpt i="8" x="8">&lt;a8&gt;</bpt>MyApp::OnExit<ept i="8">&lt;/a8&gt;</ept>()
@@ -448,6 +470,24 @@ bool MyApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>// Do something.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T143827Z">
+        <seg>// 処理を行なう。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>// For a complete list, look into the documentation at wxStreamBase.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T143805Z">
+        <seg>// 完全な一覧は wxStreamBase のドキュメントを参照のこと。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>// Give it some contents</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T155943Z">
@@ -456,10 +496,71 @@ bool MyApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>// Oh oh, something bad happens.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T143746Z">
+        <seg>// おっと、何か良くないことが起こった。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>// Ok, moves to the beginning of the stream.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T143855Z">
+        <seg>// Ok、ストリームの先頭へ移動する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>// Ok, read some bytes ... nb_datas is expressed in bytes.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T143741Z">
+        <seg>// Ok、データを読み込む ... nb_datas はバイト単位で表す。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>// Send it</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T155956Z">
         <seg>// 送信する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>// The constructor initializes the stream buffer and open the file descriptor</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T141708Z">
+        <seg>// コンストラクタではストリームバッファの初期化と</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>// What is my current position ?</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T144308Z">
+        <seg>// 現在位置はどこ?
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>// You can also get the last number of bytes REALLY put into the buffer.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T143834Z">
+        <seg>// また、バッファへ実際に書き込んだバイト数を取得することもできる。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>// You can also inline all like this.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T143821Z">
+        <seg>// このようにインラインにすることもできる。
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -484,6 +585,15 @@ wxBitmap bmp(wxBITMAP(bmpname));
 
 // これは以下のコードと大体同じです
 #if defined(__WXMSW__) || defined(__WXPM__)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>// associated to the name of the file.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T143731Z">
+        <seg>// ファイル名に関連付けられたファイルディスクリプタのオープンが行われる。
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -574,6 +684,15 @@ DEFINE_EVENT_TYPE(name)</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>// in the stream counted from the beginning.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T143901Z">
+        <seg>// 最後の位置を返却する。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>// key code is within legal range.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T022716Z">
@@ -634,6 +753,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T030136Z">
         <seg>// 通常はファイルを開けなかった場合に wxFile.Open() がエラーメッセージを出力するが、そうさせたくない</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>// wxFileInputStream will close the file descriptor on destruction.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T142045Z">
+        <seg>// wxFileInputStream はデストラクタでファイルディスクリプタを閉じる。</seg>
       </tuv>
     </tu>
     <tu>
@@ -918,6 +1045,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxFilterInputStream<ept i="0">&lt;/a0&gt;</ept> and wxFileterOutputStream are the base class definitions for stream filtering.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T140357Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxFilterInputStream<ept i="0">&lt;/a0&gt;</ept> と wxFilterOutputStream はフィルタリング用の基底クラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxFlexGridSizer<ept i="0">&lt;/a0&gt;</ept> is a sizer which lays out its children in a two-dimensional table with all table fields in one row having the same height and all fields in one column having the same width, but all rows or all columns are not necessarily the same height or width as in the <bpt i="1" x="1">&lt;a1&gt;</bpt>wxGridSizer<ept i="1">&lt;/a1&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T115123Z">
@@ -974,6 +1109,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
 <bpt i="8" x="8">&lt;s8&gt;</bpt>#if defined(__WXMSW__)<ept i="8">&lt;/s8&gt;</ept>
 <bpt i="9" x="9">&lt;s9&gt;</bpt><ept i="9">&lt;/s9&gt;</ept>    <bpt i="10" x="10">&lt;a10&gt;</bpt>wxIcon<ept i="10">&lt;/a10&gt;</ept> icon(<bpt i="11" x="11">&lt;s11&gt;</bpt>"sample"<ept i="11">&lt;/s11&gt;</ept>);
 <bpt i="12" x="12">&lt;s12&gt;</bpt>#endif<ept i="12">&lt;/s12&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxInputStream<ept i="0">&lt;/a0&gt;</ept> is the base class for read-only streams.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T140256Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxInputStream<ept i="0">&lt;/a0&gt;</ept> は読み取り専用ストリームの基底クラスです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1234,6 +1377,22 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxStreamBase<ept i="0">&lt;/a0&gt;</ept> is the base definition of a stream.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T140006Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxStreamBase<ept i="0">&lt;/a0&gt;</ept> はストリームの基底クラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxStreamBuffer<ept i="0">&lt;/a0&gt;</ept> is a cache manager for <bpt i="1" x="1">&lt;a1&gt;</bpt>wxStreamBase<ept i="1">&lt;/a1&gt;</ept>: it manages a stream buffer linked to a stream.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T140208Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxStreamBuffer<ept i="0">&lt;/a0&gt;</ept> は <bpt i="1" x="1">&lt;a1&gt;</bpt>wxStreamBase<ept i="1">&lt;/a1&gt;</ept> 用のキャッシュマネージャです: このクラスはストリームに関連付けられたストリームバッファを管理します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxString::mb_str()<ept i="0">&lt;/a0&gt;</ept> converts the string to the encoding used by the current locale and so can return an empty string if the string contains characters not representable in it as explained in <bpt i="1" x="1">&lt;a1&gt;</bpt>Data Loss due To Unicode Conversion Errors<ept i="1">&lt;/a1&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T161442Z">
@@ -1412,6 +1571,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="10" x="10">&lt;a10&gt;</bpt>Stream classes<ept i="10">&lt;/a10&gt;</ept><it pos="begin" x="11">&lt;br11&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T133212Z">
+        <seg><bpt i="10" x="10">&lt;a10&gt;</bpt>ストリームクラス<ept i="10">&lt;/a10&gt;</ept><it pos="begin" x="11">&lt;br11&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="10" x="10">&lt;a10&gt;</bpt>wxDEFAULT_DIALOG_STYLE<ept i="10">&lt;/a10&gt;</ept> | <bpt i="11" x="11">&lt;a11&gt;</bpt>wxRESIZE_BORDER<ept i="11">&lt;/a11&gt;</ept>)
 {</seg>
       </tuv>
@@ -1560,10 +1727,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="1" x="1">&lt;a1&gt;</bpt>wxInputStream<ept i="1">&lt;/a1&gt;</ept> and <bpt i="2" x="2">&lt;a2&gt;</bpt>wxOutputStream<ept i="2">&lt;/a2&gt;</ept> classes inherit from <bpt i="3" x="3">&lt;a3&gt;</bpt>wxStreamBase<ept i="3">&lt;/a3&gt;</ept> and provide specialized methods for input and output.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T140146Z">
+        <seg><bpt i="1" x="1">&lt;a1&gt;</bpt>wxInputStream<ept i="1">&lt;/a1&gt;</ept> クラスと <bpt i="2" x="2">&lt;a2&gt;</bpt>wxOutputStream<ept i="2">&lt;/a2&gt;</ept> クラスは <bpt i="3" x="3">&lt;a3&gt;</bpt>wxStreamBase<ept i="3">&lt;/a3&gt;</ept> を継承しており、入出力に関する専用の関数を提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog<ept i="1">&lt;/a1&gt;</ept> does however guarantee that messages logged by each thread will appear in order in which they were logged.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T120250Z">
         <seg>ただし、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxLog<ept i="1">&lt;/a1&gt;</ept> は各スレッドで記録されたメッセージは記録された順に表示されることを保証しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="1" x="1">&lt;a1&gt;</bpt>wxOutputStream<ept i="1">&lt;/a1&gt;</ept> does the same thing for write-only streams.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T140315Z">
+        <seg><bpt i="1" x="1">&lt;a1&gt;</bpt>wxOutputStream<ept i="1">&lt;/a1&gt;</ept> も同じことを行いますが、こちらは書き込み専用のストリーム用です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1830,6 +2013,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T003252Z">
         <seg><bpt i="4" x="4">&lt;a4&gt;</bpt>wxLogStream<ept i="4">&lt;/a4&gt;</ept>,<it pos="begin" x="5">&lt;br5&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="51" x="51">&lt;a51&gt;</bpt><bpt i="52" x="52">&lt;b52&gt;</bpt>wxStreams overview<ept i="52">&lt;/b52&gt;</ept><ept i="51">&lt;/a51&gt;</ept><it pos="begin" x="53">&lt;br53&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T133220Z">
+        <seg><bpt i="51" x="51">&lt;a51&gt;</bpt><bpt i="52" x="52">&lt;b52&gt;</bpt>wxStreams の概要<ept i="52">&lt;/b52&gt;</ept><ept i="51">&lt;/a51&gt;</ept><it pos="begin" x="53">&lt;br53&gt;</it></seg>
       </tuv>
     </tu>
     <tu>
@@ -3328,6 +3519,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="5" x="5">&lt;s5&gt;</bpt>// Oh oh, something bad happens.<ept i="5">&lt;/s5&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T141409Z">
+        <seg><bpt i="5" x="5">&lt;s5&gt;</bpt>// おっと、何か良くないことが起こった。<ept i="5">&lt;/s5&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="5" x="5">&lt;s5&gt;</bpt>// but enable tracing for the transactions as somehow our changes don't<ept i="5">&lt;/s5&gt;</ept></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T110833Z">
@@ -3394,6 +3593,22 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T114638Z">
         <seg><bpt i="6" x="6">&lt;s6&gt;</bpt>// ... 自分自身でエラー処理を行なう ...<ept i="6">&lt;/s6&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="6" x="6">&lt;s6&gt;</bpt>// For a complete list, look into the documentation at wxStreamBase.<ept i="6">&lt;/s6&gt;</ept>
+}
+
+<bpt i="7" x="7">&lt;s7&gt;</bpt>// You can also inline all like this.<ept i="7">&lt;/s7&gt;</ept>
+<bpt i="8" x="8">&lt;s8&gt;</bpt>if<ept i="8">&lt;/s8&gt;</ept> (in_stream.Read(data, nb_datas).LastError() != wxSTREAM_NOERROR) {</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T141435Z">
+        <seg><bpt i="6" x="6">&lt;s6&gt;</bpt>// 完全な一覧は wxStreamBase のドキュメントを参照のこと。<ept i="6">&lt;/s6&gt;</ept>
+}
+
+<bpt i="7" x="7">&lt;s7&gt;</bpt>// このようにインラインにすることもできる。<ept i="7">&lt;/s7&gt;</ept>
+<bpt i="8" x="8">&lt;s8&gt;</bpt>if<ept i="8">&lt;/s8&gt;</ept> (in_stream.Read(data, nb_datas).LastError() != wxSTREAM_NOERROR) {</seg>
       </tuv>
     </tu>
     <tu>
@@ -3480,6 +3695,26 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T015549Z">
         <seg><it pos="begin" x="8">&lt;s8&gt;</it>// 普通は private にします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="9" x="9">&lt;s9&gt;</bpt>// Do something.<ept i="9">&lt;/s9&gt;</ept>
+}
+
+<bpt i="10" x="10">&lt;s10&gt;</bpt>// You can also get the last number of bytes REALLY put into the buffer.<ept i="10">&lt;/s10&gt;</ept>
+<bpt i="11" x="11">&lt;s11&gt;</bpt>size_t<ept i="11">&lt;/s11&gt;</ept> really_read = in_stream.LastRead();
+
+<it pos="begin" x="12">&lt;s12&gt;</it>// Ok, moves to the beginning of the stream.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T141513Z">
+        <seg><bpt i="9" x="9">&lt;s9&gt;</bpt>// 処理を行なう。<ept i="9">&lt;/s9&gt;</ept>
+}
+
+<bpt i="10" x="10">&lt;s10&gt;</bpt>// また、バッファへ実際に書き込んだバイト数を取得することもできる。<ept i="10">&lt;/s10&gt;</ept>
+<bpt i="11" x="11">&lt;s11&gt;</bpt>size_t<ept i="11">&lt;/s11&gt;</ept> really_read = in_stream.LastRead();
+
+<it pos="begin" x="12">&lt;s12&gt;</it>// Ok、ストリームの先頭へ移動する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3624,6 +3859,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T055253Z">
         <seg>ダイアログの初期化イベント</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A filter stream has the capability of a normal stream but it can be placed on top of another stream...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T130952Z">
+        <seg>フィルタストリームは通常のストリームと同じ機能を持っていますが、他のストリームの上に配置することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5288,6 +5531,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Classes for reading text or binary data from a particular stream such as <bpt i="0" x="0">&lt;a0&gt;</bpt>wxTextInputStream<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxTextOutputStream<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDataInputStream<ept i="2">&lt;/a2&gt;</ept> and <bpt i="3" x="3">&lt;a3&gt;</bpt>wxDataOutputStream<ept i="3">&lt;/a3&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T135957Z">
+        <seg>特定のストリームからテキストデータやバイナリデータを読み込むクラス:  <bpt i="0" x="0">&lt;a0&gt;</bpt>wxTextInputStream<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxTextOutputStream<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDataInputStream<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxDataOutputStream<ept i="3">&lt;/a3&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Classes:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130609T152931Z">
@@ -5412,6 +5663,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130519T110559Z">
         <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxSizer<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxGridSizer<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxFlexGridSizer<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxBoxSizer<ept i="3">&lt;/a3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxStaticBoxSizer<ept i="4">&lt;/a4&gt;</ept>, <bpt i="5" x="5">&lt;a5&gt;</bpt>CreateButtonSizer<ept i="5">&lt;/a5&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Classes: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxStreamBase<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxStreamBuffer<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxInputStream<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxOutputStream<ept i="3">&lt;/a3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxFilterInputStream<ept i="4">&lt;/a4&gt;</ept>, <bpt i="5" x="5">&lt;a5&gt;</bpt>wxFilterOutputStream<ept i="5">&lt;/a5&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T133304Z">
+        <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxStreamBase<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxStreamBuffer<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxInputStream<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxOutputStream<ept i="3">&lt;/a3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxFilterInputStream<ept i="4">&lt;/a4&gt;</ept>, <bpt i="5" x="5">&lt;a5&gt;</bpt>wxFilterOutputStream<ept i="5">&lt;/a5&gt;</ept></seg>
       </tuv>
     </tu>
     <tu>
@@ -6278,6 +6537,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Example</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T132613Z">
+        <seg>例</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Example:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130515T145825Z">
@@ -6670,6 +6937,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>For example, wxZLibInputStream is an inline stream decompressor.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T141053Z">
+        <seg>例えば、wxZLibInputStream はインラインでストリームを展開します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>For example, you could define a class inheriting from <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog<ept i="0">&lt;/a0&gt;</ept> which shows all the log messages in some part of your main application window reserved for the message output without interrupting the user work flow with modal message boxes.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T120750Z">
@@ -6978,6 +7253,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T160020Z">
         <seg>汎用的なイベントテーブルマクロ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Generic usage: an example</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T141612Z">
+        <seg>一般的な使用方法の例</seg>
       </tuv>
     </tu>
     <tu>
@@ -8160,6 +8443,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>It defines, for example, the API of OnSysRead(), OnSysWrite(), OnSysSeek() and OnSysTell().</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T140028Z">
+        <seg>このクラスは例えば OnSysRead()、OnSysWrite()、OnSysSeek()、OnSysTell() などの API を定義しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It defines, for example, the API of OnSysRead, OnSysWrite, OnSysSeek and OnSysTell.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T140102Z">
+        <seg>このクラスは例えば OnSysRead、OnSysWrite、OnSysSeek、OnSysTell などの API を定義しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>It doesn't matter where it appears but it's customary to put it at the end because the macro changes the access type internally so it's safest if nothing follows it.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T015252Z">
@@ -8172,6 +8471,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T011704Z">
         <seg>文字コードに関連した問題について取り組む場合には。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It implements Read(), SeekI() (I for Input), and all read or IO generic related functions.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T140307Z">
+        <seg>このクラスでは Read()、SeekI() (I は Input を表します) と、読み取りや入出力に関するすべての関数を実装しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It implements Read, SeekI (I for Input), and all read or IO generic related functions.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T143611Z">
+        <seg>このクラスでは Read、SeekI (I は Input を表します) と、読み取りや入出力に関するすべての関数を実装しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8600,6 +8915,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Moreover, <bpt i="0" x="0">&lt;a0&gt;</bpt>wxStdInputStream<ept i="0">&lt;/a0&gt;</ept> and <bpt i="1" x="1">&lt;a1&gt;</bpt>wxStdOutputStream<ept i="1">&lt;/a1&gt;</ept> classes are provided to provide a degree of interoperability between the two and make it possible to use any wxWidgets stream as a standard stream (the converse possibility to use a standard stream as a wxWidgets stream is planned for a future release).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T162834Z">
+        <seg>さらに、ある程度の相互運用性を wxWidgets と 標準ストリームクラスとの間に提供するため、<bpt i="0" x="0">&lt;a0&gt;</bpt>wxStdInputStream<ept i="0">&lt;/a0&gt;</ept> クラスと <bpt i="1" x="1">&lt;a1&gt;</bpt>wxStdOutputStream<ept i="1">&lt;/a1&gt;</ept> クラスが提供されています。これらのクラスにより、任意の wxWidgets ストリームを標準ストリームとして使用できます。(逆に標準ストリームを wxWidgets ストリームとして使用する機能は将来的に提供する予定です)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Moreover, any application reading files which it didn't produce or receiving data from the network from other services should be ready to deal with Unicode.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T012856Z">
@@ -8686,6 +9009,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130515T150430Z">
         <seg>MyPlotEvent(<bpt i="5" x="5">&lt;a5&gt;</bpt>wxEventType<ept i="5">&lt;/a5&gt;</ept> eventType, <bpt i="6" x="6">&lt;s6&gt;</bpt>int<ept i="6">&lt;/s6&gt;</ept> winid, <bpt i="7" x="7">&lt;s7&gt;</bpt>const<ept i="7">&lt;/s7&gt;</ept> <bpt i="8" x="8">&lt;a8&gt;</bpt>wxPoint<ept i="8">&lt;/a8&gt;</ept>&amp; pos)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Nevertheless wxWidgets programs can also use standard stream classes and are encouraged to do so if the above considerations don't apply.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T134709Z">
+        <seg>とは言え、wxWidgets プログラムで標準ストリームクラスを使用することも可能ですし、上記の事項が当てはまらない場合は使用が推奨されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9202,6 +9533,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>One stream can have multiple stream buffers but one stream has always one autoinitialized stream buffer.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T140240Z">
+        <seg>ひとつのストリームは複数のストリームバッファを持つことができますが、ストリームは常にひとつの自動初期化済みのストリームバッファを持ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>One stream can have multiple stream buffers but one stream have always one autoinitialized stream buffer.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T140350Z">
+        <seg>ひとつのストリームは複数のストリームバッファを持つことができますが、ストリームは常にひとつの自動初期化済みのストリームバッファを持ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>One use of PushEventHandler is to temporarily or permanently change the behaviour of the GUI.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T063100Z">
@@ -9612,6 +9959,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Purpose of wxStream</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T133330Z">
+        <seg>wxStream の目的</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Pushes this event handler onto the event stack for the window.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130514T151849Z">
@@ -9912,6 +10267,36 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130506T032908Z">
         <seg>これを行なっているサンプルとして <bpt i="1" x="1">&lt;a1&gt;</bpt>イベントサンプル<ept i="1">&lt;/a1&gt;</ept> を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>SeekI returns the last position</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T142002Z">
+        <seg>SeekI はストリームの先頭から数えた</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>SeekI returns the last position<it pos="end" x="12">&lt;/s12&gt;</it>
+<bpt i="13" x="13">&lt;s13&gt;</bpt>// in the stream counted from the beginning.<ept i="13">&lt;/s13&gt;</ept>
+off_t old_position = in_stream.SeekI(0, wxFromBeginning);
+
+<bpt i="14" x="14">&lt;s14&gt;</bpt>// What is my current position ?<ept i="14">&lt;/s14&gt;</ept>
+off_t position = in_stream.TellI();
+
+<bpt i="15" x="15">&lt;s15&gt;</bpt>// wxFileInputStream will close the file descriptor on destruction.<ept i="15">&lt;/s15&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T141548Z">
+        <seg>SeekI はストリームの先頭から数えた <it pos="end" x="12">&lt;/s12&gt;</it>
+<bpt i="13" x="13">&lt;s13&gt;</bpt>// 最後の位置を返却する。<ept i="13">&lt;/s13&gt;</ept>
+off_t old_position = in_stream.SeekI(0, wxFromBeginning);
+
+<bpt i="14" x="14">&lt;s14&gt;</bpt>// 現在位置はどこ?<ept i="14">&lt;/s14&gt;</ept>
+off_t position = in_stream.TellI();
+
+<bpt i="15" x="15">&lt;s15&gt;</bpt>// wxFileInputStream はデストラクタでファイルディスクリプタを閉じる。<ept i="15">&lt;/s15&gt;</ept></seg>
       </tuv>
     </tu>
     <tu>
@@ -10222,6 +10607,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Some Borland compilers refuse to work at all with them and using iostreams on Linux makes writing programs that are binary compatible across different Linux distributions, impossible.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T143448Z">
+        <seg>Borland のいくつかのコンパイラではまったく動作しませんし、Linux で iostream を使用すると異なる Linux ディストリビューション間でバイナリ互換性を保つことは不可能になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Some compilers (notably g++) warn about this but even if they don't, this</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T124635Z">
@@ -10318,6 +10711,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Standard C++ streams can cause problems on several platforms: they work quite well in most cases, but in the multi-threaded case, for example, they have many problems.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T134741Z">
+        <seg>標準の C++ ストリームはいくつかのプラットフォームで問題を引き起こすことがあります: 大半はうまく動作しますが、例えばマルチスレッドの場合では多くの問題を抱えています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Standard button and menu IDs.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T142809Z">
@@ -10338,6 +10739,30 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130516T160324Z">
         <seg>指定された項目のラベル編集を開始します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Stream Classes</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T135641Z">
+        <seg>ストリームクラス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Stream classes overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T130311Z">
+        <seg>ストリームクラスの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Stream filtering means a stream which does no syscall but filters data which are passed to it and then pass them to another stream.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T140904Z">
+        <seg>ストリームのフィルタリングとは、システムコールは行いませんが、渡されたデータをフィルタリングし、他のストリームへ引き渡すストリームを意味します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10402,6 +10827,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130513T154413Z">
         <seg>イベントを伝播させる必要があるかどうかを確認します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The "IO" classes implements the specific parts of the stream.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T141237Z">
+        <seg>"IO" クラスはストリームの特定の部分を実装しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The "IO" classes: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxSocketInputStream<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxSocketOutputStream<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxFileInputStream<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxFileOutputStream<ept i="3">&lt;/a3&gt;</ept>, ...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T135823Z">
+        <seg>"IO" クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxSocketInputStream<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxSocketOutputStream<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxFileInputStream<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxFileOutputStream<ept i="3">&lt;/a3&gt;</ept>, ...</seg>
       </tuv>
     </tu>
     <tu>
@@ -10698,6 +11139,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130610T153634Z">
         <seg>コンフィグクラスではアプリケーションの設定情報を格納するための方法を提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The core: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxStreamBase<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxStreamBuffer<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxInputStream<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxOutputStream<ept i="3">&lt;/a3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxFilterInputStream<ept i="4">&lt;/a4&gt;</ept>, <bpt i="5" x="5">&lt;a5&gt;</bpt>wxFilterOutputStream<ept i="5">&lt;/a5&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T135715Z">
+        <seg>コアクラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxStreamBase<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxStreamBuffer<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxInputStream<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxOutputStream<ept i="3">&lt;/a3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxFilterInputStream<ept i="4">&lt;/a4&gt;</ept>, <bpt i="5" x="5">&lt;a5&gt;</bpt>wxFilterOutputStream<ept i="5">&lt;/a5&gt;</ept></seg>
       </tuv>
     </tu>
     <tu>
@@ -11758,6 +12207,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The wxWidgets stream classes also provide some functionality not available in the standard library such as support for several compression formats and possibility to work with sockets or text controls (for output only in the latter case).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T134239Z">
+        <seg>また、wxWidgets のストリームクラスは標準ライブラリでは利用できない機能をいくつか提供しており、これにはいくつかの圧縮形式への対応や、ソケットやテキストコントロールの利用 (後者は出力のみです) が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Then what do we do when a column sizer changes its width?</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T131441Z">
@@ -11902,6 +12359,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Therefore, wxStreams have been added to wxWidgets so that applications can reliably compile and run on all supported platforms without dependence on a particular release of libg++.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T135111Z">
+        <seg>そのため、wxStreams が wxWidgets に追加されました。これにより、libg++ の特定のバージョンに依存することなく、対応するすべてのプラットフォームで確実にアプリケーションをコンパイルし、実行することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>These events can be triggered by using the input devices (such as keyboard, mouse, joystick) directly or, more commonly, by a standard control which synthesizes such input events into higher level events: for example, a <bpt i="0" x="0">&lt;a0&gt;</bpt>wxButton<ept i="0">&lt;/a0&gt;</ept> can generate a click event when the user presses the left mouse button on it and then releases it without pressing <bpt i="1" x="1">&lt;c1&gt;</bpt>Esc<ept i="1">&lt;/c1&gt;</ept> in the meanwhile.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130507T155458Z">
@@ -11914,6 +12379,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T110536Z">
         <seg>これらのフラグは論理和演算子 | を使用して上記のアライメントフラグと組み合わせることができ、Add() 関数の第二引数に指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>These functions are really implemented by the "IO" classes.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T140134Z">
+        <seg>これらのクラスは実際には "IO" クラスで実装されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12150,6 +12623,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This class allows to use all methods taking a wxInputStream reference to read in-memory data...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T141013Z">
+        <seg>このクラスを使用することで、メモリ内のデータを読み込むために wxInputStream のすべての関数を使用できます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This class allows to use all methods taking a wxOutputStream reference to write to in-memory data...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T141045Z">
+        <seg>このクラスを使用することで、メモリ内へデータを書き込むために wxOutputStream のすべての関数を使用できます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This class allows you to temporarily suspend logging.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T125533Z">
@@ -12222,6 +12711,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This class implements an input stream which reads data from a connected socket.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T135758Z">
+        <seg>このクラスは入力ストリームを実装しており、接続されたソケットからデータを読み込みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This class implements an output stream which writes data from a connected socket.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T135815Z">
+        <seg>このクラスは出力ストリームを実装しており、接続されたソケットへデータを書き込みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This class is not used by the event handlers by itself, but is a base class for other event classes (...</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T012636Z">
@@ -12230,10 +12735,50 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This class is the base class of most stream related classes in wxWidgets.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T130621Z">
+        <seg>このクラスは wxWidgets における大半のストリームクラスの基底クラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This class provides a simple way to avoid flicker: when drawing on it, everything is in fact first dr...</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130529T143806Z">
         <seg>このクラスはちらつきを防止するための単純な方法を提供します: 描画時には最初にメモリ上のバッファ (wxBitmap) へすべて描画し、それから関連する wxDC を使用してスクリーン上へ一度だけ、このオブジェクトの破棄時にコピーします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This class provides functions that read binary data types in a portable way.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T132544Z">
+        <seg>このクラスは移植性のある方法でバイナリデータを読み込む機能を提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This class provides functions that reads text data using an input stream, allowing you to read text...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T131310Z">
+        <seg>このクラスは入力ストリームを利用したテキストデータの読み込み機能を提供しており、テキスト、浮動小数点、整数を読み込むことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This class provides functions that write binary data types in a portable way.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T132553Z">
+        <seg>このクラスは移植性のある方法でバイナリデータを書き込む機能を提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This class provides functions that write text data using an output stream, allowing you to write text...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T132512Z">
+        <seg>このクラスは出力ストリームを利用したテキストデータの書き込み機能を提供しており、テキスト、浮動小数点、整数を書き込むことができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12262,10 +12807,58 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This class represents data read in from a file.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T131013Z">
+        <seg>このクラスはファイルからのデータ読み込みを表しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This class represents data written to a file.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T131138Z">
+        <seg>このクラスはファイルへのデータ書き込みを表しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This code also compiles fine under a non-Unicode build of wxWidgets, but in that case the converter is ignored.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130502T144314Z">
         <seg>このコードは非 Unicode ビルドでも正常にコンパイルすることができますが、変換自体は行われません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This could also be a simple link to the a true syscall (for example read(...), write(...)).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T141547Z">
+        <seg>また、この実装は単純に本当のシステムコール (read(...)、write(...) など) に関連付けられています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This could also be a simple link to the true syscall (for example read(...), write(...)).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T141223Z">
+        <seg>また、この実装は単純に本当のシステムコール (read(...)、write(...) など) に関連付けられています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This could be nothing in the case of <bpt i="0" x="0">&lt;a0&gt;</bpt>wxMemoryInputStream<ept i="0">&lt;/a0&gt;</ept> and <bpt i="1" x="1">&lt;a1&gt;</bpt>wxMemoryOutputStream<ept i="1">&lt;/a1&gt;</ept> which base themselves on <bpt i="2" x="2">&lt;a2&gt;</bpt>wxStreamBuffer<ept i="2">&lt;/a2&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T141202Z">
+        <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>wxStreamBuffer<ept i="2">&lt;/a2&gt;</ept> に基づく <bpt i="0" x="0">&lt;a0&gt;</bpt>wxMemoryInputStream<ept i="0">&lt;/a0&gt;</ept>、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxMemoryOutputStream<ept i="1">&lt;/a1&gt;</ept> の場合は何も行いません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This could be nothing in the case of wxMemoryIn/OutputStream which bases itself on wxStreamBuffer.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T141417Z">
+        <seg>wxStreamBuffer に基づく wxMemoryIn/OutputStream の場合は何も行いません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13590,6 +14183,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Usage is simple.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T141623Z">
+        <seg>使用方法は単純です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Use <bpt i="0" x="0">&lt;a0&gt;</bpt>wxNotebook::ChangeSelection<ept i="0">&lt;/a0&gt;</ept> instead, as <bpt i="1" x="1">&lt;a1&gt;</bpt>wxNotebook::SetSelection<ept i="1">&lt;/a1&gt;</ept> is deprecated</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T061010Z">
@@ -13850,6 +14451,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130619T151903Z">
         <seg>この新しい振る舞いはユーザの予想により一致するものだと信じていますが、以前の振る舞いに依存している場合、コントロールのプロポーションと同じ比率でコントロールの最小サイズを設定するようにコードを更新する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>We can take the example of <bpt i="0" x="0">&lt;a0&gt;</bpt>wxFileInputStream<ept i="0">&lt;/a0&gt;</ept> and here is some sample code:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T141237Z">
+        <seg>例として <bpt i="0" x="0">&lt;a0&gt;</bpt>wxFileInputStream<ept i="0">&lt;/a0&gt;</ept> のサンプルコードを以下に示します:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>We can take the example of wxFileInputStream and here is some sample code:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T141650Z">
+        <seg>例として wxFileInputStream のサンプルコードを以下に示します:</seg>
       </tuv>
     </tu>
     <tu>
@@ -14939,6 +15556,30 @@ public:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>if (in_stream.LastError() != wxSTREAM_NOERROR) {</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T141807Z">
+        <seg>if (in_stream.LastError() != wxSTREAM_NOERROR) {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>if (in_stream.Read(data, nb_datas).LastError() != wxSTREAM_NOERROR) {</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T141857Z">
+        <seg>if (in_stream.Read(data, nb_datas).LastError() != wxSTREAM_NOERROR) {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>in_stream.Read(data, nb_datas);</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T141804Z">
+        <seg>in_stream.Read(data, nb_datas);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>int       m_count;</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T081804Z">
@@ -15039,6 +15680,22 @@ public:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T112137Z">
         <seg>new wxTextCtrl( this, -1, "My text.", wxDefaultPosition, wxSize(100,60), wxTE_MULTILINE),</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>off_t old_position = in_stream.SeekI(0, wxFromBeginning);</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T142018Z">
+        <seg>off_t old_position = in_stream.SeekI(0, wxFromBeginning);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>off_t position = in_stream.TellI();</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T144955Z">
+        <seg>off_t position = in_stream.TellI();</seg>
       </tuv>
     </tu>
     <tu>
@@ -15289,6 +15946,14 @@ public:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>size_t really_read = in_stream.LastRead();</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T141931Z">
+        <seg>size_t really_read = in_stream.LastRead();</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>somewhere in the class declaration.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T015006Z">
@@ -15309,6 +15974,22 @@ public:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130613T160315Z">
         <seg>switch (ans)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>the "IO" classes: wxSocketIn/OutputStream, wxDataIn/OutputStream, wxFileIn/OutputStream, ...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T140000Z">
+        <seg>"IO" クラス: wxSocketIn/OutputStream, wxDataIn/OutputStream, wxFileIn/OutputStream, ...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>the core: wxStreamBase, wxStreamBuffer, wxInputStream, wxOutputStream, wxFilterIn/OutputStream</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T142945Z">
+        <seg>コアクラス: wxStreamBase, wxStreamBuffer, wxInputStream, wxOutputStream, wxFilterIn/OutputStream</seg>
       </tuv>
     </tu>
     <tu>
@@ -15870,6 +16551,22 @@ protected:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxDataInputStream</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T132545Z">
+        <seg>wxDataInputStream</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxDataOutputStream</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T132554Z">
+        <seg>wxDataOutputStream</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxDataViewCustomRenderer::Activate() and <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDataViewCustomRenderer::LeftClick()<ept i="0">&lt;/a0&gt;</ept> were replaced with the new <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDataViewCustomRenderer::ActivateCell()<ept i="1">&lt;/a1&gt;</ept> method.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130619T154308Z">
@@ -16010,6 +16707,54 @@ private:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxFileInputStream</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T131126Z">
+        <seg>wxFileInputStream</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxFileInputStream in_stream("the_file_to_be_read");</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T141742Z">
+        <seg>wxFileInputStream in_stream("the_file_to_be_read");</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxFileOutputStream</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T131139Z">
+        <seg>wxFileOutputStream</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxFilterIn/OutputStream is the base class definition for stream filtering.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T140643Z">
+        <seg>wxFilterIn/OutputStream はフィルタリング用の基底クラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxFilterInputStream</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T130953Z">
+        <seg>wxFilterInputStream</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxFilterOutputStream</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T130954Z">
+        <seg>wxFilterOutputStream</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxFlexGridSizer</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130520T153320Z">
@@ -16098,6 +16843,38 @@ wxIcon icon("mondrian");
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T055245Z">
         <seg>wxInitDialogEvent</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxInputStream</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T130726Z">
+        <seg>wxInputStream</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxInputStream and wxOutputStream inherit from it.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T140146Z">
+        <seg>wxInputStream と wxOutputStream はこのクラスを継承しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxInputStream is an abstract base class which may not be used directly.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T130726Z">
+        <seg>wxInputStream は抽象クラスであり、直接使用することはありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxInputStream is the base class for read-only streams.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T140412Z">
+        <seg>wxInputStream は読み取り専用ストリームの基底クラスです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16306,6 +17083,30 @@ wxIcon icon("mondrian");
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T115848Z">
         <seg>wxOK     // wxID_OK を返却します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxOutputStream</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T130733Z">
+        <seg>wxOutputStream</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxOutputStream does the same thing but it is for write-only streams.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T140621Z">
+        <seg>wxOutputStream も同じことを行いますが、こちらは書き込み専用のストリーム用です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxOutputStream is an abstract base class which may not be used directly.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T130732Z">
+        <seg>wxOutputStream は抽象クラスであり、直接使用することはありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16562,6 +17363,86 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxStdInputStream is a std::istream derived stream which reads from a wxInputStream.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T134429Z">
+        <seg>wxStdInputStream は std::istream を継承したストリームで、wxInputStream からデータを読み込みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxStdOutputStream is a std::ostream derived stream which writes to a wxOutputStream.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T134452Z">
+        <seg>wxStdOutputStream は std::ostream を継承したストリームで、wxOutputStream へデータを書き込みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxStream classes are divided in two main groups:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T135705Z">
+        <seg>wxStream クラスはふたつの主なグループに分けられます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxStreamBase</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T130624Z">
+        <seg>wxStreamBase</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxStreamBase is the base definition of a stream.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T140036Z">
+        <seg>wxStreamBase はストリームの基底クラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxStreamBuffer</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T130648Z">
+        <seg>wxStreamBuffer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxStreamBuffer is a cache manager for wxStreamBase: it manages a stream buffer linked to a stream.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T140257Z">
+        <seg>wxStreamBuffer は wxStreamBase 用のキャッシュマネージャです: このクラスはストリームに関連付けられたストリームバッファを管理します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxStreamBuffer is a cache manager for wxStreamBase: it manages a stream buffer linked to a stream...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T130647Z">
+        <seg>wxStreamBuffer は wxStreamBase 用のキャッシュマネージャです: このクラスはストリームに関連付けられたストリームバッファを管理します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxStreams is divided in two main parts:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T135134Z">
+        <seg>wxStreams は主となるふたつの部分に分けられます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxStreams overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130620T133253Z">
+        <seg>wxStreams の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxString s = wxT("Hello, world!");</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130501T161654Z">
@@ -16640,6 +17521,22 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxTextInputStream</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T131311Z">
+        <seg>wxTextInputStream</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxTextOutputStream</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T132512Z">
+        <seg>wxTextOutputStream</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxTimerEvent object is passed to the event handler of timer events (see wxTimer::SetOwner).</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130507T153757Z">
@@ -16712,6 +17609,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxWidgets and Standard Streams</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T132627Z">
+        <seg>wxWidgets と標準ストリーム</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxWidgets does not provide translations for all of these currently.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T043604Z">
@@ -16772,6 +17677,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130502T152447Z">
         <seg>wxWidgets は <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLocale<ept i="0">&lt;/a0&gt;</ept> クラスを使用したメッセージ翻訳機能を提供しており、wxWidgets 自体がいくつかの言語に完全に翻訳されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxWidgets provides its own set of stream classes in order to support platforms not providing standard C++ streams implementation and also to make it possible to provide binary versions of wxWidgets application not depending on any particular standard library version.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T132948Z">
+        <seg>wxWidgets は標準の C++ ストリームを提供していないプラットフォームに対応するためと、標準ライブラリの特定のバージョンに依存することなく、wxWidgets アプリケーションのバイナリ版を提供可能にするために独自のストリームクラス群を提供しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16868,6 +17781,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T135003Z">
         <seg>wxWidgets: wxWidgets: サイザーの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxWidgets: wxWidgets: Stream classes overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130622T130525Z">
+        <seg>wxWidgets: wxWidgets: ストリームクラスの概要</seg>
       </tuv>
     </tu>
     <tu>
