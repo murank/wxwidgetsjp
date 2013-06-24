@@ -137,7 +137,7 @@ function toggleVisibility(linkObj) {
 <div class="textblock"><h3>template&lt;typename T&gt;<br/>
 class wxIntegerValidator&lt; T &gt;</h3>
 
-<p>Validator for text entries used for integer entry.  </p>
+<p>整数を入力するテキスト項目に使用するバリデータ。 </p>
 <p>This validator can be used with <a class="el" href="classwx_text_ctrl.html" title="テキストの表示と編集が可能なテキストコントロール。">wxTextCtrl</a> or <a class="el" href="classwx_combo_box.html" title="A combobox is like a combination of an edit control and a listbox.">wxComboBox</a> (and potentially any other class implementing <a class="el" href="classwx_text_entry.html" title="Common base class for single line text entry fields.">wxTextEntry</a> interface) to check that only valid integer values can be entered into them.</p>
 <p>This is a template class which can be instantiated for all the integer types (i.e. <code>short</code>, <code>int</code>, <code>long</code> and <code>long long</code> if available) as well as their unsigned versions.</p>
 <p>By default this validator accepts any integer values in the range appropriate for its type, e.g. <code>INT_MIN..INT_MAX</code> for <code>int</code> or <code>0..USHRT_MAX</code> for <code>unsigned short</code>. This range can be restricted further by calling <a class="el" href="classwx_num_validator.html#afb03f64e6ba6525dc152e2f8e8c0a2ab" title="Sets the minimal value accepted by the validator.">SetMin()</a> and <a class="el" href="classwx_num_validator.html#a6f10b5931be461cdc3f988262bbf11d1" title="Sets the maximal value accepted by the validator.">SetMax()</a> or <a class="el" href="classwx_num_validator.html#a20bd7a1545887952d883e3c870e6b6a8" title="Sets both minimal and maximal values accepted by the validator.">SetRange()</a> methods inherited from the base class.</p>
@@ -151,7 +151,7 @@ class wxIntegerValidator&lt; T &gt;</h3>
                 ...
                 <span class="comment">// Allow positive integers and display them with thousands</span>
                 <span class="comment">// separators.</span>
-                <a class="code" href="classwx_integer_validator.html" title="Validator for text entries used for integer entry.">wxIntegerValidator&lt;unsigned long&gt;</a>
+                <a class="code" href="classwx_integer_validator.html" title="整数を入力するテキスト項目に使用するバリデータ。">wxIntegerValidator&lt;unsigned long&gt;</a>
                     val(&amp;m_value, <a class="code" href="group__group__class__validator.html#gga2bfb287a2b59965b28905c72225f1782ae5d44ad906f41079c4b8c6c17d7cf41f" title="Use thousands separators in the numbers.">wxNUM_VAL_THOUSANDS_SEPARATOR</a>);
 
                 <span class="comment">// If the variable were of type "long" and not "unsigned long"</span>
@@ -167,7 +167,7 @@ class wxIntegerValidator&lt; T &gt;</h3>
         };
 </pre></div><p>  For more information, please see <a class="el" href="overview_validator.html">wxValidator Overview</a>.</p>
 <h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__validator.html">Validators</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_validator.html">wxValidator Overview</a>, <a class="el" href="classwx_validator.html" title="wxValidator はコントロールクラスとアプリケーションデータを仲介する、バリデータクラスファミリーの基底クラスです。">wxValidator</a>, <a class="el" href="classwx_generic_validator.html" title="wxGenericValidator performs data transfer (but not validation or filtering) for many type of controls...">wxGenericValidator</a>, <a class="el" href="classwx_text_validator.html" title="wxTextValidator validates text controls, providing a variety of filtering behaviours.">wxTextValidator</a>, <a class="el" href="valnum_8h.html#a9d2ba1b6ccfcfa65586cb54cd517e9fb" title="Creates a wxIntegerValidator object with automatic type deduction.">wxMakeIntegerValidator()</a></dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__validator.html">Validators</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_validator.html">wxValidator Overview</a>, <a class="el" href="classwx_validator.html" title="wxValidator はコントロールクラスとアプリケーションデータを仲介する、バリデータクラスファミリーの基底クラスです。">wxValidator</a>, <a class="el" href="classwx_generic_validator.html" title="wxGenericValidator は様々なコントロールへデータを転送します。(しかし、検証やフィルタリングは行いません)">wxGenericValidator</a>, <a class="el" href="classwx_text_validator.html" title="wxTextValidator はテキストコントロールの検証と振る舞いの様々なフィルタリングを行います。">wxTextValidator</a>, <a class="el" href="valnum_8h.html#a9d2ba1b6ccfcfa65586cb54cd517e9fb" title="Creates a wxIntegerValidator object with automatic type deduction.">wxMakeIntegerValidator()</a></dd></dl>
 <dl class="since"><dt><b>Since:</b></dt><dd>2.9.2  </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>

@@ -1,113 +1,49 @@
 <HTML>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>wxValidator overview</title></head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>wxValidator の概要</title></head>
 
 <BODY BGCOLOR=#FFFFFF>
 <A NAME="validatoroverview"></A><CENTER>
 <A HREF="wx_contents.html"><img align=center src="contents.gif" BORDER=0 ALT="Contents"></A> <A HREF="wx_overviews.html#overviews"><img align=center src="up.gif" BORDER=0 ALT="Up"></A> <A HREF="wx_wxdialogoverview.html#wxdialogoverview"><img align=center src="back.gif" BORDER=0 ALT="Previous"></A> <A HREF="wx_constraintsoverview.html#constraintsoverview"><img align=center src="forward.gif" BORDER=0 ALT="Next"></A> </CENTER><HR>
 
-<H2>wxValidator overview</H2>
+<H2>wxValidator の概要</H2>
 <P>
-
-Classes: <A HREF="wx_wxvalidator.html#wxvalidator">wxValidator</A>, <A HREF="wx_wxtextvalidator.html#wxtextvalidator">wxTextValidator</A>, 
-<A HREF="wx_wxgenericvalidator.html#wxgenericvalidator">wxGenericValidator</A><P>
-
-The aim of the validator concept is to make dialogs very much easier to write.
-A validator is an object that can be plugged into a control (such as a wxTextCtrl), and
-mediates between C++ data and the control, transferring the data in either direction
-and validating it. It also is able to intercept events generated
-by the control, providing filtering behaviour without the need to derive a new control class.<P>
-
-You can use a stock validator, such as <A HREF="wx_wxtextvalidator.html#wxtextvalidator">wxTextValidator</A> (which does text
-control data transfer, validation and filtering) and 
-<A HREF="wx_wxgenericvalidator.html#wxgenericvalidator">wxGenericValidator</A> (which does data transfer for a range of controls);
-or you can write your own.<P>
+クラス: <A HREF="wx_wxvalidator.html#wxvalidator">wxValidator</A>, <A HREF="wx_wxtextvalidator.html#wxtextvalidator">wxTextValidator</A>, <A HREF="wx_wxgenericvalidator.html#wxgenericvalidator">wxGenericValidator</A><P>
+バリデータという概念の目的はダイアログをより簡単にコーディングできるようにすることです。バリデータは (wxTextCtrl などの) コントロールに接続可能なオブジェクトで、C++ のデータとコントロールとを仲介 (双方向のデータ転送と検証) します。また、コントロールの生成したイベントを捕まえることも可能なため、新しいコントロールクラスを継承することなく、コントロールの振る舞いをフィルタリングすることができます。<P>
+<A HREF="wx_wxtextvalidator.html#wxtextvalidator">wxTextValidator</A> (テキストデータの転送、検証、フィルタリングを行います) や <A HREF="wx_wxgenericvalidator.html#wxgenericvalidator">wxGenericValidator</A> (複数のコントロールへデータを転送します) といった既存のバリデータを使用することもできますし、自分で作成することもできます。<P>
 <B><FONT COLOR="#FF0000">例</FONT></B><P>
-
-Here is an example of wxTextValidator usage.<P>
+ここでは wxTextValidator の使い方の例を示します。<P>
 <PRE>
   wxTextCtrl *txt1 = new wxTextCtrl(this, -1, wxT(""),
     wxPoint(10, 10), wxSize(100, 80), 0,
     wxTextValidator(wxFILTER_ALPHA, &amp;g_data.m_string));
 </PRE>
-
-In this example, the text validator object provides the following functionality:<P>
+この例ではテキストバリデータは次の機能を提供しています:<P>
 <OL>
 
-<LI>  It transfers the value of g_data.m_string (a wxString variable) to the wxTextCtrl when
-the dialog is initialised.
-
-</LI><LI>  It transfers the wxTextCtrl data back to this variable when the dialog is dismissed.
-
-</LI><LI>  It filters input characters so that only alphabetic characters are allowed.
-
+<LI> ダイアログが初期化されたときに g_data.m_string (wxString 変数) の値を wxTextCtrl へ転送します。
+</LI><LI> ダイアログが閉じられたときに wxTextCtrl のデータをこの変数へ転送します。
+</LI><LI> 入力文字をフィルタリングし、アルファベットしか入力できないようにします。
 </LI></OL>
 <P>
-
-The validation and filtering of input is accomplished in two ways. When a character is input,
-wxTextValidator checks the character against the allowed filter flag (wxFILTER_ALPHA in this case). If
-the character is inappropriate, it is vetoed (does not appear) and a warning beep sounds.
-The second type of validation is performed when the dialog is about to be dismissed, so if
-the default string contained invalid characters already, a dialog box is shown giving the
-error, and the dialog is not dismissed.<P>
-<B><FONT COLOR="#FF0000">Anatomy of a validator</FONT></B><P>
-
-A programmer creating a new validator class should provide the following functionality.<P>
-
-A validator constructor is responsible for allowing the programmer to specify the kind
-of validation required, and perhaps a pointer to a C++ variable that is used for storing the
-data for the control. If such a variable address is not supplied by the user, then
-the validator should store the data internally.<P>
-
-The <A HREF="wx_wxvalidator.html#wxvalidatorvalidate">wxValidator::Validate</A> member function should return
-true if the data in the control (not the C++ variable) is valid. It should also show
-an appropriate message if data was not valid.<P>
-
-The <A HREF="wx_wxvalidator.html#wxvalidatortransfertowindow">wxValidator::TransferToWindow</A> member function should
-transfer the data from the validator or associated C++ variable to the control.<P>
-
-The <A HREF="wx_wxvalidator.html#wxvalidatortransferfromwindow">wxValidator::TransferFromWindow</A> member function should
-transfer the data from the control to the validator or associated C++ variable.<P>
-
-There should be a copy constructor, and a <A HREF="wx_wxvalidator.html#wxvalidatorclone">wxValidator::Clone</A> function
-which returns a copy of the validator object. This is important because validators
-are passed by reference to window constructors, and must therefore be cloned internally.<P>
-
-You can optionally define event handlers for the validator, to implement filtering. These handlers
-will capture events before the control itself does.<P>
-
-For an example implementation, see the valtext.h and valtext.cpp files in the wxWidgets library.<P>
-<B><FONT COLOR="#FF0000">How validators interact with dialogs</FONT></B><P>
-
-For validators to work correctly, validator functions must be called at the right times during
-dialog initialisation and dismissal.<P>
-
-When a <A HREF="wx_wxdialog.html#wxdialogshow">wxDialog::Show</A> is called (for a modeless dialog)
-or <A HREF="wx_wxdialog.html#wxdialogshowmodal">wxDialog::ShowModal</A> is called (for a modal dialog),
-the function <A HREF="wx_wxwindow.html#wxwindowinitdialog">wxWindow::InitDialog</A> is automatically called.
-This in turn sends an initialisation event to the dialog. The default handler for
-the wxEVT_INIT_DIALOG event is defined in the wxWindow class to simply call
-the function <A HREF="wx_wxwindow.html#wxwindowtransferdatatowindow">wxWindow::TransferDataToWindow</A>. This
-function finds all the validators in the window's children and calls the TransferToWindow
-function for each. Thus, data is transferred from C++ variables to the dialog
-just as the dialog is being shown.<P>
+入力の検証とフィルタリングは 2 通りの方法で行われます。文字が入力されたときに wxTextValidator はその文字がフィルタフラグ (この場合は wxFILTER_ALPHA) に合致するか確認します。入力された文字が不適切だった場合、入力は拒否され (画面上に現れません)、警告ビープ音が鳴ります。ふたつ目の検証はダイアログが閉じられるときに行われます。そのため、デフォルト文字列がすでに不正な文字を含んでいる場合、エラーメッセージが表示され、ダイアログボックスが閉じられることはありません。<P>
+<B><FONT COLOR="#FF0000">バリデータの構造</FONT></B><P>
+新しいバリデータクラスを作成する場合、次の機能を提供する必要があります。<P>
+バリデータのコンストラクタでは必要な検証の種類をプログラマが指定できるようにしてください。また、コントロールの値を格納する C++ 変数のポインタもおそらく受け取る必要があります。そのような変数のアドレスが指定されなかった場合、バリデータは内部にデータを格納するべきです。<P>
+<A HREF="wx_wxvalidator.html#wxvalidatorvalidate">wxValidator::Validate</A> 関数はコントロール (C++ 変数ではありません) のデータが正しい場合に true を返却する必要があります。また、データが正しくない場合は適切なメッセージを表示する必要があります。<P>
+<A HREF="wx_wxvalidator.html#wxvalidatortransfertowindow">wxValidator::TransferToWindow</A> 関数はバリデータや関連する C++ 変数からコントロールへデータを転送する必要があります。<P>
+<A HREF="wx_wxvalidator.html#wxvalidatortransferfromwindow">wxValidator::TransferFromWindow</A> 関数はコントロールからバリデータや関連する C++ 変数へデータを転送する必要があります。<P>
+コピーコンストラクタと、バリデータオブジェクトのコピーを返却する <A HREF="wx_wxvalidator.html#wxvalidatorclone">wxValidator::Clone</A> 関数を用意する必要があります。バリデータはウィンドウのコンストラクタへ参照渡しされるため、内部的に複製しなければならないという点でこれは重要です。<P>
+イベントのフィルタリングを行なうためにバリデータ用のイベントハンドラを任意に定義することができます。これらのハンドラはコントロールでイベント処理が行われる前にイベントを捕まえます。<P>
+実装の例は wxWidgets ライブラリの valtext.h と valtext.cpp を参照してください。<P>
+<B><FONT COLOR="#FF0000">バリデータとダイアログ間のやり取り</FONT></B><P>
+バリデータが正しく動作するためにはダイアログの初期化時、および終了時の適切なタイミングでバリデータ関数を呼ぶ必要があります。<P>
+<A HREF="wx_wxdialog.html#wxdialogshow">wxDialog::Show</A> (モードレスダイアログ用) または <A HREF="wx_wxdialog.html#wxdialogshowmodal">wxDialog::ShowModal</A> (モーダルダイアログ用) が呼ばれると自動的に <A HREF="wx_wxwindow.html#wxwindowinitdialog">wxWindow::InitDialog</A> が呼ばれます。そして、これは初期化イベントをダイアログへ送信します。wxEVT_INIT_DIALOG イベントのデフォルトのイベントハンドラが wxWindow クラスの中で定義されており、これは単純に <A HREF="wx_wxwindow.html#wxwindowtransferdatatowindow">wxWindow::TransferDataToWindow</A> 関数を呼ぶだけです。この関数は子コントロールのすべてのバリデータを探し、それぞれの TransferToWindow を呼び出します。そのため、ダイアログが表示されるそのときに C++ 変数からダイアログへデータが転送されます。<P>
 <HR>
-
-If you are using a window or panel instead of a dialog, you will need to
-call <A HREF="wx_wxwindow.html#wxwindowinitdialog">wxWindow::InitDialog</A> explicitly before showing the
-window.<HR><P>
+もしダイアログの代わりにウィンドウやパネルを使用している場合、ウィンドウを表示する前に明示的に <A HREF="wx_wxwindow.html#wxwindowinitdialog">wxWindow::InitDialog</A> を呼ぶ必要があります。<HR><P>
 <P>
-
-When the user clicks on a button, for example the OK button, the application should
-first call <A HREF="wx_wxwindow.html#wxwindowvalidate">wxWindow::Validate</A>, which returns false if
-any of the child window validators failed to validate the window data. The button handler
-should return immediately if validation failed. Secondly, the application should
-call <A HREF="wx_wxwindow.html#wxwindowtransferdatafromwindow">wxWindow::TransferDataFromWindow</A> and
-return if this failed. It is then safe to end the dialog by calling EndModal (if modal)
-or Show (if modeless).<P>
-
-In fact, wxDialog contains a default command event handler for the wxID_OK button. It goes like
-this:<P>
+OK ボタンなど、ユーザがボタンを押下すると最初に <A HREF="wx_wxwindow.html#wxwindowvalidate">wxWindow::Validate</A> が呼ばれます。この関数は子ウィンドウのいずれかでウィンドウデータの検証に失敗した場合に false を返却します。ボタンハンドラは検証に失敗した場合に直ちに呼び出し元へ戻る必要があります。次に <A HREF="wx_wxwindow.html#wxwindowtransferdatafromwindow">wxWindow::TransferDataFromWindow</A> が呼ばれます。この関数が失敗した場合は呼び出し元へ戻ります。そのときは EndModal (モーダルの場合) や Show (モードレスの場合) を呼んでダイアログを終了しても安全です。<P>
+実際のところ、wxDialog は wxID_OK ボタン用のデフォルトコマンドハンドラを持っています。これは次のようになります:<P>
 <PRE>
 void wxDialog::OnOK(wxCommandEvent&amp; event)
 {
@@ -123,12 +59,8 @@ void wxDialog::OnOK(wxCommandEvent&amp; event)
     }
 }
 </PRE>
-
-So if using validators and a normal OK button, you may not even need to write any
-code for handling dialog dismissal.<P>
-
-If you load your dialog from a resource file, you will need to iterate through the controls
-setting validators, since validators can't be specified in a dialog resource.<P>
+そのため、バリデータと通常の OK ボタンを使用している場合、ダイアログの終了処理を行なうためのコードを書く必要すらないでしょう。<P>
+ダイアログをリソースファイルから読み込む場合、コントロールに対してバリデータを設定する必要があります。これはダイアログリソース内でバリデータを指定できないためです。<P>
 
 </FONT><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

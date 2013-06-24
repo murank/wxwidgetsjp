@@ -163,7 +163,7 @@ function toggleVisibility(linkObj) {
 <h2>Extra styles</h2>
 <p>This class supports the following extra styles:</p>
 <div> </div><ul>
-<li><span class="style">wxWS_EX_VALIDATE_RECURSIVELY</span>:<div class="styleDesc">  By default, <a class="el" href="classwx_window.html#ac87f253253a0c5eb498871c83afa40fd" title="Validates the current values of the child controls using their validators.">wxWindow::Validate()</a>, wxWindow::TransferDataTo() and <a class="el" href="classwx_window.html#ab8e51f36e7d8790b361c8d8c6f37b1ad" title="Transfers values from child controls to data areas specified by their validators.">wxWindow::TransferDataFromWindow()</a> only work on direct children of the window (compatible behaviour). Set this flag to make them recursively descend into all subwindows.  </div></li>
+<li><span class="style">wxWS_EX_VALIDATE_RECURSIVELY</span>:<div class="styleDesc">  By default, <a class="el" href="classwx_window.html#ac87f253253a0c5eb498871c83afa40fd" title="バリデータを使用して子コントロールの現在の値を検証します。">wxWindow::Validate()</a>, wxWindow::TransferDataTo() and <a class="el" href="classwx_window.html#ab8e51f36e7d8790b361c8d8c6f37b1ad" title="子コントロールからバリデータで指定されたデータ領域へ値を転送します。">wxWindow::TransferDataFromWindow()</a> only work on direct children of the window (compatible behaviour). Set this flag to make them recursively descend into all subwindows.  </div></li>
 <li><span class="style">wxWS_EX_BLOCK_EVENTS</span>:<div class="styleDesc">  wxCommandEvents and the objects of the derived classes are forwarded to the parent window and so on recursively by default. Using this flag for the given window allows to block this propagation at this window, i.e. prevent the events from being propagated further upwards. Dialogs have this flag on by default for the reasons explained in the <a class="el" href="overview_events.html">Events and Event Handling</a>.  </div></li>
 <li><span class="style">wxWS_EX_TRANSIENT</span>:<div class="styleDesc">  Don't use this window as an implicit parent for the other windows: this must be used with transient windows as otherwise there is the risk of creating a dialog/frame with this window as a parent, which would lead to a crash if the parent were destroyed before the child.  </div></li>
 <li><span class="style">wxWS_EX_CONTEXTHELP</span>:<div class="styleDesc">  Under Windows, puts a query button on the caption. When pressed, Windows will go into a context-sensitive help mode and wxWidgets will send a <code>wxEVT_HELP</code> event if the user clicked on an application window. This style cannot be used (because of the underlying native behaviour) together with <code>wxMAXIMIZE_BOX</code> or <code>wxMINIMIZE_BOX</code>, so these two styles are automatically turned off if this one is used.  </div></li>
@@ -620,13 +620,13 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classwx_validator.html">wxValidator</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a6a332586346cb9ece4a8fe058a7b88c4">GetValidator</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Validator functions.    <a href="#a6a332586346cb9ece4a8fe058a7b88c4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a00066c70049a7be3ce6b648d206e6432">SetValidator</a> (const <a class="el" href="classwx_validator.html">wxValidator</a> &amp;validator)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deletes the current validator (if any) and sets the window validator, having called <a class="el" href="classwx_validator.html#a25a4e0250afe9451059fd7a967c4883f" title="All validator classes must implement the Clone() function, which returns an identical copy of itself...">wxValidator::Clone</a> to create a new validator of this type.    <a href="#a00066c70049a7be3ce6b648d206e6432"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deletes the current validator (if any) and sets the window validator, having called <a class="el" href="classwx_validator.html#a25a4e0250afe9451059fd7a967c4883f" title="すべてのバリデータクラスは自身と同一なコピーを返却する Clone() 関数を実装する必要があります。">wxValidator::Clone</a> to create a new validator of this type.    <a href="#a00066c70049a7be3ce6b648d206e6432"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#ab8e51f36e7d8790b361c8d8c6f37b1ad">TransferDataFromWindow</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Transfers values from child controls to data areas specified by their validators.    <a href="#ab8e51f36e7d8790b361c8d8c6f37b1ad"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">子コントロールからバリデータで指定されたデータ領域へ値を転送します。  <a href="#ab8e51f36e7d8790b361c8d8c6f37b1ad"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a88cc65e424a129d9b0057756cdb67ec9">TransferDataToWindow</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Transfers values to child controls from data areas specified by their validators.    <a href="#a88cc65e424a129d9b0057756cdb67ec9"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">バリデータで指定されたデータ領域から子コントロールへ値を転送します。  <a href="#a88cc65e424a129d9b0057756cdb67ec9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#ac87f253253a0c5eb498871c83afa40fd">Validate</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Validates the current values of the child controls using their validators.    <a href="#ac87f253253a0c5eb498871c83afa40fd"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">バリデータを使用して子コントロールの現在の値を検証します。  <a href="#ac87f253253a0c5eb498871c83afa40fd"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">wxWindow properties functions</div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="windowid_8h.html#ae8091432cc2cb2485d45f2302fb51133">wxWindowID</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a4633b6ad527c921598f55af5274156f0">GetId</a> () const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the identifier of the window.    <a href="#a4633b6ad527c921598f55af5274156f0"></a><br/></td></tr>
@@ -6978,7 +6978,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Deletes the current validator (if any) and sets the window validator, having called <a class="el" href="classwx_validator.html#a25a4e0250afe9451059fd7a967c4883f" title="All validator classes must implement the Clone() function, which returns an identical copy of itself...">wxValidator::Clone</a> to create a new validator of this type.  </p>
+<p>Deletes the current validator (if any) and sets the window validator, having called <a class="el" href="classwx_validator.html#a25a4e0250afe9451059fd7a967c4883f" title="すべてのバリデータクラスは自身と同一なコピーを返却する Clone() 関数を実装する必要があります。">wxValidator::Clone</a> to create a new validator of this type.  </p>
 
 </div>
 </div><!-- doxytag: member="wxWindow::SetVirtualSize" ref="a8e95201edebe43b9623bd3bdc555af4d" args="(const wxSize &amp;size)" -->
@@ -7247,10 +7247,10 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Transfers values from child controls to data areas specified by their validators.  </p>
+<p>子コントロールからバリデータで指定されたデータ領域へ値を転送します。 </p>
 <p>Returns <span class="literal">false</span> if a transfer failed.</p>
-<p>If the window has <code>wxWS_EX_VALIDATE_RECURSIVELY</code> extra style flag set, the method will also call <a class="el" href="classwx_window.html#ab8e51f36e7d8790b361c8d8c6f37b1ad" title="Transfers values from child controls to data areas specified by their validators.">TransferDataFromWindow()</a> of all child windows.</p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a88cc65e424a129d9b0057756cdb67ec9" title="Transfers values to child controls from data areas specified by their validators.">TransferDataToWindow()</a>, <a class="el" href="classwx_validator.html" title="wxValidator はコントロールクラスとアプリケーションデータを仲介する、バリデータクラスファミリーの基底クラスです。">wxValidator</a>, <a class="el" href="classwx_window.html#ac87f253253a0c5eb498871c83afa40fd" title="Validates the current values of the child controls using their validators.">Validate()</a> </dd></dl>
+<p>If the window has <code>wxWS_EX_VALIDATE_RECURSIVELY</code> extra style flag set, the method will also call <a class="el" href="classwx_window.html#ab8e51f36e7d8790b361c8d8c6f37b1ad" title="子コントロールからバリデータで指定されたデータ領域へ値を転送します。">TransferDataFromWindow()</a> of all child windows.</p>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a88cc65e424a129d9b0057756cdb67ec9" title="バリデータで指定されたデータ領域から子コントロールへ値を転送します。">TransferDataToWindow()</a>, <a class="el" href="classwx_validator.html" title="wxValidator はコントロールクラスとアプリケーションデータを仲介する、バリデータクラスファミリーの基底クラスです。">wxValidator</a>, <a class="el" href="classwx_window.html#ac87f253253a0c5eb498871c83afa40fd" title="バリデータを使用して子コントロールの現在の値を検証します。">Validate()</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::TransferDataToWindow" ref="a88cc65e424a129d9b0057756cdb67ec9" args="()" -->
@@ -7268,10 +7268,10 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Transfers values to child controls from data areas specified by their validators.  </p>
-<p>If the window has <code>wxWS_EX_VALIDATE_RECURSIVELY</code> extra style flag set, the method will also call <a class="el" href="classwx_window.html#a88cc65e424a129d9b0057756cdb67ec9" title="Transfers values to child controls from data areas specified by their validators.">TransferDataToWindow()</a> of all child windows.</p>
+<p>バリデータで指定されたデータ領域から子コントロールへ値を転送します。 </p>
+<p>If the window has <code>wxWS_EX_VALIDATE_RECURSIVELY</code> extra style flag set, the method will also call <a class="el" href="classwx_window.html#a88cc65e424a129d9b0057756cdb67ec9" title="バリデータで指定されたデータ領域から子コントロールへ値を転送します。">TransferDataToWindow()</a> of all child windows.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns <span class="literal">false</span> if a transfer failed.</dd></dl>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#ab8e51f36e7d8790b361c8d8c6f37b1ad" title="Transfers values from child controls to data areas specified by their validators.">TransferDataFromWindow()</a>, <a class="el" href="classwx_validator.html" title="wxValidator はコントロールクラスとアプリケーションデータを仲介する、バリデータクラスファミリーの基底クラスです。">wxValidator</a>, <a class="el" href="classwx_window.html#ac87f253253a0c5eb498871c83afa40fd" title="Validates the current values of the child controls using their validators.">Validate()</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#ab8e51f36e7d8790b361c8d8c6f37b1ad" title="子コントロールからバリデータで指定されたデータ領域へ値を転送します。">TransferDataFromWindow()</a>, <a class="el" href="classwx_validator.html" title="wxValidator はコントロールクラスとアプリケーションデータを仲介する、バリデータクラスファミリーの基底クラスです。">wxValidator</a>, <a class="el" href="classwx_window.html#ac87f253253a0c5eb498871c83afa40fd" title="バリデータを使用して子コントロールの現在の値を検証します。">Validate()</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::UnregisterHotKey" ref="a695f60d65f8f6c12e3c3645ad9c0c35b" args="(int hotkeyId)" -->
@@ -7422,10 +7422,10 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Validates the current values of the child controls using their validators.  </p>
-<p>If the window has <code>wxWS_EX_VALIDATE_RECURSIVELY</code> extra style flag set, the method will also call <a class="el" href="classwx_window.html#ac87f253253a0c5eb498871c83afa40fd" title="Validates the current values of the child controls using their validators.">Validate()</a> of all child windows.</p>
+<p>バリデータを使用して子コントロールの現在の値を検証します。 </p>
+<p>If the window has <code>wxWS_EX_VALIDATE_RECURSIVELY</code> extra style flag set, the method will also call <a class="el" href="classwx_window.html#ac87f253253a0c5eb498871c83afa40fd" title="バリデータを使用して子コントロールの現在の値を検証します。">Validate()</a> of all child windows.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns <span class="literal">false</span> if any of the validations failed.</dd></dl>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#ab8e51f36e7d8790b361c8d8c6f37b1ad" title="Transfers values from child controls to data areas specified by their validators.">TransferDataFromWindow()</a>, <a class="el" href="classwx_window.html#a88cc65e424a129d9b0057756cdb67ec9" title="Transfers values to child controls from data areas specified by their validators.">TransferDataToWindow()</a>, <a class="el" href="classwx_validator.html" title="wxValidator はコントロールクラスとアプリケーションデータを仲介する、バリデータクラスファミリーの基底クラスです。">wxValidator</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#ab8e51f36e7d8790b361c8d8c6f37b1ad" title="子コントロールからバリデータで指定されたデータ領域へ値を転送します。">TransferDataFromWindow()</a>, <a class="el" href="classwx_window.html#a88cc65e424a129d9b0057756cdb67ec9" title="バリデータで指定されたデータ領域から子コントロールへ値を転送します。">TransferDataToWindow()</a>, <a class="el" href="classwx_validator.html" title="wxValidator はコントロールクラスとアプリケーションデータを仲介する、バリデータクラスファミリーの基底クラスです。">wxValidator</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::WarpPointer" ref="ac500152d1eca3a2ee98a68e7ea7372b5" args="(int x, int y)" -->

@@ -266,7 +266,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">適応モードを設定し、グルーバルな適応フラグを上書きします。  <a href="#a9f949c545ca70571cec8cd2fcbfc0991"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_dialog.html#a38e21fd7eb13d9d44cd9ea4f85a36517">SetModal</a> (bool flag)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_dialog.html#a0d04ed85ac5cd271a61514d446340673">SetReturnCode</a> (int retCode)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the return code for this window.    <a href="#a0d04ed85ac5cd271a61514d446340673"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">このウィンドウの戻り値を設定します。  <a href="#a0d04ed85ac5cd271a61514d446340673"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_dialog.html#ae8e5fa98d473b812b8d1c2f163b65c67">Show</a> (bool show=1)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ダイアログの表示・非表示を切り替えます。  <a href="#ae8e5fa98d473b812b8d1c2f163b65c67"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637">ShowModal</a> ()</td></tr>
@@ -720,7 +720,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">ShowModal()</a>, <a class="el" href="classwx_dialog.html#a5f56f8d3ecc4336df4150aea989343df" title="Gets the return code for this window.">GetReturnCode()</a>, <a class="el" href="classwx_dialog.html#a0d04ed85ac5cd271a61514d446340673" title="Sets the return code for this window.">SetReturnCode()</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">ShowModal()</a>, <a class="el" href="classwx_dialog.html#a5f56f8d3ecc4336df4150aea989343df" title="Gets the return code for this window.">GetReturnCode()</a>, <a class="el" href="classwx_dialog.html#a0d04ed85ac5cd271a61514d446340673" title="このウィンドウの戻り値を設定します。">SetReturnCode()</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxDialog::GetAffirmativeId" ref="ae1dfa9d9b983615e6f350dbbfafbabe6" args="() const " -->
@@ -893,7 +893,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Gets the return code for this window.  </p>
 <dl class="remark"><dt><b>Remarks:</b></dt><dd>A return code is normally associated with a modal dialog, where <a class="el" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">ShowModal()</a> returns a code to the application.</dd></dl>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_dialog.html#a0d04ed85ac5cd271a61514d446340673" title="Sets the return code for this window.">SetReturnCode()</a>, <a class="el" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">ShowModal()</a>, <a class="el" href="classwx_dialog.html#a89b6085b05b63e98001311fafcfb21f0" title="Ends a modal dialog, passing a value to be returned from the ShowModal() invocation.">EndModal()</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_dialog.html#a0d04ed85ac5cd271a61514d446340673" title="このウィンドウの戻り値を設定します。">SetReturnCode()</a>, <a class="el" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">ShowModal()</a>, <a class="el" href="classwx_dialog.html#a89b6085b05b63e98001311fafcfb21f0" title="ShowModal() の戻り値を指定してモーダルダイアログを終了します。">EndModal()</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxDialog::GetToolBar" ref="a80c76ed6b8f6eb92992f816e1a987f80" args="() const " -->
@@ -1041,7 +1041,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Sets the identifier to be used as OK button.  </p>
-<p>When the button with this identifier is pressed, the dialog calls <a class="el" href="classwx_window.html#ac87f253253a0c5eb498871c83afa40fd" title="Validates the current values of the child controls using their validators.">wxWindow::Validate()</a> and <a class="el" href="classwx_window.html#ab8e51f36e7d8790b361c8d8c6f37b1ad" title="Transfers values from child controls to data areas specified by their validators.">wxWindow::TransferDataFromWindow()</a> and, if they both return <span class="literal">true</span>, closes the dialog with the affirmative id return code.</p>
+<p>When the button with this identifier is pressed, the dialog calls <a class="el" href="classwx_window.html#ac87f253253a0c5eb498871c83afa40fd" title="バリデータを使用して子コントロールの現在の値を検証します。">wxWindow::Validate()</a> and <a class="el" href="classwx_window.html#ab8e51f36e7d8790b361c8d8c6f37b1ad" title="子コントロールからバリデータで指定されたデータ領域へ値を転送します。">wxWindow::TransferDataFromWindow()</a> and, if they both return <span class="literal">true</span>, closes the dialog with the affirmative id return code.</p>
 <p>Also, when the user presses a hardware OK button on the devices having one or the special OK button in the PocketPC title bar, an event with this id is generated.</p>
 <p>By default, the affirmative id is wxID_OK.</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_dialog.html#ae1dfa9d9b983615e6f350dbbfafbabe6" title="Gets the identifier of the button which works like standard OK button in this dialog.">GetAffirmativeId()</a>, <a class="el" href="classwx_dialog.html#a585869988e308f549128a6a065f387c6" title='Sets the identifier of the button which should work like the standard "Cancel" button in this dialog...'>SetEscapeId()</a> </dd></dl>
@@ -1247,15 +1247,15 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Sets the return code for this window.  </p>
-<p>A return code is normally associated with a modal dialog, where <a class="el" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">ShowModal()</a> returns a code to the application. The function <a class="el" href="classwx_dialog.html#a89b6085b05b63e98001311fafcfb21f0" title="Ends a modal dialog, passing a value to be returned from the ShowModal() invocation.">EndModal()</a> calls <a class="el" href="classwx_dialog.html#a0d04ed85ac5cd271a61514d446340673" title="Sets the return code for this window.">SetReturnCode()</a>.</p>
+<p>このウィンドウの戻り値を設定します。 </p>
+<p>A return code is normally associated with a modal dialog, where <a class="el" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">ShowModal()</a> returns a code to the application. The function <a class="el" href="classwx_dialog.html#a89b6085b05b63e98001311fafcfb21f0" title="ShowModal() の戻り値を指定してモーダルダイアログを終了します。">EndModal()</a> calls <a class="el" href="classwx_dialog.html#a0d04ed85ac5cd271a61514d446340673" title="このウィンドウの戻り値を設定します。">SetReturnCode()</a>.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">retCode</td><td>The integer return code, usually a control identifier.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_dialog.html#a5f56f8d3ecc4336df4150aea989343df" title="Gets the return code for this window.">GetReturnCode()</a>, <a class="el" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">ShowModal()</a>, <a class="el" href="classwx_dialog.html#a89b6085b05b63e98001311fafcfb21f0" title="Ends a modal dialog, passing a value to be returned from the ShowModal() invocation.">EndModal()</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_dialog.html#a5f56f8d3ecc4336df4150aea989343df" title="Gets the return code for this window.">GetReturnCode()</a>, <a class="el" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">ShowModal()</a>, <a class="el" href="classwx_dialog.html#a89b6085b05b63e98001311fafcfb21f0" title="ShowModal() の戻り値を指定してモーダルダイアログを終了します。">EndModal()</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxDialog::Show" ref="ae8e5fa98d473b812b8d1c2f163b65c67" args="(bool show=1)" -->
@@ -1275,7 +1275,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>ダイアログの表示・非表示を切り替えます。 </p>
-<p>The preferred way of dismissing a modal dialog is to use <a class="el" href="classwx_dialog.html#a89b6085b05b63e98001311fafcfb21f0" title="Ends a modal dialog, passing a value to be returned from the ShowModal() invocation.">EndModal()</a>.</p>
+<p>The preferred way of dismissing a modal dialog is to use <a class="el" href="classwx_dialog.html#a89b6085b05b63e98001311fafcfb21f0" title="ShowModal() の戻り値を指定してモーダルダイアログを終了します。">EndModal()</a>.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">show</td><td>If <span class="literal">true</span>, the dialog box is shown and brought to the front, otherwise the box is hidden. If <span class="literal">false</span> and the dialog is modal, control is returned to the calling program.  </td></tr>
@@ -1302,11 +1302,11 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>モーダルダイアログを表示します。 </p>
-<p>Program flow does not return until the dialog has been dismissed with <a class="el" href="classwx_dialog.html#a89b6085b05b63e98001311fafcfb21f0" title="Ends a modal dialog, passing a value to be returned from the ShowModal() invocation.">EndModal()</a>.</p>
-<p>Notice that it is possible to call <a class="el" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">ShowModal()</a> for a dialog which had been previously shown with <a class="el" href="classwx_dialog.html#ae8e5fa98d473b812b8d1c2f163b65c67" title="ダイアログの表示・非表示を切り替えます。">Show()</a>, this allows to make an existing modeless dialog modal. However <a class="el" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">ShowModal()</a> can't be called twice without intervening <a class="el" href="classwx_dialog.html#a89b6085b05b63e98001311fafcfb21f0" title="Ends a modal dialog, passing a value to be returned from the ShowModal() invocation.">EndModal()</a> calls.</p>
+<p>Program flow does not return until the dialog has been dismissed with <a class="el" href="classwx_dialog.html#a89b6085b05b63e98001311fafcfb21f0" title="ShowModal() の戻り値を指定してモーダルダイアログを終了します。">EndModal()</a>.</p>
+<p>Notice that it is possible to call <a class="el" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">ShowModal()</a> for a dialog which had been previously shown with <a class="el" href="classwx_dialog.html#ae8e5fa98d473b812b8d1c2f163b65c67" title="ダイアログの表示・非表示を切り替えます。">Show()</a>, this allows to make an existing modeless dialog modal. However <a class="el" href="classwx_dialog.html#a6e078c3d0653f75ad3c34a37c0b54637" title="モーダルダイアログを表示します。">ShowModal()</a> can't be called twice without intervening <a class="el" href="classwx_dialog.html#a89b6085b05b63e98001311fafcfb21f0" title="ShowModal() の戻り値を指定してモーダルダイアログを終了します。">EndModal()</a> calls.</p>
 <p>Note that this function creates a temporary event loop which takes precedence over the application's main event loop (see <a class="el" href="classwx_event_loop_base.html" title="Base class for all event loop implementations.">wxEventLoopBase</a>) and which is destroyed when the dialog is dismissed. This also results in a call to <a class="el" href="classwx_app_console.html#ab62db8e6265c1e841220c47b9778ab7e" title="Process all pending events; it is necessary to call this function to process events posted with wxEvt...">wxApp::ProcessPendingEvents()</a>.</p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>The value set with <a class="el" href="classwx_dialog.html#a0d04ed85ac5cd271a61514d446340673" title="Sets the return code for this window.">SetReturnCode()</a>.</dd></dl>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_dialog.html#a5c61636f657c0ae9503c4dfa534e073e" title="Shows a dialog modal to the parent top level window only.">ShowWindowModal()</a>, <a class="el" href="classwx_dialog.html#a89b6085b05b63e98001311fafcfb21f0" title="Ends a modal dialog, passing a value to be returned from the ShowModal() invocation.">EndModal()</a>, <a class="el" href="classwx_dialog.html#a5f56f8d3ecc4336df4150aea989343df" title="Gets the return code for this window.">GetReturnCode()</a>, <a class="el" href="classwx_dialog.html#a0d04ed85ac5cd271a61514d446340673" title="Sets the return code for this window.">SetReturnCode()</a> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The value set with <a class="el" href="classwx_dialog.html#a0d04ed85ac5cd271a61514d446340673" title="このウィンドウの戻り値を設定します。">SetReturnCode()</a>.</dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_dialog.html#a5c61636f657c0ae9503c4dfa534e073e" title="Shows a dialog modal to the parent top level window only.">ShowWindowModal()</a>, <a class="el" href="classwx_dialog.html#a89b6085b05b63e98001311fafcfb21f0" title="ShowModal() の戻り値を指定してモーダルダイアログを終了します。">EndModal()</a>, <a class="el" href="classwx_dialog.html#a5f56f8d3ecc4336df4150aea989343df" title="Gets the return code for this window.">GetReturnCode()</a>, <a class="el" href="classwx_dialog.html#a0d04ed85ac5cd271a61514d446340673" title="このウィンドウの戻り値を設定します。">SetReturnCode()</a> </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classwx_multi_choice_dialog.html#a563ed5633d90460d08fd3d7a76d73534">wxMultiChoiceDialog</a>, <a class="el" href="classwx_single_choice_dialog.html#afa4e6462970ed338dfcbc121d9adeb8d">wxSingleChoiceDialog</a>, <a class="el" href="classwx_colour_dialog.html#a06684af732f3a6e60be6a016b96f9c9e">wxColourDialog</a>, <a class="el" href="classwx_dir_dialog.html#a037ba48268fd2632d47369ad80c84da5">wxDirDialog</a>, <a class="el" href="classwx_file_dialog.html#a04943e4abb27a197a110898d40ddb4f0">wxFileDialog</a>, <a class="el" href="classwx_font_dialog.html#a26f48c5b589f8bc45ec542599546f69a">wxFontDialog</a>, <a class="el" href="classwx_message_dialog.html#a28e6cea6fb3857df6cc9b103e06dbadf">wxMessageDialog</a>, and <a class="el" href="classwx_text_entry_dialog.html#a47e2fdd56ac9034b2720bc74e89fbf82">wxTextEntryDialog</a>.</p>
 

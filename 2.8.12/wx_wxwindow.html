@@ -4189,9 +4189,7 @@ switched off.<P>
 <H3>wxWindow::TransferDataFromWindow</H3>
 <P>
 <B>virtual bool</B> <B>TransferDataFromWindow</B>()<P>
-
-Transfers values from child controls to data areas specified by their validators. Returns
-<TT>false</TT> if a transfer failed.<P>
+子コントロールからバリデータで指定されたデータ領域へ値を転送します。Returns <TT>false</TT> if a transfer failed.<P>
 
 If the window has <TT>wxWS_EX_VALIDATE_RECURSIVELY</TT> extra style flag set,
 the method will also call TransferDataFromWindow() of all child windows.<P>
@@ -4205,8 +4203,7 @@ the method will also call TransferDataFromWindow() of all child windows.<P>
 <H3>wxWindow::TransferDataToWindow</H3>
 <P>
 <B>virtual bool</B> <B>TransferDataToWindow</B>()<P>
-
-Transfers values to child controls from data areas specified by their validators.<P>
+バリデータで指定されたデータ領域から子コントロールへ値を転送します。<P>
 
 If the window has <TT>wxWS_EX_VALIDATE_RECURSIVELY</TT> extra style flag set,
 the method will also call TransferDataToWindow() of all child windows.<P>
@@ -4305,8 +4302,7 @@ void MyWindow::OnInternalIdle()
 <H3>wxWindow::Validate</H3>
 <P>
 <B>virtual bool</B> <B>Validate</B>()<P>
-
-Validates the current values of the child controls using their validators.<P>
+バリデータを使用して子コントロールの現在の値を検証します。<P>
 
 If the window has <TT>wxWS_EX_VALIDATE_RECURSIVELY</TT> extra style flag set,
 the method will also call Validate() of all child windows.<P>
