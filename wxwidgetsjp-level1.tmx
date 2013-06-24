@@ -1485,6 +1485,14 @@ for ( wxString::const_iterator i = s.begin(); i != s.end(); ++i )
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxTextCtrl *txt1 = new wxTextCtrl(</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150536Z">
+        <seg>wxTextCtrl *txt1 = new wxTextCtrl(</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxTextFile is a general purpose class for working with small text files on line by line basis.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T072746Z">
@@ -1513,6 +1521,14 @@ for ( wxString::const_iterator i = s.begin(); i != s.end(); ++i )
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130516T160330Z">
         <seg>wxTreeCtrl::EditLabel: イベントを送信しない代替方法を持たない</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxValidator Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150026Z">
+        <seg>wxValidator の概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -1571,10 +1587,26 @@ wxNO_DEFAULT // wxNO ボタンをデフォルトにします。</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>SetReturnCode(wxID_OK);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T153613Z">
+        <seg>SetReturnCode(wxID_OK);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Stream classes</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130620T133212Z">
         <seg>ストリームクラス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Transferring and validating data</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T142222Z">
+        <seg>データの転送と検証</seg>
       </tuv>
     </tu>
     <tu>
@@ -2153,6 +2185,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>EndModal(wxID_OK);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T153610Z">
+        <seg>EndModal(wxID_OK);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxFrame *the_frame = new wxFrame(NULL, ID_MYFRAME, argv[0]);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130528T152659Z">
@@ -2165,6 +2205,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T110923Z">
         <seg>wxLog::SetComponentLevel("MyProgram/DB/Trans", wxLOG_Trace);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxValidator overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T142232Z">
+        <seg>wxValidator の概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -2237,6 +2285,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T003253Z">
         <seg>wxLogWindow,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxTextValidator(wxFILTER_ALPHA, &amp;g_data.m_string));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150543Z">
+        <seg>wxTextValidator(wxFILTER_ALPHA, &amp;g_data.m_string));</seg>
       </tuv>
     </tu>
     <tu>
@@ -2947,6 +3003,16 @@ void MyHandler::OnExit( wxCommandEvent &amp; )
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>void wxDialog::OnOK(wxCommandEvent&amp; event)
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T153601Z">
+        <seg>void wxDialog::OnOK(wxCommandEvent&amp; event)
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// accessors</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130516T155555Z">
@@ -3289,7 +3355,7 @@ wxBEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
       <tuv lang="EN-US">
         <seg>return false;</seg>
       </tuv>
-      <tuv lang="JA" changeid="owner" changedate="20130619T153124Z">
+      <tuv lang="JA" changeid="owner" changedate="20130624T154452Z">
         <seg>return false;</seg>
       </tuv>
     </tu>
@@ -3335,6 +3401,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130513T160138Z">
         <seg>// ユーザがメニューから "Exit" を選択したときには終了する必要がある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if ( Validate() &amp;&amp; TransferDataFromWindow() )</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T153606Z">
+        <seg>if ( Validate() &amp;&amp; TransferDataFromWindow() )</seg>
       </tuv>
     </tu>
     <tu>
@@ -3427,6 +3501,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T113231Z">
         <seg>if ( !file.Open("bar") )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>this, -1, wxT(""), wxDefaultPosition, wxDefaultSize, 0,</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150537Z">
+        <seg>this, -1, wxT(""), wxDefaultPosition, wxDefaultSize, 0,</seg>
       </tuv>
     </tu>
     <tu>
@@ -3531,6 +3613,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T110833Z">
         <seg>// しかし、どういうわけか時たま変更のコミットに失敗するため、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if ( IsModal() )</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T153608Z">
+        <seg>if ( IsModal() )</seg>
       </tuv>
     </tu>
     <tu>
@@ -3731,6 +3821,14 @@ size_t really_read = in_stream.LastRead();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T124605Z">
         <seg>delete m_helpCtrl;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>else</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T153611Z">
+        <seg>else</seg>
       </tuv>
     </tu>
     <tu>
@@ -3999,6 +4097,14 @@ size_t really_read = in_stream.LastRead();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A programmer creating a new validator class should provide the following functionality.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T143837Z">
+        <seg>新しいバリデータクラスを作成する場合、次の機能を提供する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A range of commonly-used control events.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T080921Z">
@@ -4091,6 +4197,30 @@ size_t really_read = in_stream.LastRead();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T032350Z">
         <seg>ツリーイベントは wxTreeCtrl オブジェクトに関連するイベントの情報を保持します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A validator constructor is responsible for allowing the programmer to specify the kind of validation required, and perhaps a pointer to a C++ variable that is used for storing the data for the control.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T145038Z">
+        <seg>バリデータのコンストラクタでは必要な検証の種類をプログラマが指定できるようにしてください。また、コントロールの値を格納する C++ 変数のポインタもおそらく受け取る必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A validator is an object that can be plugged into a control (such as a wxTextCtrl), and mediates between C++ data and the control, transferring the data in either direction and validating it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150500Z">
+        <seg>バリデータは (wxTextCtrl などの) コントロールに接続可能なオブジェクトで、C++ のデータとコントロールとを仲介 (双方向のデータ転送と検証) します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A validator is an object that can be plugged into a control (such as a wxTextCtrl), and mediates between C++ data and the control, transferring the data in either direction and validating it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T142716Z">
+        <seg>バリデータは (wxTextCtrl などの) コントロールに接続可能なオブジェクトで、C++ のデータとコントロールとを仲介 (双方向のデータ転送と検証) します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4415,6 +4545,14 @@ size_t really_read = in_stream.LastRead();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>All validator classes must implement the Clone() function, which returns an identical copy of itself...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T152357Z">
+        <seg>すべてのバリデータクラスは自身と同一なコピーを返却する Clone() 関数を実装する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All wxWidgets functions, such as wxPrintf(), wxLogMessage() &amp;c still work with it, but passing it to printf() will now result in a crash.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130618T152354Z">
@@ -4619,6 +4757,22 @@ size_t really_read = in_stream.LastRead();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T000110Z">
         <seg>静的関数やグローバル関数のような普通の関数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Anatomy of a Validator</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150349Z">
+        <seg>バリデータの構造</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Anatomy of a validator</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T143820Z">
+        <seg>バリデータの構造</seg>
       </tuv>
     </tu>
     <tu>
@@ -5675,6 +5829,22 @@ void MyFrame::OnPlot(MyPlotEvent&amp; event)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Classes: wxValidator, wxTextValidator, wxGenericValidator</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T142251Z">
+        <seg>クラス: wxValidator, wxTextValidator, wxGenericValidator</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Classes: wxValidator, wxTextValidator, wxGenericValidator, wxIntegerValidator, wxFloatingPointValidator</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150334Z">
+        <seg>クラス: wxValidator, wxTextValidator, wxGenericValidator, wxIntegerValidator, wxFloatingPointValidator</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Close can be vetoed by this process (return false), whereas Destroy definitely destroys the window.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130615T040359Z">
@@ -6401,6 +6571,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>EndModal(wxID_OK);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T150139Z">
+        <seg>EndModal(wxID_OK);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ends a modal dialog, passing a value to be returned from the ShowModal() invocation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T153344Z">
+        <seg>ShowModal() の戻り値を指定してモーダルダイアログを終了します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Environment Variables</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130523T155609Z">
@@ -6833,6 +7019,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For an example implementation, see the valtext.h and valtext.cpp files in the wxWidgets library.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T152603Z">
+        <seg>実装の例は wxWidgets ライブラリの valtext.h と valtext.cpp を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For an example implementation, see the valtext.h and valtext.cpp files in the wxWidgets library.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T145000Z">
+        <seg>実装の例は wxWidgets ライブラリの valtext.h と valtext.cpp を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For consistency, continue to use the wxWindow::Destroy function instead of the delete operator when deleting these kinds of windows explicitly.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130614T143925Z">
@@ -7121,6 +7323,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For validators to work correctly, validator functions must be called at the right times during dialog initialisation and dismissal.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T145153Z">
+        <seg>バリデータが正しく動作するためにはダイアログの初期化時、および終了時の適切なタイミングでバリデータ関数を呼ぶ必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For verbose output.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T131802Z">
@@ -7331,6 +7541,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is an example of wxTextValidator usage.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150511Z">
+        <seg>ここでは wxTextValidator の使い方の例を示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is an example of wxTextValidator usage.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T143051Z">
+        <seg>ここでは wxTextValidator の使い方の例を示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is an example, taken mostly from the wxPlot library, which is in the contrib section of the wxWidgets sources.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T164140Z">
@@ -7419,6 +7645,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>How Validators Interact with Dialogs</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150351Z">
+        <seg>バリデータとダイアログ間のやり取り</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>How can the application close a window itself?</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130615T045949Z">
@@ -7439,6 +7673,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T083106Z">
         <seg>イベント処理の仕組み</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How validators interact with dialogs</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T145106Z">
+        <seg>バリデータとダイアログ間のやり取り</seg>
       </tuv>
     </tu>
     <tu>
@@ -7587,6 +7829,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If such a variable address is not supplied by the user, then the validator should store the data internally.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T144259Z">
+        <seg>そのような変数のアドレスが指定されなかった場合、バリデータは内部にデータを格納するべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If that search failed too, wxWidgets finds 'loose' standard buttons (in any kind of sizer) and adds them to a wxStdDialogButtonSizer.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130604T152020Z">
@@ -7615,6 +7865,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130613T145241Z">
         <seg>なんらかの理由で強制的にアプリケーションを終了させる場合 (wxCloseEvent::CanVeto が false を返却する場合)、常にウィンドウを破棄するべきです。それ以外の場合では終了要求を無視するか、安全に終了できるか決定する前にユーザへ確認するという選択肢があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the character is inappropriate, it is vetoed (does not appear) and a warning beep sounds (unless wxValidator::SetBellOnError(false) has been called).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T154640Z">
+        <seg>入力された文字が不適切だった場合、入力は拒否され (画面上に現れません)、警告ビープ音が鳴ります。(ただし、 wxValidator::SetBellOnError(false) が呼ばれていない場合に限ります) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the character is inappropriate, it is vetoed (does not appear) and a warning beep sounds.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T143616Z">
+        <seg>入力された文字が不適切だった場合、入力は拒否され (画面上に現れません)、警告ビープ音が鳴ります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7779,6 +8045,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you are using a window or panel instead of a dialog, you will need to call wxWindow::InitDialog explicitly before showing the window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T145709Z">
+        <seg>もしダイアログの代わりにウィンドウやパネルを使用している場合、ウィンドウを表示する前に明示的に wxWindow::InitDialog を呼ぶ必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you believe that it would be advantageous to use UTF-8 for the strings in your particular application, you may rebuild wxWidgets to use UTF-8 as explained above (notice that this is currently not supported under Microsoft Windows and arguably doesn't make much sense there as Windows itself uses UTF-16 and not UTF-8) but be sure to be aware of the performance implications (see Performance Implications of Using UTF-8) of using UTF-8 in wxString before doing this!</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T095112Z">
@@ -7823,6 +8097,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130506T042232Z">
         <seg>新しいイベント型で wxCommandEvent を使用したいだけの場合、自分自身で新しいマクロを定義するのではなく、以下の汎用的なイベントテーブルマクロを使用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you load your dialog from a resource file, you will need to iterate through the controls setting validators, since validators can't be specified in a dialog resource.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T150432Z">
+        <seg>ダイアログをリソースファイルから読み込む場合、コントロールに対してバリデータを設定する必要があります。これはダイアログリソース内でバリデータを指定できないためです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7987,6 +8269,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In fact, wxDialog contains a default command event handler for the wxID_OK button.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T153515Z">
+        <seg>実際のところ、wxDialog は wxID_OK ボタン用のデフォルトコマンドハンドラを持っています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In fact, identifiers do not need to be unique across your entire application as long they are unique within the particular context you're interested in, such as a frame and its children.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130517T171150Z">
@@ -8007,6 +8297,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130516T154809Z">
         <seg>実際には、デフォルトの振る舞いは使用しているツールキットや OS によってプラットフォーム依存のコード内に実装されることが多いため、おそらく基底クラスにはイベントハンドラが存在しないでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In fact, wxDialog contains a default command event handler for the wxID_OK button.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T145601Z">
+        <seg>実際のところ、wxDialog は wxID_OK ボタン用のデフォルトコマンドハンドラを持っています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8235,6 +8533,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this example, the text validator object provides the following functionality:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T143137Z">
+        <seg>この例ではテキストバリデータは次の機能を提供しています:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In this particular case UTF8 requires more space than UTF16 (3 bytes instead of 2).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T033430Z">
@@ -8379,6 +8685,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It also is able to intercept events generated by the control, providing filtering behaviour without the need to derive a new control class.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T144513Z">
+        <seg>また、コントロールの生成したイベントを捕まえることも可能なため、新しいコントロールクラスを継承することなく、コントロールの振る舞いをフィルタリングすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It assumes that bitmaps live in resources under Windows or OS2 and XPM files under all other platforms (for XPMs, the corresponding file must be included before this macro is used, of course, and the name of the bitmap should be the same as the resource name under Windows with _xpm suffix).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T154659Z">
@@ -8467,10 +8781,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It filters input characters so that only alphabetic characters are allowed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T143320Z">
+        <seg>入力文字をフィルタリングし、アルファベットしか入力できないようにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It focuses on handling charsets related problems.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T011704Z">
         <seg>文字コードに関連した問題について取り組む場合には。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It goes like this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T145613Z">
+        <seg>これは次のようになります:</seg>
       </tuv>
     </tu>
     <tu>
@@ -8571,6 +8901,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is then safe to end the dialog by calling wxDialog::EndModal (if modal) or wxDialog::Show (if modeless).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T153455Z">
+        <seg>そのときは wxDialog::EndModal (モーダルの場合) や wxDialog::Show (モードレスの場合) を呼んでダイアログを終了しても安全です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is then safe to end the dialog by calling EndModal (if modal) or Show (if modeless).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T150101Z">
+        <seg>そのときは EndModal (モーダルの場合) や Show (モードレスの場合) を呼んでダイアログを終了しても安全です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is used internally only and must not be called by the user.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T150520Z">
@@ -8639,6 +8985,46 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T011829Z">
         <seg>デバッグモードの場合 (プリプロセッサシンボル __WXDEBUG__ が定義されている場合) のみ処理を行い、リリースモードの場合 (それ以外の場合) では空文字列に展開されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It should also show an appropriate message if data was not valid.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T144356Z">
+        <seg>また、データが正しくない場合は適切なメッセージを表示する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It transfers the wxTextCtrl data back to this variable when the dialog is dismissed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150613Z">
+        <seg>ダイアログが閉じられたときに wxTextCtrl のデータをこの変数へ転送します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It transfers the value of g_data.m_string (a wxString variable) to the wxTextCtrl when the dialog is initialised.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150603Z">
+        <seg>ダイアログが初期化されたときに g_data.m_string (wxString 変数) の値を wxTextCtrl へ転送します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It transfers the value of g_data.m_string (a wxString variable) to the wxTextCtrl when the dialog is initialised.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T143227Z">
+        <seg>ダイアログが初期化されたときに g_data.m_string (wxString 変数) の値を wxTextCtrl へ転送します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It transfers the wxTextCtrl data back to this variable when the dialog is dismissed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T143254Z">
+        <seg>ダイアログが閉じられたときに wxTextCtrl のデータをこの変数へ転送します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9045,6 +9431,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Non-alpha characters are filtered out.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150531Z">
+        <seg>非アルファベット文字を除外します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>None (stock cursors only).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T142336Z">
@@ -9129,6 +9523,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T040409Z">
         <seg>ここでは this ポインタを指定する必要があることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that any wxWindow may have a validator; using the wxWS_EX_VALIDATE_RECURSIVELY style (see wxWindow extended styles) you can also implement recursive validation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150913Z">
+        <seg>どの wxWindow もバリデータを持つことに注意してください; wxWS_EX_VALIDATE_RECURSIVELY スタイル (wxWindow の拡張スタイルを参照) を使用すると再帰バリデータを実装することも可能です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10103,6 +10505,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Returns true if the dialog box is modal, false otherwise.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T153543Z">
+        <seg>ダイアログボックスがモーダルの場合に true を、それ以外の場合は false を返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Returns true if the window is enabled, i.e.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130619T144515Z">
@@ -10155,6 +10565,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T004717Z">
         <seg>検索</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Secondly, the application should call wxWindow::TransferDataFromWindow and return if this failed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T150016Z">
+        <seg>次に wxWindow::TransferDataFromWindow が呼ばれます。この関数が失敗した場合は呼び出し元へ戻ります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Secondly, the application should call wxWindow::TransferDataFromWindow and return if this failed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T153412Z">
+        <seg>次に wxWindow::TransferDataFromWindow が呼ばれます。この関数が失敗した場合は呼び出し元へ戻ります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10301,10 +10727,26 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Sends an wxEVT_INIT_DIALOG event, whose handler usually transfers data to the dialog via validators...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T152739Z">
+        <seg>wxEVT_INIT_DIALOG イベントを送信します。通常、このイベントのハンドラはバリデータを通してダイアログへデータを転送します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Sequence of Events During Window Deletion</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130615T033847Z">
         <seg>ウィンドウ削除時における一連のイベント</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SetReturnCode(wxID_OK);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T150141Z">
+        <seg>SetReturnCode(wxID_OK);</seg>
       </tuv>
     </tu>
     <tu>
@@ -10387,6 +10829,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130514T150800Z">
         <seg>次のイベントハンドラへのポインタを設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sets the return code for this window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T153558Z">
+        <seg>このウィンドウの戻り値を設定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10587,6 +11037,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130614T143008Z">
         <seg>これまでは 'マネージド' ウィンドウ、つまりフレームやダイアログについて話してきました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So if using validators and a normal OK button, you may not even need to write any code for handling dialog dismissal.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T150226Z">
+        <seg>そのため、バリデータと通常の OK ボタンを使用している場合、ダイアログの終了処理を行なうためのコードを書く必要すらないでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10863,6 +11321,38 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The wxValidator::TransferFromWindow member function should transfer the data from the control to the validator or associated C++ variable.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T144536Z">
+        <seg>wxValidator::TransferFromWindow 関数はコントロールからバリデータや関連する C++ 変数へデータを転送する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The wxValidator::TransferToWindow member function should transfer the data from the validator or associated C++ variable to the control.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T144508Z">
+        <seg>wxValidator::TransferToWindow 関数はバリデータや関連する C++ 変数からコントロールへデータを転送する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The wxValidator::Validate member function should return true if the data in the control (not the C++ variable) is valid.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T151304Z">
+        <seg>wxValidator::Validate 関数はコントロール (C++ 変数ではありません) のデータが正しい場合に true を返却する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The wxValidator::Validate member function should return true if the data in the control (not the C++ variable) is valid.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T144337Z">
+        <seg>wxValidator::Validate 関数はコントロール (C++ 変数ではありません) のデータが正しい場合に true を返却する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The UTF or Unicode Transformation Formats are algorithms mapping the Unicode code points to code unit sequences.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T030604Z">
@@ -11063,6 +11553,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The aim of the validator concept is to make dialogs very much easier to write.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T142423Z">
+        <seg>バリデータという概念の目的はダイアログをより簡単にコーディングできるようにすることです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The alternative is to explicitly delete child frames in the top-level frame's wxCloseEvent handler.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130527T160758Z">
@@ -11107,6 +11605,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T145740Z">
         <seg>ボックスサイザーの基本的な考え方は、ほとんどの場合ウィンドウは とても単純で基本的な配置、よくあるのは行や列、またはその階層内にレイアウトされるという考えです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The button handler should return immediately if validation failed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T145920Z">
+        <seg>ボタンハンドラは検証に失敗した場合に直ちに呼び出し元へ戻る必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11179,6 +11685,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130613T155144Z">
         <seg>wxFrame のデフォルトの終了ハンドラは Destroy() を使用してフレームを破棄します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The default handler for the wxEVT_INIT_DIALOG event is defined in the wxWindow class to simply call the function wxWindow::TransferDataToWindow.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T154534Z">
+        <seg>wxEVT_INIT_DIALOG イベントのデフォルトのイベントハンドラが wxWindow クラスの中で定義されており、これは単純に wxWindow::TransferDataToWindow 関数を呼ぶだけです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The default handler for the wxEVT_INIT_DIALOG event is defined in the wxWindow class to simply call the function wxWindow::TransferDataToWindow.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T145444Z">
+        <seg>wxEVT_INIT_DIALOG イベントのデフォルトのイベントハンドラが wxWindow クラスの中で定義されており、これは単純に wxWindow::TransferDataToWindow 関数を呼ぶだけです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11967,6 +12489,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The second type of validation is performed when the dialog is about to be dismissed, so if the default string contained invalid characters already, a dialog box is shown giving the error, and the dialog is not dismissed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T154654Z">
+        <seg>ふたつ目の検証はダイアログが閉じられるときに行われます。そのため、デフォルト文字列がすでに不正な文字を含んでいる場合、エラーメッセージが表示され、ダイアログボックスが閉じられることはありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The short answer is that they're all very good generic mechanisms, but are not really adapted for wxWidgets, while the log classes are.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T013853Z">
@@ -12083,6 +12613,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130619T144018Z">
         <seg>スイッチやオプションのよくある、短い名前。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The validation and filtering of input is accomplished in two ways.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T144749Z">
+        <seg>入力の検証とフィルタリングは 2 通りの方法で行われます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12359,6 +12897,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There should be a copy constructor, and a wxValidator::Clone function which returns a copy of the validator object.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T144637Z">
+        <seg>コピーコンストラクタと、バリデータオブジェクトのコピーを返却する wxValidator::Clone 関数を用意する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Therefore, wxStreams have been added to wxWidgets so that applications can reliably compile and run on all supported platforms without dependence on a particular release of libg++.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130620T135111Z">
@@ -12387,6 +12933,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130620T140134Z">
         <seg>これらのクラスは実際には "IO" クラスで実装されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These handlers will capture events before the control itself does (see How Events are Processed).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T155039Z">
+        <seg>これらのハンドラはコントロールでイベント処理が行われる前にイベントを捕まえます。(イベント処理の仕組み を参照) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These handlers will capture events before the control itself does.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T144925Z">
+        <seg>これらのハンドラはコントロールでイベント処理が行われる前にイベントを捕まえます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12975,6 +13537,22 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This function finds all the validators in the window's children and calls the wxValidator::TransferToWindow function for each.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T152859Z">
+        <seg>この関数は子コントロールのすべてのバリデータを探し、それぞれの TransferToWindow を呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This function finds all the validators in the window's children and calls the TransferToWindow function for each.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T145524Z">
+        <seg>この関数は子コントロールのすべてのバリデータを探し、それぞれの TransferToWindow を呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This function simply generates a wxCloseEvent whose handler usually tries to close the window...</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130528T153025Z">
@@ -12995,6 +13573,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130614T144235Z">
         <seg>そして、これは EVT_CLOSE イベントを生成します: wxCloseEvent 参照。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This in turn sends an initialisation event to the dialog.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T145354Z">
+        <seg>そして、これは初期化イベントをダイアログへ送信します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13131,6 +13717,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130514T155015Z">
         <seg>これは wxDEFINE_EVENT() マクロによって行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is important because validators are passed by reference to window constructors, and must therefore be cloned internally.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T144757Z">
+        <seg>バリデータはウィンドウのコンストラクタへ参照渡しされるため、内部的に複製しなければならないという点でこれは重要です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13327,6 +13921,30 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This overridable function is called when the value associated with the validator must be transferred ...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T151352Z">
+        <seg>この仮想関数はバリデータに関連する値をウィンドウへ転送しなければならないときに呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This overridable function is called when the value in the associated window must be validated...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T151248Z">
+        <seg>この仮想関数はウィンドウに関連する値を検証しなければならないときに呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This overridable function is called when the value in the window must be transferred to the validator...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T151439Z">
+        <seg>この仮想関数はウィンドウの値をバリデータへ転送しなければならないときに呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This overview briefly describes what the config classes are and what they are for.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130610T145624Z">
@@ -13475,6 +14093,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T082337Z">
         <seg>したがって、プログラムソース内で (7 ビット文字の代わりに) 8 ビット文字列を直接しない ことが重要であり、ワイド文字列を使用するか、代わりに以下のように書いてください:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thus, data is transferred from C++ variables to the dialog just as the dialog is being shown.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T145628Z">
+        <seg>そのため、ダイアログが表示されるそのときに C++ 変数からダイアログへデータが転送されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13755,6 +14381,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T131901Z">
         <seg>トピックスの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Transfers values from child controls to data areas specified by their validators.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T152953Z">
+        <seg>子コントロールからバリデータで指定されたデータ領域へ値を転送します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Transfers values to child controls from data areas specified by their validators.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T152820Z">
+        <seg>バリデータで指定されたデータ領域から子コントロールへ値を転送します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14383,6 +15025,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Validates the current values of the child controls using their validators.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T152921Z">
+        <seg>バリデータを使用して子コントロールの現在の値を検証します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Validation of data in controls is covered in Validator overview.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130531T150753Z">
@@ -14395,6 +15045,30 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130531T154630Z">
         <seg>コントロールのバリデーションは wxValidator の概要 で触れています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Validator basic concepts</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150345Z">
+        <seg>バリデータの基本的な概念</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Validator for text entries used for floating point numbers entry.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150328Z">
+        <seg>浮動小数点を入力するテキスト項目に使用するバリデータ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Validator for text entries used for integer entry.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150249Z">
+        <seg>整数を入力するテキスト項目に使用するバリデータ。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14551,6 +15225,30 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When a wxDialog::Show is called (for a modeless dialog) or wxDialog::ShowModal is called (for a modal dialog), the function wxWindow::InitDialog is automatically called.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T145331Z">
+        <seg>wxDialog::Show (モードレスダイアログ用) または wxDialog::ShowModal (モーダルダイアログ用) が呼ばれると自動的に wxWindow::InitDialog が呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When a character is input, wxTextValidator checks the character against the allowed filter flag (wxFILTER_ALPHA in this case).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150632Z">
+        <seg>文字が入力されたときに wxTextValidator はその文字がフィルタフラグ (この場合は wxFILTER_ALPHA) に合致するか確認します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When a character is input, wxTextValidator checks the character against the allowed filter flag (wxFILTER_ALPHA in this case).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T143516Z">
+        <seg>文字が入力されたときに wxTextValidator はその文字がフィルタフラグ (この場合は wxFILTER_ALPHA) に合致するか確認します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When an event is received from the windowing system, wxWidgets calls wxEvtHandler::ProcessEvent() on the first event handler object belonging to the window generating the event.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T064141Z">
@@ -14579,6 +15277,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T081654Z">
         <seg>より複雑なコントロールのときには特定のイベントクラスが使用されます。例えば、wxTreeCtrl から発生するイベントには wxTreeEvent が使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the user clicks on a button, for example the OK button, the application should first call wxWindow::Validate, which returns false if any of the child window validators failed to validate the window data.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T153402Z">
+        <seg>OK ボタンなど、ユーザがボタンを押下すると最初に wxWindow::Validate が呼ばれます。この関数は子ウィンドウのいずれかでウィンドウデータの検証に失敗した場合に false を返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the user clicks on a button, for example the OK button, the application should first call wxWindow::Validate, which returns false if any of the child window validators failed to validate the window data.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T145852Z">
+        <seg>OK ボタンなど、ユーザがボタンを押下すると最初に wxWindow::Validate が呼ばれます。この関数は子ウィンドウのいずれかでウィンドウデータの検証に失敗した場合に false を返却します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15031,6 +15745,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can optionally define event handlers for the validator, to implement filtering.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T144857Z">
+        <seg>イベントのフィルタリングを行なうためにバリデータ用のイベントハンドラを任意に定義することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can set WXPREFIX if you are for example distributing a binary version of an application and you don't know in advance where it will be installed.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130523T155354Z">
@@ -15059,6 +15781,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130606T153026Z">
         <seg>wxDialog::AddMainButtonId を使用することで非スクロール領域にする標準ボタンとして扱う識別子を追加することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can use a stock validator, such as wxTextValidator (which does text control data transfer, validation and filtering) and wxGenericValidator (which does data transfer for a range of controls); or you can write your own.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T143021Z">
+        <seg>wxTextValidator (テキストデータの転送、検証、フィルタリングを行います) や wxGenericValidator (複数のコントロールへデータを転送します) といった既存のバリデータを使用することもできますし、自分で作成することもできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15527,6 +16257,22 @@ public:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T030138Z">
         <seg>if ( !file.Open("bar") )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if ( IsModal() )</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T150139Z">
+        <seg>if ( IsModal() )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if ( Validate() &amp;&amp; TransferDataFromWindow() )</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T150138Z">
+        <seg>if ( Validate() &amp;&amp; TransferDataFromWindow() )</seg>
       </tuv>
     </tu>
     <tu>
@@ -16010,6 +16756,14 @@ public:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>this-&gt;Show(false);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T153616Z">
+        <seg>this-&gt;Show(false);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>this-&gt;Destroy();</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130613T160340Z">
@@ -16023,6 +16777,14 @@ public:</seg>
       <tuv lang="JA" changeid="owner" changedate="20130614T140545Z">
         <seg>this-&gt;Destroy();    // 拒否不可の場合、とにかくウィンドウを破棄する
 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>this-&gt;Show(false);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T150141Z">
+        <seg>this-&gt;Show(false);</seg>
       </tuv>
     </tu>
     <tu>
@@ -16163,6 +16925,16 @@ protected:</seg>
         <seg>void OnSize(wxSizeEvent&amp; event);
 
 protected:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>void wxDialog::OnOK(wxCommandEvent&amp; event)
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T150136Z">
+        <seg>void wxDialog::OnOK(wxCommandEvent&amp; event)
+{</seg>
       </tuv>
     </tu>
     <tu>
@@ -16779,6 +17551,14 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxGenericValidator performs data transfer (but not validation or filtering) for many type of controls...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150211Z">
+        <seg>wxGenericValidator は様々なコントロールへデータを転送します。(しかし、検証やフィルタリングは行いません)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxGridSizer</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130520T152805Z">
@@ -17187,6 +17967,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxPoint(10, 10), wxSize(100, 80), 0,</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T143053Z">
+        <seg>wxPoint(10, 10), wxSize(100, 80), 0,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxPrintf("Hello, %s", s)</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T124736Z">
@@ -17513,6 +18301,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxTextCtrl *txt1 = new wxTextCtrl(this, -1, wxT(""),</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T143052Z">
+        <seg>wxTextCtrl *txt1 = new wxTextCtrl(this, -1, wxT(""),</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxTextFile is a general purpose class for working with small text files on line by line basis.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T064827Z">
@@ -17533,6 +18329,22 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130622T132512Z">
         <seg>wxTextOutputStream</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxTextValidator validates text controls, providing a variety of filtering behaviours.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150115Z">
+        <seg>wxTextValidator はテキストコントロールの検証と振る舞いの様々なフィルタリングを行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxTextValidator(wxFILTER_ALPHA, &amp;g_data.m_string));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T143054Z">
+        <seg>wxTextValidator(wxFILTER_ALPHA, &amp;g_data.m_string));</seg>
       </tuv>
     </tu>
     <tu>
@@ -17593,10 +18405,26 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxValidator Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150001Z">
+        <seg>wxValidator の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxValidator is the base class for a family of validator classes that mediate between a class of contr...</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T135218Z">
         <seg>wxValidator はコントロールクラスとアプリケーションデータを仲介する、バリデータクラスファミリーの基底クラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxValidator overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130623T142246Z">
+        <seg>wxValidator の概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -17837,6 +18665,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T090608Z">
         <seg>wxWidgets: wxWidgets: wxLog クラスの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxWidgets: wxWidgets: wxValidator Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130624T150018Z">
+        <seg>wxWidgets: wxWidgets: wxValidator の概要</seg>
       </tuv>
     </tu>
     <tu>
