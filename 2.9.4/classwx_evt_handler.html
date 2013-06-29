@@ -1046,10 +1046,10 @@ template&lt;typename EventTag , typename Functor &gt;  </div>
 
                 <a class="code" href="interface_2wx_2app_8h.html#a01fd2cb0a8fbaade87800e71a50e855d" title="The global pointer to the singleton wxApp object.">wxTheApp</a>-&gt;<a class="code" href="classwx_evt_handler.html#acffd03bf407a856166ea71ef0318b59a" title="あとで処理するためにイベントをキューに追加します。">QueueEvent</a>( evt );
             }
-</pre></div><p>Note that you can use <a class="el" href="classwx_thread_event.html" title="This class adds some simple functionality to wxEvent to facilitate inter-thread communication.">wxThreadEvent</a> instead of <a class="el" href="classwx_command_event.html" title="このイベントクラスは様々な単純コントロールから送信されるコマンドイベントに関する情報を含んでいます。">wxCommandEvent</a> to avoid this problem:  </p>
+</pre></div><p>Note that you can use <a class="el" href="classwx_thread_event.html" title="このクラスはスレッド間通信を容易にするための単純な機能を wxEvent へ追加します。">wxThreadEvent</a> instead of <a class="el" href="classwx_command_event.html" title="このイベントクラスは様々な単純コントロールから送信されるコマンドイベントに関する情報を含んでいます。">wxCommandEvent</a> to avoid this problem:  </p>
 <div class="fragment"><pre class="fragment">            <span class="keywordtype">void</span> FunctionInAWorkerThread(<span class="keyword">const</span> <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>&amp; str)
             {
-                <a class="code" href="classwx_thread_event.html" title="This class adds some simple functionality to wxEvent to facilitate inter-thread communication.">wxThreadEvent</a> evt;
+                <a class="code" href="classwx_thread_event.html" title="このクラスはスレッド間通信を容易にするための単純な機能を wxEvent へ追加します。">wxThreadEvent</a> evt;
                 evt-&gt;<a class="code" href="classwx_thread_event.html#a72092085fc4e0837d8e56666cb45f4d3" title="Sets the string value.">SetString</a>(str);
 
                 <span class="comment">// wxThreadEvent::Clone() makes sure that the internal wxString</span>

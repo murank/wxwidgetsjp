@@ -1,63 +1,18 @@
 <HTML>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>Multithreading overview</title></head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>マルチスレッドの概要</title></head>
 
 <BODY BGCOLOR=#FFFFFF>
 <A NAME="wxthreadoverview"></A><CENTER>
 <A HREF="wx_contents.html"><img align=center src="contents.gif" BORDER=0 ALT="Contents"></A> <A HREF="wx_overviews.html#overviews"><img align=center src="up.gif" BORDER=0 ALT="Up"></A> <A HREF="wx_unixprinting.html#unixprinting"><img align=center src="back.gif" BORDER=0 ALT="Previous"></A> <A HREF="wx_wxdndoverview.html#wxdndoverview"><img align=center src="forward.gif" BORDER=0 ALT="Next"></A> </CENTER><HR>
 
-<H2>Multithreading overview</H2>
+<H2>マルチスレッドの概要</H2>
 <P>
-
-Classes: <A HREF="wx_wxthread.html#wxthread">wxThread</A>, <A HREF="wx_wxmutex.html#wxmutex">wxMutex</A>, 
-<A HREF="wx_wxcriticalsection.html#wxcriticalsection">wxCriticalSection</A>, 
-<A HREF="wx_wxcondition.html#wxcondition">wxCondition</A><P>
-
-wxWidgets provides a complete set of classes encapsulating objects necessary in
-multithreaded (MT) programs: the <A HREF="wx_wxthread.html#wxthread">thread</A> class itself and different
-synchronization objects: <A HREF="wx_wxmutex.html#wxmutex">mutexes</A> and 
-<A HREF="wx_wxcriticalsection.html#wxcriticalsection">critical sections</A> with 
-<A HREF="wx_wxcondition.html#wxcondition">conditions</A>. The thread API in wxWidgets resembles to
-POSIX1.c threads API (a.k.a. pthreads), although several functions have
-different names and some features inspired by Win32 thread API are there as
-well.<P>
-
-These classes will hopefully make writing MT programs easier and they also
-provide some extra error checking (compared to the native (be it Win32 or Posix)
-thread API), however it is still a non-trivial undertaking especially for large
-projects. Before starting an MT application (or starting to add MT features to
-an existing one) it is worth asking oneself if there is no easier and safer way
-to implement the same functionality. Of course, in some situations threads
-really make sense (classical example is a server application which launches a
-new thread for each new client), but in others it might be a very poor choice
-(example: launching a separate thread when doing a long computation to show a
-progress dialog). Other implementation choices are available: for the progress
-dialog example it is far better to do the calculations in the 
-<A HREF="wx_wxidleevent.html#wxidleevent">idle handler</A> or even simply do everything at once
-but call <A HREF="wx_wxwindow.html#wxwindowupdate">wxWindow::Update()</A> periodically to update
-the screen.<P>
-
-If you do decide to use threads in your application, it is strongly recommended
-that no more than one thread calls GUI functions. The thread sample shows that
-it <I>is</I> possible for many different threads to call GUI functions at once
-(all the threads created in the sample access GUI), but it is a very poor design
-choice for anything except an example. The design which uses one GUI thread and
-several worker threads which communicate with the main one using events is much
-more robust and will undoubtedly save you countless problems (example: under
-Win32 a thread can only access GDI objects such as pens, brushes, &amp;c created by
-itself and not by the other threads).<P>
-
-For communication between secondary threads and the main thread, you may use 
-<A HREF="wx_wxevthandler.html#wxevthandleraddpendingevent">wxEvtHandler::AddPendingEvent</A>
-or its short version <A HREF="wx_miscellany.html#wxpostevent">wxPostEvent</A>. These functions
-have a thread-safe implementation so that they can be used as they are for
-sending events from one thread to another. However there is no built in method
-to send messages to the worker threads and you will need to use the available
-synchronization classes to implement the solution which suits your needs
-yourself. In particular, please note that it is <EM>not</EM> enough to derive
-your class from <A HREF="wx_wxthread.html#wxthread">wxThread</A> and 
-<A HREF="wx_wxevthandler.html#wxevthandler">wxEvtHandler</A> to send messages to it: in fact, this does
-<EM>not</EM> work at all.<P>
+クラス: <A HREF="wx_wxthread.html#wxthread">wxThread</A>, <A HREF="wx_wxmutex.html#wxmutex">wxMutex</A>, <A HREF="wx_wxcriticalsection.html#wxcriticalsection">wxCriticalSection</A>, <A HREF="wx_wxcondition.html#wxcondition">wxCondition</A><P>
+wxWidgets はマルチスレッド (MT) プログラムで必要となるオブジェクトをカプセル化したクラスの一式を提供しています: <A HREF="wx_wxthread.html#wxthread">thread</A> クラス自身と、他の同期オブジェクトである <A HREF="wx_wxmutex.html#wxmutex">ミューテックス</A>、<A HREF="wx_wxcriticalsection.html#wxcriticalsection">クリティカルセクション</A>、<A HREF="wx_wxcondition.html#wxcondition">コンディション</A> が含まれます。いくつかの関数の名前が異なりますし、Win32 スレッド API にインスピレーションを受けた機能もありますが、wxWidgets のスレッド API は (pthread としても知られる) POSIX1.c のスレッド API によく似ています。<P>
+これらのクラスによって、おそらくマルチスレッドプログラムの作成がより簡単になる上に、(ネイティブ (Win32 または Posix) スレッド API と比較して) いくつかの追加エラーチェックを行なってくれます。ただし、依然としてこれは簡単な仕事ではありませんし、巨大プロジェクトでは特にそうだと思います。マルチスレッドアプリケーションの開発を始める前に (もしくは既存のアプリケーションにマルチスレッド機能を追加する前に)、同じ機能を実装するためのより簡単で安全な方法がないか自問するだけの価値はあります。もちろん、いくつかの状況ではスレッドは本当に意味がありますが (古典的な例ではサーバアプリケーションでクライアントごとに新しいスレッドを実行することが挙げられます)、それ以外の場合ではお粗末な選択になるでしょう。(例: 長い計算をするときにプログレスダイアログを表示するために別のスレッドを実行する) 他の実装方法を選択することは可能です: プログレスダイアログの例で言うと、<A HREF="wx_wxidleevent.html#wxidleevent">アイドルハンドラ</A> で計算を行なうか、もしくは単純に一度に計算を行い、画面を更新するために定期的に <A HREF="wx_wxwindow.html#wxwindowupdate">wxWindow::Update()</A> を呼び出す方がずっと良い方法です。<P>
+アプリケーションでスレッドを使用すると決めた場合、複数のスレッドで GUI 関数を呼び出さないことを強く推奨します。スレッドのサンプルは GUI 関数を同時に異なるスレッドから呼び出すことが <I>可能</I> なことを示していますが (サンプル中のすべてのスレッドから GUI にアクセスしています)、サンプル以外のデザインの選択肢はほとんどありません。ひとつの GUI スレッドと複数のワーカースレッドを使用し、イベントを使用してメインスレッドと通信するデザインはよりロバストで、無数の問題が起こるのを間違いなく防いでくれます。(例: Win32 では自スレッドで作成した GDI オブジェクト (ペンやブラシなど) にだけアクセスでき、他スレッドで作成したオブジェクトにはアクセスできません)<P>
+メインスレッドとサブスレッドとの通信には <A HREF="wx_wxevthandler.html#wxevthandleraddpendingevent">wxEvtHandler::AddPendingEvent</A> か、もしくはその短縮版である <A HREF="wx_miscellany.html#wxpostevent">wxPostEvent</A> を使用します。これらの関数はスレッドセーフに実装されているため、あるスレッドから他のスレッドへイベントを送信するのに使用できます。しかし、ワーカースレッドへメッセージを送信するためのビルトイン関数は存在しないため、要件にあった解決方法を実装するために既存の同期オブジェクトを使用する必要があります。特に、メッセージを送信するために <A HREF="wx_wxthread.html#wxthread">wxThread</A> クラスと <A HREF="wx_wxevthandler.html#wxevthandler">wxEvtHandler</A> を継承するだけでは <EM>不十分</EM> なことに注意してください: 実際のところ、これはまったく動作 <EM>しません</EM>。<P>
 
 
 </FONT><script>

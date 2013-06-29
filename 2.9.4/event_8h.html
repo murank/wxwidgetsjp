@@ -192,7 +192,7 @@ function toggleVisibility(linkObj) {
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_scroll_event.html">wxScrollEvent</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A scroll event holds information about events sent from stand-alone scrollbars (see <a class="el" href="classwx_scroll_bar.html" title="A wxScrollBar is a control that represents a horizontal or vertical scrollbar.">wxScrollBar</a>) and sliders (see <a class="el" href="classwx_slider.html" title="A slider is a control with a handle which can be pulled back and forth to change the value...">wxSlider</a>).  <a href="classwx_scroll_event.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_idle_event.html">wxIdleEvent</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This class is used for idle events, which are generated when the system becomes idle.  <a href="classwx_idle_event.html#details">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">このクラスはアイドルイベントに使用されます。アイドルイベントはシステムがアイドルになったときに生成されます。le. <a href="classwx_idle_event.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_init_dialog_event.html">wxInitDialogEvent</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A <a class="el" href="classwx_init_dialog_event.html" title="A wxInitDialogEvent is sent as a dialog or panel is being initialised.">wxInitDialogEvent</a> is sent as a dialog or panel is being initialised.  <a href="classwx_init_dialog_event.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window_destroy_event.html">wxWindowDestroyEvent</a></td></tr>
@@ -458,7 +458,7 @@ Variables</h2></td></tr>
 <div class="memdoc">
 
 <p>The different categories for a <a class="el" href="classwx_event.html" title="wxEvent はコールバック関数かメンバ関数に渡されるイベントの情報を格納した構造体です。">wxEvent</a>; see <a class="el" href="classwx_event.html#a525e5c576e64090af493cb81db2da59b" title="Returns a generic category for this event.">wxEvent::GetEventCategory</a>.  </p>
-<dl class="note"><dt><b>注:</b></dt><dd>They are used as OR-combinable flags by <a class="el" href="classwx_event_loop_base.html#afb5ed08160c7e6b1364170af6115af55" title="Works like Yield() with onlyIfNeeded == true, except that it allows the caller to specify a mask of t...">wxEventLoopBase::YieldFor</a>.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>They are used as OR-combinable flags by <a class="el" href="classwx_event_loop_base.html#afb5ed08160c7e6b1364170af6115af55" title='onlyIfNeeded == true の場合の Yield() と同じように動作しますが、呼び出し元が wxEventCategory の値のマスクを指定できる点が異なります。このマスクではどのイベントを処理するか、もしくは "遅延させる" かを指定します。'>wxEventLoopBase::YieldFor</a>.  </dd></dl>
 <dl><dt><b>Enumerator:  </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><!-- doxytag: member="wxEVT_CATEGORY_UI" ref="a685cc8dc6176be3ab0d40e3f72719e7da87c188f7f7ce0ffcf7bf6632d694b997" args="" --><em><a class="anchor" id="a685cc8dc6176be3ab0d40e3f72719e7da87c188f7f7ce0ffcf7bf6632d694b997"></a>wxEVT_CATEGORY_UI</em>&nbsp;</td><td>
 <p>This is the category for those events which are generated to update the appearance of the GUI but which (usually) do not comport data processing, i.e.  </p>
@@ -476,10 +476,10 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td valign="top"><!-- doxytag: member="wxEVT_CATEGORY_THREAD" ref="a685cc8dc6176be3ab0d40e3f72719e7da9a1ca50743e1529454642b62c8bb4fde" args="" --><em><a class="anchor" id="a685cc8dc6176be3ab0d40e3f72719e7da9a1ca50743e1529454642b62c8bb4fde"></a>wxEVT_CATEGORY_THREAD</em>&nbsp;</td><td>
 <p>This category is for any event used to send notifications from the secondary threads to the main one or in general for notifications among different threads (which may or may not be user-generated).  </p>
-<p>See e.g. <a class="el" href="classwx_thread_event.html" title="This class adds some simple functionality to wxEvent to facilitate inter-thread communication.">wxThreadEvent</a>.  </p>
+<p>See e.g. <a class="el" href="classwx_thread_event.html" title="このクラスはスレッド間通信を容易にするための単純な機能を wxEvent へ追加します。">wxThreadEvent</a>.  </p>
 </td></tr>
 <tr><td valign="top"><!-- doxytag: member="wxEVT_CATEGORY_ALL" ref="a685cc8dc6176be3ab0d40e3f72719e7da8503dcfaf5c6437b3c5c4391ca8b66eb" args="" --><em><a class="anchor" id="a685cc8dc6176be3ab0d40e3f72719e7da8503dcfaf5c6437b3c5c4391ca8b66eb"></a>wxEVT_CATEGORY_ALL</em>&nbsp;</td><td>
-<p>This mask is used in <a class="el" href="classwx_event_loop_base.html#afb5ed08160c7e6b1364170af6115af55" title="Works like Yield() with onlyIfNeeded == true, except that it allows the caller to specify a mask of t...">wxEventLoopBase::YieldFor</a> to specify that all event categories should be processed.  </p>
+<p>This mask is used in <a class="el" href="classwx_event_loop_base.html#afb5ed08160c7e6b1364170af6115af55" title='onlyIfNeeded == true の場合の Yield() と同じように動作しますが、呼び出し元が wxEventCategory の値のマスクを指定できる点が異なります。このマスクではどのイベントを処理するか、もしくは "遅延させる" かを指定します。'>wxEventLoopBase::YieldFor</a> to specify that all event categories should be processed.  </p>
 </td></tr>
 </table>
 </dd>

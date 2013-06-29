@@ -182,7 +182,7 @@ function toggleVisibility(linkObj) {
 <li><span class="event">EVT_ERASE_BACKGROUND(func)</span>:<div class="eventDesc">  Process a <code>wxEVT_ERASE_BACKGROUND</code> event. See <a class="el" href="classwx_erase_event.html" title="An erase event is sent when a window's background needs to be repainted.">wxEraseEvent</a>.  </div></li>
 <li><span class="event">EVT_SET_FOCUS(func)</span>:<div class="eventDesc">  Process a <code>wxEVT_SET_FOCUS</code> event. See <a class="el" href="classwx_focus_event.html" title="A focus event is sent when a window's focus changes.">wxFocusEvent</a>.  </div></li>
 <li><span class="event">EVT_KILL_FOCUS(func)</span>:<div class="eventDesc">  Process a <code>wxEVT_KILL_FOCUS</code> event. See <a class="el" href="classwx_focus_event.html" title="A focus event is sent when a window's focus changes.">wxFocusEvent</a>.  </div></li>
-<li><span class="event">EVT_IDLE(func)</span>:<div class="eventDesc">  Process a <code>wxEVT_IDLE</code> event. See <a class="el" href="classwx_idle_event.html" title="This class is used for idle events, which are generated when the system becomes idle.">wxIdleEvent</a>.  </div></li>
+<li><span class="event">EVT_IDLE(func)</span>:<div class="eventDesc">  Process a <code>wxEVT_IDLE</code> event. See <a class="el" href="classwx_idle_event.html" title="このクラスはアイドルイベントに使用されます。アイドルイベントはシステムがアイドルになったときに生成されます。le.">wxIdleEvent</a>.  </div></li>
 <li><span class="event">EVT_JOY_*(func)</span>:<div class="eventDesc">  Processes joystick events. See <a class="el" href="classwx_joystick_event.html" title="This event class contains information about joystick events, particularly events received by windows...">wxJoystickEvent</a>.  </div></li>
 <li><span class="event">EVT_KEY_DOWN(func)</span>:<div class="eventDesc">  Process a <code>wxEVT_KEY_DOWN</code> event (any key has been pressed). See <a class="el" href="classwx_key_event.html" title="このイベントクラスはキーの押下イベントや解放イベントに関する情報を含んでいます。">wxKeyEvent</a>.  </div></li>
 <li><span class="event">EVT_KEY_UP(func)</span>:<div class="eventDesc">  Process a <code>wxEVT_KEY_UP</code> event (any key has been released). See <a class="el" href="classwx_key_event.html" title="このイベントクラスはキーの押下イベントや解放イベントに関する情報を含んでいます。">wxKeyEvent</a>.  </div></li>
@@ -5135,7 +5135,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Causes this window, and all of its children recursively (except under wxGTK1 where this is not implemented), to be repainted.  </p>
-<p>Note that repainting doesn't happen immediately but only during the next event loop iteration, if you need to update the window immediately you should use <a class="el" href="classwx_window.html#abaf28f1a075fd1b10f761a8febe597ec" title="Calling this method immediately repaints the invalidated area of the window and all of its children r...">Update()</a> instead.</p>
+<p>Note that repainting doesn't happen immediately but only during the next event loop iteration, if you need to update the window immediately you should use <a class="el" href="classwx_window.html#abaf28f1a075fd1b10f761a8febe597ec" title="この関数を呼び出すと直ちにウィンドウとその子コントロールの無効領域を再帰的に再描画します。(通常、これは制御フローがイベントループに戻ってきたときにだけ行われます)">Update()</a> instead.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">eraseBackground</td><td>If <span class="literal">true</span>, the background will be erased.  </td></tr>

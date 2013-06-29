@@ -8,17 +8,7 @@
 
 <H2>wxIdleEvent</H2>
 <P>
-
-This class is used for idle events, which are generated when the system becomes
-idle. Note that, unless you do something specifically, the idle events are not
-sent if the system remains idle once it has become it, e.g. only a single idle
-event will be generated until something else resulting in more normal events
-happens and only then is the next idle event sent again. If you need to ensure
-a continuous stream of idle events, you can either use 
-<A HREF="wx_wxidleevent.html#wxidleeventrequestmore">RequestMore</A> method in your handler or call 
-<A HREF="wx_appinifunctions.html#wxwakeupidle">wxWakeUpIdle</A> periodically (for example from timer
-event), but note that both of these approaches (and especially the first one)
-increase the system load and so should be avoided if possible.<P>
+このクラスはアイドルイベントに使用されます。アイドルイベントはシステムがアイドルになったときに生成されます。le. Note that, unless you do something specifically, the idle events are not sent if the system remains idle once it has become it, e.g. only a single idle event will be generated until something else resulting in more normal events happens and only then is the next idle event sent again. If you need to ensure a continuous stream of idle events, you can either use <A HREF="wx_wxidleevent.html#wxidleeventrequestmore">RequestMore</A> method in your handler or call <A HREF="wx_appinifunctions.html#wxwakeupidle">wxWakeUpIdle</A> periodically (for example from timer event), but note that both of these approaches (and especially the first one) increase the system load and so should be avoided if possible.<P>
 
 By default, idle events are sent to all windows (and also 
 <A HREF="wx_wxapp.html#wxapp">wxApp</A>, as usual). If this is causing a significant

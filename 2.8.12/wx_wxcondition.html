@@ -8,10 +8,7 @@
 
 <H2>wxCondition</H2>
 <P>
-
-wxCondition variables correspond to pthread conditions or to Win32 event
-objects. They may be used in a multithreaded application to wait until the
-given condition becomes true which happens when the condition becomes signaled.<P>
+wxCondition 変数は pthread のコンディションや Win32 のイベントオブジェクトに相当します。They may be used in a multithreaded application to wait until the given condition becomes true which happens when the condition becomes signaled.<P>
 
 For example, if a worker thread is doing some long task and another thread has
 to wait until it is finished, the latter thread will wait on the condition

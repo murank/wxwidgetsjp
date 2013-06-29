@@ -360,7 +360,7 @@ Common Dialogs</h2>
 <li><a class="el" href="classwx_page_setup_dialog.html" title="This class represents the page setup common dialog.">wxPageSetupDialog</a>: Standard page setup dialog  </li>
 <li><a class="el" href="classwx_password_entry_dialog.html" title="This class represents a dialog that requests a one-line password string from the user.">wxPasswordEntryDialog</a>: Dialog to get a password from the user  </li>
 <li><a class="el" href="classwx_print_dialog.html" title="This class represents the print and print setup common dialogs.">wxPrintDialog</a>: Standard print dialog  </li>
-<li><a class="el" href="classwx_progress_dialog.html" title="If supported by the platform this class will provide the platform's native progress dialog...">wxProgressDialog</a>: Progress indication dialog  </li>
+<li><a class="el" href="classwx_progress_dialog.html" title="プラットフォームがこのクラスに対応している場合、プラットフォームのネイティブのプログレスダイアログを提供します。それ以外の場合、単純に wxGenericProgressDialog になります。">wxProgressDialog</a>: Progress indication dialog  </li>
 <li><a class="el" href="classwx_rearrange_dialog.html" title="A dialog allowing the user to rearrange the specified items.">wxRearrangeDialog</a>: Dialog allowing the user to rearrange a list of items.  </li>
 <li><a class="el" href="classwx_rich_text_formatting_dialog.html" title="This dialog allows the user to edit a character and/or paragraph style.">wxRichTextFormattingDialog</a>: A dialog for formatting the content of a <a class="el" href="classwx_rich_text_ctrl.html" title="wxRichTextCtrl provides a generic, ground-up implementation of a text control capable of showing mult...">wxRichTextCtrl</a> </li>
 <li><a class="el" href="classwx_rich_message_dialog.html" title="Extension of wxMessageDialog with additional functionality.">wxRichMessageDialog</a>: Nicer message box dialog  </li>
@@ -473,7 +473,7 @@ Events</h2>
 <li><a class="el" href="classwx_focus_event.html" title="A focus event is sent when a window's focus changes.">wxFocusEvent</a>: A window focus event  </li>
 <li><a class="el" href="classwx_key_event.html" title="このイベントクラスはキーの押下イベントや解放イベントに関する情報を含んでいます。">wxKeyEvent</a>: A keypress event  </li>
 <li><a class="el" href="classwx_iconize_event.html" title="An event being sent when the frame is iconized (minimized) or restored.">wxIconizeEvent</a>: An iconize/restore event  </li>
-<li><a class="el" href="classwx_idle_event.html" title="This class is used for idle events, which are generated when the system becomes idle.">wxIdleEvent</a>: An idle event  </li>
+<li><a class="el" href="classwx_idle_event.html" title="このクラスはアイドルイベントに使用されます。アイドルイベントはシステムがアイドルになったときに生成されます。le.">wxIdleEvent</a>: An idle event  </li>
 <li><a class="el" href="classwx_init_dialog_event.html" title="A wxInitDialogEvent is sent as a dialog or panel is being initialised.">wxInitDialogEvent</a>: A dialog initialisation event  </li>
 <li><a class="el" href="classwx_joystick_event.html" title="This event class contains information about joystick events, particularly events received by windows...">wxJoystickEvent</a>: A joystick event  </li>
 <li><a class="el" href="classwx_keyboard_state.html" title="Provides methods for testing the state of the keyboard modifier keys.">wxKeyboardState</a>: State of the keyboard modifiers.  </li>
@@ -586,14 +586,14 @@ Threading</h2>
 <p>wxWidgets provides a set of classes to make use of the native thread capabilities of the various platforms.</p>
 <p>Related Overviews: <a class="el" href="overview_thread.html">Multithreading Overview</a></p>
 <ul>
-<li><a class="el" href="classwx_thread.html" title="A thread is basically a path of execution through a program.">wxThread</a>: Thread class  </li>
-<li><a class="el" href="classwx_thread_helper.html" title="The wxThreadHelper class is a mix-in class that manages a single background thread, either detached or joinable (see wxThread for the differences).">wxThreadHelper</a>: Manages background threads easily  </li>
-<li><a class="el" href="classwx_mutex.html" title="A mutex object is a synchronization object whose state is set to signaled when it is not owned by any...">wxMutex</a>: Mutex class  </li>
+<li><a class="el" href="classwx_thread.html" title="スレッドはプログラム内の基本的な実行パスです。">wxThread</a>: Thread class  </li>
+<li><a class="el" href="classwx_thread_helper.html" title="wxThreadHelper クラスは分離済み、もしくは合流可能なひとつのバックグラウンドスレッドの管理を行なうミックスインクラスです。(wxThread を参照して違いを確認してください)">wxThreadHelper</a>: Manages background threads easily  </li>
+<li><a class="el" href="classwx_mutex.html" title="ミューテックスオブジェクトは同期オブジェクトであり、いずれかのスレッドからも所有されていない場合はシグナル状態に、いずれかのスレッドで所有されている場合は非シグナル状態になります。">wxMutex</a>: Mutex class  </li>
 <li><a class="el" href="classwx_mutex_locker.html" title="This is a small helper class to be used with wxMutex objects.">wxMutexLocker</a>: Mutex locker utility class  </li>
-<li><a class="el" href="classwx_critical_section.html" title="A critical section object is used for exactly the same purpose as a wxMutex.">wxCriticalSection</a>: Critical section class  </li>
+<li><a class="el" href="classwx_critical_section.html" title="クリティカルセクションは wxMutex とまったく同じ目的で使用されるオブジェクトです。">wxCriticalSection</a>: Critical section class  </li>
 <li><a class="el" href="classwx_critical_section_locker.html" title="This is a small helper class to be used with wxCriticalSection objects.">wxCriticalSectionLocker</a>: Critical section locker utility class  </li>
-<li><a class="el" href="classwx_condition.html" title="wxCondition variables correspond to pthread conditions or to Win32 event objects.">wxCondition</a>: Condition class  </li>
-<li><a class="el" href="classwx_semaphore.html" title="wxSemaphore is a counter limiting the number of threads concurrently accessing a shared resource...">wxSemaphore</a>: Semaphore class</li>
+<li><a class="el" href="classwx_condition.html" title="wxCondition 変数は pthread のコンディションや Win32 のイベントオブジェクトに相当します。">wxCondition</a>: Condition class  </li>
+<li><a class="el" href="classwx_semaphore.html" title="wxSemaphore は共有リソースへ同時アクセス可能なスレッド数を制限するカウンターです。">wxSemaphore</a>: Semaphore class</li>
 </ul>
 <h2><a class="anchor" id="page_class_cat_rtti"></a>
 

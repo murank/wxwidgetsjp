@@ -168,16 +168,16 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_event_loop_base.html#a07b4fe866e5f267ca50709efb351f606">WakeUpIdle</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Makes sure that idle events are sent again.    <a href="#a07b4fe866e5f267ca50709efb351f606"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_event_loop_base.html#a5a6f47a392e5802e4d614b0dc398c6f7">ProcessIdle</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This virtual function is called when the application becomes idle and normally just sends <a class="el" href="classwx_idle_event.html" title="This class is used for idle events, which are generated when the system becomes idle.">wxIdleEvent</a> to all interested parties.    <a href="#a5a6f47a392e5802e4d614b0dc398c6f7"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This virtual function is called when the application becomes idle and normally just sends <a class="el" href="classwx_idle_event.html" title="このクラスはアイドルイベントに使用されます。アイドルイベントはシステムがアイドルになったときに生成されます。le.">wxIdleEvent</a> to all interested parties.    <a href="#a5a6f47a392e5802e4d614b0dc398c6f7"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Yield-related hooks</div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_event_loop_base.html#a890b327bb21df1aa4989733fccf42fe5">IsYielding</a> () const  </td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns <span class="literal">true</span> if called from inside <a class="el" href="classwx_event_loop_base.html#a43b540654cc046ecea5e1e497acd4189" title="Yields control to pending messages in the windowing system.">Yield()</a> or from inside <a class="el" href="classwx_event_loop_base.html#afb5ed08160c7e6b1364170af6115af55" title="Works like Yield() with onlyIfNeeded == true, except that it allows the caller to specify a mask of t...">YieldFor()</a>.    <a href="#a890b327bb21df1aa4989733fccf42fe5"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns <span class="literal">true</span> if called from inside <a class="el" href="classwx_event_loop_base.html#a43b540654cc046ecea5e1e497acd4189" title="Yields control to pending messages in the windowing system.">Yield()</a> or from inside <a class="el" href="classwx_event_loop_base.html#afb5ed08160c7e6b1364170af6115af55" title='onlyIfNeeded == true の場合の Yield() と同じように動作しますが、呼び出し元が wxEventCategory の値のマスクを指定できる点が異なります。このマスクではどのイベントを処理するか、もしくは "遅延させる" かを指定します。'>YieldFor()</a>.    <a href="#a890b327bb21df1aa4989733fccf42fe5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_event_loop_base.html#a43b540654cc046ecea5e1e497acd4189">Yield</a> (bool onlyIfNeeded=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Yields control to pending messages in the windowing system.    <a href="#a43b540654cc046ecea5e1e497acd4189"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_event_loop_base.html#afb5ed08160c7e6b1364170af6115af55">YieldFor</a> (long eventsToProcess)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Works like <a class="el" href="classwx_event_loop_base.html#a43b540654cc046ecea5e1e497acd4189" title="Yields control to pending messages in the windowing system.">Yield()</a> with <em>onlyIfNeeded</em> == <span class="literal">true</span>, except that it allows the caller to specify a mask of the <a class="el" href="event_8h.html#a685cc8dc6176be3ab0d40e3f72719e7d" title="The different categories for a wxEvent; see wxEvent::GetEventCategory.">wxEventCategory</a> values which indicates which events should be processed and which should instead be "delayed" (i.e.    <a href="#afb5ed08160c7e6b1364170af6115af55"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_event_loop_base.html#adce29a2d6237e31795787c56984d91c3">IsEventAllowedInsideYield</a> (<a class="el" href="event_8h.html#a685cc8dc6176be3ab0d40e3f72719e7d">wxEventCategory</a> cat) const  </td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns <span class="literal">true</span> if the given event category is allowed inside a <a class="el" href="classwx_event_loop_base.html#afb5ed08160c7e6b1364170af6115af55" title="Works like Yield() with onlyIfNeeded == true, except that it allows the caller to specify a mask of t...">YieldFor()</a> call (i.e.    <a href="#adce29a2d6237e31795787c56984d91c3"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns <span class="literal">true</span> if the given event category is allowed inside a <a class="el" href="classwx_event_loop_base.html#afb5ed08160c7e6b1364170af6115af55" title='onlyIfNeeded == true の場合の Yield() と同じように動作しますが、呼び出し元が wxEventCategory の値のマスクを指定できる点が異なります。このマスクではどのイベントを処理するか、もしくは "遅延させる" かを指定します。'>YieldFor()</a> call (i.e.    <a href="#adce29a2d6237e31795787c56984d91c3"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 
 Static Public Member Functions</h2></td></tr>
@@ -298,8 +298,8 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Returns <span class="literal">true</span> if the given event category is allowed inside a <a class="el" href="classwx_event_loop_base.html#afb5ed08160c7e6b1364170af6115af55" title="Works like Yield() with onlyIfNeeded == true, except that it allows the caller to specify a mask of t...">YieldFor()</a> call (i.e.  </p>
-<p>compares the given category against the last mask passed to <a class="el" href="classwx_event_loop_base.html#afb5ed08160c7e6b1364170af6115af55" title="Works like Yield() with onlyIfNeeded == true, except that it allows the caller to specify a mask of t...">YieldFor()</a>).</p>
+<p>Returns <span class="literal">true</span> if the given event category is allowed inside a <a class="el" href="classwx_event_loop_base.html#afb5ed08160c7e6b1364170af6115af55" title='onlyIfNeeded == true の場合の Yield() と同じように動作しますが、呼び出し元が wxEventCategory の値のマスクを指定できる点が異なります。このマスクではどのイベントを処理するか、もしくは "遅延させる" かを指定します。'>YieldFor()</a> call (i.e.  </p>
+<p>compares the given category against the last mask passed to <a class="el" href="classwx_event_loop_base.html#afb5ed08160c7e6b1364170af6115af55" title='onlyIfNeeded == true の場合の Yield() と同じように動作しますが、呼び出し元が wxEventCategory の値のマスクを指定できる点が異なります。このマスクではどのイベントを処理するか、もしくは "遅延させる" かを指定します。'>YieldFor()</a>).</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_event.html#a525e5c576e64090af493cb81db2da59b" title="Returns a generic category for this event.">wxEvent::GetEventCategory</a> </dd></dl>
 
 </div>
@@ -373,7 +373,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Returns <span class="literal">true</span> if called from inside <a class="el" href="classwx_event_loop_base.html#a43b540654cc046ecea5e1e497acd4189" title="Yields control to pending messages in the windowing system.">Yield()</a> or from inside <a class="el" href="classwx_event_loop_base.html#afb5ed08160c7e6b1364170af6115af55" title="Works like Yield() with onlyIfNeeded == true, except that it allows the caller to specify a mask of t...">YieldFor()</a>.  </p>
+<p>Returns <span class="literal">true</span> if called from inside <a class="el" href="classwx_event_loop_base.html#a43b540654cc046ecea5e1e497acd4189" title="Yields control to pending messages in the windowing system.">Yield()</a> or from inside <a class="el" href="classwx_event_loop_base.html#afb5ed08160c7e6b1364170af6115af55" title='onlyIfNeeded == true の場合の Yield() と同じように動作しますが、呼び出し元が wxEventCategory の値のマスクを指定できる点が異なります。このマスクではどのイベントを処理するか、もしくは "遅延させる" かを指定します。'>YieldFor()</a>.  </p>
 
 </div>
 </div><!-- doxytag: member="wxEventLoopBase::OnExit" ref="aeb893bc6dbbf80f19925a9e108965669" args="()" -->
@@ -429,7 +429,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>This virtual function is called when the application becomes idle and normally just sends <a class="el" href="classwx_idle_event.html" title="This class is used for idle events, which are generated when the system becomes idle.">wxIdleEvent</a> to all interested parties.  </p>
+<p>This virtual function is called when the application becomes idle and normally just sends <a class="el" href="classwx_idle_event.html" title="このクラスはアイドルイベントに使用されます。アイドルイベントはシステムがアイドルになったときに生成されます。le.">wxIdleEvent</a> to all interested parties.  </p>
 <p>It should return <span class="literal">true</span> if more idle events are needed, <span class="literal">false</span> if not.  </p>
 
 </div>

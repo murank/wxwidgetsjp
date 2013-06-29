@@ -124,17 +124,17 @@ function toggleVisibility(linkObj) {
 
 <p><code>#include &lt;/home/zeitlin/src/wx/github/interface/wx/thread.h&gt;</code></p>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classwx_condition.html" title="wxCondition variables correspond to pthread conditions or to Win32 event objects.">wxCondition</a> variables correspond to pthread conditions or to Win32 event objects.  </p>
+<div class="textblock"><p><a class="el" href="classwx_condition.html" title="wxCondition 変数は pthread のコンディションや Win32 のイベントオブジェクトに相当します。">wxCondition</a> variables correspond to pthread conditions or to Win32 event objects.  </p>
 <p>They may be used in a multithreaded application to wait until the given condition becomes <span class="literal">true</span> which happens when the condition becomes signaled.</p>
 <p>For example, if a worker thread is doing some long task and another thread has to wait until it is finished, the latter thread will wait on the condition object and the worker thread will signal it on exit (this example is not perfect because in this particular case it would be much better to just <a class="el" href="classwx_thread.html#a62ee778033013d3a4754b71b8cf2902e" title='Waits for a joinable thread to terminate and returns the value the thread returned from Entry() or "(...'>wxThread::Wait</a> for the worker thread, but if there are several worker threads it already makes much more sense).</p>
 <p>Note that a call to <a class="el" href="classwx_condition.html#a9fa920a093abdadb19f40db82fbaedd4" title="Signals the object waking up at most one thread.">wxCondition::Signal</a> may happen before the other thread calls <a class="el" href="classwx_condition.html#ad42af860d727aad40cf366eaab9da48d" title="Waits until the condition is signalled.">wxCondition::Wait</a> and, just as with the pthread conditions, the signal is then lost and so if you want to be sure that you don't miss it you must keep the mutex associated with the condition initially locked and lock it again before calling <a class="el" href="classwx_condition.html#a9fa920a093abdadb19f40db82fbaedd4" title="Signals the object waking up at most one thread.">wxCondition::Signal</a>. Of course, this means that this call is going to block until <a class="el" href="classwx_condition.html#ad42af860d727aad40cf366eaab9da48d" title="Waits until the condition is signalled.">wxCondition::Wait</a> is called by another thread.</p>
 <h2><a class="anchor" id="condition_example"></a>
 例</h2>
 <p>This example shows how a main thread may launch a worker thread which starts running and then waits until the main thread signals it to continue:</p>
-<div class="fragment"><pre class="fragment">    <span class="keyword">class </span>MySignallingThread : <span class="keyword">public</span> <a class="code" href="classwx_thread.html" title="A thread is basically a path of execution through a program.">wxThread</a>
+<div class="fragment"><pre class="fragment">    <span class="keyword">class </span>MySignallingThread : <span class="keyword">public</span> <a class="code" href="classwx_thread.html" title="スレッドはプログラム内の基本的な実行パスです。">wxThread</a>
     {
     <span class="keyword">public</span>:
-        MySignallingThread(<a class="code" href="classwx_mutex.html" title="A mutex object is a synchronization object whose state is set to signaled when it is not owned by any...">wxMutex</a> *mutex, <a class="code" href="classwx_condition.html" title="wxCondition variables correspond to pthread conditions or to Win32 event objects.">wxCondition</a> *condition)
+        MySignallingThread(<a class="code" href="classwx_mutex.html" title="ミューテックスオブジェクトは同期オブジェクトであり、いずれかのスレッドからも所有されていない場合はシグナル状態に、いずれかのスレッドで所有されている場合は非シグナル状態になります。">wxMutex</a> *mutex, <a class="code" href="classwx_condition.html" title="wxCondition 変数は pthread のコンディションや Win32 のイベントオブジェクトに相当します。">wxCondition</a> *condition)
         {
             m_mutex = mutex;
             m_condition = condition;
@@ -156,14 +156,14 @@ function toggleVisibility(linkObj) {
         }
 
     <span class="keyword">private</span>:
-        <a class="code" href="classwx_condition.html" title="wxCondition variables correspond to pthread conditions or to Win32 event objects.">wxCondition</a> *m_condition;
-        <a class="code" href="classwx_mutex.html" title="A mutex object is a synchronization object whose state is set to signaled when it is not owned by any...">wxMutex</a> *m_mutex;
+        <a class="code" href="classwx_condition.html" title="wxCondition 変数は pthread のコンディションや Win32 のイベントオブジェクトに相当します。">wxCondition</a> *m_condition;
+        <a class="code" href="classwx_mutex.html" title="ミューテックスオブジェクトは同期オブジェクトであり、いずれかのスレッドからも所有されていない場合はシグナル状態に、いずれかのスレッドで所有されている場合は非シグナル状態になります。">wxMutex</a> *m_mutex;
     };
 
     <span class="keywordtype">int</span> main()
     {
-        <a class="code" href="classwx_mutex.html" title="A mutex object is a synchronization object whose state is set to signaled when it is not owned by any...">wxMutex</a> mutex;
-        <a class="code" href="classwx_condition.html" title="wxCondition variables correspond to pthread conditions or to Win32 event objects.">wxCondition</a> condition(mutex);
+        <a class="code" href="classwx_mutex.html" title="ミューテックスオブジェクトは同期オブジェクトであり、いずれかのスレッドからも所有されていない場合はシグナル状態に、いずれかのスレッドで所有されている場合は非シグナル状態になります。">wxMutex</a> mutex;
+        <a class="code" href="classwx_condition.html" title="wxCondition 変数は pthread のコンディションや Win32 のイベントオブジェクトに相当します。">wxCondition</a> condition(mutex);
 
         <span class="comment">// the mutex should be initially locked</span>
         mutex.<a class="code" href="classwx_mutex.html#a5291e0e421262f420051390421ba0d09" title="Locks the mutex object.">Lock</a>();
@@ -181,9 +181,9 @@ function toggleVisibility(linkObj) {
         <span class="comment">// now we can exit</span>
         <span class="keywordflow">return</span> 0;
     }
-</pre></div><p>Of course, here it would be much better to simply use a joinable thread and call <a class="el" href="classwx_thread.html#a62ee778033013d3a4754b71b8cf2902e" title='Waits for a joinable thread to terminate and returns the value the thread returned from Entry() or "(...'>wxThread::Wait</a> on it, but this example does illustrate the importance of properly locking the mutex when using <a class="el" href="classwx_condition.html" title="wxCondition variables correspond to pthread conditions or to Win32 event objects.">wxCondition</a>.</p>
+</pre></div><p>Of course, here it would be much better to simply use a joinable thread and call <a class="el" href="classwx_thread.html#a62ee778033013d3a4754b71b8cf2902e" title='Waits for a joinable thread to terminate and returns the value the thread returned from Entry() or "(...'>wxThread::Wait</a> on it, but this example does illustrate the importance of properly locking the mutex when using <a class="el" href="classwx_condition.html" title="wxCondition 変数は pthread のコンディションや Win32 のイベントオブジェクトに相当します。">wxCondition</a>.</p>
 <h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__threading.html">Threading</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_thread.html" title="A thread is basically a path of execution through a program.">wxThread</a>, <a class="el" href="classwx_mutex.html" title="A mutex object is a synchronization object whose state is set to signaled when it is not owned by any...">wxMutex</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__threading.html">Threading</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_thread.html" title="スレッドはプログラム内の基本的な実行パスです。">wxThread</a>, <a class="el" href="classwx_mutex.html" title="ミューテックスオブジェクトは同期オブジェクトであり、いずれかのスレッドからも所有されていない場合はシグナル状態に、いずれかのスレッドで所有されている場合は非シグナル状態になります。">wxMutex</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
@@ -191,7 +191,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_condition.html#a0c73d224b294846ef9358cfaa36b573e">wxCondition</a> (<a class="el" href="classwx_mutex.html">wxMutex</a> &amp;mutex)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Default and only constructor.    <a href="#a0c73d224b294846ef9358cfaa36b573e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_condition.html#a78c0da35a4bc0a611039b105ff839ea1">~wxCondition</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destroys the <a class="el" href="classwx_condition.html" title="wxCondition variables correspond to pthread conditions or to Win32 event objects.">wxCondition</a> object.    <a href="#a78c0da35a4bc0a611039b105ff839ea1"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destroys the <a class="el" href="classwx_condition.html" title="wxCondition 変数は pthread のコンディションや Win32 のイベントオブジェクトに相当します。">wxCondition</a> object.    <a href="#a78c0da35a4bc0a611039b105ff839ea1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_2wx_2thread_8h.html#af963862ae0e1bd5cafe4039dccbbd81e">wxCondError</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_condition.html#af8ed8df7255aba60dcecba0bbe102fd4">Broadcast</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Broadcasts to all waiting threads, waking all of them up.    <a href="#af8ed8df7255aba60dcecba0bbe102fd4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_condition.html#ae1ccee596e1b527821f2d084d2f4b5e4">IsOk</a> () const  </td></tr>
@@ -240,7 +240,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Destroys the <a class="el" href="classwx_condition.html" title="wxCondition variables correspond to pthread conditions or to Win32 event objects.">wxCondition</a> object.  </p>
+<p>Destroys the <a class="el" href="classwx_condition.html" title="wxCondition 変数は pthread のコンディションや Win32 のイベントオブジェクトに相当します。">wxCondition</a> object.  </p>
 <p>The destructor is not virtual so this class should not be used polymorphically.  </p>
 
 </div>

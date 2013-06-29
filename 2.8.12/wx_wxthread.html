@@ -8,11 +8,7 @@
 
 <H2>wxThread</H2>
 <P>
-
-A thread is basically a path of execution through a program. Threads are
-sometimes called <I>light-weight processes</I>, but the fundamental difference
-between threads and processes is that memory spaces of different processes are
-separated while all threads share the same address space.  <P>
+スレッドはプログラム内の基本的な実行パスです。Threads are sometimes called <I>light-weight processes</I>, but the fundamental difference between threads and processes is that memory spaces of different processes are separated while all threads share the same address space. <P>
 
 While it makes it much easier to share common data between several threads, it also 
 makes it much easier to shoot oneself in the foot, so careful use of synchronization 
@@ -348,8 +344,7 @@ execution) and also delete the associated C++ object for detached threads.
 <H3>wxThread::GetCPUCount</H3>
 <P>
 <B>static int</B> <B>GetCPUCount</B>()<P>
-
-Returns the number of system CPUs or -1 if the value is unknown.<P>
+CPU の数か、数が不明な場合は -1 を返却します。<P>
 <B><FONT COLOR="#FF0000">参照</FONT></B><P>
 <A HREF="wx_wxthread.html#wxthreadsetconcurrency">SetConcurrency</A><P>
 

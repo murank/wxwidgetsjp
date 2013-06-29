@@ -321,7 +321,7 @@ Debug Reporter Sample</h2>
 
 Dialogs Sample</h2>
 <p>This sample shows how to use the common dialogs available from wxWidgets. These dialogs are described in detail in the <a class="el" href="overview_cmndlg.html">Common Dialogs</a>.</p>
-<p>In addition to the dialogs accessible from the sample menus, you can also run it with a <code>--progress=style</code> command line option to show a <a class="el" href="classwx_progress_dialog.html" title="If supported by the platform this class will provide the platform's native progress dialog...">wxProgressDialog</a> with the given style (try 0 for the default style) on program startup, before the main window is shown.</p>
+<p>In addition to the dialogs accessible from the sample menus, you can also run it with a <code>--progress=style</code> command line option to show a <a class="el" href="classwx_progress_dialog.html" title="プラットフォームがこのクラスに対応している場合、プラットフォームのネイティブのプログレスダイアログを提供します。それ以外の場合、単純に wxGenericProgressDialog になります。">wxProgressDialog</a> with the given style (try 0 for the default style) on program startup, before the main window is shown.</p>
 <p><em>Location:</em> <code>samples/dialogs</code> subdirectory of your wxWidgets installation or <a href="http://svn.wxwidgets.org/viewvc/wx/wxWidgets/trunk/samples/dialogs">http://svn.wxwidgets.org/viewvc/wx/wxWidgets/trunk/samples/dialogs</a></p>
 <h2><a class="anchor" id="page_samples_dialup"></a>
 
@@ -675,7 +675,7 @@ Thread Sample</h2>
 <p>There are two fundamentally different ways to use threads in GUI programs and either way has to take care of the fact that the GUI library itself usually is not multi-threading safe, i.e. that it might crash if two threads try to access the GUI class simultaneously.</p>
 <p>One way to prevent that is have a normal GUI program in the main thread and some worker threads which work in the background. In order to make communication between the main thread and the worker threads possible, wxWidgets offers the <a class="el" href="group__group__funcmacro__events.html#gae921d7bd0e52fedbf3f253d2c408bce1" title="特定のオブジェクトで処理するためにイベントをキューへ追加します。">wxQueueEvent</a> function and this sample demonstrates its usage.</p>
 <p>The other way is to use a <a class="el" href="group__group__funcmacro__thread.html#ga6671c1599fd4ccf6a7c7bb90b2304709" title="This function must be called when any thread other than the main GUI thread wants to get access to th...">wxMutexGuiEnter</a> and <a class="el" href="group__group__funcmacro__thread.html#gaddfdb2956953480a379d998ea7ced5b5" title="This function is only defined on platforms which support preemptive threads.">wxMutexGuiLeave</a> functions, but this is not currently shown in the sample.</p>
-<p>See also <a class="el" href="overview_thread.html">Multithreading Overview</a> and <a class="el" href="classwx_thread.html" title="A thread is basically a path of execution through a program.">wxThread</a>.</p>
+<p>See also <a class="el" href="overview_thread.html">Multithreading Overview</a> and <a class="el" href="classwx_thread.html" title="スレッドはプログラム内の基本的な実行パスです。">wxThread</a>.</p>
 <p><em>Location:</em> <code>samples/thread</code> subdirectory of your wxWidgets installation or <a href="http://svn.wxwidgets.org/viewvc/wx/wxWidgets/trunk/samples/thread">http://svn.wxwidgets.org/viewvc/wx/wxWidgets/trunk/samples/thread</a></p>
 <h2><a class="anchor" id="page_samples_toolbar"></a>
 

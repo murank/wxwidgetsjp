@@ -126,12 +126,12 @@ function toggleVisibility(linkObj) {
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>A mutex object is a synchronization object whose state is set to signaled when it is not owned by any thread, and nonsignaled when it is owned.  </p>
 <p>Its name comes from its usefulness in coordinating mutually-exclusive access to a shared resource as only one thread at a time can own a mutex object.</p>
-<p>Mutexes may be recursive in the sense that a thread can lock a mutex which it had already locked before (instead of dead locking the entire process in this situation by starting to wait on a mutex which will never be released while the thread is waiting) but using them is not recommended under Unix and they are <b>not</b> recursive by default. The reason for this is that recursive mutexes are not supported by all Unix flavours and, worse, they cannot be used with <a class="el" href="classwx_condition.html" title="wxCondition variables correspond to pthread conditions or to Win32 event objects.">wxCondition</a>.</p>
+<p>Mutexes may be recursive in the sense that a thread can lock a mutex which it had already locked before (instead of dead locking the entire process in this situation by starting to wait on a mutex which will never be released while the thread is waiting) but using them is not recommended under Unix and they are <b>not</b> recursive by default. The reason for this is that recursive mutexes are not supported by all Unix flavours and, worse, they cannot be used with <a class="el" href="classwx_condition.html" title="wxCondition 変数は pthread のコンディションや Win32 のイベントオブジェクトに相当します。">wxCondition</a>.</p>
 <p>For example, when several threads use the data stored in the linked list, modifications to the list should only be allowed to one thread at a time because during a new node addition the list integrity is temporarily broken (this is also called <em>program</em> <em>invariant</em>).</p>
 <div class="fragment"><pre class="fragment">    <span class="comment">// this variable has an "s_" prefix because it is static: seeing an "s_" in</span>
     <span class="comment">// a multithreaded program is in general a good sign that you should use a</span>
     <span class="comment">// mutex (or a critical section)</span>
-    <span class="keyword">static</span> <a class="code" href="classwx_mutex.html" title="A mutex object is a synchronization object whose state is set to signaled when it is not owned by any...">wxMutex</a> *s_mutexProtectingTheGlobalData;
+    <span class="keyword">static</span> <a class="code" href="classwx_mutex.html" title="ミューテックスオブジェクトは同期オブジェクトであり、いずれかのスレッドからも所有されていない場合はシグナル状態に、いずれかのスレッドで所有されている場合は非シグナル状態になります。">wxMutex</a> *s_mutexProtectingTheGlobalData;
 
     <span class="comment">// we store some numbers in this global array which is presumably used by</span>
     <span class="comment">// several threads simultaneously</span>
@@ -162,9 +162,9 @@ function toggleVisibility(linkObj) {
 
         <span class="keywordflow">return</span> <span class="keyword">true</span>;
     }
-</pre></div><p>Notice how <a class="el" href="classwx_mutex_locker.html" title="This is a small helper class to be used with wxMutex objects.">wxMutexLocker</a> was used in the second function to ensure that the mutex is unlocked in any case: whether the function returns true or false (because the destructor of the local object <em>lock</em> is always called). Using this class instead of directly using <a class="el" href="classwx_mutex.html" title="A mutex object is a synchronization object whose state is set to signaled when it is not owned by any...">wxMutex</a> is, in general, safer and is even more so if your program uses C++ exceptions.</p>
+</pre></div><p>Notice how <a class="el" href="classwx_mutex_locker.html" title="This is a small helper class to be used with wxMutex objects.">wxMutexLocker</a> was used in the second function to ensure that the mutex is unlocked in any case: whether the function returns true or false (because the destructor of the local object <em>lock</em> is always called). Using this class instead of directly using <a class="el" href="classwx_mutex.html" title="ミューテックスオブジェクトは同期オブジェクトであり、いずれかのスレッドからも所有されていない場合はシグナル状態に、いずれかのスレッドで所有されている場合は非シグナル状態になります。">wxMutex</a> is, in general, safer and is even more so if your program uses C++ exceptions.</p>
 <h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__threading.html">Threading</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_thread.html" title="A thread is basically a path of execution through a program.">wxThread</a>, <a class="el" href="classwx_condition.html" title="wxCondition variables correspond to pthread conditions or to Win32 event objects.">wxCondition</a>, <a class="el" href="classwx_mutex_locker.html" title="This is a small helper class to be used with wxMutex objects.">wxMutexLocker</a>, <a class="el" href="classwx_critical_section.html" title="A critical section object is used for exactly the same purpose as a wxMutex.">wxCriticalSection</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__threading.html">Threading</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_thread.html" title="スレッドはプログラム内の基本的な実行パスです。">wxThread</a>, <a class="el" href="classwx_condition.html" title="wxCondition 変数は pthread のコンディションや Win32 のイベントオブジェクトに相当します。">wxCondition</a>, <a class="el" href="classwx_mutex_locker.html" title="This is a small helper class to be used with wxMutex objects.">wxMutexLocker</a>, <a class="el" href="classwx_critical_section.html" title="クリティカルセクションは wxMutex とまったく同じ目的で使用されるオブジェクトです。">wxCriticalSection</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
@@ -172,7 +172,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_mutex.html#af5854c82759e233a3ecfcd683d857288">wxMutex</a> (<a class="el" href="interface_2wx_2thread_8h.html#a20ab09ca102b0bef60c0f8eb9aad3ff3">wxMutexType</a> type=wxMUTEX_DEFAULT)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Default constructor.    <a href="#af5854c82759e233a3ecfcd683d857288"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_mutex.html#aca15d3e1f04cf77b25b8a25a37c7281d">~wxMutex</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destroys the <a class="el" href="classwx_mutex.html" title="A mutex object is a synchronization object whose state is set to signaled when it is not owned by any...">wxMutex</a> object.    <a href="#aca15d3e1f04cf77b25b8a25a37c7281d"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destroys the <a class="el" href="classwx_mutex.html" title="ミューテックスオブジェクトは同期オブジェクトであり、いずれかのスレッドからも所有されていない場合はシグナル状態に、いずれかのスレッドで所有されている場合は非シグナル状態になります。">wxMutex</a> object.    <a href="#aca15d3e1f04cf77b25b8a25a37c7281d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_2wx_2thread_8h.html#ac8c1ee75d2a2da3be8eabc629f71c1a7">wxMutexError</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_mutex.html#a5291e0e421262f420051390421ba0d09">Lock</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Locks the mutex object.    <a href="#a5291e0e421262f420051390421ba0d09"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_2wx_2thread_8h.html#ac8c1ee75d2a2da3be8eabc629f71c1a7">wxMutexError</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_mutex.html#a1e22609b14aefe8a248b2e48bca51415">LockTimeout</a> (unsigned long msec)</td></tr>
@@ -218,7 +218,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Destroys the <a class="el" href="classwx_mutex.html" title="A mutex object is a synchronization object whose state is set to signaled when it is not owned by any...">wxMutex</a> object.  </p>
+<p>Destroys the <a class="el" href="classwx_mutex.html" title="ミューテックスオブジェクトは同期オブジェクトであり、いずれかのスレッドからも所有されていない場合はシグナル状態に、いずれかのスレッドで所有されている場合は非シグナル状態になります。">wxMutex</a> object.  </p>
 
 </div>
 </div>
