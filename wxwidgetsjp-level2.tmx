@@ -1661,6 +1661,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="12" x="12">&lt;a12&gt;</bpt>Multi-threaded applications<ept i="12">&lt;/a12&gt;</ept><it pos="begin" x="13">&lt;br13&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T141712Z">
+        <seg><bpt i="12" x="12">&lt;a12&gt;</bpt>マルチスレッドアプリケーション<ept i="12">&lt;/a12&gt;</ept><it pos="begin" x="13">&lt;br13&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="12" x="12">&lt;a12&gt;</bpt>wxBoxSizer<ept i="12">&lt;/a12&gt;</ept> *topsizer = <bpt i="13" x="13">&lt;s13&gt;</bpt>new<ept i="13">&lt;/s13&gt;</ept> <bpt i="14" x="14">&lt;a14&gt;</bpt>wxBoxSizer<ept i="14">&lt;/a14&gt;</ept>( <bpt i="15" x="15">&lt;a15&gt;</bpt>wxVERTICAL<ept i="15">&lt;/a15&gt;</ept> );</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T142858Z">
@@ -1699,6 +1707,14 @@ MyFrame::MyFrame()
 <bpt i="15" x="15">&lt;s15&gt;</bpt>// Bind&lt;&gt;() によるイベント処理のコード例:<ept i="15">&lt;/s15&gt;</ept>
 MyFrame::MyFrame()
 {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="144" x="144">&lt;a144&gt;</bpt><bpt i="145" x="145">&lt;b145&gt;</bpt>Multithreading overview<ept i="145">&lt;/b145&gt;</ept><ept i="144">&lt;/a144&gt;</ept><it pos="begin" x="146">&lt;br146&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T141747Z">
+        <seg><bpt i="144" x="144">&lt;a144&gt;</bpt><bpt i="145" x="145">&lt;b145&gt;</bpt>マルチスレッドの概要<ept i="145">&lt;/b145&gt;</ept><ept i="144">&lt;/a144&gt;</ept><it pos="begin" x="146">&lt;br146&gt;</it></seg>
       </tuv>
     </tu>
     <tu>
@@ -3929,6 +3945,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>A critical section object is used for exactly the same purpose as a wxMutex.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T150738Z">
+        <seg>クリティカルセクションは wxMutex とまったく同じ目的で使用されるオブジェクトです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>A cursor is a small bitmap usually used for denoting where the mouse pointer is, with a picture that ...</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130609T153806Z">
@@ -4073,6 +4097,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>A mutex object is a synchronization object whose state is set to signaled when it is not owned by any...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T150710Z">
+        <seg>ミューテックスオブジェクトは同期オブジェクトであり、いずれかのスレッドからも所有されていない場合はシグナル状態に、いずれかのスレッドで所有されている場合は非シグナル状態になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>A paint event</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T055325Z">
@@ -4181,6 +4213,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130516T160411Z">
         <seg>テキストの表示と編集が可能なテキストコントロール。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A thread is basically a path of execution through a program.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T150240Z">
+        <seg>スレッドはプログラム内の基本的な実行パスです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5257,6 +5297,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Before starting an MT application (or starting to add MT features to an existing one) it is worth asking oneself if there is no easier and safer way to implement the same functionality.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T143825Z">
+        <seg>マルチスレッドアプリケーションの開発を始める前に (もしくは既存のアプリケーションにマルチスレッド機能を追加する前に)、同じ機能を実装するためのより簡単で安全な方法がないか自問するだけの価値はあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Before version 2.0 of wxWidgets, events were handled by the application either by supplying callback functions, or by overriding virtual member functions such as <bpt i="0" x="0">&lt;b0&gt;</bpt>OnSize<ept i="0">&lt;/b0&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T075156Z">
@@ -5597,6 +5645,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Calling this method immediately repaints the invalidated area of the window and all of its children r...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130628T234835Z">
+        <seg>この関数を呼び出すと直ちにウィンドウとその子コントロールの無効領域を再帰的に再描画します。(通常、これは制御フローがイベントループに戻ってきたときにだけ行われます)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Calling this provides useful information to the calling code.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130613T145407Z">
@@ -5825,6 +5881,22 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130620T133304Z">
         <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxStreamBase<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxStreamBuffer<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxInputStream<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxOutputStream<ept i="3">&lt;/a3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxFilterInputStream<ept i="4">&lt;/a4&gt;</ept>, <bpt i="5" x="5">&lt;a5&gt;</bpt>wxFilterOutputStream<ept i="5">&lt;/a5&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Classes: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxThread<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxMutex<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxCriticalSection<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxCondition<ept i="3">&lt;/a3&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T141801Z">
+        <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxThread<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxMutex<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxCriticalSection<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxCondition<ept i="3">&lt;/a3&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Classes: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxThread<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxThreadHelper<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxMutex<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxCriticalSection<ept i="3">&lt;/a3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxCondition<ept i="4">&lt;/a4&gt;</ept>, <bpt i="5" x="5">&lt;a5&gt;</bpt>wxSemaphore<ept i="5">&lt;/a5&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T150916Z">
+        <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxThread<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxThreadHelper<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxMutex<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxCriticalSection<ept i="3">&lt;/a3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxCondition<ept i="4">&lt;/a4&gt;</ept>, <bpt i="5" x="5">&lt;a5&gt;</bpt>wxSemaphore<ept i="5">&lt;/a5&gt;</ept></seg>
       </tuv>
     </tu>
     <tu>
@@ -7035,6 +7107,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>For communication between secondary threads and the main thread, you may use <bpt i="0" x="0">&lt;a0&gt;</bpt>wxEvtHandler::AddPendingEvent<ept i="0">&lt;/a0&gt;</ept> or its short version <bpt i="1" x="1">&lt;a1&gt;</bpt>wxPostEvent<ept i="1">&lt;/a1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T145108Z">
+        <seg>メインスレッドとサブスレッドとの通信には <bpt i="0" x="0">&lt;a0&gt;</bpt>wxEvtHandler::AddPendingEvent<ept i="0">&lt;/a0&gt;</ept> か、もしくはその短縮版である <bpt i="1" x="1">&lt;a1&gt;</bpt>wxPostEvent<ept i="1">&lt;/a1&gt;</ept> を使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>For communication between secondary threads and the main thread, you may use <bpt i="0" x="0">&lt;a0&gt;</bpt>wxEvtHandler::QueueEvent<ept i="0">&lt;/a0&gt;</ept> or its short version <bpt i="1" x="1">&lt;a1&gt;</bpt>wxQueueEvent<ept i="1">&lt;/a1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130628T235702Z">
+        <seg>メインスレッドとサブスレッドとの通信には <bpt i="0" x="0">&lt;a0&gt;</bpt>wxEvtHandler::QueueEvent<ept i="0">&lt;/a0&gt;</ept> か、もしくはその短縮版である <bpt i="1" x="1">&lt;a1&gt;</bpt>wxQueueEvent<ept i="1">&lt;/a1&gt;</ept> を使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>For consistency, continue to use the <bpt i="0" x="0">&lt;a0&gt;</bpt>wxWindow::Destroy<ept i="0">&lt;/a0&gt;</ept> function instead of the <bpt i="1" x="1">&lt;b1&gt;</bpt>delete<ept i="1">&lt;/b1&gt;</ept> operator when deleting these kinds of windows explicitly.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130614T143925Z">
@@ -7725,6 +7813,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>However there is no built in method to send messages to the worker threads and you will need to use the available synchronization classes to implement the solution which suits your needs yourself.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T145257Z">
+        <seg>しかし、ワーカースレッドへメッセージを送信するためのビルトイン関数は存在しないため、要件にあった解決方法を実装するために既存の同期オブジェクトを使用する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>However writing</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T045715Z">
@@ -7805,6 +7901,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>If instead you choose to use threads in your application, please read also the following sections of this overview.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130628T235106Z">
+        <seg>代わりにスレッドを使用すると決めた場合、この概要の以降の章も参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>If it returns anything but -1 (default), the event handling stops immediately.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T071056Z">
@@ -7833,6 +7937,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130623T144259Z">
         <seg>そのような変数のアドレスが指定されなかった場合、バリデータは内部にデータを格納するべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If supported by the platform this class will provide the platform's native progress dialog...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130629T113524Z">
+        <seg>プラットフォームがこのクラスに対応している場合、プラットフォームのネイティブのプログレスダイアログを提供します。それ以外の場合、単純に wxGenericProgressDialog になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8069,6 +8181,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>If you do decide to use threads in your application, it is strongly recommended that no more than one thread calls GUI functions.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T144421Z">
+        <seg>アプリケーションでスレッドを使用すると決めた場合、複数のスレッドで GUI 関数を呼び出さないことを強く推奨します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>If you do want to handle messages of different levels differently, then you should override <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::DoLogTextAtLevel()<ept i="0">&lt;/a0&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T122739Z">
@@ -8185,6 +8305,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130430T150702Z">
         <seg>ボックスサイザーの最小サイズを計算します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Important notes for multithreaded applications</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130628T235205Z">
+        <seg>マルチスレッドアプリケーションにおける注意事項</seg>
       </tuv>
     </tu>
     <tu>
@@ -8401,6 +8529,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130527T162357Z">
         <seg>特に、アプリケーションクラスのデストラクタで削除しては <bpt i="2" x="2">&lt;b2&gt;</bpt>いけません<ept i="2">&lt;/b2&gt;</ept>。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>In particular, please note that it is <bpt i="2" x="2">&lt;e2&gt;</bpt>not<ept i="2">&lt;/e2&gt;</ept> enough to derive your class from <bpt i="3" x="3">&lt;a3&gt;</bpt>wxThread<ept i="3">&lt;/a3&gt;</ept> and <bpt i="4" x="4">&lt;a4&gt;</bpt>wxEvtHandler<ept i="4">&lt;/a4&gt;</ept> to send messages to it: in fact, this does <bpt i="5" x="5">&lt;e5&gt;</bpt>not<ept i="5">&lt;/e5&gt;</ept> work at all.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T145412Z">
+        <seg>特に、メッセージを送信するために <bpt i="3" x="3">&lt;a3&gt;</bpt>wxThread<ept i="3">&lt;/a3&gt;</ept> クラスと <bpt i="4" x="4">&lt;a4&gt;</bpt>wxEvtHandler<ept i="4">&lt;/a4&gt;</ept> を継承するだけでは <bpt i="2" x="2">&lt;e2&gt;</bpt>不十分<ept i="2">&lt;/e2&gt;</ept> なことに注意してください: 実際のところ、これはまったく動作 <bpt i="5" x="5">&lt;e5&gt;</bpt>しません<ept i="5">&lt;/e5&gt;</ept>。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>In particular, please note that it is not enough to derive your class from <bpt i="2" x="2">&lt;a2&gt;</bpt>wxThread<ept i="2">&lt;/a2&gt;</ept> and <bpt i="3" x="3">&lt;a3&gt;</bpt>wxEvtHandler<ept i="3">&lt;/a3&gt;</ept> to send messages to it: in fact, this does not work at all.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130628T235859Z">
+        <seg>特に、メッセージを送信するために <bpt i="2" x="2">&lt;a2&gt;</bpt>wxThread<ept i="2">&lt;/a2&gt;</ept> クラスと <bpt i="3" x="3">&lt;a3&gt;</bpt>wxEvtHandler<ept i="3">&lt;/a3&gt;</ept> を継承するだけでは不十分なことに注意してください: 実際のところ、これはまったく動作しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9053,6 +9197,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Last, remember that if <bpt i="0" x="0">&lt;a0&gt;</bpt>wxEventLoopBase::YieldFor()<ept i="0">&lt;/a0&gt;</ept> is used directly or indirectly (e.g. through <bpt i="1" x="1">&lt;a1&gt;</bpt>wxProgressDialog<ept i="1">&lt;/a1&gt;</ept>) in your code, then you may have both re-entrancy problems and also problems caused by the processing of events out of order.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130629T114251Z">
+        <seg>最後に、<bpt i="0" x="0">&lt;a0&gt;</bpt>wxEventLoopBase::YieldFor()<ept i="0">&lt;/a0&gt;</ept> が直接または (例えば <bpt i="1" x="1">&lt;a1&gt;</bpt>wxProgressDialog<ept i="1">&lt;/a1&gt;</ept> で) 間接的に使用される場合、再入可能性の問題とイベントが順不同に処理されることによる問題の両方が発生することを覚えておいてください。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Let us now look at more examples of how to use different event handlers using the two overloads of Bind() function: first one for the object methods and the other one for arbitrary functors (callable objects, including simple functions):</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T060031Z">
@@ -9353,6 +9505,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T081658Z">
         <seg>マウスイベントマクロは個別のマウスやすべてのマウスのイベントを処理することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Multithreading Overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T150140Z">
+        <seg>マルチスレッドの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Multithreading overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T141757Z">
+        <seg>マルチスレッドの概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -9823,6 +9991,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Of course, in some situations threads really make sense (classical example is a server application which launches a new thread for each new client), but in others it might be a very poor choice (example: launching a separate thread when doing a long computation to show a progress dialog).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T145811Z">
+        <seg>もちろん、いくつかの状況ではスレッドは本当に意味がありますが (古典的な例ではサーバアプリケーションでクライアントごとに新しいスレッドを実行することが挙げられます)、それ以外の場合ではお粗末な選択になるでしょう。(例: 長い計算をするときにプログレスダイアログを表示するために別のスレッドを実行する) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Of course, in some situations threads really make sense (classical example is a server application which launches a new thread for each new client), but in others it might be an overkill.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130628T233256Z">
+        <seg>もちろん、いくつかの状況ではスレッドは本当に意味がありますが (古典的な例ではサーバアプリケーションでクライアントごとに新しいスレッドを実行することが挙げられます)、それ以外の場合ではやり過ぎでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Of course, it would be nearly impossibly to write such programs if it had to be done this way (try to imagine the number of <bpt i="0" x="0">&lt;t0&gt;</bpt>#ifdef UNICODE<ept i="0">&lt;/t0&gt;</ept> an average program would have had!).</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130502T151456Z">
@@ -9883,6 +10067,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130610T150843Z">
         <seg>一方で、階層構造を持ち、小規模から中規模であるすべての種類のデータを格納するのにこれらの提供機能が非常に役立ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>On the other hand, the recent evolution of the computer hardware shows an important trend towards multi-core systems, which are better exploited using multiple threads (e.g. you may want to split a long task among as many threads as many CPU (cores) the system reports; see <bpt i="0" x="0">&lt;a0&gt;</bpt>wxThread::GetCPUCount<ept i="0">&lt;/a0&gt;</ept>).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130628T234144Z">
+        <seg>一方で、近年のハードウェアの進歩はマルチコアシステムに関する重要な動向を見せており、マルチコアシステムではマルチスレッドをより有効活用できます。(例えば、長時間の計算を CPU 数と同じ数のスレッドに分割したいと思うかもしれません; <bpt i="0" x="0">&lt;a0&gt;</bpt>wxThread::GetCPUCount<ept i="0">&lt;/a0&gt;</ept> を参照してください)</seg>
       </tuv>
     </tu>
     <tu>
@@ -10067,6 +10259,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T141008Z">
         <seg>その他のサイザー</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Other implementation choices are available: for the progress dialog example it is far better to do the calculations in the <bpt i="0" x="0">&lt;a0&gt;</bpt>idle handler<ept i="0">&lt;/a0&gt;</ept> or even simply do everything at once but call <bpt i="1" x="1">&lt;a1&gt;</bpt>wxWindow::Update()<ept i="1">&lt;/a1&gt;</ept> periodically to update the screen.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T144331Z">
+        <seg>他の実装方法を選択することは可能です: プログレスダイアログの例で言うと、<bpt i="0" x="0">&lt;a0&gt;</bpt>アイドルハンドラ<ept i="0">&lt;/a0&gt;</ept> で計算を行なうか、もしくは単純に一度に計算を行い、画面を更新するために定期的に <bpt i="1" x="1">&lt;a1&gt;</bpt>wxWindow::Update()<ept i="1">&lt;/a1&gt;</ept> を呼び出す方がずっと良い方法です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10489,6 +10689,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Returns the number of system CPUs or -1 if the value is unknown.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130628T233125Z">
+        <seg>CPU の数か、数が不明な場合は -1 を返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Returns the object (usually a window) associated with the event, if any.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T045804Z">
@@ -10533,6 +10741,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130615T034228Z">
         <seg>システムシャットダウンやウィンドウの終了イベントを拒否できる場合に true を返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Returns wxEVT_CATEGORY_THREAD.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130629T113636Z">
+        <seg>wxEVT_CATEGORY_THREAD を返却します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10645,6 +10861,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130606T152501Z">
         <seg>また、wxDialog が継承している関数については <bpt i="0" x="0">&lt;a0&gt;</bpt>wxTopLevelWindow<ept i="0">&lt;/a0&gt;</ept> と <bpt i="1" x="1">&lt;a1&gt;</bpt>wxWindow<ept i="1">&lt;/a1&gt;</ept> を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>See also the <bpt i="0" x="0">&lt;a0&gt;</bpt>Thread Sample<ept i="0">&lt;/a0&gt;</ept> for a sample showing some simple interactions between the main and secondary threads.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130629T114633Z">
+        <seg>メインスレッドとサブスレッド間の単純なやり取りの例として <bpt i="0" x="0">&lt;a0&gt;</bpt>スレッドサンプル<ept i="0">&lt;/a0&gt;</ept> も参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11729,6 +11953,22 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The design which uses one GUI thread and several worker threads which communicate with the main one using <bpt i="1" x="1">&lt;b1&gt;</bpt>events<ept i="1">&lt;/b1&gt;</ept> is much more robust and will undoubtedly save you countless problems (example: under Win32 a thread can only access GDI objects such as pens, brushes, device contexts created by itself and not by the other threads).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130628T235536Z">
+        <seg>ひとつの GUI スレッドと複数のワーカースレッドを使用し、<bpt i="1" x="1">&lt;b1&gt;</bpt>イベント<ept i="1">&lt;/b1&gt;</ept> を使用してメインスレッドと通信するデザインはよりロバストで、無数の問題が起こるのを間違いなく防いでくれます。(例: Win32 では自スレッドで作成した GDI オブジェクト (ペンやブラシなど) にだけアクセスでき、他スレッドで作成したオブジェクトにはアクセスできません)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The design which uses one GUI thread and several worker threads which communicate with the main one using events is much more robust and will undoubtedly save you countless problems (example: under Win32 a thread can only access GDI objects such as pens, brushes, &amp;c created by itself and not by the other threads).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T145006Z">
+        <seg>ひとつの GUI スレッドと複数のワーカースレッドを使用し、イベントを使用してメインスレッドと通信するデザインはよりロバストで、無数の問題が起こるのを間違いなく防いでくれます。(例: Win32 では自スレッドで作成した GDI オブジェクト (ペンやブラシなど) にだけアクセスでき、他スレッドで作成したオブジェクトにはアクセスできません)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The details of event propagation up the window hierarchy are described in the next section.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T145337Z">
@@ -12593,6 +12833,22 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>The thread API in wxWidgets resembles to POSIX1.c threads API (a.k.a. pthreads), although several functions have different names and some features inspired by Win32 thread API are there as well.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T143247Z">
+        <seg>いくつかの関数の名前が異なりますし、Win32 スレッド API にインスピレーションを受けた機能もありますが、wxWidgets のスレッド API は (pthread としても知られる) POSIX1.c のスレッド API によく似ています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The thread sample shows that it <bpt i="0" x="0">&lt;i0&gt;</bpt>is<ept i="0">&lt;/i0&gt;</ept> possible for many different threads to call GUI functions at once (all the threads created in the sample access GUI), but it is a very poor design choice for anything except an example.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T144707Z">
+        <seg>スレッドのサンプルは GUI 関数を同時に異なるスレッドから呼び出すことが <bpt i="0" x="0">&lt;i0&gt;</bpt>可能<ept i="0">&lt;/i0&gt;</ept> なことを示していますが (サンプル中のすべてのスレッドから GUI にアクセスしています)、サンプル以外のデザインの選択肢はほとんどありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>The type of unique identifiers (ID) used for wxWindow-derived classes.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130522T142003Z">
@@ -12733,6 +12989,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T072021Z">
         <seg>wxTextFile はテキストファイルを行単位で扱うためのシンプルなクラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The wxThreadHelper class is a mix-in class that manages a single background thread, either detached or joinable (see wxThread for the differences).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T150516Z">
+        <seg>wxThreadHelper クラスは分離済み、もしくは合流可能なひとつのバックグラウンドスレッドの管理を行なうミックスインクラスです。(wxThread を参照して違いを確認してください)</seg>
       </tuv>
     </tu>
     <tu>
@@ -12913,6 +13177,22 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>These classes hopefully make writing MT programs easier and they also provide some extra error checking (compared to the native - be it Win32 or Posix - thread API), however it is still a non-trivial undertaking especially for large projects.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130628T233149Z">
+        <seg>これらのクラスによって、おそらくマルチスレッドプログラムの作成がより簡単になる上に、(ネイティブ (Win32 または Posix) スレッド API と比較して) いくつかの追加エラーチェックを行なってくれます。ただし、依然としてこれは簡単な仕事ではありませんし、巨大プロジェクトでは特にそうだと思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>These classes will hopefully make writing MT programs easier and they also provide some extra error checking (compared to the native (be it Win32 or Posix) thread API), however it is still a non-trivial undertaking especially for large projects.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T145725Z">
+        <seg>これらのクラスによって、おそらくマルチスレッドプログラムの作成がより簡単になる上に、(ネイティブ (Win32 または Posix) スレッド API と比較して) いくつかの追加エラーチェックを行なってくれます。ただし、依然としてこれは簡単な仕事ではありませんし、巨大プロジェクトでは特にそうだと思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>These events can be triggered by using the input devices (such as keyboard, mouse, joystick) directly or, more commonly, by a standard control which synthesizes such input events into higher level events: for example, a <bpt i="0" x="0">&lt;a0&gt;</bpt>wxButton<ept i="0">&lt;/a0&gt;</ept> can generate a click event when the user presses the left mouse button on it and then releases it without pressing <bpt i="1" x="1">&lt;c1&gt;</bpt>Esc<ept i="1">&lt;/c1&gt;</ept> in the meanwhile.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130507T155458Z">
@@ -12933,6 +13213,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130620T140134Z">
         <seg>これらのクラスは実際には "IO" クラスで実装されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>These functions have a thread-safe implementation so that they can be used as they are for sending events from one thread to another.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T145136Z">
+        <seg>これらの関数はスレッドセーフに実装されているため、あるスレッドから他のスレッドへイベントを送信するのに使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13185,6 +13473,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This class adds some simple functionality to wxEvent to facilitate inter-thread communication.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130629T113629Z">
+        <seg>このクラスはスレッド間通信を容易にするための単純な機能を wxEvent へ追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This class allows to use all methods taking a wxInputStream reference to read in-memory data...</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130622T141013Z">
@@ -13301,6 +13597,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130622T130621Z">
         <seg>このクラスは wxWidgets における大半のストリームクラスの基底クラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This class is used for idle events, which are generated when the system becomes idle.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130628T234317Z">
+        <seg>このクラスはアイドルイベントに使用されます。アイドルイベントはシステムがアイドルになったときに生成されます。le.</seg>
       </tuv>
     </tu>
     <tu>
@@ -14241,6 +14545,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>To implement non-blocking operations <bpt i="0" x="0">&lt;e0&gt;</bpt>without<ept i="0">&lt;/e0&gt;</ept> using multiple threads you have two possible implementation choices:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130628T234239Z">
+        <seg>マルチスレッドを使用 <bpt i="0" x="0">&lt;e0&gt;</bpt>せずに<ept i="0">&lt;/e0&gt;</ept> ノンブロッキング処理を行なうにはふたつの選択肢があります:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>To limit logging to important messages only, you may use <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLog::SetLogLevel()<ept i="0">&lt;/a0&gt;</ept> with e.g. wxLOG_Warning value -- this will completely disable all logging messages with the severity less than warnings, so <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogMessage()<ept i="1">&lt;/a1&gt;</ept> output won't be shown to the user any more.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T140449Z">
@@ -14277,6 +14589,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T032037Z">
         <seg>別の言い方をすると、伝播するように設定されたイベント (<bpt i="1" x="1">&lt;a1&gt;</bpt>参照: wxEvent::ShouldPropagate<ept i="1">&lt;/a1&gt;</ept>) (よくあるのは wxCommandEvent を直接、または間接的に継承したイベントです) は最大回数、伝播するか <bpt i="2" x="2">&lt;a2&gt;</bpt>event.Skip()<ept i="2">&lt;/a2&gt;</ept> を呼んでいないイベントハンドラが見つかるまで、子から親へコントロール階層をさかのぼっていきます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To resolve the last problem <bpt i="2" x="2">&lt;a2&gt;</bpt>wxThreadEvent<ept i="2">&lt;/a2&gt;</ept> can be used: thanks to its implementation of the <bpt i="3" x="3">&lt;a3&gt;</bpt>wxThreadEvent::GetEventCategory<ept i="3">&lt;/a3&gt;</ept> function <bpt i="4" x="4">&lt;a4&gt;</bpt>wxThreadEvent<ept i="4">&lt;/a4&gt;</ept> classes in fact do not get processed by <bpt i="5" x="5">&lt;a5&gt;</bpt>wxEventLoopBase::YieldFor()<ept i="5">&lt;/a5&gt;</ept> unless you specify the <bpt i="6" x="6">&lt;c6&gt;</bpt>wxEVT_CATEGORY_THREAD<ept i="6">&lt;/c6&gt;</ept> flag.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130629T114551Z">
+        <seg>最後の問題を解決するために <bpt i="2" x="2">&lt;a2&gt;</bpt>wxThreadEvent<ept i="2">&lt;/a2&gt;</ept> を使用することができます: <bpt i="3" x="3">&lt;a3&gt;</bpt>wxThreadEvent::GetEventCategory<ept i="3">&lt;/a3&gt;</ept> 関数の実装のおかげで <bpt i="6" x="6">&lt;c6&gt;</bpt>wxEVT_CATEGORY_THREAD<ept i="6">&lt;/c6&gt;</ept> フラグを指定しない限り、実際には <bpt i="5" x="5">&lt;a5&gt;</bpt>wxEventLoopBase::YieldFor()<ept i="5">&lt;/a5&gt;</ept> で <bpt i="4" x="4">&lt;a4&gt;</bpt>wxThreadEvent<ept i="4">&lt;/a4&gt;</ept> クラスが処理されることはありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15305,6 +15625,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>When to use multiple threads</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T150933Z">
+        <seg>マルチスレッドをいつ使用するべきか</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>When using a vertical sizer, each child can be centered, aligned to the right or aligned to the left.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130520T151449Z">
@@ -15317,6 +15645,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T012942Z">
         <seg>Unicode を使用するときは、いくつかの言葉を定義しておくことが重要です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>When writing a multi-threaded application, it is strongly recommended that <bpt i="0" x="0">&lt;b0&gt;</bpt>no secondary threads call GUI functions<ept i="0">&lt;/b0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130628T235614Z">
+        <seg>マルチスレッドアプリケーションを作成するときには <bpt i="0" x="0">&lt;b0&gt;</bpt>サブスレッドから GUI 関数を呼び出さない<ept i="0">&lt;/b0&gt;</ept> ことを強く推奨します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15501,6 +15837,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130519T151238Z">
         <seg>wxDesigner では、ストレッチ係数は <bpt i="0" x="0">&lt;i0&gt;</bpt>Option<ept i="0">&lt;/i0&gt;</ept> メニューから指定できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Works like Yield() with onlyIfNeeded == true, except that it allows the caller to specify a mask of t...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130629T000812Z">
+        <seg>onlyIfNeeded == true の場合の Yield() と同じように動作しますが、呼び出し元が wxEventCategory の値のマスクを指定できる点が異なります。このマスクではどのイベントを処理するか、もしくは "遅延させる" かを指定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15849,6 +16193,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>You should also look at the <bpt i="0" x="0">&lt;a0&gt;</bpt>wxThread<ept i="0">&lt;/a0&gt;</ept> docs for important notes about secondary threads and their deletion.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130629T000239Z">
+        <seg>また、サブスレッドとその削除に関する注意事項について <bpt i="0" x="0">&lt;a0&gt;</bpt>wxThread<ept i="0">&lt;/a0&gt;</ept> のドキュメントも参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>You should always use <bpt i="0" x="0">&lt;a0&gt;</bpt>wxICON()<ept i="0">&lt;/a0&gt;</ept> and <bpt i="1" x="1">&lt;a1&gt;</bpt>wxBITMAP()<ept i="1">&lt;/a1&gt;</ept> macros because they work for any platform (unlike the code above which doesn't deal with wxMac, wxX11, ...) and are shorter and more clear than versions with many <bpt i="2" x="2">&lt;s2&gt;</bpt>#ifdef<ept i="2">&lt;/s2&gt;</ept> blocks.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130609T155738Z">
@@ -15917,6 +16269,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T162809Z">
         <seg>どちらの方法を使うにせよ、新しいイベント型の定義と宣言が必要となりますが、それには以下のマクロを使用します:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You're instead encouraged to use <bpt i="4" x="4">&lt;a4&gt;</bpt>wxThreadHelper<ept i="4">&lt;/a4&gt;</ept> as it greatly simplifies the communication and the sharing of resources.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130629T000101Z">
+        <seg>代わりに <bpt i="4" x="4">&lt;a4&gt;</bpt>wxThreadHelper<ept i="4">&lt;/a4&gt;</ept> を使用することが奨励されており、このクラスはスレッド間のやり取りとリソースの共有を非常に単純化してくれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16136,6 +16496,14 @@ public:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130613T160314Z">
         <seg>dialog-&gt;Destroy();</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>do everything at once but call <bpt i="0" x="0">&lt;a0&gt;</bpt>wxWindow::Update()<ept i="0">&lt;/a0&gt;</ept> or wxApp::YieldFor(wxEVT_CATEGORY_UI) periodically to update the screen.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130628T234947Z">
+        <seg>すべての計算を一度に行うが、画面を更新するために <bpt i="0" x="0">&lt;a0&gt;</bpt>wxWindow::Update()<ept i="0">&lt;/a0&gt;</ept> か wxApp::YieldFor(wxEVT_CATEGORY_UI) を定期的に呼び出す。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16847,6 +17215,14 @@ public:</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>use <bpt i="0" x="0">&lt;a0&gt;</bpt>wxIdleEvent<ept i="0">&lt;/a0&gt;</ept> (e.g. to perform a long calculation while updating a progress dialog)</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130628T234449Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxIdleEvent<ept i="0">&lt;/a0&gt;</ept> を使用する。(例えば、プログレスダイアログを更新しながら長い計算を行なうために使用します)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>using <bpt i="0" x="0">&lt;a0&gt;</bpt>wxStdDialogButtonSizer<ept i="0">&lt;/a0&gt;</ept>;</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130606T150528Z">
@@ -17269,6 +17645,14 @@ protected:</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T155830Z">
         <seg>wxCommandEvent event( wxEVT_MY_EVENT, GetId() );</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxCondition variables correspond to pthread conditions or to Win32 event objects.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T150824Z">
+        <seg>wxCondition 変数は pthread のコンディションや Win32 のイベントオブジェクトに相当します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18039,6 +18423,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxSemaphore is a counter limiting the number of threads concurrently accessing a shared resource...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T150911Z">
+        <seg>wxSemaphore は共有リソースへ同時アクセス可能なスレッド数を制限するカウンターです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxSetCursorEvent</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T055409Z">
@@ -18493,6 +18885,22 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxWidgets provides a complete set of classes encapsulating objects necessary in multithreaded (MT) programs: the <bpt i="0" x="0">&lt;a0&gt;</bpt>thread<ept i="0">&lt;/a0&gt;</ept> class itself and different synchronization objects: <bpt i="1" x="1">&lt;a1&gt;</bpt>mutexes<ept i="1">&lt;/a1&gt;</ept> and <bpt i="2" x="2">&lt;a2&gt;</bpt>critical sections<ept i="2">&lt;/a2&gt;</ept> with <bpt i="3" x="3">&lt;a3&gt;</bpt>conditions<ept i="3">&lt;/a3&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T145604Z">
+        <seg>wxWidgets はマルチスレッド (MT) プログラムで必要となるオブジェクトをカプセル化したクラスの一式を提供しています: <bpt i="0" x="0">&lt;a0&gt;</bpt>thread<ept i="0">&lt;/a0&gt;</ept> クラス自身と、他の同期オブジェクトである <bpt i="1" x="1">&lt;a1&gt;</bpt>ミューテックス<ept i="1">&lt;/a1&gt;</ept>、<bpt i="2" x="2">&lt;a2&gt;</bpt>クリティカルセクション<ept i="2">&lt;/a2&gt;</ept>、<bpt i="3" x="3">&lt;a3&gt;</bpt>コンディション<ept i="3">&lt;/a3&gt;</ept> が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxWidgets provides a complete set of classes encapsulating objects necessary in multithreaded (MT) programs: the <bpt i="0" x="0">&lt;a0&gt;</bpt>wxThread<ept i="0">&lt;/a0&gt;</ept> class itself and different synchronization objects: mutexes (see <bpt i="1" x="1">&lt;a1&gt;</bpt>wxMutex<ept i="1">&lt;/a1&gt;</ept>) and critical sections (see <bpt i="2" x="2">&lt;a2&gt;</bpt>wxCriticalSection<ept i="2">&lt;/a2&gt;</ept>) with conditions (see <bpt i="3" x="3">&lt;a3&gt;</bpt>wxCondition<ept i="3">&lt;/a3&gt;</ept>).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T151105Z">
+        <seg>wxWidgets はマルチスレッド (MT) プログラムで必要となるオブジェクトをカプセル化したクラスの一式を提供しています: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxThread<ept i="0">&lt;/a0&gt;</ept> クラス自身と、他の同期オブジェクトであるミューテックス (<bpt i="1" x="1">&lt;a1&gt;</bpt>wxMutex<ept i="1">&lt;/a1&gt;</ept> 参照)、クリティカルセクション(<bpt i="2" x="2">&lt;a2&gt;</bpt>wxCriticalSection<ept i="2">&lt;/a2&gt;</ept> 参照)、コンディション (<bpt i="3" x="3">&lt;a3&gt;</bpt>wxCondition<ept i="3">&lt;/a3&gt;</ept> 参照) が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxWidgets provides facilities for message translation with it's <bpt i="0" x="0">&lt;a0&gt;</bpt>wxLocale<ept i="0">&lt;/a0&gt;</ept> class and is itself fully translated into several languages.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T040006Z">
@@ -18601,6 +19009,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T035449Z">
         <seg>wxWidgets: wxWidgets: 国際化</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxWidgets: wxWidgets: Multithreading Overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130625T150213Z">
+        <seg>wxWidgets: wxWidgets: マルチスレッドの概要</seg>
       </tuv>
     </tu>
     <tu>
