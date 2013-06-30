@@ -13971,8 +13971,8 @@ off_t position = in_stream.TellI();
       <tuv xml:lang="EN-US">
         <seg>This is because Windows 3 expects the contents of a modal dialog to be loaded from a resource file or created on receipt of a dialog initialization message.</seg>
       </tuv>
-      <tuv xml:lang="JA" changeid="owner" changedate="20130531T150148Z">
-        <seg>これは、Windows 3 ではモーダルダイアログの内容はリソースファイルから読み込みか、ダイアログの初期化メッセージを受信したときに作成する必要があるためです。</seg>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130630T011316Z">
+        <seg>これは、Windows 3 ではモーダルダイアログの内容はリソースファイルから読み込むか、ダイアログの初期化メッセージを受信したときに作成する必要があるためです。</seg>
       </tuv>
     </tu>
     <tu>
