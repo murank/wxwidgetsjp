@@ -6,10 +6,98 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="EN-US">
+        <seg>"Content-Type: text/plain; charset=CHARSET\n"</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T123419Z">
+        <seg>"Content-Type: text/plain; charset=CHARSET\n"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>"Save changed data?", "My app", wxYES_NO|wxCANCEL);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130613T160314Z">
         <seg>"Save changed data?", "My app", wxYES_NO|wxCANCEL);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-02-19 16:03+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME &lt;EMAIL@ADDRESS&gt;\n"
+"Language-Team: LANGUAGE &lt;LL@li.org&gt;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T123322Z">
+        <seg>#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-02-19 16:03+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME &lt;EMAIL@ADDRESS&gt;\n"
+"Language-Team: LANGUAGE &lt;LL@li.org&gt;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-02-19 16:03+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME &lt;EMAIL@ADDRESS&gt;\n"
+"Language-Team: LANGUAGE &lt;LL@li.org&gt;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T123639Z">
+        <seg>#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-02-19 16:03+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME &lt;EMAIL@ADDRESS&gt;\n"
+"Language-Team: LANGUAGE &lt;LL@li.org&gt;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg># Copyright (C) YEAR Free Software Foundation, Inc.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T123319Z">
+        <seg># Copyright (C) YEAR Free Software Foundation, Inc.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg># FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, YEAR.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T123321Z">
+        <seg># FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, YEAR.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg># SOME DESCRIPTIVE TITLE.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T123318Z">
+        <seg># SOME DESCRIPTIVE TITLE.</seg>
       </tuv>
     </tu>
     <tu>
@@ -222,6 +310,22 @@
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130523T155852Z">
         <seg>(デバッグビルドのみ) この変数は wxLogTrace の呼び出しの中で使用されるトレースマスクのカンマ区切りリストを設定します; wxWidgets の初期化中にリスト内の各マスクに対して &lt;a0&gt;wxLog::AddTraceMask&lt;/a0&gt; が呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Make sure that the header is &lt;b0&gt;not&lt;/b0&gt; marked as &lt;e1&gt;fuzzy&lt;/e1&gt;.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T134722Z">
+        <seg>(ヘッダが &lt;e1&gt;fuzzy&lt;/e1&gt; としてマーク &lt;b0&gt;されない&lt;/b0&gt; ようにしてください)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Make sure that the header is &lt;b0&gt;not&lt;/b0&gt; marked as &lt;i1&gt;fuzzy&lt;/i1&gt;.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T135025Z">
+        <seg>(ヘッダが &lt;i1&gt;あいまい&lt;/i1&gt; に &lt;b0&gt;ならない&lt;/b0&gt; ようにしてください)</seg>
       </tuv>
     </tu>
     <tu>
@@ -458,6 +562,30 @@ bool MyApp::OnInit()
       <tuv lang="JA" changeid="owner" changedate="20130512T034644Z">
         <seg>... 新しいサイズを使用してフレームを更新する ...
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...failure (or we may &lt;s13&gt;try&lt;/s13&gt; iso8859-1/7bit ASCII)...
+}
+...display text...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T143540Z">
+        <seg>...失敗 (iso8859-1/7ビット ASCII を試すかもしれない)...
+}
+...テキストを表示する...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...failure (or we may try iso8859-1/7bit ASCII)...
+}
+...display text...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T135341Z">
+        <seg>...失敗 (iso8859-1/7ビット ASCII を試すかもしれない)...
+}
+...テキストを表示する...</seg>
       </tuv>
     </tu>
     <tu>
@@ -1727,6 +1855,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a14&gt;Writing non-English applications&lt;/a14&gt;&lt;br15&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T120100Z">
+        <seg>&lt;a14&gt;非英語アプリケーションの作成&lt;/a14&gt;&lt;br15&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a14&gt;wxLogChain&lt;/a14&gt;,&lt;br15&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T003254Z">
@@ -1921,6 +2057,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a2&gt;wxFontEncoding&lt;/a2&gt; alternative;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T143521Z">
+        <seg>&lt;a2&gt;wxFontEncoding&lt;/a2&gt; alternative;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a2&gt;wxLog::SetComponentLevel&lt;/a2&gt;(&lt;s3&gt;"MyProgram/DB"&lt;/s3&gt;, &lt;a4&gt;wxLOG_FatalError&lt;/a4&gt;);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T110710Z">
@@ -1997,6 +2141,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T145530Z">
         <seg>&lt;a40&gt;wxSizerFlags&lt;/a40&gt;(0).Align().Border(&lt;a41&gt;wxALL&lt;/a41&gt;, 10));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a42&gt;&lt;b43&gt;Writing non-English applications&lt;/b43&gt;&lt;/a42&gt;&lt;br44&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T120447Z">
+        <seg>&lt;a42&gt;&lt;b43&gt;非英語アプリケーションの作成&lt;/b43&gt;&lt;/a42&gt;&lt;br44&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -2169,6 +2321,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a6&gt;wxCSConv&lt;/a6&gt; convFrom(&lt;a7&gt;wxFontMapper::Get&lt;/a7&gt;()-&gt;GetEncodingName(enc));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T143515Z">
+        <seg>&lt;a6&gt;wxCSConv&lt;/a6&gt; convFrom(&lt;a7&gt;wxFontMapper::Get&lt;/a7&gt;()-&gt;GetEncodingName(enc));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a6&gt;wxLogTextCtrl&lt;/a6&gt;,&lt;br7&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T003252Z">
@@ -2285,6 +2445,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T074938Z">
         <seg>&lt;a8&gt;ウィンドウ識別子&lt;/a8&gt;&lt;br9&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a8&gt;wxCSConv&lt;/a8&gt; convTo(&lt;a9&gt;wxFontMapper::Get&lt;/a9&gt;()-&gt;GetEncodingName(alternative));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T143513Z">
+        <seg>&lt;a8&gt;wxCSConv&lt;/a8&gt; convTo(&lt;a9&gt;wxFontMapper::Get&lt;/a9&gt;()-&gt;GetEncodingName(alternative));</seg>
       </tuv>
     </tu>
     <tu>
@@ -2753,10 +2921,94 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;meta http-equiv="Content-Type" content="text/html; charset=iso8859-2"&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T133258Z">
+        <seg>&lt;meta http-equiv="Content-Type" content="text/html; charset=iso8859-2"&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;meta http-equiv=&lt;s0&gt;"Content-Type"&lt;/s0&gt; content=&lt;s1&gt;"text/html; charset=iso8859-2"&lt;/s1&gt;&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T144554Z">
+        <seg>&lt;meta http-equiv=&lt;s0&gt;"Content-Type"&lt;/s0&gt; content=&lt;s1&gt;"text/html; charset=iso8859-2"&lt;/s1&gt;&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s0&gt;    #include &lt;fstream&gt;&lt;/s0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130619T143010Z">
         <seg>&lt;s0&gt;    #include &lt;fstream&gt;&lt;/s0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;# SOME DESCRIPTIVE TITLE.&lt;/s0&gt;
+&lt;s1&gt;&lt;/s1&gt;&lt;s2&gt;# Copyright (C) YEAR Free Software Foundation, Inc.&lt;/s2&gt;
+&lt;s3&gt;&lt;/s3&gt;&lt;s4&gt;# FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, YEAR.&lt;/s4&gt;
+&lt;s5&gt;&lt;/s5&gt;&lt;s6&gt;#&lt;/s6&gt;
+&lt;s7&gt;&lt;/s7&gt;msgid &lt;s8&gt;""&lt;/s8&gt;
+msgstr &lt;s9&gt;""&lt;/s9&gt;
+&lt;s10&gt;"Project-Id-Version: PACKAGE VERSION\n"&lt;/s10&gt;
+&lt;s11&gt;"POT-Creation-Date: 1999-02-19 16:03+0100\n"&lt;/s11&gt;
+&lt;s12&gt;"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"&lt;/s12&gt;
+&lt;s13&gt;"Last-Translator: FULL NAME &lt;EMAIL@ADDRESS&gt;\n"&lt;/s13&gt;
+&lt;s14&gt;"Language-Team: LANGUAGE &lt;LL@li.org&gt;\n"&lt;/s14&gt;
+&lt;s15&gt;"MIME-Version: 1.0\n"&lt;/s15&gt;
+&lt;s16&gt;"Content-Type: text/plain; charset=CHARSET\n"&lt;/s16&gt;
+&lt;s17&gt;"Content-Transfer-Encoding: ENCODING\n"&lt;/s17&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T134543Z">
+        <seg>&lt;s0&gt;# SOME DESCRIPTIVE TITLE.&lt;/s0&gt;
+&lt;s1&gt;&lt;/s1&gt;&lt;s2&gt;# Copyright (C) YEAR Free Software Foundation, Inc.&lt;/s2&gt;
+&lt;s3&gt;&lt;/s3&gt;&lt;s4&gt;# FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, YEAR.&lt;/s4&gt;
+&lt;s5&gt;&lt;/s5&gt;&lt;s6&gt;#&lt;/s6&gt;
+&lt;s7&gt;&lt;/s7&gt;msgid &lt;s8&gt;""&lt;/s8&gt;
+msgstr &lt;s9&gt;""&lt;/s9&gt;
+&lt;s10&gt;"Project-Id-Version: PACKAGE VERSION\n"&lt;/s10&gt;
+&lt;s11&gt;"POT-Creation-Date: 1999-02-19 16:03+0100\n"&lt;/s11&gt;
+&lt;s12&gt;"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"&lt;/s12&gt;
+&lt;s13&gt;"Last-Translator: FULL NAME &lt;EMAIL@ADDRESS&gt;\n"&lt;/s13&gt;
+&lt;s14&gt;"Language-Team: LANGUAGE &lt;LL@li.org&gt;\n"&lt;/s14&gt;
+&lt;s15&gt;"MIME-Version: 1.0\n"&lt;/s15&gt;
+&lt;s16&gt;"Content-Type: text/plain; charset=CHARSET\n"&lt;/s16&gt;
+&lt;s17&gt;"Content-Transfer-Encoding: ENCODING\n"&lt;/s17&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;# SOME DESCRIPTIVE TITLE.&lt;/s0&gt;
+&lt;s1&gt;&lt;/s1&gt;&lt;s2&gt;# Copyright (C) YEAR Free Software Foundation, Inc.&lt;/s2&gt;
+&lt;s3&gt;&lt;/s3&gt;&lt;s4&gt;# FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, YEAR.&lt;/s4&gt;
+&lt;s5&gt;&lt;/s5&gt;&lt;s6&gt;#&lt;/s6&gt;
+&lt;s7&gt;&lt;/s7&gt;msgid &lt;s8&gt;""&lt;/s8&gt;
+msgstr &lt;s9&gt;""&lt;/s9&gt;
+&lt;s10&gt;"Project-Id-Version: PACKAGE VERSION\n"&lt;/s10&gt;
+&lt;s11&gt;"POT-Creation-Date: 1999-02-19 16:03+0100\n"&lt;/s11&gt;
+&lt;s12&gt;"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"&lt;/s12&gt;
+&lt;s13&gt;"Last-Translator: FULL NAME &lt;EMAIL@ADDRESS&gt;\n"&lt;/s13&gt;
+&lt;s14&gt;"Language-Team: LANGUAGE &lt;LL@li.org&gt;\n"&lt;/s14&gt;
+&lt;s15&gt;"MIME-Version: 1.0\n"&lt;/s15&gt;
+&lt;s16&gt;"Content-Type: text/plain; charset=iso8859-2\n"&lt;/s16&gt;
+&lt;s17&gt;"Content-Transfer-Encoding: 8bit\n"&lt;/s17&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T134546Z">
+        <seg>&lt;s0&gt;# SOME DESCRIPTIVE TITLE.&lt;/s0&gt;
+&lt;s1&gt;&lt;/s1&gt;&lt;s2&gt;# Copyright (C) YEAR Free Software Foundation, Inc.&lt;/s2&gt;
+&lt;s3&gt;&lt;/s3&gt;&lt;s4&gt;# FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, YEAR.&lt;/s4&gt;
+&lt;s5&gt;&lt;/s5&gt;&lt;s6&gt;#&lt;/s6&gt;
+&lt;s7&gt;&lt;/s7&gt;msgid &lt;s8&gt;""&lt;/s8&gt;
+msgstr &lt;s9&gt;""&lt;/s9&gt;
+&lt;s10&gt;"Project-Id-Version: PACKAGE VERSION\n"&lt;/s10&gt;
+&lt;s11&gt;"POT-Creation-Date: 1999-02-19 16:03+0100\n"&lt;/s11&gt;
+&lt;s12&gt;"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"&lt;/s12&gt;
+&lt;s13&gt;"Last-Translator: FULL NAME &lt;EMAIL@ADDRESS&gt;\n"&lt;/s13&gt;
+&lt;s14&gt;"Language-Team: LANGUAGE &lt;LL@li.org&gt;\n"&lt;/s14&gt;
+&lt;s15&gt;"MIME-Version: 1.0\n"&lt;/s15&gt;
+&lt;s16&gt;"Content-Type: text/plain; charset=iso8859-2\n"&lt;/s16&gt;
+&lt;s17&gt;"Content-Transfer-Encoding: 8bit\n"&lt;/s17&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -2915,6 +3167,16 @@ puts(p); &lt;s3&gt;// または const char * を受け取る他の関数の呼�
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T130832Z">
         <seg>&lt;s0&gt;enum&lt;/s0&gt; { Red, Green, Blue };</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;if&lt;/s0&gt; (!&lt;a1&gt;wxFontMapper::Get&lt;/a1&gt;()-&gt;IsEncodingAvailable(enc, facename))
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T143523Z">
+        <seg>&lt;s0&gt;if&lt;/s0&gt; (!&lt;a1&gt;wxFontMapper::Get&lt;/a1&gt;()-&gt;IsEncodingAvailable(enc, facename))
+{</seg>
       </tuv>
     </tu>
     <tu>
@@ -3083,6 +3345,14 @@ puts(p); &lt;s3&gt;// または const char * を受け取る他の関数の呼�
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130515T150109Z">
         <seg>&lt;s12&gt;// 処理を行なう&lt;/s12&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s12&gt;else&lt;/s12&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T143527Z">
+        <seg>&lt;s12&gt;else&lt;/s12&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3517,6 +3787,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T113231Z">
         <seg>&lt;s3&gt;if&lt;/s3&gt; ( !file.&lt;a4&gt;Open&lt;/a4&gt;(&lt;s5&gt;"bar"&lt;/s5&gt;) )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s3&gt;if&lt;/s3&gt; (&lt;a4&gt;wxFontMapper::Get&lt;/a4&gt;()-&gt;GetAltForEncoding(enc, &amp;alternative,</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T143520Z">
+        <seg>&lt;s3&gt;if&lt;/s3&gt; (&lt;a4&gt;wxFontMapper::Get&lt;/a4&gt;()-&gt;GetAltForEncoding(enc, &amp;alternative,</seg>
       </tuv>
     </tu>
     <tu>
@@ -4177,6 +4455,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A standard .po file begins with a header like this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T122931Z">
+        <seg>標準の .po ファイルはこのようなヘッダで始まります:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A static function enabling or disabling layout adaptation for all dialogs.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130604T144348Z">
@@ -4569,6 +4855,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>All strings in the catalog are encoded using this charset.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T123523Z">
+        <seg>カタログ内のすべての文字列はこの文字コードで符号化されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All the children apart from standard buttons are reparented onto a new &lt;a0&gt;wxScrolledWindow&lt;/a0&gt; object, using the old top-level sizer for the scrolled window and creating a new top-level sizer to lay out the scrolled window and standard button sizer.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130604T152307Z">
@@ -4661,6 +4955,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130513T151644Z">
         <seg>また、wxWidgets ドキュメント/フレームワークのウィンドウ部分、つまり、&lt;a0&gt;wxDocParentFrame&lt;/a0&gt;、&lt;a1&gt;wxDocChildFrame&lt;/a1&gt; と、その MDI 版である &lt;a2&gt;wxDocMDIParentFrame&lt;/a2&gt;、&lt;a3&gt;wxDocMDIChildFrame&lt;/a3&gt; でのイベント処理には追加のステップが存在することにも注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Also, the hhp project file needs one additional line in the &lt;c0&gt;OPTIONS&lt;/c0&gt; section:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T144718Z">
+        <seg>また、hhp プロジェクトファイルの &lt;c0&gt;OPTIONS&lt;/c0&gt; セクションに一行追加する必要があります:</seg>
       </tuv>
     </tu>
     <tu>
@@ -5541,6 +5843,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By convention, you should only use characters without diacritics (i.e. 7-bit ASCII strings) for msgids in the source code and write them in English.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132102Z">
+        <seg>ソースコード中の msgid には発音区別符号を含まない文字 (つまり、7 ビット ASCII 文字列) だけを使用するべきで、それらは英語で書いてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By default the chain is empty, i.e. there is no next handler.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130514T154429Z">
@@ -5677,6 +5987,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Calls wxTranslations::AddCatalog(const wxString&amp;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T135514Z">
+        <seg>wxTranslations::AddCatalog(const wxString&amp;) を呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Categories</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T004637Z">
@@ -5713,6 +6031,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130501T150637Z">
         <seg>文字型 (&lt;t0&gt;char&lt;/t0&gt; または &lt;t1&gt;wchar_t&lt;/t1&gt;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Charset=iso8859-2</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T133346Z">
+        <seg>Charset=iso8859-2</seg>
       </tuv>
     </tu>
     <tu>
@@ -6019,6 +6345,22 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T145426Z">
         <seg>Contents</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Converting Data</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T134457Z">
+        <seg>データの変換</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Converting data</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132742Z">
+        <seg>データの変換</seg>
       </tuv>
     </tu>
     <tu>
@@ -7067,6 +7409,30 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Font Mapping</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T134456Z">
+        <seg>フォントマッピング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Font encodings.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T143339Z">
+        <seg>フォントエンコーディング。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Font mapping</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132549Z">
+        <seg>フォントマッピング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For a set of dialog convenience functions, including file selection, see &lt;a0&gt;Dialog functions&lt;/a0&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130531T150652Z">
@@ -7563,6 +7929,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Get the current font mapper object.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T143331Z">
+        <seg>現在のフォントマッピングオブジェクトを取得します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>GetEventHandler()-&gt;ProcessEvent( event );
 }</seg>
       </tuv>
@@ -7601,6 +7975,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T092213Z">
         <seg>ロギングをグローバルに有効化、または無効化します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Help Files</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T134458Z">
+        <seg>ヘルプファイル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Help files</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T133111Z">
+        <seg>ヘルプファイル</seg>
       </tuv>
     </tu>
     <tu>
@@ -7761,6 +8151,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T083106Z">
         <seg>イベント処理の仕組み</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How is this done?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T135050Z">
+        <seg>これはどのように行われるのでしょうか? </seg>
       </tuv>
     </tu>
     <tu>
@@ -8261,6 +8659,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you port software to wxWidgets, you may be confronted with legacy source code containing non-English string literals.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T135108Z">
+        <seg>ソフトウェアを wxWidgets に移植する場合、非英語リテラル文字列を含むレガシーなソースコードに直面するかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you port software to wxWindows, you may be confronted with legacy source code containing non-English string literals.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132248Z">
+        <seg>ソフトウェアを wxWindows に移植する場合、非英語リテラル文字列を含むレガシーなソースコードに直面するかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you translate the accelerator modifier names (Ctrl, Alt and Shift) in your menu labels, you may find the accelerators no longer work.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T003227Z">
@@ -8285,10 +8699,34 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you use the program &lt;c0&gt;xgettext&lt;/c0&gt; to extract the strings from the source code, specify the option &lt;c1&gt;--from-code=&lt;source code charset&gt;&lt;/c1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T135306Z">
+        <seg>ソースコードから文字列を抽出するのに &lt;c0&gt;xgettext&lt;/c0&gt; を使用する場合、&lt;c1&gt;--from-code=&lt;ソースコードの文字コード&gt;&lt;/c1&gt; オプションを指定してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you use the program &lt;t0&gt;xgettext&lt;/t0&gt; to extract the strings from the source code, specify the option &lt;t1&gt;--from-code=&lt;source code charset&gt;&lt;/t1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132504Z">
+        <seg>ソースコードから文字列を抽出するのに &lt;t0&gt;xgettext&lt;/t0&gt; を使用する場合、&lt;t1&gt;--from-code=&lt;ソースコードの文字コード&gt;&lt;/t1&gt; オプションを指定してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you used Unicode build of wxWidgets 2.8 or previous version, please read &lt;a0&gt;Unicode Support in wxWidgets&lt;/a0&gt; for the details about how the API changed in 3.0 as a lot of the information which was correct before doesn't apply any longer.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130618T150417Z">
         <seg>wxWidgets 2.8 やそれ以前のバージョンで Unicode ビルドを使用していた場合、3.0 における API の変更点の詳細について &lt;a0&gt;wxWidgets における Unicode 対応&lt;/a0&gt; を参照してください。これまで正しかった多くの情報が 3.0 ではもはや当てはまりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you're using &lt;a0&gt;wxHtmlHelpController&lt;/a0&gt; there is no problem at all.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T133138Z">
+        <seg>&lt;a0&gt;wxHtmlHelpController&lt;/a0&gt; を使用しているのであれば何も問題ありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8597,6 +9035,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the following text, wherever &lt;e0&gt;iso8859-2&lt;/e0&gt; and &lt;e1&gt;windows-1250&lt;/e1&gt; are used, any encodings are meant and any encodings may be substituted there.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T134537Z">
+        <seg>以降の文章で &lt;e0&gt;iso8859-2&lt;/e0&gt; や &lt;e1&gt;windows-1250&lt;/e1&gt; が使用されているところは任意のエンコーディングを意味しており、好きなエンコーディングに置き換えてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the following text, wherever &lt;i0&gt;iso8859-2&lt;/i0&gt; and &lt;i1&gt;windows-1250&lt;/i1&gt; are used, any encodings are meant and any encodings may be substituted there.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T134804Z">
+        <seg>以降の文章で &lt;i0&gt;iso8859-2&lt;/i0&gt; や &lt;i1&gt;windows-1250&lt;/i1&gt; が使用されているところは任意のエンコーディングを意味しており、好きなエンコーディングに置き換えてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the latter case, &lt;c5&gt;wxUSE_UTF8_LOCALE_ONLY&lt;/c5&gt; can also be set to 1 to indicate that all strings are considered to be in UTF-8.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T121106Z">
@@ -8777,6 +9231,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T030347Z">
         <seg>Bind() を使用すると、実行時にクラッシュするかわりにコンパイルエラーが発生するようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Instead of translating the strings in the source code to English and putting the original strings into message catalog, you may configure wxWidgets to use non-English msgids and translate to English using message catalogs:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132409Z">
+        <seg>それらの文字列を英語に翻訳し、元の文字列をメッセージカタログに記載する代わりに、非英語の msgid を使用するように wxWidgets を設定し、メッセージカタログを用いて英語へ翻訳しても構いません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9141,6 +9603,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It specifies the charset used by the catalog.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T123438Z">
+        <seg>これはカタログで使用される文字コードを指定しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It transfers the &lt;a0&gt;wxTextCtrl&lt;/a0&gt; data back to this variable when the dialog is dismissed.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130624T150613Z">
@@ -9281,6 +9751,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130619T152402Z">
         <seg>指定されたコンフィグオブジェクトからファイルの履歴を読み込みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Locales</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T122256Z">
+        <seg>ロケール</seg>
       </tuv>
     </tu>
     <tu>
@@ -9599,6 +10077,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Non-English Strings or 8-bit Characters in Source</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T134455Z">
+        <seg>ソース中の非英語文字列や 8 ビット文字</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Non-English strings or 8-bit characters in the source code</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T131301Z">
+        <seg>ソースコード中の非英語文字列や 8 ビット文字</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Non-alpha characters are filtered out.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130624T150531Z">
@@ -9867,6 +10361,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130527T161134Z">
         <seg>IMPLEMENT_APP(appClass) を使用している点に注意してください。これにより、wxWidgets の初期化時の適切なタイミングでアプリケーションオブジェクトのインスタンスが動的に作成されるようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note this particular line:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T123417Z">
+        <seg>この行に注目してください:</seg>
       </tuv>
     </tu>
     <tu>
@@ -10411,6 +10913,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T043125Z">
         <seg>最新の翻訳版は wxWidgets のホームページを参照してください。そして、あなたが wxWidgets をまだ翻訳されていない言語に翻訳した場合、私達はそれを将来のバージョンに含めることを喜んで承認するでしょう! </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please read &lt;a0&gt;Internationalization&lt;/a0&gt; which describes the locales concept.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T133721Z">
+        <seg>ロケールの概念については &lt;a0&gt;国際化&lt;/a0&gt; を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please read the &lt;a0&gt;Internationalization&lt;/a0&gt; which describes the locales concept.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T134522Z">
+        <seg>ロケールの概念については &lt;a0&gt;国際化&lt;/a0&gt; を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11393,6 +11911,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Specify the source code language and charset as arguments to &lt;a0&gt;wxLocale::AddCatalog&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132534Z">
+        <seg>&lt;a0&gt;wxLocale::AddCatalog&lt;/a0&gt; の引数にソースコードの言語と文字コードを指定してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Standard C++ streams can cause problems on several platforms: they work quite well in most cases, but in the multi-threaded case, for example, they have many problems.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130620T134741Z">
@@ -11509,6 +12035,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130513T154413Z">
         <seg>イベントを伝播させる必要があるかどうかを確認します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thanks to this mechanism you can, for example, distribute only iso8859-13 data and it will be handled transparently under all systems.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T133702Z">
+        <seg>この仕組みのおかげで、例えば iso8859-13 のデータを配布するだけで、すべてのシステムでこのデータが透過的に処理されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11833,6 +12367,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The best way to ensure correctly displayed texts in a GUI across platforms is to use locales.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T122344Z">
+        <seg>プラットフォームをまたがって GUI に正しくテキストを表示する最善の方法はロケールを使用することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The button handler should return immediately if validation failed.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130623T145920Z">
@@ -11845,6 +12387,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130619T152131Z">
         <seg>カレンダコントロールはユーザが日付を選択できるようにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The catalog is then converted to the charset used (see &lt;a0&gt;wxLocale::GetSystemEncoding&lt;/a0&gt; and &lt;a1&gt;wxLocale::GetSystemEncodingName&lt;/a1&gt;) by the user's operating system.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T130914Z">
+        <seg>そして、ユーザのオペレーティングシステムで使用されている文字コード (&lt;a0&gt;wxLocale::GetSystemEncoding&lt;/a0&gt; と &lt;a1&gt;wxLocale::GetSystemEncodingName&lt;/a1&gt; 参照) へカタログが変換されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The catalog is then converted to the charset used (see &lt;a1&gt;wxLocale::GetSystemEncoding&lt;/a1&gt; and &lt;a2&gt;wxLocale::GetSystemEncodingName&lt;/a2&gt;) by the user's operating system.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T135049Z">
+        <seg>そして、ユーザのオペレーティングシステムで使用されている文字コード (&lt;a1&gt;wxLocale::GetSystemEncoding&lt;/a1&gt; と &lt;a2&gt;wxLocale::GetSystemEncodingName&lt;/a2&gt; 参照) へカタログが変換されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13009,6 +13567,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The wxWidgets library provides a mechanism that helps you avoid distributing many identical, only differently encoded, packages with your application (e.g. help files and menu items in iso8859-13 and windows-1257).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T133619Z">
+        <seg>wxWidgets ライブラリは (エンコーディングだけが異なる) 多くの同一なパッケージを配布しなくてもすむ仕組みを提供しています。(例えば iso8859-13 と windows-1257 を使用したヘルプファイルやメニュー項目などです) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The wxWidgets stream classes also provide some functionality not available in the standard library such as support for several compression formats and possibility to work with sockets or text controls (for output only in the latter case).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130622T134239Z">
@@ -13173,6 +13739,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130620T135111Z">
         <seg>そのため、wxStreams が wxWidgets に追加されました。これにより、libg++ の特定のバージョンに依存することなく、対応するすべてのプラットフォームで確実にアプリケーションをコンパイルし、実行することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These charsets usually differ in so many characters that it is impossible to use the same texts under all platforms.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T121522Z">
+        <seg>通常、これらの文字コードは多くの文字で異なっているため、すべてのプラットフォームで同じテキストを使用することはできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13377,6 +13951,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This additional entry tells the HTML help controller what encoding is used in contents and index tables.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T133426Z">
+        <seg>この追加のエントリはコンテンツとインデックステーブルで使用されているエンコーディングを HTML ヘルプコントローラに通知します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This allows enough code points (see below for the definition) sufficient to encode all of the world languages at once.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T095338Z">
@@ -13397,6 +13979,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T155223Z">
         <seg>この方法には、スレッド間でイベントを送信するための新しい &lt;a1&gt;wxEvent::Clone()&lt;/a1&gt; 関数を定義する必要がないといった利点もあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This article describes how to write applications that communicate with the user in a language other than English.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T134359Z">
+        <seg>この概要では英語以外の言語を用いてユーザとやり取りするアプリケーションの作成方法について説明します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13525,6 +14115,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T124726Z">
         <seg>このクラスはログメッセージを C++ のストリームへリダイレクトするのに使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This class converts between any character set supported by the system and Unicode.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T143500Z">
+        <seg>このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13873,6 +14471,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T144543Z">
+        <seg>このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This in turn generates an EVT_CLOSE event: see &lt;a1&gt;wxCloseEvent&lt;/a1&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130614T144235Z">
@@ -14077,6 +14683,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T153116Z">
         <seg>これはビットマップファイルの読み書き、およびデータからのビットマップの作成を実装するための基底クラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is the default behaviour of the &lt;a2&gt;wxLocale&lt;/a2&gt; class; you can disable it by &lt;b3&gt;not&lt;/b3&gt; passing &lt;t4&gt;wxLOCALE_CONV_ENCODING&lt;/t4&gt; to &lt;a5&gt;wxLocale::Init&lt;/a5&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T131228Z">
+        <seg>これが &lt;a2&gt;wxLocale&lt;/a2&gt; クラスのデフォルトの振る舞いです; &lt;a5&gt;wxLocale::Init&lt;/a5&gt; に &lt;t4&gt;wxLOCALE_CONV_ENCODING&lt;/t4&gt; を渡さ &lt;b3&gt;ない&lt;/b3&gt; ことでこれを無効化できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14769,6 +15383,22 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Tries to detect the name of the user's default font encoding.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T134949Z">
+        <seg>ユーザのデフォルトのフォントエンコーディング名を検知しようと試みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tries to detect the user's default font encoding.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T134936Z">
+        <seg>ユーザのデフォルトのフォントエンコーディングを検知しようと試みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Try to write code so it is parameterised by &lt;a0&gt;wxDC&lt;/a0&gt; - if you do this, the same piece of code may write to a number of different devices, by passing a different device context.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T154335Z">
@@ -14997,6 +15627,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T142212Z">
         <seg>wxMotif と wxX11 では wxImage は以下の形式を読み込むことができます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unfortunately many languages use different charsets under Unix and Windows (and other platforms, to make the situation even more complicated).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T120716Z">
+        <seg>残念なことに、Unix や Windows では多くの言語で異なる文字コードが使用されています。(そして、他のプラットフォームではさらに複雑なことになっています) </seg>
       </tuv>
     </tu>
     <tu>
@@ -15665,6 +16303,22 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When you tell the &lt;a0&gt;wxLocale&lt;/a0&gt; class to load a message catalog that contains a correct header, it checks the charset.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T135027Z">
+        <seg>正しいヘッダを含むメッセージカタログを読み込むように &lt;a0&gt;wxLocale&lt;/a0&gt; クラスへ指示すると、そこで文字コードのチェックが行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When you tell the wxLocale class to load a message catalog that contains a correct header, it checks the charset.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T133858Z">
+        <seg>正しいヘッダを含むメッセージカタログを読み込むように wxLocale クラスへ指示すると、そこで文字コードのチェックが行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>While generically &lt;a0&gt;wxEvents&lt;/a0&gt; can be generated both by user actions (e.g. resize of a &lt;a1&gt;wxWindow&lt;/a1&gt;) and by calls to functions (e.g. &lt;a2&gt;wxWindow::SetSize&lt;/a2&gt;), wxWidgets controls normally send &lt;a3&gt;wxCommandEvent&lt;/a3&gt;-derived events only for the user-generated events.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T060815Z">
@@ -15857,6 +16511,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Write your in-code messages in English or without diacritics and put real messages into the message catalog (see &lt;a0&gt;Internationalization&lt;/a0&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T134920Z">
+        <seg>コード中のメッセージは英語か、もしくは発音区別符号を使用せずに書き、実際のメッセージはメッセージカタログ (&lt;a0&gt;国際化&lt;/a0&gt; 参照) に書くようにしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Writeable reference to a character in wxString.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T121343Z">
@@ -15889,6 +16551,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Writing Non-English Applications</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T131720Z">
+        <seg>非英語アプリケーションの作成</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Writing an image format handler for &lt;a0&gt;wxImage&lt;/a0&gt; is also far easier than writing one for &lt;a1&gt;wxBitmap&lt;/a1&gt;, because &lt;a2&gt;wxImage&lt;/a2&gt; has exactly one format on all platforms whereas &lt;a3&gt;wxBitmap&lt;/a3&gt; can store pixel data very differently, depending on colour depths and platform.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T154951Z">
@@ -15909,6 +16579,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130501T154342Z">
         <seg>Unicode を使うことで、国際化対応のプログラムをより簡単に書くことができます。そして、 Unicode 対応が進むにつれ、それはますます簡単になっていくことでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Writing non-English applications</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T120120Z">
+        <seg>非英語アプリケーションの作成</seg>
       </tuv>
     </tu>
     <tu>
@@ -16129,6 +16807,38 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can use &lt;a0&gt;wxMBConv Overview&lt;/a0&gt; and &lt;a1&gt;wxFontMapper&lt;/a1&gt; to display text:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T143313Z">
+        <seg>テキストを表示するのに &lt;a0&gt;wxMBConv の概要&lt;/a0&gt; と &lt;a1&gt;wxFontMapper&lt;/a1&gt; を使用できます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can use &lt;a0&gt;wxMBConv classes&lt;/a0&gt; and &lt;a1&gt;wxFontMapper&lt;/a1&gt; to display text:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132627Z">
+        <seg>テキストを表示するのに &lt;a0&gt;wxMBConv クラス&lt;/a0&gt; と &lt;a1&gt;wxFontMapper&lt;/a1&gt; を使用できます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can use &lt;a1&gt;wxCSConv&lt;/a1&gt; class to convert data to the encoding used by the system your application is running on (see &lt;a2&gt;wxLocale::GetSystemEncoding&lt;/a2&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T133024Z">
+        <seg>&lt;a1&gt;wxCSConv&lt;/a1&gt; クラスを使用することで、アプリケーションを実行しているシステムで使用されているエンコーディングにデータを変換することができます。(&lt;a2&gt;wxLocale::GetSystemEncoding&lt;/a2&gt; 参照)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can use &lt;a1&gt;wxCSConv&lt;/a1&gt; to convert data to the encoding used by the system your application is running on (see &lt;a2&gt;wxLocale::GetSystemEncoding&lt;/a2&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T143604Z">
+        <seg>&lt;a1&gt;wxCSConv&lt;/a1&gt; を使用することで、アプリケーションを実行しているシステムで使用されているエンコーディングにデータを変換することができます。(&lt;a2&gt;wxLocale::GetSystemEncoding&lt;/a2&gt; 参照)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can use a stock validator, such as &lt;a0&gt;wxTextValidator&lt;/a0&gt; (which does text control data transfer, validation and filtering) and &lt;a1&gt;wxGenericValidator&lt;/a1&gt; (which does data transfer for a range of controls); or you can write your own.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130623T143021Z">
@@ -16149,6 +16859,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130612T153851Z">
         <seg>例えば、バイナリデータを格納することはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You have to fill in proper charset information.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T134954Z">
+        <seg>ここに適切な文字コードの情報を記入する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16185,10 +16903,42 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You may want to store all program data (created documents etc.) in the same encoding, let's say &lt;c0&gt;utf-8&lt;/c0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T143550Z">
+        <seg>プログラムで扱うデータ (作成したドキュメントなど) をすべて同じエンコーディングで保持したいと思うかもしれません。仮に &lt;c0&gt;utf-8&lt;/c0&gt; としましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You may want to store all program data (created documents etc.) in the same encoding, let's say &lt;t0&gt;utf-8&lt;/t0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132922Z">
+        <seg>プログラムで扱うデータ (作成したドキュメントなど) をすべて同じエンコーディングで保持したいと思うかもしれません。仮に &lt;t0&gt;utf-8&lt;/t0&gt; としましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You must then call Layout on the sizer to force an update.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130520T145952Z">
         <seg>その後、強制的に更新するためにサイザーの Layout 関数を呼び出す必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You only need to make sure that all the HTML files contain the META tag, e.g.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T133345Z">
+        <seg>すべての HTML ファイルに次のような META タグを含めて、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You only need to make sure that all the HTML files contain the META tag:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T144652Z">
+        <seg>必要なことはすべての HTML ファイルに次のような META タグを含めることだけです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16281,10 +17031,26 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Your .po file may look like this after doing so:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T123633Z">
+        <seg>これを行ったあとの .po ファイルはこのようになります:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Your application can either use &lt;a0&gt;wxWindow::Close&lt;/a0&gt; event just as the framework does, or it can call &lt;a1&gt;wxWindow::Destroy&lt;/a1&gt; directly.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130613T151124Z">
         <seg>アプリケーションではフレームワークが行なうように &lt;a0&gt;wxWindow::Close&lt;/a0&gt; イベントを使用するか、もしくは直接 &lt;a1&gt;wxWindow::Destroy&lt;/a1&gt; を呼び出すことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>and that the hhp project file contains one additional line in the &lt;t0&gt;OPTIONS&lt;/t0&gt; section:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T133340Z">
+        <seg>hhp プロジェクトファイルの &lt;t0&gt;OPTIONS&lt;/t0&gt; セクションに一行追加するだけで充分です:</seg>
       </tuv>
     </tu>
     <tu>
@@ -16597,6 +17363,22 @@ public:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>facename, &lt;s5&gt;false&lt;/s5&gt;))</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T143518Z">
+        <seg>facename, &lt;s5&gt;false&lt;/s5&gt;))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>facename, false))</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132637Z">
+        <seg>facename, false))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>function&lt; void ( wxCommandEvent &amp; ) &gt; exitHandler(</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T061208Z">
@@ -16662,6 +17444,16 @@ public:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>if (!wxFontMapper::Get()-&gt;IsEncodingAvailable(enc, facename))
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132629Z">
+        <seg>if (!wxFontMapper::Get()-&gt;IsEncodingAvailable(enc, facename))
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>if (MyDataHasBeenModified())</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130613T160305Z">
@@ -16682,6 +17474,14 @@ public:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130620T141857Z">
         <seg>if (in_stream.Read(data, nb_datas).LastError() != wxSTREAM_NOERROR) {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if (wxFontMapper::Get()-&gt;GetAltForEncoding(enc, &amp;alternative,</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132634Z">
+        <seg>if (wxFontMapper::Get()-&gt;GetAltForEncoding(enc, &amp;alternative,</seg>
       </tuv>
     </tu>
     <tu>
@@ -16738,6 +17538,22 @@ public:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T124620Z">
         <seg>これは正常に動作しないでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>locale.AddCatalog(&lt;a0&gt;wxT&lt;/a0&gt;(&lt;s1&gt;"myapp"&lt;/s1&gt;), &lt;a2&gt;wxLANGUAGE_GERMAN&lt;/a2&gt;, &lt;a3&gt;wxT&lt;/a3&gt;(&lt;s4&gt;"iso-8859-1"&lt;/s4&gt;));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T135522Z">
+        <seg>locale.AddCatalog(&lt;a0&gt;wxT&lt;/a0&gt;(&lt;s1&gt;"myapp"&lt;/s1&gt;), &lt;a2&gt;wxLANGUAGE_GERMAN&lt;/a2&gt;, &lt;a3&gt;wxT&lt;/a3&gt;(&lt;s4&gt;"iso-8859-1"&lt;/s4&gt;));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>locale.AddCatalog(_T("myapp"),</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132536Z">
+        <seg>locale.AddCatalog(_T("myapp"),</seg>
       </tuv>
     </tu>
     <tu>
@@ -17088,6 +17904,22 @@ public:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130613T160315Z">
         <seg>switch (ans)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>text = &lt;a10&gt;wxString&lt;/a10&gt;(text.&lt;a11&gt;mb_str&lt;/a11&gt;(convFrom), convTo);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T143512Z">
+        <seg>text = &lt;a10&gt;wxString&lt;/a10&gt;(text.&lt;a11&gt;mb_str&lt;/a11&gt;(convFrom), convTo);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>text = wxString(text.mb_str(convFrom), convTo);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132641Z">
+        <seg>text = wxString(text.mb_str(convFrom), convTo);</seg>
       </tuv>
     </tu>
     <tu>
@@ -17601,6 +18433,22 @@ protected:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxCSConv convFrom(wxFontMapper::Get()-&gt;GetEncodingName(enc));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132639Z">
+        <seg>wxCSConv convFrom(wxFontMapper::Get()-&gt;GetEncodingName(enc));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxCSConv convTo(wxFontMapper::Get()-&gt;GetEncodingName(alternative));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132640Z">
+        <seg>wxCSConv convTo(wxFontMapper::Get()-&gt;GetEncodingName(alternative));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxChar ch = wxT('*');</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130501T161652Z">
@@ -17927,6 +18775,22 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxFontEncoding alternative;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132630Z">
+        <seg>wxFontEncoding alternative;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxFontMapper manages user-definable correspondence between logical font names and the fonts present o...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T143252Z">
+        <seg>wxFontMapper はユーザが定義可能な論理フォント名とマシン上のフォントとの対応を管理します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxFrame *the_frame = new wxFrame(NULL, ID_MYFRAME, argv[0]);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130527T161006Z">
@@ -17955,6 +18819,14 @@ private:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T115957Z">
         <seg>wxHELP   // wxID_HELP を返却します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxHashSet</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T132018Z">
+        <seg>wxHashSet</seg>
       </tuv>
     </tu>
     <tu>
@@ -18055,6 +18927,14 @@ wxIcon icon("mondrian");
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T055232Z">
         <seg>wxKeyEvent</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxLANGUAGE_GERMAN, _T("iso-8859-1"));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T132537Z">
+        <seg>wxLANGUAGE_GERMAN, _T("iso-8859-1"));</seg>
       </tuv>
     </tu>
     <tu>
@@ -18877,6 +19757,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxWidgets is able to use this catalog under any supported platform (although iso8859-2 is a Unix encoding and is normally not understood by Windows).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130629T130522Z">
+        <seg>wxWidgets の対応しているすべてのプラットフォームでこのカタログを使用できます。(iso8859-2 は Unix のエンコーディングであり、通常は Windows で使用できないとしてもです)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxWidgets looks for a &lt;a0&gt;wxStdDialogButtonSizer&lt;/a0&gt; and uses it for the non-scrolling part.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130604T151656Z">
@@ -19049,6 +19937,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130615T033828Z">
         <seg>wxWidgets: wxWidgets: ウィンドウの削除</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxWidgets: wxWidgets: Writing Non-English Applications</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130703T134440Z">
+        <seg>wxWidgets: wxWidgets: 非英語アプリケーションの作成</seg>
       </tuv>
     </tu>
     <tu>
