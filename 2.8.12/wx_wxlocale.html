@@ -371,10 +371,7 @@ Compare <A HREF="wx_wxlocale.html#wxlocalegetcanonicalname">GetCanonicalName</A>
 <H3>wxLocale::GetSystemEncoding</H3>
 <P>
 <B>static wxFontEncoding</B> <B>GetSystemEncoding</B>() <B>const</B><P>
-
-Tries to detect the user's default font encoding.
-Returns <A HREF="wx_wxfont.html#wxfont">wxFontEncoding</A> value or 
-<B>wxFONTENCODING_SYSTEM</B> if it couldn't be determined.<P>
+ユーザのデフォルトのフォントエンコーディングを検知しようと試みます。Returns <A HREF="wx_wxfont.html#wxfont">wxFontEncoding</A> value or <B>wxFONTENCODING_SYSTEM</B> if it couldn't be determined.<P>
 
 
 <HR>
@@ -382,11 +379,7 @@ Returns <A HREF="wx_wxfont.html#wxfont">wxFontEncoding</A> value or
 <H3>wxLocale::GetSystemEncodingName</H3>
 <P>
 <B>static <A HREF="wx_wxstring.html#wxstring">wxString</A></B> </B> <B>GetSystemEncodingName</B>() <B>const</B><P>
-
-Tries to detect the name of the user's default font encoding. This string isn't
-particularly useful for the application as its form is platform-dependent and
-so you should probably use 
-<A HREF="wx_wxlocale.html#wxlocalegetsystemencoding">GetSystemEncoding</A> instead.<P>
+ユーザのデフォルトのフォントエンコーディング名を検知しようと試みます。This string isn't particularly useful for the application as its form is platform-dependent and so you should probably use <A HREF="wx_wxlocale.html#wxlocalegetsystemencoding">GetSystemEncoding</A> instead.<P>
 
 Returns a user-readable string value or an empty string if it couldn't be
 determined.<P>

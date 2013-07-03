@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>wxWidgets: wxWidgets: Writing Non-English Applications</title>
+<title>wxWidgets: wxWidgets: 非英語アプリケーションの作成</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="custom_stylesheet.css" rel="stylesheet" type="text/css" />
@@ -114,26 +114,25 @@ function toggleVisibility(linkObj) {
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title">Writing Non-English Applications  </div>  </div>
+<div class="title">非英語アプリケーションの作成 </div>  </div>
 </div>
 <div class="contents">
 <div class="textblock"><ul>
-<li><a class="el" href="overview_nonenglish.html#overview_nonenglish_locales">Locales</a> </li>
-<li><a class="el" href="overview_nonenglish.html#overview_nonenglish_strings">Non-English Strings or 8-bit Characters in Source</a> </li>
-<li><a class="el" href="overview_nonenglish.html#overview_nonenglish_fontmapping">Font Mapping</a> </li>
-<li><a class="el" href="overview_nonenglish.html#overview_nonenglish_converting">Converting Data</a> </li>
-<li><a class="el" href="overview_nonenglish.html#overview_nonenglish_help">Help Files</a></li>
+<li><a class="el" href="overview_nonenglish.html#overview_nonenglish_locales">ロケール</a> </li>
+<li><a class="el" href="overview_nonenglish.html#overview_nonenglish_strings">ソース中の非英語文字列や 8 ビット文字</a> </li>
+<li><a class="el" href="overview_nonenglish.html#overview_nonenglish_fontmapping">フォントマッピング</a> </li>
+<li><a class="el" href="overview_nonenglish.html#overview_nonenglish_converting">データの変換</a> </li>
+<li><a class="el" href="overview_nonenglish.html#overview_nonenglish_help">ヘルプファイル</a></li>
 </ul>
 <hr/>
-<p>This article describes how to write applications that communicate with the user in a language other than English. Unfortunately many languages use different charsets under Unix and Windows (and other platforms, to make the situation even more complicated). These charsets usually differ in so many characters that it is impossible to use the same texts under all platforms.</p>
-<p>The wxWidgets library provides a mechanism that helps you avoid distributing many identical, only differently encoded, packages with your application (e.g. help files and menu items in iso8859-13 and windows-1257). Thanks to this mechanism you can, for example, distribute only iso8859-13 data and it will be handled transparently under all systems.</p>
-<p>Please read the <a class="el" href="overview_i18n.html">Internationalization</a> which describes the locales concept.</p>
-<p>In the following text, wherever <em>iso8859-2</em> and <em>windows-1250</em> are used, any encodings are meant and any encodings may be substituted there.</p>
+<p>この概要では英語以外の言語を用いてユーザとやり取りするアプリケーションの作成方法について説明します。残念なことに、Unix や Windows では多くの言語で異なる文字コードが使用されています。(そして、他のプラットフォームではさらに複雑なことになっています) 通常、これらの文字コードは多くの文字で異なっているため、すべてのプラットフォームで同じテキストを使用することはできません。</p>
+<p>wxWidgets ライブラリは (エンコーディングだけが異なる) 多くの同一なパッケージを配布しなくてもすむ仕組みを提供しています。(例えば iso8859-13 と windows-1257 を使用したヘルプファイルやメニュー項目などです) この仕組みのおかげで、例えば iso8859-13 のデータを配布するだけで、すべてのシステムでこのデータが透過的に処理されます。</p>
+<p>ロケールの概念については <a class="el" href="overview_i18n.html">国際化</a> を参照してください。</p>
+<p>以降の文章で <em>iso8859-2</em> や <em>windows-1250</em> が使用されているところは任意のエンコーディングを意味しており、好きなエンコーディングに置き換えてください。</p>
 <h2><a class="anchor" id="overview_nonenglish_locales"></a>
-
-Locales</h2>
-<p>The best way to ensure correctly displayed texts in a GUI across platforms is to use locales. Write your in-code messages in English or without diacritics and put real messages into the message catalog (see <a class="el" href="overview_i18n.html">Internationalization</a>).</p>
-<p>A standard .po file begins with a header like this:</p>
+ロケール</h2>
+<p>プラットフォームをまたがって GUI に正しくテキストを表示する最善の方法はロケールを使用することです。コード中のメッセージは英語か、もしくは発音区別符号を使用せずに書き、実際のメッセージはメッセージカタログ (<a class="el" href="overview_i18n.html">国際化</a> 参照) に書くようにしてください。</p>
+<p>標準の .po ファイルはこのようなヘッダで始まります:</p>
 <div class="fragment"><pre class="fragment"><span class="preprocessor"># SOME DESCRIPTIVE TITLE.</span>
 <span class="preprocessor"></span><span class="preprocessor"># Copyright (C) YEAR Free Software Foundation, Inc.</span>
 <span class="preprocessor"></span><span class="preprocessor"># FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, YEAR.</span>
@@ -148,10 +147,10 @@ msgstr <span class="stringliteral">""</span>
 <span class="stringliteral">"MIME-Version: 1.0\n"</span>
 <span class="stringliteral">"Content-Type: text/plain; charset=CHARSET\n"</span>
 <span class="stringliteral">"Content-Transfer-Encoding: ENCODING\n"</span>
-</pre></div><p>Note this particular line:</p>
+</pre></div><p>この行に注目してください:</p>
 <div class="fragment"><pre class="fragment"><span class="stringliteral">"Content-Type: text/plain; charset=CHARSET\n"</span>
-</pre></div><p>It specifies the charset used by the catalog. All strings in the catalog are encoded using this charset.</p>
-<p>You have to fill in proper charset information. Your .po file may look like this after doing so:</p>
+</pre></div><p>これはカタログで使用される文字コードを指定しています。カタログ内のすべての文字列はこの文字コードで符号化されています。</p>
+<p>ここに適切な文字コードの情報を記入する必要があります。これを行ったあとの .po ファイルはこのようになります:</p>
 <div class="fragment"><pre class="fragment"><span class="preprocessor"># SOME DESCRIPTIVE TITLE.</span>
 <span class="preprocessor"></span><span class="preprocessor"># Copyright (C) YEAR Free Software Foundation, Inc.</span>
 <span class="preprocessor"></span><span class="preprocessor"># FIRST AUTHOR &lt;EMAIL@ADDRESS&gt;, YEAR.</span>
@@ -166,49 +165,45 @@ msgstr <span class="stringliteral">""</span>
 <span class="stringliteral">"MIME-Version: 1.0\n"</span>
 <span class="stringliteral">"Content-Type: text/plain; charset=iso8859-2\n"</span>
 <span class="stringliteral">"Content-Transfer-Encoding: 8bit\n"</span>
-</pre></div><p>(Make sure that the header is <b>not</b> marked as <em>fuzzy</em>.)</p>
-<p>wxWidgets is able to use this catalog under any supported platform (although iso8859-2 is a Unix encoding and is normally not understood by Windows).</p>
-<p>How is this done? When you tell the <a class="el" href="classwx_locale.html" title="wxLocale クラスは C 言語におけるロケールの概念を一般化したものであり、言語に依存するすべての設定をカプセル化します。">wxLocale</a> class to load a message catalog that contains a correct header, it checks the charset. The catalog is then converted to the charset used (see <a class="el" href="classwx_locale.html#aa807dd0db36c3bd6556c2a37014239d6" title="Tries to detect the user's default font encoding.">wxLocale::GetSystemEncoding</a> and <a class="el" href="classwx_locale.html#a301032f2ecdf0be5321fab2281c71206" title="Tries to detect the name of the user's default font encoding.">wxLocale::GetSystemEncodingName</a>) by the user's operating system.</p>
+</pre></div><p>(ヘッダが <em>fuzzy</em> としてマーク <b>されない</b> ようにしてください)</p>
+<p>wxWidgets の対応しているすべてのプラットフォームでこのカタログを使用できます。(iso8859-2 は Unix のエンコーディングであり、通常は Windows で使用できないとしてもです)</p>
+<p>これはどのように行われるのでしょうか? 正しいヘッダを含むメッセージカタログを読み込むように <a class="el" href="classwx_locale.html" title="wxLocale クラスは C 言語におけるロケールの概念を一般化したものであり、言語に依存するすべての設定をカプセル化します。">wxLocale</a> クラスへ指示すると、そこで文字コードのチェックが行われます。そして、ユーザのオペレーティングシステムで使用されている文字コード (<a class="el" href="classwx_locale.html#aa807dd0db36c3bd6556c2a37014239d6" title="ユーザのデフォルトのフォントエンコーディングを検知しようと試みます。">wxLocale::GetSystemEncoding</a> と <a class="el" href="classwx_locale.html#a301032f2ecdf0be5321fab2281c71206" title="ユーザのデフォルトのフォントエンコーディング名を検知しようと試みます。">wxLocale::GetSystemEncodingName</a> 参照) へカタログが変換されます。</p>
 <h2><a class="anchor" id="overview_nonenglish_strings"></a>
-
-Non-English Strings or 8-bit Characters in Source</h2>
-<p>By convention, you should only use characters without diacritics (i.e. 7-bit ASCII strings) for msgids in the source code and write them in English.</p>
-<p>If you port software to wxWidgets, you may be confronted with legacy source code containing non-English string literals. Instead of translating the strings in the source code to English and putting the original strings into message catalog, you may configure wxWidgets to use non-English msgids and translate to English using message catalogs:</p>
+ソース中の非英語文字列や 8 ビット文字</h2>
+<p>ソースコード中の msgid には発音区別符号を含まない文字 (つまり、7 ビット ASCII 文字列) だけを使用するべきで、それらは英語で書いてください。</p>
+<p>ソフトウェアを wxWidgets に移植する場合、非英語リテラル文字列を含むレガシーなソースコードに直面するかもしれません。それらの文字列を英語に翻訳し、元の文字列をメッセージカタログに記載する代わりに、非英語の msgid を使用するように wxWidgets を設定し、メッセージカタログを用いて英語へ翻訳しても構いません。</p>
 <ul>
-<li>If you use the program <code>xgettext</code> to extract the strings from the source code, specify the option <code>--from-code=&lt;source code charset&gt;</code>.  </li>
-<li>Specify the source code language and charset as arguments to <a class="el" href="classwx_locale.html#a1e9eb6387646a94c65d1493b5be7641c" title="Calls wxTranslations::AddCatalog(const wxString&amp;).">wxLocale::AddCatalog</a>. 以下に例を示します: <div class="fragment"><pre class="fragment">    locale.AddCatalog(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"myapp"</span>), <a class="code" href="language_8h.html#a7d1c74ce43b2fb7acf7a6fa438c0ee86a8fc3d592c6f1ac6c9bdfb3a006cec1dd">wxLANGUAGE_GERMAN</a>, <a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"iso-8859-1"</span>));
+<li>ソースコードから文字列を抽出するのに <code>xgettext</code> を使用する場合、<code>--from-code=&lt;ソースコードの文字コード&gt;</code> オプションを指定してください。 </li>
+<li><a class="el" href="classwx_locale.html#a1e9eb6387646a94c65d1493b5be7641c" title="wxTranslations::AddCatalog(const wxString&amp;) を呼び出します。">wxLocale::AddCatalog</a> の引数にソースコードの言語と文字コードを指定してください。以下に例を示します: <div class="fragment"><pre class="fragment">    locale.AddCatalog(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"myapp"</span>), <a class="code" href="language_8h.html#a7d1c74ce43b2fb7acf7a6fa438c0ee86a8fc3d592c6f1ac6c9bdfb3a006cec1dd">wxLANGUAGE_GERMAN</a>, <a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"iso-8859-1"</span>));
 </pre></div></li>
 </ul>
 <h2><a class="anchor" id="overview_nonenglish_fontmapping"></a>
-
-Font Mapping</h2>
-<p>You can use <a class="el" href="overview_mbconv.html">wxMBConv Overview</a> and <a class="el" href="classwx_font_mapper.html" title="wxFontMapper manages user-definable correspondence between logical font names and the fonts present o...">wxFontMapper</a> to display text:</p>
-<div class="fragment"><pre class="fragment"><span class="keywordflow">if</span> (!<a class="code" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="Get the current font mapper object.">wxFontMapper::Get</a>()-&gt;IsEncodingAvailable(enc, facename))
+フォントマッピング</h2>
+<p>テキストを表示するのに <a class="el" href="overview_mbconv.html">wxMBConv の概要</a> と <a class="el" href="classwx_font_mapper.html" title="wxFontMapper はユーザが定義可能な論理フォント名とマシン上のフォントとの対応を管理します。">wxFontMapper</a> を使用できます:</p>
+<div class="fragment"><pre class="fragment"><span class="keywordflow">if</span> (!<a class="code" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="現在のフォントマッピングオブジェクトを取得します。">wxFontMapper::Get</a>()-&gt;IsEncodingAvailable(enc, facename))
 {
-    <a class="code" href="interface_2wx_2font_8h.html#a09016a7497d1ec6defdf13fd6439acca" title="Font encodings.">wxFontEncoding</a> alternative;
-    <span class="keywordflow">if</span> (<a class="code" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="Get the current font mapper object.">wxFontMapper::Get</a>()-&gt;GetAltForEncoding(enc, &amp;alternative,
+    <a class="code" href="interface_2wx_2font_8h.html#a09016a7497d1ec6defdf13fd6439acca" title="フォントエンコーディング。">wxFontEncoding</a> alternative;
+    <span class="keywordflow">if</span> (<a class="code" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="現在のフォントマッピングオブジェクトを取得します。">wxFontMapper::Get</a>()-&gt;GetAltForEncoding(enc, &amp;alternative,
                                                facename, <span class="keyword">false</span>))
     {
-        <a class="code" href="classwx_c_s_conv.html" title="This class converts between any character set supported by the system and Unicode.">wxCSConv</a> convFrom(<a class="code" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="Get the current font mapper object.">wxFontMapper::Get</a>()-&gt;GetEncodingName(enc));
-        <a class="code" href="classwx_c_s_conv.html" title="This class converts between any character set supported by the system and Unicode.">wxCSConv</a> convTo(<a class="code" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="Get the current font mapper object.">wxFontMapper::Get</a>()-&gt;GetEncodingName(alternative));
+        <a class="code" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> convFrom(<a class="code" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="現在のフォントマッピングオブジェクトを取得します。">wxFontMapper::Get</a>()-&gt;GetEncodingName(enc));
+        <a class="code" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> convTo(<a class="code" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="現在のフォントマッピングオブジェクトを取得します。">wxFontMapper::Get</a>()-&gt;GetEncodingName(alternative));
         text = <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>(text.<a class="code" href="classwx_string.html#adcfd12e6d0765b1d74bccc3d63d02e98" title="wxMBConv::cWC2MB 関数を使用して文字列をマルチバイト (C 形式) 表現方法に変換し、wxCharBuffer として返却します。">mb_str</a>(convFrom), convTo);
     }
     <span class="keywordflow">else</span>
-        ...failure (or we may <span class="keywordflow">try</span> iso8859-1/7bit ASCII)...
+        ...失敗 (iso8859-1/7ビット ASCII を試すかもしれない)...
 }
-...display text...
+...テキストを表示する...
 </pre></div><h2><a class="anchor" id="overview_nonenglish_converting"></a>
-
-Converting Data</h2>
-<p>You may want to store all program data (created documents etc.) in the same encoding, let's say <code>utf-8</code>. You can use <a class="el" href="classwx_c_s_conv.html" title="This class converts between any character set supported by the system and Unicode.">wxCSConv</a> to convert data to the encoding used by the system your application is running on (see <a class="el" href="classwx_locale.html#aa807dd0db36c3bd6556c2a37014239d6" title="Tries to detect the user's default font encoding.">wxLocale::GetSystemEncoding</a>).</p>
+データの変換</h2>
+<p>プログラムで扱うデータ (作成したドキュメントなど) をすべて同じエンコーディングで保持したいと思うかもしれません。仮に <code>utf-8</code> としましょう。<a class="el" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> を使用することで、アプリケーションを実行しているシステムで使用されているエンコーディングにデータを変換することができます。(<a class="el" href="classwx_locale.html#aa807dd0db36c3bd6556c2a37014239d6" title="ユーザのデフォルトのフォントエンコーディングを検知しようと試みます。">wxLocale::GetSystemEncoding</a> 参照)</p>
 <h2><a class="anchor" id="overview_nonenglish_help"></a>
-
-Help Files</h2>
-<p>If you're using <a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a> there is no problem at all. You only need to make sure that all the HTML files contain the META tag:</p>
+ヘルプファイル</h2>
+<p><a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a> を使用しているのであれば何も問題ありません。必要なことはすべての HTML ファイルに次のような META タグを含めることだけです。</p>
 <div class="fragment"><pre class="fragment">&lt;meta http-equiv=<span class="stringliteral">"Content-Type"</span> content=<span class="stringliteral">"text/html; charset=iso8859-2"</span>&gt;
-</pre></div><p>Also, the hhp project file needs one additional line in the <code>OPTIONS</code> section:</p>
+</pre></div><p>また、hhp プロジェクトファイルの <code>OPTIONS</code> セクションに一行追加する必要があります:</p>
 <div class="fragment"><pre class="fragment">Charset=iso8859-2
-</pre></div><p>This additional entry tells the HTML help controller what encoding is used in contents and index tables.  </p>
+</pre></div><p>この追加のエントリはコンテンツとインデックステーブルで使用されているエンコーディングを HTML ヘルプコントローラに通知します。 </p>
 </div></div><!-- window showing the filter options -->
 
 <div id="MSearchSelectWindow"

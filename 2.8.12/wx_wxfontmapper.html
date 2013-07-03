@@ -48,9 +48,9 @@ if (!wxFontMapper::Get()-&gt;IsEncodingAvailable(enc, facename))
        text = wxString(text.mb_str(convFrom), convTo);
    }
    else
-       ...failure (or we may try iso8859-1/7bit ASCII)...
+       ...失敗 (iso8859-1/7ビット ASCII を試すかもしれない)...
 }
-...display text...
+...テキストを表示する...
 </PRE>
 
 <B><FONT COLOR="#FF0000">継承元</FONT></B><P>
@@ -127,9 +127,7 @@ events such as <TT>EVT_PAINT</TT>.<P>
 <H3>wxFontMapper::Get</H3>
 <P>
 <B>static <A HREF="wx_wxfontmapper.html#wxfontmapper">wxFontMapper</A> *</B> </B> <B>Get</B>()<P>
-
-Get the current font mapper object. If there is no current object, creates
-one.<P>
+現在のフォントマッピングオブジェクトを取得します。If there is no current object, creates one.<P>
 <B><FONT COLOR="#FF0000">参照</FONT></B><P>
 <A HREF="wx_wxfontmapper.html#wxfontmapperset">wxFontMapper::Set</A><P>
 

@@ -1,40 +1,20 @@
 <HTML>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>Writing non-English applications</title></head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>非英語アプリケーションの作成</title></head>
 
 <BODY BGCOLOR=#FFFFFF>
 <A NAME="nonenglishoverview"></A><CENTER>
 <A HREF="wx_contents.html"><img align=center src="contents.gif" BORDER=0 ALT="Contents"></A> <A HREF="wx_overviews.html#overviews"><img align=center src="up.gif" BORDER=0 ALT="Up"></A> <A HREF="wx_internationalization.html#internationalization"><img align=center src="back.gif" BORDER=0 ALT="Previous"></A> <A HREF="wx_wxcontaineroverview.html#wxcontaineroverview"><img align=center src="forward.gif" BORDER=0 ALT="Next"></A> </CENTER><HR>
 
-<H2>Writing non-English applications</H2>
+<H2>非英語アプリケーションの作成</H2>
 <P>
-
-This article describes how to write applications that communicate with
-the user in a language other than English. Unfortunately many languages use
-different charsets under Unix and Windows (and other platforms, to make
-the situation even more complicated). These charsets usually differ in so
-many characters that it is impossible to use the same texts under all
-platforms.<P>
-
-The wxWidgets library provides a mechanism that helps you avoid distributing many
-identical, only differently encoded, packages with your application 
-(e.g. help files and menu items in iso8859-13 and windows-1257). Thanks
-to this mechanism you can, for example, distribute only iso8859-13 data 
-and it will be handled transparently under all systems.<P>
-
-Please read <A HREF="wx_internationalization.html#internationalization">Internationalization</A> which
-describes the locales concept.<P>
-
-In the following text, wherever <I>iso8859-2</I> and <I>windows-1250</I> are
-used, any encodings are meant and any encodings may be substituted there.<P>
-<B><FONT COLOR="#FF0000">Locales</FONT></B><P>
-
-The best way to ensure correctly displayed texts in a GUI across platforms
-is to use locales. Write your in-code messages in English or without 
-diacritics and put real messages into the message catalog (see 
-<A HREF="wx_internationalization.html#internationalization">Internationalization</A>).<P>
-
-A standard .po file begins with a header like this:<P>
+この概要では英語以外の言語を用いてユーザとやり取りするアプリケーションの作成方法について説明します。残念なことに、Unix や Windows では多くの言語で異なる文字コードが使用されています。(そして、他のプラットフォームではさらに複雑なことになっています) 通常、これらの文字コードは多くの文字で異なっているため、すべてのプラットフォームで同じテキストを使用することはできません。<P>
+wxWidgets ライブラリは (エンコーディングだけが異なる) 多くの同一なパッケージを配布しなくてもすむ仕組みを提供しています。(例えば iso8859-13 と windows-1257 を使用したヘルプファイルやメニュー項目などです) この仕組みのおかげで、例えば iso8859-13 のデータを配布するだけで、すべてのシステムでこのデータが透過的に処理されます。<P>
+ロケールの概念については <A HREF="wx_internationalization.html#internationalization">国際化</A> を参照してください。<P>
+以降の文章で <I>iso8859-2</I> や <I>windows-1250</I> が使用されているところは任意のエンコーディングを意味しており、好きなエンコーディングに置き換えてください。<P>
+<B><FONT COLOR="#FF0000">ロケール</FONT></B><P>
+プラットフォームをまたがって GUI に正しくテキストを表示する最善の方法はロケールを使用することです。コード中のメッセージは英語か、もしくは発音区別符号を使用せずに書き、実際のメッセージはメッセージカタログ (<A HREF="wx_internationalization.html#internationalization">国際化</A> 参照) に書くようにしてください。<P>
+標準の .po ファイルはこのようなヘッダで始まります:<P>
 <PRE>
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Free Software Foundation, Inc.
@@ -51,17 +31,12 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: ENCODING\n"
 </PRE>
-
-Note this particular line:<P>
+この行に注目してください:<P>
 <PRE>
 "Content-Type: text/plain; charset=CHARSET\n"
 </PRE>
-
-It specifies the charset used by the catalog. All strings in the catalog
-are encoded using this charset.<P>
-
-You have to fill in proper charset information. Your .po file may look like this
-after doing so:  <P>
+これはカタログで使用される文字コードを指定しています。カタログ内のすべての文字列はこの文字コードで符号化されています。<P>
+ここに適切な文字コードの情報を記入する必要があります。これを行ったあとの .po ファイルはこのようになります: <P>
 <PRE>
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Free Software Foundation, Inc.
@@ -78,37 +53,16 @@ msgstr ""
 "Content-Type: text/plain; charset=iso8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
 </PRE>
-
-(Make sure that the header is <B>not</B> marked as <I>fuzzy</I>.)<P>
-
-wxWidgets is able to use this catalog under any supported platform
-(although iso8859-2 is a Unix encoding and is normally not understood by
-Windows).<P>
-
-How is this done? When you tell the wxLocale class to load a message catalog that
-contains a correct header, it checks the charset. The catalog is then converted
-to the charset used (see
-<A HREF="wx_wxlocale.html#wxlocalegetsystemencoding">wxLocale::GetSystemEncoding</A> and
-<A HREF="wx_wxlocale.html#wxlocalegetsystemencodingname">wxLocale::GetSystemEncodingName</A>) by
-the user's operating system. This is the default behaviour of the
-<A HREF="wx_wxlocale.html#wxlocale">wxLocale</A> class; you can disable it by <B>not</B> passing
-<TT>wxLOCALE_CONV_ENCODING</TT> to <A HREF="wx_wxlocale.html#wxlocaleinit">wxLocale::Init</A>.<P>
-<B><FONT COLOR="#FF0000">Non-English strings or 8-bit characters in the source code</FONT></B><P>
-
-By convention, you should only use characters without diacritics (i.e. 7-bit
-ASCII strings) for msgids in the source code and write them in English.<P>
-
-If you port software to wxWindows, you may be confronted with legacy source
-code containing non-English string literals. Instead of translating the strings
-in the source code to English and putting the original strings into message
-catalog, you may configure wxWidgets to use non-English msgids and translate to
-English using message catalogs:<P>
+(ヘッダが <I>あいまい</I> に <B>ならない</B> ようにしてください)<P>
+wxWidgets の対応しているすべてのプラットフォームでこのカタログを使用できます。(iso8859-2 は Unix のエンコーディングであり、通常は Windows で使用できないとしてもです)<P>
+これはどのように行われるのでしょうか? 正しいヘッダを含むメッセージカタログを読み込むように wxLocale クラスへ指示すると、そこで文字コードのチェックが行われます。そして、ユーザのオペレーティングシステムで使用されている文字コード (<A HREF="wx_wxlocale.html#wxlocalegetsystemencoding">wxLocale::GetSystemEncoding</A> と <A HREF="wx_wxlocale.html#wxlocalegetsystemencodingname">wxLocale::GetSystemEncodingName</A> 参照) へカタログが変換されます。これが <A HREF="wx_wxlocale.html#wxlocale">wxLocale</A> クラスのデフォルトの振る舞いです; <A HREF="wx_wxlocale.html#wxlocaleinit">wxLocale::Init</A> に <TT>wxLOCALE_CONV_ENCODING</TT> を渡さ <B>ない</B> ことでこれを無効化できます。<P>
+<B><FONT COLOR="#FF0000">ソースコード中の非英語文字列や 8 ビット文字</FONT></B><P>
+ソースコード中の msgid には発音区別符号を含まない文字 (つまり、7 ビット ASCII 文字列) だけを使用するべきで、それらは英語で書いてください。<P>
+ソフトウェアを wxWindows に移植する場合、非英語リテラル文字列を含むレガシーなソースコードに直面するかもしれません。それらの文字列を英語に翻訳し、元の文字列をメッセージカタログに記載する代わりに、非英語の msgid を使用するように wxWidgets を設定し、メッセージカタログを用いて英語へ翻訳しても構いません。<P>
 <OL>
 
-<LI>If you use the program <TT>xgettext</TT> to extract the strings from
-the source code, specify the option <TT>--from-code=&lt;source code charset&gt;</TT>.
-
-</LI><LI>Specify the source code language and charset as arguments to <A HREF="wx_wxlocale.html#wxlocaleaddcatalog">wxLocale::AddCatalog</A>. 以下に例を示します:
+<LI>ソースコードから文字列を抽出するのに <TT>xgettext</TT> を使用する場合、<TT>--from-code=&lt;ソースコードの文字コード&gt;</TT> オプションを指定してください。
+</LI><LI><A HREF="wx_wxlocale.html#wxlocaleaddcatalog">wxLocale::AddCatalog</A> の引数にソースコードの言語と文字コードを指定してください。以下に例を示します:
 <PRE>
 locale.AddCatalog(_T("myapp"),
                   wxLANGUAGE_GERMAN, _T("iso-8859-1"));
@@ -116,10 +70,8 @@ locale.AddCatalog(_T("myapp"),
 
 </LI></OL>
 <P>
-<B><FONT COLOR="#FF0000">Font mapping</FONT></B><P>
-
-You can use <A HREF="wx_mbconvclasses.html#mbconvclasses">wxMBConv classes</A> and 
-<A HREF="wx_wxfontmapper.html#wxfontmapper">wxFontMapper</A> to display text:<P>
+<B><FONT COLOR="#FF0000">フォントマッピング</FONT></B><P>
+テキストを表示するのに <A HREF="wx_mbconvclasses.html#mbconvclasses">wxMBConv クラス</A> と <A HREF="wx_wxfontmapper.html#wxfontmapper">wxFontMapper</A> を使用できます:<P>
 <PRE>
 if (!wxFontMapper::Get()-&gt;IsEncodingAvailable(enc, facename))
 {
@@ -132,34 +84,22 @@ if (!wxFontMapper::Get()-&gt;IsEncodingAvailable(enc, facename))
        text = wxString(text.mb_str(convFrom), convTo);
    }
    else
-       ...failure (or we may try iso8859-1/7bit ASCII)...
+       ...失敗 (iso8859-1/7ビット ASCII を試すかもしれない)...
 }
-...display text...
+...テキストを表示する...
 </PRE>
-<B><FONT COLOR="#FF0000">Converting data</FONT></B><P>
-
-You may want to store all program data (created documents etc.) in
-the same encoding, let's say <TT>utf-8</TT>. You can use
-<A HREF="wx_wxcsconv.html#wxcsconv">wxCSConv</A> class to convert data to the encoding used by the
-system your application is running on (see
-<A HREF="wx_wxlocale.html#wxlocalegetsystemencoding">wxLocale::GetSystemEncoding</A>).<P>
-<B><FONT COLOR="#FF0000">Help files</FONT></B><P>
-
-If you're using <A HREF="wx_wxhtmlhelpcontroller.html#wxhtmlhelpcontroller">wxHtmlHelpController</A> there is
-no problem at all. You only need to make sure that all the HTML files contain
-the META tag, e.g.<P>
+<B><FONT COLOR="#FF0000">データの変換</FONT></B><P>
+プログラムで扱うデータ (作成したドキュメントなど) をすべて同じエンコーディングで保持したいと思うかもしれません。仮に <TT>utf-8</TT> としましょう。<A HREF="wx_wxcsconv.html#wxcsconv">wxCSConv</A> クラスを使用することで、アプリケーションを実行しているシステムで使用されているエンコーディングにデータを変換することができます。(<A HREF="wx_wxlocale.html#wxlocalegetsystemencoding">wxLocale::GetSystemEncoding</A> 参照)<P>
+<B><FONT COLOR="#FF0000">ヘルプファイル</FONT></B><P>
+<A HREF="wx_wxhtmlhelpcontroller.html#wxhtmlhelpcontroller">wxHtmlHelpController</A> を使用しているのであれば何も問題ありません。すべての HTML ファイルに次のような META タグを含めて、<P>
 <PRE>
 &lt;meta http-equiv="Content-Type" content="text/html; charset=iso8859-2"&gt;
 </PRE>
-
-and that the hhp project file contains one additional line in the <TT>OPTIONS</TT>
-section:<P>
+hhp プロジェクトファイルの <TT>OPTIONS</TT> セクションに一行追加するだけで充分です:<P>
 <PRE>
 Charset=iso8859-2
 </PRE>
-
-This additional entry tells the HTML help controller what encoding is used
-in contents and index tables.<P>
+この追加のエントリはコンテンツとインデックステーブルで使用されているエンコーディングを HTML ヘルプコントローラに通知します。<P>
 
 </FONT><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

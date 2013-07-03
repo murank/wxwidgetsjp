@@ -209,9 +209,9 @@ Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwx_string.html">wxString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_locale.html#a881139e58ad0f3ed1d54868e2e2161fe">GetLanguageCanonicalName</a> (int lang)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns canonical name (see <a class="el" href="classwx_locale.html#a89f8b4899148e754d1300bda2fe6600f" title="Returns the canonical form of current locale name.">GetCanonicalName()</a>) of the given language or empty string if this language is unknown.    <a href="#a881139e58ad0f3ed1d54868e2e2161fe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interface_2wx_2font_8h.html#a09016a7497d1ec6defdf13fd6439acca">wxFontEncoding</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_locale.html#aa807dd0db36c3bd6556c2a37014239d6">GetSystemEncoding</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tries to detect the user's default font encoding.    <a href="#aa807dd0db36c3bd6556c2a37014239d6"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ユーザのデフォルトのフォントエンコーディングを検知しようと試みます。  <a href="#aa807dd0db36c3bd6556c2a37014239d6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwx_string.html">wxString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_locale.html#a301032f2ecdf0be5321fab2281c71206">GetSystemEncodingName</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tries to detect the name of the user's default font encoding.    <a href="#a301032f2ecdf0be5321fab2281c71206"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ユーザのデフォルトのフォントエンコーディング名を検知しようと試みます。  <a href="#a301032f2ecdf0be5321fab2281c71206"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_locale.html#ae8f67045995e55b8d853405a66365fd5">GetSystemLanguage</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tries to detect the user's default language setting.    <a href="#ae8f67045995e55b8d853405a66365fd5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwx_string.html">wxString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_locale.html#acd6eccc8900847c0a29e7a4598c7d83f">GetInfo</a> (<a class="el" href="intl_8h.html#a54d3421c44d428cc5cce0c772d583c34">wxLocaleInfo</a> index, <a class="el" href="intl_8h.html#a934e5f080f46c8c1b3c043775466f121">wxLocaleCategory</a> cat=wxLOCALE_CAT_DEFAULT)</td></tr>
@@ -780,8 +780,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Tries to detect the user's default font encoding.  </p>
-<p>Returns <a class="el" href="interface_2wx_2font_8h.html#a09016a7497d1ec6defdf13fd6439acca" title="Font encodings.">wxFontEncoding()</a> value or <code>wxFONTENCODING_SYSTEM</code> if it couldn't be determined.  </p>
+<p>ユーザのデフォルトのフォントエンコーディングを検知しようと試みます。 </p>
+<p>Returns <a class="el" href="interface_2wx_2font_8h.html#a09016a7497d1ec6defdf13fd6439acca" title="フォントエンコーディング。">wxFontEncoding()</a> value or <code>wxFONTENCODING_SYSTEM</code> if it couldn't be determined.  </p>
 
 </div>
 </div><!-- doxytag: member="wxLocale::GetSystemEncodingName" ref="a301032f2ecdf0be5321fab2281c71206" args="()" -->
@@ -799,8 +799,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Tries to detect the name of the user's default font encoding.  </p>
-<p>This string isn't particularly useful for the application as its form is platform-dependent and so you should probably use <a class="el" href="classwx_locale.html#aa807dd0db36c3bd6556c2a37014239d6" title="Tries to detect the user's default font encoding.">GetSystemEncoding()</a> instead.</p>
+<p>ユーザのデフォルトのフォントエンコーディング名を検知しようと試みます。 </p>
+<p>This string isn't particularly useful for the application as its form is platform-dependent and so you should probably use <a class="el" href="classwx_locale.html#aa807dd0db36c3bd6556c2a37014239d6" title="ユーザのデフォルトのフォントエンコーディングを検知しようと試みます。">GetSystemEncoding()</a> instead.</p>
 <p>Returns a user-readable string value or an empty string if it couldn't be determined.  </p>
 
 </div>

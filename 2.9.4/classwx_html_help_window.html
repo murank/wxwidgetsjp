@@ -134,7 +134,7 @@ function toggleVisibility(linkObj) {
 <area shape="rect" id="node2" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。" alt="" coords="55,166,137,197"/><area shape="rect" id="node4" href="classwx_evt_handler.html" title="ウィンドウから送信されるベントを処理可能なクラス。" alt="" coords="45,86,147,117"/><area shape="rect" id="node6" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="5,6,80,37"/><area shape="rect" id="node8" href="classwx_trackable.html" title="Add-on base class for a trackable object." alt="" coords="104,6,197,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>This class is used by <a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a> to display help within a frame or dialog, but you can use it yourself to create an embedded HTML help window.  </p>
+<div class="textblock"><p>This class is used by <a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a> to display help within a frame or dialog, but you can use it yourself to create an embedded HTML help window.  </p>
 <p>以下に例を示します: </p>
 <div class="fragment"><pre class="fragment">        <span class="comment">// m_embeddedHelpWindow is a wxHtmlHelpWindow</span>
         <span class="comment">// m_embeddedHtmlHelp is a wxHtmlHelpController</span>
@@ -146,7 +146,7 @@ function toggleVisibility(linkObj) {
         m_embeddedHelpWindow-&gt;Create(<span class="keyword">this</span>, wxID_ANY, <a class="code" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0" title="(-1,-1) に初期化された wxPoint のグルーバルインスタンス。">wxDefaultPosition</a>, <a class="code" href="classwx_window.html#afb9fd4a3b3310b2e11049a5113f749fa" title="This is an overloaded member function, provided for convenience. It differs from the above function o...">GetClientSize</a>(),
                                      <a class="code" href="defs_8h.html#a80617961a7712edd27988dffbe0e8cca">wxTAB_TRAVERSAL</a>|<a class="code" href="defs_8h.html#af63c94dff4e3f25a3c5e9d2874456edfaefc06a089c4d7317026613fd8bdf3e22">wxBORDER_NONE</a>, wxHF_DEFAULT_STYLE);
         m_embeddedHtmlHelp.AddBook(<a class="code" href="classwx_file_name.html" title="wxFileName encapsulates a file name.">wxFileName</a>(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"doc.zip"</span>)));
-</pre></div><p>You should pass the style wxHF_EMBEDDED to the style parameter of <a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a> to allow the embedded window to be destroyed independently of the help controller.</p>
+</pre></div><p>You should pass the style wxHF_EMBEDDED to the style parameter of <a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a> to allow the embedded window to be destroyed independently of the help controller.</p>
 <h2></h2>
 <div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxhtml">wxHTML</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__help.html">Help</a>, <a class="el" href="group__group__class__html.html">HTML</a></span></div> </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
@@ -265,7 +265,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Constructor.  </p>
-<p>For the values of <em>helpStyle</em>, please see the documentation for <a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a>.  </p>
+<p>For the values of <em>helpStyle</em>, please see the documentation for <a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a>.  </p>
 
 </div>
 </div>

@@ -125,7 +125,7 @@ function toggleVisibility(linkObj) {
 
 <p><code>#include &lt;/home/zeitlin/src/wx/github/interface/wx/fontmap.h&gt;</code></p>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classwx_font_mapper.html" title="wxFontMapper manages user-definable correspondence between logical font names and the fonts present o...">wxFontMapper</a> manages user-definable correspondence between logical font names and the fonts present on the machine.  </p>
+<div class="textblock"><p><a class="el" href="classwx_font_mapper.html" title="wxFontMapper はユーザが定義可能な論理フォント名とマシン上のフォントとの対応を管理します。">wxFontMapper</a> manages user-definable correspondence between logical font names and the fonts present on the machine.  </p>
 <p>The default implementations of all functions will ask the user if they are not capable of finding the answer themselves and store the answer in a config file (configurable via SetConfigXXX functions). This behaviour may be disabled by giving the value of <span class="literal">false</span> to "interactive" parameter.</p>
 <p>However, the functions will always consult the config file to allow the user-defined values override the default logic and there is no way to disable this - which shouldn't be ever needed because if "interactive" was never <span class="literal">true</span>, the config file is never created anyhow.</p>
 <p>In case everything else fails (i.e. there is no record in config file and "interactive" is <span class="literal">false</span> or user denied to choose any replacement), the class queries <a class="el" href="classwx_encoding_converter.html" title="This class is capable of converting strings between two 8-bit encodings/charsets.">wxEncodingConverter</a> for "equivalent" encodings (e.g. iso8859-2 and cp1250) and tries them.</p>
@@ -133,14 +133,14 @@ function toggleVisibility(linkObj) {
 
 Using wxFontMapper in conjunction with wxMBConv classes</h2>
 <p>If you need to display text in encoding which is not available at host system (see <a class="el" href="classwx_font_mapper.html#ab5c09ab2aab7641ca85f3c711b7c700b" title="Check whether given encoding is available in given face or not.">wxFontMapper::IsEncodingAvailable</a>), you may use these two classes to find font in some similar encoding (see <a class="el" href="classwx_font_mapper.html#afdf9308df8aaf1afc53f5fc7731cf38a" title="Find an alternative for the given encoding (which is supposed to not be available on this system)...">wxFontMapper::GetAltForEncoding</a>) and convert the text to this encoding (<a class="el" href="classwx_m_b_conv.html" title="This class is the base class of a hierarchy of classes capable of converting text strings between mul...">wxMBConv</a> classes). Following code snippet demonstrates it:</p>
-<div class="fragment"><pre class="fragment">    <span class="keywordflow">if</span> (!<a class="code" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="Get the current font mapper object.">wxFontMapper::Get</a>()-&gt;<a class="code" href="classwx_font_mapper.html#ab5c09ab2aab7641ca85f3c711b7c700b" title="Check whether given encoding is available in given face or not.">IsEncodingAvailable</a>(enc, facename))
+<div class="fragment"><pre class="fragment">    <span class="keywordflow">if</span> (!<a class="code" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="現在のフォントマッピングオブジェクトを取得します。">wxFontMapper::Get</a>()-&gt;<a class="code" href="classwx_font_mapper.html#ab5c09ab2aab7641ca85f3c711b7c700b" title="Check whether given encoding is available in given face or not.">IsEncodingAvailable</a>(enc, facename))
     {
-        <a class="code" href="interface_2wx_2font_8h.html#a09016a7497d1ec6defdf13fd6439acca" title="Font encodings.">wxFontEncoding</a> alternative;
-        <span class="keywordflow">if</span> (<a class="code" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="Get the current font mapper object.">wxFontMapper::Get</a>()-&gt;<a class="code" href="classwx_font_mapper.html#afdf9308df8aaf1afc53f5fc7731cf38a" title="Find an alternative for the given encoding (which is supposed to not be available on this system)...">GetAltForEncoding</a>(enc, &amp;alternative,
+        <a class="code" href="interface_2wx_2font_8h.html#a09016a7497d1ec6defdf13fd6439acca" title="フォントエンコーディング。">wxFontEncoding</a> alternative;
+        <span class="keywordflow">if</span> (<a class="code" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="現在のフォントマッピングオブジェクトを取得します。">wxFontMapper::Get</a>()-&gt;<a class="code" href="classwx_font_mapper.html#afdf9308df8aaf1afc53f5fc7731cf38a" title="Find an alternative for the given encoding (which is supposed to not be available on this system)...">GetAltForEncoding</a>(enc, &amp;alternative,
                                                     facename, <span class="keyword">false</span>))
         {
-            <a class="code" href="classwx_c_s_conv.html" title="This class converts between any character set supported by the system and Unicode.">wxCSConv</a> convFrom(<a class="code" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="Get the current font mapper object.">wxFontMapper::Get</a>()-&gt;<a class="code" href="classwx_font_mapper.html#a92839194dfb366558dc80f8c28d89b68" title="Return internal string identifier for the encoding (see also wxFontMapper::GetEncodingDescription).">GetEncodingName</a>(enc));
-            <a class="code" href="classwx_c_s_conv.html" title="This class converts between any character set supported by the system and Unicode.">wxCSConv</a> convTo(<a class="code" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="Get the current font mapper object.">wxFontMapper::Get</a>()-&gt;<a class="code" href="classwx_font_mapper.html#a92839194dfb366558dc80f8c28d89b68" title="Return internal string identifier for the encoding (see also wxFontMapper::GetEncodingDescription).">GetEncodingName</a>(alternative));
+            <a class="code" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> convFrom(<a class="code" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="現在のフォントマッピングオブジェクトを取得します。">wxFontMapper::Get</a>()-&gt;<a class="code" href="classwx_font_mapper.html#a92839194dfb366558dc80f8c28d89b68" title="Return internal string identifier for the encoding (see also wxFontMapper::GetEncodingDescription).">GetEncodingName</a>(enc));
+            <a class="code" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> convTo(<a class="code" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="現在のフォントマッピングオブジェクトを取得します。">wxFontMapper::Get</a>()-&gt;<a class="code" href="classwx_font_mapper.html#a92839194dfb366558dc80f8c28d89b68" title="Return internal string identifier for the encoding (see also wxFontMapper::GetEncodingDescription).">GetEncodingName</a>(alternative));
             text = <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>(text.mb_str(convFrom), convTo);
         }
         <span class="keywordflow">else</span>
@@ -176,7 +176,7 @@ Public Member Functions</h2></td></tr>
 
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwx_font_mapper.html">wxFontMapper</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5">Get</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get the current font mapper object.    <a href="#a2bd9e7f8c2c6808c4508ed05e9f1cfe5"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">現在のフォントマッピングオブジェクトを取得します。  <a href="#a2bd9e7f8c2c6808c4508ed05e9f1cfe5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group__group__funcmacro__string.html#gad42f64d8c82f1ce4ae58773a89b2d6a7">wxChar</a> **&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_font_mapper.html#af52ac5ceb2482193c7f473f1011271ce">GetAllEncodingNames</a> (<a class="el" href="interface_2wx_2font_8h.html#a09016a7497d1ec6defdf13fd6439acca">wxFontEncoding</a> encoding)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the array of all possible names for the given encoding.    <a href="#af52ac5ceb2482193c7f473f1011271ce"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interface_2wx_2font_8h.html#a09016a7497d1ec6defdf13fd6439acca">wxFontEncoding</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_font_mapper.html#ac4a62f1b70e490871b81041f8615c42a">GetEncoding</a> (size_t n)</td></tr>
@@ -210,7 +210,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Default ctor.  </p>
-<dl class="note"><dt><b>注:</b></dt><dd>The preferred way of creating a <a class="el" href="classwx_font_mapper.html" title="wxFontMapper manages user-definable correspondence between logical font names and the fonts present o...">wxFontMapper</a> instance is to call <a class="el" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="Get the current font mapper object.">wxFontMapper::Get()</a>.  </dd></dl>
+<dl class="note"><dt><b>注:</b></dt><dd>The preferred way of creating a <a class="el" href="classwx_font_mapper.html" title="wxFontMapper はユーザが定義可能な論理フォント名とマシン上のフォントとの対応を管理します。">wxFontMapper</a> instance is to call <a class="el" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="現在のフォントマッピングオブジェクトを取得します。">wxFontMapper::Get()</a>.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxFontMapper::~wxFontMapper" ref="aa5119648c6a2cde69bc3a1b4c70983c8" args="()" -->
@@ -277,7 +277,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Get the current font mapper object.  </p>
+<p>現在のフォントマッピングオブジェクトを取得します。 </p>
 <p>If there is no current object, creates one.</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_font_mapper.html#a08ed527234d2cd470019f492a19d9cc3" title="Set the current font mapper object and return previous one (may be NULL).">Set()</a> </dd></dl>
 
@@ -534,7 +534,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Set the current font mapper object and return previous one (may be <span class="literal">NULL</span>).  </p>
 <p>This method is only useful if you want to plug-in an alternative font mapper into wxWidgets.</p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="Get the current font mapper object.">Get()</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_font_mapper.html#a2bd9e7f8c2c6808c4508ed05e9f1cfe5" title="現在のフォントマッピングオブジェクトを取得します。">Get()</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxFontMapper::SetConfigPath" ref="a5999b3950e0a78e3e8890d96abe37a97" args="(const wxString &amp;prefix)" -->

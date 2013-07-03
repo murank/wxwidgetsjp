@@ -130,14 +130,14 @@ function toggleVisibility(linkObj) {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classwx_help_controller_base__inherit__graph.png" border="0" usemap="#wx_help_controller_base_inherit__map" alt="Inheritance graph"/></div>
 <map name="wx_help_controller_base_inherit__map" id="wx_help_controller_base_inherit__map">
-<area shape="rect" id="node5" href="classwx_ext_help_controller.html" title="This class implements help via an external browser." alt="" coords="5,166,144,197"/><area shape="rect" id="node7" href="classwx_help_controller.html" title="This is an alias for one of a family of help controller classes which is most appropriate for the cur..." alt="" coords="168,166,285,197"/><area shape="rect" id="node9" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl..." alt="" coords="309,166,456,197"/><area shape="rect" id="node2" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="189,6,264,37"/></map>
+<area shape="rect" id="node5" href="classwx_ext_help_controller.html" title="This class implements help via an external browser." alt="" coords="5,166,144,197"/><area shape="rect" id="node7" href="classwx_help_controller.html" title="This is an alias for one of a family of help controller classes which is most appropriate for the cur..." alt="" coords="168,166,285,197"/><area shape="rect" id="node9" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)" alt="" coords="309,166,456,197"/><area shape="rect" id="node2" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="189,6,264,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>This is the abstract base class a family of classes by which applications may invoke a help viewer to provide on-line help.  </p>
 <p>A help controller allows an application to display help, at the contents or at a particular topic, and shut the help program down on termination. This avoids proliferation of many instances of the help viewer whenever the user requests a different topic via the application's menus or buttons.</p>
 <p>Typically, an application will create a help controller instance when it starts, and immediately call <a class="el" href="classwx_help_controller_base.html#ac7a8fa6e2f659cdca5863f8a3e35e1f0" title="Initializes the help instance with a help filename, and optionally a server socket number if using wx...">wxHelpController::Initialize</a> to associate a filename with it. The help viewer will only get run, however, just before the first call to display something.</p>
 <h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__help.html">Help</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_help_controller.html" title="This is an alias for one of a family of help controller classes which is most appropriate for the cur...">wxHelpController</a>, <a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a>, <a class="el" href="overview_html.html">wxHTML Overview</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__help.html">Help</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_help_controller.html" title="This is an alias for one of a family of help controller classes which is most appropriate for the cur...">wxHelpController</a>, <a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a>, <a class="el" href="overview_html.html">wxHTML Overview</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
@@ -159,7 +159,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_help_controller_base.html#a416082870baafe1719ee4af2a9c50a26">DisplayTextPopup</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;text, const <a class="el" href="classwx_point.html">wxPoint</a> &amp;pos)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Displays the text in a popup window, if possible.    <a href="#a416082870baafe1719ee4af2a9c50a26"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classwx_frame.html">wxFrame</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_help_controller_base.html#a756498b71be6d604e358551ad2d2289e">GetFrameParameters</a> (<a class="el" href="classwx_size.html">wxSize</a> *size=NULL, <a class="el" href="classwx_point.html">wxPoint</a> *pos=NULL, bool *newFrameEachTime=NULL)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">For <a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a>, returns the latest frame size and position settings and whether a new frame is drawn with each invocation.    <a href="#a756498b71be6d604e358551ad2d2289e"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">For <a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a>, returns the latest frame size and position settings and whether a new frame is drawn with each invocation.    <a href="#a756498b71be6d604e358551ad2d2289e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classwx_window.html">wxWindow</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_help_controller_base.html#ae5d5da2c6d5c0eb23b31070d3abc158f">GetParentWindow</a> () const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the window to be used as the parent for the help window.    <a href="#ae5d5da2c6d5c0eb23b31070d3abc158f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_help_controller_base.html#a725195abad79988412d6f9708cee9641">KeywordSearch</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;keyWord, <a class="el" href="help_8h.html#a6545e1763e46507e94ca603a9b75ead9">wxHelpSearchMode</a> mode=wxHELP_SEARCH_ALL)=0</td></tr>
@@ -171,7 +171,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_help_controller_base.html#a66380fa26b81c64bb3ead8b22ae620cb">Quit</a> ()=0</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">If the viewer is running, quits it by disconnecting.    <a href="#a66380fa26b81c64bb3ead8b22ae620cb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_help_controller_base.html#a13d06756b391b08c76f9689f9ece10f3">SetFrameParameters</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;title, const <a class="el" href="classwx_size.html">wxSize</a> &amp;size, const <a class="el" href="classwx_point.html">wxPoint</a> &amp;pos=<a class="el" href="gdicmn_8h.html#af5a90c753eaf3d3e3e5068a19ec3c1d0">wxDefaultPosition</a>, bool newFrameEachTime=false)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">For <a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a>, the title is set (with s indicating the page title) and also the size and position of the frame if the frame is already open.    <a href="#a13d06756b391b08c76f9689f9ece10f3"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">For <a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a>, the title is set (with s indicating the page title) and also the size and position of the frame if the frame is already open.    <a href="#a13d06756b391b08c76f9689f9ece10f3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_help_controller_base.html#a8cb9ceb25ef38343812758131d4c464f">SetParentWindow</a> (<a class="el" href="classwx_window.html">wxWindow</a> *parentWindow)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the window to be used as the parent for the help window.    <a href="#a8cb9ceb25ef38343812758131d4c464f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_help_controller_base.html#ac8c3e391bdf373ece23ac69dcc59d874">SetViewer</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;viewer, long flags=wxHELP_NETSCAPE)</td></tr>
@@ -201,7 +201,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Constructs a help instance object, but does not invoke the help viewer.  </p>
-<p>If you provide a window, it will be used by some help controller classes, such as wxCHMHelpController, wxWinHelpController and <a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a>, as the parent for the help window instead of the value of <a class="el" href="classwx_app.html#abc2b3305178f59f4024f492855c1bfdc" title="Returns a pointer to the top window.">wxApp::GetTopWindow</a>.</p>
+<p>If you provide a window, it will be used by some help controller classes, such as wxCHMHelpController, wxWinHelpController and <a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a>, as the parent for the help window instead of the value of <a class="el" href="classwx_app.html#abc2b3305178f59f4024f492855c1bfdc" title="Returns a pointer to the top window.">wxApp::GetTopWindow</a>.</p>
 <p>You can also change the parent window later with <a class="el" href="classwx_help_controller_base.html#a8cb9ceb25ef38343812758131d4c464f" title="Sets the window to be used as the parent for the help window.">SetParentWindow()</a>.  </p>
 
 </div>
@@ -245,7 +245,7 @@ Public Member Functions</h2></td></tr>
 <li><em>WinHelp:</em> Refers to the context number.</li>
 <li><em>MS</em> HTML Help: Refers to the context number.</li>
 <li><em>External</em> HTML help: the same as for <a class="el" href="classwx_help_controller_base.html#a57ad6b821d19d61de836a445fb9a1365" title="If the help viewer is not running, runs it and displays the given section.">DisplaySection()</a>.</li>
-<li><em><a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a>:</em> <em>sectionNo</em> is an identifier as specified in the <code></code>.hhc file. See <a class="el" href="overview_html.html#overview_html_helpformats">Help Files Format</a>.</li>
+<li><em><a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a>:</em> <em>sectionNo</em> is an identifier as specified in the <code></code>.hhc file. See <a class="el" href="overview_html.html#overview_html_helpformats">Help Files Format</a>.</li>
 </ul>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>This function is for backward compatibility only, and applications should use <a class="el" href="classwx_help_controller_base.html#a57ad6b821d19d61de836a445fb9a1365" title="If the help viewer is not running, runs it and displays the given section.">DisplaySection()</a> instead.  </dd></dl>
 
@@ -334,7 +334,7 @@ Public Member Functions</h2></td></tr>
 <ul>
 <li><em>WinHelp</em>, MS HTML Help <em>sectionNo</em> is a context id.</li>
 <li><em>External</em> HTML help: <a class="el" href="classwx_ext_help_controller.html" title="This class implements help via an external browser.">wxExtHelpController</a> implements <em>sectionNo</em> as an id in a map file, which is of the form:</li>
-<li><em><a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a>:</em> <em>sectionNo</em> is an identifier as specified in the <code></code>.hhc file. See <a class="el" href="overview_html.html#overview_html_helpformats">Help Files Format</a>. See also the help sample for notes on how to specify section numbers for various help file formats.  </li>
+<li><em><a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a>:</em> <em>sectionNo</em> is an identifier as specified in the <code></code>.hhc file. See <a class="el" href="overview_html.html#overview_html_helpformats">Help Files Format</a>. See also the help sample for notes on how to specify section numbers for various help file formats.  </li>
 </ul>
 
 <p>Implemented in <a class="el" href="classwx_ext_help_controller.html#addfd43e1bb21602f9e8c86526411484f">wxExtHelpController</a>.</p>
@@ -402,7 +402,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>For <a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a>, returns the latest frame size and position settings and whether a new frame is drawn with each invocation.  </p>
+<p>For <a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a>, returns the latest frame size and position settings and whether a new frame is drawn with each invocation.  </p>
 <p>For all other help controllers, this function does nothing and just returns <span class="literal">NULL</span>.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -432,7 +432,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns the window to be used as the parent for the help window.  </p>
-<p>This window is used by wxCHMHelpController, wxWinHelpController and <a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a>.  </p>
+<p>This window is used by wxCHMHelpController, wxWinHelpController and <a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a>.  </p>
 
 </div>
 </div><!-- doxytag: member="wxHelpControllerBase::Initialize" ref="ac7a8fa6e2f659cdca5863f8a3e35e1f0" args="(const wxString &amp;file)" -->
@@ -453,7 +453,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Initializes the help instance with a help filename, and optionally a server socket number if using wxHelp (now obsolete).  </p>
 <p>Does not invoke the help viewer. This must be called directly after the help instance object is created and before any attempts to communicate with the viewer.</p>
-<p>You may omit the file extension and a suitable one will be chosen. For <a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a>, the extensions zip, htb and hhp will be appended while searching for a suitable file. For WinHelp, the hlp extension is appended.  </p>
+<p>You may omit the file extension and a suitable one will be chosen. For <a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a>, the extensions zip, htb and hhp will be appended while searching for a suitable file. For WinHelp, the hlp extension is appended.  </p>
 
 <p>Reimplemented in <a class="el" href="classwx_ext_help_controller.html#a940d69bf177f02f75ff9230e9a3fbcac">wxExtHelpController</a>.</p>
 
@@ -486,7 +486,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Initializes the help instance with a help filename, and optionally a server socket number if using wxHelp (now obsolete).  </p>
 <p>Does not invoke the help viewer. This must be called directly after the help instance object is created and before any attempts to communicate with the viewer.</p>
-<p>You may omit the file extension and a suitable one will be chosen. For <a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a>, the extensions zip, htb and hhp will be appended while searching for a suitable file. For WinHelp, the hlp extension is appended.  </p>
+<p>You may omit the file extension and a suitable one will be chosen. For <a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a>, the extensions zip, htb and hhp will be appended while searching for a suitable file. For WinHelp, the hlp extension is appended.  </p>
 
 </div>
 </div><!-- doxytag: member="wxHelpControllerBase::KeywordSearch" ref="a725195abad79988412d6f9708cee9641" args="(const wxString &amp;keyWord, wxHelpSearchMode mode=wxHELP_SEARCH_ALL)=0" -->
@@ -516,11 +516,11 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>If the help viewer is not running, runs it, and searches for sections matching the given keyword.  </p>
-<p>If one match is found, the file is displayed at this section. The optional parameter allows to search the index (wxHELP_SEARCH_INDEX) but this currently is only supported by the <a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a>.</p>
+<p>If one match is found, the file is displayed at this section. The optional parameter allows to search the index (wxHELP_SEARCH_INDEX) but this currently is only supported by the <a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a>.</p>
 <ul>
 <li><em>WinHelp</em>, MS HTML Help: If more than one match is found, the first topic is displayed.</li>
 <li><em>External</em> HTML help, simple wxHTML help: If more than one match is found, a choice of topics is displayed.</li>
-<li><em><a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a>:</em> see <a class="el" href="classwx_html_help_controller.html#ae22ee2f714ad59162e1f7d583899e58b" title="Displays the help window, focuses search panel and starts searching.">wxHtmlHelpController::KeywordSearch</a>.  </li>
+<li><em><a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a>:</em> see <a class="el" href="classwx_html_help_controller.html#ae22ee2f714ad59162e1f7d583899e58b" title="Displays the help window, focuses search panel and starts searching.">wxHtmlHelpController::KeywordSearch</a>.  </li>
 </ul>
 
 <p>Implemented in <a class="el" href="classwx_ext_help_controller.html#a0eb62626aed22760d6a4b3cf527dd8f8">wxExtHelpController</a>, and <a class="el" href="classwx_html_help_controller.html#ae22ee2f714ad59162e1f7d583899e58b">wxHtmlHelpController</a>.</p>
@@ -545,7 +545,7 @@ Public Member Functions</h2></td></tr>
 <p>If the help viewer is not running, runs it and loads the given file.  </p>
 <p>If the filename is not supplied or is empty, the file specified in <a class="el" href="classwx_help_controller_base.html#ac7a8fa6e2f659cdca5863f8a3e35e1f0" title="Initializes the help instance with a help filename, and optionally a server socket number if using wx...">Initialize()</a> is used.</p>
 <p>If the viewer is already displaying the specified file, it will not be reloaded. This member function may be used before each display call in case the user has opened another file.</p>
-<p><a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a> ignores this call.  </p>
+<p><a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a> ignores this call.  </p>
 
 <p>Implemented in <a class="el" href="classwx_ext_help_controller.html#a0b6d17f9000f53f81a2a08189f4ebb55">wxExtHelpController</a>.</p>
 
@@ -630,7 +630,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>For <a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a>, the title is set (with s indicating the page title) and also the size and position of the frame if the frame is already open.  </p>
+<p>For <a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a>, the title is set (with s indicating the page title) and also the size and position of the frame if the frame is already open.  </p>
 <p><em>newFrameEachTime</em> is ignored.</p>
 <p>For all other help controllers this function has no effect.  </p>
 
@@ -654,7 +654,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Sets the window to be used as the parent for the help window.  </p>
-<p>This is used by wxCHMHelpController, wxWinHelpController and <a class="el" href="classwx_html_help_controller.html" title="This help controller provides an easy way of displaying HTML help in your application (see HTML Sampl...">wxHtmlHelpController</a>.  </p>
+<p>This is used by wxCHMHelpController, wxWinHelpController and <a class="el" href="classwx_html_help_controller.html" title="このヘルプコントローラはアプリケーションで HTML ヘルプを表示する簡単な方法を提供します。(HTML サンプルの test の例を参照してください)">wxHtmlHelpController</a>.  </p>
 
 </div>
 </div><!-- doxytag: member="wxHelpControllerBase::SetViewer" ref="ac8c3e391bdf373ece23ac69dcc59d874" args="(const wxString &amp;viewer, long flags=wxHELP_NETSCAPE)" -->
