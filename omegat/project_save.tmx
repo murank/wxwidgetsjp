@@ -386,6 +386,14 @@ msgstr ""
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(In a Unicode build of wxWidgets, the constructor ignores the passed conversion object and retains the Unicode data.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T145639Z">
+        <seg>(Unicode ビルド版の wxWidgets の場合、コンストラクタは引き渡された変換オブジェクトを無視し、Unicode データのまま保持します)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(Make sure that the header is &lt;b0&gt;not&lt;/b0&gt; marked as &lt;e1&gt;fuzzy&lt;/e1&gt;.)</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130703T134722Z">
@@ -406,6 +414,14 @@ msgstr ""
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T032240Z">
         <seg> (UTF-32 であっても、リトルエンディアンとビッグエンディアンではバイト列へのマッピングが異なるため、完全に自明とはまだ言えないことに注意してください。) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(The macro wxWX2MBbuf reflects the correct return value of cWX2MB (either char* or wxCharBuffer), except for the const.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T150332Z">
+        <seg>(wxWX2MBbuf マクロは const でないことを除いて、cWX2MB の戻り値 (char* または wxCharBuffer) と同じ型になります)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1093,6 +1109,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Background: The need for conversion&lt;/a0&gt;&lt;br1&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T152255Z">
+        <seg>&lt;a0&gt;背景: 変換に対する要件&lt;/a0&gt;&lt;br1&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Device contexts&lt;/a0&gt;&lt;br1&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T141947Z">
@@ -1185,6 +1209,16 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130520T150612Z">
         <seg>&lt;a0&gt;wxBoxSizer&lt;/a0&gt; はコンストラクタで使用されたフラグに基づいて、子コントロールを垂直方向または水平方向のいずれかに配置できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxCSConv&lt;/a0&gt; cust(user_encoding);
+printf(&lt;s1&gt;"Data: %s\n"&lt;/s1&gt;, (&lt;s2&gt;const&lt;/s2&gt; &lt;s3&gt;char&lt;/s3&gt;*) str.mb_str(cust));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151940Z">
+        <seg>&lt;a0&gt;wxCSConv&lt;/a0&gt; cust(user_encoding);
+printf(&lt;s1&gt;"Data: %s\n"&lt;/s1&gt;, (&lt;s2&gt;const&lt;/s2&gt; &lt;s3&gt;char&lt;/s3&gt;*) str.mb_str(cust));</seg>
       </tuv>
     </tu>
     <tu>
@@ -1473,6 +1507,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxMBConv&lt;/a0&gt; Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T150904Z">
+        <seg>&lt;a0&gt;wxMBConv&lt;/a0&gt; の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;wxMessageBox&lt;/a0&gt;(&lt;a1&gt;wxString::FromUTF8&lt;/a1&gt;(&lt;s2&gt;"Salut \xC3\xA0 toi!"&lt;/s2&gt;));</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T082537Z">
@@ -1625,6 +1667,16 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxString&lt;/a0&gt; input_str(input_data);
+&lt;a1&gt;wxString&lt;/a1&gt; str(input_str.wc_str(wxConvUTF8), *wxConvCurrent);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T152058Z">
+        <seg>&lt;a0&gt;wxString&lt;/a0&gt; input_str(input_data);
+&lt;a1&gt;wxString&lt;/a1&gt; str(input_str.wc_str(wxConvUTF8), *wxConvCurrent);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;wxString&lt;/a0&gt; s(&lt;s1&gt;"hello"&lt;/s1&gt;);
 &lt;s2&gt;for&lt;/s2&gt; ( &lt;s3&gt;const&lt;/s3&gt; &lt;s4&gt;wchar_t&lt;/s4&gt; *p = s.&lt;a5&gt;wc_str&lt;/a5&gt;(); *p; p++ )
 {</seg>
@@ -1657,6 +1709,38 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
         <seg>&lt;a0&gt;wxString&lt;/a0&gt; s(&lt;s1&gt;"hello"&lt;/s1&gt;);
 &lt;s2&gt;for&lt;/s2&gt; ( wxString::const_iterator i = s.&lt;a3&gt;begin&lt;/a3&gt;(); i != s.&lt;a4&gt;end&lt;/a4&gt;(); ++i )
 {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxString&lt;/a0&gt; str(input_data, *wxConvCurrent);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151855Z">
+        <seg>&lt;a0&gt;wxString&lt;/a0&gt; str(input_data, *wxConvCurrent);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxString&lt;/a0&gt; str(input_data, &lt;a1&gt;wxCSConv&lt;/a1&gt;(&lt;a2&gt;wxT&lt;/a2&gt;(&lt;s3&gt;"koi8-r"&lt;/s3&gt;)));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151912Z">
+        <seg>&lt;a0&gt;wxString&lt;/a0&gt; str(input_data, &lt;a1&gt;wxCSConv&lt;/a1&gt;(&lt;a2&gt;wxT&lt;/a2&gt;(&lt;s3&gt;"koi8-r"&lt;/s3&gt;)));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxString&lt;/a0&gt; str(input_data, wxConvUTF8);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151900Z">
+        <seg>&lt;a0&gt;wxString&lt;/a0&gt; str(input_data, wxConvUTF8);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxString&lt;/a0&gt; str(wxConvUTF8.cMB2WC(input_data), *wxConvCurrent);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T152022Z">
+        <seg>&lt;a0&gt;wxString&lt;/a0&gt; str(wxConvUTF8.cMB2WC(input_data), *wxConvCurrent);</seg>
       </tuv>
     </tu>
     <tu>
@@ -1771,6 +1855,22 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a10&gt;Conversion between Unicode and multibyte strings&lt;/a10&gt;&lt;br11&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T151903Z">
+        <seg>&lt;a10&gt;Unicode とマルチバイト文字列間の変換&lt;/a10&gt;&lt;br11&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a10&gt;Converting strings&lt;/a10&gt;&lt;br11&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T152326Z">
+        <seg>&lt;a10&gt;文字列の変換&lt;/a10&gt;&lt;br11&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a10&gt;CreateButtonSizer&lt;/a10&gt;&lt;br11&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130519T115755Z">
@@ -1841,6 +1941,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130528T152025Z">
         <seg>&lt;a12&gt;&lt;b13&gt;wxApp の概要&lt;/b13&gt;&lt;/a12&gt;&lt;br14&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a12&gt;Converting buffers&lt;/a12&gt;&lt;br13&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T152332Z">
+        <seg>&lt;a12&gt;バッファの変換&lt;/a12&gt;&lt;br13&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -2073,6 +2181,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a2&gt;Background: The wxString class&lt;/a2&gt;&lt;br3&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T152306Z">
+        <seg>&lt;a2&gt;背景: wxString クラス&lt;/a2&gt;&lt;br3&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a2&gt;Bitmap format handlers&lt;/a2&gt;&lt;br3&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T141105Z">
@@ -2193,6 +2309,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a36&gt;&lt;b37&gt;wxMBConv classes overview&lt;/b37&gt;&lt;/a36&gt;&lt;br38&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T151915Z">
+        <seg>&lt;a36&gt;&lt;b37&gt;wxMBConv クラスの概要&lt;/b37&gt;&lt;/a36&gt;&lt;br38&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a39&gt;&lt;b40&gt;Internationalization&lt;/b40&gt;&lt;/a39&gt;&lt;br41&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T132119Z">
@@ -2285,6 +2409,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T003252Z">
         <seg>&lt;a4&gt;wxLogStream&lt;/a4&gt;,&lt;br5&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a4&gt;wxMBConv classes&lt;/a4&gt;&lt;br5&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T152311Z">
+        <seg>&lt;a4&gt;wxMBConv クラス&lt;/a4&gt;&lt;br5&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -2409,6 +2541,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a6&gt;wxMBConv objects&lt;/a6&gt;&lt;br7&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T152316Z">
+        <seg>&lt;a6&gt;wxMBConv オブジェクト&lt;/a6&gt;&lt;br7&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a6&gt;wxString&lt;/a6&gt; s;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130619T142517Z">
@@ -2525,6 +2665,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130703T143513Z">
         <seg>&lt;a8&gt;wxCSConv&lt;/a8&gt; convTo(&lt;a9&gt;wxFontMapper::Get&lt;/a9&gt;()-&gt;GetEncodingName(alternative));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a8&gt;wxCSConv&lt;/a8&gt;&lt;br9&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T152317Z">
+        <seg>&lt;a8&gt;wxCSConv&lt;/a8&gt;&lt;br9&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3223,6 +3371,20 @@ puts(p); &lt;s3&gt;// or call any other function taking const char *&lt;/s3&gt;<
         <seg>&lt;s0&gt;const&lt;/s0&gt; &lt;s1&gt;char&lt;/s1&gt; *p = s.&lt;a2&gt;ToUTF8&lt;/a2&gt;();
 ...
 puts(p); &lt;s3&gt;// または const char * を受け取る他の関数の呼び出し&lt;/s3&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;const&lt;/s0&gt; wxWX2MBbuf tmp_buf = wxConvCurrent-&gt;cWX2MB(unicode_data);
+&lt;s1&gt;const&lt;/s1&gt; &lt;s2&gt;char&lt;/s2&gt; *tmp_str = (&lt;s3&gt;const&lt;/s3&gt; &lt;s4&gt;char&lt;/s4&gt;*) tmp_buf;
+printf(&lt;s5&gt;"Data: %s\n"&lt;/s5&gt;, tmp_str);
+process_data(tmp_str);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T152104Z">
+        <seg>&lt;s0&gt;const&lt;/s0&gt; wxWX2MBbuf tmp_buf = wxConvCurrent-&gt;cWX2MB(unicode_data);
+&lt;s1&gt;const&lt;/s1&gt; &lt;s2&gt;char&lt;/s2&gt; *tmp_str = (&lt;s3&gt;const&lt;/s3&gt; &lt;s4&gt;char&lt;/s4&gt;*) tmp_buf;
+printf(&lt;s5&gt;"Data: %s\n"&lt;/s5&gt;, tmp_str);
+process_data(tmp_str);</seg>
       </tuv>
     </tu>
     <tu>
@@ -4403,6 +4565,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A few years ago, a solution was proposed: the Unicode standard.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T152809Z">
+        <seg>数年前にひとつの解決策が提案されました: それが Unicode 規格です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A filter stream has the capability of a normal stream but it can be placed on top of another stream...</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130622T130952Z">
@@ -4455,6 +4625,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T055239Z">
         <seg>キー押下イベント</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A large number of systems out there still depends on the old 8-bit encodings, hampered by the huge amounts of legacy code still widely deployed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T153415Z">
+        <seg>いまだに多くのシステムは旧来の 8 ビットエンコーディングに依存しており、膨大なレガシーコードがいまだに使用されていることがネックになっています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4715,6 +4893,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A variable, wxConvCurrent, points to the conversion object that the user interface is supposed to use, in the case that the user interface is not Unicode-based (like with GTK+ 1.2).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130716T160903Z">
+        <seg>wxConvCurrent 変数は (GTK+ 1.2 のように) ユーザインタフェースが Unicode ベースでない場合に、ユーザインタフェースで使用する変換オブジェクトを指しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A window focus event</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T055231Z">
@@ -4839,6 +5025,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T150635Z">
         <seg>wxWindowDC はウィンドウ全体 (クライアントエリアと装飾部分) を描画する場合に使用する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Able to contain the complete set of characters in use in one unified global coding system, it would resolve the character set problems once and for all.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T153121Z">
+        <seg>使用されている文字の一式をひとつの統一的な符号化システムに含めることができるため、これは文字コードに関する問題を完全に解決します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5039,6 +5233,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T140218Z">
         <seg>小さなビットマップやアイコンに使用される XPM について、wxWidgets はすべてのプラットフォームで対応しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All you need to do is override the MB2WC and WC2MB methods.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130716T160553Z">
+        <seg>必要なことは MB2WC 関数と WC2MB 関数をオーバーライドすることだけです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5287,6 +5489,22 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130502T151410Z">
         <seg>最後に、上に挙げた標準プリプロセッサトークンは ANSI 文字列として展開されますが、Unicode ビルドの際には Unicode 文字列の方が必要なことが多いでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And this is what the &lt;a0&gt;wxMBConv&lt;/a0&gt; classes do.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151636Z">
+        <seg>そしてこれこそが &lt;a0&gt;wxMBConv&lt;/a0&gt; クラスの行なうことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And this is what the wxMBConv classes do.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T151303Z">
+        <seg>そしてこれこそが wxMBConv クラスの行なうことです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5571,6 +5789,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As programs are becoming more and more globalized, and users exchange documents across country boundaries as never before, applications increasingly need to take into account all the different character sets in use around the world.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T152606Z">
+        <seg>プログラムがよりグローバル化し、かつてないほどユーザが国境を超えてドキュメントをやり取りするようになるにつれ、世界中で使用されているすべての文字コードについて考慮することがますます求められるようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As reinforced in the next section, calling Close does not guarantee that the window will be destroyed.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130613T150847Z">
@@ -5665,6 +5891,38 @@ END_EVENT_TABLE()</seg>
   EVT_SIZE    (           MyFrame::OnSize)
   EVT_BUTTON  (BUTTON1,   MyFrame::OnButton1)
 END_EVENT_TABLE()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Background: The Need for Conversion</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151411Z">
+        <seg>背景: 変換に対する要件</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Background: The need for conversion</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T152337Z">
+        <seg>背景: 変換に対する要件</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Background: The wxString Class</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151414Z">
+        <seg>背景: wxString クラス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Background: The wxString class</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T153828Z">
+        <seg>背景: wxString クラス</seg>
       </tuv>
     </tu>
     <tu>
@@ -5969,6 +6227,14 @@ END_EVENT_TABLE()</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>But it hasn't happened yet, and the migration towards Unicode has created new challenges, resulting in "compatibility encodings" such as UTF-8.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T153236Z">
+        <seg>しかし、これまでには存在しなかった、Unicode への移行という新たな課題が生じました。その結果、UTF-8 などの "互換エンコーディング" が考案されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But keep in mind that then the lifetime of &lt;c2&gt;myFrameHandler&lt;/c2&gt; must be greater than that of &lt;c3&gt;MyFrame&lt;/c3&gt; object -- or at least it needs to be unbound before being destroyed.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T060621Z">
@@ -5981,6 +6247,14 @@ END_EVENT_TABLE()</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130502T160403Z">
         <seg>しかし、実行時には追加のライブラリは必要ないため、メッセージカタログの他には何も配布する必要がないことに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>But often, your environment doesn't want Unicode strings.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T154309Z">
+        <seg>しかし、Unicode 文字列を使用できない環境もよくあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6053,6 +6327,14 @@ END_EVENT_TABLE()</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130604T152910Z">
         <seg>デフォルトでは上で述べた処理がすべて行われますが、レベルを 1 に設定することで &lt;a1&gt;wxStdDialogButtonSizer&lt;/a1&gt; のみを探すようにできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By default, it points to wxConvLibc or wxConvLocal, depending on which works best on the current platform.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130716T160935Z">
+        <seg>デフォルトでは wxConvLibc と wxConvLocal のうち、現在のプラットフォームに適している方が使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6345,6 +6627,14 @@ END_EVENT_TABLE()</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Classes: &lt;a0&gt;wxMBConv&lt;/a0&gt;, wxMBConvLibc, &lt;a1&gt;wxMBConvUTF7&lt;/a1&gt;, &lt;a2&gt;wxMBConvUTF8&lt;/a2&gt;, &lt;a3&gt;wxCSConv&lt;/a3&gt;, &lt;a4&gt;wxMBConvUTF16&lt;/a4&gt;, &lt;a5&gt;wxMBConvUTF32&lt;/a5&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T151947Z">
+        <seg>クラス: &lt;a0&gt;wxMBConv&lt;/a0&gt;, wxMBConvLibc, &lt;a1&gt;wxMBConvUTF7&lt;/a1&gt;, &lt;a2&gt;wxMBConvUTF8&lt;/a2&gt;, &lt;a3&gt;wxCSConv&lt;/a3&gt;, &lt;a4&gt;wxMBConvUTF16&lt;/a4&gt;, &lt;a5&gt;wxMBConvUTF32&lt;/a5&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Classes: &lt;a0&gt;wxSizer&lt;/a0&gt;, &lt;a1&gt;wxBoxSizer&lt;/a1&gt;, &lt;a2&gt;wxStaticBoxSizer&lt;/a2&gt;, &lt;a3&gt;wxGridSizer&lt;/a3&gt;, &lt;a4&gt;wxFlexGridSizer&lt;/a4&gt;, &lt;a5&gt;wxGridBagSizer&lt;/a5&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T140818Z">
@@ -6483,6 +6773,22 @@ END_EVENT_TABLE()</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Construction of &lt;a0&gt;wxCSConv&lt;/a0&gt; instance on the fly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151910Z">
+        <seg>実行時における &lt;a0&gt;wxCSConv&lt;/a0&gt; インスタンスの構築。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Construction of wxCSConv instance on the fly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T143518Z">
+        <seg>実行時における wxCSConv インスタンスの構築。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Constructor for a wxBoxSizer.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T145952Z">
@@ -6507,6 +6813,14 @@ END_EVENT_TABLE()</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Converting Buffers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151422Z">
+        <seg>バッファの変換</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Converting Data</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130703T134457Z">
@@ -6515,10 +6829,34 @@ END_EVENT_TABLE()</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Converting Strings</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151420Z">
+        <seg>文字列の変換</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Converting buffers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T144406Z">
+        <seg>バッファの変換</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Converting data</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130629T132742Z">
         <seg>データの変換</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Converting strings</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T142722Z">
+        <seg>文字列の変換</seg>
       </tuv>
     </tu>
     <tu>
@@ -6797,6 +7135,22 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T123615Z">
         <seg>個々のコントロールに使用されたフラグに応じて空きスペースを満たす、つまり、最小サイズ以上に伸長させるか、空きスペースの中央またはいずれかの側に移動させることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Derived classes include wxMBConvLibc, several different wxMBConvUTFxxx classes, and &lt;a1&gt;wxCSConv&lt;/a1&gt;, which implement different kinds of conversions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151724Z">
+        <seg>継承クラスには wxMBConvLibc、いくつかの wxMBConvUTFxxx クラス、&lt;a1&gt;wxCSConv&lt;/a1&gt; が含まれており、それぞれ異なる種類の変換を行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Derived classes include wxMBConvLibc, several different wxMBConvUTFxxx classes, and wxCSConv, which implement different kinds of conversions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130716T160339Z">
+        <seg>継承クラスには wxMBConvLibc、いくつかの wxMBConvUTFxxx クラス、wxCSConv が含まれており、それぞれ異なる種類の変換を行います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7191,6 +7545,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Even sending Unicode data from one Unicode-aware system to another may need encoding to an 8-bit multibyte encoding (UTF-7 or UTF-8 is typically used for this purpose), to pass unhindered through any traditional transport channels.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T153823Z">
+        <seg>Unicode を意識したシステムから別のシステムへ Unicode データを送信するときでさえ、昔ながらの転送チャネル経由で制約を受けずにやり取りするために 8 ビットのマルチバイトエンコーディング (この目的には一般的に UTF-7 か UTF-8 が使用されます) に符号化する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Even though wxWidgets always uses Unicode internally, not all the other libraries and programs do and even those that do use Unicode may use a different encoding of it.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T155933Z">
@@ -7299,6 +7661,70 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130622T132613Z">
         <seg>例</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Example 1: Constructing a &lt;a0&gt;wxString&lt;/a0&gt; from input in current encoding.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151850Z">
+        <seg>例 1: 現在のエンコーディングの入力から &lt;a0&gt;wxString&lt;/a0&gt; を構築する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Example 1: Constructing a wxString from input in current encoding.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T143235Z">
+        <seg>例 1: 現在のエンコーディングの入力から wxString を構築する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Example 2: Input in UTF-8 encoding.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T143313Z">
+        <seg>例 2: UTF-8 の入力。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Example 3: Input in KOI8-R.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T143415Z">
+        <seg>例 3: KOI8-R の入力。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Example 4: Printing a &lt;a0&gt;wxString&lt;/a0&gt; to stdout in UTF-8 encoding.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151920Z">
+        <seg>例 4: &lt;a0&gt;wxString&lt;/a0&gt; を標準出力へ UTF-8 で出力する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Example 4: Printing a wxString to stdout in UTF-8 encoding.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T143941Z">
+        <seg>例 4: wxString を標準出力へ UTF-8 で出力する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Example 5: Printing a &lt;a0&gt;wxString&lt;/a0&gt; to stdout in custom encoding.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151929Z">
+        <seg>例 5: &lt;a0&gt;wxString&lt;/a0&gt; を標準出力へ任意のエンコーディングで出力する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Example 5: Printing a wxString to stdout in custom encoding.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T144125Z">
+        <seg>例 5: wxString を標準出力へ任意のエンコーディングで出力する</seg>
       </tuv>
     </tu>
     <tu>
@@ -8153,6 +8579,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Hence, all &lt;a1&gt;wxString&lt;/a1&gt; manipulation in your application will then operate on Unicode strings, and almost as easily as working with ordinary char strings (you just need to remember to use the &lt;a2&gt;wxT()&lt;/a2&gt; macro to encapsulate any string literals).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151627Z">
+        <seg>したがって、&lt;a1&gt;wxString&lt;/a1&gt; に対するすべての操作は Unicode 文字列に対して行われます。これは普通の char 文字列を使用する場合とほぼ同じくらい簡単です。(&lt;a2&gt;wxT()&lt;/a2&gt; マクロを使用してリテラル文字列を囲むことを覚えておく必要があるだけです)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Hence, all wxString manipulation in your application will then operate on Unicode strings, and almost as easily as working with ordinary char strings (you just need to remember to use the wxT() macro to encapsulate any string literals).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T154221Z">
+        <seg>したがって、wxString に対するすべての操作は Unicode 文字列に対して行われます。これは普通の char 文字列を使用する場合とほぼ同じくらい簡単です。(wxT() マクロを使用してリテラル文字列を囲むことを覚えておく必要があるだけです)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here are all of them:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T005029Z">
@@ -8229,6 +8671,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T145412Z">
         <seg>wxSizerFlags を使用して上記の例と同じことをすると以下のようになります:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here, cMB2WC of the UTF8 object returns a &lt;a0&gt;wxWCharBuffer&lt;/a0&gt; containing a Unicode string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T152036Z">
+        <seg>ここで、UTF-8 オブジェクトの cMB2WC は Unicode 文字列を含む &lt;a0&gt;wxWCharBuffer&lt;/a0&gt; を返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here, cMB2WC of the UTF8 object returns a wxWCharBuffer containing a Unicode string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T145146Z">
+        <seg>ここで、UTF-8 オブジェクトの cMB2WC は Unicode 文字列を含む wxWCharBuffer を返却します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8453,6 +8911,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130604T151049Z">
         <seg>&lt;a0&gt;wxDialog::GetContentWindow&lt;/a0&gt; が &lt;a1&gt;wxBookCtrlBase&lt;/a1&gt; を継承したウィンドウを返却する場合、ページがスクロール可能になるだけで、それ以外の適応は行われません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a conversion had taken place in cWX2MB (i.e. in a Unicode build), the buffer will be deallocated as soon as tmp_buf goes out of scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T150156Z">
+        <seg>cWX2MB で変換が行われる場合 (つまり、Unicode ビルドの場合)、tmp_buf がスコープから外れると直ちにバッファが解放されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8761,6 +9227,38 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you have compiled wxWidgets in Unicode mode, the wxChar type will become identical to wchar_t rather than char, and a &lt;a0&gt;wxString&lt;/a0&gt; stores wxChars.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151548Z">
+        <seg>wxWidgets を Unicode モードでコンパイルしている場合、wxChar 型は char ではなく wchar_t と等価になります。そして、&lt;a0&gt;wxString&lt;/a0&gt; は wxChar を格納します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you have compiled wxWidgets in Unicode mode, the wxChar type will become identical to wchar_t rather than char, and a wxString stores wxChars.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T153945Z">
+        <seg>wxWidgets を Unicode モードでコンパイルしている場合、wxChar 型は char ではなく wchar_t と等価になります。そして、wxString は wxChar を格納します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you have specialized needs, or just don't want to use &lt;a0&gt;wxString&lt;/a0&gt;, you can also use the conversion methods of the conversion objects directly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T152019Z">
+        <seg>特別な要件がある場合、もしくは単に &lt;a0&gt;wxString&lt;/a0&gt; を使用したくない場合は変換オブジェクトの変換関数を直接使用することも可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you have specialized needs, or just don't want to use wxString, you can also use the conversion methods of the conversion objects directly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T144747Z">
+        <seg>特別な要件がある場合、もしくは単に wxString を使用したくない場合は変換オブジェクトの変換関数を直接使用することも可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you just want to use a &lt;a0&gt;wxCommandEvent&lt;/a0&gt; with a new event type, use one of the generic event table macros listed below, without having to define a new event class yourself.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130515T145820Z">
@@ -8781,6 +9279,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130623T150432Z">
         <seg>ダイアログをリソースファイルから読み込む場合、コントロールに対してバリデータを設定する必要があります。これはダイアログリソース内でバリデータを指定できないためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you need to do more complex processing on the converted data, you may want to store the temporary buffer in a local variable:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T150026Z">
+        <seg>変換後のデータに対してより複雑な処理を行なう必要がある場合、一時バッファをローカル変数に格納したいと思うかもしれません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9629,6 +10135,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130521T160524Z">
         <seg>これは重み係数として解釈されます。つまり、値を 0 (この場合、ウィンドウはまったくリサイズされません) か、0 より大きい値にすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is no longer enough to just depend on the default byte-sized character set that computers have traditionally used.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T152748Z">
+        <seg>コンピュータが昔から使用しているデフォルトのバイト単位の文字コードに依存するだけではもう不十分です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10539,6 +11053,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note: Since mb_str() returns a temporary wxCharBuffer to hold the result of the conversion, you need to explicitly cast it to const char* if you use it in a vararg context (like with printf).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T144400Z">
+        <seg>注: mb_str() は変換結果を保持する一時 wxCharBuffer を返却するため、(printf のような) 可変数引数の関数を使用する場合は明示的に const char* にキャストする必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note: This is supported only by wxBoxSizer and wxFlexGridSizer.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130520T150152Z">
@@ -10751,6 +11273,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T023007Z">
         <seg>一方で、単に多くのサンプルでイベントテーブルを見かけるからという理由だけであっても、イベントテーブルについて学ぶ必要性は依然として残っています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once you have chosen which object you want to use to convert your text, here is how you would use them with &lt;a0&gt;wxString&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151839Z">
+        <seg>変換に使用したいオブジェクトを選択したら、それらを &lt;a0&gt;wxString&lt;/a0&gt; と一緒に使用する方法を以下に示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once you have chosen which object you want to use to convert your text, here is how you would use them with wxString.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T142812Z">
+        <seg>変換に使用したいオブジェクトを選択したら、それらを wxString と一緒に使用する方法を以下に示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11773,6 +12311,22 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Several of the wxWidgets-provided &lt;a0&gt;wxMBConv&lt;/a0&gt; classes have predefined instances (wxConvLibc, wxConvFileName, wxConvUTF7, wxConvUTF8, wxConvLocal).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151738Z">
+        <seg>wxWidgets の提供する &lt;a0&gt;wxMBConv&lt;/a0&gt; クラスのうち、いくつかのクラスは事前に定義されたインスタンスを持っています。(wxConvLibc、wxConvFileName、wxConvUTF7、wxConvUTF8、wxConvLocal) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Several of the wxWidgets-provided wxMBConv classes have predefined instances (wxConvLibc, wxConvFileName, wxConvUTF7, wxConvUTF8, wxConvLocal).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T151431Z">
+        <seg>wxWidgets の提供する wxMBConv クラスのうち、いくつかのクラスは事前に定義されたインスタンスを持っています。(wxConvLibc、wxConvFileName、wxConvUTF7、wxConvUTF8、wxConvLocal) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Show a general purpose message dialog.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T082545Z">
@@ -11825,6 +12379,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T022747Z">
         <seg>メニューコマンドといった単純なイベントは普通、メニューを保持するトップレベルウィンドウで処理されます。そのため、いくつかのイベントは &lt;a4&gt;wxFrame&lt;/a4&gt; を継承した &lt;c3&gt;MyFrame&lt;/c3&gt; で処理する必要があるはずです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since mb_str() returns a temporary &lt;a0&gt;wxCharBuffer&lt;/a0&gt; to hold the result of the conversion, you need to explicitly cast it to const char* if you use it in a vararg context (like with printf).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T152001Z">
+        <seg>mb_str() は変換結果を保持する一時 &lt;a0&gt;wxCharBuffer&lt;/a0&gt; を返却するため、(printf のような) 可変数引数の関数を使用する場合は明示的に const char* にキャストする必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12229,10 +12791,26 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;wxCSConv&lt;/a0&gt; class is special because when it is instantiated, you can tell it which character set it should use, which makes it meaningful to keep many instances of them around, each with a different character set (or you can create a &lt;a1&gt;wxCSConv&lt;/a1&gt; instance on the fly).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151800Z">
+        <seg>&lt;a0&gt;wxCSConv&lt;/a0&gt; クラスは特別なクラスです。なぜなら、インスタンス化するときに使用する文字コードを指定することができるためです。このことは異なる文字コードのインスタンスを多数保持する場合に意味があります。(もしくは実行時に &lt;a1&gt;wxCSConv&lt;/a1&gt; のインスタンスを作成することができます)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;a0&gt;wxCloseEvent&lt;/a0&gt; handler should only call &lt;a1&gt;wxWindow::Destroy&lt;/a1&gt; to delete the window, and not use the &lt;c2&gt;delete&lt;/c2&gt; operator.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130615T040317Z">
         <seg>&lt;a0&gt;wxCloseEvent&lt;/a0&gt; ハンドラではウィンドウを破棄するときに &lt;a1&gt;wxWindow::Destroy&lt;/a1&gt; のみを使用するようにし、&lt;c2&gt;delete&lt;/c2&gt; 演算子を使用しないでください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;wxMBConv&lt;/a0&gt; classes in wxWidgets enable an Unicode-aware application to easily convert between Unicode and the variety of 8-bit encoding systems still in use.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151405Z">
+        <seg>&lt;a0&gt;wxMBConv&lt;/a0&gt; クラスは Unicode を意識したアプリケーションにおいて、依然として使用されている様々な 8 ビットエンコーディングと Unicode との間の変換を簡単に行えるようにします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12265,6 +12843,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130623T144337Z">
         <seg>&lt;a0&gt;wxValidator::Validate&lt;/a0&gt; 関数はコントロール (C++ 変数ではありません) のデータが正しい場合に true を返却する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a1&gt;wxString&lt;/a1&gt; constructor then converts it back to an 8-bit character set using the passed conversion object, *wxConvCurrent.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T152046Z">
+        <seg>そして、&lt;a1&gt;wxString&lt;/a1&gt; のコンストラクタは引数に指定された変換オブジェクト、つまり *wxConvCurrent を使用して 8 ビット文字コードへ文字列を変換し直します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12497,6 +13083,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T075520Z">
         <seg>自動生成される識別子は常に負の値のため、必ず正の値でなければならないユーザ定義の識別子と衝突することはありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The base class for all these conversions is the &lt;a0&gt;wxMBConv&lt;/a0&gt; class (which itself implements standard libc locale conversion).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151645Z">
+        <seg>これらすべての変換の基底クラスが &lt;a0&gt;wxMBConv&lt;/a0&gt; クラスです。(このクラス自身では標準 libc ロケールの変換を実装しています) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The base class for all these conversions is the wxMBConv class (which itself implements standard libc locale conversion).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T151341Z">
+        <seg>これらすべての変換の基底クラスが wxMBConv クラスです。(このクラス自身では標準 libc ロケールの変換を実装しています) </seg>
       </tuv>
     </tu>
     <tu>
@@ -13061,6 +13663,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The macro wxWX2MBbuf reflects the correct return value of cWX2MB (either char* or &lt;a0&gt;wxCharBuffer&lt;/a0&gt;), except for the const.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T152114Z">
+        <seg>(wxWX2MBbuf マクロは const でないことを除いて、cWX2MB の戻り値 (char* または &lt;a0&gt;wxCharBuffer&lt;/a0&gt;) と同じ型になります)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The most serious backwards-incompatible change is related to the change of return type of &lt;a0&gt;wxString::c_str()&lt;/a0&gt; method: it returns a special proxy object instead of a simple &lt;c1&gt;char*&lt;/c1&gt; or &lt;c2&gt;wchar_t*&lt;/c2&gt; now.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130620T123617Z">
@@ -13241,6 +13851,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T024547Z">
         <seg>この方法ではイベント処理のやり方が大きく異なります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The predefined &lt;a0&gt;wxCSConv&lt;/a0&gt; instance, wxConvLocal, is preset to use the default user character set, but you should rarely need to use it directly, it is better to go through wxConvCurrent.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151811Z">
+        <seg>事前に定義された &lt;a0&gt;wxCSConv&lt;/a0&gt; インスタンスである wxConvLocal はデフォルトのユーザ文字コードを使用するように設定されていますが、これを直接使用する必要はほとんどなく、それよりも wxConvCurrent を使用するべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The predefined wxCSConv instance, wxConvLocal, is preset to use the default user character set, but you should rarely need to use it directly, it is better to go through wxConvCurrent.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T142717Z">
+        <seg>事前に定義された wxCSConv インスタンスである wxConvLocal はデフォルトのユーザ文字コードを使用するように設定されていますが、これを直接使用する必要はほとんどなく、それよりも wxConvCurrent を使用するべきです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13645,6 +14271,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The wxCSConv class is special because when it is instantiated, you can tell it which character set it should use, which makes it meaningful to keep many instances of them around, each with a different character set (or you can create a wxCSConv instance on the fly).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T142559Z">
+        <seg>wxCSConv クラスは特別なクラスです。なぜなら、インスタンス化するときに使用する文字コードを指定することができるためです。このことは異なる文字コードのインスタンスを多数保持する場合に意味があります。(もしくは実行時に wxCSConv のインスタンスを作成することができます)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The wxCloseEvent handler should only call &lt;a0&gt;wxWindow::Destroy&lt;/a0&gt; to delete the window, and not use the &lt;b1&gt;delete&lt;/b1&gt; operator.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130613T145524Z">
@@ -13693,10 +14327,26 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The wxMBConv classes in wxWidgets enable an Unicode-aware application to easily convert between Unicode and the variety of 8-bit encoding systems still in use.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151023Z">
+        <seg>wxMBConv クラスは Unicode を意識したアプリケーションにおいて、依然として使用されている様々な 8 ビットエンコーディングと Unicode との間の変換を簡単に行えるようにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The wxString class has been completely rewritten for wxWidgets 3.0 and this change was actually the m...</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T034742Z">
         <seg>wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The wxString constructor then converts it back to an 8-bit character set using the passed conversion object, *wxConvCurrent.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T145441Z">
+        <seg>そして、wxString のコンストラクタは引数に指定された変換オブジェクト、つまり *wxConvCurrent を使用して 8 ビット文字コードへ文字列を変換し直します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13929,6 +14579,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130507T155458Z">
         <seg>これらのイベントは (キーボード、マウス、ジョイスティックなどの) 入力装置を利用して直接発生させるか、より一般的には、それらの入力イベントをより高レベルのイベントへ合成する標準コントロールを利用して発生させることができます: 例えば、&lt;a0&gt;wxButton&lt;/a0&gt; はコントロール上でユーザが左マウスボタンを押下し、 (&lt;c1&gt;Esc&lt;/c1&gt; を押下することなく) 離したときにクリックイベントを生成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These examples all assume that you are using a Unicode build of wxWidgets, although they will still compile in a non-Unicode build (they just won't convert anything).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T142945Z">
+        <seg>これらのサンプルはどれも wxWidgets の Unicode ビルドを使用していると仮定していますが、非 Unicode ビルドでもコンパイルすることは可能です。(その場合、何も変換されないだけです)</seg>
       </tuv>
     </tu>
     <tu>
@@ -14213,6 +14871,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This can even be useful if you need to do conversion in a non-Unicode build of wxWidgets; converting a string from UTF-8 to the current encoding should be possible by doing this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T145005Z">
+        <seg>これは非 Unicode ビルド版の wxWidgets で変換を行なう必要がある場合に役立ちます; UTF-8 から現在のエンコーディングへの変換はおそらくこのように行われます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This chain can be formed using &lt;a0&gt;wxEvtHandler::SetNextHandler()&lt;/a0&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130514T151305Z">
@@ -14285,6 +14951,22 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This class converts between the UTF-7 encoding and Unicode.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T152205Z">
+        <seg>このクラスは UTF-7 エンコーディングと Unicode とを変換します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This class converts between the UTF-8 encoding and Unicode.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T152221Z">
+        <seg>このクラスは UTF-8 エンコーディングと Unicode とを変換します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This class creates button layouts which conform to the standard button spacing and ordering defined b...</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130604T151629Z">
@@ -14349,6 +15031,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This class is the base class of a hierarchy of classes capable of converting text strings between mul...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T150855Z">
+        <seg>このクラスはマルチバイト (SBCS や DBCS) エンコーディングと Unicode との変換を行なうクラスの基底クラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This class is the base class of most stream related classes in wxWidgets.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130622T130621Z">
@@ -14361,6 +15051,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130628T234317Z">
         <seg>このクラスはアイドルイベントに使用されます。アイドルイベントはシステムがアイドルになったときに生成されます。le.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This class is used to convert between multibyte encodings and UTF-16 Unicode encoding (also known as ...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T152227Z">
+        <seg>このクラスはマルチバイトエンコーディングと UTF-16 (UCS-2 としても知られています) とを変換するために使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This class is used to convert between multibyte encodings and UTF-32 Unicode encoding (also known as ...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T152232Z">
+        <seg>このクラスはマルチバイトエンコーディングと UTF-32 (UCS-4 としても知られています) とを変換するために使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14465,6 +15171,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130622T141223Z">
         <seg>また、この実装は単純に本当のシステムコール (read(...)、write(...) など) に関連付けられています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This could also be done by first making a &lt;a0&gt;wxString&lt;/a0&gt; of the original data:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T152056Z">
+        <seg>これは元データの &lt;a0&gt;wxString&lt;/a0&gt; を最初に作成するときにも行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This could also be done by first making a wxString of the original data:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T145708Z">
+        <seg>これは元データの wxString を最初に作成するときにも行われます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15341,6 +16063,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To print a wxChar buffer to a non-Unicode stdout:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T145943Z">
+        <seg>wxChar バッファを非 Unicode 標準出力へ出力するには次のようにします:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To provide extensibility, the functionality for loading and saving bitmap formats is not implemented in the &lt;a0&gt;wxBitmap&lt;/a0&gt; class, but in a number of handler classes, derived from &lt;a1&gt;wxBitmapHandler&lt;/a1&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T155122Z">
@@ -15457,6 +16187,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T144504Z">
         <seg>作成したカスタムログターゲットを使用するためには、カスタムログターゲットのオブジェクトを指定して &lt;a0&gt;wxLog::SetActiveTarget()&lt;/a0&gt; を呼ぶか、wxAppTraits を継承したクラスを作成して &lt;a1&gt;wxAppTraits::CreateLogTarget()&lt;/a1&gt; 仮想関数をオーバーライドし、自作の特性オブジェクトのインスタンスを返却するように &lt;a2&gt;wxApp::CreateTraits()&lt;/a2&gt; をオーバーライドします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Todo:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151425Z">
+        <seg>Todo:</seg>
       </tuv>
     </tu>
     <tu>
@@ -16097,6 +16835,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T154608Z">
         <seg>既存のイベントクラスの使用</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using preconstructed &lt;a1&gt;wxCSConv&lt;/a1&gt; instance.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151938Z">
+        <seg>事前に構築した &lt;a1&gt;wxCSConv&lt;/a1&gt; インスタンスを使用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using preconstructed wxCSConv instance.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T144146Z">
+        <seg>事前に構築した wxCSConv インスタンスを使用する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16805,6 +17559,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can also derive your own class for your own custom encoding and use it, should you need it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130716T160416Z">
+        <seg>必要であれば、独自のエンコーディング用に継承クラスを作成して使用することも可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can also override &lt;a0&gt;wxDialog::CanDoLayoutAdaptation&lt;/a0&gt; and &lt;a1&gt;wxDialog::DoLayoutAdaptation&lt;/a1&gt; in a class derived from &lt;a2&gt;wxDialog&lt;/a2&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130606T145045Z">
@@ -17005,6 +17767,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can use these predefined objects directly, or you can instantiate your own objects.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130716T160802Z">
+        <seg>これらの事前定義されたオブジェクトを直接使用することもできますし、それとは別にインスタンス化することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can use wxID_HIGHEST to determine the number above which it is safe to define your own identifiers.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T080114Z">
@@ -17017,6 +17787,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130612T153851Z">
         <seg>例えば、バイナリデータを格納することはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You could be sending data over a network, or processing a text file for some other application.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T154350Z">
+        <seg>これはネットワーク越しにデータを送信する場合や他のアプリケーションで扱うテキストファイルを処理する場合です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17081,6 +17859,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130520T145952Z">
         <seg>その後、強制的に更新するためにサイザーの Layout 関数を呼び出す必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You need a way to quickly convert your easily-handled Unicode data to and from a traditional 8-bit encoding.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T154613Z">
+        <seg>取り扱いの簡単な Unicode データと伝統的な 8 ビットエンコーディングとを相互に変換する方法が欲しいと思うでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17556,6 +18342,20 @@ protected:
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130501T160623Z">
         <seg>const wchar_t *ws = L"Hello, world!";</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>const wxWX2MBbuf tmp_buf = wxConvCurrent-&gt;cWX2MB(unicode_data);
+const char *tmp_str = (const char*) tmp_buf;
+printf("Data: %s\n", tmp_str);
+process_data(tmp_str);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T150027Z">
+        <seg>const wxWX2MBbuf tmp_buf = wxConvCurrent-&gt;cWX2MB(unicode_data);
+const char *tmp_str = (const char*) tmp_buf;
+printf("Data: %s\n", tmp_str);
+process_data(tmp_str);</seg>
       </tuv>
     </tu>
     <tu>
@@ -18310,6 +19110,22 @@ protected:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>printf("Data: %s\n", (const char*) wxConvCurrent-&gt;cWX2MB(unicode_data));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T145947Z">
+        <seg>printf("Data: %s\n", (const char*) wxConvCurrent-&gt;cWX2MB(unicode_data));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>printf(&lt;s0&gt;"Data: %s\n"&lt;/s0&gt;, (&lt;s1&gt;const&lt;/s1&gt; &lt;s2&gt;char&lt;/s2&gt;*) wxConvCurrent-&gt;cWX2MB(unicode_data));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T152102Z">
+        <seg>printf(&lt;s0&gt;"Data: %s\n"&lt;/s0&gt;, (&lt;s1&gt;const&lt;/s1&gt; &lt;s2&gt;char&lt;/s2&gt;*) wxConvCurrent-&gt;cWX2MB(unicode_data));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>printf(&lt;s0&gt;"Hello, %s"&lt;/s0&gt;, (&lt;s1&gt;const&lt;/s1&gt; &lt;s2&gt;char&lt;/s2&gt; *)s.&lt;a3&gt;c_str&lt;/a3&gt;())</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T125205Z">
@@ -18350,6 +19166,14 @@ protected:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>puts(str.mb_str(wxConvUTF8));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T143942Z">
+        <seg>puts(str.mb_str(wxConvUTF8));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>return 0;
 }</seg>
       </tuv>
@@ -18366,6 +19190,14 @@ protected:
       <tuv lang="JA" changeid="owner" changedate="20130527T161010Z">
         <seg>return true;
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>rewrite this overview; it's not up2date with &lt;a0&gt;wxString&lt;/a0&gt; changes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151524Z">
+        <seg>この概要を書き直す; &lt;a0&gt;wxString&lt;/a0&gt; の変更が反映されていない</seg>
       </tuv>
     </tu>
     <tu>
@@ -18999,6 +19831,14 @@ protected:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxCSConv</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T142214Z">
+        <seg>wxCSConv</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxCSConv convFrom(wxFontMapper::Get()-&gt;GetEncodingName(enc));</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130629T132639Z">
@@ -19011,6 +19851,16 @@ protected:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130629T132640Z">
         <seg>wxCSConv convTo(wxFontMapper::Get()-&gt;GetEncodingName(alternative));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxCSConv cust(user_encoding);
+printf("Data: %s\n", (const char*) str.mb_str(cust));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T144149Z">
+        <seg>wxCSConv cust(user_encoding);
+printf("Data: %s\n", (const char*) str.mb_str(cust));</seg>
       </tuv>
     </tu>
     <tu>
@@ -19601,6 +20451,54 @@ wxIcon icon("mondrian");
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxMBConv Classes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151417Z">
+        <seg>wxMBConv クラス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxMBConv Objects</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T151418Z">
+        <seg>wxMBConv オブジェクト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxMBConv Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T150621Z">
+        <seg>wxMBConv の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxMBConv classes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130716T155951Z">
+        <seg>wxMBConv クラス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxMBConv classes overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130704T151939Z">
+        <seg>wxMBConv クラスの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxMBConv objects</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130716T160558Z">
+        <seg>wxMBConv オブジェクト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxMORE      // return wxID_MORE</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T120032Z">
@@ -20069,6 +20967,16 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxString input_str(input_data);
+wxString str(input_str.wc_str(wxConvUTF8), *wxConvCurrent);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T145711Z">
+        <seg>wxString input_str(input_data);
+wxString str(input_str.wc_str(wxConvUTF8), *wxConvCurrent);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxString s = wxT("Hello, world!");</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130501T161654Z">
@@ -20081,6 +20989,38 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130502T144207Z">
         <seg>wxString str(ascii_str, wxConvUTF8);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString str(input_data, *wxConvCurrent);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T143237Z">
+        <seg>wxString str(input_data, *wxConvCurrent);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString str(input_data, wxCSConv(wxT("koi8-r")));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T143524Z">
+        <seg>wxString str(input_data, wxCSConv(wxT("koi8-r")));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString str(input_data, wxConvUTF8);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T143314Z">
+        <seg>wxString str(input_data, wxConvUTF8);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString str(wxConvUTF8.cMB2WC(input_data), *wxConvCurrent);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130717T145022Z">
+        <seg>wxString str(wxConvUTF8.cMB2WC(input_data), *wxConvCurrent);</seg>
       </tuv>
     </tu>
     <tu>
@@ -20543,6 +21483,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T090608Z">
         <seg>wxWidgets: wxWidgets: wxLog クラスの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxWidgets: wxWidgets: wxMBConv Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T150741Z">
+        <seg>wxWidgets: wxWidgets: wxMBConv の概要</seg>
       </tuv>
     </tu>
     <tu>
