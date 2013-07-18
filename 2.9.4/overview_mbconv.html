@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>wxWidgets: wxWidgets: wxMBConv Overview</title>
+<title>wxWidgets: wxWidgets: wxMBConv の概要</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="custom_stylesheet.css" rel="stylesheet" type="text/css" />
@@ -114,80 +114,74 @@ function toggleVisibility(linkObj) {
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title"><a class="el" href="classwx_m_b_conv.html" title="This class is the base class of a hierarchy of classes capable of converting text strings between mul...">wxMBConv</a> Overview  </div>  </div>
+<div class="title"><a class="el" href="classwx_m_b_conv.html" title="このクラスはマルチバイト (SBCS や DBCS) エンコーディングと Unicode との変換を行なうクラスの基底クラスです。">wxMBConv</a> の概要 </div>  </div>
 </div>
 <div class="contents">
-<div class="textblock"><p>Classes: <a class="el" href="classwx_m_b_conv.html" title="This class is the base class of a hierarchy of classes capable of converting text strings between mul...">wxMBConv</a>, wxMBConvLibc, <a class="el" href="classwx_m_b_conv_u_t_f7.html" title="This class converts between the UTF-7 encoding and Unicode.">wxMBConvUTF7</a>, <a class="el" href="classwx_m_b_conv_u_t_f8.html" title="This class converts between the UTF-8 encoding and Unicode.">wxMBConvUTF8</a>, <a class="el" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a>, <a class="el" href="classwx_m_b_conv_u_t_f16.html" title="This class is used to convert between multibyte encodings and UTF-16 Unicode encoding (also known as ...">wxMBConvUTF16</a>, <a class="el" href="classwx_m_b_conv_u_t_f32.html" title="This class is used to convert between multibyte encodings and UTF-32 Unicode encoding (also known as ...">wxMBConvUTF32</a></p>
-<p>The <a class="el" href="classwx_m_b_conv.html" title="This class is the base class of a hierarchy of classes capable of converting text strings between mul...">wxMBConv</a> classes in wxWidgets enable an Unicode-aware application to easily convert between Unicode and the variety of 8-bit encoding systems still in use.</p>
+<div class="textblock"><p>クラス: <a class="el" href="classwx_m_b_conv.html" title="このクラスはマルチバイト (SBCS や DBCS) エンコーディングと Unicode との変換を行なうクラスの基底クラスです。">wxMBConv</a>, wxMBConvLibc, <a class="el" href="classwx_m_b_conv_u_t_f7.html" title="このクラスは UTF-7 エンコーディングと Unicode とを変換します。">wxMBConvUTF7</a>, <a class="el" href="classwx_m_b_conv_u_t_f8.html" title="このクラスは UTF-8 エンコーディングと Unicode とを変換します。">wxMBConvUTF8</a>, <a class="el" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a>, <a class="el" href="classwx_m_b_conv_u_t_f16.html" title="このクラスはマルチバイトエンコーディングと UTF-16 (UCS-2 としても知られています) とを変換するために使用されます。">wxMBConvUTF16</a>, <a class="el" href="classwx_m_b_conv_u_t_f32.html" title="このクラスはマルチバイトエンコーディングと UTF-32 (UCS-4 としても知られています) とを変換するために使用されます。">wxMBConvUTF32</a></p>
+<p><a class="el" href="classwx_m_b_conv.html" title="このクラスはマルチバイト (SBCS や DBCS) エンコーディングと Unicode との変換を行なうクラスの基底クラスです。">wxMBConv</a> クラスは Unicode を意識したアプリケーションにおいて、依然として使用されている様々な 8 ビットエンコーディングと Unicode との間の変換を簡単に行えるようにします。</p>
 <ul>
-<li><a class="el" href="overview_mbconv.html#overview_mbconv_need">Background: The Need for Conversion</a> </li>
-<li><a class="el" href="overview_mbconv.html#overview_mbconv_string">Background: The wxString Class</a> </li>
-<li><a class="el" href="overview_mbconv.html#overview_mbconv_classes">wxMBConv Classes</a> </li>
-<li><a class="el" href="overview_mbconv.html#overview_mbconv_objects">wxMBConv Objects</a> </li>
+<li><a class="el" href="overview_mbconv.html#overview_mbconv_need">背景: 変換に対する要件</a> </li>
+<li><a class="el" href="overview_mbconv.html#overview_mbconv_string">背景: wxString クラス</a> </li>
+<li><a class="el" href="overview_mbconv.html#overview_mbconv_classes">wxMBConv クラス</a> </li>
+<li><a class="el" href="overview_mbconv.html#overview_mbconv_objects">wxMBConv オブジェクト</a> </li>
 <li><a class="el" href="overview_mbconv.html#overview_mbconv_csconv">wxCSConv</a> </li>
-<li><a class="el" href="overview_mbconv.html#overview_mbconv_converting">Converting Strings</a> </li>
-<li><a class="el" href="overview_mbconv.html#overview_mbconv_buffers">Converting Buffers</a></li>
+<li><a class="el" href="overview_mbconv.html#overview_mbconv_converting">文字列の変換</a> </li>
+<li><a class="el" href="overview_mbconv.html#overview_mbconv_buffers">バッファの変換</a></li>
 </ul>
 <hr/>
 <h2><a class="anchor" id="overview_mbconv_need"></a>
-
-Background: The Need for Conversion</h2>
-<p>As programs are becoming more and more globalized, and users exchange documents across country boundaries as never before, applications increasingly need to take into account all the different character sets in use around the world. It is no longer enough to just depend on the default byte-sized character set that computers have traditionally used.</p>
-<p>A few years ago, a solution was proposed: the Unicode standard. Able to contain the complete set of characters in use in one unified global coding system, it would resolve the character set problems once and for all.</p>
-<p>But it hasn't happened yet, and the migration towards Unicode has created new challenges, resulting in "compatibility encodings" such as UTF-8. A large number of systems out there still depends on the old 8-bit encodings, hampered by the huge amounts of legacy code still widely deployed. Even sending Unicode data from one Unicode-aware system to another may need encoding to an 8-bit multibyte encoding (UTF-7 or UTF-8 is typically used for this purpose), to pass unhindered through any traditional transport channels.</p>
+背景: 変換に対する要件</h2>
+<p>プログラムがよりグローバル化し、かつてないほどユーザが国境を超えてドキュメントをやり取りするようになるにつれ、世界中で使用されているすべての文字コードについて考慮することがますます求められるようになりました。コンピュータが昔から使用しているデフォルトのバイト単位の文字コードに依存するだけではもう不十分です。</p>
+<p>数年前にひとつの解決策が提案されました: それが Unicode 規格です。使用されている文字の一式をひとつの統一的な符号化システムに含めることができるため、これは文字コードに関する問題を完全に解決します。</p>
+<p>しかし、これまでには存在しなかった、Unicode への移行という新たな課題が生じました。その結果、UTF-8 などの "互換エンコーディング" が考案されました。いまだに多くのシステムは旧来の 8 ビットエンコーディングに依存しており、膨大なレガシーコードがいまだに使用されていることがネックになっています。Unicode を意識したシステムから別のシステムへ Unicode データを送信するときでさえ、昔ながらの転送チャネル経由で制約を受けずにやり取りするために 8 ビットのマルチバイトエンコーディング (この目的には一般的に UTF-7 か UTF-8 が使用されます) に符号化する必要があります。</p>
 <h2><a class="anchor" id="overview_mbconv_string"></a>
-
-Background: The wxString Class</h2>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>rewrite this overview; it's not up2date with <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> changes</dd></dl>
-<p>If you have compiled wxWidgets in Unicode mode, the wxChar type will become identical to wchar_t rather than char, and a <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> stores wxChars. Hence, all <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> manipulation in your application will then operate on Unicode strings, and almost as easily as working with ordinary char strings (you just need to remember to use the <a class="el" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT()</a> macro to encapsulate any string literals).</p>
-<p>But often, your environment doesn't want Unicode strings. You could be sending data over a network, or processing a text file for some other application. You need a way to quickly convert your easily-handled Unicode data to and from a traditional 8-bit encoding. And this is what the <a class="el" href="classwx_m_b_conv.html" title="This class is the base class of a hierarchy of classes capable of converting text strings between mul...">wxMBConv</a> classes do.</p>
+背景: wxString クラス</h2>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>この概要を書き直す; <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> の変更が反映されていない</dd></dl>
+<p>wxWidgets を Unicode モードでコンパイルしている場合、wxChar 型は char ではなく wchar_t と等価になります。そして、<a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> は wxChar を格納します。したがって、<a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> に対するすべての操作は Unicode 文字列に対して行われます。これは普通の char 文字列を使用する場合とほぼ同じくらい簡単です。(<a class="el" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT()</a> マクロを使用してリテラル文字列を囲むことを覚えておく必要があるだけです)</p>
+<p>しかし、Unicode 文字列を使用できない環境もよくあります。これはネットワーク越しにデータを送信する場合や他のアプリケーションで扱うテキストファイルを処理する場合です。取り扱いの簡単な Unicode データと伝統的な 8 ビットエンコーディングとを相互に変換する方法が欲しいと思うでしょう。そしてこれこそが <a class="el" href="classwx_m_b_conv.html" title="このクラスはマルチバイト (SBCS や DBCS) エンコーディングと Unicode との変換を行なうクラスの基底クラスです。">wxMBConv</a> クラスの行なうことです。</p>
 <h2><a class="anchor" id="overview_mbconv_classes"></a>
-
-wxMBConv Classes</h2>
-<p>The base class for all these conversions is the <a class="el" href="classwx_m_b_conv.html" title="This class is the base class of a hierarchy of classes capable of converting text strings between mul...">wxMBConv</a> class (which itself implements standard libc locale conversion). Derived classes include wxMBConvLibc, several different wxMBConvUTFxxx classes, and <a class="el" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a>, which implement different kinds of conversions. You can also derive your own class for your own custom encoding and use it, should you need it. All you need to do is override the MB2WC and WC2MB methods.</p>
+wxMBConv クラス</h2>
+<p>これらすべての変換の基底クラスが <a class="el" href="classwx_m_b_conv.html" title="このクラスはマルチバイト (SBCS や DBCS) エンコーディングと Unicode との変換を行なうクラスの基底クラスです。">wxMBConv</a> クラスです。(このクラス自身では標準 libc ロケールの変換を実装しています) 継承クラスには wxMBConvLibc、いくつかの wxMBConvUTFxxx クラス、<a class="el" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> が含まれており、それぞれ異なる種類の変換を行います。必要であれば、独自のエンコーディング用に継承クラスを作成して使用することも可能です。必要なことは MB2WC 関数と WC2MB 関数をオーバーライドすることだけです。</p>
 <h2><a class="anchor" id="overview_mbconv_objects"></a>
-
-wxMBConv Objects</h2>
-<p>Several of the wxWidgets-provided <a class="el" href="classwx_m_b_conv.html" title="This class is the base class of a hierarchy of classes capable of converting text strings between mul...">wxMBConv</a> classes have predefined instances (wxConvLibc, wxConvFileName, wxConvUTF7, wxConvUTF8, wxConvLocal). You can use these predefined objects directly, or you can instantiate your own objects.</p>
-<p>A variable, wxConvCurrent, points to the conversion object that the user interface is supposed to use, in the case that the user interface is not Unicode-based (like with GTK+ 1.2). By default, it points to wxConvLibc or wxConvLocal, depending on which works best on the current platform.</p>
+wxMBConv オブジェクト</h2>
+<p>wxWidgets の提供する <a class="el" href="classwx_m_b_conv.html" title="このクラスはマルチバイト (SBCS や DBCS) エンコーディングと Unicode との変換を行なうクラスの基底クラスです。">wxMBConv</a> クラスのうち、いくつかのクラスは事前に定義されたインスタンスを持っています。(wxConvLibc、wxConvFileName、wxConvUTF7、wxConvUTF8、wxConvLocal) これらの事前定義されたオブジェクトを直接使用することもできますし、それとは別にインスタンス化することもできます。</p>
+<p>wxConvCurrent 変数は (GTK+ 1.2 のように) ユーザインタフェースが Unicode ベースでない場合に、ユーザインタフェースで使用する変換オブジェクトを指しています。デフォルトでは wxConvLibc と wxConvLocal のうち、現在のプラットフォームに適している方が使用されます。</p>
 <h2><a class="anchor" id="overview_mbconv_csconv"></a>
 
 wxCSConv</h2>
-<p>The <a class="el" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> class is special because when it is instantiated, you can tell it which character set it should use, which makes it meaningful to keep many instances of them around, each with a different character set (or you can create a <a class="el" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> instance on the fly).</p>
-<p>The predefined <a class="el" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> instance, wxConvLocal, is preset to use the default user character set, but you should rarely need to use it directly, it is better to go through wxConvCurrent.</p>
+<p><a class="el" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> クラスは特別なクラスです。なぜなら、インスタンス化するときに使用する文字コードを指定することができるためです。このことは異なる文字コードのインスタンスを多数保持する場合に意味があります。(もしくは実行時に <a class="el" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> のインスタンスを作成することができます)</p>
+<p>事前に定義された <a class="el" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> インスタンスである wxConvLocal はデフォルトのユーザ文字コードを使用するように設定されていますが、これを直接使用する必要はほとんどなく、それよりも wxConvCurrent を使用するべきです。</p>
 <h2><a class="anchor" id="overview_mbconv_converting"></a>
-
-Converting Strings</h2>
-<p>Once you have chosen which object you want to use to convert your text, here is how you would use them with <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>. These examples all assume that you are using a Unicode build of wxWidgets, although they will still compile in a non-Unicode build (they just won't convert anything).</p>
-<p>Example 1: Constructing a <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> from input in current encoding.</p>
+文字列の変換</h2>
+<p>変換に使用したいオブジェクトを選択したら、それらを <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> と一緒に使用する方法を以下に示します。これらのサンプルはどれも wxWidgets の Unicode ビルドを使用していると仮定していますが、非 Unicode ビルドでもコンパイルすることは可能です。(その場合、何も変換されないだけです)</p>
+<p>例 1: 現在のエンコーディングの入力から <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> を構築する。</p>
 <div class="fragment"><pre class="fragment"><a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> str(input_data, *wxConvCurrent);
-</pre></div><p>Example 2: Input in UTF-8 encoding.</p>
+</pre></div><p>例 2: UTF-8 の入力。</p>
 <div class="fragment"><pre class="fragment"><a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> str(input_data, wxConvUTF8);
-</pre></div><p>Example 3: Input in KOI8-R. Construction of <a class="el" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> instance on the fly.</p>
+</pre></div><p>例 3: KOI8-R の入力。実行時における <a class="el" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> インスタンスの構築。</p>
 <div class="fragment"><pre class="fragment"><a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> str(input_data, <a class="code" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a>(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"koi8-r"</span>)));
-</pre></div><p>Example 4: Printing a <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> to stdout in UTF-8 encoding.</p>
+</pre></div><p>例 4: <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> を標準出力へ UTF-8 で出力する。</p>
 <div class="fragment"><pre class="fragment">puts(str.mb_str(wxConvUTF8));
-</pre></div><p>Example 5: Printing a <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> to stdout in custom encoding. Using preconstructed <a class="el" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> instance.</p>
+</pre></div><p>例 5: <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> を標準出力へ任意のエンコーディングで出力する事前に構築した <a class="el" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> インスタンスを使用する。</p>
 <div class="fragment"><pre class="fragment"><a class="code" href="classwx_c_s_conv.html" title="このクラスはシステムでサポートされている任意の文字コードと Unicode とを相互変換します。">wxCSConv</a> cust(user_encoding);
 printf(<span class="stringliteral">"Data: %s\n"</span>, (<span class="keyword">const</span> <span class="keywordtype">char</span>*) str.mb_str(cust));
-</pre></div><dl class="note"><dt><b>注:</b></dt><dd>Since mb_str() returns a temporary <a class="el" href="classwx_char_buffer.html" title="これは char 型による wxCharTypeBuffer&lt;T&gt; の特殊化です。">wxCharBuffer</a> to hold the result of the conversion, you need to explicitly cast it to const char* if you use it in a vararg context (like with printf).</dd></dl>
+</pre></div><dl class="note"><dt><b>注:</b></dt><dd>mb_str() は変換結果を保持する一時 <a class="el" href="classwx_char_buffer.html" title="これは char 型による wxCharTypeBuffer&lt;T&gt; の特殊化です。">wxCharBuffer</a> を返却するため、(printf のような) 可変数引数の関数を使用する場合は明示的に const char* にキャストする必要があります。</dd></dl>
 <h2><a class="anchor" id="overview_mbconv_buffers"></a>
-
-Converting Buffers</h2>
-<p>If you have specialized needs, or just don't want to use <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>, you can also use the conversion methods of the conversion objects directly. This can even be useful if you need to do conversion in a non-Unicode build of wxWidgets; converting a string from UTF-8 to the current encoding should be possible by doing this:</p>
+バッファの変換</h2>
+<p>特別な要件がある場合、もしくは単に <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> を使用したくない場合は変換オブジェクトの変換関数を直接使用することも可能です。これは非 Unicode ビルド版の wxWidgets で変換を行なう必要がある場合に役立ちます; UTF-8 から現在のエンコーディングへの変換はおそらくこのように行われます:</p>
 <div class="fragment"><pre class="fragment"><a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> str(wxConvUTF8.cMB2WC(input_data), *wxConvCurrent);
-</pre></div><p>Here, cMB2WC of the UTF8 object returns a <a class="el" href="classwx_w_char_buffer.html" title="これは wchar_t 型による wxCharTypeBuffer&lt;T&gt; の特殊化です。">wxWCharBuffer</a> containing a Unicode string. The <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> constructor then converts it back to an 8-bit character set using the passed conversion object, *wxConvCurrent. (In a Unicode build of wxWidgets, the constructor ignores the passed conversion object and retains the Unicode data.)</p>
-<p>This could also be done by first making a <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> of the original data:</p>
+</pre></div><p>ここで、UTF-8 オブジェクトの cMB2WC は Unicode 文字列を含む <a class="el" href="classwx_w_char_buffer.html" title="これは wchar_t 型による wxCharTypeBuffer&lt;T&gt; の特殊化です。">wxWCharBuffer</a> を返却します。そして、<a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> のコンストラクタは引数に指定された変換オブジェクト、つまり *wxConvCurrent を使用して 8 ビット文字コードへ文字列を変換し直します。(Unicode ビルド版の wxWidgets の場合、コンストラクタは引き渡された変換オブジェクトを無視し、Unicode データのまま保持します)</p>
+<p>これは元データの <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> を最初に作成するときにも行われます。</p>
 <div class="fragment"><pre class="fragment"><a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> input_str(input_data);
 <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> str(input_str.wc_str(wxConvUTF8), *wxConvCurrent);
-</pre></div><p>To print a wxChar buffer to a non-Unicode stdout:</p>
+</pre></div><p>wxChar バッファを非 Unicode 標準出力へ出力するには次のようにします:</p>
 <div class="fragment"><pre class="fragment">printf(<span class="stringliteral">"Data: %s\n"</span>, (<span class="keyword">const</span> <span class="keywordtype">char</span>*) wxConvCurrent-&gt;cWX2MB(unicode_data));
-</pre></div><p>If you need to do more complex processing on the converted data, you may want to store the temporary buffer in a local variable:</p>
+</pre></div><p>変換後のデータに対してより複雑な処理を行なう必要がある場合、一時バッファをローカル変数に格納したいと思うかもしれません。</p>
 <div class="fragment"><pre class="fragment"><span class="keyword">const</span> wxWX2MBbuf tmp_buf = wxConvCurrent-&gt;cWX2MB(unicode_data);
 <span class="keyword">const</span> <span class="keywordtype">char</span> *tmp_str = (<span class="keyword">const</span> <span class="keywordtype">char</span>*) tmp_buf;
 printf(<span class="stringliteral">"Data: %s\n"</span>, tmp_str);
 process_data(tmp_str);
-</pre></div><p>If a conversion had taken place in cWX2MB (i.e. in a Unicode build), the buffer will be deallocated as soon as tmp_buf goes out of scope. The macro wxWX2MBbuf reflects the correct return value of cWX2MB (either char* or <a class="el" href="classwx_char_buffer.html" title="これは char 型による wxCharTypeBuffer&lt;T&gt; の特殊化です。">wxCharBuffer</a>), except for the const.  </p>
+</pre></div><p>cWX2MB で変換が行われる場合 (つまり、Unicode ビルドの場合)、tmp_buf がスコープから外れると直ちにバッファが解放されます。(wxWX2MBbuf マクロは const でないことを除いて、cWX2MB の戻り値 (char* または <a class="el" href="classwx_char_buffer.html" title="これは char 型による wxCharTypeBuffer&lt;T&gt; の特殊化です。">wxCharBuffer</a>) と同じ型になります) </p>
 </div></div><!-- window showing the filter options -->
 
 <div id="MSearchSelectWindow"

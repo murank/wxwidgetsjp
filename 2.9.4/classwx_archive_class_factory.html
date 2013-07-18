@@ -155,9 +155,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_archive_class_factory.html#a91f564a745dc5d35498e638078a8cb81">CanHandle</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;protocol, <a class="el" href="interface_2wx_2stream_8h.html#af43964582cc2e87658bf792727dceff8">wxStreamProtocolType</a> type=wxSTREAM_PROTOCOL) const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns <span class="literal">true</span> if this factory can handle the given protocol, MIME type or file extension.    <a href="#a91f564a745dc5d35498e638078a8cb81"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_m_b_conv.html">wxMBConv</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_archive_class_factory.html#a295e16b696b0b0773e41f9f000bcf89f">GetConv</a> () const  </td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the <a class="el" href="classwx_m_b_conv.html" title="This class is the base class of a hierarchy of classes capable of converting text strings between mul...">wxMBConv</a> object that the created streams will use when translating meta-data.    <a href="#a295e16b696b0b0773e41f9f000bcf89f"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the <a class="el" href="classwx_m_b_conv.html" title="このクラスはマルチバイト (SBCS や DBCS) エンコーディングと Unicode との変換を行なうクラスの基底クラスです。">wxMBConv</a> object that the created streams will use when translating meta-data.    <a href="#a295e16b696b0b0773e41f9f000bcf89f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_archive_class_factory.html#ae541f085aabc3531062e541c4bf42983">SetConv</a> (<a class="el" href="classwx_m_b_conv.html">wxMBConv</a> &amp;conv)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the <a class="el" href="classwx_m_b_conv.html" title="This class is the base class of a hierarchy of classes capable of converting text strings between mul...">wxMBConv</a> object that the created streams will use when translating meta-data.    <a href="#ae541f085aabc3531062e541c4bf42983"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the <a class="el" href="classwx_m_b_conv.html" title="このクラスはマルチバイト (SBCS や DBCS) エンコーディングと Unicode との変換を行なうクラスの基底クラスです。">wxMBConv</a> object that the created streams will use when translating meta-data.    <a href="#ae541f085aabc3531062e541c4bf42983"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classwx_string.html">wxString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_archive_class_factory.html#ac83622385ff9b2525266d0c5c147f90c">GetInternalName</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;name, <a class="el" href="filename_8h.html#a0f0d9c04938ef2820d1ff7ed6b97bf00">wxPathFormat</a> format=wxPATH_NATIVE) const =0</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calls the static <a class="el" href="classwx_archive_class_factory.html#ac83622385ff9b2525266d0c5c147f90c" title="Calls the static GetInternalName() function for the archive entry type, for example wxZipEntry::GetIn...">GetInternalName()</a> function for the archive entry type, for example <a class="el" href="classwx_zip_entry.html#aab5dd8f5bb2d47d2532facd2f1629f25" title="A static member that translates a filename into the internal format used within the archive...">wxZipEntry::GetInternalName</a>.    <a href="#ac83622385ff9b2525266d0c5c147f90c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_string.html">wxString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_archive_class_factory.html#a771c29d666830289a903efee2ceb559e">GetProtocol</a> () const  </td></tr>
@@ -264,7 +264,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Returns the <a class="el" href="classwx_m_b_conv.html" title="This class is the base class of a hierarchy of classes capable of converting text strings between mul...">wxMBConv</a> object that the created streams will use when translating meta-data.  </p>
+<p>Returns the <a class="el" href="classwx_m_b_conv.html" title="このクラスはマルチバイト (SBCS や DBCS) エンコーディングと Unicode との変換を行なうクラスの基底クラスです。">wxMBConv</a> object that the created streams will use when translating meta-data.  </p>
 <p>The initial default, set by the constructor, is wxConvLocal.  </p>
 
 </div>
@@ -550,7 +550,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Sets the <a class="el" href="classwx_m_b_conv.html" title="This class is the base class of a hierarchy of classes capable of converting text strings between mul...">wxMBConv</a> object that the created streams will use when translating meta-data.  </p>
+<p>Sets the <a class="el" href="classwx_m_b_conv.html" title="このクラスはマルチバイト (SBCS や DBCS) エンコーディングと Unicode との変換を行なうクラスの基底クラスです。">wxMBConv</a> object that the created streams will use when translating meta-data.  </p>
 
 </div>
 </div>
