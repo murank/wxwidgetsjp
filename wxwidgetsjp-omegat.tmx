@@ -1141,6 +1141,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxCAPTION&lt;/a0&gt; | &lt;a1&gt;wxMINIMIZE_BOX&lt;/a1&gt; | &lt;a2&gt;wxMAXIMIZE_BOX&lt;/a2&gt; | &lt;a3&gt;wxRESIZE_BORDER&lt;/a3&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130724T153941Z">
+        <seg>&lt;a0&gt;wxCAPTION&lt;/a0&gt; | &lt;a1&gt;wxMINIMIZE_BOX&lt;/a1&gt; | &lt;a2&gt;wxMAXIMIZE_BOX&lt;/a2&gt; | &lt;a3&gt;wxRESIZE_BORDER&lt;/a3&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;wxCSConv&lt;/a0&gt; cust(user_encoding);
 printf(&lt;s1&gt;"Data: %s\n"&lt;/s1&gt;, (&lt;s2&gt;const&lt;/s2&gt; &lt;s3&gt;char&lt;/s3&gt;*) str.mb_str(cust));</seg>
       </tuv>
@@ -2109,6 +2117,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a24&gt;Window styles&lt;/a24&gt;&lt;br25&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130724T153751Z">
+        <seg>&lt;a24&gt;ウィンドウスタイル&lt;/a24&gt;&lt;br25&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a26&gt;Window deletion overview&lt;/a26&gt;&lt;br27&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130615T033648Z">
@@ -2541,6 +2557,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a72&gt;&lt;b73&gt;Window styles&lt;/b73&gt;&lt;/a72&gt;&lt;br74&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130724T153801Z">
+        <seg>&lt;a72&gt;&lt;b73&gt;ウィンドウスタイル&lt;/b73&gt;&lt;/a72&gt;&lt;br74&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a75&gt;&lt;b76&gt;Window deletion overview&lt;/b76&gt;&lt;/a75&gt;&lt;br77&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130615T033659Z">
@@ -2735,8 +2759,8 @@ MyFrame::MyFrame()
       <tuv lang="EN-US">
         <seg>&lt;b0&gt;"Maximum Size"&lt;/b0&gt;: just like for the minimal size, the maximum size is normally explicitly set by the programmer with the &lt;a1&gt;wxWindow::SetMaxSize()&lt;/a1&gt; method or with &lt;a2&gt;wxWindow::SetSizeHints()&lt;/a2&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="owner" changedate="20130722T151959Z">
-        <seg>&lt;b0&gt;"最大サイズ"&lt;/b0&gt;: 最小サイズのように、最大サイズは通常、プログラマが &lt;a1&gt;wxWindow::SetMaxSize()&lt;/a1&gt; 関数か &lt;a2&gt;wxWindow::SetSizeHints()&lt;/a2&gt; 関数のどちらかを使用して明示的に設定します。</seg>
+      <tuv lang="JA" changeid="owner" changedate="20130724T150656Z">
+        <seg>&lt;b0&gt;"最大サイズ"&lt;/b0&gt;: 最小サイズと同じように、最大サイズは通常、プログラマが &lt;a1&gt;wxWindow::SetMaxSize()&lt;/a1&gt; 関数か &lt;a2&gt;wxWindow::SetSizeHints()&lt;/a2&gt; 関数のどちらかを使用して明示的に設定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8435,6 +8459,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For the window styles specific to each window class, please see the documentation for the window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130724T153607Z">
+        <seg>各ウィンドウクラス独自のウィンドウスタイルについては、そのウィンドウのドキュメントを参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For this purpose, a stretch factor may be assigned to each child, where the default value of 0 indicates that the child will not get more space than its requested minimum size.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130519T145811Z">
@@ -10905,6 +10937,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130722T151507Z">
         <seg>また、大半のコントロールはコンストラクタにデフォルト値以外の値が指定された場合にそれを最小サイズとして設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Most windows can use the generic styles listed for &lt;a0&gt;wxWindow&lt;/a0&gt; in addition to their own styles.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130724T153657Z">
+        <seg>ほとんどのウィンドウは独自のスタイルに加えて &lt;a0&gt;wxWindow&lt;/a0&gt; の汎用的なスタイルを使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14561,6 +14601,22 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The symbols are defined in such a way that they can be combined in a 'bit-list' using the C++ &lt;e0&gt;bitwise-or&lt;/e0&gt; operator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130724T153936Z">
+        <seg>シンボルは C++ の &lt;e0&gt;ビット和&lt;/e0&gt; 演算子で 'ビットリスト' として連結できるような形で定義されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The symbols are defined in such a way that they can be combined in a 'bit-list' using the C++ &lt;i0&gt;bitwise-or&lt;/i0&gt; operator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130724T153520Z">
+        <seg>シンボルは C++ の &lt;i0&gt;ビット和&lt;/i0&gt; 演算子で 'ビットリスト' として連結できるような形で定義されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The thickness of this border must be set explicitly, typically 5 points.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130519T142431Z">
@@ -17777,6 +17833,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Window Styles</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130724T153858Z">
+        <seg>ウィンドウスタイル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Window deletion can be a confusing subject, so this overview is provided to help make it clear when and how you delete windows, or respond to user requests to close windows.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130613T144456Z">
@@ -17805,6 +17869,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130506T041815Z">
         <seg>ウィンドウ識別子とは、イベントシステムにおいてウィンドウを一意に識別するための整数値です。 (とはいえ、他の用途に使用することもできます)  </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Window styles</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130724T152825Z">
+        <seg>ウィンドウスタイル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Window styles are used to specify alternative behaviour and appearances for windows, when they are created.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130724T153049Z">
+        <seg>ウィンドウスタイルはウィンドウの作成時に別の振る舞いや見た目を指定するために使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19921,6 +20001,14 @@ protected:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxCAPTION | wxMINIMIZE_BOX | wxMAXIMIZE_BOX | wxRESIZE_BORDER</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130724T153521Z">
+        <seg>wxCAPTION | wxMINIMIZE_BOX | wxMAXIMIZE_BOX | wxRESIZE_BORDER</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxCHMHelpController *m_helpCtrl;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130527T162752Z">
@@ -21557,6 +21645,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130722T143754Z">
         <seg>wxWidgets: wxWidgets: ウィンドウサイズの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxWidgets: wxWidgets: Window Styles</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130724T153929Z">
+        <seg>wxWidgets: wxWidgets: ウィンドウスタイル</seg>
       </tuv>
     </tu>
     <tu>
