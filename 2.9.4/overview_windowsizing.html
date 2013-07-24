@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>wxWidgets: wxWidgets: Window Sizing Overview</title>
+<title>wxWidgets: wxWidgets: ウィンドウサイズの概要</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="custom_stylesheet.css" rel="stylesheet" type="text/css" />
@@ -114,63 +114,61 @@ function toggleVisibility(linkObj) {
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title">Window Sizing Overview  </div>  </div>
+<div class="title">ウィンドウサイズの概要 </div>  </div>
 </div>
 <div class="contents">
-<div class="textblock"><p>It can sometimes be confusing to keep track of the various size-related attributes of a <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a>, how they relate to each other, and how they interact with sizers.</p>
-<p>This document will attempt to clear the fog a little, and give some simple explanations of things.</p>
+<div class="textblock"><p><a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> のサイズに関連する属性について、お互いの関係やサイザーとの関わりについて時どき混乱することがあるかと思います。</p>
+<p>このドキュメントはそれらをほんの少しでも明確にするためのものであり、それらの関係性について簡単な説明を行います。</p>
 <ul>
-<li><a class="el" href="overview_windowsizing.html#overview_windowsizing_glossary">Glossary</a> </li>
-<li><a class="el" href="overview_windowsizing.html#overview_windowsizing_func">Functions related to sizing</a></li>
+<li><a class="el" href="overview_windowsizing.html#overview_windowsizing_glossary">用語集</a> </li>
+<li><a class="el" href="overview_windowsizing.html#overview_windowsizing_func">サイズ関連の関数</a></li>
 </ul>
 <hr/>
 <h2><a class="anchor" id="overview_windowsizing_glossary"></a>
-
-Glossary</h2>
+用語集</h2>
 <ul>
-<li><b>"Size"</b>: this is the current size of the window and it can be explicitly set or fetched with the <a class="el" href="classwx_window.html#a180312d5ad4a4a5ad805b8d52d67a74e" title="ピクセル単位でウィンドウサイズを設定します。">wxWindow::SetSize()</a> or <a class="el" href="classwx_window.html#a124c12cff1e7b6e96a5e1fd3e48dca34" title="Returns the size of the entire window in pixels, including title bar, border, scrollbars, etc.">wxWindow::GetSize()</a> methods. This size value is the size that the widget is currently using on screen and is the way to change the size of something that is not being managed by a sizer.</li>
+<li><b>"サイズ"</b>: これはウィンドウの現在のサイズで、<a class="el" href="classwx_window.html#a180312d5ad4a4a5ad805b8d52d67a74e" title="ピクセル単位でウィンドウサイズを設定します。">SetSize()</a> 関数や <a class="el" href="classwx_window.html#a124c12cff1e7b6e96a5e1fd3e48dca34" title="タイトルバー、ボーダー、スクロールバーなどを含む、ウィンドウ全体のサイズをピクセル単位で返却します。">GetSize()</a> 関数で明示的に設定・取得することができます。このサイズの値は画面内でウィジェットが使用しているサイズであり、サイザーで管理されていないウィジェットのサイズを変更する方法でもあります。</li>
 </ul>
 <ul>
-<li><b>"Client Size"</b>: the client size represents the widget's area inside of any borders belonging to the widget and is the area that can be drawn upon in a <code>EVT_PAINT</code> event. For <a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a>, the client size also excludes the frame menu, tool and status bars, if any. If a window doesn't have any border (and is not a <a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> with some bars) then its client size is the same as its size.</li>
+<li><b>"クライアントサイズ"</b>: クライアントサイズはボーダーの内側の領域を表しており、この領域は <code>EVT_PAINT</code> イベントで描画できます。<a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> の場合、クライアントサイズにはフレームメニュー、ツールバー、ステータスバーも含まれません。ウィンドウがボーダーを持たない場合 (そしてステータスバーなどを含む <a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> でない場合)、クライアントサイズはウィンドウのサイズと同じ大きさになります。</li>
 </ul>
 <ul>
-<li><b>"Best Size"</b>: the best size of a widget depends on what kind of widget it is, and usually also on the contents of the widget. For example a wxListBox's best size will be calculated based on how many items it has, up to a certain limit, or a wxButton's best size will be calculated based on its label size, but normally won't be smaller than the platform default button size (unless a style flag overrides that). There is a special virtual method in the C++ window classes called <a class="el" href="classwx_window.html#a01e7604ab0f0b2b1a8e322a630a4669e" title="Implementation of GetBestSize() that can be overridden.">wxWindow::DoGetBestSize()</a> that a class can override if it wants to calculate its own best size based on its content, however notice that usually it is more convenient to override DoGetBestClientSize(), see below.</li>
+<li><b>"最適サイズ"</b>: ウィジェットの最適サイズはウィジェットの種類と、通常はウィジェットの内容物に依存します。例えば wxListBox の最適サイズは特定の上限までの間でアイテム数に応じて計算されます。また、wxButton の最適サイズはラベルのサイズに応じて計算されますが、(スタイルフラグで上書きしない限り) 通常はプラットフォームのデフォルトのボタンサイズより小さくなることはありません。C++ のウィンドウクラスには <a class="el" href="classwx_window.html#a01e7604ab0f0b2b1a8e322a630a4669e" title="オーバーライド可能な GetBestSize() の実装。">wxWindow::DoGetBestSize()</a> と呼ばれる特別な仮想関数があり、内容物に応じて独自の最適サイズを計算したい場合にはこの関数をオーバーライドすることができます。ただし、通常は DoGetBestClientSize() をオーバーライドした方が便利です。下記を参照してください。</li>
 </ul>
 <ul>
-<li><b>"Best Client Size"</b>: this is simply the client size corresponding to the best window size. When the fitting size for the given contents is computed, it will usually be the client size and the size of the borders needs to be added to obtain the full best size. For this reason, it's preferable to override DoGetBestClientSize() and let DoGetBestSize() compute the full best size.</li>
+<li><b>"最適クライアントサイズ"</b>: これは単に最適ウィンドウサイズのクライアントサイズ版です。指定された内容物にフィットするサイズが計算されると、通常はそれがクライアントサイズになり、それにボーダーのサイズを加えることで全体の最適サイズを取得します。このため、DoGetBestClientSize() をオーバーライドする方がより望ましく、それに基づいて DoGetBestSize() が全体の最適サイズを計算するようにしてください。</li>
 </ul>
 <ul>
-<li><b>"Minimal Size"</b>: the minimal size of a widget is a size that is normally explicitly set by the programmer either with the <a class="el" href="classwx_window.html#a3fc066f4d8083319f004ac43811d545d" title="Sets the minimum size of the window, to indicate to the sizer layout mechanism that this is the minim...">wxWindow::SetMinSize()</a> method or with the <a class="el" href="classwx_window.html#a307329dc3b10f5584aeb2cbce9293ffd" title="Use of this function for windows which are not toplevel windows (such as wxDialog or wxFrame) is disc...">wxWindow::SetSizeHints()</a> method. Most controls will also set the minimal size to the size given in the control's constructor if a non-default value is passed. Top-level windows such as <a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> will not allow the user to resize the frame below the minimal size.</li>
+<li><b>"最小サイズ"</b>: ウィジェットの最小サイズは通常、プログラマが <a class="el" href="classwx_window.html#a3fc066f4d8083319f004ac43811d545d" title="ウィンドウの最小サイズを設定し、これが最小の要求サイズであることをサイザーへ示します。">wxWindow::SetMinSize()</a> 関数か <a class="el" href="classwx_window.html#a307329dc3b10f5584aeb2cbce9293ffd" title="(wxDialog や wxFrame といった) トップレベルウィンドウでないウィンドウに対してこの関数を使用することは推奨されていません。">wxWindow::SetSizeHints()</a> 関数のどちらかを使用して明示的に設定するサイズです。また、大半のコントロールはコンストラクタにデフォルト値以外の値が指定された場合にそれを最小サイズとして設定します。<a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> といったトップレベルウィンドウはユーザが最小サイズ以下にリサイズすることはできません。</li>
 </ul>
 <ul>
-<li><b>"Maximum Size"</b>: just like for the minimal size, the maximum size is normally explicitly set by the programmer with the <a class="el" href="classwx_window.html#a38b496214d728a3212afadee5ed51606" title="Sets the maximum size of the window, to indicate to the sizer layout mechanism that this is the maxim...">wxWindow::SetMaxSize()</a> method or with <a class="el" href="classwx_window.html#a307329dc3b10f5584aeb2cbce9293ffd" title="Use of this function for windows which are not toplevel windows (such as wxDialog or wxFrame) is disc...">wxWindow::SetSizeHints()</a>. Top-level windows such as <a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> will not allow the user to resize the frame above the maximum size.</li>
+<li><b>"最大サイズ"</b>: 最小サイズと同じように、最大サイズは通常、プログラマが <a class="el" href="classwx_window.html#a38b496214d728a3212afadee5ed51606" title="ウィンドウの最大サイズを設定し、これが取りうる最大のサイズであることをサイザーへ示します。">wxWindow::SetMaxSize()</a> 関数か <a class="el" href="classwx_window.html#a307329dc3b10f5584aeb2cbce9293ffd" title="(wxDialog や wxFrame といった) トップレベルウィンドウでないウィンドウに対してこの関数を使用することは推奨されていません。">wxWindow::SetSizeHints()</a> 関数のどちらかを使用して明示的に設定します。<a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> といったトップレベルウィンドウはユーザが最大サイズを超えてリサイズすることはできません。</li>
 </ul>
 <ul>
-<li><b>"Initial Size"</b>: the initial size of a widget is the size given to the constructor of the widget, if any. As mentioned above most controls will also set this size value as the control's minimal size. If the size passed to the constructor is the default <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="(-1,-1) に初期化された wxSize のグルーバルインスタンス。">wxDefaultSize</a>, or if the size is not fully specified (such as <a class="el" href="classwx_size.html" title="wxSize は図形操作のための有用なデータ構造です。">wxSize</a>(150,-1)) then most controls will fill in the missing size components using the best size and will set the initial size of the control to the resulting size.</li>
+<li><b>"初期サイズ"</b>: ウィジェットの初期サイズはウィジェットのコンストラクタで指定されたサイズのことです。上で述べたように、ほとんどのコントロールではこのサイズがコントロールの最小サイズとしても使用されます。コンストラクタで指定された値がデフォルトの <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="(-1,-1) に初期化された wxSize のグルーバルインスタンス。">wxDefaultSize</a> の場合、もしくは (<a class="el" href="classwx_size.html" title="wxSize は図形操作のための有用なデータ構造です。">wxSize</a>(150,-1) といったように) 完全に指定されていない場合、ほとんどのコントロールでは足りない部分を最適サイズを使用して補完し、その結果を初期サイズとして設定します。</li>
 </ul>
 <ul>
-<li><b>"Virtual Size"</b>: the virtual size is the size of the potentially viewable area of the widget. The virtual size of a widget may be larger than its actual size and in this case scrollbars will appear to the let the user 'explore' the full contents of the widget. See <a class="el" href="classwx_scrolled.html" title="The wxScrolled class manages scrolling for its client area, transforming the coordinates according to...">wxScrolled</a> for more info.</li>
+<li><b>"仮想サイズ"</b>: 仮想サイズはウィジェットで潜在的に表示可能な領域のサイズのことです。ウィジェットの仮想サイズは実際のサイズよりおそらく大きく、その場合にはユーザがウィジェットの内容全体を '探索' できるようにスクロールバーが表示されます。より詳しい情報は <a class="el" href="classwx_scrolled.html" title="wxScrolled クラスはクライアントエリアのスクロール、スクロールバーの位置に合わせた座標の変換、表示領域にあわせたスクロール位置やつまみのサイズの設定といったことの管理を行います。">wxScrolled</a> を参照してください。</li>
 </ul>
 <h2><a class="anchor" id="overview_windowsizing_func"></a>
-
-Functions related to sizing</h2>
+サイズ関連の関数</h2>
 <ul>
-<li><a class="el" href="classwx_window.html#a1a54fcda8d52986482e030bd54739e9f" title="Merges the window's best size into the min size and returns the result.">wxWindow::GetEffectiveMinSize()</a>: returns a blending of the widget's minimal size and best size, giving precedence to the minimal size. For example, if a widget's min size is set to (150, -1) and the best size is (80, 22) then the best fitting size is (150, 22). If the min size is (50, 20) then the best fitting size is (50, 20). This method is what is called by the sizers when determining what the requirements of each item in the sizer is, and is used for calculating the overall minimum needs of the sizer.</li>
+<li><a class="el" href="classwx_window.html#a1a54fcda8d52986482e030bd54739e9f" title="ウィンドウの最適サイズを最小サイズにマージし、その結果を返却します。">wxWindow::GetEffectiveMinSize()</a>: ウィジェットの最小サイズと最適サイズを混ぜあわせたものを返却します。このサイズは最小サイズよりも優先されます。例えば、ウィジェットの最小サイズが (150, -1)、最適サイズが (80, 22) の場合、最適フィットサイズは (150, 22) になります。最小サイズが (50, 20) の場合は (50, 20) が最適フィットサイズになります。この関数はサイザー内の各要素の要求サイズを決定するときにサイザーから呼ばれ、サイザーの必要とする最小サイズを計算するために使用されます。</li>
 </ul>
 <ul>
-<li><a class="el" href="classwx_window.html#a1b309ca50ba87e34f968c83b79af1397" title="A smart SetSize that will fill in default size components with the window's best size values...">wxWindow::SetInitialSize()</a>: this is a little different than the typical size setters. Rather than just setting an "initial size" attribute it actually sets the minimal size to the value passed in, blends that value with the best size, and then sets the size of the widget to be the result. So you can consider this method to be a "Smart SetSize". This method is what is called by the constructor of most controls to set the minimal size and the initial size of the control.</li>
+<li><a class="el" href="classwx_window.html#a1b309ca50ba87e34f968c83b79af1397" title="デフォルトサイズをウィンドウの最適サイズの値で補う、賢い SetSize。">wxWindow::SetInitialSize()</a>: これは通常のサイズ設定関数とは少しだけ異なります。単に "初期サイズ" を設定するのではなく、引き渡された値を最小サイズに設定し、その値を最適サイズと混ぜあわせた上で、その結果をウィジェットのサイズとして設定します。そのため、この関数を "賢い SetSize" と考えることができます。この関数はコントロールの最小サイズと初期サイズを設定するためにほとんどのコントロールのコンストラクタで呼ばれます。</li>
 </ul>
 <ul>
-<li><a class="el" href="classwx_window.html#a2bf38a6cbd1f82fb46f274396f482994" title="Sizes the window so that it fits around its subwindows.">wxWindow::Fit()</a>: this method sets the size of a window to fit around its children. If it has no children then nothing is done, if it does have children then the size of the window is set to the window's best size.</li>
+<li><a class="el" href="classwx_window.html#a2bf38a6cbd1f82fb46f274396f482994" title="サブウィンドウにフィットするようにウィンドウのサイズを設定します。">wxWindow::Fit()</a>: この関数は子コントロールにフィットするようにウィンドウのサイズを設定します。子コントロールを持たない場合は何も行いませんが、子コントロールを持つ場合はそのウィンドウの最適サイズにあわせてウィンドウサイズを設定します。</li>
 </ul>
 <ul>
-<li><a class="el" href="classwx_sizer.html#abad9cedc0cbe9ade2c799da23462d17e" title="Tell the sizer to resize the window so that its client area matches the sizer's minimal size (Compute...">wxSizer::Fit()</a>: this sets the size of the window to be large enough to accommodate the minimum size needed by the sizer, (along with a few other constraints...). If the sizer is the one that is assigned to the window then this should be equivalent to <a class="el" href="classwx_window.html#a2bf38a6cbd1f82fb46f274396f482994" title="Sizes the window so that it fits around its subwindows.">wxWindow::Fit()</a>.</li>
+<li><a class="el" href="classwx_sizer.html#abad9cedc0cbe9ade2c799da23462d17e" title="ウィンドウをリサイズするようにサイザーへ通知し、クライアント領域がサイザーの最小サイズに合致するようにします。(サイズを決定するために ComputeFittingClientSize() が呼ばれます)">wxSizer::Fit()</a>: これは (他のいくつかの制約とあわせて) サイザーの要求する最小サイズを充分満たすようにウィンドウサイズを設定します。ウィンドウに割り当てられているサイザーがひとつだけの場合は <a class="el" href="classwx_window.html#a2bf38a6cbd1f82fb46f274396f482994" title="サブウィンドウにフィットするようにウィンドウのサイズを設定します。">wxWindow::Fit()</a> と等価になります。</li>
 </ul>
 <ul>
-<li><a class="el" href="classwx_sizer.html#a1ea8589882944f8ac78b6ff8abde1554" title="Call this to force layout of the children anew, e.g.">wxSizer::Layout()</a>: recalculates the minimum space needed by each item in the sizer, and then lays out the items within the space currently allotted to the sizer.</li>
+<li><a class="el" href="classwx_sizer.html#a1ea8589882944f8ac78b6ff8abde1554" title="強制的に子コントロールの再配置するときにこの関数を呼んでください。">wxSizer::Layout()</a>: サイザー内の各要素が必要とする最小サイズを再計算し、現在サイザーに割り当てられているスペース内に各要素を配置します。</li>
 </ul>
 <ul>
-<li><a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113" title="Invokes the constraint-based layout algorithm or the sizer-based algorithm for this window...">wxWindow::Layout()</a>: if the window has a sizer then it sets the space given to the sizer to the current size of the window, which results in a call to <a class="el" href="classwx_sizer.html#a1ea8589882944f8ac78b6ff8abde1554" title="Call this to force layout of the children anew, e.g.">wxSizer::Layout()</a>. If the window has layout constraints instead of a sizer then the constraints algorithm is run. The <code>Layout()</code> method is what is called by the default <code>EVT_SIZE</code> handler for container windows.  </li>
+<li><a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113" title="このウィンドウに対して、制約に基づく配置アルゴリズムか、サイザーに基づくアルゴリズムを実行します。">wxWindow::Layout()</a>: ウィンドウがサイザーを持つ場合に、現在のウィンドウサイズにあわせてサイザーが利用可能なスペースを設定します。これにより <a class="el" href="classwx_sizer.html#a1ea8589882944f8ac78b6ff8abde1554" title="強制的に子コントロールの再配置するときにこの関数を呼んでください。">wxSizer::Layout()</a> が呼び出されます。ウィンドウがサイザーの代わりにレイアウト制約を使用している場合は制約アルゴリズムが実行されます。<code>Layout()</code> 関数はコンテナウィンドウのデフォルトの <code>EVT_SIZE</code> ハンドラから呼ばれます。 </li>
 </ul>
 </div></div><!-- window showing the filter options -->
 

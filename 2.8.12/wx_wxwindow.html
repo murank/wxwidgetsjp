@@ -1222,12 +1222,7 @@ If no window with such name is found,
 <H3>wxWindow::Fit</H3>
 <P>
 <B>virtual void</B> <B>Fit</B>()<P>
-
-Sizes the window so that it fits around its subwindows. This function won't do
-anything if there are no subwindows and will only really work correctly if the
-sizers are used for the subwindows layout. Also, if the window has exactly one
-subwindow it is better (faster and the result is more precise as Fit adds some
-margin to account for fuzziness of its calculations) to call<P>
+サブウィンドウにフィットするようにウィンドウのサイズを設定します。This function won't do anything if there are no subwindows and will only really work correctly if the sizers are used for the subwindows layout. Also, if the window has exactly one subwindow it is better (faster and the result is more precise as Fit adds some margin to account for fuzziness of its calculations) to call<P>
 <PRE>
     window-&gt;SetClientSize(child-&gt;GetSize());
 </PRE>
@@ -1329,10 +1324,7 @@ background, such as a tiled bitmap. Currently the style has no effect on other p
 <H3>wxWindow::GetEffectiveMinSize</H3>
 <P>
 <B><A HREF="wx_wxsize.html#wxsize">wxSize</A></B> </B> <B>GetEffectiveMinSize</B>() <B>const</B><P>
-
-Merges the window's best size into the min size and returns the
-result.  This is the value used by sizers to determine the appropriate
-ammount of sapce to allocate for the widget.<P>
+ウィンドウの最適サイズを最小サイズにマージし、その結果を返却します。This is the value used by sizers to determine the appropriate ammount of sapce to allocate for the widget.<P>
 <B><FONT COLOR="#FF0000">参照</FONT></B><P>
 <A HREF="wx_wxwindow.html#wxwindowgetbestsize">wxWindow::GetBestSize</A>,
 <A HREF="wx_wxwindow.html#wxwindowsetinitialsize">wxWindow::SetInitialSize</A><P>

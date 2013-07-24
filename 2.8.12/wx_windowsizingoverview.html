@@ -1,105 +1,36 @@
 <HTML>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>Window Sizing Overview</title></head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>ウィンドウサイズの概要</title></head>
 
 <BODY BGCOLOR=#FFFFFF>
 <A NAME="windowsizingoverview"></A><CENTER>
 <A HREF="wx_contents.html"><img align=center src="contents.gif" BORDER=0 ALT="Contents"></A> <A HREF="wx_overviews.html#overviews"><img align=center src="up.gif" BORDER=0 ALT="Up"></A> <A HREF="wx_wxappoverview.html#wxappoverview"><img align=center src="back.gif" BORDER=0 ALT="Previous"></A> <A HREF="wx_runtimeclassoverview.html#runtimeclassoverview"><img align=center src="forward.gif" BORDER=0 ALT="Next"></A> </CENTER><HR>
 
-<H2>Window Sizing Overview</H2>
+<H2>ウィンドウサイズの概要</H2>
 <P>
 <P>
 
-
-
-It can sometimes be confusing to keep track of the various
-size-related attributes of a <A HREF="wx_wxwindow.html#wxwindow">wxWindow</A>, how they
-relate to each other, and how they interact with sizers. This document
-will attempt to clear the fog a little, and give some simple
-explanations of things.<P>
-<B>BestSize</B>: The best size of a widget depends on what kind of widget it
-is, and usually also on the contents of the widget. For example a
-<A HREF="wx_wxlistbox.html#wxlistbox">wxListBox</A>'s best size will be calculated based on
-how many items it has, up to a certain limit, or a
-<A HREF="wx_wxbutton.html#wxbutton">wxButton</A>'s best size will be calculated based on
-its label size, but normally won't be smaller than the platform
-default button size (unless a style flag overrides that). Get the
-picture? There is a special virtual method in the C++ window classes
-called <TT>DoGetBestSize()</TT> that a class needs to override if it
-wants to calculate its own best size based on its content. The default
-<TT>DoGetBestSize()</TT> is designed for use in container windows,
-such as <A HREF="wx_wxpanel.html#wxpanel">wxPanel</A>, and works something like this:<P>
+<A HREF="wx_wxwindow.html#wxwindow">wxWindow</A> のサイズに関連する属性について、お互いの関係やサイザーとの関わりについて時どき混乱することがあるかと思います。このドキュメントはそれらをほんの少しでも明確にするためのものであり、それらの関係性について簡単な説明を行います。<P>
+<B>最適サイズ</B>: ウィジェットの最適サイズはウィジェットの種類と、通常はウィジェットの内容物に依存します。例えば <A HREF="wx_wxlistbox.html#wxlistbox">wxListBox</A> の最適サイズは特定の上限までの間でアイテム数に応じて計算されます。また、<A HREF="wx_wxbutton.html#wxbutton">wxButton</A> の最適サイズはラベルのサイズに応じて計算されますが、(スタイルフラグで上書きしない限り) 通常はプラットフォームのデフォルトのボタンサイズより小さくなることはありません。分かりますか? C++ のウィンドウクラスには <TT>DoGetBestSize()</TT> と呼ばれる特別な仮想関数があり、内容物に基づいて独自の最適サイズを計算したい場合にはこの関数をオーバーライドする必要があります。デフォルトの <TT>DoGetBestSize()</TT> は <A HREF="wx_wxpanel.html#wxpanel">wxPanel</A> といったコンテナウィンドウに使用するために設計されており、それはこのように動作します:<P>
 <OL>
 
-  <LI>If the window has a sizer then it is used to calculate the best size.
-  
-  </LI><LI>Otherwise if the window has layout constraints then that is used to calculate the best size.
-  
-  </LI><LI>Otherwise if the window has children then the best size is set to be large enough to show all the children.
-  
-  </LI><LI>Otherwise if there are no children then the window's min size will be used for the best size.
-  
-  </LI><LI>Otherwise if there is no min size set, then the current size is used for the best size.
-
+  <LI>ウィンドウでサイザーが使用されていれば、それが最適サイズの計算に使用されます。
+  </LI><LI>そうでない場合、ウィンドウでレイアウト制約が使用されていれば、それが最適サイズの計算に使用されます。
+  </LI><LI>そうでない場合、ウィンドウが子コントロールを持っていれば、すべての子コントロールを表示するのに充分な最適サイズが設定されます。
+  </LI><LI>そうでない場合、子コントロールが存在しないのであれば、ウィンドウの最小サイズが最適サイズに使用されます。
+  </LI><LI>そうでない場合、最小サイズが設定されていないのであれば、現在のサイズが最適サイズに使用されます。
 </LI></OL>
 <P>
-<B>MinSize</B>: The min size of a widget is a size that is normally
-explicitly set by the programmer either with the <TT>SetMinSize()</TT>
-method or the <TT>SetSizeHints()</TT> method. Most controls will also
-set the min size to the size given in the control's constructor if a
-non-default value is passed. Top-level windows such as
-<A HREF="wx_wxframe.html#wxframe">wxFrame</A> will not allow the user to resize the frame
-below the min size.<P>
-<B>Size</B>: The size of a widget can be explicitly set or fetched with
-the <TT>SetSize()</TT> or <TT>GetSize()</TT> methods. This size value
-is the size that the widget is currently using on screen and is the
-way to change the size of something that is not being managed by a
-sizer.<P>
-<B>ClientSize</B>: The client size represents the widget's area inside
-of any borders belonging to the widget and is the area that can be
-drawn upon in a <TT>EVT_PAINT</TT> event. If a widget doesn't have a
-border then its client size is the same as its size.<P>
-<B>InitialSize</B>: The initial size of a widget is the size given to
-the constructor of the widget, if any.  As mentioned above most
-controls will also set this size value as the control's min size. If
-the size passed to the constructor is the default
-<TT>wxDefaultSize</TT>, or if the size is not fully specified (such as
-<TT>wxSize(150,-1)</TT>) then most controls will fill in the missing
-size components using the best size and will set the initial size of
-the control to the resulting size.<P>
-<B>GetEffectiveMinSize()</B>: (formerly <TT>GetBestFittingSize</TT>) A
-blending of the widget's min size and best size, giving precedence to
-the min size. For example, if a widget's min size is set to (150, -1)
-and the best size is (80, 22) then the best fitting size is (150,
-22). If the min size is (50, 20) then the best fitting size is (50,
-20). This method is what is called by the sizers when determining what
-the requirements of each item in the sizer is, and is used for
-calculating the overall minimum needs of the sizer.<P>
-<B>SetInitialSize(size)</B>: (formerly <TT>SetBestFittingSize</TT>)
-This is a little different than the typical size setters. Rather than
-just setting an "initial size" attribute it actually sets the minsize
-to the value passed in, blends that value with the best size, and then
-sets the size of the widget to be the result. So you can consider this
-method to be a "Smart SetSize". This method is what is called by the
-constructor of most controls to set the minsize and initial size of
-the control.<P>
-<B>window.Fit()</B>: The <TT>Fit()</TT> method sets the size of a
-window to fit around its children. If it has no children then nothing
-is done, if it does have children then the size of the window is set
-to the window's best size.<P>
-<B>sizer.Fit(window)</B>: This sets the size of the window to be large
-enough to accommodate the minimum size needed by the sizer, (along with
-a few other constraints...) If the sizer is the one that is assigned
-to the window then this should be equivalent to <TT>window.Fit()</TT>.<P>
-<B>sizer.Layout()</B>: Recalculates the minimum space needed by each
-item in the sizer, and then lays out the items within the space
-currently allotted to the sizer.<P>
-<B>window.Layout()</B>: If the window has a sizer then it sets the
-space given to the sizer to the current size of the window, which
-results in a call to <TT>sizer.Layout()</TT>. If the window has layout
-constraints instead of a sizer then the constraints algorithm is
-run. The <TT>Layout()</TT> method is what is called by the default
-<TT>EVT_SIZE</TT> handler for container windows.<P>
+<B>最小サイズ</B>: ウィジェットの最小サイズは通常、プログラマが <TT>SetMinSize()</TT> 関数か <TT>SetSizeHints()</TT> 関数のどちらかを使用して明示的に設定するサイズです。また、大半のコントロールはコンストラクタにデフォルト値以外の値が指定された場合にそれを最小サイズとして設定します。<A HREF="wx_wxframe.html#wxframe">wxFrame</A> といったトップレベルウィンドウはユーザが最小サイズ以下にリサイズすることはできません。<P>
+<B>サイズ</B>: ウィジェットのサイズは <TT>SetSize()</TT> 関数や <TT>GetSize()</TT> 関数で明示的に設定・取得することができます。このサイズの値は画面内でウィジェットが使用しているサイズであり、サイザーで管理されていないウィジェットのサイズを変更する方法でもあります。<P>
+<B>クライアントサイズ</B>: クライアントサイズはボーダーの内側の領域を表しており、この領域は <TT>EVT_PAINT</TT> イベントで描画できます。ウィジェットがボーダーを持たない場合、クライアントサイズはウィジェットのサイズと同じ大きさになります。<P>
+<B>初期サイズ</B>: ウィジェットの初期サイズはウィジェットのコンストラクタで指定されたサイズのことです。上で述べたように、ほとんどのコントロールではこのサイズがコントロールの最小サイズとしても使用されます。コンストラクタで指定された値がデフォルトの <TT>wxDefaultSize</TT> の場合、もしくは (<TT>wxSize(150,-1)</TT> といったように) 完全に指定されていない場合、ほとんどのコントロールでは足りない部分を最適サイズを使用して補完し、その結果を初期サイズとして設定します。<P>
+<B>GetEffectiveMinSize()</B>: (以前は <TT>GetBestFittingSize</TT> でした) ウィジェットの最小サイズと最適サイズを混ぜあわせたもので、最小サイズよりも優先されます。例えば、ウィジェットの最小サイズが (150, -1)、最適サイズが (80, 22) の場合、最適フィットサイズは (150, 22) になります。最小サイズが (50, 20) の場合は (50, 20) が最適フィットサイズになります。この関数はサイザー内の各要素の要求サイズを決定するときにサイザーから呼ばれ、サイザーの必要とする最小サイズを計算するために使用されます。<P>
+<B>SetInitialSize(size)</B>: (以前は <TT>SetBestFittingSize</TT> でした) これは通常のサイズ設定関数とは少しだけ異なります。単に "初期サイズ" を設定するのではなく、引き渡された値を最小サイズに設定し、その値を最適サイズと混ぜあわせた上で、その結果をウィジェットのサイズとして設定します。そのため、この関数を "賢い SetSize" と考えることができます。この関数はコントロールの最小サイズと初期サイズを設定するためにほとんどのコントロールのコンストラクタで呼ばれます。<P>
+<B>window.Fit()</B>: <TT>Fit()</TT> 関数は子コントロールにフィットするようにウィンドウのサイズを設定します。子コントロールを持たない場合は何も行いませんが、子コントロールを持つ場合はそのウィンドウの最適サイズにあわせてウィンドウサイズを設定します。<P>
+<B>sizer.Fit(window)</B>: これは (他のいくつかの制約とあわせて) サイザーの要求する最小サイズを充分満たすようにウィンドウサイズを設定します。ウィンドウに割り当てられているサイザーがひとつだけの場合は <TT>window.Fit()</TT> と等価になります。<P>
+<B>sizer.Layout()</B>: サイザー内の各要素が必要とする最小サイズを再計算し、現在サイザーに割り当てられているスペース内に各要素を配置します。<P>
+<B>window.Layout()</B>: ウィンドウがサイザーを持つ場合に、現在のウィンドウサイズにあわせてサイザーが利用可能なスペースを設定します。これにより <TT>sizer.Layout()</TT> が呼び出されます。ウィンドウがサイザーの代わりにレイアウト制約を使用している場合は制約アルゴリズムが実行されます。<TT>Layout()</TT> 関数はコンテナウィンドウのデフォルトの <TT>EVT_SIZE</TT> ハンドラから呼ばれます。<P>
 <P>
 
 

@@ -135,7 +135,7 @@ How to write the custom widget</h2>
 <p>The second method is to build it directly upon the native toolkits of the platforms you want to support (e.g. GTK+, Carbon and GDI). In this way you'll get a <b>native</b> widget. This method in fact has the advantage of a native look and feel but requires different implementations and thus more work.</p>
 <p>In both cases you'll want to better explore some hot topics like:</p>
 <ul>
-<li><a class="el" href="overview_windowsizing.html">Window Sizing Overview</a></li>
+<li><a class="el" href="overview_windowsizing.html">ウィンドウサイズの概要</a></li>
 <li><a class="el" href="overview_events.html#overview_events_custom">Custom Event Summary</a> to implement your custom widget's events. You will probably need also to gain some familiarity with the wxWidgets sources, since you'll need to interface with some undocumented wxWidgets internal mechanisms.</li>
 </ul>
 <h3><a class="anchor" id="overview_customwidgets_how_generic"></a>
@@ -187,7 +187,7 @@ Writing a generic widget</h3>
         <span class="comment">// init widget's internals...</span>
     }
 
-    <span class="keyword">virtual</span> <a class="code" href="classwx_size.html" title="wxSize は図形操作のための有用なデータ構造です。">wxSize</a> <a class="code" href="classwx_window.html#a01e7604ab0f0b2b1a8e322a630a4669e" title="Implementation of GetBestSize() that can be overridden.">DoGetBestSize</a>()<span class="keyword"> const </span>{
+    <span class="keyword">virtual</span> <a class="code" href="classwx_size.html" title="wxSize は図形操作のための有用なデータ構造です。">wxSize</a> <a class="code" href="classwx_window.html#a01e7604ab0f0b2b1a8e322a630a4669e" title="オーバーライド可能な GetBestSize() の実装。">DoGetBestSize</a>()<span class="keyword"> const </span>{
         <span class="comment">// we need to calculate and return the best size of the widget...</span>
     }
 

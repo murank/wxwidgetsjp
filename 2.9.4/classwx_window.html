@@ -137,7 +137,7 @@ function toggleVisibility(linkObj) {
 <div class="textblock"><p><a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> is the base class for all windows and represents any visible object on screen.  </p>
 <p>All controls, top level windows and so on are windows. Sizers and device contexts are not, however, as they don't appear on screen themselves.</p>
 <p>Please note that all children of the window will be deleted automatically by the destructor before the window itself is deleted which means that you don't have to worry about deleting them manually. Please see the <a class="el" href="overview_windowdeletion.html">window deletion overview</a> for more information.</p>
-<p>Also note that in this, and many others, wxWidgets classes some <code>GetXXX()</code> methods may be overloaded (as, for example, <a class="el" href="classwx_window.html#a124c12cff1e7b6e96a5e1fd3e48dca34" title="Returns the size of the entire window in pixels, including title bar, border, scrollbars, etc.">wxWindow::GetSize</a> or <a class="el" href="classwx_window.html#ae56fc53268b815b58570f66bfc33838f" title="Returns the size of the window 'client area' in pixels.">wxWindow::GetClientSize</a>). In this case, the overloads are non-virtual because having multiple virtual functions with the same name results in a virtual function name hiding at the derived class level (in English, this means that the derived class has to override all overloaded variants if it overrides any of them). To allow overriding them in the derived class, wxWidgets uses a unique protected virtual <code>DoGetXXX()</code> method and all <code>GetXXX()</code> ones are forwarded to it, so overriding the former changes the behaviour of the latter.</p>
+<p>Also note that in this, and many others, wxWidgets classes some <code>GetXXX()</code> methods may be overloaded (as, for example, <a class="el" href="classwx_window.html#a124c12cff1e7b6e96a5e1fd3e48dca34" title="タイトルバー、ボーダー、スクロールバーなどを含む、ウィンドウ全体のサイズをピクセル単位で返却します。">wxWindow::GetSize</a> or <a class="el" href="classwx_window.html#ae56fc53268b815b58570f66bfc33838f" title="Returns the size of the window 'client area' in pixels.">wxWindow::GetClientSize</a>). In this case, the overloads are non-virtual because having multiple virtual functions with the same name results in a virtual function name hiding at the derived class level (in English, this means that the derived class has to override all overloaded variants if it overrides any of them). To allow overriding them in the derived class, wxWidgets uses a unique protected virtual <code>DoGetXXX()</code> method and all <code>GetXXX()</code> ones are forwarded to it, so overriding the former changes the behaviour of the latter.</p>
 <h2>Styles</h2>
 <p>This class supports the following styles:</p>
 <div> </div><ul>
@@ -293,7 +293,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#aa842d59529f873683e55cd8392ec46e9">SetScrollbar</a> (int orientation, int position, int thumbSize, int range, bool refresh=true)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the scrollbar properties of a built-in scrollbar.    <a href="#aa842d59529f873683e55cd8392ec46e9"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Sizing functions</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>See also the protected functions <a class="el" href="classwx_window.html#a01e7604ab0f0b2b1a8e322a630a4669e" title="Implementation of GetBestSize() that can be overridden.">DoGetBestSize()</a> and <a class="el" href="classwx_window.html#afe8447cb5975584ee3d4a03e3d02ee89" title="Override this method to return the best size for a custom control.">DoGetBestClientSize()</a>.  </p>
+<tr><td colspan="2"><div class="groupText"><p>See also the protected functions <a class="el" href="classwx_window.html#a01e7604ab0f0b2b1a8e322a630a4669e" title="オーバーライド可能な GetBestSize() の実装。">DoGetBestSize()</a> and <a class="el" href="classwx_window.html#afe8447cb5975584ee3d4a03e3d02ee89" title="Override this method to return the best size for a custom control.">DoGetBestClientSize()</a>.  </p>
 </div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a100905524d330cfd9620fd726e378066">CacheBestSize</a> (const <a class="el" href="classwx_size.html">wxSize</a> &amp;size) const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the cached best size value.    <a href="#a100905524d330cfd9620fd726e378066"></a><br/></td></tr>
@@ -302,9 +302,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classwx_size.html">wxSize</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#aa456f800c9dde3b2361cad0abf54bc27">WindowToClientSize</a> (const <a class="el" href="classwx_size.html">wxSize</a> &amp;size) const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts window size <em>size</em> to corresponding client area size In other words, the returned value is what would <a class="el" href="classwx_window.html#ae56fc53268b815b58570f66bfc33838f" title="Returns the size of the window 'client area' in pixels.">GetClientSize()</a> return if this window had given window size.    <a href="#aa456f800c9dde3b2361cad0abf54bc27"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a2bf38a6cbd1f82fb46f274396f482994">Fit</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sizes the window so that it fits around its subwindows.    <a href="#a2bf38a6cbd1f82fb46f274396f482994"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">サブウィンドウにフィットするようにウィンドウのサイズを設定します。  <a href="#a2bf38a6cbd1f82fb46f274396f482994"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a55aca401aab29d59f7cc53f89ba2e38d">FitInside</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Similar to <a class="el" href="classwx_window.html#a2bf38a6cbd1f82fb46f274396f482994" title="Sizes the window so that it fits around its subwindows.">Fit()</a>, but sizes the interior (virtual) size of a window.    <a href="#a55aca401aab29d59f7cc53f89ba2e38d"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Similar to <a class="el" href="classwx_window.html#a2bf38a6cbd1f82fb46f274396f482994" title="サブウィンドウにフィットするようにウィンドウのサイズを設定します。">Fit()</a>, but sizes the interior (virtual) size of a window.    <a href="#a55aca401aab29d59f7cc53f89ba2e38d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_size.html">wxSize</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a7e64b9380374e5681f146e9e319e35e3">GetBestSize</a> () const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This functions returns the best acceptable minimal size for the window.    <a href="#a7e64b9380374e5681f146e9e319e35e3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#ae314d583790739dd751dedec49216b88">GetBestHeight</a> (int width) const  </td></tr>
@@ -316,7 +316,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_size.html">wxSize</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#afb9fd4a3b3310b2e11049a5113f749fa">GetClientSize</a> () const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.    <a href="#afb9fd4a3b3310b2e11049a5113f749fa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classwx_size.html">wxSize</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a1a54fcda8d52986482e030bd54739e9f">GetEffectiveMinSize</a> () const  </td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Merges the window's best size into the min size and returns the result.    <a href="#a1a54fcda8d52986482e030bd54739e9f"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ウィンドウの最適サイズを最小サイズにマージし、その結果を返却します。  <a href="#a1a54fcda8d52986482e030bd54739e9f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classwx_size.html">wxSize</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#aef9b71458720452374137cd20be24b97">GetMaxClientSize</a> () const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the maximum size of window's client area.    <a href="#aef9b71458720452374137cd20be24b97"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classwx_size.html">wxSize</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a0a1672e81caf81a95eb5b48383d22065">GetMaxSize</a> () const  </td></tr>
@@ -334,7 +334,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a5cc2082eb5ddb27f97be191bd093709e">GetMaxHeight</a> () const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the cached best size value.    <a href="#a5cc2082eb5ddb27f97be191bd093709e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a124c12cff1e7b6e96a5e1fd3e48dca34">GetSize</a> (int *width, int *height) const  </td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the size of the entire window in pixels, including title bar, border, scrollbars, etc.    <a href="#a124c12cff1e7b6e96a5e1fd3e48dca34"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">タイトルバー、ボーダー、スクロールバーなどを含む、ウィンドウ全体のサイズをピクセル単位で返却します。  <a href="#a124c12cff1e7b6e96a5e1fd3e48dca34"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_size.html">wxSize</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a66e144ed8ab9a20e080ae6c69fc7015c">GetSize</a> () const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">See the GetSize(int*,int*) overload for more info.    <a href="#a66e144ed8ab9a20e080ae6c69fc7015c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_size.html">wxSize</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a614d32c464296b7d6caabcafc18deb97">GetVirtualSize</a> () const  </td></tr>
@@ -686,7 +686,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113">Layout</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Invokes the constraint-based layout algorithm or the sizer-based algorithm for this window.    <a href="#a1b143c3e72bd0af533b76db4830a6113"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#ad369fe1db5c20f9d9edff7b5eb1f7226">SetAutoLayout</a> (bool autoLayout)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determines whether the <a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113" title="Invokes the constraint-based layout algorithm or the sizer-based algorithm for this window...">Layout()</a> function will be called automatically when the window is resized.    <a href="#ad369fe1db5c20f9d9edff7b5eb1f7226"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determines whether the <a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113" title="このウィンドウに対して、制約に基づく配置アルゴリズムか、サイザーに基づくアルゴリズムを実行します。">Layout()</a> function will be called automatically when the window is resized.    <a href="#ad369fe1db5c20f9d9edff7b5eb1f7226"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#ad7a9d7fca325112fae493a00d253b3be">GetAutoLayout</a> () const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the sizer of which this window is a member, if any, otherwise <span class="literal">NULL</span>.    <a href="#ad7a9d7fca325112fae493a00d253b3be"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Mouse functions</div></td></tr>
@@ -1326,7 +1326,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Converts client area size <em>size</em> to corresponding window size.  </p>
-<p>In other words, the returned value is what would <a class="el" href="classwx_window.html#a124c12cff1e7b6e96a5e1fd3e48dca34" title="Returns the size of the entire window in pixels, including title bar, border, scrollbars, etc.">GetSize()</a> return if this window had client area of given size. Components with wxDefaultCoord value are left unchanged. Note that the conversion is not always exact, it assumes that non-client area doesn't change and so doesn't take into account things like menu bar (un)wrapping or (dis)appearance of the scrollbars.</p>
+<p>In other words, the returned value is what would <a class="el" href="classwx_window.html#a124c12cff1e7b6e96a5e1fd3e48dca34" title="タイトルバー、ボーダー、スクロールバーなどを含む、ウィンドウ全体のサイズをピクセル単位で返却します。">GetSize()</a> return if this window had client area of given size. Components with wxDefaultCoord value are left unchanged. Note that the conversion is not always exact, it assumes that non-client area doesn't change and so doesn't take into account things like menu bar (un)wrapping or (dis)appearance of the scrollbars.</p>
 <dl class="since"><dt><b>Since:</b></dt><dd>2.8.8</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#aa456f800c9dde3b2361cad0abf54bc27" title="Converts window size size to corresponding client area size In other words, the returned value is wha...">WindowToClientSize()</a> </dd></dl>
 
@@ -1622,7 +1622,7 @@ Protected Member Functions</h2></td></tr>
 <p>Override this method to return the best size for a custom control.  </p>
 <p>A typical implementation of this method should compute the minimal size needed to fully display the control contents taking into account the current font size.</p>
 <p>The default implementation simply returns <a class="el" href="gdicmn_8h.html#a33a012cdb075e9f78c93f63bec2dc27b" title="(-1,-1) に初期化された wxSize のグルーバルインスタンス。">wxDefaultSize</a> and <a class="el" href="classwx_window.html#a7e64b9380374e5681f146e9e319e35e3" title="This functions returns the best acceptable minimal size for the window.">GetBestSize()</a> returns an arbitrary hardcoded size for the window, so you must override it when implementing a custom window class.</p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowsizing.html">Window Sizing Overview</a></dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowsizing.html">ウィンドウサイズの概要</a></dd></dl>
 <dl class="since"><dt><b>Since:</b></dt><dd>2.9.0  </dd></dl>
 
 </div>
@@ -1666,13 +1666,13 @@ Protected Member Functions</h2></td></tr>
 <p>Notice that it is usually more convenient to override <a class="el" href="classwx_window.html#afe8447cb5975584ee3d4a03e3d02ee89" title="Override this method to return the best size for a custom control.">DoGetBestClientSize()</a> rather than this method itself as you need to explicitly account for the window borders size if you do the latter.</p>
 <p>The default implementation of this function is designed for use in container windows, such as <a class="el" href="classwx_panel.html" title="A panel is a window on which controls are placed.">wxPanel</a>, and works something like this:</p>
 <ol type="1">
-<li>If the window has a sizer then it is used to calculate the best size.</li>
+<li>ウィンドウでサイザーが使用されていれば、それが最適サイズの計算に使用されます。</li>
 <li>Otherwise if the window has layout constraints then those are used to calculate the best size.</li>
-<li>Otherwise if the window has children then the best size is set to be large enough to show all the children.</li>
+<li>そうでない場合、ウィンドウが子コントロールを持っていれば、すべての子コントロールを表示するのに充分な最適サイズが設定されます。</li>
 <li>Otherwise if there are no children then the window's minimal size will be used as its best size.</li>
 <li>Otherwise if there is no minimal size set, then the current size is used for the best size.</li>
 </ol>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowsizing.html">ウィンドウサイズの概要</a> </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classwx_rich_text_ctrl.html#add1eb24da3fba91c348f7372a3969638">wxRichTextCtrl</a>.</p>
 
@@ -1936,12 +1936,12 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Sizes the window so that it fits around its subwindows.  </p>
+<p>サブウィンドウにフィットするようにウィンドウのサイズを設定します。 </p>
 <p>This function won't do anything if there are no subwindows and will only really work correctly if sizers are used for the subwindows layout.</p>
-<p>Also, if the window has exactly one subwindow it is better (faster and the result is more precise as <a class="el" href="classwx_window.html#a2bf38a6cbd1f82fb46f274396f482994" title="Sizes the window so that it fits around its subwindows.">Fit()</a> adds some margin to account for fuzziness of its calculations) to call:</p>
+<p>Also, if the window has exactly one subwindow it is better (faster and the result is more precise as <a class="el" href="classwx_window.html#a2bf38a6cbd1f82fb46f274396f482994" title="サブウィンドウにフィットするようにウィンドウのサイズを設定します。">Fit()</a> adds some margin to account for fuzziness of its calculations) to call:</p>
 <div class="fragment"><pre class="fragment">        window-&gt;SetClientSize(child-&gt;GetSize());
-</pre></div><p>instead of calling <a class="el" href="classwx_window.html#a2bf38a6cbd1f82fb46f274396f482994" title="Sizes the window so that it fits around its subwindows.">Fit()</a>.</p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
+</pre></div><p>instead of calling <a class="el" href="classwx_window.html#a2bf38a6cbd1f82fb46f274396f482994" title="サブウィンドウにフィットするようにウィンドウのサイズを設定します。">Fit()</a>.</p>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowsizing.html">ウィンドウサイズの概要</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::FitInside" ref="a55aca401aab29d59f7cc53f89ba2e38d" args="()" -->
@@ -1959,7 +1959,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Similar to <a class="el" href="classwx_window.html#a2bf38a6cbd1f82fb46f274396f482994" title="Sizes the window so that it fits around its subwindows.">Fit()</a>, but sizes the interior (virtual) size of a window.  </p>
+<p>Similar to <a class="el" href="classwx_window.html#a2bf38a6cbd1f82fb46f274396f482994" title="サブウィンドウにフィットするようにウィンドウのサイズを設定します。">Fit()</a>, but sizes the interior (virtual) size of a window.  </p>
 <p>Mainly useful with scrolled windows to reset scrollbars after sizing changes that do not trigger a size event, and/or scrolled windows without an interior sizer. This function similarly won't do anything if there are no subwindows.  </p>
 
 </div>
@@ -2116,8 +2116,8 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>This functions returns the best acceptable minimal size for the window.  </p>
-<p>For example, for a static control, it will be the minimal size such that the control label is not truncated. For windows containing subwindows (typically <a class="el" href="classwx_panel.html" title="A panel is a window on which controls are placed.">wxPanel</a>), the size returned by this function will be the same as the size the window would have had after calling <a class="el" href="classwx_window.html#a2bf38a6cbd1f82fb46f274396f482994" title="Sizes the window so that it fits around its subwindows.">Fit()</a>.</p>
-<p>Override virtual <a class="el" href="classwx_window.html#a01e7604ab0f0b2b1a8e322a630a4669e" title="Implementation of GetBestSize() that can be overridden.">DoGetBestSize()</a> or, better, because it's usually more convenient, <a class="el" href="classwx_window.html#afe8447cb5975584ee3d4a03e3d02ee89" title="Override this method to return the best size for a custom control.">DoGetBestClientSize()</a> when writing your own custom window class to change the value returned by this public non-virtual method.</p>
+<p>For example, for a static control, it will be the minimal size such that the control label is not truncated. For windows containing subwindows (typically <a class="el" href="classwx_panel.html" title="A panel is a window on which controls are placed.">wxPanel</a>), the size returned by this function will be the same as the size the window would have had after calling <a class="el" href="classwx_window.html#a2bf38a6cbd1f82fb46f274396f482994" title="サブウィンドウにフィットするようにウィンドウのサイズを設定します。">Fit()</a>.</p>
+<p>Override virtual <a class="el" href="classwx_window.html#a01e7604ab0f0b2b1a8e322a630a4669e" title="オーバーライド可能な GetBestSize() の実装。">DoGetBestSize()</a> or, better, because it's usually more convenient, <a class="el" href="classwx_window.html#afe8447cb5975584ee3d4a03e3d02ee89" title="Override this method to return the best size for a custom control.">DoGetBestClientSize()</a> when writing your own custom window class to change the value returned by this public non-virtual method.</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a100905524d330cfd9620fd726e378066" title="Sets the cached best size value.">CacheBestSize()</a>, <a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classwx_media_ctrl.html#a8f03babae1c8e27f4323fe58c663c454">wxMediaCtrl</a>.</p>
@@ -2401,7 +2401,7 @@ Protected Member Functions</h2></td></tr>
 <p>Returns the size of the window 'client area' in pixels.  </p>
 <p>The client area is the area which may be drawn on by the programmer, excluding title bar, border, scrollbars, etc. Note that if this window is a top-level one and it is currently minimized, the return size is empty (both width and height are 0).</p>
 <p><b>wxPerl Note:</b> In wxPerl this method takes no parameters and returns a 2-element list (width, height).</p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a124c12cff1e7b6e96a5e1fd3e48dca34" title="Returns the size of the entire window in pixels, including title bar, border, scrollbars, etc.">GetSize()</a>, <a class="el" href="classwx_window.html#a614d32c464296b7d6caabcafc18deb97" title="This gets the virtual size of the window in pixels.">GetVirtualSize()</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a124c12cff1e7b6e96a5e1fd3e48dca34" title="タイトルバー、ボーダー、スクロールバーなどを含む、ウィンドウ全体のサイズをピクセル単位で返却します。">GetSize()</a>, <a class="el" href="classwx_window.html#a614d32c464296b7d6caabcafc18deb97" title="This gets the virtual size of the window in pixels.">GetVirtualSize()</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::GetClientSize" ref="afb9fd4a3b3310b2e11049a5113f749fa" args="() const " -->
@@ -2531,10 +2531,10 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Merges the window's best size into the min size and returns the result.  </p>
+<p>ウィンドウの最適サイズを最小サイズにマージし、その結果を返却します。 </p>
 <p>This is the value used by sizers to determine the appropriate amount of space to allocate for the widget.</p>
 <p>This is the method called by a <a class="el" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a> when it queries the size of a window or control.</p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a7e64b9380374e5681f146e9e319e35e3" title="This functions returns the best acceptable minimal size for the window.">GetBestSize()</a>, <a class="el" href="classwx_window.html#a1b309ca50ba87e34f968c83b79af1397" title="A smart SetSize that will fill in default size components with the window's best size values...">SetInitialSize()</a>, <a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a7e64b9380374e5681f146e9e319e35e3" title="This functions returns the best acceptable minimal size for the window.">GetBestSize()</a>, <a class="el" href="classwx_window.html#a1b309ca50ba87e34f968c83b79af1397" title="デフォルトサイズをウィンドウの最適サイズの値で補う、賢い SetSize。">SetInitialSize()</a>, <a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::GetEventHandler" ref="a72c2454cf309f30109da3cbfe237c760" args="() const " -->
@@ -2901,7 +2901,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns the minimum size of the window, an indication to the sizer layout mechanism that this is the minimum required size.  </p>
-<p>This method normally just returns the value set by <a class="el" href="classwx_window.html#a3fc066f4d8083319f004ac43811d545d" title="Sets the minimum size of the window, to indicate to the sizer layout mechanism that this is the minim...">SetMinSize()</a>, but it can be overridden to do the calculation on demand.</p>
+<p>This method normally just returns the value set by <a class="el" href="classwx_window.html#a3fc066f4d8083319f004ac43811d545d" title="ウィンドウの最小サイズを設定し、これが最小の要求サイズであることをサイザーへ示します。">SetMinSize()</a>, but it can be overridden to do the calculation on demand.</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a8e88d1d38c2bf98a72d86b42cf3e35c0" title="Returns the minimum size of window's client area, an indication to the sizer layout mechanism that th...">GetMinClientSize()</a>, <a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
 
 </div>
@@ -3308,7 +3308,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Returns the size of the entire window in pixels, including title bar, border, scrollbars, etc.  </p>
+<p>タイトルバー、ボーダー、スクロールバーなどを含む、ウィンドウ全体のサイズをピクセル単位で返却します。 </p>
 <p>Note that if this window is a top-level one and it is currently minimized, the returned size is the restored window size, not the size of the window icon.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -3572,7 +3572,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>This gets the virtual size of the window in pixels.  </p>
 <p>By default it returns the client size of the window, but after a call to <a class="el" href="classwx_window.html#a37f293b7904bc6668b86cccb0aea5669" title="Sets the virtual size of the window in pixels.">SetVirtualSize()</a> it will return the size set with that method.</p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowsizing.html">ウィンドウサイズの概要</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::GetVirtualSize" ref="a2628c6f1f4aecb790f0c86622ebf4d56" args="(int *width, int *height) const " -->
@@ -4451,8 +4451,8 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Invokes the constraint-based layout algorithm or the sizer-based algorithm for this window.  </p>
-<p>This function does not get called automatically when the window is resized because lots of windows deriving from <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> does not need this functionality. If you want to have <a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113" title="Invokes the constraint-based layout algorithm or the sizer-based algorithm for this window...">Layout()</a> called automatically, you should derive from <a class="el" href="classwx_panel.html" title="A panel is a window on which controls are placed.">wxPanel</a> (see <a class="el" href="classwx_panel.html#a6ded9b75baf21e2c9f5496f746b68bf0" title="See wxWindow::SetAutoLayout(): when auto layout is on, this function gets called automatically when t...">wxPanel::Layout</a>).</p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
+<p>This function does not get called automatically when the window is resized because lots of windows deriving from <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> does not need this functionality. If you want to have <a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113" title="このウィンドウに対して、制約に基づく配置アルゴリズムか、サイザーに基づくアルゴリズムを実行します。">Layout()</a> called automatically, you should derive from <a class="el" href="classwx_panel.html" title="A panel is a window on which controls are placed.">wxPanel</a> (see <a class="el" href="classwx_panel.html#a6ded9b75baf21e2c9f5496f746b68bf0" title="See wxWindow::SetAutoLayout(): when auto layout is on, this function gets called automatically when t...">wxPanel::Layout</a>).</p>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowsizing.html">ウィンドウサイズの概要</a> </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classwx_panel.html#a6ded9b75baf21e2c9f5496f746b68bf0">wxPanel</a>, and <a class="el" href="classwx_top_level_window.html#adfe7e3f4a32f3ed178968f64431bbfe0">wxTopLevelWindow</a>.</p>
 
@@ -5426,7 +5426,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Scrolls the window by the given number of lines down (if <em>lines</em> is positive) or up.  </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns <span class="literal">true</span> if the window was scrolled, <span class="literal">false</span> if it was already on top/bottom and nothing was done.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This function is currently only implemented under MSW and <a class="el" href="classwx_text_ctrl.html" title="テキストの表示と編集が可能なテキストコントロール。">wxTextCtrl</a> under wxGTK (it also works for <a class="el" href="classwx_scrolled.html" title="The wxScrolled class manages scrolling for its client area, transforming the coordinates according to...">wxScrolled</a> classes under all platforms).</dd></dl>
+<dl class="remark"><dt><b>Remarks:</b></dt><dd>This function is currently only implemented under MSW and <a class="el" href="classwx_text_ctrl.html" title="テキストの表示と編集が可能なテキストコントロール。">wxTextCtrl</a> under wxGTK (it also works for <a class="el" href="classwx_scrolled.html" title="wxScrolled クラスはクライアントエリアのスクロール、スクロールバーの位置に合わせた座標の変換、表示領域にあわせたスクロール位置やつまみのサイズの設定といったことの管理を行います。">wxScrolled</a> classes under all platforms).</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#adc0ed5e1c4925223cb901ced14b8343d" title="Scrolls the window by the given number of pages down (if pages is positive) or up.">ScrollPages()</a> </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classwx_ribbon_gallery.html#a1fda9962ce07f5924cd4cc80cdc70d33">wxRibbonGallery</a>, and <a class="el" href="classwx_ribbon_page.html#a6c716e621f9452cbcaedce810974a751">wxRibbonPage</a>.</p>
@@ -5495,7 +5495,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Note that you can often use <a class="el" href="classwx_scrolled.html" title="The wxScrolled class manages scrolling for its client area, transforming the coordinates according to...">wxScrolled</a> instead of using this function directly.  </dd></dl>
+<dl class="remark"><dt><b>Remarks:</b></dt><dd>Note that you can often use <a class="el" href="classwx_scrolled.html" title="wxScrolled クラスはクライアントエリアのスクロール、スクロールバーの位置に合わせた座標の変換、表示領域にあわせたスクロール位置やつまみのサイズの設定といったことの管理を行います。">wxScrolled</a> instead of using this function directly.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::SendDestroyEvent" ref="a7e21eb6a0819281b29134a6432d064fe" args="()" -->
@@ -5534,7 +5534,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>This function sends a dummy <a class="el" href="classwx_size_event.html">size event</a> to the window allowing it to re-layout its children positions.  </p>
-<p>It is sometimes useful to call this function after adding or deleting a children after the frame creation or if a child size changes. Note that if the frame is using either sizers or constraints for the children layout, it is enough to call <a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113" title="Invokes the constraint-based layout algorithm or the sizer-based algorithm for this window...">wxWindow::Layout()</a> directly and this function should not be used in this case.</p>
+<p>It is sometimes useful to call this function after adding or deleting a children after the frame creation or if a child size changes. Note that if the frame is using either sizers or constraints for the children layout, it is enough to call <a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113" title="このウィンドウに対して、制約に基づく配置アルゴリズムか、サイザーに基づくアルゴリズムを実行します。">wxWindow::Layout()</a> directly and this function should not be used in this case.</p>
 <p>If <em>flags</em> includes <code>wxSEND_EVENT_POST</code> value, this function posts the event, i.e. schedules it for later processing, instead of dispatching it directly. You can also use <a class="el" href="classwx_window.html#ab1943463e6661f97e072b43337c6cc09" title="Posts a size event to the window.">PostSizeEvent()</a> as a more readable equivalent of calling this function with this flag.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -5627,11 +5627,11 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Determines whether the <a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113" title="Invokes the constraint-based layout algorithm or the sizer-based algorithm for this window...">Layout()</a> function will be called automatically when the window is resized.  </p>
+<p>Determines whether the <a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113" title="このウィンドウに対して、制約に基づく配置アルゴリズムか、サイザーに基づくアルゴリズムを実行します。">Layout()</a> function will be called automatically when the window is resized.  </p>
 <p>This method is called implicitly by <a class="el" href="classwx_window.html#abc95691b45e29a52c24aa9d33d46dec1" title="Sets the window to have the given layout sizer.">SetSizer()</a> but if you use <a class="el" href="classwx_window.html#afa75d111bbd9a68f837101a5fbed60a7" title="Sets the window to have the given layout constraints.">SetConstraints()</a> you should call it manually or otherwise the window layout won't be correctly updated when its size changes.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">autoLayout</td><td>Set this to <span class="literal">true</span> if you wish the <a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113" title="Invokes the constraint-based layout algorithm or the sizer-based algorithm for this window...">Layout()</a> function to be called automatically when the window is resized.</td></tr>
+    <tr><td class="paramname">autoLayout</td><td>Set this to <span class="literal">true</span> if you wish the <a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113" title="このウィンドウに対して、制約に基づく配置アルゴリズムか、サイザーに基づくアルゴリズムを実行します。">Layout()</a> function to be called automatically when the window is resized.</td></tr>
   </table>
   </dd>
 </dl>
@@ -5813,7 +5813,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>This sets the size of the window client area in pixels.  </p>
 <p>Using this function to size a window tends to be more device-independent than <a class="el" href="classwx_window.html#a180312d5ad4a4a5ad805b8d52d67a74e" title="ピクセル単位でウィンドウサイズを設定します。">SetSize()</a>, since the application need not worry about what dimensions the border or title bar have when trying to fit the window around panel items, for example.</p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowsizing.html">ウィンドウサイズの概要</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::SetConstraints" ref="afa75d111bbd9a68f837101a5fbed60a7" args="(wxLayoutConstraints *constraints)" -->
@@ -5840,7 +5840,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>You must call <a class="el" href="classwx_window.html#ad369fe1db5c20f9d9edff7b5eb1f7226" title="Determines whether the Layout() function will be called automatically when the window is resized...">SetAutoLayout()</a> to tell a window to use the constraints automatically in OnSize; otherwise, you must override OnSize and call <a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113" title="Invokes the constraint-based layout algorithm or the sizer-based algorithm for this window...">Layout()</a> explicitly. When setting both a <a class="el" href="classwx_layout_constraints.html">wxLayoutConstraints</a> and a <a class="el" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a>, only the sizer will have effect.  </dd></dl>
+<dl class="remark"><dt><b>Remarks:</b></dt><dd>You must call <a class="el" href="classwx_window.html#ad369fe1db5c20f9d9edff7b5eb1f7226" title="Determines whether the Layout() function will be called automatically when the window is resized...">SetAutoLayout()</a> to tell a window to use the constraints automatically in OnSize; otherwise, you must override OnSize and call <a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113" title="このウィンドウに対して、制約に基づく配置アルゴリズムか、サイザーに基づくアルゴリズムを実行します。">Layout()</a> explicitly. When setting both a <a class="el" href="classwx_layout_constraints.html">wxLayoutConstraints</a> and a <a class="el" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a>, only the sizer will have effect.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::SetContainingSizer" ref="a0ccf78fe06722b500adfb7f36b8ce443" args="(wxSizer *sizer)" -->
@@ -6139,7 +6139,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Sets the initial window size if none is given (i.e.  </p>
 <p>at least one of the components of the size passed to ctor/Create() is wxDefaultCoord).  </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000068">Deprecated:</a></b></dt><dd>Use <a class="el" href="classwx_window.html#a1b309ca50ba87e34f968c83b79af1397" title="A smart SetSize that will fill in default size components with the window's best size values...">SetInitialSize()</a> instead.  </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000068">Deprecated:</a></b></dt><dd>Use <a class="el" href="classwx_window.html#a1b309ca50ba87e34f968c83b79af1397" title="デフォルトサイズをウィンドウの最適サイズの値で補う、賢い SetSize。">SetInitialSize()</a> instead.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::SetInitialSize" ref="a1b309ca50ba87e34f968c83b79af1397" args="(const wxSize &amp;size=wxDefaultSize)" -->
@@ -6161,7 +6161,7 @@ Protected Member Functions</h2></td></tr>
 <p>A <em>smart</em> SetSize that will fill in default size components with the window's <em>best</em> size values.  </p>
 <p>Also sets the window's minsize to the value passed in for use with sizers. This means that if a full or partial size is passed to this function then the sizers will use that size instead of the results of <a class="el" href="classwx_window.html#a7e64b9380374e5681f146e9e319e35e3" title="This functions returns the best acceptable minimal size for the window.">GetBestSize()</a> to determine the minimum needs of the window for layout.</p>
 <p>Most controls will use this to set their initial size, and their min size to the passed in value (if any.)</p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a180312d5ad4a4a5ad805b8d52d67a74e" title="ピクセル単位でウィンドウサイズを設定します。">SetSize()</a>, <a class="el" href="classwx_window.html#a7e64b9380374e5681f146e9e319e35e3" title="This functions returns the best acceptable minimal size for the window.">GetBestSize()</a>, <a class="el" href="classwx_window.html#a1a54fcda8d52986482e030bd54739e9f" title="Merges the window's best size into the min size and returns the result.">GetEffectiveMinSize()</a>, <a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a180312d5ad4a4a5ad805b8d52d67a74e" title="ピクセル単位でウィンドウサイズを設定します。">SetSize()</a>, <a class="el" href="classwx_window.html#a7e64b9380374e5681f146e9e319e35e3" title="This functions returns the best acceptable minimal size for the window.">GetBestSize()</a>, <a class="el" href="classwx_window.html#a1a54fcda8d52986482e030bd54739e9f" title="ウィンドウの最適サイズを最小サイズにマージし、その結果を返却します。">GetEffectiveMinSize()</a>, <a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::SetLabel" ref="aa00ffea9f53587f29ae343adde033b8e" args="(const wxString &amp;label)" -->
@@ -6229,8 +6229,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>Sets the maximum client size of the window, to indicate to the sizer layout mechanism that this is the maximum possible size of its client area.  </p>
 <p>Note that this method is just a shortcut for:  </p>
-<div class="fragment"><pre class="fragment">        <a class="code" href="classwx_window.html#a38b496214d728a3212afadee5ed51606" title="Sets the maximum size of the window, to indicate to the sizer layout mechanism that this is the maxim...">SetMaxSize</a>(<a class="code" href="classwx_window.html#a693fffbbb7ad5f36a5f442703396dafa" title="Converts client area size size to corresponding window size.">ClientToWindowSize</a>(size));
-</pre></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a38b496214d728a3212afadee5ed51606" title="Sets the maximum size of the window, to indicate to the sizer layout mechanism that this is the maxim...">SetMaxSize()</a>, <a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
+<div class="fragment"><pre class="fragment">        <a class="code" href="classwx_window.html#a38b496214d728a3212afadee5ed51606" title="ウィンドウの最大サイズを設定し、これが取りうる最大のサイズであることをサイザーへ示します。">SetMaxSize</a>(<a class="code" href="classwx_window.html#a693fffbbb7ad5f36a5f442703396dafa" title="Converts client area size size to corresponding window size.">ClientToWindowSize</a>(size));
+</pre></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a38b496214d728a3212afadee5ed51606" title="ウィンドウの最大サイズを設定し、これが取りうる最大のサイズであることをサイザーへ示します。">SetMaxSize()</a>, <a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::SetMaxSize" ref="a38b496214d728a3212afadee5ed51606" args="(const wxSize &amp;size)" -->
@@ -6273,10 +6273,10 @@ Protected Member Functions</h2></td></tr>
 
 <p>Sets the minimum client size of the window, to indicate to the sizer layout mechanism that this is the minimum required size of window's client area.  </p>
 <p>You may need to call this if you change the window size after construction and before adding to its parent sizer.</p>
-<p>Note, that just as with <a class="el" href="classwx_window.html#a3fc066f4d8083319f004ac43811d545d" title="Sets the minimum size of the window, to indicate to the sizer layout mechanism that this is the minim...">SetMinSize()</a>, calling this method doesn't prevent the program from explicitly making the window smaller than the specified size.</p>
+<p>Note, that just as with <a class="el" href="classwx_window.html#a3fc066f4d8083319f004ac43811d545d" title="ウィンドウの最小サイズを設定し、これが最小の要求サイズであることをサイザーへ示します。">SetMinSize()</a>, calling this method doesn't prevent the program from explicitly making the window smaller than the specified size.</p>
 <p>Note that this method is just a shortcut for:  </p>
-<div class="fragment"><pre class="fragment">        <a class="code" href="classwx_window.html#a3fc066f4d8083319f004ac43811d545d" title="Sets the minimum size of the window, to indicate to the sizer layout mechanism that this is the minim...">SetMinSize</a>(<a class="code" href="classwx_window.html#a693fffbbb7ad5f36a5f442703396dafa" title="Converts client area size size to corresponding window size.">ClientToWindowSize</a>(size));
-</pre></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a3fc066f4d8083319f004ac43811d545d" title="Sets the minimum size of the window, to indicate to the sizer layout mechanism that this is the minim...">SetMinSize()</a>, <a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
+<div class="fragment"><pre class="fragment">        <a class="code" href="classwx_window.html#a3fc066f4d8083319f004ac43811d545d" title="ウィンドウの最小サイズを設定し、これが最小の要求サイズであることをサイザーへ示します。">SetMinSize</a>(<a class="code" href="classwx_window.html#a693fffbbb7ad5f36a5f442703396dafa" title="Converts client area size size to corresponding window size.">ClientToWindowSize</a>(size));
+</pre></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a3fc066f4d8083319f004ac43811d545d" title="ウィンドウの最小サイズを設定し、これが最小の要求サイズであることをサイザーへ示します。">SetMinSize()</a>, <a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::SetMinSize" ref="a3fc066f4d8083319f004ac43811d545d" args="(const wxSize &amp;size)" -->
@@ -6527,7 +6527,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="remark"><dt><b>Remarks:</b></dt><dd>Let's say you wish to display 50 lines of text, using the same font. The window is sized so that you can only see 16 lines at a time. You would use:  <div class="fragment"><pre class="fragment">            <a class="code" href="classwx_window.html#aa842d59529f873683e55cd8392ec46e9" title="Sets the scrollbar properties of a built-in scrollbar.">SetScrollbar</a>(<a class="code" href="defs_8h.html#a1e6994f40bd9cb140e292afb165af971a2134d1cb8cf605532880c118190695b5">wxVERTICAL</a>, 0, 16, 50);
 </pre></div>  Note that with the window at this size, the thumb position can never go above 50 minus 16, or 34. You can determine how many lines are currently visible by dividing the current view size by the character height in pixels. When defining your own scrollbar behaviour, you will always need to recalculate the scrollbar settings when the window size changes. You could therefore put your scrollbar calculations and SetScrollbar call into a function named AdjustScrollbars, which can be called initially and also from your <a class="el" href="classwx_size_event.html" title="リサイズイベントは wxWindow のサイズ変更イベントに関する情報を保持します。">wxSizeEvent</a> handler function.</dd></dl>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_scrolling.html">Scrolled Windows</a>, <a class="el" href="classwx_scroll_bar.html" title="A wxScrollBar is a control that represents a horizontal or vertical scrollbar.">wxScrollBar</a>, <a class="el" href="classwx_scrolled.html" title="The wxScrolled class manages scrolling for its client area, transforming the coordinates according to...">wxScrolled</a>, <a class="el" href="classwx_scroll_win_event.html" title="A scroll event holds information about events sent from scrolling windows.">wxScrollWinEvent</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_scrolling.html">Scrolled Windows</a>, <a class="el" href="classwx_scroll_bar.html" title="A wxScrollBar is a control that represents a horizontal or vertical scrollbar.">wxScrollBar</a>, <a class="el" href="classwx_scrolled.html" title="wxScrolled クラスはクライアントエリアのスクロール、スクロールバーの位置に合わせた座標の変換、表示領域にあわせたスクロール位置やつまみのサイズの設定といったことの管理を行います。">wxScrolled</a>, <a class="el" href="classwx_scroll_win_event.html" title="A scroll event holds information about events sent from scrolling windows.">wxScrollWinEvent</a> </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classwx_scroll_bar.html#ae69c239fd6af4ebcabf46efa9fc5092e">wxScrollBar</a>.</p>
 
@@ -6574,7 +6574,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="remark"><dt><b>Remarks:</b></dt><dd>This function does not directly affect the contents of the window: it is up to the application to take note of scrollbar attributes and redraw contents accordingly.</dd></dl>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#aa842d59529f873683e55cd8392ec46e9" title="Sets the scrollbar properties of a built-in scrollbar.">SetScrollbar()</a>, <a class="el" href="classwx_window.html#a3e23d10c17943fd873d0acb472db0caa" title="Returns the built-in scrollbar position.">GetScrollPos()</a>, <a class="el" href="classwx_window.html#a10d24c60525a1c612cd775fc44dd1953" title="Returns the built-in scrollbar thumb size.">GetScrollThumb()</a>, <a class="el" href="classwx_scroll_bar.html" title="A wxScrollBar is a control that represents a horizontal or vertical scrollbar.">wxScrollBar</a>, <a class="el" href="classwx_scrolled.html" title="The wxScrolled class manages scrolling for its client area, transforming the coordinates according to...">wxScrolled</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#aa842d59529f873683e55cd8392ec46e9" title="Sets the scrollbar properties of a built-in scrollbar.">SetScrollbar()</a>, <a class="el" href="classwx_window.html#a3e23d10c17943fd873d0acb472db0caa" title="Returns the built-in scrollbar position.">GetScrollPos()</a>, <a class="el" href="classwx_window.html#a10d24c60525a1c612cd775fc44dd1953" title="Returns the built-in scrollbar thumb size.">GetScrollThumb()</a>, <a class="el" href="classwx_scroll_bar.html" title="A wxScrollBar is a control that represents a horizontal or vertical scrollbar.">wxScrollBar</a>, <a class="el" href="classwx_scrolled.html" title="wxScrolled クラスはクライアントエリアのスクロール、スクロールバーの位置に合わせた座標の変換、表示領域にあわせたスクロール位置やつまみのサイズの設定といったことの管理を行います。">wxScrolled</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::SetSize" ref="a180312d5ad4a4a5ad805b8d52d67a74e" args="(int x, int y, int width, int height, int sizeFlags=wxSIZE_AUTO)" -->
@@ -6747,7 +6747,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Use of this function for windows which are not toplevel windows (such as <a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> or <a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a>) is discouraged.  </p>
-<p>Please use <a class="el" href="classwx_window.html#a3fc066f4d8083319f004ac43811d545d" title="Sets the minimum size of the window, to indicate to the sizer layout mechanism that this is the minim...">SetMinSize()</a> and <a class="el" href="classwx_window.html#a38b496214d728a3212afadee5ed51606" title="Sets the maximum size of the window, to indicate to the sizer layout mechanism that this is the maxim...">SetMaxSize()</a> instead.</p>
+<p>Please use <a class="el" href="classwx_window.html#a3fc066f4d8083319f004ac43811d545d" title="ウィンドウの最小サイズを設定し、これが最小の要求サイズであることをサイザーへ示します。">SetMinSize()</a> and <a class="el" href="classwx_window.html#a38b496214d728a3212afadee5ed51606" title="ウィンドウの最大サイズを設定し、これが取りうる最大のサイズであることをサイザーへ示します。">SetMaxSize()</a> instead.</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_top_level_window.html#ac01a45e5d82e4e3be22a4841c1217e11" title="Allows specification of minimum and maximum window sizes, and window size increments.">wxTopLevelWindow::SetSizeHints</a>, <a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classwx_top_level_window.html#a4ddaae1bebf05a2bc474a192a5b30e42">wxTopLevelWindow</a>.</p>
@@ -7027,7 +7027,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Sets the virtual size of the window in pixels.  </p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowsizing.html">ウィンドウサイズの概要</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::SetWindowStyle" ref="a306af30adec68689f74ed537b4f9d5fd" args="(long style)" -->
