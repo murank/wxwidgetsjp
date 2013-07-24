@@ -1507,6 +1507,22 @@ printf(&lt;s1&gt;"Data: %s\n"&lt;/s1&gt;, (&lt;s2&gt;const&lt;/s2&gt; &lt;s3&gt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxSizer::Fit()&lt;/a0&gt;: this sets the size of the window to be large enough to accommodate the minimum size needed by the sizer, (along with a few other constraints...).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T155600Z">
+        <seg>&lt;a0&gt;wxSizer::Fit()&lt;/a0&gt;: これは (他のいくつかの制約とあわせて) サイザーの要求する最小サイズを充分満たすようにウィンドウサイズを設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxSizer::Layout()&lt;/a0&gt;: recalculates the minimum space needed by each item in the sizer, and then lays out the items within the space currently allotted to the sizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T155831Z">
+        <seg>&lt;a0&gt;wxSizer::Layout()&lt;/a0&gt;: サイザー内の各要素が必要とする最小サイズを再計算し、現在サイザーに割り当てられているスペース内に各要素を配置します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;wxSizer&lt;/a0&gt;, &lt;a1&gt;Sizer overview&lt;/a1&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T145922Z">
@@ -1745,6 +1761,14 @@ printf(&lt;s1&gt;"Data: %s\n"&lt;/s1&gt;, (&lt;s2&gt;const&lt;/s2&gt; &lt;s3&gt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxWindow::Fit()&lt;/a0&gt;: this method sets the size of a window to fit around its children.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T154758Z">
+        <seg>&lt;a0&gt;wxWindow::Fit()&lt;/a0&gt;: この関数は子コントロールにフィットするようにウィンドウのサイズを設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;wxWindow::Freeze&lt;/a0&gt;/Thaw() are not virtual any more, if you overrode them in your code you need to override DoFreeze/Thaw() instead now.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130619T152121Z">
@@ -1753,10 +1777,34 @@ printf(&lt;s1&gt;"Data: %s\n"&lt;/s1&gt;, (&lt;s2&gt;const&lt;/s2&gt; &lt;s3&gt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxWindow::GetEffectiveMinSize()&lt;/a0&gt;: returns a blending of the widget's minimal size and best size, giving precedence to the minimal size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T154325Z">
+        <seg>&lt;a0&gt;wxWindow::GetEffectiveMinSize()&lt;/a0&gt;: ウィジェットの最小サイズと最適サイズを混ぜあわせたものを返却します。このサイズは最小サイズよりも優先されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;wxWindow::IsEnabled()&lt;/a0&gt; now returns false if a window parent (and not necessarily the window itself) is disabled, new function IsThisEnabled() with the same behaviour as old IsEnabled() was added.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130619T144713Z">
         <seg>&lt;a0&gt;wxWindow::IsEnabled()&lt;/a0&gt; はウィンドウの親 (ウィンドウ自身である必要はありません) が無効化されている場合に false を返却するようになりました。そのため、以前の IsEnabled() と同じ振る舞いをする新しい関数 IsThisEnabled() が追加されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxWindow::Layout()&lt;/a0&gt;: if the window has a sizer then it sets the space given to the sizer to the current size of the window, which results in a call to &lt;a1&gt;wxSizer::Layout()&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T160130Z">
+        <seg>&lt;a0&gt;wxWindow::Layout()&lt;/a0&gt;: ウィンドウがサイザーを持つ場合に、現在のウィンドウサイズにあわせてサイザーが利用可能なスペースを設定します。これにより &lt;a1&gt;wxSizer::Layout()&lt;/a1&gt; が呼び出されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxWindow::SetInitialSize()&lt;/a0&gt;: this is a little different than the typical size setters.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T154549Z">
+        <seg>&lt;a0&gt;wxWindow::SetInitialSize()&lt;/a0&gt;: これは通常のサイズ設定関数とは少しだけ異なります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2325,6 +2373,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a4&gt;Window sizing&lt;/a4&gt;&lt;br5&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T154032Z">
+        <seg>&lt;a4&gt;ウインドウのサイズ&lt;/a4&gt;&lt;br5&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a4&gt;wxBoxSizer::CalcMin&lt;/a4&gt;&lt;br5&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T145926Z">
@@ -2645,6 +2701,70 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;b0&gt;"Best Client Size"&lt;/b0&gt;: this is simply the client size corresponding to the best window size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T145347Z">
+        <seg>&lt;b0&gt;"最適クライアントサイズ"&lt;/b0&gt;: これは単に最適ウィンドウサイズのクライアントサイズ版です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;"Best Size"&lt;/b0&gt;: the best size of a widget depends on what kind of widget it is, and usually also on the contents of the widget.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T144818Z">
+        <seg>&lt;b0&gt;"最適サイズ"&lt;/b0&gt;: ウィジェットの最適サイズはウィジェットの種類と、通常はウィジェットの内容物に依存します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;"Client Size"&lt;/b0&gt;: the client size represents the widget's area inside of any borders belonging to the widget and is the area that can be drawn upon in a &lt;c1&gt;EVT_PAINT&lt;/c1&gt; event.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T144135Z">
+        <seg>&lt;b0&gt;"クライアントサイズ"&lt;/b0&gt;: クライアントサイズはボーダーの内側の領域を表しており、この領域は &lt;c1&gt;EVT_PAINT&lt;/c1&gt; イベントで描画できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;"Initial Size"&lt;/b0&gt;: the initial size of a widget is the size given to the constructor of the widget, if any.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T152101Z">
+        <seg>&lt;b0&gt;"初期サイズ"&lt;/b0&gt;: ウィジェットの初期サイズはウィジェットのコンストラクタで指定されたサイズのことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;"Maximum Size"&lt;/b0&gt;: just like for the minimal size, the maximum size is normally explicitly set by the programmer with the &lt;a1&gt;wxWindow::SetMaxSize()&lt;/a1&gt; method or with &lt;a2&gt;wxWindow::SetSizeHints()&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T151959Z">
+        <seg>&lt;b0&gt;"最大サイズ"&lt;/b0&gt;: 最小サイズのように、最大サイズは通常、プログラマが &lt;a1&gt;wxWindow::SetMaxSize()&lt;/a1&gt; 関数か &lt;a2&gt;wxWindow::SetSizeHints()&lt;/a2&gt; 関数のどちらかを使用して明示的に設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;"Minimal Size"&lt;/b0&gt;: the minimal size of a widget is a size that is normally explicitly set by the programmer either with the &lt;a1&gt;wxWindow::SetMinSize()&lt;/a1&gt; method or with the &lt;a2&gt;wxWindow::SetSizeHints()&lt;/a2&gt; method.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T151459Z">
+        <seg>&lt;b0&gt;"最小サイズ"&lt;/b0&gt;: ウィジェットの最小サイズは通常、プログラマが &lt;a1&gt;wxWindow::SetMinSize()&lt;/a1&gt; 関数か &lt;a2&gt;wxWindow::SetSizeHints()&lt;/a2&gt; 関数のどちらかを使用して明示的に設定するサイズです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;"Size"&lt;/b0&gt;: this is the current size of the window and it can be explicitly set or fetched with the &lt;a1&gt;wxWindow::SetSize()&lt;/a1&gt; or &lt;a2&gt;wxWindow::GetSize()&lt;/a2&gt; methods.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T144044Z">
+        <seg>&lt;b0&gt;"サイズ"&lt;/b0&gt;: これはウィンドウの現在のサイズで、&lt;a1&gt;SetSize()&lt;/a1&gt; 関数や &lt;a2&gt;GetSize()&lt;/a2&gt; 関数で明示的に設定・取得することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;"Virtual Size"&lt;/b0&gt;: the virtual size is the size of the potentially viewable area of the widget.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T153457Z">
+        <seg>&lt;b0&gt;"仮想サイズ"&lt;/b0&gt;: 仮想サイズはウィジェットで潜在的に表示可能な領域のサイズのことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;b0&gt;&lt;a1&gt;wxClientDC&lt;/a1&gt;&lt;/b0&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T154030Z">
@@ -2749,6 +2869,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;b0&gt;BestSize&lt;/b0&gt;: The best size of a widget depends on what kind of widget it is, and usually also on the contents of the widget.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T154825Z">
+        <seg>&lt;b0&gt;最適サイズ&lt;/b0&gt;: ウィジェットの最適サイズはウィジェットの種類と、通常はウィジェットの内容物に依存します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;ClientSize&lt;/b0&gt;: The client size represents the widget's area inside of any borders belonging to the widget and is the area that can be drawn upon in a &lt;t1&gt;EVT_PAINT&lt;/t1&gt; event.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T150512Z">
+        <seg>&lt;b0&gt;クライアントサイズ&lt;/b0&gt;: クライアントサイズはボーダーの内側の領域を表しており、この領域は &lt;t1&gt;EVT_PAINT&lt;/t1&gt; イベントで描画できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;b0&gt;Completeness:&lt;/b0&gt; Usually, an error message should be presented to the user when some operation fails.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T091816Z">
@@ -2777,6 +2913,30 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T090235Z">
         <seg>&lt;b0&gt;柔軟性&lt;/b0&gt; wxLog 関数の出力はその重要度に応じてリダイレクトしたり抑制したりできます。これは従来の関数では不可能、もしくは困難なことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;GetEffectiveMinSize()&lt;/b0&gt;: (formerly &lt;t1&gt;GetBestFittingSize&lt;/t1&gt;) A blending of the widget's min size and best size, giving precedence to the min size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T142850Z">
+        <seg>&lt;b0&gt;GetEffectiveMinSize()&lt;/b0&gt;: (以前は &lt;t1&gt;GetBestFittingSize&lt;/t1&gt; でした) ウィジェットの最小サイズと最適サイズを混ぜあわせたもので、最小サイズよりも優先されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;InitialSize&lt;/b0&gt;: The initial size of a widget is the size given to the constructor of the widget, if any.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T150639Z">
+        <seg>&lt;b0&gt;初期サイズ&lt;/b0&gt;: ウィジェットの初期サイズはウィジェットのコンストラクタで指定されたサイズのことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;MinSize&lt;/b0&gt;: The min size of a widget is a size that is normally explicitly set by the programmer either with the &lt;t1&gt;SetMinSize()&lt;/t1&gt; method or the &lt;t2&gt;SetSizeHints()&lt;/t2&gt; method.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T160016Z">
+        <seg>&lt;b0&gt;最小サイズ&lt;/b0&gt;: ウィジェットの最小サイズは通常、プログラマが &lt;t1&gt;SetMinSize()&lt;/t1&gt; 関数か &lt;t2&gt;SetSizeHints()&lt;/t2&gt; 関数のどちらかを使用して明示的に設定するサイズです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2821,6 +2981,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;b0&gt;SetInitialSize(size)&lt;/b0&gt;: (formerly &lt;t1&gt;SetBestFittingSize&lt;/t1&gt;) This is a little different than the typical size setters.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T151718Z">
+        <seg>&lt;b0&gt;SetInitialSize(size)&lt;/b0&gt;: (以前は &lt;t1&gt;SetBestFittingSize&lt;/t1&gt; でした) これは通常のサイズ設定関数とは少しだけ異なります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;Size&lt;/b0&gt;: The size of a widget can be explicitly set or fetched with the &lt;t1&gt;SetSize()&lt;/t1&gt; or &lt;t2&gt;GetSize()&lt;/t2&gt; methods.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T150301Z">
+        <seg>&lt;b0&gt;サイズ&lt;/b0&gt;: ウィジェットのサイズは &lt;t1&gt;SetSize()&lt;/t1&gt; 関数や &lt;t2&gt;GetSize()&lt;/t2&gt; 関数で明示的に設定・取得することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;b0&gt;Warning:&lt;/b0&gt; gettext versions &lt; 0.10 are known to be buggy, so you should find a later version of it!</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130502T160602Z">
@@ -2837,10 +3013,42 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;b0&gt;sizer.Fit(window)&lt;/b0&gt;: This sets the size of the window to be large enough to accommodate the minimum size needed by the sizer, (along with a few other constraints...) If the sizer is the one that is assigned to the window then this should be equivalent to &lt;t1&gt;window.Fit()&lt;/t1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T152651Z">
+        <seg>&lt;b0&gt;sizer.Fit(window)&lt;/b0&gt;: これは (他のいくつかの制約とあわせて) サイザーの要求する最小サイズを充分満たすようにウィンドウサイズを設定します。ウィンドウに割り当てられているサイザーがひとつだけの場合は &lt;t1&gt;window.Fit()&lt;/t1&gt; と等価になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;sizer.Layout()&lt;/b0&gt;: Recalculates the minimum space needed by each item in the sizer, and then lays out the items within the space currently allotted to the sizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T152814Z">
+        <seg>&lt;b0&gt;sizer.Layout()&lt;/b0&gt;: サイザー内の各要素が必要とする最小サイズを再計算し、現在サイザーに割り当てられているスペース内に各要素を配置します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;b0&gt;void&lt;/b0&gt; &lt;b1&gt;RecalcSizes&lt;/b1&gt;()</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T150049Z">
         <seg>&lt;b0&gt;void&lt;/b0&gt; &lt;b1&gt;RecalcSizes&lt;/b1&gt;()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;window.Fit()&lt;/b0&gt;: The &lt;t1&gt;Fit()&lt;/t1&gt; method sets the size of a window to fit around its children.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T152136Z">
+        <seg>&lt;b0&gt;window.Fit()&lt;/b0&gt;: &lt;t1&gt;Fit()&lt;/t1&gt; 関数は子コントロールにフィットするようにウィンドウのサイズを設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;window.Layout()&lt;/b0&gt;: If the window has a sizer then it sets the space given to the sizer to the current size of the window, which results in a call to &lt;t1&gt;sizer.Layout()&lt;/t1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T143548Z">
+        <seg>&lt;b0&gt;window.Layout()&lt;/b0&gt;: ウィンドウがサイザーを持つ場合に、現在のウィンドウサイズにあわせてサイザーが利用可能なスペースを設定します。これにより &lt;t1&gt;sizer.Layout()&lt;/t1&gt; が呼び出されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4625,6 +4833,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A smart SetSize that will fill in default size components with the window's best size values...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T154525Z">
+        <seg>デフォルトサイズをウィンドウの最適サイズの値で補う、賢い SetSize。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A special version of wxLogChain which uses itself as the new log target.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T130639Z">
@@ -5585,6 +5801,22 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As mentioned above most controls will also set this size value as the control's min size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T150923Z">
+        <seg>上で述べたように、ほとんどのコントロールではこのサイズがコントロールの最小サイズとしても使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As mentioned above most controls will also set this size value as the control's minimal size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T152221Z">
+        <seg>上で述べたように、ほとんどのコントロールではこのサイズがコントロールの最小サイズとしても使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As mentioned above, any window belonging to a sizer may have a border, and it can be specified which of the four sides may have this border, using the wxTOP, wxLEFT, wxRIGHT and wxBOTTOM constants or wxALL for all directions (and you may also use wxNORTH, wxWEST etc instead).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T141926Z">
@@ -6209,6 +6441,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130620T124624Z">
         <seg>異なるウィンドウ (同じウィンドウではありません) 上の wxScrolled を実際にスクロールさせるためにはこの関数を呼び出してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Call this to force layout of the children anew, e.g.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T155808Z">
+        <seg>強制的に子コントロールの再配置するときにこの関数を呼んでください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7859,6 +8099,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For &lt;a2&gt;wxFrame&lt;/a2&gt;, the client size also excludes the frame menu, tool and status bars, if any.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T144549Z">
+        <seg>&lt;a2&gt;wxFrame&lt;/a2&gt; の場合、クライアントサイズにはフレームメニュー、ツールバー、ステータスバーも含まれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For a set of dialog convenience functions, including file selection, see &lt;a0&gt;Dialog functions&lt;/a0&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130531T150652Z">
@@ -7931,10 +8179,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example a &lt;a1&gt;wxListBox&lt;/a1&gt;'s best size will be calculated based on how many items it has, up to a certain limit, or a &lt;a2&gt;wxButton&lt;/a2&gt;'s best size will be calculated based on its label size, but normally won't be smaller than the platform default button size (unless a style flag overrides that).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T142130Z">
+        <seg>例えば &lt;a1&gt;wxListBox&lt;/a1&gt; の最適サイズは特定の上限までの間でアイテム数に応じて計算されます。また、&lt;a2&gt;wxButton&lt;/a2&gt; の最適サイズはラベルのサイズに応じて計算されますが、(スタイルフラグで上書きしない限り) 通常はプラットフォームのデフォルトのボタンサイズより小さくなることはありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example a typical loop:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T151546Z">
         <seg>例えば典型的なループである、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example a wxListBox's best size will be calculated based on how many items it has, up to a certain limit, or a wxButton's best size will be calculated based on its label size, but normally won't be smaller than the platform default button size (unless a style flag overrides that).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T144853Z">
+        <seg>例えば wxListBox の最適サイズは特定の上限までの間でアイテム数に応じて計算されます。また、wxButton の最適サイズはラベルのサイズに応じて計算されますが、(スタイルフラグで上書きしない限り) 通常はプラットフォームのデフォルトのボタンサイズより小さくなることはありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7967,6 +8231,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130507T161205Z">
         <seg>例えば、ボタンクリック、リストボックスの選択、キー押下はすべて別々のイベント型のイベントを生成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, if a widget's min size is set to (150, -1) and the best size is (80, 22) then the best fitting size is (150, 22).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T142917Z">
+        <seg>例えば、ウィジェットの最小サイズが (150, -1)、最適サイズが (80, 22) の場合、最適フィットサイズは (150, 22) になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8171,6 +8443,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For this reason, it's preferable to override DoGetBestClientSize() and let DoGetBestSize() compute the full best size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130724T150338Z">
+        <seg>このため、DoGetBestClientSize() をオーバーライドする方がより望ましく、それに基づいて DoGetBestSize() が全体の最適サイズを計算するようにしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For this the &lt;a0&gt;wxLogChain&lt;/a0&gt; and &lt;a1&gt;wxLogPassThrough&lt;/a1&gt; can be used.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T030523Z">
@@ -8263,6 +8543,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130620T124849Z">
         <seg>指定されたメインウィンドウのサイズに対して、スクロール対象が使用可能なサイズを計算するために必ずオーバーライドする必要がある関数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Functions related to sizing</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T143841Z">
+        <seg>サイズ関連の関数</seg>
       </tuv>
     </tu>
     <tu>
@@ -8363,6 +8651,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Get the picture?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T142220Z">
+        <seg>分かりますか? </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>GetEventHandler()-&gt;ProcessEvent( event );
 }</seg>
       </tuv>
@@ -8401,6 +8697,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T092213Z">
         <seg>ロギングをグローバルに有効化、または無効化します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Glossary</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T143828Z">
+        <seg>用語集</seg>
       </tuv>
     </tu>
     <tu>
@@ -8765,10 +9069,34 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If a widget doesn't have a border then its client size is the same as its size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T150550Z">
+        <seg>ウィジェットがボーダーを持たない場合、クライアントサイズはウィジェットのサイズと同じ大きさになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a window doesn't have any border (and is not a &lt;a3&gt;wxFrame&lt;/a3&gt; with some bars) then its client size is the same as its size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T144724Z">
+        <seg>ウィンドウがボーダーを持たない場合 (そしてステータスバーなどを含む &lt;a3&gt;wxFrame&lt;/a3&gt; でない場合)、クライアントサイズはウィンドウのサイズと同じ大きさになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If instead you choose to use threads in your application, please read also the following sections of this overview.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130628T235106Z">
         <seg>代わりにスレッドを使用すると決めた場合、この概要の以降の章も参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If it has no children then nothing is done, if it does have children then the size of the window is set to the window's best size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T143247Z">
+        <seg>子コントロールを持たない場合は何も行いませんが、子コントロールを持つ場合はそのウィンドウの最適サイズにあわせてウィンドウサイズを設定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8901,6 +9229,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the min size is (50, 20) then the best fitting size is (50, 20).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T151537Z">
+        <seg>最小サイズが (50, 20) の場合は (50, 20) が最適フィットサイズになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the object is a &lt;a0&gt;wxWindow&lt;/a0&gt; and has an associated validator, &lt;a1&gt;wxValidator&lt;/a1&gt; gets a chance to process the event.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T032524Z">
@@ -8937,6 +9273,46 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T024038Z">
         <seg>(&lt;a0&gt;wxEvtHandler::SetEvtHandlerEnabled&lt;/a0&gt; を呼ぶことで) オブジェクトが無効化されている場合、(6) までスキップします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the size passed to the constructor is the default &lt;a1&gt;wxDefaultSize&lt;/a1&gt;, or if the size is not fully specified (such as &lt;a2&gt;wxSize&lt;/a2&gt;(150,-1)) then most controls will fill in the missing size components using the best size and will set the initial size of the control to the resulting size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T152527Z">
+        <seg>コンストラクタで指定された値がデフォルトの &lt;a1&gt;wxDefaultSize&lt;/a1&gt; の場合、もしくは (&lt;a2&gt;wxSize&lt;/a2&gt;(150,-1) といったように) 完全に指定されていない場合、ほとんどのコントロールでは足りない部分を最適サイズを使用して補完し、その結果を初期サイズとして設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the size passed to the constructor is the default &lt;t1&gt;wxDefaultSize&lt;/t1&gt;, or if the size is not fully specified (such as &lt;t2&gt;wxSize(150,-1)&lt;/t2&gt;) then most controls will fill in the missing size components using the best size and will set the initial size of the control to the resulting size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T142612Z">
+        <seg>コンストラクタで指定された値がデフォルトの &lt;t1&gt;wxDefaultSize&lt;/t1&gt; の場合、もしくは (&lt;t2&gt;wxSize(150,-1)&lt;/t2&gt; といったように) 完全に指定されていない場合、ほとんどのコントロールでは足りない部分を最適サイズを使用して補完し、その結果を初期サイズとして設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the sizer is the one that is assigned to the window then this should be equivalent to &lt;a1&gt;wxWindow::Fit()&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T155640Z">
+        <seg>ウィンドウに割り当てられているサイザーがひとつだけの場合は &lt;a1&gt;wxWindow::Fit()&lt;/a1&gt; と等価になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the window has a sizer then it is used to calculate the best size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T155525Z">
+        <seg>ウィンドウでサイザーが使用されていれば、それが最適サイズの計算に使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the window has layout constraints instead of a sizer then the constraints algorithm is run.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T143618Z">
+        <seg>ウィンドウがサイザーの代わりにレイアウト制約を使用している場合は制約アルゴリズムが実行されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9233,6 +9609,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130629T133138Z">
         <seg>&lt;a0&gt;wxHtmlHelpController&lt;/a0&gt; を使用しているのであれば何も問題ありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Implementation of GetBestSize() that can be overridden.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T144751Z">
+        <seg>オーバーライド可能な GetBestSize() の実装。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9789,6 +10173,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Invokes the constraint-based layout algorithm or the sizer-based algorithm for this window...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T160048Z">
+        <seg>このウィンドウに対して、制約に基づく配置アルゴリズムか、サイザーに基づくアルゴリズムを実行します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It also allows the direct binding of events to:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T000012Z">
@@ -9841,6 +10233,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T120718Z">
         <seg>MSW では &lt;c1&gt;setup.h&lt;/c1&gt; 内で明示的に 0 にセットするか、Unix では &lt;c2&gt;--disable-unicode&lt;/c2&gt; を使用することができますが、これは推奨しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It can sometimes be confusing to keep track of the various size-related attributes of a &lt;a0&gt;wxWindow&lt;/a0&gt;, how they relate to each other, and how they interact with sizers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T154525Z">
+        <seg>&lt;a0&gt;wxWindow&lt;/a0&gt; のサイズに関連する属性について、お互いの関係やサイザーとの関わりについて時どき混乱することがあるかと思います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10365,6 +10765,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Merges the window's best size into the min size and returns the result.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T153931Z">
+        <seg>ウィンドウの最適サイズを最小サイズにマージし、その結果を返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Message catalog resources category.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T041139Z">
@@ -10481,6 +10889,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T013138Z">
         <seg>くわえて、2 番目の形式では第一引数としてトレースマスクを指定できるため、生成されるメッセージの量をさらに制限することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Most controls will also set the min size to the size given in the control's constructor if a non-default value is passed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T160101Z">
+        <seg>また、大半のコントロールはコンストラクタにデフォルト値以外の値が指定された場合にそれを最小サイズとして設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Most controls will also set the minimal size to the size given in the control's constructor if a non-default value is passed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T151507Z">
+        <seg>また、大半のコントロールはコンストラクタにデフォルト値以外の値が指定された場合にそれを最小サイズとして設定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11319,6 +11743,38 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Otherwise if the window has children then the best size is set to be large enough to show all the children.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T155712Z">
+        <seg>そうでない場合、ウィンドウが子コントロールを持っていれば、すべての子コントロールを表示するのに充分な最適サイズが設定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Otherwise if the window has layout constraints then that is used to calculate the best size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T155605Z">
+        <seg>そうでない場合、ウィンドウでレイアウト制約が使用されていれば、それが最適サイズの計算に使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Otherwise if there are no children then the window's min size will be used for the best size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T155848Z">
+        <seg>そうでない場合、子コントロールが存在しないのであれば、ウィンドウの最小サイズが最適サイズに使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Otherwise if there is no min size set, then the current size is used for the best size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T155834Z">
+        <seg>そうでない場合、最小サイズが設定されていないのであれば、現在のサイズが最適サイズに使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Otherwise you can only use the global &lt;c0&gt;wxTheApp&lt;/c0&gt; pointer which is of type &lt;c1&gt;wxApp*&lt;/c1&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130528T152720Z">
@@ -11665,6 +12121,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Rather than just setting an "initial size" attribute it actually sets the minimal size to the value passed in, blends that value with the best size, and then sets the size of the widget to be the result.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T154612Z">
+        <seg>単に "初期サイズ" を設定するのではなく、引き渡された値を最小サイズに設定し、その値を最適サイズと混ぜあわせた上で、その結果をウィジェットのサイズとして設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Rather than just setting an "initial size" attribute it actually sets the minsize to the value passed in, blends that value with the best size, and then sets the size of the widget to be the result.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T151845Z">
+        <seg>単に "初期サイズ" を設定するのではなく、引き渡された値を最小サイズに設定し、その値を最適サイズと混ぜあわせた上で、その結果をウィジェットのサイズとして設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Read it if you want to know more about how to write programs able to work with characters from languages other than English.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T155422Z">
@@ -11769,6 +12241,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Returns the size of the entire window in pixels, including title bar, border, scrollbars, etc.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T143930Z">
+        <seg>タイトルバー、ボーダー、スクロールバーなどを含む、ウィンドウ全体のサイズをピクセル単位で返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Returns true if the dialog box is modal, false otherwise.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130624T153543Z">
@@ -11869,6 +12349,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T135238Z">
         <seg>ビットマップへの描画の例は &lt;a0&gt;wxMemoryDC&lt;/a0&gt; を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See &lt;a1&gt;wxScrolled&lt;/a1&gt; for more info.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T153904Z">
+        <seg>より詳しい情報は &lt;a1&gt;wxScrolled&lt;/a1&gt; を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12097,6 +12585,22 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Sets the maximum size of the window, to indicate to the sizer layout mechanism that this is the maxim...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T151620Z">
+        <seg>ウィンドウの最大サイズを設定し、これが取りうる最大のサイズであることをサイザーへ示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sets the minimum size of the window, to indicate to the sizer layout mechanism that this is the minim...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T150413Z">
+        <seg>ウィンドウの最小サイズを設定し、これが最小の要求サイズであることをサイザーへ示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Sets the new text control value.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130516T160428Z">
@@ -12313,6 +12817,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Sizes the window so that it fits around its subwindows.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T154723Z">
+        <seg>サブウィンドウにフィットするようにウィンドウのサイズを設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Small.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130610T150454Z">
@@ -12357,6 +12869,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T141338Z">
         <seg>そのため、wxWidgets 3.0 にアップグレードするときは既存のコードを見直す必要があるとともに、新しいコードではこのことを意識しつつ、理想的には &lt;c3&gt;char*&lt;/c3&gt; への暗黙的な変換を避けるようにするべきです。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So you can consider this method to be a "Smart SetSize".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T151912Z">
+        <seg>そのため、この関数を "賢い SetSize" と考えることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12593,6 +13113,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Tell the sizer to resize the window so that its client area matches the sizer's minimal size (Compute...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T155335Z">
+        <seg>ウィンドウをリサイズするようにサイザーへ通知し、クライアント領域がサイザーの最小サイズに合致するようにします。(サイズを決定するために ComputeFittingClientSize() が呼ばれます)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Test if this event should be propagated or not, i.e.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130513T154413Z">
@@ -12713,10 +13241,26 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;c2&gt;Layout()&lt;/c2&gt; method is what is called by the default &lt;c3&gt;EVT_SIZE&lt;/c3&gt; handler for container windows.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T160156Z">
+        <seg>&lt;c2&gt;Layout()&lt;/c2&gt; 関数はコンテナウィンドウのデフォルトの &lt;c3&gt;EVT_SIZE&lt;/c3&gt; ハンドラから呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;e0&gt;dialog&lt;/e0&gt; sample illustrates this approach by defining a custom log target customizing the dialog used by &lt;a1&gt;wxLogGui&lt;/a1&gt; for the single messages.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T130128Z">
         <seg>&lt;e0&gt;ダイアログ&lt;/e0&gt; サンプルでは &lt;a1&gt;wxLogGui&lt;/a1&gt; でダイアログを使用するようにカスタマイズしたカスタムログターゲットを定義する例を解説しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;t2&gt;Layout()&lt;/t2&gt; method is what is called by the default &lt;t3&gt;EVT_SIZE&lt;/t3&gt; handler for container windows.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T153042Z">
+        <seg>&lt;t2&gt;Layout()&lt;/t2&gt; 関数はコンテナウィンドウのデフォルトの &lt;t3&gt;EVT_SIZE&lt;/t3&gt; ハンドラから呼ばれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13037,6 +13581,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130622T135715Z">
         <seg>コアクラス: &lt;a0&gt;wxStreamBase&lt;/a0&gt;, &lt;a1&gt;wxStreamBuffer&lt;/a1&gt;, &lt;a2&gt;wxInputStream&lt;/a2&gt;, &lt;a3&gt;wxOutputStream&lt;/a3&gt;, &lt;a4&gt;wxFilterInputStream&lt;/a4&gt;, &lt;a5&gt;wxFilterOutputStream&lt;/a5&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The default &lt;t4&gt;DoGetBestSize()&lt;/t4&gt; is designed for use in container windows, such as &lt;a5&gt;wxPanel&lt;/a5&gt;, and works something like this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T155507Z">
+        <seg>デフォルトの &lt;t4&gt;DoGetBestSize()&lt;/t4&gt; は &lt;a5&gt;wxPanel&lt;/a5&gt; といったコンテナウィンドウに使用するために設計されており、それはこのように動作します:</seg>
       </tuv>
     </tu>
     <tu>
@@ -14081,6 +14633,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The virtual size of a widget may be larger than its actual size and in this case scrollbars will appear to the let the user 'explore' the full contents of the widget.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T153845Z">
+        <seg>ウィジェットの仮想サイズは実際のサイズよりおそらく大きく、その場合にはユーザがウィジェットの内容全体を '探索' できるようにスクロールバーが表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The width of each column and the height of each row are calculated individually according to the minimal requirements from the respectively biggest child.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130520T153619Z">
@@ -14173,6 +14733,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130718T151023Z">
         <seg>wxMBConv クラスは Unicode を意識したアプリケーションにおいて、依然として使用されている様々な 8 ビットエンコーディングと Unicode との間の変換を簡単に行えるようにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The wxScrolled class manages scrolling for its client area, transforming the coordinates according to...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T152926Z">
+        <seg>wxScrolled クラスはクライアントエリアのスクロール、スクロールバーの位置に合わせた座標の変換、表示領域にあわせたスクロール位置やつまみのサイズの設定といったことの管理を行います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14325,6 +14893,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T023959Z">
         <seg>以下にその一覧を示します:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is a special virtual method in the C++ window classes called &lt;a1&gt;wxWindow::DoGetBestSize()&lt;/a1&gt; that a class can override if it wants to calculate its own best size based on its content, however notice that usually it is more convenient to override DoGetBestClientSize(), see below.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T145258Z">
+        <seg>C++ のウィンドウクラスには &lt;a1&gt;wxWindow::DoGetBestSize()&lt;/a1&gt; と呼ばれる特別な仮想関数があり、内容物に応じて独自の最適サイズを計算したい場合にはこの関数をオーバーライドすることができます。ただし、通常は DoGetBestClientSize() をオーバーライドした方が便利です。下記を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is a special virtual method in the C++ window classes called &lt;t3&gt;DoGetBestSize()&lt;/t3&gt; that a class needs to override if it wants to calculate its own best size based on its content.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T155408Z">
+        <seg>C++ のウィンドウクラスには &lt;t3&gt;DoGetBestSize()&lt;/t3&gt; と呼ばれる特別な仮想関数があり、内容物に基づいて独自の最適サイズを計算したい場合にはこの関数をオーバーライドする必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15073,6 +15657,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This document will attempt to clear the fog a little, and give some simple explanations of things.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T154717Z">
+        <seg>このドキュメントはそれらをほんの少しでも明確にするためのものであり、それらの関係性について簡単な説明を行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This doesn't work for everything (for example not all device contexts support bitmap drawing) but will work most of the time.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T141904Z">
@@ -15545,6 +16137,30 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This method is what is called by the constructor of most controls to set the minimal size and the initial size of the control.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T154636Z">
+        <seg>この関数はコントロールの最小サイズと初期サイズを設定するためにほとんどのコントロールのコンストラクタで呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This method is what is called by the constructor of most controls to set the minsize and initial size of the control.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T152102Z">
+        <seg>この関数はコントロールの最小サイズと初期サイズを設定するためにほとんどのコントロールのコンストラクタで呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This method is what is called by the sizers when determining what the requirements of each item in the sizer is, and is used for calculating the overall minimum needs of the sizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T151626Z">
+        <seg>この関数はサイザー内の各要素の要求サイズを決定するときにサイザーから呼ばれ、サイザーの必要とする最小サイズを計算するために使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This must be provided by the application, and will usually create the application's main window...</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130528T152428Z">
@@ -15629,6 +16245,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T130452Z">
         <seg>この単純なクラスを用いることでログ出力先を連鎖させることが可能になります。つまり、wxLog::SetActiveTarget のようにログ出力先を置き換える代わりに、新しい出力先を設定しつつ、 古い出力先にもログメッセージを渡すことが可能になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This size value is the size that the widget is currently using on screen and is the way to change the size of something that is not being managed by a sizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T150418Z">
+        <seg>このサイズの値は画面内でウィジェットが使用しているサイズであり、サイザーで管理されていないウィジェットのサイズを変更する方法でもあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16037,6 +16661,30 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130718T151425Z">
         <seg>Todo:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Top-level windows such as &lt;a3&gt;wxFrame&lt;/a3&gt; will not allow the user to resize the frame above the maximum size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T152042Z">
+        <seg>&lt;a3&gt;wxFrame&lt;/a3&gt; といったトップレベルウィンドウはユーザが最大サイズを超えてリサイズすることはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Top-level windows such as &lt;a3&gt;wxFrame&lt;/a3&gt; will not allow the user to resize the frame below the min size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130719T150208Z">
+        <seg>&lt;a3&gt;wxFrame&lt;/a3&gt; といったトップレベルウィンドウはユーザが最小サイズ以下にリサイズすることはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Top-level windows such as &lt;a3&gt;wxFrame&lt;/a3&gt; will not allow the user to resize the frame below the minimal size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T151523Z">
+        <seg>&lt;a3&gt;wxFrame&lt;/a3&gt; といったトップレベルウィンドウはユーザが最小サイズ以下にリサイズすることはできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16553,6 +17201,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Use of this function for windows which are not toplevel windows (such as wxDialog or wxFrame) is disc...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T151307Z">
+        <seg>(wxDialog や wxFrame といった) トップレベルウィンドウでないウィンドウに対してこの関数を使用することは推奨されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Use the macros DECLARE_DYNAMIC_CLASS and IMPLEMENT_DYNAMIC_CLASS in order to allow the framework to create view objects on demand.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T020328Z">
@@ -16993,6 +17649,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When the fitting size for the given contents is computed, it will usually be the client size and the size of the borders needs to be added to obtain the full best size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T145842Z">
+        <seg>指定された内容物にフィットするサイズが計算されると、通常はそれがクライアントサイズになり、それにボーダーのサイズを加えることで全体の最適サイズを取得します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When the user clicks on a button, for example the OK button, the application should first call &lt;a0&gt;wxWindow::Validate&lt;/a0&gt;, which returns &lt;s1&gt;false&lt;/s1&gt; if any of the child window validators failed to validate the window data.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130624T153402Z">
@@ -17101,6 +17765,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130517T171133Z">
         <seg>ウィンドウ識別子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Window Sizing Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130718T154040Z">
+        <seg>ウィンドウサイズの概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -20877,6 +21549,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130615T033828Z">
         <seg>wxWidgets: wxWidgets: ウィンドウの削除</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxWidgets: wxWidgets: Window Sizing Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130722T143754Z">
+        <seg>wxWidgets: wxWidgets: ウィンドウサイズの概要</seg>
       </tuv>
     </tu>
     <tu>
