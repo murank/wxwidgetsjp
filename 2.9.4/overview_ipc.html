@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>wxWidgets: wxWidgets: Interprocess Communication</title>
+<title>wxWidgets: wxWidgets: プロセス間通信</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="custom_stylesheet.css" rel="stylesheet" type="text/css" />
@@ -114,99 +114,96 @@ function toggleVisibility(linkObj) {
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title">Interprocess Communication  </div>  </div>
+<div class="title">プロセス間通信 </div>  </div>
 </div>
 <div class="contents">
-<div class="textblock"><p>Classes: <a class="el" href="classwx_server.html" title="A wxServer object represents the server part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxServer</a>, <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a>, <a class="el" href="classwx_client.html" title="A wxClient object represents the client part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxClient</a></p>
+<div class="textblock"><p>クラス: <a class="el" href="classwx_server.html" title="wxServer オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のサーバ部分を表しています。">wxServer</a>, <a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a>, <a class="el" href="classwx_client.html" title="wxClient オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のクライアント部分を表しています。">wxClient</a></p>
 <ul>
-<li><a class="el" href="overview_ipc.html#overview_ipc_datatransfer">Data Transfer</a> </li>
-<li><a class="el" href="overview_ipc.html#overview_ipc_examples">Examples</a> </li>
-<li><a class="el" href="overview_ipc.html#overview_ipc_dde">More DDE Details</a></li>
+<li><a class="el" href="overview_ipc.html#overview_ipc_datatransfer">データの転送</a> </li>
+<li><a class="el" href="overview_ipc.html#overview_ipc_examples">例</a> </li>
+<li><a class="el" href="overview_ipc.html#overview_ipc_dde">DDE の詳細</a></li>
 </ul>
 <hr/>
-<p>wxWidgets has a number of different classes to help with interprocess communication and network programming. This section only discusses one family of classes -- the DDE-like protocol -- but here's a list of other useful classes:</p>
+<p>wxWidgets にはプロセス間通信やネットワークプログラミングを支援する様々なクラスがあります。この章では DDE 風のプロトコルを使用するひとつのクラス群についてのみ説明しますが、その代わりに他の有用なクラスの一覧を以下に示します:</p>
 <ul>
-<li><a class="el" href="classwx_socket_event.html" title="このイベントクラスはソケットイベントに関する情報を含んでいます。">wxSocketEvent</a>, <a class="el" href="classwx_socket_base.html" title="wxSocketBase is the base class for all socket-related objects, and it defines all basic IO functional...">wxSocketBase</a>, <a class="el" href="classwx_socket_client.html">wxSocketClient</a>, <a class="el" href="classwx_socket_server.html">wxSocketServer</a> - Classes for the low-level TCP/IP API.  </li>
-<li><a class="el" href="classwx_protocol.html" title="Represents a protocol for use with wxURL.">wxProtocol</a>, <a class="el" href="classwx_u_r_l.html" title="wxURL is a specialization of wxURI for parsing URLs.">wxURL</a>, <a class="el" href="classwx_f_t_p.html" title="wxFTP can be used to establish a connection to an FTP server and perform all the usual operations...">wxFTP</a>, <a class="el" href="classwx_h_t_t_p.html" title="wxHTTP can be used to establish a connection to an HTTP server.">wxHTTP</a> - Classes for programming popular Internet protocols.</li>
+<li><a class="el" href="classwx_socket_event.html" title="このイベントクラスはソケットイベントに関する情報を含んでいます。">wxSocketEvent</a>、<a class="el" href="classwx_socket_base.html" title="wxSocketBase はソケットに関連するオブジェクトすべての基底クラスで、基本的な IO 機能をすべて定義しています。">wxSocketBase</a>、<a class="el" href="classwx_socket_client.html">wxSocketClient</a>、<a class="el" href="classwx_socket_server.html">wxSocketServer</a> - 低レベルのTCP/IP API 用クラスです。 </li>
+<li><a class="el" href="classwx_protocol.html" title="wxURL で使用するプロトコルを表しています。">wxProtocol</a>、<a class="el" href="classwx_u_r_l.html" title="wxURL は URL をパースするために wxURI を特殊化したものです。">wxURL</a>、<a class="el" href="classwx_f_t_p.html" title="wxFTP は FTP サーバへの接続と、便利な操作すべてを行なうために使用できます。">wxFTP</a>、<a class="el" href="classwx_h_t_t_p.html" title="wxHTTP は HTTP サーバへ接続するために使用できます。">wxHTTP</a> - よく知られているインターネットプロトコルのプログラミング用クラスです。</li>
 </ul>
-<p>wxWidgets' DDE-like protocol is a high-level protocol based on Windows DDE. There are two implementations of this DDE-like protocol: one using real DDE running on Windows only, and another using TCP/IP (sockets) that runs on most platforms. Since the API and virtually all of the behaviour is the same apart from the names of the classes, you should find it easy to switch between the two implementations.</p>
-<p>Notice that by including <code>&lt;<a class="el" href="interface_2wx_2ipc_8h.html">wx/ipc.h</a>&gt;</code> you may define convenient synonyms for the IPC classes: <a class="el" href="classwx_server.html" title="A wxServer object represents the server part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxServer</a> for either <a class="el" href="classwx_d_d_e_server.html" title="A wxDDEServer object represents the server part of a client-server DDE (Dynamic Data Exchange) conver...">wxDDEServer</a> or <a class="el" href="classwx_t_c_p_server.html" title="A wxTCPServer object represents the server part of a client-server conversation.">wxTCPServer</a> depending on whether DDE-based or socket-based implementation is used and the same thing for <a class="el" href="classwx_client.html" title="A wxClient object represents the client part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxClient</a> and <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a>.</p>
-<p>By default, the DDE implementation is used under Windows. DDE works within one computer only. If you want to use IPC between different workstations you should define <code>wxUSE_DDE_FOR_IPC</code> as 0 before including this header -- this will force using TCP/IP implementation even under Windows.</p>
-<p>The following description refers to wxWidgets, but remember that the equivalent wxTCP* and wxDDE* classes can be used in much the same way.</p>
-<p>Three classes are central to the DDE-like API:</p>
+<p>wxWidgets の DDE 風プロトコルは Windows DDE に基づく高レベルのプロトコルです。このDDE 風プロトコルには 2 種類の実装があります: ひとつは実際の DDE を使用する方法で、WIndows のみで実行できます。もうひとつは TCP/IP (ソケット) を使用する方法で、ほとんどのプラットフォームで実行できます。クラス名を除いて API と仮想的な振る舞いがすべて同じであるため、ふたつの実装を簡単に切り替えられることに気がつくと思います。</p>
+<p><code>&lt;<a class="el" href="interface_2wx_2ipc_8h.html">wx/ipc.h</a>&gt;</code> をインクルードすることで IPC クラス用の便利なシノニムを定義できます: DDE ベースの実装とソケットベースの実装のどちらを使用するかによって <a class="el" href="classwx_d_d_e_server.html" title="wxDDEServer オブジェクトはクライアント・サーバ DDE (Dynamic Data Exchange) 通信のサーバ部分を表しています。">wxDDEServer</a> もしくは <a class="el" href="classwx_t_c_p_server.html" title="wxTCPServer はクライアント・サーバ通信のサーバ部分を表しています。">wxTCPServer</a> のいずれかが <a class="el" href="classwx_server.html" title="wxServer オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のサーバ部分を表しています。">wxServer</a> として定義されます。同様のことが <a class="el" href="classwx_client.html" title="wxClient オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のクライアント部分を表しています。">wxClient</a> と <a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> に対しても行われます。</p>
+<p>Windows ではデフォルトで DDE 版が使用されます。DDE は同じコンピュータ内でのみ動作します。もし異なるワークステーション間で IPC を使用したい場合、このヘッダファイルをインクルードする前に <code> wxUSE_DDE_FOR_IPC</code> を 0 に定義してください。これにより、Windows でも強制的に TCP/IP 版が使用されるようになります。</p>
+<p>以降の説明では wxWidgets について言及しますが、同じ wxTCP* クラスと wxDDE* クラスは同様の方法で使用できることを覚えておいてください。</p>
+<p>DDE 風 API では中心となるクラスが 3 種類あります:</p>
 <ul>
-<li><a class="el" href="classwx_client.html" title="A wxClient object represents the client part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxClient</a> - This represents the client application, and is used only within a client program.  </li>
-<li><a class="el" href="classwx_server.html" title="A wxServer object represents the server part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxServer</a> - This represents the server application, and is used only within a server program.  </li>
-<li><a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a> - This represents the connection from the client to the server. Both the client and the server use an instance of this class, one per connection. Most DDE transactions operate on this object.</li>
+<li><a class="el" href="classwx_client.html" title="wxClient オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のクライアント部分を表しています。">wxClient</a> - これはクライアントアプリケーションを表しており、クライアントプログラムの中でだけ使用できます。 </li>
+<li><a class="el" href="classwx_server.html" title="wxServer オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のサーバ部分を表しています。">wxServer</a> - これはサーバアプリケーションを表しており、サーバプログラムの中でだけ使用できます。 </li>
+<li><a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> - これはクライアントからサーバへのコネクションを表しています。クライアントとサーバの両方とも、このクラスのインスタンスをコネクションごとにひとつ使用します。ほとんどの DDE トランザクションはこのオブジェクト上で行われます。</li>
 </ul>
-<p>Messages between applications are usually identified by three variables: connection object, topic name and item name. A data string is a fourth element of some messages. To create a connection (a conversation in Windows parlance), the client application uses <a class="el" href="classwx_client.html#a6ca1cef89e834a724d34edf9872f545d" title="Tries to make a connection with a server by host (machine name under UNIX - use 'localhost' for same ...">wxClient::MakeConnection</a> to send a message to the server object, with a string service name to identify the server and a topic name to identify the topic for the duration of the connection. Under Unix, the service name may be either an integer port identifier in which case an Internet domain socket will be used for the communications or a valid file name (which shouldn't exist and will be deleted afterwards) in which case a Unix domain socket is created.</p>
-<p><b>SECURITY NOTE:</b> Using Internet domain sockets is extremely insecure for IPC as there is absolutely no access control for them, use Unix domain sockets whenever possible!</p>
-<p>The server then responds and either vetoes the connection or allows it. If allowed, both the server and client objects create <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a> objects which persist until the connection is closed. The connection object is then used for sending and receiving subsequent messages between client and server - overriding virtual functions in your class derived from <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a> allows you to handle the DDE messages.</p>
-<p>To create a working server, the programmer must:</p>
+<p>通常、アプリケーション間のメッセージは 3 種類の変数で識別されます: コネクションオブジェクト、トピック名、アイテム名です。いくつかのメッセージではデータ文字列が 4 番目の要素になります。コネクション (Windows で言うところの会話 (conversation)) を作成するにはクライアントアプリケーションでサービス名 (サーバを識別します) とトピック名 (接続している間のトピックを識別します) を指定して <a class="el" href="classwx_client.html#a6ca1cef89e834a724d34edf9872f545d" title="ホスト (Unix ではマシン名です。同じマシンを指す場合は 'localhost' を使用してください; Windows ネイティブの DDE を使用するときは無視されます)、サービス名、トピック文字列を使用してサーバへの接続を試みます。">wxClient::MakeConnection</a> を呼び出します。Unix におけるサービス名はインターネットドメインソケットが通信に使用する整数のポート識別子か、Unix ドメインソケットが作成する有効なファイル名 (このファイルは存在してはならず、後で削除されます) のいずれかになります。</p>
+<p><b>セキュリティ上の注意:</b> インターネットドメインソケットを使用したプロセス間通信は非常に危険です。なぜなら、これらの通信に対するアクセス制御はまったく行われないためです。可能な限り、Unix ドメインソケットを使用してください。</p>
+<p>そして、サーバが応答し、接続を拒否または許可します。接続が許可されるとサーバとクライアントの双方で <a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> が作成され、接続が閉じられるまで維持されます。作成されたコネクションオブジェクトはクライアント・サーバ間でのメッセージの送受信に使用されます。このとき、<a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> を継承したクラスで仮想関数をオーバーライドすると DDE メッセージを処理することができます。</p>
+<p>動作するサーバを作成するには次のようにする必要があります:</p>
 <ul>
-<li>Derive a class from <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a>, providing handlers for various messages sent to the server side of a <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a> (e.g. OnExecute, OnRequest, OnPoke). Only the handlers actually required by the application need to be overridden.  </li>
-<li>Derive a class from <a class="el" href="classwx_server.html" title="A wxServer object represents the server part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxServer</a>, overriding OnAcceptConnection to accept or reject a connection on the basis of the topic argument. This member must create and return an instance of the derived connection class if the connection is accepted.  </li>
-<li>Create an instance of your server object and call Create to activate it, giving it a service name.</li>
+<li><a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> を継承し、<a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> のサーバ側へ送信されたメッセージ用のハンドラ (OnExecute、OnRequest、OnPoke など) を用意する。このとき、実際にアプリケーションで必要となるハンドラだけをオーバーライドする必要があります。 </li>
+<li><a class="el" href="classwx_server.html" title="wxServer オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のサーバ部分を表しています。">wxServer</a> を継承し、トピック引数に基づいて接続を許可または拒否するために OnAcceptConnection をオーバーライドする。接続を許可する場合、継承したコネクションクラスのインスタンスをこのメンバ関数で作成し、返却する必要があります。 </li>
+<li>サーバオブジェクトのインスタンスを作成し、作成したオブジェクトを有効化するためにサービス名を指定して Create を呼び出す。</li>
 </ul>
-<p>To create a working client, the programmer must:</p>
+<p>動作するクライアントを作成するには次のようにする必要があります:</p>
 <ul>
-<li>Derive a class from <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a>, providing handlers for various messages sent to the client side of a <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a> (e.g. OnAdvise). Only the handlers actually required by the application need to be overridden.  </li>
-<li>Derive a class from <a class="el" href="classwx_client.html" title="A wxClient object represents the client part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxClient</a>, overriding OnMakeConnection to create and return an instance of the derived connection class.  </li>
-<li>Create an instance of your client object.  </li>
-<li>When appropriate, create a new connection using <a class="el" href="classwx_client.html#a6ca1cef89e834a724d34edf9872f545d" title="Tries to make a connection with a server by host (machine name under UNIX - use 'localhost' for same ...">wxClient::MakeConnection</a>, with arguments host name (processed in Unix only, use 'localhost' for local computer), service name, and topic name for this connection. The client object will call OnMakeConnection to create a connection object of the derived class if the connection is successful.  </li>
-<li>Use the <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a> member functions to send messages to the server.</li>
+<li><a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> を継承し、<a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> のクライアント側へ送信されたメッセージ用のハンドラ (OnAdvise など) を用意する。このとき、実際にアプリケーションで必要となるハンドラだけをオーバーライドする必要があります。 </li>
+<li><a class="el" href="classwx_client.html" title="wxClient オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のクライアント部分を表しています。">wxClient</a> を継承して OnMakeConnection をオーバーライドし、継承したコネクションクラスのインスタンスを作成して返却する。 </li>
+<li>クライアントオブジェクトのインスタンスを作成する。 </li>
+<li>適切なときにホスト名 (Unix の場合のみ使用されます。ローカルコンピュータを指定する場合は 'localhost' を使用してください)、サービス名、この接続用のトピック名を指定して <a class="el" href="classwx_client.html#a6ca1cef89e834a724d34edf9872f545d" title="ホスト (Unix ではマシン名です。同じマシンを指す場合は 'localhost' を使用してください; Windows ネイティブの DDE を使用するときは無視されます)、サービス名、トピック文字列を使用してサーバへの接続を試みます。">wxClient::MakeConnection</a> を呼び出し、新しいコネクションを作成する。接続に成功するとクライアントオブジェクトは継承したコネクションクラスのオブジェクトを作成するために OnMakeConnection を呼び出します。 </li>
+<li>サーバへメッセージを送信するには <a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> のメンバ関数を使用してください。</li>
 </ul>
 <h2><a class="anchor" id="overview_ipc_datatransfer"></a>
-
-Data Transfer</h2>
-<p>These are the ways that data can be transferred from one application to another. These are methods of <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a>.</p>
+データの転送</h2>
+<p>他のアプリケーションへデータを転送するにはいくつかの方法があります。これらは <a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> の関数です。</p>
 <ul>
-<li><b>Execute:</b> the client calls the server with a data string representing a command to be executed. This succeeds or fails, depending on the server's willingness to answer. If the client wants to find the result of the Execute command other than success or failure, it has to explicitly call Request.  </li>
-<li><b>Request:</b> the client asks the server for a particular data string associated with a given item string. If the server is unwilling to reply, the return value is <span class="literal">NULL</span>. Otherwise, the return value is a string (actually a pointer to the connection buffer, so it should not be deallocated by the application).  </li>
-<li><b>Poke:</b> The client sends a data string associated with an item string directly to the server. This succeeds or fails.  </li>
-<li><b>Advise:</b> The client asks to be advised of any change in data associated with a particular item. If the server agrees, the server will send an OnAdvise message to the client along with the item and data.</li>
+<li><b>Execute:</b> 実行するコマンドを表すデータ文字列を指定してクライアントからサーバを呼び出します。これはサーバが応答するかどうかに応じて成功または失敗します。呼び出しの成否以外に Execute コマンドの結果を得たい場合、明示的に Request を呼ぶ必要があります。 </li>
+<li><b>Request:</b> 指定した項目に関連する特定のデータ文字列をクライアントからサーバへ要求します。サーバが応答しない場合、戻り値は <span class="literal">NULL</span> になります。それ以外の場合、戻り値は文字列になります。(実際には接続バッファへのポインタであるため、アプリケーション側で解放しないでください) </li>
+<li><b>Poke:</b> ある項目に関連するデータ文字列をクライアントからサーバへ直接送信します。これは成功または失敗します。 </li>
+<li><b>Advise:</b> 特定の項目に関連するデータの変更をクライアントへ通知するように要求します。サーバがこれを承諾した場合、サーバは項目とデータとともに OnAdvise メッセージをクライアントへ送信します。</li>
 </ul>
-<p>The default data type is wxCF_TEXT (ASCII text), and the default data size is the length of the null-terminated string. Windows-specific data types could also be used on the PC.</p>
+<p>デフォルトのデータ型は wxCF_TEXT (ASCII テキスト) で、デフォルトのデータサイズはヌル終端文字列の文字列長です。また、Windows 独自のデータ型を使用することもできます。</p>
 <h2><a class="anchor" id="overview_ipc_examples"></a>
-
-Examples</h2>
-<p>See the sample programs <em>server</em> and <em>client</em> in the IPC samples directory. Run the server, then the client. This demonstrates using the Execute, Request, and Poke commands from the client, together with an Advise loop: selecting an item in the server list box causes that item to be highlighted in the client list box.</p>
+例</h2>
+<p>IPC サンプルディレクトリにある <em>server</em> と <em>client</em> のサンプルプログラムを参照してください。サーバを実行し、それからクライアントを実行してください。このサンプルでは Advise ループとともに Execute、Request、Poke コマンドを使用しています: サーバ側のリストボックスを選択すると、選択された項目がクライアント側のリストボックスでハイライトされます。</p>
 <h2><a class="anchor" id="overview_ipc_dde"></a>
-
-More DDE Details</h2>
-<p>A <a class="el" href="classwx_client.html" title="A wxClient object represents the client part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxClient</a> object initiates the client part of a client-server DDE-like (Dynamic Data Exchange) conversation (available in both Windows and Unix).</p>
-<p>To create a client which can communicate with a suitable server, you need to derive a class from <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a> and another from <a class="el" href="classwx_client.html" title="A wxClient object represents the client part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxClient</a>. The custom <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a> class will receive communications in a 'conversation' with a server. and the custom <a class="el" href="classwx_server.html" title="A wxServer object represents the server part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxServer</a> is required so that a user-overridden <a class="el" href="classwx_client.html#a71328614681f8f50de8a561b5dcfbbde" title="Called by MakeConnection(), by default this simply returns a new wxConnection object.">wxClient::OnMakeConnection</a> member can return a <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a> of the required class, when a connection is made.</p>
+DDE の詳細</h2>
+<p><a class="el" href="classwx_client.html" title="wxClient オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のクライアント部分を表しています。">wxClient</a> オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のクライアント・サーバ通信のクライアント部分を初期化します。(Windows と Unix の両方で利用可能です)</p>
+<p>適切なサーバと通信するクライアントを作成するには <a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> と <a class="el" href="classwx_client.html" title="wxClient オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のクライアント部分を表しています。">wxClient</a> をそれぞれ継承する必要があります。<a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> の継承クラスはサーバとの '会話' (conversation) におけるやり取りを受信します。そして <a class="el" href="classwx_server.html" title="wxServer オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のサーバ部分を表しています。">wxServer</a> を継承したクラスが必要になります。これにより、接続が確立したときに <a class="el" href="classwx_client.html#a71328614681f8f50de8a561b5dcfbbde" title="MakeConnection() から呼ばれ、デフォルトでは単純に新しい wxConnection オブジェクトを返却するだけです。">wxClient::OnMakeConnection</a> をオーバーライドした関数が要求されたクラスの <a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> を返却できるようになります。</p>
 <p>以下に例を示します:</p>
-<div class="fragment"><pre class="fragment"><span class="keyword">class </span>MyConnection: <span class="keyword">public</span> <a class="code" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a>
+<div class="fragment"><pre class="fragment"><span class="keyword">class </span>MyConnection: <span class="keyword">public</span> <a class="code" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a>
 {
 <span class="keyword">public</span>:
-    MyConnection(<span class="keywordtype">void</span>)::<a class="code" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a>() { }
+    MyConnection(<span class="keywordtype">void</span>)::<a class="code" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a>() { }
     ~MyConnection(<span class="keywordtype">void</span>) { }
 
-    <span class="keywordtype">bool</span> <a class="code" href="classwx_connection.html#a9dddf8014802c9643378b9bdb34bfc48" title="Message sent to the client application when the server notifies it of a change in the data associated...">OnAdvise</a>(<span class="keyword">const</span> <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>&amp; topic, <span class="keyword">const</span> <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>&amp; item, <span class="keywordtype">char</span> *data,
-                  <span class="keywordtype">int</span> size, <a class="code" href="ipcbase_8h.html#a95e8d5059caf54ddbaabdaf8224fe3f2" title="An enumeration for formats .">wxIPCFormat</a> format)
+    <span class="keywordtype">bool</span> <a class="code" href="classwx_connection.html#a9dddf8014802c9643378b9bdb34bfc48" title="Advice() を使用し、指定した項目に関連するデータの変更をサーバが通知するときにクライアントアプリケーションへ送信されるメッセージ。">OnAdvise</a>(<span class="keyword">const</span> <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>&amp; topic, <span class="keyword">const</span> <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>&amp; item, <span class="keywordtype">char</span> *data,
+                  <span class="keywordtype">int</span> size, <a class="code" href="ipcbase_8h.html#a95e8d5059caf54ddbaabdaf8224fe3f2" title="フォーマット用の列挙型。">wxIPCFormat</a> format)
     {
         <a class="code" href="group__group__funcmacro__dialog.html#ga193c64ed4802e379799cdb42de252647" title="汎用的なメッセージダイアログを表示します。">wxMessageBox</a>(topic, data);
     }
 };
 
-<span class="keyword">class </span>MyClient: <span class="keyword">public</span> <a class="code" href="classwx_client.html" title="A wxClient object represents the client part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxClient</a>
+<span class="keyword">class </span>MyClient: <span class="keyword">public</span> <a class="code" href="classwx_client.html" title="wxClient オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のクライアント部分を表しています。">wxClient</a>
 {
 <span class="keyword">public</span>:
     MyClient(<span class="keywordtype">void</span>) { }
 
-    <a class="code" href="classwx_connection_base.html">wxConnectionBase</a>* <a class="code" href="classwx_client.html#a71328614681f8f50de8a561b5dcfbbde" title="Called by MakeConnection(), by default this simply returns a new wxConnection object.">OnMakeConnection</a>(<span class="keywordtype">void</span>)
+    <a class="code" href="classwx_connection_base.html">wxConnectionBase</a>* <a class="code" href="classwx_client.html#a71328614681f8f50de8a561b5dcfbbde" title="MakeConnection() から呼ばれ、デフォルトでは単純に新しい wxConnection オブジェクトを返却するだけです。">OnMakeConnection</a>(<span class="keywordtype">void</span>)
     {
         <span class="keywordflow">return</span> <span class="keyword">new</span> MyConnection;
     }
 };
-</pre></div><p>Here, <em>MyConnection</em> will respond to OnAdvise messages sent by the server by displaying a message box.</p>
-<p>When the client application starts, it must create an instance of the derived <a class="el" href="classwx_client.html" title="A wxClient object represents the client part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxClient</a>. In the following, command line arguments are used to pass the host name (the name of the machine the server is running on) and the server name (identifying the server process). Calling <a class="el" href="classwx_client.html#a6ca1cef89e834a724d34edf9872f545d" title="Tries to make a connection with a server by host (machine name under UNIX - use 'localhost' for same ...">wxClient::MakeConnection</a> implicitly creates an instance of <em>MyConnection</em> if the request for a connection is accepted, and the client then requests an <em>Advise</em> loop from the server (an Advise loop is where the server calls the client when data has changed).</p>
+</pre></div><p>ここでは <em>MyConnection</em> がサーバから送信された OnAdvise メッセージに反応してメッセージボックスを表示します。</p>
+<p>クライアントアプリケーションを実行するときには <a class="el" href="classwx_client.html" title="wxClient オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のクライアント部分を表しています。">wxClient</a> の継承クラスのインスタンスを作成する必要があります。以下ではコマンドライン引数を使用してホスト名 (サーバを実行しているマシン名)、(サーバプロセスを識別する) サーバ名を引き渡しています。<a class="el" href="classwx_client.html#a6ca1cef89e834a724d34edf9872f545d" title="ホスト (Unix ではマシン名です。同じマシンを指す場合は 'localhost' を使用してください; Windows ネイティブの DDE を使用するときは無視されます)、サービス名、トピック文字列を使用してサーバへの接続を試みます。">wxClient::MakeConnection</a> を呼び出すと接続要求が受け付けられた場合に <em>MyConnection</em> のインスタンスが暗黙的に作成されます。そして、クライアントはサーバからの <em>Advise</em> ループを要求します。(Advise ループとはデータが変更されたときにサーバがクライアントを呼び出すところのことです)</p>
 <div class="fragment"><pre class="fragment"><a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> server = <span class="stringliteral">"4242"</span>;
 <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> hostName;
-<a class="code" href="group__group__funcmacro__networkuseros.html#ga25dd53a4a5aab23305b8e4e9c5ff730b" title="Copies the current host machine's name into the supplied buffer.">wxGetHostName</a>(hostName);
+<a class="code" href="group__group__funcmacro__networkuseros.html#ga25dd53a4a5aab23305b8e4e9c5ff730b" title="現在のホストマシン名を与えられたバッファへコピーします。">wxGetHostName</a>(hostName);
 
-<span class="comment">// Create a new client</span>
+<span class="comment">// 新しいクライアントを作成する</span>
 MyClient *client = <span class="keyword">new</span> MyClient;
 connection = (MyConnection *)client-&gt;MakeConnection(hostName, server, <span class="stringliteral">"IPC TEST"</span>);
 

@@ -8,17 +8,7 @@
 
 <H2>wxConnection</H2>
 <P>
-
-A wxConnection object represents the connection between a client
-and a server. It is created by making a connection using a
-<A HREF="wx_wxclient.html#wxclient">wxClient</A> object, or by the acceptance of a
-connection by a <A HREF="wx_wxserver.html#wxserver">wxServer</A> object. The
-bulk of a DDE-like (Dynamic Data Exchange) conversation is
-controlled by calling members in a <B>wxConnection</B> object or
-by overriding its members. The actual DDE-based implementation
-using wxDDEConnection is available on Windows only, but a
-platform-independent, socket-based version of this API is
-available using wxTCPConnection, which has the same API.<P>
+wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。It is created by making a connection using a <A HREF="wx_wxclient.html#wxclient">wxClient</A> object, or by the acceptance of a connection by a <A HREF="wx_wxserver.html#wxserver">wxServer</A> object. The bulk of a DDE-like (Dynamic Data Exchange) conversation is controlled by calling members in a <B>wxConnection</B> object or by overriding its members. The actual DDE-based implementation using wxDDEConnection is available on Windows only, but a platform-independent, socket-based version of this API is available using wxTCPConnection, which has the same API.<P>
 
 An application should normally derive a new connection class from
 wxConnection, in order to override the communication event

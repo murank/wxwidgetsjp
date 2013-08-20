@@ -130,7 +130,7 @@ function toggleVisibility(linkObj) {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classwx_socket_server__inherit__graph.png" border="0" usemap="#wx_socket_server_inherit__map" alt="Inheritance graph"/></div>
 <map name="wx_socket_server_inherit__map" id="wx_socket_server_inherit__map">
-<area shape="rect" id="node2" href="classwx_socket_base.html" title="wxSocketBase is the base class for all socket-related objects, and it defines all basic IO functional..." alt="" coords="9,86,119,117"/><area shape="rect" id="node4" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="27,6,101,37"/></map>
+<area shape="rect" id="node2" href="classwx_socket_base.html" title="wxSocketBase はソケットに関連するオブジェクトすべての基底クラスで、基本的な IO 機能をすべて定義しています。" alt="" coords="9,86,119,117"/><area shape="rect" id="node4" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="27,6,101,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000051">Todo:</a></b></dt><dd>describe me.</dd></dl>
@@ -144,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_socket_server.html#ab622729632cca56cbc14c8e6e7a7bb50">~wxSocketServer</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destructor (it doesn't close the accepted connections).    <a href="#ab622729632cca56cbc14c8e6e7a7bb50"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_socket_base.html">wxSocketBase</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_socket_server.html#a7ed69a9282e9437a74213779e62bbff7">Accept</a> (bool wait=true)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Accepts an incoming connection request, and creates a new <a class="el" href="classwx_socket_base.html" title="wxSocketBase is the base class for all socket-related objects, and it defines all basic IO functional...">wxSocketBase</a> object which represents the server-side of the connection.    <a href="#a7ed69a9282e9437a74213779e62bbff7"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Accepts an incoming connection request, and creates a new <a class="el" href="classwx_socket_base.html" title="wxSocketBase はソケットに関連するオブジェクトすべての基底クラスで、基本的な IO 機能をすべて定義しています。">wxSocketBase</a> object which represents the server-side of the connection.    <a href="#a7ed69a9282e9437a74213779e62bbff7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_socket_server.html#abe8446b81f5bedbc33e4f74fd5b36982">AcceptWith</a> (<a class="el" href="classwx_socket_base.html">wxSocketBase</a> &amp;socket, bool wait=true)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Accept an incoming connection using the specified socket object.    <a href="#abe8446b81f5bedbc33e4f74fd5b36982"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_socket_server.html#a3e0998c069bf8b3ef447167faf00ebae">WaitForAccept</a> (long seconds=-1, long millisecond=0)</td></tr>
@@ -179,7 +179,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Constructs a new server and tries to bind to the specified <em>address</em>.  </p>
-<p>Before trying to accept new connections, remember to test whether it succeeded with <a class="el" href="classwx_socket_base.html" title="wxSocketBase is the base class for all socket-related objects, and it defines all basic IO functional...">wxSocketBase</a>:<a class="el" href="classwx_socket_base.html#a86799181fb499a72a42651704a3bbda3" title="Returns true if the socket is initialized and ready and false in other cases.">IsOk()</a>.</p>
+<p>Before trying to accept new connections, remember to test whether it succeeded with <a class="el" href="classwx_socket_base.html" title="wxSocketBase はソケットに関連するオブジェクトすべての基底クラスで、基本的な IO 機能をすべて定義しています。">wxSocketBase</a>:<a class="el" href="classwx_socket_base.html#a86799181fb499a72a42651704a3bbda3" title="Returns true if the socket is initialized and ready and false in other cases.">IsOk()</a>.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">address</td><td>Specifies the local address for the server (e.g. port number).  </td></tr>
@@ -224,7 +224,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Accepts an incoming connection request, and creates a new <a class="el" href="classwx_socket_base.html" title="wxSocketBase is the base class for all socket-related objects, and it defines all basic IO functional...">wxSocketBase</a> object which represents the server-side of the connection.  </p>
+<p>Accepts an incoming connection request, and creates a new <a class="el" href="classwx_socket_base.html" title="wxSocketBase はソケットに関連するオブジェクトすべての基底クラスで、基本的な IO 機能をすべて定義しています。">wxSocketBase</a> object which represents the server-side of the connection.  </p>
 <p>If <em>wait</em> is <span class="literal">true</span> and there are no pending connections to be accepted, it will wait for the next incoming connection to arrive.</p>
 <dl class="warning"><dt><b>Warning:</b></dt><dd>This method will block the GUI.</dd></dl>
 <p>If <em>wait</em> is <span class="literal">false</span>, it will try to accept a pending connection if there is one, but it will always return immediately without blocking the GUI. If you want to use <a class="el" href="classwx_socket_server.html#a7ed69a9282e9437a74213779e62bbff7" title="Accepts an incoming connection request, and creates a new wxSocketBase object which represents the se...">Accept()</a> in this way, you can either check for incoming connections with <a class="el" href="classwx_socket_server.html#a3e0998c069bf8b3ef447167faf00ebae" title="Wait for an incoming connection.">WaitForAccept()</a> or catch <b>wxSOCKET_CONNECTION</b> events, then call <a class="el" href="classwx_socket_server.html#a7ed69a9282e9437a74213779e62bbff7" title="Accepts an incoming connection request, and creates a new wxSocketBase object which represents the se...">Accept()</a> once you know that there is an incoming connection waiting to be accepted.</p>

@@ -14,17 +14,7 @@ DDE-like (Dynamic Data Exchange) conversation. The actual
 DDE-based implementation using wxDDEClient is available on Windows
 only, but a platform-independent, socket-based version of this
 API is available using wxTCPClient, which has the same API.<P>
-
-To create a client which can communicate with a suitable server,
-you need to derive a class from wxConnection and another from
-wxClient. The custom wxConnection class will intercept
-communications in a 'conversation' with a server, and the custom
-wxClient is required so that a user-overridden
-<A HREF="wx_wxclient.html#wxclientonmakeconnection">wxClient::OnMakeConnection</A> 
-member can return a wxConnection of the required class, when a
-connection is made. Look at the IPC sample and the 
-<A HREF="wx_ipcoverview.html#ipcoverview">Interprocess communications overview</A> for
-an example of how to do this.<P>
+適切なサーバと通信するクライアントを作成するには wxConnection と wxClient をそれぞれ継承する必要があります。The custom wxConnection class will intercept communications in a 'conversation' with a server, and the custom wxClient is required so that a user-overridden <A HREF="wx_wxclient.html#wxclientonmakeconnection">wxClient::OnMakeConnection</A> member can return a wxConnection of the required class, when a connection is made. Look at the IPC sample and the <A HREF="wx_ipcoverview.html#ipcoverview">Interprocess communications overview</A> for an example of how to do this.<P>
 <B><FONT COLOR="#FF0000">継承元</FONT></B><P>
 
 wxClientBase<BR>

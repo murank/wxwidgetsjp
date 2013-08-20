@@ -118,7 +118,7 @@ function toggleVisibility(linkObj) {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">wxDDEConnection Class Reference<div class="ingroups"><a class="el" href="group__group__class__ipc.html">Interprocess Communication</a></div></div>  </div>
+<div class="title">wxDDEConnection Class Reference<div class="ingroups"><a class="el" href="group__group__class__ipc.html">プロセス間通信</a></div></div>  </div>
 </div>
 <div class="contents"><!-- doxytag: class="wxDDEConnection" --><!-- doxytag: inherits="wxConnectionBase" -->
 
@@ -134,11 +134,11 @@ function toggleVisibility(linkObj) {
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="classwx_d_d_e_connection.html" title="A wxDDEConnection object represents the connection between a client and a server.">wxDDEConnection</a> object represents the connection between a client and a server.  </p>
-<p>It can be created by making a connection using a <a class="el" href="classwx_d_d_e_client.html" title="A wxDDEClient object represents the client part of a client-server DDE (Dynamic Data Exchange) conver...">wxDDEClient</a> object, or by the acceptance of a connection by a <a class="el" href="classwx_d_d_e_server.html" title="A wxDDEServer object represents the server part of a client-server DDE (Dynamic Data Exchange) conver...">wxDDEServer</a> object. The bulk of a DDE (Dynamic Data Exchange) conversation is controlled by calling members in a <a class="el" href="classwx_d_d_e_connection.html" title="A wxDDEConnection object represents the connection between a client and a server.">wxDDEConnection</a> object or by overriding its members.</p>
+<p>It can be created by making a connection using a <a class="el" href="classwx_d_d_e_client.html" title="A wxDDEClient object represents the client part of a client-server DDE (Dynamic Data Exchange) conver...">wxDDEClient</a> object, or by the acceptance of a connection by a <a class="el" href="classwx_d_d_e_server.html" title="wxDDEServer オブジェクトはクライアント・サーバ DDE (Dynamic Data Exchange) 通信のサーバ部分を表しています。">wxDDEServer</a> object. The bulk of a DDE (Dynamic Data Exchange) conversation is controlled by calling members in a <a class="el" href="classwx_d_d_e_connection.html" title="A wxDDEConnection object represents the connection between a client and a server.">wxDDEConnection</a> object or by overriding its members.</p>
 <p>An application should normally derive a new connection class from <a class="el" href="classwx_d_d_e_connection.html" title="A wxDDEConnection object represents the connection between a client and a server.">wxDDEConnection</a>, in order to override the communication event handlers to do something interesting.</p>
 <p>This DDE-based implementation is available on Windows only, but a platform-independent, socket-based version of this API is available using <a class="el" href="classwx_t_c_p_connection.html" title="A wxTCPClient object represents the connection between a client and a server.">wxTCPConnection</a>.</p>
 <h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__ipc.html">Interprocess Communication</a></span></div> <div><span class="avail">Availability:</span>&nbsp;&nbsp;only available for the <a class="el" href="page_port.html#page_port_wxmsw">wxMSW</a> port.</div> <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_connection_base.html">wxConnectionBase</a>, <a class="el" href="classwx_d_d_e_client.html" title="A wxDDEClient object represents the client part of a client-server DDE (Dynamic Data Exchange) conver...">wxDDEClient</a>, <a class="el" href="classwx_d_d_e_server.html" title="A wxDDEServer object represents the server part of a client-server DDE (Dynamic Data Exchange) conver...">wxDDEServer</a>, <a class="el" href="overview_ipc.html">Interprocess Communication</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__ipc.html">Interprocess Communication</a></span></div> <div><span class="avail">Availability:</span>&nbsp;&nbsp;only available for the <a class="el" href="page_port.html#page_port_wxmsw">wxMSW</a> port.</div> <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_connection_base.html">wxConnectionBase</a>, <a class="el" href="classwx_d_d_e_client.html" title="A wxDDEClient object represents the client part of a client-server DDE (Dynamic Data Exchange) conver...">wxDDEClient</a>, <a class="el" href="classwx_d_d_e_server.html" title="wxDDEServer オブジェクトはクライアント・サーバ DDE (Dynamic Data Exchange) 通信のサーバ部分を表しています。">wxDDEServer</a>, <a class="el" href="overview_ipc.html">Interprocess Communication</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
@@ -296,7 +296,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Called by the server application to advise the client of a change in the data associated with the given item.  </p>
-<p>Causes the client connection's <a class="el" href="classwx_d_d_e_connection.html#a13bf3348f8ad73e63a7778feb707f137" title="Message sent to the client application when the server notifies it of a change in the data associated...">OnAdvise()</a> member to be called.</p>
+<p>Causes the client connection's <a class="el" href="classwx_d_d_e_connection.html#a13bf3348f8ad73e63a7778feb707f137" title="Advice() を使用し、指定した項目に関連するデータの変更をサーバが通知するときにクライアントアプリケーションへ送信されるメッセージ。">OnAdvise()</a> member to be called.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful.  </dd></dl>
 
 </div>
@@ -327,7 +327,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Called by the server application to advise the client of a change in the data associated with the given item.  </p>
-<p>Causes the client connection's <a class="el" href="classwx_d_d_e_connection.html#a13bf3348f8ad73e63a7778feb707f137" title="Message sent to the client application when the server notifies it of a change in the data associated...">OnAdvise()</a> member to be called.</p>
+<p>Causes the client connection's <a class="el" href="classwx_d_d_e_connection.html#a13bf3348f8ad73e63a7778feb707f137" title="Advice() を使用し、指定した項目に関連するデータの変更をサーバが通知するときにクライアントアプリケーションへ送信されるメッセージ。">OnAdvise()</a> member to be called.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful.  </dd></dl>
 
 </div>
@@ -358,7 +358,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Called by the server application to advise the client of a change in the data associated with the given item.  </p>
-<p>Causes the client connection's <a class="el" href="classwx_d_d_e_connection.html#a13bf3348f8ad73e63a7778feb707f137" title="Message sent to the client application when the server notifies it of a change in the data associated...">OnAdvise()</a> member to be called.</p>
+<p>Causes the client connection's <a class="el" href="classwx_d_d_e_connection.html#a13bf3348f8ad73e63a7778feb707f137" title="Advice() を使用し、指定した項目に関連するデータの変更をサーバが通知するときにクライアントアプリケーションへ送信されるメッセージ。">OnAdvise()</a> member to be called.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful.  </dd></dl>
 
 </div>
@@ -389,7 +389,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Called by the server application to advise the client of a change in the data associated with the given item.  </p>
-<p>Causes the client connection's <a class="el" href="classwx_d_d_e_connection.html#a13bf3348f8ad73e63a7778feb707f137" title="Message sent to the client application when the server notifies it of a change in the data associated...">OnAdvise()</a> member to be called.</p>
+<p>Causes the client connection's <a class="el" href="classwx_d_d_e_connection.html#a13bf3348f8ad73e63a7778feb707f137" title="Advice() を使用し、指定した項目に関連するデータの変更をサーバが通知するときにクライアントアプリケーションへ送信されるメッセージ。">OnAdvise()</a> member to be called.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful.  </dd></dl>
 
 </div>

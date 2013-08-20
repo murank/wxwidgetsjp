@@ -134,11 +134,11 @@ function toggleVisibility(linkObj) {
 <area shape="rect" id="node2" href="classwx_u_r_i.html" title="wxURI is used to extract information from a URI (Uniform Resource Identifier)." alt="" coords="13,86,72,117"/><area shape="rect" id="node4" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="5,6,80,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classwx_u_r_l.html" title="wxURL is a specialization of wxURI for parsing URLs.">wxURL</a> is a specialization of <a class="el" href="classwx_u_r_i.html" title="wxURI is used to extract information from a URI (Uniform Resource Identifier).">wxURI</a> for parsing URLs.  </p>
+<div class="textblock"><p><a class="el" href="classwx_u_r_l.html" title="wxURL は URL をパースするために wxURI を特殊化したものです。">wxURL</a> is a specialization of <a class="el" href="classwx_u_r_i.html" title="wxURI is used to extract information from a URI (Uniform Resource Identifier).">wxURI</a> for parsing URLs.  </p>
 <p>Please look at <a class="el" href="classwx_u_r_i.html" title="wxURI is used to extract information from a URI (Uniform Resource Identifier).">wxURI</a> documentation for more info about the functions you can use to retrieve the various parts of the URL (scheme, server, port, etc).</p>
 <p>Supports standard assignment operators, copy constructors, and comparison operators.</p>
 <h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxnet">wxNet</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__net.html">Networking</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_socket_base.html" title="wxSocketBase is the base class for all socket-related objects, and it defines all basic IO functional...">wxSocketBase</a>, <a class="el" href="classwx_protocol.html" title="Represents a protocol for use with wxURL.">wxProtocol</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxnet">wxNet</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__net.html">Networking</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_socket_base.html" title="wxSocketBase はソケットに関連するオブジェクトすべての基底クラスで、基本的な IO 機能をすべて定義しています。">wxSocketBase</a>, <a class="el" href="classwx_protocol.html" title="wxURL で使用するプロトコルを表しています。">wxProtocol</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
@@ -251,7 +251,7 @@ Static Public Member Functions</h2></td></tr>
 <p>You can use all but seek functionality of wxStream. Seek isn't available on all streams. For example, HTTP or FTP streams don't deal with it.</p>
 <p>Note that this method is somewhat deprecated, all future wxWidgets applications should use <a class="el" href="classwx_file_system.html" title="This class provides an interface for opening files on different file systems.">wxFileSystem</a> instead.</p>
 <p>例:</p>
-<div class="fragment"><pre class="fragment">        <a class="code" href="classwx_u_r_l.html" title="wxURL is a specialization of wxURI for parsing URLs.">wxURL</a> url(<span class="stringliteral">"http://a.host/a.dir/a.file"</span>);
+<div class="fragment"><pre class="fragment">        <a class="code" href="classwx_u_r_l.html" title="wxURL は URL をパースするために wxURI を特殊化したものです。">wxURL</a> url(<span class="stringliteral">"http://a.host/a.dir/a.file"</span>);
         <span class="keywordflow">if</span> (url.GetError() == <a class="code" href="url_8h.html#a96577e618caa0aa92dc39403bc3d5d81a4845be36309c1c3b66bdc23e678ff260" title="No error.">wxURL_NOERR</a>)
         {
             <a class="code" href="classwx_input_stream.html" title="wxInputStream は抽象クラスであり、直接使用することはありません。">wxInputStream</a> *in_stream;

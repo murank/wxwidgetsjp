@@ -119,7 +119,7 @@ function toggleVisibility(linkObj) {
 <a href="#pub-methods">Public Member Functions</a> |
 <a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">wxConnection Class Reference<div class="ingroups"><a class="el" href="group__group__class__ipc.html">Interprocess Communication</a></div></div>  </div>
+<div class="title">wxConnection Class Reference<div class="ingroups"><a class="el" href="group__group__class__ipc.html">プロセス間通信</a></div></div>  </div>
 </div>
 <div class="contents"><!-- doxytag: class="wxConnection" --><!-- doxytag: inherits="wxObject" -->
 
@@ -134,12 +134,12 @@ function toggleVisibility(linkObj) {
 <area shape="rect" id="node2" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="19,6,93,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>A <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a> object represents the connection between a client and a server.  </p>
-<p>It is created by making a connection using a <a class="el" href="classwx_client.html" title="A wxClient object represents the client part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxClient</a> object, or by the acceptance of a connection by a <a class="el" href="classwx_server.html" title="A wxServer object represents the server part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxServer</a> object.</p>
-<p>The bulk of a DDE-like (Dynamic Data Exchange) conversation is controlled by calling members in a <b><a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a></b> object or by overriding its members. The actual DDE-based implementation using <a class="el" href="classwx_d_d_e_connection.html" title="A wxDDEConnection object represents the connection between a client and a server.">wxDDEConnection</a> is available on Windows only, but a platform-independent, socket-based version of this API is available using <a class="el" href="classwx_t_c_p_connection.html" title="A wxTCPClient object represents the connection between a client and a server.">wxTCPConnection</a>, which has the same API.</p>
-<p>An application should normally derive a new connection class from <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a>, in order to override the communication event handlers to do something interesting.</p>
+<div class="textblock"><p>A <a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> object represents the connection between a client and a server.  </p>
+<p>It is created by making a connection using a <a class="el" href="classwx_client.html" title="wxClient オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のクライアント部分を表しています。">wxClient</a> object, or by the acceptance of a connection by a <a class="el" href="classwx_server.html" title="wxServer オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のサーバ部分を表しています。">wxServer</a> object.</p>
+<p>The bulk of a DDE-like (Dynamic Data Exchange) conversation is controlled by calling members in a <b><a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a></b> object or by overriding its members. The actual DDE-based implementation using <a class="el" href="classwx_d_d_e_connection.html" title="A wxDDEConnection object represents the connection between a client and a server.">wxDDEConnection</a> is available on Windows only, but a platform-independent, socket-based version of this API is available using <a class="el" href="classwx_t_c_p_connection.html" title="A wxTCPClient object represents the connection between a client and a server.">wxTCPConnection</a>, which has the same API.</p>
+<p>An application should normally derive a new connection class from <a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a>, in order to override the communication event handlers to do something interesting.</p>
 <h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__ipc.html">Interprocess Communication</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_client.html" title="A wxClient object represents the client part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxClient</a>, <a class="el" href="classwx_server.html" title="A wxServer object represents the server part of a client-server DDE-like (Dynamic Data Exchange) conv...">wxServer</a>, <a class="el" href="overview_ipc.html">Interprocess Communication</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__ipc.html">Interprocess Communication</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_client.html" title="wxClient オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のクライアント部分を表しています。">wxClient</a>, <a class="el" href="classwx_server.html" title="wxServer オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のサーバ部分を表しています。">wxServer</a>, <a class="el" href="overview_ipc.html">Interprocess Communication</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 
@@ -224,9 +224,9 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Constructs a connection object.  </p>
-<p>If no user-defined connection object is to be derived from <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a>, then the constructor should not be called directly, since the default connection object will be provided on requesting (or accepting) a connection.</p>
-<p>However, if the user defines his or her own derived connection object, the <a class="el" href="classwx_server.html#ae04dd9aa98b7a0a3cfce1333d80b0713" title="When a client calls MakeConnection, the server receives the message and this member is called...">wxServer::OnAcceptConnection</a> and/or <a class="el" href="classwx_client.html#a71328614681f8f50de8a561b5dcfbbde" title="Called by MakeConnection(), by default this simply returns a new wxConnection object.">wxClient::OnMakeConnection</a> members should be replaced by functions which construct the new connection object.</p>
-<p>If the arguments of the <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a> constructor are void then the <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a> object manages its own connection buffer, allocating memory as needed. A programmer-supplied buffer cannot be increased if necessary, and the program will assert if it is not large enough.</p>
+<p>If no user-defined connection object is to be derived from <a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a>, then the constructor should not be called directly, since the default connection object will be provided on requesting (or accepting) a connection.</p>
+<p>However, if the user defines his or her own derived connection object, the <a class="el" href="classwx_server.html#ae04dd9aa98b7a0a3cfce1333d80b0713" title="When a client calls MakeConnection, the server receives the message and this member is called...">wxServer::OnAcceptConnection</a> and/or <a class="el" href="classwx_client.html#a71328614681f8f50de8a561b5dcfbbde" title="MakeConnection() から呼ばれ、デフォルトでは単純に新しい wxConnection オブジェクトを返却するだけです。">wxClient::OnMakeConnection</a> members should be replaced by functions which construct the new connection object.</p>
+<p>If the arguments of the <a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> constructor are void then the <a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> object manages its own connection buffer, allocating memory as needed. A programmer-supplied buffer cannot be increased if necessary, and the program will assert if it is not large enough.</p>
 <p>The programmer-supplied buffer is included mainly for backwards compatibility.  </p>
 
 </div>
@@ -257,9 +257,9 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Constructs a connection object.  </p>
-<p>If no user-defined connection object is to be derived from <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a>, then the constructor should not be called directly, since the default connection object will be provided on requesting (or accepting) a connection.</p>
-<p>However, if the user defines his or her own derived connection object, the <a class="el" href="classwx_server.html#ae04dd9aa98b7a0a3cfce1333d80b0713" title="When a client calls MakeConnection, the server receives the message and this member is called...">wxServer::OnAcceptConnection</a> and/or <a class="el" href="classwx_client.html#a71328614681f8f50de8a561b5dcfbbde" title="Called by MakeConnection(), by default this simply returns a new wxConnection object.">wxClient::OnMakeConnection</a> members should be replaced by functions which construct the new connection object.</p>
-<p>If the arguments of the <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a> constructor are void then the <a class="el" href="classwx_connection.html" title="A wxConnection object represents the connection between a client and a server.">wxConnection</a> object manages its own connection buffer, allocating memory as needed. A programmer-supplied buffer cannot be increased if necessary, and the program will assert if it is not large enough.</p>
+<p>If no user-defined connection object is to be derived from <a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a>, then the constructor should not be called directly, since the default connection object will be provided on requesting (or accepting) a connection.</p>
+<p>However, if the user defines his or her own derived connection object, the <a class="el" href="classwx_server.html#ae04dd9aa98b7a0a3cfce1333d80b0713" title="When a client calls MakeConnection, the server receives the message and this member is called...">wxServer::OnAcceptConnection</a> and/or <a class="el" href="classwx_client.html#a71328614681f8f50de8a561b5dcfbbde" title="MakeConnection() から呼ばれ、デフォルトでは単純に新しい wxConnection オブジェクトを返却するだけです。">wxClient::OnMakeConnection</a> members should be replaced by functions which construct the new connection object.</p>
+<p>If the arguments of the <a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> constructor are void then the <a class="el" href="classwx_connection.html" title="wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。">wxConnection</a> object manages its own connection buffer, allocating memory as needed. A programmer-supplied buffer cannot be increased if necessary, and the program will assert if it is not large enough.</p>
 <p>The programmer-supplied buffer is included mainly for backwards compatibility.  </p>
 
 </div>
@@ -303,7 +303,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Called by the server application to advise the client of a change in the data associated with the given item.  </p>
-<p>Causes the client connection's <a class="el" href="classwx_connection.html#a9dddf8014802c9643378b9bdb34bfc48" title="Message sent to the client application when the server notifies it of a change in the data associated...">OnAdvise()</a> member to be called.</p>
+<p>Causes the client connection's <a class="el" href="classwx_connection.html#a9dddf8014802c9643378b9bdb34bfc48" title="Advice() を使用し、指定した項目に関連するデータの変更をサーバが通知するときにクライアントアプリケーションへ送信されるメッセージ。">OnAdvise()</a> member to be called.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful.  </dd></dl>
 
 </div>
@@ -334,7 +334,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Called by the server application to advise the client of a change in the data associated with the given item.  </p>
-<p>Causes the client connection's <a class="el" href="classwx_connection.html#a9dddf8014802c9643378b9bdb34bfc48" title="Message sent to the client application when the server notifies it of a change in the data associated...">OnAdvise()</a> member to be called.</p>
+<p>Causes the client connection's <a class="el" href="classwx_connection.html#a9dddf8014802c9643378b9bdb34bfc48" title="Advice() を使用し、指定した項目に関連するデータの変更をサーバが通知するときにクライアントアプリケーションへ送信されるメッセージ。">OnAdvise()</a> member to be called.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful.  </dd></dl>
 
 </div>
@@ -365,7 +365,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Called by the server application to advise the client of a change in the data associated with the given item.  </p>
-<p>Causes the client connection's <a class="el" href="classwx_connection.html#a9dddf8014802c9643378b9bdb34bfc48" title="Message sent to the client application when the server notifies it of a change in the data associated...">OnAdvise()</a> member to be called.</p>
+<p>Causes the client connection's <a class="el" href="classwx_connection.html#a9dddf8014802c9643378b9bdb34bfc48" title="Advice() を使用し、指定した項目に関連するデータの変更をサーバが通知するときにクライアントアプリケーションへ送信されるメッセージ。">OnAdvise()</a> member to be called.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful.  </dd></dl>
 
 </div>
@@ -396,7 +396,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Called by the server application to advise the client of a change in the data associated with the given item.  </p>
-<p>Causes the client connection's <a class="el" href="classwx_connection.html#a9dddf8014802c9643378b9bdb34bfc48" title="Message sent to the client application when the server notifies it of a change in the data associated...">OnAdvise()</a> member to be called.</p>
+<p>Causes the client connection's <a class="el" href="classwx_connection.html#a9dddf8014802c9643378b9bdb34bfc48" title="Advice() を使用し、指定した項目に関連するデータの変更をサーバが通知するときにクライアントアプリケーションへ送信されるメッセージ。">OnAdvise()</a> member to be called.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful.  </dd></dl>
 
 </div>

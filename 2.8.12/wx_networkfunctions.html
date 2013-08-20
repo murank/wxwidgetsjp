@@ -93,10 +93,7 @@ Return the (current) user's home directory.<P>
 <P>
 <B><A HREF="wx_wxstring.html#wxstring">wxString</A></B> </B> <B>wxGetHostName</B>()<P>
 <B>bool</B> <B>wxGetHostName</B>(<B>char * </B><I>buf</I>, <B>int </B><I>sz</I>)<P>
-
-Copies the current host machine's name into the supplied buffer. Please note
-that the returned name is <I>not</I> fully qualified, i.e. it does not include
-the domain name.<P>
+現在のホストマシン名を与えられたバッファへコピーします。Please note that the returned name is <I>not</I> fully qualified, i.e. it does not include the domain name.<P>
 
 Under Windows or NT, this function first looks in the environment
 variable SYSTEM_NAME; if this is not found, the entry <B>HostName</B>
