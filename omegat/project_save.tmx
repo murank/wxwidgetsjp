@@ -686,6 +686,14 @@ bool MyApp::OnInit()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// Create a new client</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134751Z">
+        <seg>// 新しいクライアントを作成する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// Do something.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130620T143827Z">
@@ -1117,6 +1125,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Data transfer&lt;/a0&gt;&lt;br1&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T032109Z">
+        <seg>&lt;a0&gt;データの転送&lt;/a0&gt;&lt;br1&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Device contexts&lt;/a0&gt;&lt;br1&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T141947Z">
@@ -1235,6 +1251,22 @@ printf(&lt;s1&gt;"Data: %s\n"&lt;/s1&gt;, (&lt;s2&gt;const&lt;/s2&gt; &lt;s3&gt;
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130619T152211Z">
         <seg>&lt;a0&gt;wxCalendarCtrl&lt;/a0&gt; は wxGTK でネイティブ実装を持つようになりました。ただし、汎用のものと比べて機能は少ないです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxClient&lt;/a0&gt; - This represents the client application, and is used only within a client program.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T145435Z">
+        <seg>&lt;a0&gt;wxClient&lt;/a0&gt; - これはクライアントアプリケーションを表しており、クライアントプログラムの中でだけ使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxConnection&lt;/a0&gt; - This represents the connection from the client to the server.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T145525Z">
+        <seg>&lt;a0&gt;wxConnection&lt;/a0&gt; - これはクライアントからサーバへのコネクションを表しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1587,6 +1619,30 @@ printf(&lt;s1&gt;"Data: %s\n"&lt;/s1&gt;, (&lt;s2&gt;const&lt;/s2&gt; &lt;s3&gt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxProtocol&lt;/a0&gt;, &lt;a1&gt;wxURL&lt;/a1&gt;, &lt;a2&gt;wxFTP&lt;/a2&gt;, &lt;a3&gt;wxHTTP&lt;/a3&gt; - Classes for programming popular Internet protocols.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T124457Z">
+        <seg>&lt;a0&gt;wxProtocol&lt;/a0&gt;、&lt;a1&gt;wxURL&lt;/a1&gt;、&lt;a2&gt;wxFTP&lt;/a2&gt;、&lt;a3&gt;wxHTTP&lt;/a3&gt; - よく知られているインターネットプロトコルのプログラミング用クラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxProtocol&lt;/a0&gt;, &lt;a1&gt;wxURL&lt;/a1&gt;, &lt;a2&gt;wxFTP&lt;/a2&gt;, &lt;a3&gt;wxHTTP&lt;/a3&gt;: classes for programming popular Internet protocols.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130725T153418Z">
+        <seg>&lt;a0&gt;wxProtocol&lt;/a0&gt;、&lt;a1&gt;wxURL&lt;/a1&gt;、&lt;a2&gt;wxFTP&lt;/a2&gt;、&lt;a3&gt;wxHTTP&lt;/a3&gt;: よく知られているインターネットプロトコルのプログラミング用クラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxServer&lt;/a0&gt; - This represents the server application, and is used only within a server program.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T145446Z">
+        <seg>&lt;a0&gt;wxServer&lt;/a0&gt; - これはサーバアプリケーションを表しており、サーバプログラムの中でだけ使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;wxSizer::Fit()&lt;/a0&gt;: this sets the size of the window to be large enough to accommodate the minimum size needed by the sizer, (along with a few other constraints...).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130722T155600Z">
@@ -1615,6 +1671,22 @@ printf(&lt;s1&gt;"Data: %s\n"&lt;/s1&gt;, (&lt;s2&gt;const&lt;/s2&gt; &lt;s3&gt;
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T145841Z">
         <seg>&lt;a0&gt;wxSizer&lt;/a0&gt;&lt;br1&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxSocketEvent&lt;/a0&gt;, &lt;a1&gt;wxSocketBase&lt;/a1&gt;, &lt;a2&gt;wxSocketClient&lt;/a2&gt;, &lt;a3&gt;wxSocketServer&lt;/a3&gt; - Classes for the low-level TCP/IP API.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T151844Z">
+        <seg>&lt;a0&gt;wxSocketEvent&lt;/a0&gt;、&lt;a1&gt;wxSocketBase&lt;/a1&gt;、&lt;a2&gt;wxSocketClient&lt;/a2&gt;、&lt;a3&gt;wxSocketServer&lt;/a3&gt; - 低レベルのTCP/IP API 用クラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxSocketEvent&lt;/a0&gt;, &lt;a1&gt;wxSocketBase&lt;/a1&gt;, &lt;a2&gt;wxSocketClient&lt;/a2&gt;, &lt;a3&gt;wxSocketServer&lt;/a3&gt;: classes for the low-level TCP/IP API.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130725T153219Z">
+        <seg>&lt;a0&gt;wxSocketEvent&lt;/a0&gt;、&lt;a1&gt;wxSocketBase&lt;/a1&gt;、&lt;a2&gt;wxSocketClient&lt;/a2&gt;、&lt;a3&gt;wxSocketServer&lt;/a3&gt;: 低レベルのTCP/IP API 用クラスです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1732,6 +1804,32 @@ printf(&lt;s1&gt;"Data: %s\n"&lt;/s1&gt;, (&lt;s2&gt;const&lt;/s2&gt; &lt;s3&gt;
       <tuv lang="JA" changeid="owner" changedate="20130503T151615Z">
         <seg>&lt;a0&gt;wxString&lt;/a0&gt; s(&lt;s1&gt;"hello"&lt;/s1&gt;);
 &lt;s2&gt;for&lt;/s2&gt; ( wxString::const_iterator i = s.&lt;a3&gt;begin&lt;/a3&gt;(); i != s.&lt;a4&gt;end&lt;/a4&gt;(); ++i )
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;wxString&lt;/a0&gt; server = &lt;s1&gt;"4242"&lt;/s1&gt;;
+&lt;a2&gt;wxString&lt;/a2&gt; hostName;
+&lt;a3&gt;wxGetHostName&lt;/a3&gt;(hostName);
+
+&lt;s4&gt;// Create a new client&lt;/s4&gt;
+MyClient *client = &lt;s5&gt;new&lt;/s5&gt; MyClient;
+connection = (MyConnection *)client-&gt;MakeConnection(hostName, server, &lt;s6&gt;"IPC TEST"&lt;/s6&gt;);
+
+&lt;s7&gt;if&lt;/s7&gt; (!connection)
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130820T152805Z">
+        <seg>&lt;a0&gt;wxString&lt;/a0&gt; server = &lt;s1&gt;"4242"&lt;/s1&gt;;
+&lt;a2&gt;wxString&lt;/a2&gt; hostName;
+&lt;a3&gt;wxGetHostName&lt;/a3&gt;(hostName);
+
+&lt;s4&gt;// 新しいクライアントを作成する&lt;/s4&gt;
+MyClient *client = &lt;s5&gt;new&lt;/s5&gt; MyClient;
+connection = (MyConnection *)client-&gt;MakeConnection(hostName, server, &lt;s6&gt;"IPC TEST"&lt;/s6&gt;);
+
+&lt;s7&gt;if&lt;/s7&gt; (!connection)
 {</seg>
       </tuv>
     </tu>
@@ -2107,6 +2205,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a156&gt;&lt;b157&gt;Interprocess communication overview&lt;/b157&gt;&lt;/a156&gt;&lt;br158&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130725T152051Z">
+        <seg>&lt;a156&gt;&lt;b157&gt;プロセス間通信の概要&lt;/b157&gt;&lt;/a156&gt;&lt;br158&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a168&gt;&lt;b169&gt;Environment variables&lt;/b169&gt;&lt;/a168&gt;&lt;br170&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130523T160335Z">
@@ -2119,6 +2225,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T003254Z">
         <seg>&lt;a16&gt;wxLogPassThrough&lt;/a16&gt;,&lt;br17&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a16&gt;wxMessageBox&lt;/a16&gt;(topic, data);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T152916Z">
+        <seg>&lt;a16&gt;wxMessageBox&lt;/a16&gt;(topic, data);</seg>
       </tuv>
     </tu>
     <tu>
@@ -2185,6 +2299,22 @@ MyFrame::MyFrame()
       <tuv lang="JA" changeid="owner" changedate="20130512T024755Z">
         <seg>&lt;a20&gt;wxDECLARE_EVENT_TABLE&lt;/a20&gt;()
 };</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a22&gt;Interprocess communication&lt;/a22&gt;&lt;br23&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130725T152032Z">
+        <seg>&lt;a22&gt;プロセス間通信&lt;/a22&gt;&lt;br23&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a22&gt;wxConnectionBase&lt;/a22&gt;* &lt;a23&gt;OnMakeConnection&lt;/a23&gt;(&lt;s24&gt;void&lt;/s24&gt;)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T152920Z">
+        <seg>&lt;a22&gt;wxConnectionBase&lt;/a22&gt;* &lt;a23&gt;OnMakeConnection&lt;/a23&gt;(&lt;s24&gt;void&lt;/s24&gt;)</seg>
       </tuv>
     </tu>
     <tu>
@@ -2265,6 +2395,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T134107Z">
         <seg>&lt;a2&gt;ビットマップとアイコン&lt;/a2&gt;&lt;br3&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a2&gt;Examples&lt;/a2&gt;&lt;br3&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T032123Z">
+        <seg>&lt;a2&gt;例&lt;/a2&gt;&lt;br3&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -2441,6 +2579,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T074731Z">
         <seg>&lt;a4&gt;ユーザの生成したイベントとプログラム的に生成したイベント&lt;/a4&gt;&lt;br5&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a4&gt;More DDE details&lt;/a4&gt;&lt;br5&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T032143Z">
+        <seg>&lt;a4&gt;DDE の詳細&lt;/a4&gt;&lt;br5&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -2773,6 +2919,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a8&gt;wxMessageBox&lt;/a8&gt;(&lt;s9&gt;"Failed to make connection to server"&lt;/s9&gt;, &lt;s10&gt;"Client Demo Error"&lt;/s10&gt;);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T153045Z">
+        <seg>&lt;a8&gt;wxMessageBox&lt;/a8&gt;(&lt;s9&gt;"Failed to make connection to server"&lt;/s9&gt;, &lt;s10&gt;"Client Demo Error"&lt;/s10&gt;);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a8&gt;wxTextValidator&lt;/a8&gt;(&lt;a9&gt;wxFILTER_ALPHA&lt;/a9&gt;, &amp;g_data.m_string));</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130624T150543Z">
@@ -2949,6 +3103,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;b0&gt;Advise:&lt;/b0&gt; The client asks to be advised of any change in data associated with a particular item.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T033222Z">
+        <seg>&lt;b0&gt;Advise:&lt;/b0&gt; 特定の項目に関連するデータの変更をクライアントへ通知するように要求します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;b0&gt;An alignment:&lt;/b0&gt; Often, a dialog item is given more space than its minimal size plus its border.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T123510Z">
@@ -2993,6 +3155,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T015937Z">
         <seg>&lt;b0&gt;完全性&lt;/b0&gt; 通常、処理が失敗した場合にはエラーメッセージが表示されるべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;Execute:&lt;/b0&gt; the client calls the server with a data string representing a command to be executed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T032457Z">
+        <seg>&lt;b0&gt;Execute:&lt;/b0&gt; 実行するコマンドを表すデータ文字列を指定してクライアントからサーバを呼び出します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3053,6 +3223,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;b0&gt;Poke:&lt;/b0&gt; The client sends a data string associated with an item string directly to the server.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T033100Z">
+        <seg>&lt;b0&gt;Poke:&lt;/b0&gt; ある項目に関連するデータ文字列をクライアントからサーバへ直接送信します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;b0&gt;Portability:&lt;/b0&gt; It is a common practice to use &lt;e1&gt;printf()&lt;/e1&gt; statements or cout/cerr C++ streams for writing out some (debug or otherwise) information.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T091656Z">
@@ -3065,6 +3243,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T015828Z">
         <seg>&lt;b0&gt;移植性&lt;/b0&gt; デバッグ情報や他の情報の出力に &lt;i1&gt;printf()&lt;/i1&gt; や cout/cerr などの C++ ストリームを使用するのはごく普通のことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;Request:&lt;/b0&gt; the client asks the server for a particular data string associated with a given item string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T032733Z">
+        <seg>&lt;b0&gt;Request:&lt;/b0&gt; 指定した項目に関連する特定のデータ文字列をクライアントからサーバへ要求します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;b0&gt;SECURITY NOTE:&lt;/b0&gt; Using Internet domain sockets is extremely insecure for IPC as there is absolutely no access control for them, use Unix domain sockets whenever possible!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T032948Z">
+        <seg>&lt;b0&gt;セキュリティ上の注意:&lt;/b0&gt; インターネットドメインソケットを使用したプロセス間通信は非常に危険です。なぜなら、これらの通信に対するアクセス制御はまったく行われないためです。可能な限り、Unix ドメインソケットを使用してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3573,6 +3767,18 @@ MyDialog::MyDialog(&lt;a2&gt;wxFrame&lt;/a2&gt; *parent, &lt;a3&gt;wxWindowID&lt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s0&gt;class &lt;/s0&gt;MyConnection: &lt;s1&gt;public&lt;/s1&gt; &lt;a2&gt;wxConnection&lt;/a2&gt;
+{
+&lt;s3&gt;public&lt;/s3&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T152908Z">
+        <seg>&lt;s0&gt;class &lt;/s0&gt;MyConnection: &lt;s1&gt;public&lt;/s1&gt; &lt;a2&gt;wxConnection&lt;/a2&gt;
+{
+&lt;s3&gt;public&lt;/s3&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s0&gt;class &lt;/s0&gt;MyFrame : &lt;s1&gt;public&lt;/s1&gt; &lt;a2&gt;wxFrame&lt;/a2&gt;
 {
 &lt;s3&gt;public&lt;/s3&gt;:</seg>
@@ -3807,6 +4013,20 @@ process_data(tmp_str);</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s11&gt;return&lt;/s11&gt; NULL;
+}
+
+connection-&gt;StartAdvise(&lt;s12&gt;"Item"&lt;/s12&gt;);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T153049Z">
+        <seg>&lt;s11&gt;return&lt;/s11&gt; NULL;
+}
+
+connection-&gt;StartAdvise(&lt;s12&gt;"Item"&lt;/s12&gt;);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s12&gt;// do something&lt;/s12&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130515T150109Z">
@@ -3853,6 +4073,14 @@ process_data(tmp_str);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130515T150512Z">
         <seg>&lt;s14&gt;// 基底クラスの純粋仮想関数を実装する&lt;/s14&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s14&gt;int&lt;/s14&gt; size, &lt;a15&gt;wxIPCFormat&lt;/a15&gt; format)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T152915Z">
+        <seg>&lt;s14&gt;int&lt;/s14&gt; size, &lt;a15&gt;wxIPCFormat&lt;/a15&gt; format)</seg>
       </tuv>
     </tu>
     <tu>
@@ -4169,6 +4397,14 @@ process_data(tmp_str);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130516T155533Z">
         <seg>&lt;s25&gt;// 送信する&lt;/s25&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s25&gt;return&lt;/s25&gt; &lt;s26&gt;new&lt;/s26&gt; MyConnection;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T152922Z">
+        <seg>&lt;s25&gt;return&lt;/s25&gt; &lt;s26&gt;new&lt;/s26&gt; MyConnection;</seg>
       </tuv>
     </tu>
     <tu>
@@ -4583,6 +4819,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s7&gt;bool&lt;/s7&gt; &lt;a8&gt;OnAdvise&lt;/a8&gt;(&lt;s9&gt;const&lt;/s9&gt; &lt;a10&gt;wxString&lt;/a10&gt;&amp; topic, &lt;s11&gt;const&lt;/s11&gt; &lt;a12&gt;wxString&lt;/a12&gt;&amp; item, &lt;s13&gt;char&lt;/s13&gt; *data,</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T152914Z">
+        <seg>&lt;s7&gt;bool&lt;/s7&gt; &lt;a8&gt;OnAdvise&lt;/a8&gt;(&lt;s9&gt;const&lt;/s9&gt; &lt;a10&gt;wxString&lt;/a10&gt;&amp; topic, &lt;s11&gt;const&lt;/s11&gt; &lt;a12&gt;wxString&lt;/a12&gt;&amp; item, &lt;s13&gt;char&lt;/s13&gt; *data,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s8&gt;// otherwise wxYES or wxOK button will be default&lt;/s8&gt;
 
 &lt;a9&gt;wxOK&lt;/a9&gt;     &lt;s10&gt;// return wxID_OK&lt;/s10&gt;
@@ -4665,6 +4909,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T145850Z">
         <seg>&lt;wx/sizer.h&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;a0&gt;wxClient&lt;/a0&gt; object initiates the client part of a client-server DDE-like (Dynamic Data Exchange) conversation (available in both Windows and Unix).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150436Z">
+        <seg>&lt;a0&gt;wxClient&lt;/a0&gt; オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のクライアント・サーバ通信のクライアント部分を初期化します。(Windows と Unix の両方で利用可能です)</seg>
       </tuv>
     </tu>
     <tu>
@@ -4769,6 +5021,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T153806Z">
         <seg>カーソルは小さな矩形のビットマップで、マウスポインタの位置を表すためにマウスクリックを示す画像付きでよく使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A data string is a fourth element of some messages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130726T150556Z">
+        <seg>いくつかのメッセージではデータ文字列が 4 番目の要素になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5157,10 +5417,34 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A wxClient object initiates the client part of a client-server DDE-like (Dynamic Data Exchange) conversation (available in both Windows and Unix).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T151425Z">
+        <seg>wxClient オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のクライアント・サーバ通信のクライアント部分を初期化します。(Windows と Unix の両方で利用可能です)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A wxClient object represents the client part of a client-server DDE-like (Dynamic Data Exchange) conv...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T151551Z">
+        <seg>wxClient オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のクライアント部分を表しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A wxClientDC must be constructed if an application wishes to paint on the client area of a window fro...</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T150230Z">
         <seg>wxClientDC は EVT_PAINT() イベントハンドラ以外の場所でクライアントエリアを描画する場合に使用する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A wxConnection object represents the connection between a client and a server.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T151519Z">
+        <seg>wxConnection オブジェクトはクライアント・サーバ間のコネクションを表しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5177,6 +5461,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T140552Z">
         <seg>wxDC は図形やテキストを描画可能な &lt;i0&gt;デバイスコンテキスト&lt;/i0&gt; です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A wxDDEServer object represents the server part of a client-server DDE (Dynamic Data Exchange) conver...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T124641Z">
+        <seg>wxDDEServer オブジェクトはクライアント・サーバ DDE (Dynamic Data Exchange) 通信のサーバ部分を表しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5221,6 +5513,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A wxServer object represents the server part of a client-server DDE-like (Dynamic Data Exchange) conv...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T151338Z">
+        <seg>wxServer オブジェクトは DDE 風 (Dynamic Data Exchange) 通信のサーバ部分を表しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A wxSize is a useful data structure for graphics operations.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T034450Z">
@@ -5233,6 +5533,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T140810Z">
         <seg>wxFlexGridSizer のように子コントロールを仮想のグリッドに配置しますが、wxGBPosition を使用してコントロールを明示的に配置することが可能です。また、wxGBSpan を使用することで、複数の行または列にまたがってコントロールを配置することも可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A wxTCPServer object represents the server part of a client-server conversation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T124728Z">
+        <seg>wxTCPServer はクライアント・サーバ通信のサーバ部分を表しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5625,6 +5933,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T000123Z">
         <seg>boost::function&lt;&gt; のような任意のファンクタ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An enumeration for formats .</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T152904Z">
+        <seg>フォーマット用の列挙型。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6435,6 +6751,14 @@ END_EVENT_TABLE()</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Both the client and the server use an instance of this class, one per connection.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T145541Z">
+        <seg>クライアントとサーバの両方とも、このクラスのインスタンスをコネクションごとにひとつ使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But MyApp object is deleted after wxWidgets structures that wxCHMHelpController depends on were uninitialized!</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130527T162718Z">
@@ -6603,6 +6927,14 @@ END_EVENT_TABLE()</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By default, the DDE implementation is used under Windows.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130725T155142Z">
+        <seg>Windows ではデフォルトで DDE 版が使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Call &lt;a0&gt;wxWindow::Destroy&lt;/a0&gt; if you want to be certain that the window is destroyed.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130613T150935Z">
@@ -6635,6 +6967,14 @@ END_EVENT_TABLE()</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Called by MakeConnection(), by default this simply returns a new wxConnection object.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150605Z">
+        <seg>MakeConnection() から呼ばれ、デフォルトでは単純に新しい wxConnection オブジェクトを返却するだけです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Called to log a new record.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T111512Z">
@@ -6655,6 +6995,22 @@ END_EVENT_TABLE()</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T111550Z">
         <seg>指定された文字列を記録するために呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Calling &lt;a0&gt;wxClient::MakeConnection&lt;/a0&gt; implicitly creates an instance of &lt;b1&gt;MyConnection&lt;/b1&gt; if the request for a connection is accepted, and the client then requests an &lt;i2&gt;Advise&lt;/i2&gt; loop from the server (an Advise loop is where the server calls the client when data has changed).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134739Z">
+        <seg>&lt;a0&gt;wxClient::MakeConnection&lt;/a0&gt; を呼び出すと接続要求が受け付けられた場合に &lt;b1&gt;MyConnection&lt;/b1&gt; のインスタンスが暗黙的に作成されます。そして、クライアントはサーバからの &lt;i2&gt;Advise&lt;/i2&gt; ループを要求します。(Advise ループとはデータが変更されたときにサーバがクライアントを呼び出すところのことです)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Calling &lt;a1&gt;wxClient::MakeConnection&lt;/a1&gt; implicitly creates an instance of &lt;e2&gt;MyConnection&lt;/e2&gt; if the request for a connection is accepted, and the client then requests an &lt;e3&gt;Advise&lt;/e3&gt; loop from the server (an Advise loop is where the server calls the client when data has changed).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T153015Z">
+        <seg>&lt;a1&gt;wxClient::MakeConnection&lt;/a1&gt; を呼び出すと接続要求が受け付けられた場合に &lt;e2&gt;MyConnection&lt;/e2&gt; のインスタンスが暗黙的に作成されます。そして、クライアントはサーバからの &lt;e3&gt;Advise&lt;/e3&gt; ループを要求します。(Advise ループとはデータが変更されたときにサーバがクライアントを呼び出すところのことです)</seg>
       </tuv>
     </tu>
     <tu>
@@ -6895,6 +7251,22 @@ END_EVENT_TABLE()</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130704T151947Z">
         <seg>クラス: &lt;a0&gt;wxMBConv&lt;/a0&gt;, wxMBConvLibc, &lt;a1&gt;wxMBConvUTF7&lt;/a1&gt;, &lt;a2&gt;wxMBConvUTF8&lt;/a2&gt;, &lt;a3&gt;wxCSConv&lt;/a3&gt;, &lt;a4&gt;wxMBConvUTF16&lt;/a4&gt;, &lt;a5&gt;wxMBConvUTF32&lt;/a5&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Classes: &lt;a0&gt;wxServer&lt;/a0&gt;, &lt;a1&gt;wxConnection&lt;/a1&gt;, &lt;a2&gt;wxClient&lt;/a2&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T151554Z">
+        <seg>クラス: &lt;a0&gt;wxServer&lt;/a0&gt;, &lt;a1&gt;wxConnection&lt;/a1&gt;, &lt;a2&gt;wxClient&lt;/a2&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Classes: &lt;a0&gt;wxServer&lt;/a0&gt;, &lt;a1&gt;wxConnection&lt;/a1&gt;, &lt;a2&gt;wxClient&lt;/a2&gt; wxWidgets has a number of different classes to help with interprocess communication and network programming.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130725T152830Z">
+        <seg>クラス: &lt;a0&gt;wxServer&lt;/a0&gt;, &lt;a1&gt;wxConnection&lt;/a1&gt;, &lt;a2&gt;wxClient&lt;/a2&gt; wxWidgets にはプロセス間通信やネットワークプログラミングを支援する様々なクラスがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7189,6 +7561,14 @@ END_EVENT_TABLE()</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Copies the current host machine's name into the supplied buffer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T153041Z">
+        <seg>現在のホストマシン名を与えられたバッファへコピーします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Copy from a source DC to this DC.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T153857Z">
@@ -7201,6 +7581,22 @@ END_EVENT_TABLE()</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130520T151613Z">
         <seg>同様に、水平方向のサイザーを使用する場合、各子コントロールを中央寄せ、下寄せ、上寄せにすることが可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create an instance of your client object.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T024730Z">
+        <seg>クライアントオブジェクトのインスタンスを作成する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create an instance of your server object and call Create to activate it, giving it a service name.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T024712Z">
+        <seg>サーバオブジェクトのインスタンスを作成し、作成したオブジェクトを有効化するためにサービス名を指定して Create を呼び出す。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7269,6 +7665,14 @@ END_EVENT_TABLE()</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>DDE works within one computer only.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130725T155158Z">
+        <seg>DDE は同じコンピュータ内でのみ動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>DECLARE_EVENT_TABLE()
 };</seg>
       </tuv>
@@ -7311,6 +7715,22 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T134125Z">
         <seg>Unicode の変換エラーによるデータ喪失</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Data Transfer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T151556Z">
+        <seg>データの転送</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Data transfer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T032207Z">
+        <seg>データの転送</seg>
       </tuv>
     </tu>
     <tu>
@@ -7399,6 +7819,70 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T123615Z">
         <seg>個々のコントロールに使用されたフラグに応じて空きスペースを満たす、つまり、最小サイズ以上に伸長させるか、空きスペースの中央またはいずれかの側に移動させることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Derive a class from &lt;a0&gt;wxClient&lt;/a0&gt;, overriding OnMakeConnection to create and return an instance of the derived connection class.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150329Z">
+        <seg>&lt;a0&gt;wxClient&lt;/a0&gt; を継承して OnMakeConnection をオーバーライドし、継承したコネクションクラスのインスタンスを作成して返却する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Derive a class from &lt;a0&gt;wxConnection&lt;/a0&gt;, providing handlers for various messages sent to the client side of a &lt;a1&gt;wxConnection&lt;/a1&gt; (e.g. OnAdvise).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150322Z">
+        <seg>&lt;a0&gt;wxConnection&lt;/a0&gt; を継承し、&lt;a1&gt;wxConnection&lt;/a1&gt; のクライアント側へ送信されたメッセージ用のハンドラ (OnAdvise など) を用意する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Derive a class from &lt;a0&gt;wxConnection&lt;/a0&gt;, providing handlers for various messages sent to the server side of a &lt;a1&gt;wxConnection&lt;/a1&gt; (e.g. OnExecute, OnRequest, OnPoke).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150253Z">
+        <seg>&lt;a0&gt;wxConnection&lt;/a0&gt; を継承し、&lt;a1&gt;wxConnection&lt;/a1&gt; のサーバ側へ送信されたメッセージ用のハンドラ (OnExecute、OnRequest、OnPoke など) を用意する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Derive a class from &lt;a0&gt;wxServer&lt;/a0&gt;, overriding OnAcceptConnection to accept or reject a connection on the basis of the topic argument.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150303Z">
+        <seg>&lt;a0&gt;wxServer&lt;/a0&gt; を継承し、トピック引数に基づいて接続を許可または拒否するために OnAcceptConnection をオーバーライドする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Derive a class from wxClient, overriding OnMakeConnection to create and return an instance of the derived connection class.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T025322Z">
+        <seg>wxClient を継承して OnMakeConnection をオーバーライドし、継承したコネクションクラスのインスタンスを作成して返却する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Derive a class from wxConnection, providing handlers for various messages sent to the client side of a wxConnection (e.g. OnAdvise).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T024721Z">
+        <seg>wxConnection を継承し、wxConnection のクライアント側へ送信されたメッセージ用のハンドラ (OnAdvise など) を用意する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Derive a class from wxConnection, providing handlers for various messages sent to the server side of a wxConnection (e.g. OnExecute, OnRequest, OnPoke).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T024654Z">
+        <seg>wxConnection を継承し、wxConnection のサーバ側へ送信されたメッセージ用のハンドラ (OnExecute、OnRequest、OnPoke など) を用意する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Derive a class from wxServer, overriding OnAcceptConnection to accept or reject a connection on the basis of the topic argument.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T024704Z">
+        <seg>wxServer を継承し、トピック引数に基づいて接続を許可または拒否するために OnAcceptConnection をオーバーライドする。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7997,6 +8481,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130515T145825Z">
         <seg>例:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Examples</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T033548Z">
+        <seg>例</seg>
       </tuv>
     </tu>
     <tu>
@@ -9011,6 +9503,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here, &lt;b0&gt;MyConnection&lt;/b0&gt; will respond to &lt;a1&gt;OnAdvise&lt;/a1&gt; messages sent by the server by displaying a message box.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134143Z">
+        <seg>ここでは &lt;b0&gt;MyConnection&lt;/b0&gt; がサーバから送信された &lt;a1&gt;OnAdvise&lt;/a1&gt; メッセージに反応してメッセージボックスを表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here, &lt;e0&gt;MyConnection&lt;/e0&gt; will respond to OnAdvise messages sent by the server by displaying a message box.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T152938Z">
+        <seg>ここでは &lt;e0&gt;MyConnection&lt;/e0&gt; がサーバから送信された OnAdvise メッセージに反応してメッセージボックスを表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here, cMB2WC of the UTF8 object returns a &lt;a0&gt;wxWCharBuffer&lt;/a0&gt; containing a Unicode string.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130718T152036Z">
@@ -9275,6 +9783,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If allowed, both the server and client objects create &lt;a0&gt;wxConnection&lt;/a0&gt; objects which persist until the connection is closed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150218Z">
+        <seg>接続が許可されるとサーバとクライアントの双方で &lt;a0&gt;wxConnection&lt;/a0&gt; が作成され、接続が閉じられるまで維持されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If allowed, both the server and client objects create wxConnection objects which persist until the connection is closed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T022046Z">
+        <seg>接続が許可されるとサーバとクライアントの双方で wxConnection が作成され、接続が閉じられるまで維持されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If instead you choose to use threads in your application, please read also the following sections of this overview.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130628T235106Z">
@@ -9379,6 +9903,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the client wants to find the result of the Execute command other than success or failure, it has to explicitly call Request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130820T152256Z">
+        <seg>呼び出しの成否以外に Execute コマンドの結果を得たい場合、明示的に Request を呼ぶ必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the dialog box is &lt;e0&gt;modal&lt;/e0&gt;, the calling program is blocked until the dialog box is dismissed.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130531T154505Z">
@@ -9463,6 +9995,30 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T024038Z">
         <seg>(&lt;a0&gt;wxEvtHandler::SetEvtHandlerEnabled&lt;/a0&gt; を呼ぶことで) オブジェクトが無効化されている場合、(6) までスキップします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the server agrees, the server will send an OnAdvise message to the client along with the item and data.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T033325Z">
+        <seg>サーバがこれを承諾した場合、サーバは項目とデータとともに OnAdvise メッセージをクライアントへ送信します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the server is unwilling to reply, the return value is &lt;s1&gt;NULL&lt;/s1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150414Z">
+        <seg>サーバが応答しない場合、戻り値は &lt;s1&gt;NULL&lt;/s1&gt; になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the server is unwilling to reply, the return value is NULL.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T032802Z">
+        <seg>サーバが応答しない場合、戻り値は NULL になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9791,6 +10347,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130618T150417Z">
         <seg>wxWidgets 2.8 やそれ以前のバージョンで Unicode ビルドを使用していた場合、3.0 における API の変更点の詳細について &lt;a0&gt;wxWidgets における Unicode 対応&lt;/a0&gt; を参照してください。これまで正しかった多くの情報が 3.0 ではもはや当てはまりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to use IPC between different workstations you should define &lt;c0&gt;wxUSE_DDE_FOR_IPC&lt;/c0&gt; as 0 before including this header -- this will force using TCP/IP implementation even under Windows.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T125119Z">
+        <seg>もし異なるワークステーション間で IPC を使用したい場合、このヘッダファイルをインクルードする前に &lt;c0&gt; wxUSE_DDE_FOR_IPC&lt;/c0&gt; を 0 に定義してください。これにより、Windows でも強制的に TCP/IP 版が使用されるようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to use IPC between different workstations you should define &lt;t0&gt; wxUSE_DDE_FOR_IPC&lt;/t0&gt; as 0 before including this header -- this will force using TCP/IP implementation even under Windows.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130725T160447Z">
+        <seg>もし異なるワークステーション間で IPC を使用したい場合、このヘッダファイルをインクルードする前に &lt;t0&gt; wxUSE_DDE_FOR_IPC&lt;/t0&gt; を 0 に定義してください。これにより、Windows でも強制的に TCP/IP 版が使用されるようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10131,6 +10703,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the following, command line arguments are used to pass the host name (the name of the machine the server is running on) and the server name (identifying the server process).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134445Z">
+        <seg>以下ではコマンドライン引数を使用してホスト名 (サーバを実行しているマシン名)、(サーバプロセスを識別する) サーバ名を引き渡しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the latter case, &lt;c5&gt;wxUSE_UTF8_LOCALE_ONLY&lt;/c5&gt; can also be set to 1 to indicate that all strings are considered to be in UTF-8.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T121106Z">
@@ -10343,6 +10923,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130502T150202Z">
         <seg>国際化</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interprocess Communication</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T151146Z">
+        <seg>プロセス間通信</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interprocess communication overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130725T152103Z">
+        <seg>プロセス間通信の概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -10971,6 +11567,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Message sent to the client application when the server notifies it of a change in the data associated...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T152819Z">
+        <seg>Advice() を使用し、指定した項目に関連するデータの変更をサーバが通知するときにクライアントアプリケーションへ送信されるメッセージ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Messages between applications are usually identified by three variables: connection object, topic name and item name.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130726T150523Z">
+        <seg>通常、アプリケーション間のメッセージは 3 種類の変数で識別されます: コネクションオブジェクト、トピック名、アイテム名です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Messages logged by this function will appear in the statusbar of the frame or of the top level applic...</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T085759Z">
@@ -10999,6 +11611,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130618T150118Z">
         <seg>他の雑多な変更</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>More DDE Details</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T151558Z">
+        <seg>DDE の詳細</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>More DDE details</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T033835Z">
+        <seg>DDE の詳細</seg>
       </tuv>
     </tu>
     <tu>
@@ -11083,6 +11711,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Most DDE transactions operate on this object.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130726T150425Z">
+        <seg>ほとんどの DDE トランザクションはこのオブジェクト上で行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Most controls will also set the min size to the size given in the control's constructor if a non-default value is passed.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130718T160101Z">
@@ -11135,6 +11771,46 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130625T141757Z">
         <seg>マルチスレッドの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>MyClient *client = new MyClient;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134752Z">
+        <seg>MyClient *client = new MyClient;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>MyClient(&lt;s21&gt;void&lt;/s21&gt;) { }</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T152919Z">
+        <seg>MyClient(&lt;s21&gt;void&lt;/s21&gt;) { }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>MyClient(void) {}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134049Z">
+        <seg>MyClient(void) {}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>MyConnection(&lt;s4&gt;void&lt;/s4&gt;)::&lt;a5&gt;wxConnection&lt;/a5&gt;() { }</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T152911Z">
+        <seg>MyConnection(&lt;s4&gt;void&lt;/s4&gt;)::&lt;a5&gt;wxConnection&lt;/a5&gt;() { }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>MyConnection(void)::wxConnection() {}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134043Z">
+        <seg>MyConnection(void)::wxConnection() {}</seg>
       </tuv>
     </tu>
     <tu>
@@ -11541,6 +12217,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Notice that by including &lt;c0&gt;&lt;&lt;a1&gt;wx/ipc.h&lt;/a1&gt;&gt;&lt;/c0&gt; you may define convenient synonyms for the IPC classes: &lt;a2&gt;wxServer&lt;/a2&gt; for either &lt;a3&gt;wxDDEServer&lt;/a3&gt; or &lt;a4&gt;wxTCPServer&lt;/a4&gt; depending on whether DDE-based or socket-based implementation is used and the same thing for &lt;a5&gt;wxClient&lt;/a5&gt; and &lt;a6&gt;wxConnection&lt;/a6&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T124853Z">
+        <seg>&lt;c0&gt;&lt;&lt;a1&gt;wx/ipc.h&lt;/a1&gt;&gt;&lt;/c0&gt; をインクルードすることで IPC クラス用の便利なシノニムを定義できます: DDE ベースの実装とソケットベースの実装のどちらを使用するかによって &lt;a3&gt;wxDDEServer&lt;/a3&gt; もしくは &lt;a4&gt;wxTCPServer&lt;/a4&gt; のいずれかが &lt;a2&gt;wxServer&lt;/a2&gt; として定義されます。同様のことが &lt;a5&gt;wxClient&lt;/a5&gt; と &lt;a6&gt;wxConnection&lt;/a6&gt; に対しても行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notice that by including &lt;t0&gt;&lt;wx/ipc.h&gt;&lt;/t0&gt; you may define convenient synonyms for the IPC classes: &lt;t1&gt;wxServer&lt;/t1&gt; for either &lt;t2&gt;wxDDEServer&lt;/t2&gt; or &lt;t3&gt;wxTCPServer&lt;/t3&gt; depending on whether DDE-based or socket-based implementation is used and the same thing for &lt;t4&gt;wxClient&lt;/t4&gt; and &lt;t5&gt;wxConnection&lt;/t5&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130725T155105Z">
+        <seg>&lt;t0&gt;&lt;wx/ipc.h&gt;&lt;/t0&gt; をインクルードすることで IPC クラス用の便利なシノニムを定義できます: DDE ベースの実装とソケットベースの実装のどちらを使用するかによって &lt;t2&gt;wxDDEServer&lt;/t2&gt; もしくは &lt;t3&gt;wxTCPServer&lt;/t3&gt; のいずれかが &lt;t1&gt;wxServer&lt;/t1&gt; として定義されます。同様のことが &lt;t4&gt;wxClient&lt;/t4&gt; と &lt;t5&gt;wxConnection&lt;/t5&gt; に対しても行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Notice that if you just need to modify (or suppress) the time stamp display, overriding FormatTime() is enough.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T123343Z">
@@ -11837,6 +12529,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Only the handlers actually required by the application need to be overridden.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T023743Z">
+        <seg>このとき、実際にアプリケーションで必要となるハンドラだけをオーバーライドする必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>OpenLogFile(s);             &lt;s7&gt;// ERROR: ambiguity&lt;/s7&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130619T142529Z">
@@ -11985,6 +12685,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130527T161635Z">
         <seg>そうしない場合、&lt;t1&gt;wxApp *&lt;/t1&gt; 型のグローバル変数である &lt;t0&gt;wxTheApp&lt;/t0&gt; ポインタを使用するしかありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Otherwise, the return value is a string (actually a pointer to the connection buffer, so it should not be deallocated by the application).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T032918Z">
+        <seg>それ以外の場合、戻り値は文字列になります。(実際には接続バッファへのポインタであるため、アプリケーション側で解放しないでください)</seg>
       </tuv>
     </tu>
     <tu>
@@ -12375,6 +13083,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Represents a protocol for use with wxURL.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T151903Z">
+        <seg>wxURL で使用するプロトコルを表しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Return the localized resources directory containing the resource files of the specified category for ...</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T041010Z">
@@ -12483,6 +13199,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130629T113636Z">
         <seg>wxEVT_CATEGORY_THREAD を返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Run the server, then the client.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T033656Z">
+        <seg>サーバを実行し、それからクライアントを実行してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12659,6 +13383,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130506T032908Z">
         <seg>これを行なっているサンプルとして &lt;a1&gt;イベントサンプル&lt;/a1&gt; を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See the sample programs &lt;e0&gt;server&lt;/e0&gt; and &lt;e1&gt;client&lt;/e1&gt; in the IPC samples directory.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150425Z">
+        <seg>IPC サンプルディレクトリにある &lt;e0&gt;server&lt;/e0&gt; と &lt;e1&gt;client&lt;/e1&gt; のサンプルプログラムを参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See the sample programs &lt;i0&gt;server&lt;/i0&gt; and &lt;i1&gt;client&lt;/i1&gt; in the IPC samples directory.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T033640Z">
+        <seg>IPC サンプルディレクトリにある &lt;i0&gt;server&lt;/i0&gt; と &lt;i1&gt;client&lt;/i1&gt; のサンプルプログラムを参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12931,6 +13671,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130718T152001Z">
         <seg>mb_str() は変換結果を保持する一時 &lt;a0&gt;wxCharBuffer&lt;/a0&gt; を返却するため、(printf のような) 可変数引数の関数を使用する場合は明示的に const char* にキャストする必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since the API and virtually all of the behaviour is the same apart from the names of the classes, you should find it easy to switch between the two implementations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T145405Z">
+        <seg>クラス名を除いて API と仮想的な振る舞いがすべて同じであるため、ふたつの実装を簡単に切り替えられることに気がつくと思います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13767,6 +14515,22 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The client object will call &lt;a1&gt;OnMakeConnection&lt;/a1&gt; to create a connection object of the derived class if the connection is successful.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T025439Z">
+        <seg>接続に成功するとクライアントオブジェクトは継承したコネクションクラスのオブジェクトを作成するために &lt;a1&gt;OnMakeConnection&lt;/a1&gt; を呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The client object will call OnMakeConnection to create a connection object of the derived class if the connection is successful.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150340Z">
+        <seg>接続に成功するとクライアントオブジェクトは継承したコネクションクラスのオブジェクトを作成するために OnMakeConnection を呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The config classes provide a way to store some application configuration information.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130610T153634Z">
@@ -13775,10 +14539,42 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The connection object is then used for sending and receiving subsequent messages between client and server - overriding virtual functions in your class derived from &lt;a1&gt;wxConnection&lt;/a1&gt; allows you to handle the DDE messages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150232Z">
+        <seg>作成されたコネクションオブジェクトはクライアント・サーバ間でのメッセージの送受信に使用されます。このとき、&lt;a1&gt;wxConnection&lt;/a1&gt; を継承したクラスで仮想関数をオーバーライドすると DDE メッセージを処理することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The connection object is then used for sending and receiving subsequent messages between client and server - overriding virtual functions in your class derived from wxConnection allows you to handle the DDE messages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T025234Z">
+        <seg>作成されたコネクションオブジェクトはクライアント・サーバ間でのメッセージの送受信に使用されます。このとき、wxConnection を継承したクラスで仮想関数をオーバーライドすると DDE メッセージを処理することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The core: &lt;a0&gt;wxStreamBase&lt;/a0&gt;, &lt;a1&gt;wxStreamBuffer&lt;/a1&gt;, &lt;a2&gt;wxInputStream&lt;/a2&gt;, &lt;a3&gt;wxOutputStream&lt;/a3&gt;, &lt;a4&gt;wxFilterInputStream&lt;/a4&gt;, &lt;a5&gt;wxFilterOutputStream&lt;/a5&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130622T135715Z">
         <seg>コアクラス: &lt;a0&gt;wxStreamBase&lt;/a0&gt;, &lt;a1&gt;wxStreamBuffer&lt;/a1&gt;, &lt;a2&gt;wxInputStream&lt;/a2&gt;, &lt;a3&gt;wxOutputStream&lt;/a3&gt;, &lt;a4&gt;wxFilterInputStream&lt;/a4&gt;, &lt;a5&gt;wxFilterOutputStream&lt;/a5&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The custom &lt;a2&gt;wxConnection&lt;/a2&gt; class will receive communications in a 'conversation' with a server.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150641Z">
+        <seg>&lt;a2&gt;wxConnection&lt;/a2&gt; の継承クラスはサーバとの '会話' (conversation) におけるやり取りを受信します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The custom wxConnection class will receive communications in a 'conversation' with a server.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T133656Z">
+        <seg>wxConnection の継承クラスはサーバとの '会話' (conversation) におけるやり取りを受信します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13819,6 +14615,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130613T155144Z">
         <seg>wxFrame のデフォルトの終了ハンドラは Destroy() を使用してフレームを破棄します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The default data type is wxCF_TEXT (ASCII text), and the default data size is the length of the null-terminated string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T033412Z">
+        <seg>デフォルトのデータ型は wxCF_TEXT (ASCII テキスト) で、デフォルトのデータサイズはヌル終端文字列の文字列長です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14035,6 +14839,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T140928Z">
         <seg>各デバイスコンテキストの違いと、それを使用するタイミングについて以下で説明します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following description refers to wx... but remember that the equivalent wxTCP... and wxDDE... classes can be used in much the same way.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130726T145538Z">
+        <seg>以降の説明では wx... という名称を使用しますが、同じ wxTCP... クラスと wxDDE... クラスは同様の方法で使用できることを覚えておいてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following description refers to wxWidgets, but remember that the equivalent wxTCP* and wxDDE* classes can be used in much the same way.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T145415Z">
+        <seg>以降の説明では wxWidgets について言及しますが、同じ wxTCP* クラスと wxDDE* クラスは同様の方法で使用できることを覚えておいてください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14671,6 +15491,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The server then responds and either vetoes the connection or allows it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T021845Z">
+        <seg>そして、サーバが応答し、接続を拒否または許可します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The short answer is that they're all very good generic mechanisms, but are not really adapted for wxWidgets, while the log classes are.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T013853Z">
@@ -15079,6 +15907,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are two implementations of this DDE-like protocol: one using real DDE running on Windows only, and another using TCP/IP (sockets) that runs on most platforms.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T145417Z">
+        <seg>このDDE 風プロトコルには 2 種類の実装があります: ひとつは実際の DDE を使用する方法で、WIndows のみで実行できます。もうひとつは TCP/IP (ソケット) を使用する方法で、ほとんどのプラットフォームで実行できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are two kinds of message catalogs: source catalogs which are text files with extension .po and binary catalogs which are created from the source ones with &lt;e0&gt;msgfmt&lt;/e0&gt; program (part of gettext package) and have the extension .mo.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T040033Z">
@@ -15187,6 +16023,30 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130620T135111Z">
         <seg>そのため、wxStreams が wxWidgets に追加されました。これにより、libg++ の特定のバージョンに依存することなく、対応するすべてのプラットフォームで確実にアプリケーションをコンパイルし、実行することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These are methods of &lt;a0&gt;wxConnection&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150405Z">
+        <seg>これらは &lt;a0&gt;wxConnection&lt;/a0&gt; の関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These are methods of wxConnection.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T032425Z">
+        <seg>これらは wxConnection の関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These are the ways that data can be transferred from one application to another.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T032347Z">
+        <seg>他のアプリケーションへデータを転送するにはいくつかの方法があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15871,6 +16731,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This demonstrates using the Execute, Request, and Poke commands from the client, together with an Advise loop: selecting an item in the server list box causes that item to be highlighted in the client list box.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T033830Z">
+        <seg>このサンプルでは Advise ループとともに Execute、Request、Poke コマンドを使用しています: サーバ側のリストボックスを選択すると、選択された項目がクライアント側のリストボックスでハイライトされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This document will attempt to clear the fog a little, and give some simple explanations of things.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130718T154717Z">
@@ -16343,6 +17211,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This member must create and return an instance of the derived connection class if the connection is accepted.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T025325Z">
+        <seg>接続を許可する場合、継承したコネクションクラスのインスタンスをこのメンバ関数で作成し、返却する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This method can be used inside an event handler to control whether further event handlers bound to th...</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T064047Z">
@@ -16423,6 +17299,30 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This represents the client application, and is used only within a client program.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130726T150050Z">
+        <seg>これはクライアントアプリケーションを表しており、クライアントプログラムの中でだけ使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This represents the connection from the client to the server - both the client and the server use an instance of this class, one per connection.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130726T150230Z">
+        <seg>これはクライアントからサーバへのコネクションを表しています。クライアントとサーバの両方とも、このクラスのインスタンスをコネクションごとにひとつ使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This represents the server application, and is used only within a server program.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T145551Z">
+        <seg>これはサーバアプリケーションを表しており、サーバプログラムの中でだけ使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This section briefly describes the state of the Unicode support in wxWidgets.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T154902Z">
@@ -16455,6 +17355,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This section only discusses one family of classes -- the DDE-like protocol -- but here's a list of other useful classes:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130725T153140Z">
+        <seg>この章では DDE 風のプロトコルを使用するひとつのクラス群についてのみ説明しますが、その代わりに他の有用なクラスの一覧を以下に示します:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This simple class allows you to chain log sinks, that is to install a new sink but keep passing log m...</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T130452Z">
@@ -16475,6 +17383,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130519T142121Z">
         <seg>このサイザーは順に子コントロール (通常のウィンドウや空白スペース、他のサイザーかもしれません) に対して問い合わせを行うため、サイザーの階層が構築されることになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This succeeds or fails, depending on the server's willingness to answer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T032543Z">
+        <seg>これはサーバが応答するかどうかに応じて成功または失敗します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This succeeds or fails.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T033118Z">
+        <seg>これは成功または失敗します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16555,6 +17479,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T085932Z">
         <seg>実際には、これはネイティブコントロールに送られるキーイベントをすべて横取りしますが、これはおそらく期待する動作ではないと思います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Three classes are central to the DDE-like API:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130726T150025Z">
+        <seg>DDE 風 API では中心となるクラスが 3 種類あります:</seg>
       </tuv>
     </tu>
     <tu>
@@ -16663,6 +17595,38 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To create a client which can communicate with a suitable server, you need to derive a class from &lt;a0&gt;wxConnection&lt;/a0&gt; and another from &lt;a1&gt;wxClient&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150628Z">
+        <seg>適切なサーバと通信するクライアントを作成するには &lt;a0&gt;wxConnection&lt;/a0&gt; と &lt;a1&gt;wxClient&lt;/a1&gt; をそれぞれ継承する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To create a client which can communicate with a suitable server, you need to derive a class from wxConnection and another from wxClient.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T133358Z">
+        <seg>適切なサーバと通信するクライアントを作成するには wxConnection と wxClient をそれぞれ継承する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To create a connection (a conversation in Windows parlance), the client application uses &lt;a0&gt;wxClient::MakeConnection&lt;/a0&gt; to send a message to the server object, with a string service name to identify the server and a topic name to identify the topic for the duration of the connection.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150158Z">
+        <seg>コネクション (Windows で言うところの会話 (conversation)) を作成するにはクライアントアプリケーションでサービス名 (サーバを識別します) とトピック名 (接続している間のトピックを識別します) を指定して &lt;a0&gt;wxClient::MakeConnection&lt;/a0&gt; を呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To create a connection (a conversation in Windows parlance), the client application uses wxClient::MakeConnection to send a message to the server object, with a string service name to identify the server and a topic name to identify the topic for the duration of the connection.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T021045Z">
+        <seg>コネクション (Windows で言うところの会話 (conversation)) を作成するにはクライアントアプリケーションでサービス名 (サーバを識別します) とトピック名 (接続している間のトピックを識別します) を指定して wxClient::MakeConnection を呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To create a new log target class you only need to derive it from &lt;a0&gt;wxLog&lt;/a0&gt; and override one or several of &lt;a1&gt;wxLog::DoLogRecord()&lt;/a1&gt;, &lt;a2&gt;wxLog::DoLogTextAtLevel()&lt;/a2&gt; and &lt;a3&gt;wxLog::DoLogText()&lt;/a3&gt; in it.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T112527Z">
@@ -16675,6 +17639,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T111852Z">
         <seg>新しいログターゲットクラスを作成する場合、wxLog を継承し、&lt;i0&gt;DoLog()&lt;/i0&gt; と &lt;i1&gt;DoLogString()&lt;/i1&gt; のどちらか (または両方) を実装するだけです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To create a working client, the programmer must:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T024257Z">
+        <seg>動作するクライアントを作成するには次のようにする必要があります:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To create a working server, the programmer must:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T022357Z">
+        <seg>動作するサーバを作成するには次のようにする必要があります:</seg>
       </tuv>
     </tu>
     <tu>
@@ -16999,6 +17979,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Tries to make a connection with a server by host (machine name under UNIX - use 'localhost' for same ...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150136Z">
+        <seg>ホスト (Unix ではマシン名です。同じマシンを指す場合は 'localhost' を使用してください; Windows ネイティブの DDE を使用するときは無視されます)、サービス名、トピック文字列を使用してサーバへの接続を試みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Try to write code so it is parameterised by &lt;a0&gt;wxDC&lt;/a0&gt; - if you do this, the same piece of code may write to a number of different devices, by passing a different device context.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T154335Z">
@@ -17059,6 +18047,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T093135Z">
         <seg>Mac OS X を含む Unix システムでは、デフォルトで (UTF-32 としても知られる) UCS-4 が使用されますが、設定に &lt;c3&gt;--enable-utf8&lt;/c3&gt; オプションを渡すことで内部に UTF-8 を使用するように wxWidgets をビルドすることも可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Under Unix, the service name may be either an integer port identifier in which case an Internet domain socket will be used for the communications or a valid file name (which shouldn't exist and will be deleted afterwards) in which case a Unix domain socket is created.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T021206Z">
+        <seg>Unix におけるサービス名はインターネットドメインソケットが通信に使用する整数のポート識別子か、Unix ドメインソケットが作成する有効なファイル名 (このファイルは存在してはならず、後で削除されます) のいずれかになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17423,10 +18419,26 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Use the &lt;a0&gt;wxConnection&lt;/a0&gt; member functions to send messages to the server.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T150357Z">
+        <seg>サーバへメッセージを送信するには &lt;a0&gt;wxConnection&lt;/a0&gt; のメンバ関数を使用してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Use the macros DECLARE_DYNAMIC_CLASS and IMPLEMENT_DYNAMIC_CLASS in order to allow the framework to create view objects on demand.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T020328Z">
         <seg>Use the macros DECLARE_DYNAMIC_CLASS and IMPLEMENT_DYNAMIC_CLASS in order to allow the framework to create view objects on demand.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Use the wxConnection member functions to send messages to the server.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T032046Z">
+        <seg>サーバへメッセージを送信するには wxConnection のメンバ関数を使用してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17847,6 +18859,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When appropriate, create a new connection using &lt;a0&gt;wxClient::MakeConnection&lt;/a0&gt;, with arguments host name (processed in Unix only, use 'localhost' for local computer), service name, and topic name for this connection.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T145959Z">
+        <seg>適切なときにホスト名 (Unix の場合のみ使用されます。ローカルコンピュータを指定する場合は 'localhost' を使用してください)、サービス名、この接続用のトピック名を指定して &lt;a0&gt;wxClient::MakeConnection&lt;/a0&gt; を呼び出し、新しいコネクションを作成する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When controls get more complicated, more specific wxCommandEvent-derived event classes providing additional control-specific information can be used, such as &lt;a2&gt;wxTreeEvent&lt;/a2&gt; for events from &lt;a3&gt;wxTreeCtrl&lt;/a3&gt; windows.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T024036Z">
@@ -17859,6 +18879,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T081654Z">
         <seg>より複雑なコントロールのときには特定のイベントクラスが使用されます。例えば、&lt;a3&gt;wxTreeCtrl&lt;/a3&gt; から発生するイベントには &lt;a2&gt;wxTreeEvent&lt;/a2&gt; が使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the client application starts, it must create an instance of the derived &lt;a0&gt;wxClient&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T152948Z">
+        <seg>クライアントアプリケーションを実行するときには &lt;a0&gt;wxClient&lt;/a0&gt; の継承クラスのインスタンスを作成する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the client application starts, it must create an instance of the derived wxClient.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T150926Z">
+        <seg>クライアントアプリケーションを実行するときには wxClient の継承クラスのインスタンスを作成する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18099,6 +19135,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130614T143126Z">
         <seg>コントロールなど、親を持つウィンドウは直ちに削除され、通常は終了イベントハンドラを持ちません。とはいえ、必要であればそれらを実装することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Windows-specific data types could also be used on the PC.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T033543Z">
+        <seg>また、Windows 独自のデータ型を使用することもできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18751,6 +19795,22 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>and the custom &lt;a3&gt;wxServer&lt;/a3&gt; is required so that a user-overridden &lt;a4&gt;wxClient::OnMakeConnection&lt;/a4&gt; member can return a &lt;a5&gt;wxConnection&lt;/a5&gt; of the required class, when a connection is made.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130820T152617Z">
+        <seg>そして &lt;a3&gt;wxServer&lt;/a3&gt; を継承したクラスが必要になります。これにより、接続が確立したときに &lt;a4&gt;wxClient::OnMakeConnection&lt;/a4&gt; をオーバーライドした関数が要求されたクラスの &lt;a5&gt;wxConnection&lt;/a5&gt; を返却できるようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>and the custom wxServer is required so that a user-overridden &lt;a0&gt;wxClient::OnMakeConnection&lt;/a0&gt; member can return a wxConnection of the required class, when a connection is made.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T150518Z">
+        <seg>そして wxServer を継承したクラスが必要になります。これにより、接続が確立したときに &lt;a0&gt;wxClient::OnMakeConnection&lt;/a0&gt; をオーバーライドした関数が要求されたクラスの wxConnection を返却できるようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>and the somewhat less usual</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T041535Z">
@@ -18787,6 +19847,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T061218Z">
         <seg>bind( &amp;MyHandler::OnExit, &amp;myHandler, EXIT_FAILURE, _1, &lt;s5&gt;"Bye"&lt;/s5&gt; ));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>bool OnAdvise(const wxString&amp; topic, const wxString&amp; item, char *data, int size, wxIPCFormat format)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134045Z">
+        <seg>bool OnAdvise(const wxString&amp; topic, const wxString&amp; item, char *data, int size, wxIPCFormat format)</seg>
       </tuv>
     </tu>
     <tu>
@@ -18898,6 +19966,14 @@ public:</seg>
       <tuv lang="JA" changeid="owner" changedate="20130527T162433Z">
         <seg>class MyApp : public wxApp
 {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>class MyConnection: public wxConnection {</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134041Z">
+        <seg>class MyConnection: public wxConnection {</seg>
       </tuv>
     </tu>
     <tu>
@@ -19070,6 +20146,22 @@ protected:
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130619T152928Z">
         <seg>conf.Write(&lt;s3&gt;"MyFavouriteColour"&lt;/s3&gt;, &lt;s4&gt;int&lt;/s4&gt;(Red));  &lt;s5&gt;// OK&lt;/s5&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>connection = (MyConnection *)client-&gt;MakeConnection(hostName, server, "IPC TEST");</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134753Z">
+        <seg>connection = (MyConnection *)client-&gt;MakeConnection(hostName, server, "IPC TEST");</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>connection-&gt;StartAdvise("Item");</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134758Z">
+        <seg>connection-&gt;StartAdvise("Item");</seg>
       </tuv>
     </tu>
     <tu>
@@ -19389,6 +20481,14 @@ process_data(tmp_str);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T022522Z">
         <seg>if ( isalpha( event.KeyCode() ) )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if (!connection)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134753Z">
+        <seg>if (!connection)</seg>
       </tuv>
     </tu>
     <tu>
@@ -19932,6 +21032,14 @@ process_data(tmp_str);</seg>
       <tuv lang="JA" changeid="owner" changedate="20130527T162801Z">
         <seg>return 0;
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>return NULL;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134756Z">
+        <seg>return NULL;</seg>
       </tuv>
     </tu>
     <tu>
@@ -20641,6 +21749,14 @@ printf("Data: %s\n", (const char*) str.mb_str(cust));</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxClient.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130726T150026Z">
+        <seg>wxClient.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxClientDC dc(window);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T141639Z">
@@ -20709,6 +21825,24 @@ printf("Data: %s\n", (const char*) str.mb_str(cust));</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130612T153829Z">
         <seg>wxConfigBase はすべてのコンフィグクラスの基本インタフェースを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxConnection.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130726T150118Z">
+        <seg>wxConnection.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxConnectionBase *OnMakeConnection(void) { return new MyConnection; }
+};</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134050Z">
+        <seg>wxConnectionBase *OnMakeConnection(void) { return new MyConnection; }
+};</seg>
       </tuv>
     </tu>
     <tu>
@@ -20855,6 +21989,14 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxFTP can be used to establish a connection to an FTP server and perform all the usual operations...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T124333Z">
+        <seg>wxFTP は FTP サーバへの接続と、便利な操作すべてを行なうために使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxFile</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T070910Z">
@@ -20983,6 +22125,14 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxGetHostName(hostName);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134744Z">
+        <seg>wxGetHostName(hostName);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxGridSizer</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130520T152805Z">
@@ -20995,6 +22145,14 @@ private:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T115957Z">
         <seg>wxHELP   // wxID_HELP を返却します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxHTTP can be used to establish a connection to an HTTP server.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T124435Z">
+        <seg>wxHTTP は HTTP サーバへ接続するために使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21275,6 +22433,14 @@ wxIcon icon("mondrian");
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxMessageBox("Failed to make connection to server", "Client Demo Error");</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134755Z">
+        <seg>wxMessageBox("Failed to make connection to server", "Client Demo Error");</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxMessageDialog* dialog = new wxMessageDialog(this,</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130613T160306Z">
@@ -21535,6 +22701,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxServer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130726T150050Z">
+        <seg>wxServer.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxSetCursorEvent</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T055409Z">
@@ -21579,6 +22753,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T113656Z">
         <seg>wxSizerFlags(1).Align().Expand().Border(wxALL, 10));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxSocketBase is the base class for all socket-related objects, and it defines all basic IO functional...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T151823Z">
+        <seg>wxSocketBase はソケットに関連するオブジェクトすべての基底クラスで、基本的な IO 機能をすべて定義しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21727,6 +22909,14 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxString hostName;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134742Z">
+        <seg>wxString hostName;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxString input_str(input_data);
 wxString str(input_str.wc_str(wxConvUTF8), *wxConvCurrent);</seg>
       </tuv>
@@ -21741,6 +22931,14 @@ wxString str(input_str.wc_str(wxConvUTF8), *wxConvCurrent);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130501T161654Z">
         <seg>wxString s = wxT("Hello, world!");</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString server = "4242";</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134741Z">
+        <seg>wxString server = "4242";</seg>
       </tuv>
     </tu>
     <tu>
@@ -21935,6 +23133,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxURL is a specialization of wxURI for parsing URLs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T152119Z">
+        <seg>wxURL は URL をパースするために wxURI を特殊化したものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxUpdateUIEvent</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T082317Z">
@@ -21995,6 +23201,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T003951Z">
         <seg>Backspace、End、Insert といった特殊キーの名前が翻訳された場合、wxWidgets はまだ取り扱うことができません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxWidgets has a number of different classes to help with interprocess communication and network programming.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T151729Z">
+        <seg>wxWidgets にはプロセス間通信やネットワークプログラミングを支援する様々なクラスがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22111,6 +23325,14 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxWidgets' DDE-like protocol is a high-level protocol based on Windows DDE.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130725T153513Z">
+        <seg>wxWidgets の DDE 風プロトコルは Windows DDE に基づく高レベルのプロトコルです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxWidgets: wxWidgets: Bitmaps and Icons</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T152925Z">
@@ -22163,6 +23385,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T035449Z">
         <seg>wxWidgets: wxWidgets: 国際化</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxWidgets: wxWidgets: Interprocess Communication</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130731T151213Z">
+        <seg>wxWidgets: wxWidgets: プロセス間通信</seg>
       </tuv>
     </tu>
     <tu>
@@ -22455,6 +23685,20 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>{ wxMessageBox(topic, data); }
+};
+
+class MyClient: public wxClient {</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134048Z">
+        <seg>{ wxMessageBox(topic, data); }
+};
+
+class MyClient: public wxClient {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>}</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T022720Z">
@@ -22469,6 +23713,34 @@ void MyWindow::SendEvent()
       <tuv lang="JA" changeid="owner" changedate="20130505T022834Z">
         <seg>}
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>}
+};</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T152924Z">
+        <seg>}
+};</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>}
+};
+
+&lt;s17&gt;class &lt;/s17&gt;MyClient: &lt;s18&gt;public&lt;/s18&gt; &lt;a19&gt;wxClient&lt;/a19&gt;
+{
+&lt;s20&gt;public&lt;/s20&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T152918Z">
+        <seg>}
+};
+
+&lt;s17&gt;class &lt;/s17&gt;MyClient: &lt;s18&gt;public&lt;/s18&gt; &lt;a19&gt;wxClient&lt;/a19&gt;
+{
+&lt;s20&gt;public&lt;/s20&gt;:</seg>
       </tuv>
     </tu>
     <tu>
@@ -22505,6 +23777,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T114545Z">
         <seg>} &lt;s7&gt;// ~wxLogNull が呼ばれ、古いログ出力先が元に戻される&lt;/s7&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>~MyConnection(&lt;s6&gt;void&lt;/s6&gt;) { }</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130804T152912Z">
+        <seg>~MyConnection(&lt;s6&gt;void&lt;/s6&gt;) { }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>~MyConnection(void) { }</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20130727T134043Z">
+        <seg>~MyConnection(void) { }</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
