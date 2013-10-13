@@ -133,13 +133,13 @@ function toggleVisibility(linkObj) {
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 クラス</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_drop_target.html">wxDropTarget</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This class represents a target for a drag and drop operation.  <a href="classwx_drop_target.html#details">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">このクラスはドラッグ・アンド・ドロップ操作におけるドロップ先を表しています。<a href="classwx_drop_target.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_drop_source.html">wxDropSource</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This class represents a source for a drag and drop operation.  <a href="classwx_drop_source.html#details">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">このクラスはドラッグ・アンド・ドロップ操作におけるドラッグ元を表しています。<a href="classwx_drop_source.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_text_drop_target.html">wxTextDropTarget</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A predefined drop target for dealing with text data.  <a href="classwx_text_drop_target.html#details">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">テキストデータに特化した、定義済みのドロップ先。<a href="classwx_text_drop_target.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_file_drop_target.html">wxFileDropTarget</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This is a drop target which accepts files (dragged from File Manager or Explorer).  <a href="classwx_file_drop_target.html#details">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">これは (ファイルマネージャやエクスプローラからドラッグされた) ファイルを受け付けるドロップ先です。<a href="classwx_file_drop_target.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="define-members"></a>
 
 Defines</h2></td></tr>
@@ -151,7 +151,7 @@ Enumerations</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom">{ <br/>&nbsp;&nbsp;<a class="el" href="interface_2wx_2dnd_8h.html#a385c44f6fb256e5716a2302a5b940388a97a0902f009ddd6c58eab2e6f5cff100">wxDrag_CopyOnly</a> = 0, <br/>&nbsp;&nbsp;<a class="el" href="interface_2wx_2dnd_8h.html#a385c44f6fb256e5716a2302a5b940388a1557b04adc6f4e8f5cc70e615878f268">wxDrag_AllowMove</a> = 1, <br/>&nbsp;&nbsp;<a class="el" href="interface_2wx_2dnd_8h.html#a385c44f6fb256e5716a2302a5b940388ae68db1f805abe2bc979adde62d3953ed">wxDrag_DefaultMove</a> = 3 <br/>}</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Possible flags for drag and drop operations.  <a href="interface_2wx_2dnd_8h.html#a385c44f6fb256e5716a2302a5b940388">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_2wx_2dnd_8h.html#adbd4b292582eebbc9a6ce3dee31c2afb">wxDragResult</a> { <br/>&nbsp;&nbsp;<a class="el" href="interface_2wx_2dnd_8h.html#adbd4b292582eebbc9a6ce3dee31c2afba6e047db1c3c5a5c66c4d980e273693cf">wxDragError</a>, <br/>&nbsp;&nbsp;<a class="el" href="interface_2wx_2dnd_8h.html#adbd4b292582eebbc9a6ce3dee31c2afba8324e9ee208c50276f8c2cad7d3fd548">wxDragNone</a>, <br/>&nbsp;&nbsp;<a class="el" href="interface_2wx_2dnd_8h.html#adbd4b292582eebbc9a6ce3dee31c2afba736c04c59caf8154a096e0d350492fc1">wxDragCopy</a>, <br/>&nbsp;&nbsp;<a class="el" href="interface_2wx_2dnd_8h.html#adbd4b292582eebbc9a6ce3dee31c2afba8b2ba916ca49cc93ef34a5e20684d18e">wxDragMove</a>, <br/>&nbsp;&nbsp;<a class="el" href="interface_2wx_2dnd_8h.html#adbd4b292582eebbc9a6ce3dee31c2afba0fcf552d173325c0fecee2b18926305b">wxDragLink</a>, <br/>&nbsp;&nbsp;<a class="el" href="interface_2wx_2dnd_8h.html#adbd4b292582eebbc9a6ce3dee31c2afbaa74d0419e74230f16c9d8ec46e071b43">wxDragCancel</a> <br/>}</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Result returned from a <a class="el" href="classwx_drop_source.html#a7053f3286614a78d0fd8c282c286778d" title="Starts the drag-and-drop operation which will terminate when the user releases the mouse...">wxDropSource::DoDragDrop()</a> call.  <a href="interface_2wx_2dnd_8h.html#adbd4b292582eebbc9a6ce3dee31c2afb">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Result returned from a <a class="el" href="classwx_drop_source.html#a7053f3286614a78d0fd8c282c286778d" title="ドラッグ・アンド・ドロップ操作を開始します。ドラッグ・アンド・ドロップはユーザがマウスを放したときに終了します。">wxDropSource::DoDragDrop()</a> call.  <a href="interface_2wx_2dnd_8h.html#adbd4b292582eebbc9a6ce3dee31c2afb">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 
 Functions</h2></td></tr>
@@ -198,7 +198,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Result returned from a <a class="el" href="classwx_drop_source.html#a7053f3286614a78d0fd8c282c286778d" title="Starts the drag-and-drop operation which will terminate when the user releases the mouse...">wxDropSource::DoDragDrop()</a> call.  </p>
+<p>Result returned from a <a class="el" href="classwx_drop_source.html#a7053f3286614a78d0fd8c282c286778d" title="ドラッグ・アンド・ドロップ操作を開始します。ドラッグ・アンド・ドロップはユーザがマウスを放したときに終了します。">wxDropSource::DoDragDrop()</a> call.  </p>
 <dl><dt><b>Enumerator:  </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><!-- doxytag: member="wxDragError" ref="adbd4b292582eebbc9a6ce3dee31c2afba6e047db1c3c5a5c66c4d980e273693cf" args="" --><em><a class="anchor" id="adbd4b292582eebbc9a6ce3dee31c2afba6e047db1c3c5a5c66c4d980e273693cf"></a>wxDragError</em>&nbsp;</td><td>
 <p>Error prevented the D&amp;D operation from completing.  </p>
@@ -207,10 +207,10 @@ Functions</h2></td></tr>
 <p>Drag target didn't accept the data.  </p>
 </td></tr>
 <tr><td valign="top"><!-- doxytag: member="wxDragCopy" ref="adbd4b292582eebbc9a6ce3dee31c2afba736c04c59caf8154a096e0d350492fc1" args="" --><em><a class="anchor" id="adbd4b292582eebbc9a6ce3dee31c2afba736c04c59caf8154a096e0d350492fc1"></a>wxDragCopy</em>&nbsp;</td><td>
-<p>The data was successfully copied.  </p>
+<p>データのコピーに成功した。 </p>
 </td></tr>
 <tr><td valign="top"><!-- doxytag: member="wxDragMove" ref="adbd4b292582eebbc9a6ce3dee31c2afba8b2ba916ca49cc93ef34a5e20684d18e" args="" --><em><a class="anchor" id="adbd4b292582eebbc9a6ce3dee31c2afba8b2ba916ca49cc93ef34a5e20684d18e"></a>wxDragMove</em>&nbsp;</td><td>
-<p>The data was successfully moved (MSW only).  </p>
+<p>データの移動に成功した。(MSW のみ) </p>
 </td></tr>
 <tr><td valign="top"><!-- doxytag: member="wxDragLink" ref="adbd4b292582eebbc9a6ce3dee31c2afba0fcf552d173325c0fecee2b18926305b" args="" --><em><a class="anchor" id="adbd4b292582eebbc9a6ce3dee31c2afba0fcf552d173325c0fecee2b18926305b"></a>wxDragLink</em>&nbsp;</td><td>
 <p>Operation is a drag-link.  </p>

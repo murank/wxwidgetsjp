@@ -1,95 +1,48 @@
 <HTML>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>Drag and drop overview</title></head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>ドラッグ・アンド・ドロップの概要</title></head>
 
 <BODY BGCOLOR=#FFFFFF>
 <A NAME="wxdndoverview"></A><CENTER>
 <A HREF="wx_contents.html"><img align=center src="contents.gif" BORDER=0 ALT="Contents"></A> <A HREF="wx_overviews.html#overviews"><img align=center src="up.gif" BORDER=0 ALT="Up"></A> <A HREF="wx_wxthreadoverview.html#wxthreadoverview"><img align=center src="back.gif" BORDER=0 ALT="Previous"></A> <A HREF="wx_wxdataobjectoverview.html#wxdataobjectoverview"><img align=center src="forward.gif" BORDER=0 ALT="Next"></A> </CENTER><HR>
 
-<H2>Drag and drop overview</H2>
+<H2>ドラッグ・アンド・ドロップの概要</H2>
 <P>
-
-Classes: <A HREF="wx_wxdataobject.html#wxdataobject">wxDataObject</A>, 
-<A HREF="wx_wxtextdataobject.html#wxtextdataobject">wxTextDataObject</A>, 
-<A HREF="wx_wxdropsource.html#wxdropsource">wxDropSource</A>, 
-<A HREF="wx_wxdroptarget.html#wxdroptarget">wxDropTarget</A>, 
-<A HREF="wx_wxtextdroptarget.html#wxtextdroptarget">wxTextDropTarget</A>, 
-<A HREF="wx_wxfiledroptarget.html#wxfiledroptarget">wxFileDropTarget</A><P>
-
-Note that wxUSE_DRAG_AND_DROP must be defined in setup.h in order
-to use drag and drop in wxWidgets.<P>
-
-See also: <A HREF="wx_wxdataobjectoverview.html#wxdataobjectoverview">wxDataObject overview</A> and <A HREF="wx_samples.html#samplednd">DnD sample</A><P>
-
-It may be noted that data transfer to and from the clipboard is quite
-similar to data transfer with drag and drop and the code to implement
-these two types is almost the same. In particular, both data transfer
-mechanisms store data in some kind of <A HREF="wx_wxdataobject.html#wxdataobject">wxDataObject</A>
-and identify its format(s) using the <A HREF="wx_wxdataformat.html#wxdataformat">wxDataFormat</A>
-class.<P>
-
-To be a <I>drag source</I>, i.e. to provide the data which may be dragged by
-the user elsewhere, you should implement the following steps:<P>
+クラス: <A HREF="wx_wxdataobject.html#wxdataobject">wxDataObject</A>, <A HREF="wx_wxtextdataobject.html#wxtextdataobject">wxTextDataObject</A>, <A HREF="wx_wxdropsource.html#wxdropsource">wxDropSource</A>, <A HREF="wx_wxdroptarget.html#wxdroptarget">wxDropTarget</A>, <A HREF="wx_wxtextdroptarget.html#wxtextdroptarget">wxTextDropTarget</A>, <A HREF="wx_wxfiledroptarget.html#wxfiledroptarget">wxFileDropTarget</A><P>
+wxWidgets でドラッグ・アンド・ドロップを使用するには、setup.h で wxUSE_DRAG_AND_DROP を定義する必要があることに注意してください。<P>
+参照: <A HREF="wx_wxdataobjectoverview.html#wxdataobjectoverview">wxDataObject の概要</A> と <A HREF="wx_samples.html#samplednd">ドラッグ・アンド・ドロップのサンプル</A><P>
+クリップボードへの/からのデータ転送はドラッグ・アンド・ドロップによるデータ転送と非常に似ており、これらを実装するコードもほとんど同じです。特に、両方のデータ転送の仕組みとも、ある種の <A HREF="wx_wxdataobject.html#wxdataobject">wxDataObject</A> にデータを格納し、<A HREF="wx_wxdataformat.html#wxdataformat">wxDataFormat</A> クラスを使用してフォーマットを識別します。<P>
+<I>ドラッグ元</I> になる、つまり、ユーザが他の場所へドラッグするデータを提供するには次の手順を実装します:<P>
 <UL>
 
-<LI> <B>Preparation:</B> First of all, a data object must be created and initialized with the data you wish to drag. 以下に例を示します:<P>
+<LI> <B>準備:</B> まず最初に、データオブジェクトを作成し、ドラッグしたいデータで初期化する必要があります。以下に例を示します:<P>
 <PRE>
 	wxTextDataObject my_data("This text will be dragged.");
 </PRE>
-</LI><LI><B>Drag start:</B> To start the dragging process (typically in response to a
-mouse click) you must call <A HREF="wx_wxdropsource.html#wxdropsourcedodragdrop">wxDropSource::DoDragDrop</A>
-like this:<P>
+</LI><LI><B>ドラッグの開始 :</B> (一般的にはマウスクリックに応じて) ドラッグ処理を開始するには、このように <A HREF="wx_wxdropsource.html#wxdropsourcedodragdrop">wxDropSource::DoDragDrop</A> を呼び出す必要があります:<P>
 <PRE>
 	wxDropSource dragSource( this );
 	dragSource.SetData( my_data );
 	wxDragResult result = dragSource.DoDragDrop( TRUE );
 </PRE>
-</LI><LI> <B>Dragging:</B> The call to DoDragDrop() blocks the program until the user releases the
-mouse button (unless you override the <A HREF="wx_wxdropsource.html#wxdropsourcegivefeedback">GiveFeedback</A> function
-to do something special). When the mouse moves in a window of a program which understands the
-same drag-and-drop protocol (any program under Windows or any program supporting the
-XDnD protocol under X Windows), the corresponding <A HREF="wx_wxdroptarget.html#wxdroptarget">wxDropTarget</A> methods
-are called - see below.
-
-</LI><LI> <B>Processing the result:</B> DoDragDrop() returns an <I>effect code</I> which
-is one of the values of <TT>wxDragResult</TT> enum (explained <A HREF="wx_wxdroptarget.html#wxdroptarget">here</A>):<P>
+</LI><LI> <B>ドラッグ:</B> (<A HREF="wx_wxdropsource.html#wxdropsourcegivefeedback">GiveFeedback</A>  関数をオーバーライドして特別なことをさせない限り) DoDragDrop() を呼び出すと、ユーザがマウスのボタンを放すまでプログラムがブロックされます。同じ ドラッグ・アンド・ドロップ プロトコルを解釈するプログラム (Windows の任意のプログラム、もしくは X ウィンドウの XDnD プロトコルに対応しているプログラム) のウィンドウ内へマウスが入ると、対応する <A HREF="wx_wxdroptarget.html#wxdroptarget">wxDropTarget</A> 関数が呼ばれます。以下を参照してください。
+</LI><LI> <B>結果の処理 :</B> DoDragDrop() は <TT>wxDragResult</TT> 列挙型のいずれかの値を <I>影響コード</I> (effect code) として返却します:<P>
 <PRE>
 	switch (result)
 	{
-	    case wxDragCopy: /* copy the data */ break;
-	    case wxDragMove: /* move the data */ break;
-	    default:         /* do nothing */ break;
+	    case wxDragCopy: /* データをコピーする */ break;
+	    case wxDragMove: /* データを移動する */ break;
+	    default:         /* 何もしない */ break;
 	}
 </PRE>
 </LI></UL>
 <P>
-
-To be a <I>drop target</I>, i.e. to receive the data dropped by the user you should
-follow the instructions below:<P>
+<I>ドロップ先</I> になる、つまり、ユーザのドロップしたデータを受け付けるためには次の手順を実施します:<P>
 <UL>
 
-<LI> <B>Initialization:</B> For a window to be a drop target, it needs to have
-an associated <A HREF="wx_wxdroptarget.html#wxdroptarget">wxDropTarget</A> object. Normally, you will
-call <A HREF="wx_wxwindow.html#wxwindowsetdroptarget">wxWindow::SetDropTarget</A> during window
-creation associating your drop target with it. You must derive a class from
-wxDropTarget and override its pure virtual methods. Alternatively, you may
-derive from <A HREF="wx_wxtextdroptarget.html#wxtextdroptarget">wxTextDropTarget</A> or
-<A HREF="wx_wxfiledroptarget.html#wxfiledroptarget">wxFileDropTarget</A> and override their OnDropText()
-or OnDropFiles() method.
-
-</LI><LI> <B>Drop:</B> When the user releases the mouse over a window, wxWidgets
-asks the associated wxDropTarget object if it accepts the data. For this,
-a <A HREF="wx_wxdataobject.html#wxdataobject">wxDataObject</A> must be associated with the drop target
-and this data object will be responsible for the format negotiation between
-the drag source and the drop target. If all goes well, then <A HREF="wx_wxdroptarget.html#wxdroptargetondata">OnData</A> 
-will get called and the wxDataObject belonging to the drop target can get 
-filled with data.
-
-</LI><LI> <B>The end:</B> After processing the data, DoDragDrop() returns either
-wxDragCopy or wxDragMove depending on the state of the keys &lt;Ctrl&gt;, &lt;Shift&gt;
-and &lt;Alt&gt; at the moment of the drop. There is currently no way for the drop
-target to change this return code.
-
+<LI> <B>初期化 :</B> ウィンドウをドロップ先にするには、ウィンドウを <A HREF="wx_wxdroptarget.html#wxdroptarget">wxDropTarget</A> オブジェクトへ関連付ける必要があります。通常はドロップ先へ関連付けるウィンドウの作成中に <A HREF="wx_wxwindow.html#wxwindowsetdroptarget">wxWindow::SetDropTarget</A> を呼び出します。また、ドロップ先になるには wxDropTarget を継承し、純粋仮想関数をオーバーライドする必要があります。もしくは、<A HREF="wx_wxtextdroptarget.html#wxtextdroptarget">wxTextDropTarget</A> や <A HREF="wx_wxfiledroptarget.html#wxfiledroptarget">wxFileDropTarget</A> を継承し、それらのクラスの OnDropText() 関数や OnDropFiles() 関数をオーバーライドするようにしてください。
+</LI><LI> <B>ドロップ :</B> ユーザがウィンドウ上でマウスを放すと、wxWidgets は関連付けられた wxDropTarget オブジェクトへ、そのデータを受け付けるか問い合わせます。このため、<A HREF="wx_wxdataobject.html#wxdataobject">wxDataObject</A> はドロップ先に関連付けられている必要があり、このデータオブジェクトはドラッグ元とドラッグ先で調整したフォーマットに従ったものになります。すべてがうまく行くと <A HREF="wx_wxdroptarget.html#wxdroptargetondata">OnData</A> が呼び出され、ドロップ先に所属する wxDataObject にデータが引き渡されます。
+</LI><LI> <B>終了 :</B> ドロップ時の &lt;Ctrl&gt;、&lt;Shift&gt;、&lt;Alt&gt; キーの状態に応じて、データ処理のあとに DoDragDrop() は wxDragCopy または wxDragMove  のいずれの値かを返却します。今のところ、ドロップ先でこの戻り値を変更することはできません。
 </LI></UL>
 <P>
 

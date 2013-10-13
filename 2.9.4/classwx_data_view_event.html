@@ -185,9 +185,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_data_view_event.html#a59db8632419879f0e51d94b32b5ff914">SetValue</a> (const <a class="el" href="classwx_variant.html">wxVariant</a> &amp;value)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the value associated with this event.    <a href="#a59db8632419879f0e51d94b32b5ff914"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_data_view_event.html#ac56a99bcd34d37972addb6023966fef8">SetDataObject</a> (<a class="el" href="classwx_data_object.html">wxDataObject</a> *obj)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set <a class="el" href="classwx_data_object.html" title="A wxDataObject represents data that can be copied to or from the clipboard, or dragged and dropped...">wxDataObject</a> for data transfer within a drag operation.    <a href="#ac56a99bcd34d37972addb6023966fef8"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set <a class="el" href="classwx_data_object.html" title="wxDataObject はクリップボードから/へコピーしたり、ドラッグやドロップしたりすることが可能なデータを表しています。">wxDataObject</a> for data transfer within a drag operation.    <a href="#ac56a99bcd34d37972addb6023966fef8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_data_format.html">wxDataFormat</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_data_view_event.html#a7ac173817b313a07e5f5392ed40649da">GetDataFormat</a> () const  </td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the <a class="el" href="classwx_data_format.html" title="A wxDataFormat is an encapsulation of a platform-specific format handle which is used by the system f...">wxDataFormat</a> during a drop operation.    <a href="#a7ac173817b313a07e5f5392ed40649da"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the <a class="el" href="classwx_data_format.html" title="wxDataFormat はクリップボードやドラッグ・アンド・ドロップに関するプラットフォーム独自の処理を隠蔽するものです。">wxDataFormat</a> during a drop operation.    <a href="#a7ac173817b313a07e5f5392ed40649da"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_data_view_event.html#aac492fa44dbab660ff23e77327a40659">GetDataSize</a> () const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the data size for a drop data transfer.    <a href="#aac492fa44dbab660ff23e77327a40659"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_data_view_event.html#a76fe710667fa96c015d6de26f8ac1835">GetDataBuffer</a> () const  </td></tr>
@@ -321,7 +321,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Gets the <a class="el" href="classwx_data_format.html" title="A wxDataFormat is an encapsulation of a platform-specific format handle which is used by the system f...">wxDataFormat</a> during a drop operation.  </p>
+<p>Gets the <a class="el" href="classwx_data_format.html" title="wxDataFormat はクリップボードやドラッグ・アンド・ドロップに関するプラットフォーム独自の処理を隠蔽するものです。">wxDataFormat</a> during a drop operation.  </p>
 
 </div>
 </div><!-- doxytag: member="wxDataViewEvent::GetDataSize" ref="aac492fa44dbab660ff23e77327a40659" args="() const " -->
@@ -376,7 +376,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns the effect the user requested to happen to the dropped data.  </p>
-<p>This function can be used inside wxEVT_COMMAND_DATAVIEW_ITEM_DROP_POSSIBLE and wxEVT_COMMAND_DATAVIEW_ITEM_DROP handlers and returns whether the user is trying to copy (the return value is <a class="el" href="interface_2wx_2dnd_8h.html#adbd4b292582eebbc9a6ce3dee31c2afba736c04c59caf8154a096e0d350492fc1" title="The data was successfully copied.">wxDragCopy</a>) or move (if the return value is <a class="el" href="interface_2wx_2dnd_8h.html#adbd4b292582eebbc9a6ce3dee31c2afba8b2ba916ca49cc93ef34a5e20684d18e" title="The data was successfully moved (MSW only).">wxDragMove</a>) the data.</p>
+<p>This function can be used inside wxEVT_COMMAND_DATAVIEW_ITEM_DROP_POSSIBLE and wxEVT_COMMAND_DATAVIEW_ITEM_DROP handlers and returns whether the user is trying to copy (the return value is <a class="el" href="interface_2wx_2dnd_8h.html#adbd4b292582eebbc9a6ce3dee31c2afba736c04c59caf8154a096e0d350492fc1" title="データのコピーに成功した。">wxDragCopy</a>) or move (if the return value is <a class="el" href="interface_2wx_2dnd_8h.html#adbd4b292582eebbc9a6ce3dee31c2afba8b2ba916ca49cc93ef34a5e20684d18e" title="データの移動に成功した。(MSW のみ)">wxDragMove</a>) the data.</p>
 <p>Currently this is only available when using the generic version of <a class="el" href="classwx_data_view_ctrl.html" title="wxDataViewCtrl is a control to display data either in a tree like fashion or in a tabular form or bot...">wxDataViewCtrl</a> (used e.g. under MSW) and always returns <a class="el" href="interface_2wx_2dnd_8h.html#adbd4b292582eebbc9a6ce3dee31c2afba8324e9ee208c50276f8c2cad7d3fd548" title="Drag target didn't accept the data.">wxDragNone</a> in the GTK and OS X native versions.</p>
 <dl class="since"><dt><b>Since:</b></dt><dd>2.9.4  </dd></dl>
 
@@ -492,7 +492,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Set <a class="el" href="classwx_data_object.html" title="A wxDataObject represents data that can be copied to or from the clipboard, or dragged and dropped...">wxDataObject</a> for data transfer within a drag operation.  </p>
+<p>Set <a class="el" href="classwx_data_object.html" title="wxDataObject はクリップボードから/へコピーしたり、ドラッグやドロップしたりすることが可能なデータを表しています。">wxDataObject</a> for data transfer within a drag operation.  </p>
 
 </div>
 </div><!-- doxytag: member="wxDataViewEvent::SetDataViewColumn" ref="a66fb568e9dd899f5becde2d9ef88138b" args="(wxDataViewColumn *col)" -->

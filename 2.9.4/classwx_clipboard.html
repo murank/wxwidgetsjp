@@ -144,7 +144,7 @@ function toggleVisibility(linkObj) {
     {
         <span class="comment">// This data objects are held by the clipboard,</span>
         <span class="comment">// so do not delete them in the app.</span>
-        <a class="code" href="clipbrd_8h.html#a7981f5d50a36729858d8356aac6e77eb" title="The backwards compatible access macro that returns the global clipboard object pointer.">wxTheClipboard</a>-&gt;SetData( <span class="keyword">new</span> <a class="code" href="classwx_text_data_object.html" title="wxTextDataObject is a specialization of wxDataObjectSimple for text data.">wxTextDataObject</a>(<span class="stringliteral">"Some text"</span>) );
+        <a class="code" href="clipbrd_8h.html#a7981f5d50a36729858d8356aac6e77eb" title="The backwards compatible access macro that returns the global clipboard object pointer.">wxTheClipboard</a>-&gt;SetData( <span class="keyword">new</span> <a class="code" href="classwx_text_data_object.html" title="wxTextDataObject は wxDataObjectSimple を特殊化したもので、テキストデータに特化しています。">wxTextDataObject</a>(<span class="stringliteral">"Some text"</span>) );
         <a class="code" href="clipbrd_8h.html#a7981f5d50a36729858d8356aac6e77eb" title="The backwards compatible access macro that returns the global clipboard object pointer.">wxTheClipboard</a>-&gt;Close();
     }
 
@@ -153,14 +153,14 @@ function toggleVisibility(linkObj) {
     {
         <span class="keywordflow">if</span> (<a class="code" href="clipbrd_8h.html#a7981f5d50a36729858d8356aac6e77eb" title="The backwards compatible access macro that returns the global clipboard object pointer.">wxTheClipboard</a>-&gt;IsSupported( <a class="code" href="defs_8h.html#a263109c79f708754bf656c7768b27047ac72dfba09ea736965c1c9c52acdb857a">wxDF_TEXT</a> ))
         {
-            <a class="code" href="classwx_text_data_object.html" title="wxTextDataObject is a specialization of wxDataObjectSimple for text data.">wxTextDataObject</a> data;
+            <a class="code" href="classwx_text_data_object.html" title="wxTextDataObject は wxDataObjectSimple を特殊化したもので、テキストデータに特化しています。">wxTextDataObject</a> data;
             <a class="code" href="clipbrd_8h.html#a7981f5d50a36729858d8356aac6e77eb" title="The backwards compatible access macro that returns the global clipboard object pointer.">wxTheClipboard</a>-&gt;GetData( data );
             <a class="code" href="group__group__funcmacro__dialog.html#ga193c64ed4802e379799cdb42de252647" title="汎用的なメッセージダイアログを表示します。">wxMessageBox</a>( data.<a class="code" href="classwx_text_data_object.html#a6b43294c05885cc8981b37f3c42815bd" title="Returns the text associated with the data object.">GetText</a>() );
         }
         <a class="code" href="clipbrd_8h.html#a7981f5d50a36729858d8356aac6e77eb" title="The backwards compatible access macro that returns the global clipboard object pointer.">wxTheClipboard</a>-&gt;Close();
     }
 </pre></div><h2></h2>
-<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__dnd.html">Clipboard and Drag &amp; Drop</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_dnd.html">Drag and Drop Overview</a>, <a class="el" href="overview_dataobject.html">wxDataObject Overview</a>, <a class="el" href="classwx_data_object.html" title="A wxDataObject represents data that can be copied to or from the clipboard, or dragged and dropped...">wxDataObject</a> </dd></dl>
+<div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxcore">wxCore</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__dnd.html">Clipboard and Drag &amp; Drop</a></span></div><dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_dnd.html">Drag and Drop Overview</a>, <a class="el" href="overview_dataobject.html">wxDataObject Overview</a>, <a class="el" href="classwx_data_object.html" title="wxDataObject はクリップボードから/へコピーしたり、ドラッグやドロップしたりすることが可能なデータを表しています。">wxDataObject</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 

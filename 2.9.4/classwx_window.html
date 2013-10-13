@@ -667,7 +667,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classwx_drop_target.html">wxDropTarget</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a4511e71affd926a47c5c320563ca2df5">GetDropTarget</a> () const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the associated drop target, which may be <span class="literal">NULL</span>.    <a href="#a4511e71affd926a47c5c320563ca2df5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#ae34b4d45433ca8287df0e47d46411e58">SetDropTarget</a> (<a class="el" href="classwx_drop_target.html">wxDropTarget</a> *target)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Associates a drop target with this window.    <a href="#ae34b4d45433ca8287df0e47d46411e58"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">このウィンドウに関連付けられたドロップ先。  <a href="#ae34b4d45433ca8287df0e47d46411e58"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_window.html#a7e7015bc61bd79b6821d2dccaecf9eda">DragAcceptFiles</a> (bool accept)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Enables or disables eligibility for drop file events (OnDropFiles).    <a href="#a7e7015bc61bd79b6821d2dccaecf9eda"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constraints, sizers and window layout functions</div></td></tr>
@@ -1732,8 +1732,8 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Windows only until version 2.8.9, available on all platforms since 2.8.10. Cannot be used together with <a class="el" href="classwx_window.html#ae34b4d45433ca8287df0e47d46411e58" title="Associates a drop target with this window.">SetDropTarget()</a> on non-Windows platforms.</dd></dl>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#ae34b4d45433ca8287df0e47d46411e58" title="Associates a drop target with this window.">SetDropTarget()</a> </dd></dl>
+<dl class="remark"><dt><b>Remarks:</b></dt><dd>Windows only until version 2.8.9, available on all platforms since 2.8.10. Cannot be used together with <a class="el" href="classwx_window.html#ae34b4d45433ca8287df0e47d46411e58" title="このウィンドウに関連付けられたドロップ先。">SetDropTarget()</a> on non-Windows platforms.</dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#ae34b4d45433ca8287df0e47d46411e58" title="このウィンドウに関連付けられたドロップ先。">SetDropTarget()</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::Enable" ref="a4e933aa891f42fbb3b87438057c573af" args="(bool enable=true)" -->
@@ -2513,7 +2513,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns the associated drop target, which may be <span class="literal">NULL</span>.  </p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#ae34b4d45433ca8287df0e47d46411e58" title="Associates a drop target with this window.">SetDropTarget()</a>, <a class="el" href="overview_dnd.html">Drag and Drop Overview</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#ae34b4d45433ca8287df0e47d46411e58" title="このウィンドウに関連付けられたドロップ先。">SetDropTarget()</a>, <a class="el" href="overview_dnd.html">Drag and Drop Overview</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::GetEffectiveMinSize" ref="a1a54fcda8d52986482e030bd54739e9f" args="() const " -->
@@ -5926,7 +5926,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Associates a drop target with this window.  </p>
+<p>このウィンドウに関連付けられたドロップ先。 </p>
 <p>If the window already has a drop target, it is deleted.</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a4511e71affd926a47c5c320563ca2df5" title="Returns the associated drop target, which may be NULL.">GetDropTarget()</a>, <a class="el" href="overview_dnd.html">Drag and Drop Overview</a> </dd></dl>
 
