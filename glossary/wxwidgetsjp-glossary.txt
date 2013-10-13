@@ -21,3 +21,4 @@ portability	移植性
 third party	サードパーティー
 How Events are Processed	イベント処理の仕組み
 diacritic	発音区別符号
+predefined	定義済みの

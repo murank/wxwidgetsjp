@@ -1231,6 +1231,14 @@ printf(<bpt i="1" x="1">&lt;s1&gt;</bpt>"Data: %s\n"<ept i="1">&lt;/s1&gt;</ept>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxDropSource<ept i="0">&lt;/a0&gt;</ept> dragSource( <bpt i="1" x="1">&lt;s1&gt;</bpt>this<ept i="1">&lt;/s1&gt;</ept> );</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T134855Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxDropSource<ept i="0">&lt;/a0&gt;</ept> dragSource( <bpt i="1" x="1">&lt;s1&gt;</bpt>this<ept i="1">&lt;/s1&gt;</ept> );</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxFile<ept i="0">&lt;/a0&gt;</ept> file;</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T113205Z">
@@ -1827,6 +1835,14 @@ connection = (MyConnection *)client-&gt;MakeConnection(hostName, server, <bpt i=
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxTextDataObject<ept i="0">&lt;/a0&gt;</ept> my_data(<bpt i="1" x="1">&lt;s1&gt;</bpt>"This text will be dragged."<ept i="1">&lt;/s1&gt;</ept>);</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T134620Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxTextDataObject<ept i="0">&lt;/a0&gt;</ept> my_data(<bpt i="1" x="1">&lt;s1&gt;</bpt>"This text will be dragged."<ept i="1">&lt;/s1&gt;</ept>);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>wxTextFile<ept i="0">&lt;/a0&gt;</ept> is a general purpose class for working with small text files on line by line basis.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T072746Z">
@@ -2109,6 +2125,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="147" x="147">&lt;a147&gt;</bpt><bpt i="148" x="148">&lt;b148&gt;</bpt>Drag and drop overview<ept i="148">&lt;/b148&gt;</ept><ept i="147">&lt;/a147&gt;</ept><it pos="begin" x="149">&lt;br149&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T155053Z">
+        <seg><bpt i="147" x="147">&lt;a147&gt;</bpt><bpt i="148" x="148">&lt;b148&gt;</bpt>ドラッグ・アンド・ドロップの概要<ept i="148">&lt;/b148&gt;</ept><ept i="147">&lt;/a147&gt;</ept><it pos="begin" x="149">&lt;br149&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="14" x="14">&lt;a14&gt;</bpt>Drag and drop<ept i="14">&lt;/a14&gt;</ept><it pos="begin" x="15">&lt;br15&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T155130Z">
+        <seg><bpt i="14" x="14">&lt;a14&gt;</bpt>ドラッグ・アンド・ドロップ<ept i="14">&lt;/a14&gt;</ept><it pos="begin" x="15">&lt;br15&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="14" x="14">&lt;a14&gt;</bpt>Working with program options: wxConfig<ept i="14">&lt;/a14&gt;</ept><it pos="begin" x="15">&lt;br15&gt;</it></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130610T145441Z">
@@ -2371,6 +2403,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130529T154319Z">
         <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>wxClientDC<ept i="2">&lt;/a2&gt;</ept> dc(window);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>wxDragResult<ept i="2">&lt;/a2&gt;</ept> result = dragSource.DoDragDrop( <bpt i="3" x="3">&lt;s3&gt;</bpt>true<ept i="3">&lt;/s3&gt;</ept> );</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T134858Z">
+        <seg><bpt i="2" x="2">&lt;a2&gt;</bpt>wxDragResult<ept i="2">&lt;/a2&gt;</ept> result = dragSource.DoDragDrop( <bpt i="3" x="3">&lt;s3&gt;</bpt>true<ept i="3">&lt;/s3&gt;</ept> );</seg>
       </tuv>
     </tu>
     <tu>
@@ -3087,6 +3127,54 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Drag start:<ept i="0">&lt;/b0&gt;</ept> To start the dragging process (typically in response to a mouse click) you must call <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDropSource::DoDragDrop<ept i="1">&lt;/a1&gt;</ept> like this:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T160418Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>ドラッグの開始 :<ept i="0">&lt;/b0&gt;</ept> (一般的にはマウスクリックに応じて) ドラッグ処理を開始するには、このように <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDropSource::DoDragDrop<ept i="1">&lt;/a1&gt;</ept> を呼び出す必要があります:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Drag start<ept i="0">&lt;/b0&gt;</ept>: To start the dragging process (typically in response to a mouse click) you must call <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDropSource::DoDragDrop<ept i="1">&lt;/a1&gt;</ept> like this:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T134807Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>ドラッグの開始 :<ept i="0">&lt;/b0&gt;</ept> (一般的にはマウスクリックに応じて) ドラッグ処理を開始するには、このように <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDropSource::DoDragDrop<ept i="1">&lt;/a1&gt;</ept> を呼び出す必要があります:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Dragging:<ept i="0">&lt;/b0&gt;</ept> The call to DoDragDrop() blocks the program until the user releases the mouse button (unless you override the <bpt i="1" x="1">&lt;a1&gt;</bpt>GiveFeedback<ept i="1">&lt;/a1&gt;</ept> function to do something special).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T131525Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>ドラッグ:<ept i="0">&lt;/b0&gt;</ept> (<bpt i="1" x="1">&lt;a1&gt;</bpt>GiveFeedback<ept i="1">&lt;/a1&gt;</ept>  関数をオーバーライドして特別なことをさせない限り) DoDragDrop() を呼び出すと、ユーザがマウスのボタンを放すまでプログラムがブロックされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Dragging:<ept i="0">&lt;/b0&gt;</ept> The call to DoDragDrop() blocks the program until the user releases the mouse button (unless you override the <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDropSource::GiveFeedback<ept i="1">&lt;/a1&gt;</ept> function to do something special).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135112Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>ドラッグ:<ept i="0">&lt;/b0&gt;</ept> (<bpt i="1" x="1">&lt;a1&gt;</bpt>GiveFeedback<ept i="1">&lt;/a1&gt;</ept>  関数をオーバーライドして特別なことをさせない限り) DoDragDrop() を呼び出すと、ユーザがマウスのボタンを放すまでプログラムがブロックされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Drop:<ept i="0">&lt;/b0&gt;</ept> When the user releases the mouse over a window, wxWidgets asks the associated <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDropTarget<ept i="1">&lt;/a1&gt;</ept> object if it accepts the data.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135831Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>ドロップ :<ept i="0">&lt;/b0&gt;</ept> ユーザがウィンドウ上でマウスを放すと、wxWidgets は関連付けられた <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDropTarget<ept i="1">&lt;/a1&gt;</ept> オブジェクトへ、そのデータを受け付けるか問い合わせます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Drop:<ept i="0">&lt;/b0&gt;</ept> When the user releases the mouse over a window, wxWidgets asks the associated wxDropTarget object if it accepts the data.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T132245Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>ドロップ :<ept i="0">&lt;/b0&gt;</ept> ユーザがウィンドウ上でマウスを放すと、wxWidgets は関連付けられた wxDropTarget オブジェクトへ、そのデータを受け付けるか問い合わせます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Execute:<ept i="0">&lt;/b0&gt;</ept> the client calls the server with a data string representing a command to be executed.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130727T032457Z">
@@ -3123,6 +3211,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130719T150639Z">
         <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>初期サイズ<ept i="0">&lt;/b0&gt;</ept>: ウィジェットの初期サイズはウィジェットのコンストラクタで指定されたサイズのことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Initialization:<ept i="0">&lt;/b0&gt;</ept> For a window to be a drop target, it needs to have an associated <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDropTarget<ept i="1">&lt;/a1&gt;</ept> object.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T131927Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>初期化 :<ept i="0">&lt;/b0&gt;</ept> ウィンドウをドロップ先にするには、ウィンドウを <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDropTarget<ept i="1">&lt;/a1&gt;</ept> オブジェクトへ関連付ける必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3175,6 +3271,30 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Preparation:<ept i="0">&lt;/b0&gt;</ept> First of all, a data object must be created and initialized with the data you wish to drag.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T160254Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>準備:<ept i="0">&lt;/b0&gt;</ept> まず最初に、データオブジェクトを作成し、ドラッグしたいデータで初期化する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Processing the result:<ept i="0">&lt;/b0&gt;</ept> DoDragDrop() returns an <bpt i="1" x="1">&lt;i1&gt;</bpt>effect code<ept i="1">&lt;/i1&gt;</ept> which is one of the values of <bpt i="2" x="2">&lt;t2&gt;</bpt>wxDragResult<ept i="2">&lt;/t2&gt;</ept> enum (explained <bpt i="3" x="3">&lt;a3&gt;</bpt>here<ept i="3">&lt;/a3&gt;</ept>):</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T131721Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>結果の処理 :<ept i="0">&lt;/b0&gt;</ept> DoDragDrop() は <bpt i="2" x="2">&lt;t2&gt;</bpt>wxDragResult<ept i="2">&lt;/t2&gt;</ept> 列挙型のいずれかの値を <bpt i="1" x="1">&lt;i1&gt;</bpt>影響コード<ept i="1">&lt;/i1&gt;</ept> (effect code) として返却します:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Processing the result<ept i="0">&lt;/b0&gt;</ept>: DoDragDrop() returns an <bpt i="1" x="1">&lt;e1&gt;</bpt>effect<ept i="1">&lt;/e1&gt;</ept> code which is one of the values of <bpt i="2" x="2">&lt;c2&gt;</bpt>wxDragResult<ept i="2">&lt;/c2&gt;</ept> enum (explained in <bpt i="3" x="3">&lt;a3&gt;</bpt>wxDropTarget<ept i="3">&lt;/a3&gt;</ept> page):</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T140717Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>結果の処理 :<ept i="0">&lt;/b0&gt;</ept> DoDragDrop() は (<bpt i="3" x="3">&lt;a3&gt;</bpt>wxDropTarget<ept i="3">&lt;/a3&gt;</ept> で説明している)  <bpt i="2" x="2">&lt;c2&gt;</bpt>wxDragResult<ept i="2">&lt;/c2&gt;</ept> 列挙型のいずれかの値を <bpt i="1" x="1">&lt;e1&gt;</bpt>影響コード<ept i="1">&lt;/e1&gt;</ept> (effect code) として返却します:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>Request:<ept i="0">&lt;/b0&gt;</ept> the client asks the server for a particular data string associated with a given item string.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130727T032733Z">
@@ -3211,6 +3331,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130719T150301Z">
         <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>サイズ<ept i="0">&lt;/b0&gt;</ept>: ウィジェットのサイズは <bpt i="1" x="1">&lt;t1&gt;</bpt>SetSize()<ept i="1">&lt;/t1&gt;</ept> 関数や <bpt i="2" x="2">&lt;t2&gt;</bpt>GetSize()<ept i="2">&lt;/t2&gt;</ept> 関数で明示的に設定・取得することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>The end:<ept i="0">&lt;/b0&gt;</ept> After processing the data, DoDragDrop() returns either wxDragCopy or wxDragMove depending on the state of the keys &lt;Ctrl&gt;, &lt;Shift&gt; and &lt;Alt&gt; at the moment of the drop.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T132458Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>終了 :<ept i="0">&lt;/b0&gt;</ept> ドロップ時の &lt;Ctrl&gt;、&lt;Shift&gt;、&lt;Alt&gt; キーの状態に応じて、データ処理のあとに DoDragDrop() は wxDragCopy または wxDragMove  のいずれの値かを返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>The end<ept i="0">&lt;/b0&gt;</ept>: After processing the data, DoDragDrop() returns either wxDragCopy or wxDragMove depending on the state of the keys Ctrl, Shift and Alt at the moment of the drop.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T140128Z">
+        <seg><bpt i="0" x="0">&lt;b0&gt;</bpt>終了 :<ept i="0">&lt;/b0&gt;</ept> ドロップ時の Ctrl、Shift、Alt キーの状態に応じて、データ処理のあとに DoDragDrop() は wxDragCopy または wxDragMove  のいずれの値かを返却します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3799,6 +3935,14 @@ process_data(tmp_str);</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>switch<ept i="0">&lt;/s0&gt;</ept> (result)</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135302Z">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>switch<ept i="0">&lt;/s0&gt;</ept> (result)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>using namespace <ept i="0">&lt;/s0&gt;</ept>boost;
 
 <bpt i="1" x="1">&lt;s1&gt;</bpt>void<ept i="1">&lt;/s1&gt;</ept> MyHandler::OnExit( <bpt i="2" x="2">&lt;a2&gt;</bpt>wxCommandEvent<ept i="2">&lt;/a2&gt;</ept> &amp; )
@@ -3907,6 +4051,14 @@ process_data(tmp_str);</seg>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="10" x="10">&lt;s10&gt;</bpt>// do nothing<ept i="10">&lt;/s10&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135358Z">
+        <seg><bpt i="10" x="10">&lt;s10&gt;</bpt>// 何も行わない<ept i="10">&lt;/s10&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="10" x="10">&lt;s10&gt;</bpt>if<ept i="10">&lt;/s10&gt;</ept> ( s.<bpt i="11" x="11">&lt;a11&gt;</bpt>length<ept i="11">&lt;/a11&gt;</ept>() != 1 )</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130619T153115Z">
@@ -3937,6 +4089,14 @@ process_data(tmp_str);</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T111052Z">
         <seg><bpt i="11" x="11">&lt;s11&gt;</bpt>// トレースメッセージも有効化する<ept i="11">&lt;/s11&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="11" x="11">&lt;s11&gt;</bpt>break<ept i="11">&lt;/s11&gt;</ept>;</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135400Z">
+        <seg><bpt i="11" x="11">&lt;s11&gt;</bpt>break<ept i="11">&lt;/s11&gt;</ept>;</seg>
       </tuv>
     </tu>
     <tu>
@@ -4133,6 +4293,14 @@ connection-&gt;StartAdvise(<bpt i="12" x="12">&lt;s12&gt;</bpt>"Item"<ept i="12"
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T113225Z">
         <seg><bpt i="1" x="1">&lt;s1&gt;</bpt>// 通常はファイルを開けなかった場合に wxFile.Open() がエラーメッセージを出力するが、そうさせたくない<ept i="1">&lt;/s1&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="1" x="1">&lt;s1&gt;</bpt>case<ept i="1">&lt;/s1&gt;</ept> <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDragCopy<ept i="2">&lt;/a2&gt;</ept>:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135306Z">
+        <seg><bpt i="1" x="1">&lt;s1&gt;</bpt>case<ept i="1">&lt;/s1&gt;</ept> <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDragCopy<ept i="2">&lt;/a2&gt;</ept>:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4405,6 +4573,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="3" x="3">&lt;s3&gt;</bpt>// copy the data<ept i="3">&lt;/s3&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135340Z">
+        <seg><bpt i="3" x="3">&lt;s3&gt;</bpt>// データをコピーする<ept i="3">&lt;/s3&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="3" x="3">&lt;s3&gt;</bpt>// in UTF8 the character U+00E0 is encoded as 0xC3A0<ept i="3">&lt;/s3&gt;</ept></seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130503T082644Z">
@@ -4489,6 +4665,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="4" x="4">&lt;s4&gt;</bpt>break<ept i="4">&lt;/s4&gt;</ept>;</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T144141Z">
+        <seg><bpt i="4" x="4">&lt;s4&gt;</bpt>break<ept i="4">&lt;/s4&gt;</ept>;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="4" x="4">&lt;s4&gt;</bpt>const<ept i="4">&lt;/s4&gt;</ept> <bpt i="5" x="5">&lt;a5&gt;</bpt>wxFilterClassFactory<ept i="5">&lt;/a5&gt;</ept> *fcf;</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T013317Z">
@@ -4537,6 +4721,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130526T110833Z">
         <seg><bpt i="5" x="5">&lt;s5&gt;</bpt>// しかし、どういうわけか時たま変更のコミットに失敗するため、<ept i="5">&lt;/s5&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="5" x="5">&lt;s5&gt;</bpt>case<ept i="5">&lt;/s5&gt;</ept> <bpt i="6" x="6">&lt;a6&gt;</bpt>wxDragMove<ept i="6">&lt;/a6&gt;</ept>:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135323Z">
+        <seg><bpt i="5" x="5">&lt;s5&gt;</bpt>case<ept i="5">&lt;/s5&gt;</ept> <bpt i="6" x="6">&lt;a6&gt;</bpt>wxDragMove<ept i="6">&lt;/a6&gt;</ept>:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4679,6 +4871,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="7" x="7">&lt;s7&gt;</bpt>// move the data<ept i="7">&lt;/s7&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135332Z">
+        <seg><bpt i="7" x="7">&lt;s7&gt;</bpt>// データを移動する<ept i="7">&lt;/s7&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="7" x="7">&lt;s7&gt;</bpt>bool<ept i="7">&lt;/s7&gt;</ept> <bpt i="8" x="8">&lt;a8&gt;</bpt>OnAdvise<ept i="8">&lt;/a8&gt;</ept>(<bpt i="9" x="9">&lt;s9&gt;</bpt>const<ept i="9">&lt;/s9&gt;</ept> <bpt i="10" x="10">&lt;a10&gt;</bpt>wxString<ept i="10">&lt;/a10&gt;</ept>&amp; topic, <bpt i="11" x="11">&lt;s11&gt;</bpt>const<ept i="11">&lt;/s11&gt;</ept> <bpt i="12" x="12">&lt;a12&gt;</bpt>wxString<ept i="12">&lt;/a12&gt;</ept>&amp; item, <bpt i="13" x="13">&lt;s13&gt;</bpt>char<ept i="13">&lt;/s13&gt;</ept> *data,</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130804T152914Z">
@@ -4721,6 +4921,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg><bpt i="8" x="8">&lt;s8&gt;</bpt>break<ept i="8">&lt;/s8&gt;</ept>;</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T144144Z">
+        <seg><bpt i="8" x="8">&lt;s8&gt;</bpt>break<ept i="8">&lt;/s8&gt;</ept>;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg><bpt i="9" x="9">&lt;s9&gt;</bpt>// Do something.<ept i="9">&lt;/s9&gt;</ept>
 }
 
@@ -4745,6 +4953,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T015621Z">
         <seg><bpt i="9" x="9">&lt;s9&gt;</bpt>// する必要はありません。<ept i="9">&lt;/s9&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="9" x="9">&lt;s9&gt;</bpt>default<ept i="9">&lt;/s9&gt;</ept>:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135346Z">
+        <seg><bpt i="9" x="9">&lt;s9&gt;</bpt>default<ept i="9">&lt;/s9&gt;</ept>:</seg>
       </tuv>
     </tu>
     <tu>
@@ -5069,6 +5285,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>A predefined drop target for dealing with text data.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T133822Z">
+        <seg>テキストデータに特化した、定義済みのドロップ先。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>A printer device context is specific to MSW and Mac, and allows access to any printer with a Windows ...</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130529T150032Z">
@@ -5329,6 +5553,22 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130804T124641Z">
         <seg>wxDDEServer オブジェクトはクライアント・サーバ DDE (Dynamic Data Exchange) 通信のサーバ部分を表しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A wxDataFormat is an encapsulation of a platform-specific format handle which is used by the system f...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T134515Z">
+        <seg>wxDataFormat はクリップボードやドラッグ・アンド・ドロップに関するプラットフォーム独自の処理を隠蔽するものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A wxDataObject represents data that can be copied to or from the clipboard, or dragged and dropped...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T133129Z">
+        <seg>wxDataObject はクリップボードから/へコピーしたり、ドラッグやドロップしたりすることが可能なデータを表しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5721,6 +5961,22 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130501T151853Z">
         <seg>また、文字列や文字定数は <bpt i="1" x="1">&lt;t1&gt;</bpt>char<ept i="1">&lt;/t1&gt;</ept> (1 バイト) の代わりにワイド文字 (<bpt i="0" x="0">&lt;t0&gt;</bpt>wchar_t<ept i="0">&lt;/t0&gt;</ept> 型、通常 2 か 4 バイト) で符号化される必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Alternatively, you may derive from <bpt i="3" x="3">&lt;a3&gt;</bpt>wxTextDropTarget<ept i="3">&lt;/a3&gt;</ept> or <bpt i="4" x="4">&lt;a4&gt;</bpt>wxFileDropTarget<ept i="4">&lt;/a4&gt;</ept> and override their OnDropText() or OnDropFiles() method.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T161714Z">
+        <seg>もしくは、<bpt i="3" x="3">&lt;a3&gt;</bpt>wxTextDropTarget<ept i="3">&lt;/a3&gt;</ept> や <bpt i="4" x="4">&lt;a4&gt;</bpt>wxFileDropTarget<ept i="4">&lt;/a4&gt;</ept> を継承し、それらのクラスの OnDropText() 関数や OnDropFiles() 関数をオーバーライドするようにしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Alternatively, you may derive from <bpt i="4" x="4">&lt;a4&gt;</bpt>wxTextDropTarget<ept i="4">&lt;/a4&gt;</ept> or <bpt i="5" x="5">&lt;a5&gt;</bpt>wxFileDropTarget<ept i="5">&lt;/a5&gt;</ept> and override their OnDropText() or OnDropFiles() method.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135719Z">
+        <seg>もしくは、<bpt i="4" x="4">&lt;a4&gt;</bpt>wxTextDropTarget<ept i="4">&lt;/a4&gt;</ept> や <bpt i="5" x="5">&lt;a5&gt;</bpt>wxFileDropTarget<ept i="5">&lt;/a5&gt;</ept> を継承し、それらのクラスの OnDropText() 関数や OnDropFiles() 関数をオーバーライドするようにしてください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6285,6 +6541,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Associates a drop target with this window.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135428Z">
+        <seg>このウィンドウに関連付けられたドロップ先。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Automatic Deletion of Child Windows</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130615T034144Z">
@@ -6809,6 +7073,14 @@ bool DerivedApp::OnInit()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Called after OnDrop() returns true.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135815Z">
+        <seg>OnDrop() のあとに呼び出すと true を返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Called by MakeConnection(), by default this simply returns a new wxConnection object.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130804T150605Z">
@@ -7029,6 +7301,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130612T153832Z">
         <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxConfigBase<ept i="0">&lt;/a0&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Classes: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDataObject<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxTextDataObject<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDropSource<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxDropTarget<ept i="3">&lt;/a3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxTextDropTarget<ept i="4">&lt;/a4&gt;</ept>, <bpt i="5" x="5">&lt;a5&gt;</bpt>wxFileDropTarget<ept i="5">&lt;/a5&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T155148Z">
+        <seg>クラス: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDataObject<ept i="0">&lt;/a0&gt;</ept>, <bpt i="1" x="1">&lt;a1&gt;</bpt>wxTextDataObject<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDropSource<ept i="2">&lt;/a2&gt;</ept>, <bpt i="3" x="3">&lt;a3&gt;</bpt>wxDropTarget<ept i="3">&lt;/a3&gt;</ept>, <bpt i="4" x="4">&lt;a4&gt;</bpt>wxTextDropTarget<ept i="4">&lt;/a4&gt;</ept>, <bpt i="5" x="5">&lt;a5&gt;</bpt>wxFileDropTarget<ept i="5">&lt;/a5&gt;</ept></seg>
       </tuv>
     </tu>
     <tu>
@@ -7813,6 +8093,22 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T025608Z">
         <seg>これは単純な方法では実現できません:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Drag and Drop Overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T132854Z">
+        <seg>ドラッグ・アンド・ドロップの概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Drag and drop overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T155140Z">
+        <seg>ドラッグ・アンド・ドロップの概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -8991,6 +9287,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>For this, a <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDataObject<ept i="1">&lt;/a1&gt;</ept> must be associated with the drop target and this data object will be responsible for the format negotiation between the drag source and the drop target.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T162334Z">
+        <seg>このため、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxDataObject<ept i="1">&lt;/a1&gt;</ept> はドロップ先に関連付けられている必要があり、このデータオブジェクトはドラッグ元とドラッグ先で調整したフォーマットに従ったものになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>For this, a <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDataObject<ept i="2">&lt;/a2&gt;</ept> must be associated with the drop target and this data object will be responsible for the format negotiation between the drag source and the drop target.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135842Z">
+        <seg>このため、<bpt i="2" x="2">&lt;a2&gt;</bpt>wxDataObject<ept i="2">&lt;/a2&gt;</ept> はドロップ先に関連付けられている必要があり、このデータオブジェクトはドラッグ元とドラッグ先で調整したフォーマットに従ったものになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>For this, you should only know about <bpt i="1" x="1">&lt;a1&gt;</bpt>wxLogXXX() functions<ept i="1">&lt;/a1&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T131206Z">
@@ -9621,6 +9933,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130722T144724Z">
         <seg>ウィンドウがボーダーを持たない場合 (そしてステータスバーなどを含む <bpt i="3" x="3">&lt;a3&gt;</bpt>wxFrame<ept i="3">&lt;/a3&gt;</ept> でない場合)、クライアントサイズはウィンドウのサイズと同じ大きさになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If all goes well, then <bpt i="2" x="2">&lt;a2&gt;</bpt>OnData<ept i="2">&lt;/a2&gt;</ept> will get called and the wxDataObject belonging to the drop target can get filled with data.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T162526Z">
+        <seg>すべてがうまく行くと <bpt i="2" x="2">&lt;a2&gt;</bpt>OnData<ept i="2">&lt;/a2&gt;</ept> が呼び出され、ドロップ先に所属する wxDataObject にデータが引き渡されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If all goes well, then <bpt i="3" x="3">&lt;a3&gt;</bpt>wxDropTarget::OnData<ept i="3">&lt;/a3&gt;</ept> will get called and the <bpt i="4" x="4">&lt;a4&gt;</bpt>wxDataObject<ept i="4">&lt;/a4&gt;</ept> belonging to the drop target can get filled with data.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T140106Z">
+        <seg>すべてがうまく行くと <bpt i="3" x="3">&lt;a3&gt;</bpt>wxDropTarget::OnData<ept i="3">&lt;/a3&gt;</ept> が呼び出され、ドロップ先に所属する <bpt i="4" x="4">&lt;a4&gt;</bpt>wxDataObject<ept i="4">&lt;/a4&gt;</ept> にデータが引き渡されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10449,6 +10777,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>In particular, both data transfer mechanisms store data in some kind of <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDataObject<ept i="0">&lt;/a0&gt;</ept> and identify its format(s) using the <bpt i="1" x="1">&lt;a1&gt;</bpt>wxDataFormat<ept i="1">&lt;/a1&gt;</ept> class.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T160106Z">
+        <seg>特に、両方のデータ転送の仕組みとも、ある種の <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDataObject<ept i="0">&lt;/a0&gt;</ept> にデータを格納し、<bpt i="1" x="1">&lt;a1&gt;</bpt>wxDataFormat<ept i="1">&lt;/a1&gt;</ept> クラスを使用してフォーマットを識別します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>In particular, do <bpt i="0" x="0">&lt;b0&gt;</bpt>not<ept i="0">&lt;/b0&gt;</ept> destroy them from application class' destructor!</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130529T124528Z">
@@ -11085,6 +11421,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130525T011457Z">
         <seg>この関数は指定したメッセージとあわせて、最後のシステムエラーコード  (プラットフォームに応じて <bpt i="1" x="1">&lt;i1&gt;</bpt>errno<ept i="1">&lt;/i1&gt;</ept> または <bpt i="2" x="2">&lt;i2&gt;</bpt>::GetLastError()<ept i="2">&lt;/i2&gt;</ept> ) とそれに対応するエラーメッセージを出力します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It may be noted that data transfer to and from the clipboard is quite similar to data transfer with drag and drop and the code to implement these two types is almost the same.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T155800Z">
+        <seg>クリップボードへの/からのデータ転送はドラッグ・アンド・ドロップによるデータ転送と非常に似ており、これらを実装するコードもほとんど同じです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11795,6 +12139,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Normally, you will call <bpt i="2" x="2">&lt;a2&gt;</bpt>wxWindow::SetDropTarget<ept i="2">&lt;/a2&gt;</ept> during window creation associating your drop target with it.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T161509Z">
+        <seg>通常はドロップ先へ関連付けるウィンドウの作成中に <bpt i="2" x="2">&lt;a2&gt;</bpt>wxWindow::SetDropTarget<ept i="2">&lt;/a2&gt;</ept> を呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Not performance critical, neither from speed nor from a memory consumption point of view.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130610T150728Z">
@@ -11839,6 +12191,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130512T040409Z">
         <seg>ここでは <bpt i="0" x="0">&lt;c0&gt;</bpt>this<ept i="0">&lt;/c0&gt;</ept> ポインタを指定する必要があることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Note that <bpt i="0" x="0">&lt;c0&gt;</bpt>wxUSE_DRAG_AND_DROP<ept i="0">&lt;/c0&gt;</ept> must be defined in <bpt i="1" x="1">&lt;c1&gt;</bpt>setup.h<ept i="1">&lt;/c1&gt;</ept> in order to use drag and drop in wxWidgets.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T134009Z">
+        <seg>wxWidgets でドラッグ・アンド・ドロップを使用するには、<bpt i="1" x="1">&lt;c1&gt;</bpt>setup.h<ept i="1">&lt;/c1&gt;</ept> で <bpt i="0" x="0">&lt;c0&gt;</bpt>wxUSE_DRAG_AND_DROP<ept i="0">&lt;/c0&gt;</ept> を定義する必要があることに注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11991,6 +12351,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130519T123143Z">
         <seg>wxSizer は wxWindow を継承していないため、タブ順に干渉することがなく、実際のウィンドウと比較するとほとんどリソースを必要としません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Note that wxUSE_DRAG_AND_DROP must be defined in setup.h in order to use drag and drop in wxWidgets.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T130915Z">
+        <seg>wxWidgets でドラッグ・アンド・ドロップを使用するには、setup.h で wxUSE_DRAG_AND_DROP を定義する必要があることに注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12933,6 +13301,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Result returned from a wxDropSource::DoDragDrop() call.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T134845Z">
+        <seg>wxDropSource::DoDragDrop() から返却された結果。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Return the localized resources directory containing the resource files of the specified category for ...</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T041010Z">
@@ -13209,6 +13585,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T041459Z">
         <seg>参照:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>See also: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDataObject Overview<ept i="0">&lt;/a0&gt;</ept> and <bpt i="1" x="1">&lt;a1&gt;</bpt>Drag &amp; Drop Sample<ept i="1">&lt;/a1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T134044Z">
+        <seg>参照: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDataObject の概要<ept i="0">&lt;/a0&gt;</ept> と <bpt i="1" x="1">&lt;a1&gt;</bpt>ドラッグ・アンド・ドロップのサンプル<ept i="1">&lt;/a1&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>See also: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDataObject overview<ept i="0">&lt;/a0&gt;</ept> and <bpt i="1" x="1">&lt;a1&gt;</bpt>DnD sample<ept i="1">&lt;/a1&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T134123Z">
+        <seg>参照: <bpt i="0" x="0">&lt;a0&gt;</bpt>wxDataObject の概要<ept i="0">&lt;/a0&gt;</ept> と <bpt i="1" x="1">&lt;a1&gt;</bpt>ドラッグ・アンド・ドロップのサンプル<ept i="1">&lt;/a1&gt;</ept></seg>
       </tuv>
     </tu>
     <tu>
@@ -13821,6 +14213,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Starts the drag-and-drop operation which will terminate when the user releases the mouse...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T134736Z">
+        <seg>ドラッグ・アンド・ドロップ操作を開始します。ドラッグ・アンド・ドロップはユーザがマウスを放したときに終了します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Stream Classes</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130622T135641Z">
@@ -14417,6 +14817,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130727T133656Z">
         <seg>wxConnection の継承クラスはサーバとの '会話' (conversation) におけるやり取りを受信します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The data was successfully copied.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135243Z">
+        <seg>データのコピーに成功した。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The data was successfully moved (MSW only).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135259Z">
+        <seg>データの移動に成功した。(MSW のみ)</seg>
       </tuv>
     </tu>
     <tu>
@@ -15837,6 +16253,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>There is currently no way for the drop target to change this return code.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T162757Z">
+        <seg>今のところ、ドロップ先でこの戻り値を変更することはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>There is however an important difference between the two mechanisms when you want to invoke the default behaviour, as implemented by the base class, from a derived class handler.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130518T122755Z">
@@ -16477,6 +16901,22 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>This class represents a source for a drag and drop operation.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T133656Z">
+        <seg>このクラスはドラッグ・アンド・ドロップ操作におけるドラッグ元を表しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This class represents a target for a drag and drop operation.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T133817Z">
+        <seg>このクラスはドラッグ・アンド・ドロップ操作におけるドロップ先を表しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>This class represents data read in from a file.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130622T131013Z">
@@ -16745,6 +17185,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130529T150723Z">
         <seg>これには <bpt i="1" x="1">&lt;a1&gt;</bpt>wxScreenDC<ept i="1">&lt;/a1&gt;</ept>、<bpt i="2" x="2">&lt;a2&gt;</bpt>wxClientDC<ept i="2">&lt;/a2&gt;</ept>、<bpt i="3" x="3">&lt;a3&gt;</bpt>wxPaintDC<ept i="3">&lt;/a3&gt;</ept>、<bpt i="4" x="4">&lt;a4&gt;</bpt>wxWindowDC<ept i="4">&lt;/a4&gt;</ept> が該当します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This is a drop target which accepts files (dragged from File Manager or Explorer).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T133941Z">
+        <seg>これは (ファイルマネージャやエクスプローラからドラッグされた) ファイルを受け付けるドロップ先です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17393,6 +17841,38 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130609T143127Z">
         <seg>wxBitmap のハンドラを追加する場合、ハンドラクラスを実装しているヘッダファイルをインクルードし、静的関数 <bpt i="0" x="0">&lt;a0&gt;</bpt>wxBitmap::AddHandler<ept i="0">&lt;/a0&gt;</ept> を呼ぶ必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To be a <bpt i="0" x="0">&lt;e0&gt;</bpt>drag<ept i="0">&lt;/e0&gt;</ept> source, i.e. to provide the data which may be dragged by the user elsewhere, you should implement the following steps:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T134616Z">
+        <seg><bpt i="0" x="0">&lt;e0&gt;</bpt>ドラッグ元<ept i="0">&lt;/e0&gt;</ept> になる、つまり、ユーザが他の場所へドラッグするデータを提供するには次の手順を実装します:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To be a <bpt i="0" x="0">&lt;e0&gt;</bpt>drop<ept i="0">&lt;/e0&gt;</ept> target, i.e. to receive the data dropped by the user you should follow the instructions below:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135412Z">
+        <seg><bpt i="0" x="0">&lt;e0&gt;</bpt>ドロップ先<ept i="0">&lt;/e0&gt;</ept> になる、つまり、ユーザのドロップしたデータを受け付けるためには次の手順を実施します:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To be a <bpt i="0" x="0">&lt;i0&gt;</bpt>drag source<ept i="0">&lt;/i0&gt;</ept>, i.e. to provide the data which may be dragged by the user elsewhere, you should implement the following steps:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T160211Z">
+        <seg><bpt i="0" x="0">&lt;i0&gt;</bpt>ドラッグ元<ept i="0">&lt;/i0&gt;</ept> になる、つまり、ユーザが他の場所へドラッグするデータを提供するには次の手順を実装します:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To be a <bpt i="0" x="0">&lt;i0&gt;</bpt>drop target<ept i="0">&lt;/i0&gt;</ept>, i.e. to receive the data dropped by the user you should follow the instructions below:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T131755Z">
+        <seg><bpt i="0" x="0">&lt;i0&gt;</bpt>ドロップ先<ept i="0">&lt;/i0&gt;</ept> になる、つまり、ユーザのドロップしたデータを受け付けるためには次の手順を実施します:</seg>
       </tuv>
     </tu>
     <tu>
@@ -18749,6 +19229,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>When the mouse moves in a window of a program which understands the same drag-and-drop protocol (any program under Windows or any program supporting the XDnD protocol under X Windows), the corresponding <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDropTarget<ept i="2">&lt;/a2&gt;</ept> methods are called - see below.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T131653Z">
+        <seg>同じ ドラッグ・アンド・ドロップ プロトコルを解釈するプログラム (Windows の任意のプログラム、もしくは X ウィンドウの XDnD プロトコルに対応しているプログラム) のウィンドウ内へマウスが入ると、対応する <bpt i="2" x="2">&lt;a2&gt;</bpt>wxDropTarget<ept i="2">&lt;/a2&gt;</ept> 関数が呼ばれます。以下を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>When the user clicks on a button, for example the OK button, the application should first call <bpt i="0" x="0">&lt;a0&gt;</bpt>wxWindow::Validate<ept i="0">&lt;/a0&gt;</ept>, which returns <bpt i="1" x="1">&lt;s1&gt;</bpt>false<ept i="1">&lt;/s1&gt;</ept> if any of the child window validators failed to validate the window data.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130624T153402Z">
@@ -19453,6 +19941,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>You may give some custom UI feedback during the drag and drop operation by overriding this function...</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135000Z">
+        <seg>この関数をオーバーライドすることで、ドラッグ・アンド・ドロップ中に独自の UI フィードバックを提供することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>You may include the XPM inline as below, since it's C code, or you can load it at run-time.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130609T140213Z">
@@ -19489,6 +19985,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130629T132922Z">
         <seg>プログラムで扱うデータ (作成したドキュメントなど) をすべて同じエンコーディングで保持したいと思うかもしれません。仮に <bpt i="0" x="0">&lt;t0&gt;</bpt>utf-8<ept i="0">&lt;/t0&gt;</ept> としましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You must derive a class from <bpt i="3" x="3">&lt;a3&gt;</bpt>wxDropTarget<ept i="3">&lt;/a3&gt;</ept> and override its pure virtual methods.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T135443Z">
+        <seg>また、ドロップ先になるには <bpt i="3" x="3">&lt;a3&gt;</bpt>wxDropTarget<ept i="3">&lt;/a3&gt;</ept> を継承し、純粋仮想関数をオーバーライドする必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You must derive a class from wxDropTarget and override its pure virtual methods.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T132111Z">
+        <seg>また、ドロップ先になるには wxDropTarget を継承し、純粋仮想関数をオーバーライドする必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19954,6 +20466,14 @@ process_data(tmp_str);</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T034117Z">
         <seg>では char 型のポインタを得ることはできないため、これを <bpt i="0" x="0">&lt;c0&gt;</bpt>char*<ept i="0">&lt;/c0&gt;</ept> または <bpt i="1" x="1">&lt;c1&gt;</bpt>wchar_t*<ept i="1">&lt;/c1&gt;</ept> を受け取る関数に渡すことはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>dragSource.SetData( my_data );</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T134857Z">
+        <seg>dragSource.SetData( my_data );</seg>
       </tuv>
     </tu>
     <tu>
@@ -20596,6 +21116,24 @@ process_data(tmp_str);</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130613T160315Z">
         <seg>switch (ans)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>switch (result)
+	{
+	    case wxDragCopy: /* copy the data */ break;
+	    case wxDragMove: /* move the data */ break;
+	    default:         /* do nothing */ break;
+	}</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T161143Z">
+        <seg>switch (result)
+	{
+	    case wxDragCopy: /* データをコピーする */ break;
+	    case wxDragMove: /* データを移動する */ break;
+	    default:         /* 何もしない */ break;
+	}</seg>
       </tuv>
     </tu>
     <tu>
@@ -21375,6 +21913,18 @@ printf("Data: %s\n", (const char*) str.mb_str(cust));</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130505T081025Z">
         <seg>wxDropFilesEvent</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxDropSource dragSource( this );
+	dragSource.SetData( my_data );
+	wxDragResult result = dragSource.DoDragDrop( TRUE );</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T160420Z">
+        <seg>wxDropSource dragSource( this );
+	dragSource.SetData( my_data );
+	wxDragResult result = dragSource.DoDragDrop( TRUE );</seg>
       </tuv>
     </tu>
     <tu>
@@ -22479,6 +23029,22 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>wxTextDataObject is a specialization of wxDataObjectSimple for text data.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T133246Z">
+        <seg>wxTextDataObject は wxDataObjectSimple を特殊化したもので、テキストデータに特化しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxTextDataObject my_data("This text will be dragged.");</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20130911T160256Z">
+        <seg>wxTextDataObject my_data("This text will be dragged.");</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>wxTextFile is a general purpose class for working with small text files on line by line basis.</seg>
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130504T064827Z">
@@ -22787,6 +23353,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv xml:lang="JA" changeid="owner" changedate="20130529T143051Z">
         <seg>wxWidgets: wxWidgets: デバイスコンテキスト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>wxWidgets: wxWidgets: Drag and Drop Overview</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="owner" changedate="20131013T132918Z">
+        <seg>wxWidgets: wxWidgets: ドラッグ・アンド・ドロップの概要</seg>
       </tuv>
     </tu>
     <tu>
