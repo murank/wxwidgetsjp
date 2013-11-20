@@ -13,7 +13,7 @@ Custom Event Summary	カスタムイベントの概要
 Dynamic Event Handling	動的イベント処理
 Event Handlers Chain	イベントハンドラの連鎖
 event classes group page	イベントクラスグループ
-XML-based resource system overview	XML に基づくリソースシステムの概要	XML-based resource system overview
+XML-based resource system overview	XML に基づくリソースシステムの概要
 Programming with Sizers	サイザーを用いたプログラミング
 empty space	空白スペース
 interface	インタフェース
@@ -22,3 +22,10 @@ third party	サードパーティー
 How Events are Processed	イベント処理の仕組み
 diacritic	発音区別符号
 predefined	定義済みの
+reference counting	参照カウンタ
+traditional	従来の
+Unicode Representations and Terminology	Unicode 表現と用語
+Basic Multilingual Plane	基本多言語面
+grave	グレーブ
+Unicode Support in wxWidgets	wxWidgets における Unicode 対応
+Most important wxUSE symbols	もっとも重要な wxUSE シンボル

@@ -338,6 +338,14 @@ msgstr ""
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(Note however that Windows itself has built-in support for surrogate pairs in UTF-16, such as for drawing strings on screen.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T032822Z">
+        <seg>(ただ、画面への文字列の描画など、Windows は元々 UTF-16 のサロゲートペアに対応しています)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(Note that even UTF-32 is still not completely trivial as the mapping is different for little and big-endian architectures).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T032240Z">
@@ -782,6 +790,18 @@ public:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// delete all vowels from the string
+wxString DeleteAllVowels(const wxString&amp; original)
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T080433Z">
+        <seg>// 文字列から母音をすべて削除する
+wxString DeleteAllVowels(const wxString&amp; original)
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// do something</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T155813Z">
@@ -867,6 +887,20 @@ DEFINE_EVENT_TYPE(name)</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T164309Z">
         <seg>// wxPostEvent() で必要になる</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// this function converts the input string to uppercase, output it to the screen
+// and returns the result
+const char *SayHELLO(const wxString&amp; input)
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T053434Z">
+        <seg>// この関数は入力された文字列を大文字に変換し、画面に表示した上で
+// 結果を返却する
+const char *SayHELLO(const wxString&amp; input)
+{</seg>
       </tuv>
     </tu>
     <tu>
@@ -1089,6 +1123,14 @@ MyDialog::MyDialog(wxFrame *parent, wxWindowID id, const wxString &amp;title )</
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T132046Z">
         <seg>サイザーを利用したウィンドウ要素の配置</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>String class: wxString</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T043127Z">
+        <seg>文字列クラス: wxString</seg>
       </tuv>
     </tu>
     <tu>
@@ -1691,10 +1733,26 @@ printf("Data: %s\n", (const char*) str.mb_str(cust));</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxString Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T025849Z">
+        <seg>wxString の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxString also provides two convenience functions: wxString::From8BitData() and wxString::To8BitData().</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T162920Z">
         <seg>wxString はさらに 2 つの便利な関数を提供しています: wxString::From8BitData() と wxString::To8BitData() です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString can be used to store binary data (even if it contains NULs) using the functions wxString::To8BitData and wxString::From8BitData.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131119T153726Z">
+        <seg>wxString::To8BitData 関数と wxString::From8BitData 関数を使用して、wxString にバイナリデータ (NUL を含むこともできます) を格納することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1705,6 +1763,28 @@ wxString str(input_str.wc_str(wxConvUTF8), *wxConvCurrent);</seg>
       <tuv lang="JA" changeid="owner" changedate="20130718T152058Z">
         <seg>wxString input_str(input_data);
 wxString str(input_str.wc_str(wxConvUTF8), *wxConvCurrent);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString is a class which represents a Unicode string of arbitrary length and containing arbitrary Unicode characters.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T030216Z">
+        <seg>wxString は任意の長さで、任意の Unicode 文字を含む Unicode 文字列を表すクラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString s = "hello";
+wxString::const_iterator i;
+for (i = s.begin(); i != s.end(); ++i)
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T120259Z">
+        <seg>wxString s = "hello";
+wxString::const_iterator i;
+for (i = s.begin(); i != s.end(); ++i)
+{</seg>
       </tuv>
     </tu>
     <tu>
@@ -2009,6 +2089,14 @@ wxNO_DEFAULT // wxNO ボタンをデフォルトにします。</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Tuning wxString for your application</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T043657Z">
+        <seg>wxString のチューニング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxDEFAULT_DIALOG_STYLE | wxRESIZE_BORDER)
 {</seg>
       </tuv>
@@ -2197,6 +2285,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxString test2 = wxString::FromUTF8("\x41\xC3\xA0\xE2\x82\xAC");</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T034743Z">
+        <seg>wxString test2 = wxString::FromUTF8("\x41\xC3\xA0\xE2\x82\xAC");</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Logging overview</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T124414Z">
@@ -2245,6 +2341,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxString test = wxString::FromUTF8("\xF0\x90\x8C\x80");</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T034038Z">
+        <seg>wxString test = wxString::FromUTF8("\xF0\x90\x8C\x80");</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Event handling overview</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130519T072009Z">
@@ -2275,6 +2379,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130804T152920Z">
         <seg>wxConnectionBase* OnMakeConnection(void)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T043157Z">
+        <seg>wxString の概要</seg>
       </tuv>
     </tu>
     <tu>
@@ -2355,6 +2467,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T134107Z">
         <seg>ビットマップとアイコン</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comparison of wxString to other string classes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T043347Z">
+        <seg>wxString と他の文字列クラスとの比較</seg>
       </tuv>
     </tu>
     <tu>
@@ -2567,6 +2687,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Some advice about using wxString</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T043402Z">
+        <seg>wxStringを使用するにあたってのアドバイス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Unicode support in wxWidgets</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130501T165146Z">
@@ -2603,6 +2731,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130704T152311Z">
         <seg>wxMBConv クラス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString vowels( "aeuioAEIOU" );</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121146Z">
+        <seg>wxString vowels( "aeuioAEIOU" );</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString will therefore inherit the performance characteristics from std::string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131119T155700Z">
+        <seg>したがって、wxString はその性能上の特徴を std::string から引き継ぐことになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2655,6 +2799,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxUniChar uni_ch = *i;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T120301Z">
+        <seg>wxUniChar uni_ch = *i;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxConfig classes overview</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130610T145503Z">
@@ -2675,6 +2827,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130528T151947Z">
         <seg>アプリケーションクラス: wxApp</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Other string related functions and classes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T043431Z">
+        <seg>文字列に関する他の関数やクラス</seg>
       </tuv>
     </tu>
     <tu>
@@ -2731,6 +2891,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130704T152316Z">
         <seg>wxMBConv オブジェクト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString output = input.Upper();</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T113911Z">
+        <seg>wxString output = input.Upper();</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString result;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121148Z">
+        <seg>wxString result;</seg>
       </tuv>
     </tu>
     <tu>
@@ -2827,6 +3003,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130519T115715Z">
         <seg>wxStaticBoxSizer を用いたプログラミング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reference counting and why you shouldn't care about it</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T043644Z">
+        <seg>参照カウンタと、それを意識しなくて良い理由</seg>
       </tuv>
     </tu>
     <tu>
@@ -3015,6 +3199,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxString is Unicode friendly: it allows to easily convert to and from ANSI and Unicode strings (see Unicode Support in wxWidgets for more details) and maps to std::wstring transparently.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131119T160948Z">
+        <seg>Unicode との親和性: wxString は簡単に ANSI 文字列や Unicode 文字列と相互に変換できます (詳細は wxWidgets における Unicode 対応 を参照してください) し、透過的に std::wstring へマッピングされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxWindowDC.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T154309Z">
@@ -3111,6 +3303,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Compatibility: This class tries to combine almost full compatibility with the old wxWidgets 1.xx wxString class, some reminiscence of MFC's CString class and 90% of the functionality of std::string class.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131119T160044Z">
+        <seg>互換性 このクラスは wxWidgets 1.xx の wxString クラス、および昔懐かしい MFC の CString クラスとほぼ完全に互換性があり、std::string クラスの機能の 90% と互換性があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Compatibility This class tries to combine almost full compatibility with the old wxWidgets 1.xx wxString class, some reminiscence to MFC CString class and 90% of the functionality of std::string class.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T050803Z">
+        <seg>互換性 このクラスは wxWidgets 1.xx の wxString クラス、および昔懐かしい MFC の CString クラスとほぼ完全に互換性があり、std::string クラスの機能の 90% と互換性があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Completeness: Usually, an error message should be presented to the user when some operation fails.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T091816Z">
@@ -3171,6 +3379,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20131013T132245Z">
         <seg>ドロップ : ユーザがウィンドウ上でマウスを放すと、wxWidgets は関連付けられた wxDropTarget オブジェクトへ、そのデータを受け付けるか問い合わせます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Efficiency: Since wxWidgets 3.0 wxString uses std::string (in UTF8 mode under Linux, Unix and OS X) or std::wstring (in UTF16 mode under Windows) internally by default to store its contents.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131119T155239Z">
+        <seg>効率性: wxWidgets 3.0 の wxString ではデフォルトで std::string (Linux、Unix、OS X の UTF8 モード時) または std::wstring (Windows の UTF16 モード時) を内部的に使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Efficiency This class was made to be as efficient as possible: both in terms of size (each wxString objects takes exactly the same space as a  char * pointer, sing reference counting) and speed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T045829Z">
+        <seg>効率性 このクラスはできるだけ効率的に動作するように作られています: これはサイズ (個々の wxString オブジェクトは 参照カウンタ のおかげで  char * ポインタと完全に同じサイズです) と性能面の両方についてです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3239,6 +3463,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note: this section is strictly about performance issues and is absolutely not necessary to read for using wxString class.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T075921Z">
+        <seg>注: この章では性能に関する問題のみを取り扱っており、wxString クラスを使用するだけであれば読む必要はまったくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Pay close attention to Step 5. People often overlook or get confused by this powerful feature of the wxWidgets event processing system.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T031315Z">
@@ -3303,6 +3535,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Rich set of functions: Some of the functions present in wxString are very useful but don't exist in most of other string classes: for example, wxString::AfterFirst, wxString::BeforeLast, wxString::Printf.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131119T160021Z">
+        <seg>豊富な関数群 wxString に存在するいくつかの関数はとても便利ですが、他の文字列クラスの大半には存在しません: 例えば、AfterFirst、BeforeLast、Printf などです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Rich set of functions Some of the functions present in wxString are very useful but don't exist in most of other string classes: for example, AfterFirst, BeforeLast, operator&lt;&lt; or Printf.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T051031Z">
+        <seg>豊富な関数群 wxString に存在するいくつかの関数はとても便利ですが、他の文字列クラスの大半には存在しません: 例えば、AfterFirst、BeforeLast、operator&lt;&lt;、Printf などです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>SECURITY NOTE: Using Internet domain sockets is extremely insecure for IPC as there is absolutely no access control for them, use Unix domain sockets whenever possible!</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130727T032948Z">
@@ -3347,6 +3595,38 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20131013T140128Z">
         <seg>終了 : ドロップ時の Ctrl、Shift、Alt キーの状態に応じて、データ処理のあとに DoDragDrop() は wxDragCopy または wxDragMove  のいずれの値かを返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The usage of std::string compatible functions is strongly advised! It will both make your code more familiar to other C++ programmers (who are supposed to have knowledge of std::string but not of wxString), let you reuse the same code in both wxWidgets and other programs (by just typedefing wxString as std::string when used outside wxWidgets) and by staying compatible with future versions of wxWidgets which will probably start using std::string sooner or later too.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T092930Z">
+        <seg>std::string 互換の関数を使用することを強く推奨します! そうすることで、(std::string に関する知識はあっても wxString のことは知らないであろう) 他の C++ プログラマにとってより馴染みのあるコードにできますし、(wxWidgets 外でコードを使用するときは wxString を std::string として typedef することで) wxWidgets とそれ以外のプログラムで同じコードを再利用することもできます。また、wxWidgets の将来のバージョンとの互換性も保てます。なぜなら、遅かれ早かれ、おそらく wxWidgets で std::string を使用し始めるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unicode wxString is Unicode friendly: it allows to easily convert to and from ANSI and Unicode strings in any build mode (see the Unicode overview for more details) and maps to either string or wstring transparently depending on the current mode.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T051318Z">
+        <seg>ユニコード wxString は Unicode との親和性が高いです: どのビルドモードでも簡単に ANSI 文字列や Unicode 文字列と相互に変換できます (詳細は Unicode の概要 を参照してください) し、現在のビルドモードに応じて透過的に string か wstring のいずれかにマッピングされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Used by wxWidgets: And, of course, this class is used everywhere inside wxWidgets so there is no performance loss which would result from conversions of objects of any other string class (including std::string) to wxString internally by wxWidgets.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T112543Z">
+        <seg>wxWidgets での使用 もちろん、このクラスは wxWidgets 内部のあらゆるところで使用されています。そのため、wxWidgets が内部的に (std::string を含む) 他の文字列クラスを wxString へ変換することによる性能劣化が発生しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Used by wxWidgets And, of course, this class is used everywhere inside wxWidgets so there is no performance loss which would result from conversions of objects of any other string class (including std::string) to wxString internally by wxWidgets.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T051634Z">
+        <seg>wxWidgets での使用 もちろん、このクラスは wxWidgets 内部のあらゆるところで使用されています。そのため、wxWidgets が内部的に (std::string を含む) 他の文字列クラスを wxString へ変換することによる性能劣化が発生しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3575,6 +3855,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxUSE_UNICODE is now defined as 1 by default to indicate Unicode support.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T122430Z">
+        <seg>Unicode に対応していることを表すため、現在ではデフォルトで wxUSE_UNICODE が 1 に定義されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Event class carried by the event: each event has some information associated with it and this data is represented by an object of a class derived from wxEvent.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130511T034810Z">
@@ -3777,10 +4065,44 @@ public:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// delete all vowels from the string
+wxString DeleteAllVowels(const wxString&amp; original)
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121143Z">
+        <seg>// 文字列から母音をすべて削除する
+wxString DeleteAllVowels(const wxString&amp; original)
+{</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// disable all database error messages, everybody knows databases never</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T110908Z">
         <seg>// 絶対にデータベースが失敗しないことを誰もが知っているため、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// first test, using exotic characters outside of the Unicode BMP:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T034036Z">
+        <seg>// 最初のテストでは Unicode BMP 外の文字を使用する:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// this function converts the input string to uppercase,
+// output it to the screen and returns the result
+const char *SayHELLO(const wxString&amp; input)
+{</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T113855Z">
+        <seg>// この関数は入力された文字列を大文字に変換し、画面に表示した上で
+// 結果を返却する
+const char *SayHELLO(const wxString&amp; input)
+{</seg>
       </tuv>
     </tu>
     <tu>
@@ -4067,6 +4389,14 @@ void MyHandler::OnExit( wxCommandEvent &amp; )
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>if (vowels.Find( *i ) == wxNOT_FOUND)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121156Z">
+        <seg>if (vowels.Find( *i ) == wxNOT_FOUND)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>return 0;
 }</seg>
       </tuv>
@@ -4123,6 +4453,14 @@ connection-&gt;StartAdvise("Item");</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// prints "wxString reports a length of 1 character(s)" on Linux</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T034612Z">
+        <seg>// Linux では "wxString reports a length of 1 character(s)" と表示される</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>else</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130703T143527Z">
@@ -4149,6 +4487,16 @@ connection-&gt;StartAdvise("Item");</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>return result;
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121159Z">
+        <seg>return result;
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>void OnButton1(wxCommandEvent&amp; event);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T020036Z">
@@ -4157,10 +4505,26 @@ connection-&gt;StartAdvise("Item");</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// prints "wxString reports a length of 2 character(s)" on Windows</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T034628Z">
+        <seg>// Windows では "wxString reports a length of 2 character(s)" と表示される</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// implement the base class pure virtual</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130515T150512Z">
         <seg>// 基底クラスの純粋仮想関数を実装する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// since wxString on Windows doesn't have surrogate pairs support!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T034656Z">
+        <seg>// これは Windows の wxString はサロゲートペアに対応していないからだ!</seg>
       </tuv>
     </tu>
     <tu>
@@ -4185,6 +4549,14 @@ connection-&gt;StartAdvise("Item");</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T020037Z">
         <seg>void OnSize(wxSizeEvent&amp; event);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// second test, this time using characters part of the Unicode BMP:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T034740Z">
+        <seg>// ふたつ目のテストでは Unicode BMP の文字を使用する:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4265,6 +4637,14 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// this is the UTF8 encoding of capital letter A followed by</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T035455Z">
+        <seg>// これは大文字の A、'グレーブ付きの小文字の a'、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>case 'G': *col = Green; return true;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130619T153122Z">
@@ -4321,6 +4701,14 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// 'small case letter a with grave' followed by the 'euro sign'</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T035441Z">
+        <seg>// 'ユーロ記号' を UTF8 で符号化したもので、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>event.SetEventObject(this);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130515T150154Z">
@@ -4329,10 +4717,34 @@ private:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// they are 3 Unicode code-points encoded as:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T035543Z">
+        <seg>// 3 個の Unicode コードポイントは次のように符号化される:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// - 3 UTF16 code units under Windows</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T035604Z">
+        <seg>// - Windows では 3 個の UTF16 コード単位</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// Give it some contents</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130516T155523Z">
         <seg>// 何か値を設定する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// - 6 UTF8 code units under Linux</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T035620Z">
+        <seg>// - Linux では 6 個の UTF8 コード単位</seg>
       </tuv>
     </tu>
     <tu>
@@ -4421,6 +4833,14 @@ wxBEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// (without considering the final NULL)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T035629Z">
+        <seg>// (ただし終端の NULL は除く)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>// Do send it</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130516T155533Z">
@@ -4433,6 +4853,22 @@ wxBEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130804T152922Z">
         <seg>return new MyConnection;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// prints "wxString reports a length of 3 character(s)" on Linux</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T035910Z">
+        <seg>// Linux では "wxString reports a length of 3 character(s)" と表示される</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// prints "wxString reports a length of 3 character(s)" on Windows</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T035921Z">
+        <seg>// Windows では "wxString reports a length of 3 character(s)" と表示される</seg>
       </tuv>
     </tu>
     <tu>
@@ -4665,6 +5101,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// U+10300 is "OLD ITALIC LETTER A" and is part of Unicode Plane 1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T125819Z">
+        <seg>// U+10300 は "OLD ITALIC LETTER A" で、Unicode Plane 1 の一部である</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>break;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20131013T144141Z">
@@ -4721,6 +5165,14 @@ bool DerivedApp::OnInit()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T110833Z">
         <seg>// しかし、どういうわけか時たま変更のコミットに失敗するため、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// in UTF8 it's encoded as 0xF0 0x90 0x8C 0x80</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T034208Z">
+        <seg>// UTF8 では 0xF0 0x90 0x8C 0x80 として符号化される</seg>
       </tuv>
     </tu>
     <tu>
@@ -4837,6 +5289,14 @@ if (in_stream.Read(data, nb_datas).LastError() != wxSTREAM_NOERROR) {</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>// it's a single Unicode code-point encoded as:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T034421Z">
+        <seg>// これは単一の Unicode コードポイントとして次のように符号化される:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>bool wxFromString(const wxString&amp; s, Colour* col)</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130619T153113Z">
@@ -4849,6 +5309,14 @@ if (in_stream.Read(data, nb_datas).LastError() != wxSTREAM_NOERROR) {</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T153029Z">
         <seg>wchar_t ch = *i</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// - a UTF16 surrogate pair under Windows</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T034446Z">
+        <seg>// - Windows では UTF16 サロゲートペア</seg>
       </tuv>
     </tu>
     <tu>
@@ -4883,6 +5351,22 @@ if (in_stream.Read(data, nb_datas).LastError() != wxSTREAM_NOERROR) {</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130804T152914Z">
         <seg>bool OnAdvise(const wxString&amp; topic, const wxString&amp; item, char *data,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>for ( i = original.begin(); i != original.end(); ++i )</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121154Z">
+        <seg>for ( i = original.begin(); i != original.end(); ++i )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// - a UTF8 multiple-bytes sequence under Linux</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T034502Z">
+        <seg>// - Linux では UTF8 マルチバイトシーケンス</seg>
       </tuv>
     </tu>
     <tu>
@@ -4925,6 +5409,14 @@ wxMORE      // wxID_MORE を返却します</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20131013T144144Z">
         <seg>break;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>// (without considering the final NULL)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T034537Z">
+        <seg>// (ただし終端の NULL は除く)</seg>
       </tuv>
     </tu>
     <tu>
@@ -4977,6 +5469,16 @@ size_t really_read = in_stream.LastRead();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130624T153611Z">
         <seg>else</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>return output;
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T113916Z">
+        <seg>return output;
+}</seg>
       </tuv>
     </tu>
     <tu>
@@ -5685,6 +6187,14 @@ size_t really_read = in_stream.LastRead();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Accessing a UTF-8 string by index can be very inefficient because a single character is represented by a variable number of bytes so that the entire string has to be parsed in order to find the character.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T115146Z">
+        <seg>インデックスによる UTF-8 文字列へのアクセスは非常に 非効率的 です。なぜなら、1 文字が可変バイトで表されるため、該当する文字を見つけるために文字列全体を解析する必要があるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Acknowledgements</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T062043Z">
@@ -5757,6 +6267,14 @@ size_t really_read = in_stream.LastRead();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Advice About Using wxString</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T030054Z">
+        <seg>wxStringを使用するにあたってのアドバイス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>After having enumerated all the functions which are normally used to log the messages, and why would you want to use them we now describe how all this works.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T022130Z">
@@ -5801,6 +6319,14 @@ size_t really_read = in_stream.LastRead();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130520T153019Z">
         <seg>子コントロールはすべて同じサイズ (最大の子コントロールの必要とする最小サイズ) が与えられます。この例では左下のテキストコントロールが最大の子コントロールです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All considerations for wxObject-derived reference counted objects are valid also for wxString, even if it does not derive from wxObject.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T074406Z">
+        <seg>wxString は wxObject を継承していませんが、wxObject を継承した 参照カウント オブジェクトと同様のことが wxString にも当てはまります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5893,6 +6419,30 @@ size_t really_read = in_stream.LastRead();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Allocating more memory may bring important performance benefits for programs using (relatively) few very long strings.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T082630Z">
+        <seg>より多くのメモリを割り当てることで、(相対的に) とても長い文字列を使用するプログラムでは性能が大きく向上することでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Allocating too much extra memory would help to improve the speed in this situation, but due to a great number of wxString objects typically used in a program would also increase the memory consumption too much.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121211Z">
+        <seg>この場合では余分なメモリを割り当てることで処理速度が改善されましたが、通常のプログラムでは非常に多くの wxString が使用されるため、メモリ消費量も大きく増加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Allocating too much extra memory would help to improve the speed in this situation, but due to a great number of wxString objects typically used in a program would also increase the memory consumption too much.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T080908Z">
+        <seg>この場合では余分なメモリを割り当てることで処理速度が改善されましたが、通常のプログラムでは非常に多くの wxString が使用されるため、メモリ消費量も大きく増加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Allows the programmer to specify whether the application will exit when the top-level frame is delete...</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130528T153140Z">
@@ -5913,6 +6463,14 @@ size_t really_read = in_stream.LastRead();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T042136Z">
         <seg>大事なことを一つ言い残しましたが、バインド対象についても柔軟性が向上しており、イベントを以下のものにバインドできます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Also note that if all string arguments to your functions are passed as const wxString&amp; (see the section Some advice) this situation will almost never arise because for constant references the correct operator is called automatically.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T075827Z">
+        <seg>また、関数の引数の文字列をすべて const wxString&amp; で受け取っている場合 (アドバイス の章を参照)、この問題がほとんど発生しないことに注意してください。なぜなら、const 参照に対しては自動的に正しい演算子が呼ばれるためです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6017,6 +6575,14 @@ size_t really_read = in_stream.LastRead();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T085347Z">
         <seg>ただし、これは Unix では正常に動作しますが、GUI プログラムの標準出力がどこにも割り当てられない Windows では厳密にどこにも出力されません.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Although the implicit conversion to C strings is applied automatically by the compiler in the case of</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T054358Z">
+        <seg>次のような場合であれば、コンパイラによって自動的に C 文字列への暗黙的な変換が行われます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6161,6 +6727,22 @@ size_t really_read = in_stream.LastRead();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130502T151410Z">
         <seg>最後に、上に挙げた標準プリプロセッサトークンは ANSI 文字列として展開されますが、Unicode ビルドの際には Unicode 文字列の方が必要なことが多いでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And the answer is that:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T052351Z">
+        <seg>そして、その答えは次の通りです:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And the very last string-related class is wxArrayString: it is just a version of the "template" dynamic array class which is specialized to work with strings.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T074041Z">
+        <seg>そして、文字列に関する最後のクラスが wxArrayString です: これは単なる "テンプレート" 動的配列クラスの一種で、文字列に対して使用するように特殊化されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6469,10 +7051,26 @@ size_t really_read = in_stream.LastRead();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As most programs use character strings, the standard C library provides quite a few functions to work with them.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T071911Z">
+        <seg>多くのプログラムで文字列が使用されていますが、標準 C ライブラリではそれらのプログラムで使用できる関数をほんの少ししか提供していません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As not all platforms supported by wxWidgets support Unicode (fully) yet, in many cases it is unwise to write a program which can only work in Unicode environment.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130501T145921Z">
         <seg>wxWidgets の対応しているすべてのプラットフォームで Unicode が (完全に) サポートされているわけではないため、Unicode 環境でのみ動作するプログラムを書くのは多くの場合で賢明ではないでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As previously described, when wxUSE_UNICODE_UTF8==1, wxString internally uses the variable-length UTF8 encoding.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T114943Z">
+        <seg>前に述べたように、wxUSE_UNICODE_UTF8==1 の場合に wxString は可変長の UTF-8 エンコーディングを内部的に使用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6497,6 +7095,14 @@ size_t really_read = in_stream.LastRead();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T022449Z">
         <seg>そのため、メッセージのロギング時に呼ばれる基底クラスの仮想関数を実装ています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As the call to this operator may modify the string, its data is unshared (COW is done) and so if the string was really shared there is some performance loss (both in terms of speed and memory consumption).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T075029Z">
+        <seg>この演算子を呼び出すことで文字列が変更されるため、データは共有されなくなります。(COW が行われます) そのため、文字列が本当に共有されていた場合、いくらか性能が (速度とメモリ消費の両方の観点で) 劣化します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6541,10 +7147,34 @@ size_t really_read = in_stream.LastRead();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As you can see, UTF16 encoding is straightforward (for characters in the BMP) and in this example the UTF16-encoded wxString takes 8 bytes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T040750Z">
+        <seg>見て分かるように、UTF16 は (BMP の文字については) そのまま符号化しており、この例の UTF16 wxString では 8 バイトを消費します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Associates a drop target with this window.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20131013T135428Z">
         <seg>このウィンドウに関連付けられたドロップ先。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At last, C++ has a standard string class (std::string).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131119T154352Z">
+        <seg>最後に、C++ では標準の文字列クラス (std::string) が用意されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At last, C++ has a standard string class (std::string).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T045354Z">
+        <seg>最後に、C++ では標準の文字列クラス (std::string) が用意されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6705,6 +7335,14 @@ size_t really_read = in_stream.LastRead();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T075156Z">
         <seg>wxWidgets 2.0 より前のバージョンでは、イベント処理はコールバック関数か、OnSize といった仮想メンバ関数のオーバーライドで実現されていました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Beware that even if NUL character is allowed, in the current string implementation some methods might not work correctly with them.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T130334Z">
+        <seg>NUL 文字も格納できるとは言え、現在の実装ではいくつかの関数が NUL 文字を含む場合にうまく動作しないことに注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7417,6 +8055,14 @@ void MyFrame::OnPlot(MyPlotEvent&amp; event)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Classes: wxString, wxArrayString, wxStringTokenizer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T043328Z">
+        <seg>クラス: wxString, wxArrayString, wxStringTokenizer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Classes: wxThread, wxMutex, wxCriticalSection, wxCondition</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130625T141801Z">
@@ -7503,6 +8149,22 @@ void MyFrame::OnPlot(MyPlotEvent&amp; event)
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130519T125314Z">
         <seg>共通の機能</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comparison of wxString to other string classes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T045005Z">
+        <seg>wxString と他の文字列クラスとの比較</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comparison to Other String Classes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T030048Z">
+        <seg>他の文字列クラスとの比較</seg>
       </tuv>
     </tu>
     <tu>
@@ -8703,6 +9365,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Finally note that wxString uses the current locale encoding to convert any C string literal to Unicode.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T114602Z">
+        <seg>最後に、C リテラル文字列を Unicode へ変換するために wxString では現在のロケールを使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Finally notice that writing</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T123115Z">
@@ -8763,6 +9433,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T112346Z">
         <seg>最後に、メッセージのログレベルに関係なく、ログメッセージをリダイレクトしたいだけの場合、wxLog::DoLogText() をオーバーライドすれば充分です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Finally, note that the type used by wxString to store Unicode code units (wchar_t or char) is always typedef-ined to be wxStringCharType.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131119T153427Z">
+        <seg>最後に、Unicode コード単位を格納するために wxString で使用される型 (wchar_t または char) は常に wxStringCharType として typedef されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8887,6 +9565,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>First of them is in the call to the printf() function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T054053Z">
+        <seg>最初のバグは printf() 関数の呼び出し部分に存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Font Mapping</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130703T134456Z">
@@ -8987,6 +9673,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130615T040940Z">
         <seg>一貫性を保つために、これらの種類のウィンドウを明示的に削除するときは delete 演算子の代わりに引き続き wxWindow::Destroy 関数を使用してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For definitions of code units and code points terms, please see the Unicode Representations and Terminology paragraph.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T031611Z">
+        <seg>コード単位 と コードポイント の定義については Unicode 表現と用語 の段落を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9143,6 +9837,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For handling binary data you may also want to look at the wxStreamBuffer, wxMemoryOutputStream, wxMemoryInputStream classes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131119T154338Z">
+        <seg>バイナリデータを扱うために wxStreamBuffer、wxMemoryOutputStream、wxMemoryInputStream についても参照したいと思うことでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For information about the new wxWidgets resource system, which can describe sizer-based dialogs, see the XML-based resource system overview.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130519T115321Z">
@@ -9231,6 +9933,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For simplicity of implementation, wxString when wxUSE_UNICODE_WCHAR==1 (e.g. on Windows) uses per code unit indexing instead of per code point indexing and doesn't know anything about surrogate pairs; in other words it always considers code points to be composed by 1 code unit, while this is really true only for characters in the BMP (Basic Multilingual Plane).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T032417Z">
+        <seg>実装を単純にするため、wxUSE_UNICODE_WCHAR==1 のとき (例えば Windows) の wxString では コードポイントごとのインデックス の代わりに コード単位ごとのインデックス を使用し、サロゲートペアについては考慮しません; つまり、コードポイントは常に 1 コード単位に格納されているものと仮定するということですが、これは BMP (基本多言語面) の文字にしか当てはまりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For size events, wxSizeEvent is used.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T081247Z">
@@ -9247,10 +9957,34 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For the performance reasons wxString doesn't allocate exactly the amount of memory needed for each string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121124Z">
+        <seg>性能上の理由から、wxString は各文字列で必要とされる量ちょうどのメモリを割り当てません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For the performance reasons wxString doesn't allocate exactly the amount of memory needed for each string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T080206Z">
+        <seg>性能上の理由から、wxString は各文字列で必要とされる量ちょうどのメモリを割り当てません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For the window styles specific to each window class, please see the documentation for the window.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130724T153607Z">
         <seg>各ウィンドウクラス独自のウィンドウスタイルについては、そのウィンドウのドキュメントを参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For this conversion, the wxConvLibc class instance is used.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T114745Z">
+        <seg>この変換では wxConvLibc クラスのインスタンスが使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9501,6 +10235,22 @@ MyFrame::MyFrame()
       <tuv lang="JA" changeid="owner" changedate="20130505T155957Z">
         <seg>GetEventHandler()-&gt;ProcessEvent( event );
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Gets all characters before the last occurrence of ch.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131119T155858Z">
+        <seg>ch が最後に登場した位置以前のすべての文字列を取得します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Gets all the characters after the first occurrence of ch.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131119T155836Z">
+        <seg>ch が最初に登場した位置以降のすべての文字列を取得します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9881,10 +10631,34 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, there are several problems as well.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T051648Z">
+        <seg>しかし、同様にいくつかの問題も存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, unlike the Unicode build mode of the previous versions of wxWidgets, this support is mostly transparent: you can still continue to work with the narrow (i.e. current locale-encoded char*) strings even if wide (i.e. UTF16-encoded wchar_t* or UTF8-encoded char*) strings are also supported.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T041201Z">
         <seg>しかし、wxWidgets の以前のバージョンにおける Unicode ビルドモードとは異なり、この対応はほとんど透過的です： ワイド 文字列 (UTF16 で符号化された wchar_t* か、UTF8 で符号化された char* のことです) がサポートされていても、引き続き  ナロー 文字列 (現在のロケールで符号化された char* のことです) を使用することができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, using wxString::Alloc() is tedious and so wxString tries to do its best.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121459Z">
+        <seg>しかし、wxString::Alloc() を使用するのは手間がかかるため、wxString ではできるだけのことをしています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, using Alloc() is tedious and so wxString tries to do its best.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T093933Z">
+        <seg>しかし、Alloc() を使用するのは手間がかかるため、wxString ではできるだけのことをしています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9909,6 +10683,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130604T151049Z">
         <seg>wxDialog::GetContentWindow が wxBookCtrlBase を継承したウィンドウを返却する場合、ページがスクロール可能になるだけで、それ以外の適応は行われません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If UTF-8 is used for the internal storage in wxString, wxUSE_UNICODE_UTF8 is also defined, otherwise wxUSE_UNICODE_WCHAR is.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T133027Z">
+        <seg>wxString の内部領域に UTF-8 を使用する場合、あわせて wxUSE_UNICODE_UTF8 が定義されます。そうでない場合は wxUSE_UNICODE_WCHAR が定義されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10345,6 +11127,30 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you do it, you will probably find it helpful to also define WXSTRING_STATISTICS symbol which tells the wxString class to collect performance statistics and to show them on stderr on program termination.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121428Z">
+        <seg>これを行なう場合、WXSTRING_STATISTICS シンボルも定義すると便利なことにおそらく気がつくでしょう。これを定義すると wxString クラスで性能統計を収集し、プログラムの終了時に標準エラー出力へ出力させることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you do it, you will probably find it helpful to also define WXSTRING_STATISTICS symbol which tells the wxString class to collect performance statistics and to show them on stderr on program termination.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T083246Z">
+        <seg>これを行なう場合、WXSTRING_STATISTICS シンボルも定義すると便利なことにおそらく気がつくでしょう。これを定義すると wxString クラスで性能統計を収集し、プログラムの終了時に標準エラー出力へ出力させることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you do read it, please also read the preceding section about reference counting.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T080052Z">
+        <seg>もしこの章を読む場合、参照カウンタ の章にも目を通すようにしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you do want to handle messages of different levels differently, then you should override wxLog::DoLogTextAtLevel().</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T122739Z">
@@ -10437,6 +11243,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130513T160130Z">
         <seg>なんらかの理由で別の振る舞いをさせる必要がある場合、明示的に SetExtraStyle(wxWS_EX_BLOCK_EVENTS) を使用することでイベントが指定されたウィンドウ外へ伝播するのを止めたり、ダイアログ (デフォルトでこのフラグが設定されています) のフラグを解除したりできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you nonetheless need to have a wxString that uses wchar_t on Unix and Linux, too, you can specify this on the command line with the configure --disable-utf8 switch or you can consider using wxUString or std::wstring instead.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T122257Z">
+        <seg>Unix や Linux でも wchar_t を使用する wxString が必要な場合、コマンドラインで configure --disable-utf8 スイッチを指定するか、代わりに wxUString もしくは std::wstring を使用することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10565,6 +11379,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130430T150702Z">
         <seg>ボックスサイザーの最小サイズを計算します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Implicit conversions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T113600Z">
+        <seg>暗黙の変換</seg>
       </tuv>
     </tu>
     <tu>
@@ -10701,6 +11523,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130506T041124Z">
         <seg>実際のところ、ウィンドウクラスを継承して新しいクラスを作成したくない場合は、必ずしもそうする必要はありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In general, for strings containing many latin characters UTF8 provides a big advantage with regards to the memory footprint respect UTF16, but requires some more processing for common operations like e.g. length calculation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T130013Z">
+        <seg>一般に、主にラテン文字を含む文字列について、UTF8 は必要なメモリ消費量において UTF16 よりも大きな利点がありますが、文字列長の計算などの共通操作を行なうために、より多くの計算を必要とします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10913,10 +11743,34 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the rare cases when this may be important, you might prefer using GetChar() instead of the array subscript operator for this reasons.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T093644Z">
+        <seg>このことが重要になるような稀な場合では、添字演算子の代わりに GetChar() を使用した方が良いでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the simplest possible case an event handler may not use the event parameter at all.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T024222Z">
         <seg>ありえそうな一番単純な例では、イベントハンドラは event 引数をまったく使用しないかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the situations where there is no corresponding std::string function, please try to use the new wxString methods and not the old wxWidgets 1.xx variants which are deprecated and may disappear in future versions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T130805Z">
+        <seg>std::string に対応する関数が存在しない場合は新しい wxString 関数を使用するようにし、wxWidgets 1.xx 版を使用しないようにしてください。これらの関数は非推奨であり、将来のバージョンでは削除されるかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the situations where there is no corresponding std::string function, please try to use the new wxString methods and not the old wxWidgets 1.xx variants which are deprecated and may disappear in future versions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T130846Z">
+        <seg>std::string に対応する関数が存在しない場合は新しい wxString 関数を使用するようにし、wxWidgets 1.xx 版を使用しないようにしてください。これらの関数は非推奨であり、将来のバージョンでは削除されるかもしれません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10949,6 +11803,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T060249Z">
         <seg>この場合、すべてのイベント (もしくはその中の特定のイベント) を親ウィンドウへ渡すようにイベントハンドラの ProcessEvent() をオーバーライドする必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this case, due to C++ rules, the "read-only" operator[] (which is the same as GetChar()) cannot be chosen and the "read/write" operator[] (the same as GetWritableChar()) is used instead.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T074809Z">
+        <seg>この場合、C++ の規則により、"読み取り専用" の operator[] (これは GetChar() と同じです) は使用できず、代わりに "読み書き可能な" operator[] (これは GetWritableChar() と同じです) が使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11089,10 +11951,26 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Instead, it adds a small amount of space to each allocated block which allows it to not reallocate memory (a relatively expensive operation) too often as when, for example, a string is constructed by subsequently adding one character at a time to it, as for example in:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T080401Z">
+        <seg>代わりに、各割り当て済みブロックに少しだけメモリを追加します。割り当て済みブロックを用いることで、例えば以下のように一度に一文字ずつ連結して文字列を構築する場合などに、頻繁にメモリの再割り当てを行わなくても良くなります:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Instead, we define some types and macros which behave differently in the Unicode and ANSI builds and allow us to avoid using conditional compilation in the program itself.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130501T162043Z">
         <seg>その代わり、Unicode ビルドと ANSI ビルドで異なる振る舞いをする型とマクロが定義されており、これによってプログラム内で条件付きコンパイルを使用しなくても済みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Internal wxString encoding</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T030019Z">
+        <seg>wxString の内部エンコーディング</seg>
       </tuv>
     </tu>
     <tu>
@@ -11157,6 +12035,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130624T144513Z">
         <seg>また、コントロールの生成したイベントを捕まえることも可能なため、新しいコントロールクラスを継承することなく、コントロールの振る舞いをフィルタリングすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It also provides performance statistics gathering code which may be enabled to fine tune the memory allocation strategy for your particular application - and the gain might be quite big.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T050115Z">
+        <seg>また、性能の 統計収集コード も提供しており、特定のアプリケーションにあわせてメモリ割り当て戦略をチューニングすることができます。これによる性能向上効果は極めて大きいと思われます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11281,6 +12167,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It goes without saying that a profiler should be used to measure the precise difference the change to EXTRA_ALLOC makes to your program.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121608Z">
+        <seg>言うまでもないことですが、EXTRA_ALLOC を変更したときの正確な違いを計測するためにプロファイラを使用するべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It goes without saying that a profiler should be used to measure the precise difference the change to EXTRA_ALLOC makes to your program.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T083854Z">
+        <seg>言うまでもないことですが、EXTRA_ALLOC を変更したときの正確な違いを計測するためにプロファイラを使用するべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It implements Read(), SeekI() (I for Input), and all read or IO generic related functions.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130622T140307Z">
@@ -11313,6 +12215,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is advised that you use c_str() instead to clearly indicate when the conversion is done.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T053106Z">
+        <seg>変換を行なうタイミングを明確にするために、代わりに c_str() を使用するようにしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is advised that you use wxString::c_str() instead to clearly indicate when the conversion is done.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T113703Z">
+        <seg>変換を行なうタイミングを明確にするために、代わりに wxString::c_str() を使用するようにしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is also possible to propagate the event only a limited number of times and not until it is processed (or a top level parent window is reached).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130513T155108Z">
@@ -11337,6 +12255,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is helpful when a string must be broken into tokens and replaces the standard C library strtok() function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121518Z">
+        <seg>このクラスは文字列をトークンに分解する必要があるときに便利で、標準 C ライブラリの strtok() 関数の代わりになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is helpful when a string must be broken into tokens and replaces the standard C library  strtok() function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T120951Z">
+        <seg>このクラスは文字列をトークンに分解する必要があるときに便利で、標準 C ライブラリの strtok() 関数の代わりになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is interpreted as a weight factor, i.e. it can be zero, indicating that the window may not be resized at all, or above zero.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130521T160524Z">
@@ -11349,6 +12283,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130704T152748Z">
         <seg>コンピュータが昔から使用しているデフォルトのバイト単位の文字コードに依存するだけではもう不十分です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is nonetheless recommended to use iterators (instead of index based access) like this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T120256Z">
+        <seg>とはいえ、(インデックスによるアクセスの代わりに) このように イテレータ を使用することを推奨します:</seg>
       </tuv>
     </tu>
     <tu>
@@ -11537,10 +12479,34 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It will both make your code more familiar to other C++ programmers (who are supposed to have knowledge of std::string but not of wxString), let you reuse the same code in both wxWidgets and other programs (by just typedefing wxString as std::string when used outside wxWidgets) and by staying compatible with future versions of wxWidgets which will probably start using std::string sooner or later too.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T113356Z">
+        <seg>そうすることで、(std::string に関する知識はあっても wxString のことは知らないであろう) 他の C++ プログラマにとってより馴染みのあるコードにできますし、(wxWidgets 外でコードを使用するときは wxString を std::string として typedef することで) wxWidgets とそれ以外のプログラムで同じコードを再利用することもできます。また、wxWidgets の将来のバージョンとの互換性も保てます。なぜなら、遅かれ早かれ、おそらく wxWidgets で std::string を使用し始めるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Iterating wxString's characters</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T115417Z">
+        <seg>wxString の文字の走査</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Just let us state once again the rules:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130502T140900Z">
         <seg>もう一度だけルールを述べさせてください:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Just replace this line with this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T114153Z">
+        <seg>この行を単純に次のように置き換えてください:</seg>
       </tuv>
     </tu>
     <tu>
@@ -11597,6 +12563,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T020143Z">
         <seg>非常に単純で、よくあるファイルエラーの場合を考えてみましょう: データをディスク上のファイルに書き込もうとして充分な空き容量がなかったときを想像してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Like this, no memory is lost and 15 iterations from 16 in the example above won't allocate memory but use the already allocated pool.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T082334Z">
+        <seg>このように、メモリが無駄になることはありませんし、上記の例では 16 回の繰り返しのうち、15 回はメモリの割り当てが行われず、割り当て済みのプールが使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11881,6 +12855,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Moreover, some very useful functions are not standard at all.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T072507Z">
+        <seg>その上、いくつかの非常に便利な関数は標準関数ではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Moreover, the log level can be set separately for different log components.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T101356Z">
@@ -11941,6 +12923,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T081658Z">
         <seg>マウスイベントマクロは個別のマウスやすべてのマウスのイベントを処理することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Much work has been done to make existing code using ANSI string literals work as before version 3.0.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121712Z">
+        <seg>ANSI リテラル文字列を使用する既存のコードを 3.0 以前のバージョンと同じように動作させるために様々なことを行っています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12171,6 +13161,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note however that other classes like wxMemoryBuffer are more suited to this task.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131119T154203Z">
+        <seg>ただし、wxMemoryBuffer のように、このことを行なうためのより適切なクラスが他に存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that wxSizer does not derive from wxWindow and thus does not interfere with tab ordering and requires very few resources compared to a real window on screen.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T141726Z">
@@ -12343,6 +13341,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T151034Z">
         <seg>wxWidgets で画像を読み込む場合、リソース (XPM ファイルや Windows のリソース) から読み込む場合を除くと、wxImage を利用した方が良いことにも注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that while the behaviour of wxString when wxUSE_UNICODE_WCHAR==1 resembles UCS-2 encoding, it's not completely correct to refer to wxString as UCS-2 encoded since you can encode code points outside the BMP in a wxString as two code units (i.e. as a surrogate pair; as already mentioned however wxString will "see" them as two different code points)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T125717Z">
+        <seg>wxUSE_UNICODE_WCHAR==1 のときの wxString の振る舞いは UCS-2 エンコーディングに似ていますが、wxString を完全に UCS-2 エンコーディングとみなすことはできません。なぜなら、BMP 以外のコードポイントをふたつのコードポイントとして (つまり、サロゲートペアとして; ただし、すでに述べたように wxString はそれらを異なるふたつのコードポイントとして扱います) wxString に格納することができるためです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12539,6 +13545,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Of course, all the standard string operations are supported as well.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T051046Z">
+        <seg>もちろん、標準的な文字列操作にも対応しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Of course, in some situations threads really make sense (classical example is a server application which launches a new thread for each new client), but in others it might be a very poor choice (example: launching a separate thread when doing a long computation to show a progress dialog).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130625T145811Z">
@@ -12591,6 +13605,22 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130619T153206Z">
         <seg>もちろん、これは望ましくない wxConfig の出力形式を変更します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Of course, you may also use wxString::Printf which is also safe.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T120856Z">
+        <seg>もちろん、wxString::Printf も安全なので使用しても構いません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Of course, you may also use wxString::Printf which is also safe.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T073717Z">
+        <seg>もちろん、wxString::Printf も安全なので使用しても構いません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12843,6 +13873,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Other string related functions and classes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T071425Z">
+        <seg>文字列に関する他の関数やクラス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Other unexpected compilation errors may arise but they should happen even more rarely than the above-mentioned ones and the solution should usually be quite simple: just use the explicit methods of wxUniChar and wxCStrData classes instead of relying on their implicit conversions if the compiler can't choose among them.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T034514Z">
@@ -13027,6 +14065,30 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Please note that at() method has the same problem as the subscript operator in this situation and so using it is not really better.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T093720Z">
+        <seg>このような状況では at() 関数にも添字演算子と同じ問題があるため、この関数を使用するのは本当に良いとは言えません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please note that this class is specially optimized (using its knowledge of the internal structure of wxString) for storing strings and so it is vastly better from a performance point of view than a wxObjectArray of wxStrings.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121031Z">
+        <seg>このクラスは (wxString の内部構造に関する知識を用いて) 文字列の格納に特化して最適化されています。そのため、wxObjectArray に wxString を格納するより性能面で優れています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please note that this class is specially optimized (using its knowledge of the internal structure of wxString) for storing strings and so it is vastly better from a performance point of view than a wxObjectArray of wxStrings.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121039Z">
+        <seg>このクラスは (wxString の内部構造に関する知識を用いて) 文字列の格納に特化して最適化されています。そのため、wxObjectArray に wxString を格納するより性能面で優れています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Please read Internationalization which describes the locales concept.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130703T133721Z">
@@ -13083,6 +14145,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Please skip it unless you feel familiar with profilers and relative tools.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T075950Z">
+        <seg>プロファイラやその関連ツールについて詳しくないのであればこの章を読み飛ばしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Pluggable Event Handlers</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130517T170712Z">
@@ -13115,6 +14185,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Preallocate enough space for wxString to store nLen characters.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121252Z">
+        <seg>nLen 文字を格納するために必要なメモリを wxString に事前に割り当てる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Preferred:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T124733Z">
@@ -13135,6 +14213,30 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130529T132359Z">
         <seg>以前の wxWidgets ではグルーバルなアプリケーションオブジェクトを作成していましたが、もはやこれは非推奨です。なぜなら、期待したグローバルオブジェクトの初期化がアプリケーションオブジェクトの構築時に行われない可能性があるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Probably the main trap with using this class is the implicit conversion operator to const char*.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T113643Z">
+        <seg>おそらく、このクラスを使用する際の一番の罠は const char * への暗黙の型変換演算子です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Probably the main trap with using this class is the implicit conversion operator to const char *.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T053226Z">
+        <seg>おそらく、このクラスを使用する際の一番の罠は const char * への暗黙の型変換演算子です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Probably the unique case when you might want to think about reference counting is when a string character is taken from a string which is not a constant (or a constant reference).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T093610Z">
+        <seg>ただ、非 const (もしくは非 const 参照) の文字列から文字を取り出すときだけは参照カウンタを意識する必要があると考えることでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13269,6 +14371,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Reference counting and why you shouldn't care about it</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T074154Z">
+        <seg>参照カウンタと、それを意識しなくて良い理由</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Related classes: wxEvtHandler, wxWindow, wxEvent</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130507T153247Z">
@@ -13281,6 +14391,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T004632Z">
         <seg>関連ページ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Remarks:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T032908Z">
+        <seg>注意:</seg>
       </tuv>
     </tu>
     <tu>
@@ -13341,6 +14459,22 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Returns the length of the string (same as Len).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T112616Z">
+        <seg>文字列の長さを返却します (Len と同じです)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Returns the length of the string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T112551Z">
+        <seg>文字列の長さを返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Returns the multibyte (C string) representation of the string using conv's wxMBConv::cWC2MB method an...</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T160801Z">
@@ -13377,6 +14511,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130722T143930Z">
         <seg>タイトルバー、ボーダー、スクロールバーなどを含む、ウィンドウ全体のサイズをピクセル単位で返却します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Returns this string converted to upper case.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T113723Z">
+        <seg>大文字へ変換した文字列を返却します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13501,6 +14643,14 @@ MyFrame::MyFrame()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>See wxCSConv and wxMBConv.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T114755Z">
+        <seg>wxCSConv と wxMBConv を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See wxString Overview for more info.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T035303Z">
@@ -13545,6 +14695,14 @@ MyFrame::MyFrame()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130606T152501Z">
         <seg>また、wxDialog が継承している関数については wxTopLevelWindow と wxWindow を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See also Most important wxUSE symbols.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T122822Z">
+        <seg>もっとも重要な wxUSE シンボル も参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13877,6 +15035,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Similar to the standard function sprintf().</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T030242Z">
+        <seg>標準の sprintf() 関数と似ています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Similarly,</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T123350Z">
@@ -13897,6 +15063,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T022747Z">
         <seg>メニューコマンドといった単純なイベントは普通、メニューを保持するトップレベルウィンドウで処理されます。そのため、いくつかのイベントは wxFrame を継承した MyFrame で処理する必要があるはずです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since iterating over a string by index is a common programming technique and was also possible and encouraged by wxString using the access operator[]() wxString implements caching of the last used index so that iterating over a string is a linear operation even in UTF-8 mode.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T120152Z">
+        <seg>インデックスによる文字列の走査はよく使われるプログラミングテクニックであり、wxString では operator[]() を使用することを推奨していたため、wxString は最後に使用したインデックスをキャッシュするように実装されています。これにより、UTF-8 モードであっても文字列全体の走査を線形時間で行なうことができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13937,6 +15111,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T150704Z">
         <seg>wxWidgets 2.2.x から 実行時に 決定される ID を使用してイベントの型を識別します。これにより、ID の衝突を起こす (異なるふたつのイベント型が同じイベント ID を取得してしまう) ことなく、新しいイベント型をライブラリやアプリケーションに追加することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since wxWidgets 3.0 wxString internally uses UTF-16 (with Unicode code units stored in wchar_t) under Windows and UTF-8 (with Unicode code units stored in char) under Unix, Linux and Mac OS X to store its content.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T125216Z">
+        <seg>wxWidgets 3.0 から wxString の内部エンコーディングとして Windows では  (Unicode コード単位を wchar_t に格納する) UTF-16 を、Unix、Linux、Mac OS X では (Unicode コード単位を char に格納する) UTF-8 を使用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14053,6 +15235,54 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>So the question is: which one is better to use?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T092910Z">
+        <seg>そのため、質問は次のようになります: どの関数を使用すれば良いのか? </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So this call may do any number of things (including displaying the correct string on screen), although the most likely result is a program crash.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T114057Z">
+        <seg>そのため、この関数呼び出しの結果は (文字列が正しく表示されることも含めて) 不定になりますが、一番起こりうるのはプログラムのクラッシュでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So this call may do anything at all (including displaying the correct string on screen), although the most likely result is a program crash.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T055002Z">
+        <seg>そのため、この関数呼び出しの結果は (文字列が正しく表示されることも含めて) 不定になりますが、一番起こりうるのはプログラムのクラッシュでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So which is better to use?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T130539Z">
+        <seg>そのため、どれを使うのが良いのでしょう? </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So why the need for wxString?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131119T154436Z">
+        <seg>それなのになぜ wxString が必要なのでしょうか?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So why the need for wxString?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T045413Z">
+        <seg>それなのになぜ wxString が必要なのでしょうか?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>So you can consider this method to be a "Smart SetSize".</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130719T151912Z">
@@ -14073,6 +15303,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130620T143448Z">
         <seg>Borland のいくつかのコンパイラではまったく動作しませんし、Linux で iostream を使用すると異なる Linux ディストリビューション間でバイナリ互換性を保つことは不可能になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some advice about using wxString</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T052942Z">
+        <seg>wxStringを使用するにあたってのアドバイス</seg>
       </tuv>
     </tu>
     <tu>
@@ -14165,6 +15403,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Specifically, the danger of this implicit conversion may be seen in the following code fragment:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T093042Z">
+        <seg>暗黙の型変換の具体的な危険性は以下のコードで分かると思います:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Specifies that log messages with level greater (numerically) than logLevel should be ignored and not ...</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T100124Z">
@@ -14241,6 +15487,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130620T140904Z">
         <seg>ストリームのフィルタリングとは、システムコールは行いませんが、渡されたデータをフィルタリングし、他のストリームへ引き渡すストリームを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>String Related Functions and Classes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T030058Z">
+        <seg>文字列に関する他の関数やクラス</seg>
       </tuv>
     </tu>
     <tu>
@@ -14373,6 +15627,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The wxString class has been completely rewritten for wxWidgets 3.0 but much work has been done to make existing code using ANSI string literals work as it did in previous versions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T030953Z">
+        <seg>wxString クラスは wxWidgets 3.0 では完全に書き直されますが、ANSI リテラル文字列を使用する既存のコードを以前のバージョンと同じように動作させるために様々なことを行っています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The wxValidator::TransferFromWindow member function should transfer the data from the control to the validator or associated C++ variable.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130623T144536Z">
@@ -14421,6 +15683,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;wx/string.h&gt; header also defines ::wxSnprintf and ::wxVsnprintf functions which should be used instead of the inherently dangerous standard sprintf() and which use snprintf() instead which does buffer size checks whenever possible.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T120843Z">
+        <seg>また、&lt;wx/string.h&gt; ヘッダでは ::wxSnprintf 関数と ::wxVsnprintf 関数も定義しています。潜在的に危険な標準の sprintf() の代わりにこれらの関数を使用するべきであり、これらの関数ではバッファサイズのチェックを行なう  snprintf() をできるだけ使用しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The EVT_BUTTON macro demonstrates that the originating event does not have to come from the window class implementing the event table -- if the event source is a button within a panel within a frame, this will still work, because event tables are searched up through the hierarchy of windows for the command events.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T023717Z">
@@ -14445,10 +15715,26 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;wx/string.h&gt; header also defines wxSnprintf and wxVsnprintf functions which should be used instead of the inherently dangerous standard sprintf() and which use  snprintf() instead which does buffer size checks whenever possible.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T073659Z">
+        <seg>また、&lt;wx/string.h&gt; ヘッダでは wxSnprintf 関数と wxVsnprintf 関数も定義しています。潜在的に危険な標準の sprintf() の代わりにこれらの関数を使用するべきであり、これらの関数ではバッファサイズのチェックを行なう  snprintf() をできるだけ使用しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The Layout() method is what is called by the default EVT_SIZE handler for container windows.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130719T153042Z">
         <seg>Layout() 関数はコンテナウィンドウのデフォルトの EVT_SIZE ハンドラから呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ASCII NUL character is allowed, but be aware that in the current string implementation some methods might not work correctly in this case.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T092408Z">
+        <seg>ASCII NUL 文字を含めることも可能ですが、その場合、現在の実装ではいくつかの関数は正しく動作しないことに注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14629,6 +15915,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The advantages of using a special string class instead of working directly with C strings are so obvious that there is a huge number of such classes available.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T054417Z">
+        <seg>C 文字列を直接使用する代わりに特別な文字列クラスを使用する利点は、多くの文字列クラスが存在することから明らかと言えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The aim of the validator concept is to make dialogs very much easier to write.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130623T142423Z">
@@ -14641,6 +15935,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130527T160758Z">
         <seg>アプリケーションを終了する別の方法はトップレベルフレームの wxCloseEvent イベントハンドラで明示的に子フレームを削除することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The amount of memory allocated is configured by the setting of EXTRA_ALLOC in the file string.cpp during compilation (be sure to understand why its default value is what it is before modifying it!).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121407Z">
+        <seg>割り当てられるメモリの量は string.cpp ファイルの  EXTRA_ALLOC を変更することでコンパイル時に設定することができます。(値を変更する前に、なぜデフォルト値がその値になっているのかをよく理解するようにしてください!) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The amount of memory allocated is configured by the setting of  EXTRA_ALLOC in the file string.cpp during compilation (be sure to understand why its default value is what it is before modifying it!).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T094155Z">
+        <seg>割り当てられるメモリの量は string.cpp ファイルの  EXTRA_ALLOC を変更することでコンパイル時に設定することができます。(値を変更する前に、なぜデフォルト値がその値になっているのかをよく理解するようにしてください!) </seg>
       </tuv>
     </tu>
     <tu>
@@ -14841,6 +16151,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130718T155507Z">
         <seg>デフォルトの DoGetBestSize() は wxPanel といったコンテナウィンドウに使用するために設計されており、それはこのように動作します:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The default algorithm assumes that memory allocation is done in granularity of at least 16 bytes (which is the case on almost all of wide-spread platforms) and so nothing is lost if the amount of memory to allocate is rounded up to the next multiple of 16.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T082045Z">
+        <seg>デフォルトのアルゴリズムでは少なくとも 16 バイト単位でメモリの割り当てが行われると仮定している (これは広く使われているほぼすべてのプラットフォームで当てはまります) ため、メモリの割り当て量が 16 の倍数に切り上げられたとしても何も無駄になりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The default approach is quite conservative.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T082411Z">
+        <seg>このデフォルトのやり方は非常に保守的です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15061,6 +16387,30 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The first function, as almost all the other functions in lowercase, is std::string compatible.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T112733Z">
+        <seg>他の小文字の関数のほとんどがそうであるように、最初の関数は std::string と互換性があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first function, as almost all the other functions in lowercase, is std::string compatible.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T052040Z">
+        <seg>他の小文字の関数のほとんどがそうであるように、最初の関数は std::string と互換性があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first is in the call to the printf() function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T113941Z">
+        <seg>最初のバグは printf() 関数の呼び出し部分に存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The first of them should be only used for the string containing 7-bit ASCII characters only, anything else will be replaced by some substitution character.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T161038Z">
@@ -15245,6 +16595,22 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The implicit cast is used again, so the code compiles, but as it returns a pointer to a buffer belonging to a local variable which is deleted as soon as the function exits, its contents are completely arbitrary.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T131723Z">
+        <seg>暗黙的な変換が再度行われるため、コードはコンパイルできますが、返却されるポインタはローカル変数のバッファを指すことになります。そして、このローカル変数は関数を抜けるとすぐに破棄されるため、その内容は完全に不定になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The implicit cast is used again, so the code compiles, but as it returns a pointer to a buffer belonging to a local variable which is deleted as soon as the function exits, its contents is totally arbitrary.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T131651Z">
+        <seg>暗黙的な変換が再度行われるため、コードはコンパイルできますが、返却されるポインタはローカル変数のバッファを指すことになります。そして、このローカル変数は関数を抜けるとすぐに破棄されるため、その内容は完全に不定になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The important conclusion is that if you use wxChar instead of char, avoid using C style strings and use wxString instead and don't forget to enclose all string literals inside wxT() macro, your program automatically becomes (almost) Unicode compliant!</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130502T140756Z">
@@ -15337,6 +16703,30 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130718T152114Z">
         <seg>(wxWX2MBbuf マクロは const でないことを除いて、cWX2MB の戻り値 (char* または wxCharBuffer) と同じ型になります)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The most important advantage is the need to always remember to allocate/free memory for C strings; working with fixed size buffers almost inevitably leads to buffer overflows.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T092625Z">
+        <seg>もっとも重要な利点は、C 文字列の場合、メモリの割り当てと解放を忘れずに行なう必要がある点です; また、固定サイズのバッファを使用すると大抵バッファオーバーランを引き起こします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The most important one is probably that there are often several functions to do exactly the same thing: for example, to get the length of the string either one of wxString::length(), wxString::Len() or wxString::Length() may be used.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T112716Z">
+        <seg>もっとも重要な問題はおそらく、まったく同じことを行なう関数が複数存在することです: 例えば、文字列の長さを取得するために wxString::length()、wxString::Len()、wxString::Length() のどれでも使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The most important one is probably that there are often several functions to do exactly the same thing: for example, to get the length of the string either one of length(), Len() or Length() may be used.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T051948Z">
+        <seg>もっとも重要な問題はおそらく、まったく同じことを行なう関数が複数存在することです: 例えば、文字列の長さを取得するために length()、Len()、Length() のどれでも使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15717,10 +17107,34 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The same is done for converting to and from std::string and for the return value of c_str().</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T114717Z">
+        <seg>同じことが std::string との変換と、c_str() の戻り値に対しても行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The search is applied down the entire chain of event handlers (usually the chain has a length of one).</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T030156Z">
         <seg>次に、イベントハンドラの連鎖を辿って検索します。(通常、この連鎖の長さは 1 です) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The second bug is that returning output doesn't work.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T114206Z">
+        <seg>ふたつ目のバグは output を正しく返却できないことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The second bug is that returning output doesn't work.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T070426Z">
+        <seg>ふたつ目のバグは output を正しく返却できないことです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15733,10 +17147,26 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The second one is "native" wxString version and the last one is wxWidgets 1.xx way.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T092854Z">
+        <seg>二番目の関数は wxString "ネイティブ" の関数で、最後の関数は wxWidgets 1.xx の形式です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The second one is enough if you're happy with the standard wxLog message formatting (prepending "Error:" or "Warning:", timestamping &amp;c) but just want to send the messages somewhere else.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T023616Z">
         <seg>標準的な wxLog メッセージの形式 (先頭に "Error:" か "Warning:" とタイムスタンプが付きます) で充分だが、メッセージを他の場所へ送りたい場合は 2 番目の関数を実装するだけで充分です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The second one is the "native" wxString version and the last one is the wxWidgets 1.xx way.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T112747Z">
+        <seg>二番目の関数は wxString "ネイティブ" の関数で、最後の関数は wxWidgets 1.xx の形式です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15809,6 +17239,38 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130527T162750Z">
         <seg>この解決策は OnExit で HelpCtrl を削除することです:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The solution is to use c_str(): just replace this line with</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T055044Z">
+        <seg>解決方法は c_str() を使用することです: この行を単純に次のように置き換えてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The solution is to use wxString::c_str().</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T114132Z">
+        <seg>この解決方法は wxString::c_str() を使用することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The solution to this problem is also easy, just make the function return wxString instead of a C string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T114301Z">
+        <seg>この問題の解決方法も簡単で、C 文字列の代わりに wxString を返却するようにするだけです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The solution to this problem is also easy: just make the function return wxString instead of a C string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T071014Z">
+        <seg>この問題の解決方法も簡単です: C 文字列の代わりに wxString を返却するようにするだけです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15893,6 +17355,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The usage of the std::string compatible functions is strongly advised!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T130655Z">
+        <seg>std::string 互換の関数を使用することを強く推奨します! </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The usage of these functions should be fairly straightforward, however it may be asked why not use the other logging facilities, such as C standard stdio functions or C++ streams.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130525T013341Z">
@@ -15929,6 +17399,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T132141Z">
         <seg>詳細メッセージとはリリースモードでも無効化されないトレースメッセージのことで、wxLogVerbose() によって生成されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The very best solution in precisely this case would be to use Alloc() function to preallocate, for example, len bytes from the beginning - this will lead to exactly one memory allocation being performed (because the result is at most as long as the original string).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T081401Z">
+        <seg>この例での最適な解決方法は Alloc() 関数を用いて、最初に例えば len バイトほど割り当てておくことです。これにより、メモリの割り当てが確実に 1 回だけ行われます。(なぜなら、変換結果の文字列の長さは最大でも元の文字列と同じだからです)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The very best solution in precisely this case would be to use wxString::Alloc() function to preallocate, for example, len bytes from the beginning - this will lead to exactly one memory allocation being performed (because the result is at most as long as the original string).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121318Z">
+        <seg>この例での最適な解決方法は wxString::Alloc() 関数を用いて、最初に例えば len バイトほど割り当てておくことです。これにより、メモリの割り当てが確実に 1 回だけ行われます。(なぜなら、変換結果の文字列の長さは最大でも元の文字列と同じだからです)</seg>
       </tuv>
     </tu>
     <tu>
@@ -16141,6 +17627,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are several advantages:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T045422Z">
+        <seg>これにはいくつかの利点があります:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are several methods which may be overridden in the derived class to customize log messages handling: wxLog::DoLogRecord(), wxLog::DoLogTextAtLevel() and wxLog::DoLogText().</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T122530Z">
@@ -16185,6 +17679,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130502T235340Z">
         <seg>メッセージカタログには次の 2 種類があります: 拡張子が .po でテキスト形式のソースカタログと、ソースカタログから  msgfmt プログラム (gettext パッケージの一部です) を使って生成する、拡張子が .mo のバイナリカタログです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are two nasty bugs in these three lines.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T054033Z">
+        <seg>この 3 行の中にふたつの分かりにくいバグが含まれています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16249,6 +17751,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130609T140448Z">
         <seg>これと対応するマクロに wxBITMAP マクロがあり、wxICON がアイコンを作成するのと同じ方法でビットマップを作成することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is another class which might be useful when working with wxString: wxStringTokenizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T120914Z">
+        <seg>他にも wxString と一緒に使用すると便利なクラスがあります: それが wxStringTokenizer です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is another class which might be useful when working with wxString: wxStringTokenizer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T073805Z">
+        <seg>他にも wxString と一緒に使用すると便利なクラスがあります: それが wxStringTokenizer です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16769,6 +18287,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T113418Z">
         <seg>このクラスは wxSizer へフラグを渡す際の負担を大きく軽減してくれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This class has all the standard operations you can expect to find in a string class: dynamic memory management (string extends to accommodate new characters), construction from other strings, C strings and characters, assignment operators, access to individual characters, string concatenation and comparison, substring extraction, case conversion, trimming and padding (with spaces), searching and replacing and both C-like Printf() and stream-like insertion functions as well as much more - see wxString for a list of all functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T092454Z">
+        <seg>このクラスは文字列クラスに含まれていると考えるであろうすべての標準的な文字列操作機能を持っています: 動的なメモリ管理 (新しい文字にあわせて文字列を拡張します)、他の文字列や C 文字列からの構築、代入演算子、各文字へのアクセス、文字列の結合と比較、部分文字列の抽出、大文字小文字の変換、トリムと (スペースによる) パディング、検索と置換、C 言語風の Printf() やストリーム風の挿入関数などです。すべての関数の一覧は wxString を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This class has all the standard operations you can expect to find in a string class: dynamic memory management (string extends to accommodate new characters), construction from other strings, compatibility with C strings and wide character C strings, assignment operators, access to individual characters, string concatenation and comparison, substring extraction, case conversion, trimming and padding (with spaces), searching and replacing and both C-like printf (wxString::Printf) and stream-like insertion functions as well as much more - see wxString for a list of all functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T030402Z">
+        <seg>このクラスは文字列クラスに含まれていると考えるであろうすべての標準的な文字列操作機能を持っています: 動的なメモリ管理 (新しい文字にあわせて文字列を拡張します)、他の文字列や C 文字列からの構築、代入演算子、各文字へのアクセス、文字列の結合と比較、部分文字列の抽出、大文字小文字の変換、トリムと (スペースによる) パディング、検索と置換、C 言語風の printf (wxString::Printf ) やストリーム風の挿入関数などです。すべての関数の一覧は wxString を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17357,6 +18891,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is quite a common situation and not allocating extra memory at all would lead to very bad performance in this case because there would be as many memory (re)allocations as there are consonants in the original string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T080656Z">
+        <seg>これは非常によくある状況であり、余分なメモリを割り当てない場合、著しい性能劣化を引き起こします。これは元の文字列に含まれる文字数分、メモリの (再) 割り当てが行われるためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is supported only by wxBoxSizer and wxFlexGridSizer.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130522T141651Z">
@@ -17425,6 +18967,38 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130518T124554Z">
         <seg>コントロールの生成するイベントを処理しない場合や、イベントを一箇所で処理する場合 (このときはイベントテーブルに wxID_ANY を指定するか、同じように wxEvtHandler::Bind を呼ぶ必要があります) など、コントロールの正確な識別子が必要でないときにこれは役立ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is why in addition to all wxString functions, there are also a few global string functions which try to correct these problems: wxIsEmpty() verifies whether the string is empty (returning true for NULL pointers), wxStrlen() also handles NULL correctly and returns 0 for them and wxStricmp() is just a platform-independent version of case-insensitive string comparison function known either as stricmp() or strcasecmp() on different platforms.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T120708Z">
+        <seg>これが wxString の関数に加えて若干のグローバル文字列関数が存在する理由です: wxIsEmpty() は文字列が空かどうかを確かめます。(NULL ポインタに対しては true を返却します) wxStrlen() も NULL を正しく取り扱うことができ、NULL の場合は 0 を返却します。 wxStricmp() は単なるプラットフォーム非依存の大文字小文字を区別しない文字列比較関数で、プラットフォームによっては stricmp() や strcasecmp() として知られています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is why in addition to all wxString functions, there are also a few global string functions which try to correct these problems: wxIsEmpty() verifies whether the string is empty (returning true for NULL pointers), wxStrlen() also handles NULLs correctly and returns 0 for them and wxStricmp() is just a platform-independent version of case-insensitive string comparison function known either as stricmp() or strcasecmp() on different platforms.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T093432Z">
+        <seg>これが wxString の関数に加えて若干のグローバル文字列関数が存在する理由です: wxIsEmpty() は文字列が空かどうかを確かめます。(NULL ポインタに対しては true を返却します) wxStrlen() も NULL を正しく取り扱うことができ、NULL の場合は 0 を返却します。 wxStricmp() は単なるプラットフォーム非依存の大文字小文字を区別しない文字列比較関数で、プラットフォームによっては stricmp() や strcasecmp() として知られています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This leads us to the following general advice: all functions taking string arguments should take const wxString&amp; (this makes assignment to the strings inside the function faster) and all functions returning strings should return wxString - this makes it safe to return local variables.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T131924Z">
+        <seg>このことから、次のような一般的なアドバイスが可能です: 文字列を引数として受け取るすべての関数は const wxString&amp; を受け取るべきで (こうすることで内部文字列への代入が早くなります)、文字列を返却するすべての関数は wxString を返却するべきです (これにより、安全にローカル変数を返却することができます)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This leads us to the following general advice: all functions taking string arguments should take const wxString&amp; (this makes assignment to the strings inside the function faster because of reference counting) and all functions returning strings should return wxString - this makes it safe to return local variables.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T071419Z">
+        <seg>このことから、次のような一般的なアドバイスが可能です: 文字列を引数として受け取るすべての関数は const wxString&amp; を受け取るべきで (参照カウンタ を使用するため、内部文字列への代入が早くなります)、文字列を返却するすべての関数は wxString を返却するべきです。(これにより、安全にローカル変数を返却することができます)</seg>
       </tuv>
     </tu>
     <tu>
@@ -17645,6 +19219,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This section is strictly about performance issues and is absolutely not necessary to read for using wxString class.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121112Z">
+        <seg>この章では性能に関する問題のみを取り扱っており、wxString クラスを使用するだけであれば読む必要はまったくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This section only discusses one family of classes -- the DDE-like protocol -- but here's a list of other useful classes:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130725T153140Z">
@@ -17765,6 +19347,22 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This will show you the average length of strings your program manipulates, their average initial length and also the percent of times when memory wasn't reallocated when string concatenation was done but the already preallocated memory was used (this value should be about 98% for the default allocation policy, if it is less than 90% you should really consider fine tuning wxString for your application).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121551Z">
+        <seg>これにより、プログラムで使用する文字列の平均長、平均初期サイズ、および文字列を連結する際にメモリを割り当てず、割り当て済みのメモリを使用した回数の割合 (デフォルトの設定では約 98% のはずですが、これが 90% を下回る場合には wxString のチューニングを本当に検討するべきです) が分かります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This will show you the average length of strings your program manipulates, their average initial length and also the percent of times when memory wasn't reallocated when string concatenation was done but the already preallocated memory was used (this value should be about 98% for the default allocation policy, if it is less than 90% you should really consider fine tuning wxString for your application).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T083735Z">
+        <seg>これにより、プログラムで使用する文字列の平均長、平均初期サイズ、および文字列を連結する際にメモリを割り当てず、割り当て済みのメモリを使用した回数の割合 (デフォルトの設定では約 98% のはずですが、これが 90% を下回る場合には wxString のチューニングを本当に検討するべきです) が分かります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This would indeed prevent any key events from being sent to the native control - which might not be what is desired.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T085932Z">
@@ -17793,6 +19391,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T082337Z">
         <seg>したがって、プログラムソース内で (7 ビット文字の代わりに) 8 ビット文字列を直接しない ことが重要であり、ワイド文字列を使用するか、代わりに以下のように書いてください:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thus when iterating over a UTF-16 string stored in a wxString under Windows, the user code has to take care of surrogate pairs himself.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T032623Z">
+        <seg>したがって、Windows で wxString に格納された UTF-16 文字列を走査するときには、自分で サロゲートペア を考慮する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17889,6 +19495,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T135558Z">
         <seg>正確に言うと、最初にナロー文字列から文字列が作られたのであれば、変換は常に成功します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To better explain what stated above, consider the second string of the example above; it's composed by 3 characters and the final NULL:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T040414Z">
+        <seg>上で述べたことをきちんと説明するために、上記の例のふたつ目の文字列に注目してください; この文字列は 3 個の文字と終端の NULL で構成されています:</seg>
       </tuv>
     </tu>
     <tu>
@@ -18325,6 +19939,22 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Tuning wxString for Your Application</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T030101Z">
+        <seg>wxString のチューニング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tuning wxString for your application</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T075806Z">
+        <seg>wxString のチューニング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Typed, i.e. strings or numbers for the moment.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130610T150434Z">
@@ -18361,6 +19991,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T033101Z">
         <seg>UTF-8 は 8 ビット (1 バイト) のコード単位を使用します; 普通のアルファベット以外のコードポイントは可変バイトで表現されるため、内部表現としては UTF-32 よりも若干効率が落ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>UTF8 encoding is more elaborated and in this example takes 7 bytes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T040741Z">
+        <seg>UTF8 の符号化はより複雑で、この例では 7 バイトを消費します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18553,6 +20191,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130629T120716Z">
         <seg>残念なことに、Unix や Windows では多くの言語で異なる文字コードが使用されています。(そして、他のプラットフォームではさらに複雑なことになっています) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unfortunately, some of them have rather counter-intuitive behaviour (like strncpy() which doesn't always terminate the resulting string with a NULL) and are in general not very safe (passing NULL to them will probably lead to program crash).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T120356Z">
+        <seg>残念なことに、いくつかの関数は直感的でない振る舞いをします (例えば strncpy() は結果の文字列を常に NULL で終端させるとは限りません) し、一般的にあまり安全ではありません。（それらの関数に NULL を渡すとおそらくプログラムがクラッシュするでしょう) </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unfortunately, some of them have rather counter-intuitive behaviour (like strncpy() which doesn't always terminate the resulting string with a NULL) and are in general not very safe (passing NULL to them will probably lead to program crash).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T093315Z">
+        <seg>残念なことに、いくつかの関数は直感的でない振る舞いをします (例えば strncpy() は結果の文字列を常に NULL で終端させるとは限りません) し、一般的にあまり安全ではありません。（それらの関数に NULL を渡すとおそらくプログラムがクラッシュするでしょう) </seg>
       </tuv>
     </tu>
     <tu>
@@ -18917,6 +20571,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Using wxString to store binary data</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T030040Z">
+        <seg>wxString を使用したバイナリデータの格納</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Usually there is no next event handler so the control passes to the next step but see Event Handlers Chain for how the next handler may be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T141636Z">
@@ -19201,6 +20863,14 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130504T081654Z">
         <seg>より複雑なコントロールのときには特定のイベントクラスが使用されます。例えば、wxTreeCtrl から発生するイベントには wxTreeEvent が使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When instead wxUSE_UNICODE_UTF8==1 (e.g. on Linux and Mac OS X) wxString handles UTF8 multi-bytes sequences just fine also for characters outside the BMP (it implements per code point indexing), so that you can use UTF8 in a completely transparent way:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T125728Z">
+        <seg>代わりに wxUSE_UNICODE_UTF8==1 (例えば、Linux、Mac OS X) とした場合、wxString は BMP 以外の文字でも (コードポイントごとのインデックス として実装されているため) UTF8 マルチバイトシーケンスとして扱います。そのため、完全に透過的な方法で UTF8 を使用することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19957,6 +21627,14 @@ off_t position = in_stream.TellI();
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You may try setting it to greater amount (say twice nLen) or to 0 (to see performance degradation which will follow) and analyse the impact of it on your program.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T083114Z">
+        <seg>この値を大きく (ここでは nLen の倍にしたとしましょう) したり、(性能の劣化具合を確認するために) 0 に設定したりしてプログラムに与える影響を分析しようとするかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You may use the wxID_OK identifier, for example, on any number of dialogs as long as you don't have several within the same dialog.</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130517T171208Z">
@@ -20177,6 +21855,22 @@ off_t position = in_stream.TellI();
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130606T150520Z">
         <seg>上記のような状況や仮定を避ける;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>because the argument of puts() is known to be of the type const char*, this is not done for printf() which is a function with variable number of arguments (and whose arguments are of unknown types).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T114039Z">
+        <seg>なぜなら、puts() の引数が const char * 型であることが分かっているためです。これは (引数が不明な型になる) 可変数引数を受け取る printf() では 行われません 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>because the argument of puts() is known to be of the type const char *, this is not done for printf() which is a function with variable number of arguments (and whose arguments are of unknown types).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T054815Z">
+        <seg>なぜなら、puts() の引数が const char * 型であることが分かっているためです。これは (引数が不明な型になる) 可変数引数を受け取る printf() では 行われません 。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20543,6 +22237,14 @@ process_data(tmp_str);</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>for ( size_t n = 0; n &lt; len; n++ )</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T080451Z">
+        <seg>for ( size_t n = 0; n &lt; len; n++ )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>function&lt; void ( wxCommandEvent &amp; ) &gt; exitHandler(</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130512T061208Z">
@@ -20595,6 +22297,14 @@ process_data(tmp_str);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130505T022522Z">
         <seg>if ( isalpha( event.KeyCode() ) )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if ( strchr("aeuio", tolower(original[n])) == NULL )</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T080454Z">
+        <seg>if ( strchr("aeuio", tolower(original[n])) == NULL )</seg>
       </tuv>
     </tu>
     <tu>
@@ -20954,6 +22664,14 @@ process_data(tmp_str);</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>overview_wxstring_encoding.png</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T040419Z">
+        <seg>overview_wxstring_encoding.png</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>printf("Compiled at %s\n", __DATE__);
 #endif // Unicode/ANSI</seg>
       </tuv>
@@ -20972,10 +22690,34 @@ process_data(tmp_str);</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>printf("Hello, %s!\n", output);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T053437Z">
+        <seg>printf("Hello, %s!\n", output);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>printf("Hello, %s!\n", output.c_str());</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T055045Z">
+        <seg>printf("Hello, %s!\n", output.c_str());</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>printf("Data: %s\n", (const char*) wxConvCurrent-&gt;cWX2MB(unicode_data));</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130718T152102Z">
         <seg>printf("Data: %s\n", (const char*) wxConvCurrent-&gt;cWX2MB(unicode_data));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>printf("Hello, %s!\n", output.c_str());</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T114156Z">
+        <seg>printf("Hello, %s!\n", output.c_str());</seg>
       </tuv>
     </tu>
     <tu>
@@ -21004,6 +22746,14 @@ process_data(tmp_str);</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>printf("Hello, %s!\n", output);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T113913Z">
+        <seg>printf("Hello, %s!\n", output);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>program can't continue, abort immediately</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130526T110410Z">
@@ -21020,10 +22770,34 @@ process_data(tmp_str);</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>puts(output);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T054500Z">
+        <seg>puts(output);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>puts(str.mb_str(wxConvUTF8));</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130717T143942Z">
         <seg>puts(str.mb_str(wxConvUTF8));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>result += *i;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121157Z">
+        <seg>result += *i;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>result += original[n];</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T080456Z">
+        <seg>result += original[n];</seg>
       </tuv>
     </tu>
     <tu>
@@ -21042,6 +22816,26 @@ process_data(tmp_str);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130727T134756Z">
         <seg>return NULL;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>return output;
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T053438Z">
+        <seg>return output;
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>return result;
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T080500Z">
+        <seg>return result;
+}</seg>
       </tuv>
     </tu>
     <tu>
@@ -21084,6 +22878,14 @@ process_data(tmp_str);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T151602Z">
         <seg>これは以下のように書き換えるべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>size_t len = original.length();</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T080450Z">
+        <seg>size_t len = original.length();</seg>
       </tuv>
     </tu>
     <tu>
@@ -21527,6 +23329,14 @@ protected:</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130527T155912Z">
         <seg>wxApp の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxArrayString is an efficient container for storing wxString objects.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T025920Z">
+        <seg>wxArrayString は wxString オブジェクトを効率的に格納するためのコンテナです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22629,10 +24439,26 @@ void MyWindow::SendEvent()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxPrintf("wxString reports a length of %d character(s)", test.length());</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T034547Z">
+        <seg>wxPrintf("wxString reports a length of %d character(s)", test.length());</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxPrintf("Red is %d", Red);</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130503T130835Z">
         <seg>wxPrintf("Red is %d", Red);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxPrintf("wxString reports a length of %d character(s)", test2.length());</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T035631Z">
+        <seg>wxPrintf("wxString reports a length of %d character(s)", test2.length());</seg>
       </tuv>
     </tu>
     <tu>
@@ -22893,6 +24719,22 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>wxString Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T094937Z">
+        <seg>wxString の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString Related Compilation Settings</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T030116Z">
+        <seg>wxString に関するコンパイル設定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>wxString hostName;</seg>
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130727T134742Z">
@@ -22907,6 +24749,38 @@ wxString str(input_str.wc_str(wxConvUTF8), *wxConvCurrent);</seg>
       <tuv lang="JA" changeid="owner" changedate="20130717T145711Z">
         <seg>wxString input_str(input_data);
 wxString str(input_str.wc_str(wxConvUTF8), *wxConvCurrent);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString is a class which represents a character string of arbitrary length (limited by MAX_INT which is usually 2147483647 on 32 bit machines) and containing arbitrary characters.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T092340Z">
+        <seg>wxString は任意の長さ (最大は MAX_INT で、32 ビットマシンの場合、通常は 2147483647 です) で任意の文字を含む文字列を表すクラスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString output = input.Upper();</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T053435Z">
+        <seg>wxString output = input.Upper();</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T043321Z">
+        <seg>wxString の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString result;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131020T080448Z">
+        <seg>wxString result;</seg>
       </tuv>
     </tu>
     <tu>
@@ -22985,6 +24859,38 @@ void MyWindow::SendEvent()
 
 void MyWindow::SendEvent()
 {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString works with both ASCII (traditional, 7 or 8 bit, characters) as well as Unicode (wide characters) strings.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131014T044318Z">
+        <seg>wxString は ASCII (従来の 7 ビットまたは 8 ビット) 文字列と Unicode (ワイド) 文字列の両方を取り扱うことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxString::const_iterator i;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121151Z">
+        <seg>wxString::const_iterator i;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxStringCharType is defined to be:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131119T153148Z">
+        <seg>wxStringCharType は次のいずれかの型に定義されます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxStringTokenizer helps you to break a string up into a number of tokens.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T030005Z">
+        <seg>wxStringTokenizer は文字列を複数のトークンに分割することを支援します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23137,6 +25043,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130731T152119Z">
         <seg>wxURL は URL をパースするために wxURI を特殊化したものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxUString is a class representing a Unicode character string where each character is stored using a 3...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131120T121925Z">
+        <seg>wxUString は各文字が 32 ビット値に格納される Unicode 文字列を表したクラスです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23505,6 +25419,14 @@ void MyWindow::SendEvent()
       </tuv>
       <tuv lang="JA" changeid="owner" changedate="20130718T150741Z">
         <seg>wxWidgets: wxWidgets: wxMBConv の概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>wxWidgets: wxWidgets: wxString Overview</seg>
+      </tuv>
+      <tuv lang="JA" changeid="owner" changedate="20131104T025839Z">
+        <seg>wxWidgets: wxWidgets: wxString の概要</seg>
       </tuv>
     </tu>
     <tu>
