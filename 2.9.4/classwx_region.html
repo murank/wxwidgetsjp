@@ -717,7 +717,7 @@ Public Member Functions</h2></td></tr>
 <p>Finds the intersection of this region and another, rectangular region, specified using position and size.  </p>
 <p>This method always fails, i.e. returns <span class="literal">false</span>, if this region is invalid but may nevertheless be safely used even in this case.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful, <span class="literal">false</span> otherwise.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Creates the intersection of the two regions, that is, the parts which are in both regions. The result is stored in this region.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Creates the intersection of the two regions, that is, the parts which are in both regions. The result is stored in this region.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxRegion::Intersect" ref="a2aaa03bd30c4dad1f3aca89149933a22" args="(const wxRect &amp;rect)" -->
@@ -739,7 +739,7 @@ Public Member Functions</h2></td></tr>
 <p>Finds the intersection of this region and another, rectangular region.  </p>
 <p>This method always fails, i.e. returns <span class="literal">false</span>, if this region is invalid but may nevertheless be safely used even in this case.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful, <span class="literal">false</span> otherwise.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Creates the intersection of the two regions, that is, the parts which are in both regions. The result is stored in this region.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Creates the intersection of the two regions, that is, the parts which are in both regions. The result is stored in this region.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxRegion::Intersect" ref="ad94d3469777fc5d8e9246acaa3ca7afd" args="(const wxRegion &amp;region)" -->
@@ -761,7 +761,7 @@ Public Member Functions</h2></td></tr>
 <p>Finds the intersection of this region and another region.  </p>
 <p>This method always fails, i.e. returns <span class="literal">false</span>, if this region is invalid but may nevertheless be safely used even in this case.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful, <span class="literal">false</span> otherwise.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Creates the intersection of the two regions, that is, the parts which are in both regions. The result is stored in this region.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Creates the intersection of the two regions, that is, the parts which are in both regions. The result is stored in this region.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxRegion::IsEmpty" ref="a59c5c5a41def2f2b67b9e1adb0f385c8" args="() const " -->
@@ -894,7 +894,7 @@ Public Member Functions</h2></td></tr>
 <p>Subtracts a region from this region.  </p>
 <p>This method always fails, i.e. returns <span class="literal">false</span>, if this region is invalid but may nevertheless be safely used even in this case.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful, <span class="literal">false</span> otherwise.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This operation combines the parts of 'this' region that are not part of the second region. The result is stored in this region.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This operation combines the parts of 'this' region that are not part of the second region. The result is stored in this region.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxRegion::Subtract" ref="a569a77247771375b06dc159a739b79b8" args="(const wxRect &amp;rect)" -->
@@ -916,7 +916,7 @@ Public Member Functions</h2></td></tr>
 <p>Subtracts a rectangular region from this region.  </p>
 <p>This method always fails, i.e. returns <span class="literal">false</span>, if this region is invalid but may nevertheless be safely used even in this case.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful, <span class="literal">false</span> otherwise.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This operation combines the parts of 'this' region that are not part of the second region. The result is stored in this region.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This operation combines the parts of 'this' region that are not part of the second region. The result is stored in this region.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxRegion::Union" ref="a4a78ad08c47361b8cfa95dabc54487e8" args="(const wxRect &amp;rect)" -->
@@ -938,7 +938,7 @@ Public Member Functions</h2></td></tr>
 <p>Finds the union of this region and another, rectangular region.  </p>
 <p>This method can be used even if this region is invalid and has the natural behaviour in this case, i.e. makes this region equal to the given rectangle.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful, <span class="literal">false</span> otherwise.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This operation creates a region that combines all of this region and the second region. The result is stored in this region.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This operation creates a region that combines all of this region and the second region. The result is stored in this region.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxRegion::Union" ref="ae8ea15425722b296b6cb6974d7306e60" args="(wxCoord x, wxCoord y, wxCoord width, wxCoord height)" -->
@@ -982,7 +982,7 @@ Public Member Functions</h2></td></tr>
 <p>Finds the union of this region and another, rectangular region, specified using position and size.  </p>
 <p>This method can be used even if this region is invalid and has the natural behaviour in this case, i.e. makes this region equal to the given rectangle.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful, <span class="literal">false</span> otherwise.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This operation creates a region that combines all of this region and the second region. The result is stored in this region.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This operation creates a region that combines all of this region and the second region. The result is stored in this region.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxRegion::Union" ref="ad33ab31d06beebe15b9b7fbd3f2978e9" args="(const wxBitmap &amp;bmp, const wxColour &amp;transColour, int tolerance=0)" -->
@@ -1020,7 +1020,7 @@ Public Member Functions</h2></td></tr>
 <p>Finds the union of this region and the non-transparent pixels of a bitmap.  </p>
 <p>Colour to be treated as transparent is specified in the <em>transColour</em> argument, along with an optional colour tolerance value.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful, <span class="literal">false</span> otherwise.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This operation creates a region that combines all of this region and the second region. The result is stored in this region.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This operation creates a region that combines all of this region and the second region. The result is stored in this region.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxRegion::Union" ref="ac4edc555b9bef0263675b8afefdf0578" args="(const wxRegion &amp;region)" -->
@@ -1042,7 +1042,7 @@ Public Member Functions</h2></td></tr>
 <p>Finds the union of this region and another region.  </p>
 <p>This method can be used even if this region is invalid and has the natural behaviour in this case, i.e. makes this region equal to the given <em>region</em>.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful, <span class="literal">false</span> otherwise.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This operation creates a region that combines all of this region and the second region. The result is stored in this region.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This operation creates a region that combines all of this region and the second region. The result is stored in this region.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxRegion::Union" ref="a9b8729b4d3acf9e77188f92ebdfaf168" args="(const wxBitmap &amp;bmp)" -->
@@ -1064,7 +1064,7 @@ Public Member Functions</h2></td></tr>
 <p>Finds the union of this region and the non-transparent pixels of a bitmap.  </p>
 <p>The bitmap's mask is used to determine transparency. If the bitmap doesn't have a mask, the bitmap's full dimensions are used.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful, <span class="literal">false</span> otherwise.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This operation creates a region that combines all of this region and the second region. The result is stored in this region.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This operation creates a region that combines all of this region and the second region. The result is stored in this region.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxRegion::Xor" ref="ad9afb74d82763343326a4a60c397ea6e" args="(const wxRect &amp;rect)" -->
@@ -1086,7 +1086,7 @@ Public Member Functions</h2></td></tr>
 <p>Finds the Xor of this region and another, rectangular region.  </p>
 <p>This method can be used even if this region is invalid and has the natural behaviour in this case, i.e. makes this region equal to the given rectangle.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful, <span class="literal">false</span> otherwise.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This operation creates a region that combines all of this region and the second region, except for any overlapping areas. The result is stored in this region.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This operation creates a region that combines all of this region and the second region, except for any overlapping areas. The result is stored in this region.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxRegion::Xor" ref="aafeebc72cda33bc9b1285d1554be9ec3" args="(wxCoord x, wxCoord y, wxCoord width, wxCoord height)" -->
@@ -1130,7 +1130,7 @@ Public Member Functions</h2></td></tr>
 <p>Finds the Xor of this region and another, rectangular region, specified using position and size.  </p>
 <p>This method can be used even if this region is invalid and has the natural behaviour in this case, i.e. makes this region equal to the given rectangle.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful, <span class="literal">false</span> otherwise.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This operation creates a region that combines all of this region and the second region, except for any overlapping areas. The result is stored in this region.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This operation creates a region that combines all of this region and the second region, except for any overlapping areas. The result is stored in this region.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxRegion::Xor" ref="a908a56969729732832b3c274ffae8071" args="(const wxRegion &amp;region)" -->
@@ -1152,7 +1152,7 @@ Public Member Functions</h2></td></tr>
 <p>Finds the Xor of this region and another region.  </p>
 <p>This method can be used even if this region is invalid and has the natural behaviour in this case, i.e. makes this region equal to the given <em>region</em>.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful, <span class="literal">false</span> otherwise.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This operation creates a region that combines all of this region and the second region, except for any overlapping areas. The result is stored in this region.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This operation creates a region that combines all of this region and the second region, except for any overlapping areas. The result is stored in this region.  </dd></dl>
 
 </div>
 </div>

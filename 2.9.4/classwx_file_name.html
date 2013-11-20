@@ -3442,7 +3442,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Strip the file extension.  </p>
-<p>This function does more than just removing everything after the last period from the string, for example it will return the string ".vimrc" unchanged because the part after the period is not an extension but the file name in this case. You can use <a class="el" href="classwx_string.html#a9b6f088a6ef2faadf922a521df0fae3a" title="Gets all characters before the last occurrence of ch.">wxString::BeforeLast()</a> to really get just the part before the last period (but notice that that function returns empty string if period is not present at all unlike this function which returns the <em>fullname</em> unchanged in this case).</p>
+<p>This function does more than just removing everything after the last period from the string, for example it will return the string ".vimrc" unchanged because the part after the period is not an extension but the file name in this case. You can use <a class="el" href="classwx_string.html#a9b6f088a6ef2faadf922a521df0fae3a" title="ch が最後に登場した位置以前のすべての文字列を取得します。">wxString::BeforeLast()</a> to really get just the part before the last period (but notice that that function returns empty string if period is not present at all unlike this function which returns the <em>fullname</em> unchanged in this case).</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">fullname</td><td>File path including name and, optionally, extension.</td></tr>

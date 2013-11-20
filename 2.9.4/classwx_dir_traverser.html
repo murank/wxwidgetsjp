@@ -129,7 +129,7 @@ function toggleVisibility(linkObj) {
 <div class="fragment"><pre class="fragment">    <span class="keyword">class </span>wxDirTraverserSimple : <span class="keyword">public</span> <a class="code" href="classwx_dir_traverser.html" title="wxDirTraverser is an abstract interface which must be implemented by objects passed to wxDir::Travers...">wxDirTraverser</a>
     {
     <span class="keyword">public</span>:
-        wxDirTraverserSimple(<a class="code" href="classwx_array_string.html" title="wxArrayString is an efficient container for storing wxString objects.">wxArrayString</a>&amp; files) : m_files(files) { }
+        wxDirTraverserSimple(<a class="code" href="classwx_array_string.html" title="wxArrayString は wxString オブジェクトを効率的に格納するためのコンテナです。">wxArrayString</a>&amp; files) : m_files(files) { }
 
         <span class="keyword">virtual</span> <a class="code" href="dir_8h.html#a54f52ca9f3bca0591ddf75afa78aeb0d" title="Possible return values of wxDirTraverser callback functions.">wxDirTraverseResult</a> <a class="code" href="classwx_dir_traverser.html#ad51354154a38c89d288a933866501ea8" title="This function is called for each file.">OnFile</a>(<span class="keyword">const</span> <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>&amp; filename)
         {
@@ -143,11 +143,11 @@ function toggleVisibility(linkObj) {
         }
 
     <span class="keyword">private</span>:
-        <a class="code" href="classwx_array_string.html" title="wxArrayString is an efficient container for storing wxString objects.">wxArrayString</a>&amp; m_files;
+        <a class="code" href="classwx_array_string.html" title="wxArrayString は wxString オブジェクトを効率的に格納するためのコンテナです。">wxArrayString</a>&amp; m_files;
     };
 
     <span class="comment">// get the names of all files in the array</span>
-    <a class="code" href="classwx_array_string.html" title="wxArrayString is an efficient container for storing wxString objects.">wxArrayString</a> files;
+    <a class="code" href="classwx_array_string.html" title="wxArrayString は wxString オブジェクトを効率的に格納するためのコンテナです。">wxArrayString</a> files;
     wxDirTraverserSimple traverser(files);
 
     <a class="code" href="classwx_dir.html" title="wxDir は ファイルやディレクトリの列挙を行う Unix の open/read/closedir 関数と同じことを行います。">wxDir</a> dir(dirname);

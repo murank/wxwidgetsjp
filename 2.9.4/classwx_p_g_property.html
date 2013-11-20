@@ -174,8 +174,8 @@ wxPropertyCategory</h3>
 <h3><a class="anchor" id="wxStringProperty"></a>
 
 wxStringProperty</h3>
-<p>Simple string property. wxPG_STRING_PASSWORD attribute may be used to echo value as asterisks and use wxTE_PASSWORD for <a class="el" href="classwx_text_ctrl.html" title="テキストの表示と編集が可能なテキストコントロール。">wxTextCtrl</a>. wxPG_ATTR_AUTOCOMPLETE attribute may be used to enable auto-completion (use a <a class="el" href="classwx_array_string.html" title="wxArrayString is an efficient container for storing wxString objects.">wxArrayString</a> value), and is also supported by any property that happens to use a wxTextCtrl-based editor.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>wxStringProperty has a special trait: if it has value of "&lt;composed&gt;", and also has child properties, then its displayed value becomes composition of child property values, similar as with wxFontProperty, for instance.</dd></dl>
+<p>Simple string property. wxPG_STRING_PASSWORD attribute may be used to echo value as asterisks and use wxTE_PASSWORD for <a class="el" href="classwx_text_ctrl.html" title="テキストの表示と編集が可能なテキストコントロール。">wxTextCtrl</a>. wxPG_ATTR_AUTOCOMPLETE attribute may be used to enable auto-completion (use a <a class="el" href="classwx_array_string.html" title="wxArrayString は wxString オブジェクトを効率的に格納するためのコンテナです。">wxArrayString</a> value), and is also supported by any property that happens to use a wxTextCtrl-based editor.</p>
+<dl class="remark"><dt><b>注意:</b></dt><dd>wxStringProperty has a special trait: if it has value of "&lt;composed&gt;", and also has child properties, then its displayed value becomes composition of child property values, similar as with wxFontProperty, for instance.</dd></dl>
 <h3><a class="anchor" id="wxIntProperty"></a>
 
 wxIntProperty</h3>
@@ -256,7 +256,7 @@ wxEditEnumProperty</h3>
 <h3><a class="anchor" id="wxMultiChoiceProperty"></a>
 
 wxMultiChoiceProperty</h3>
-<p>Allows editing a multiple selection from a list of strings. This is property is pretty much built around concept of <a class="el" href="classwx_multi_choice_dialog.html" title="This class represents a dialog that shows a list of strings, and allows the user to select one or mor...">wxMultiChoiceDialog</a>. It uses <a class="el" href="classwx_array_string.html" title="wxArrayString is an efficient container for storing wxString objects.">wxArrayString</a> value.</p>
+<p>Allows editing a multiple selection from a list of strings. This is property is pretty much built around concept of <a class="el" href="classwx_multi_choice_dialog.html" title="This class represents a dialog that shows a list of strings, and allows the user to select one or mor...">wxMultiChoiceDialog</a>. It uses <a class="el" href="classwx_array_string.html" title="wxArrayString は wxString オブジェクトを効率的に格納するためのコンテナです。">wxArrayString</a> value.</p>
 <h3><a class="anchor" id="wxImageFileProperty"></a>
 
 wxImageFileProperty</h3>
@@ -818,7 +818,7 @@ Protected Member Functions</h2></td></tr>
 <p>Use this member function to add independent (ie.  </p>
 <p>regular) children to a property.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Appended childProperty.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd><a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a> is not automatically refreshed by this function.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd><a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a> is not automatically refreshed by this function.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_p_g_property.html#a572697e79fd8785f3477cc7f8d72f5d5" title="Use this member function to add independent (ie.">InsertChild()</a>, <a class="el" href="classwx_p_g_property.html#abec97e799f836560d4f65c7c5fc97f6f" title="Adds a private child property.">AddPrivateChild()</a> </dd></dl>
 
 </div>
@@ -893,7 +893,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Sets or clears given property flag.  </p>
 <p>Mainly for internal use.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Setting a property flag never has any side-effect, and is intended almost exclusively for internal use. So, for example, if you want to disable a property, call Enable(false) instead of setting wxPG_PROP_DISABLED flag.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Setting a property flag never has any side-effect, and is intended almost exclusively for internal use. So, for example, if you want to disable a property, call Enable(false) instead of setting wxPG_PROP_DISABLED flag.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_p_g_property.html#a3cf53ef7dff19595ab4b62bb3af738bd" title="Returns non-zero if property has given flag set.">HasFlag()</a>, <a class="el" href="classwx_p_g_property.html#a20532654013f84d21774f939c4283546" title="Returns property flags.">GetFlags()</a> </dd></dl>
 
 </div>
@@ -1073,7 +1073,7 @@ Protected Member Functions</h2></td></tr>
 
             WX_PG_DOGETVALIDATOR_EXIT(validator)
         }
-</pre></div><dl class="remark"><dt><b>Remarks:</b></dt><dd>You can get common filename validator by returning wxFileProperty::GetClassValidator(). wxDirProperty, for example, uses it.  </dd></dl>
+</pre></div><dl class="remark"><dt><b>注意:</b></dt><dd>You can get common filename validator by returning wxFileProperty::GetClassValidator(). wxDirProperty, for example, uses it.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPGProperty::DoGetValue" ref="ad34da516faa44c994598ce0a6dda4063" args="() const " -->
@@ -1122,7 +1122,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplement this member function to add special handling for attributes of this property.  </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Return <span class="literal">false</span> to have the attribute automatically stored in m_attributes. Default implementation simply does that and nothing else.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>To actually set property attribute values from the application, use <a class="el" href="classwx_p_g_property.html#a418c1539969b7a0a9378a3411a5680a6" title="Sets an attribute for this property.">wxPGProperty::SetAttribute()</a> instead.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>To actually set property attribute values from the application, use <a class="el" href="classwx_p_g_property.html#a418c1539969b7a0a9378a3411a5680a6" title="Sets an attribute for this property.">wxPGProperty::SetAttribute()</a> instead.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPGProperty::Empty" ref="abcd8337b04de4934c15b81e4470c5919" args="()" -->
@@ -1351,7 +1351,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns <a class="el" href="classwx_p_g_cell.html" title="Base class for wxPropertyGrid cell information.">wxPGCell</a> of given column.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>const version of this member function returns 'default' <a class="el" href="classwx_p_g_cell.html" title="Base class for wxPropertyGrid cell information.">wxPGCell</a> object if the property itself didn't hold cell data.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>const version of this member function returns 'default' <a class="el" href="classwx_p_g_cell.html" title="Base class for wxPropertyGrid cell information.">wxPGCell</a> object if the property itself didn't hold cell data.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPGProperty::GetCell" ref="aca895baa1adfa0536d1b623595ad198b" args="(unsigned int column)" -->
@@ -1760,7 +1760,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Returns highest level non-category, non-root parent.  </p>
 <p>Useful when you have nested properties with children.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>If immediate parent is root or category, this will return the property itself.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>If immediate parent is root or category, this will return the property itself.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPGProperty::GetMaxLength" ref="a78a3bf23304ec8a483c75fac5002986e" args="() const " -->
@@ -1914,7 +1914,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>In older versions, this function used to be overridden to convert property's value into a string representation. This function is now handled by <a class="el" href="classwx_p_g_property.html#a7bef52444b2c03a4f10eef54ef9e9739" title="Converts property value into a text representation.">ValueToString()</a>, and overriding this function now will result in run-time assertion failure.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>In older versions, this function used to be overridden to convert property's value into a string representation. This function is now handled by <a class="el" href="classwx_p_g_property.html#a7bef52444b2c03a4f10eef54ef9e9739" title="Converts property value into a text representation.">ValueToString()</a>, and overriding this function now will result in run-time assertion failure.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPGProperty::GetValueImage" ref="a2565aba121d1df376d7ba7c16fbc0553" args="() const " -->
@@ -2096,7 +2096,7 @@ Protected Member Functions</h2></td></tr>
 <p>Use this member function to add independent (ie.  </p>
 <p>regular) children to a property.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Inserted childProperty.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd><a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a> is not automatically refreshed by this function.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd><a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a> is not automatically refreshed by this function.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_p_g_property.html#a77549498512cfa99b3b3e2c4317d5b70" title="Use this member function to add independent (ie.">AppendChild()</a>, <a class="el" href="classwx_p_g_property.html#abec97e799f836560d4f65c7c5fc97f6f" title="Adds a private child property.">AddPrivateChild()</a> </dd></dl>
 
 </div>
@@ -2185,7 +2185,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns <span class="literal">true</span> if resulting <a class="el" href="classwx_variant.html" title="The wxVariant class represents a container for any type.">wxVariant</a> value was different.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd><ul>
+<dl class="remark"><dt><b>注意:</b></dt><dd><ul>
 <li>If property is not supposed to use choice or spinctrl or other editor with int-based value, it is not necessary to implement this method.</li>
 <li>Default implementation simply assign given int to m_value.</li>
 <li>If property uses choice control, and displays a dialog on some choice items, then it is preferred to display that dialog in IntToValue instead of OnEvent.</li>
@@ -2301,7 +2301,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns true if property has editable <a class="el" href="classwx_text_ctrl.html" title="テキストの表示と編集が可能なテキストコントロール。">wxTextCtrl</a> when selected.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Although disabled properties do not displayed editor, they still return <span class="literal">true</span> here as being disabled is considered a temporary condition (unlike being read-only or having limited editing enabled).  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Although disabled properties do not displayed editor, they still return <span class="literal">true</span> here as being disabled is considered a temporary condition (unlike being read-only or having limited editing enabled).  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPGProperty::IsValueUnspecified" ref="a785c3679e91f5b878bcbaec31aa1bccc" args="() const " -->
@@ -2417,7 +2417,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd><ul>
+<dl class="remark"><dt><b>注意:</b></dt><dd><ul>
 <li>You can actually exceed rect width, but if you do so then paintdata.m_drawnWidth must be set to the full width drawn in pixels.</li>
 <li>Due to technical reasons, rect's height will be default even if custom height was reported during measure call.</li>
 <li>Brush is guaranteed to be default background colour. It has been already used to clear the background of area being painted. It can be modified.</li>
@@ -2469,7 +2469,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd><ul>
+<dl class="remark"><dt><b>注意:</b></dt><dd><ul>
 <li>If property uses choice control, and displays a dialog on some choice items, then it is preferred to display that dialog in IntToValue instead of OnEvent.  </li>
 </ul>
 </dd></dl>
@@ -2499,7 +2499,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd><ul>
+<dl class="remark"><dt><b>注意:</b></dt><dd><ul>
 <li>Default behaviour is to return wxSize(0,0), which means no image.</li>
 <li>Default image width or height is indicated with dimension -1.</li>
 <li>You can also return wxPG_DEFAULT_IMAGE_SIZE which equals <a class="el" href="classwx_size.html" title="wxSize は図形操作のための有用なデータ構造です。">wxSize</a>(-1, -1).  </li>
@@ -2523,7 +2523,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>This virtual function is called after m_value has been set.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd><ul>
+<dl class="remark"><dt><b>注意:</b></dt><dd><ul>
 <li>If m_value was set to Null variant (ie. unspecified value), <a class="el" href="classwx_p_g_property.html#ae5c4f47d3ff609d19346b994a9a25acb" title="This virtual function is called after m_value has been set.">OnSetValue()</a> will not be called.</li>
 <li>m_value may be of any variant type. Typically properties internally support only one variant type, and as such <a class="el" href="classwx_p_g_property.html#ae5c4f47d3ff609d19346b994a9a25acb" title="This virtual function is called after m_value has been set.">OnSetValue()</a> provides a good opportunity to convert supported values into internal type.</li>
 <li>Default implementation does nothing.  </li>
@@ -2548,7 +2548,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Called whenever validation has failed with given pending value.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>If you implement this in your custom property class, please remember to call the baser implementation as well, since they may use it to revert property into pre-change state.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>If you implement this in your custom property class, please remember to call the baser implementation as well, since they may use it to revert property into pre-change state.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPGProperty::RefreshChildren" ref="a167afcb85ed4d527e34567e32a0cc714" args="()" -->
@@ -2622,7 +2622,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Setting attribute's value to Null variant will simply remove it from property's set of attributes.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Setting attribute's value to Null variant will simply remove it from property's set of attributes.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPGProperty::SetAutoUnspecified" ref="a126a59cc86786f51cc72469bc2143b4c" args="(bool enable=true)" -->
@@ -2733,7 +2733,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Sets new set of choices for the property.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This operation deselects the property and clears its value.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This operation deselects the property and clears its value.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPGProperty::SetChoiceSelection" ref="a4244276bf942fd52e1dd182535e7ba5d" args="(int newValue)" -->
@@ -2773,7 +2773,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Sets client data (void*) of a property.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This untyped client data has to be deleted manually.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This untyped client data has to be deleted manually.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPGProperty::SetClientObject" ref="ab35b3529f2b6afbc1ec02d2bbb187709" args="(wxClientData *clientObject)" -->
@@ -2928,7 +2928,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Sets property's label.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Properties under same parent may have same labels. However, property names must still remain unique.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Properties under same parent may have same labels. However, property names must still remain unique.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPGProperty::SetMaxLength" ref="aa74671893440ce2a0f2a0e47ba897ad5" args="(int maxLen)" -->
@@ -3012,7 +3012,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>You generally do not need to call this function.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>You generally do not need to call this function.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPGProperty::SetTextColour" ref="a8d34f624ad2f38300741c3caa0929629" args="(const wxColour &amp;colour, int flags=wxPG_RECURSE)" -->
@@ -3104,7 +3104,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Call this to set value of the property.  </p>
 <p>Unlike methods in <a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a>, this does not automatically update the display.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Use <a class="el" href="classwx_property_grid.html#a6958b5c1a1f71512afaf6f2c07c1becd" title="Changes value of a property, as if from an editor.">wxPropertyGrid::ChangePropertyValue()</a> instead if you need to run through validation process and send property change event.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Use <a class="el" href="classwx_property_grid.html#a6958b5c1a1f71512afaf6f2c07c1becd" title="Changes value of a property, as if from an editor.">wxPropertyGrid::ChangePropertyValue()</a> instead if you need to run through validation process and send property change event.</dd></dl>
 <p>If you need to change property value in event, based on user input, use <a class="el" href="classwx_p_g_property.html#ade9385b0bc3c9ba4833b271157e87354" title="Call this function in OnEvent(), OnButtonClick() etc.">SetValueInEvent()</a> instead.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -3231,7 +3231,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Call this function in <a class="el" href="classwx_p_g_property.html#a16fbe26240bf47ab0a9a02d21781da73" title="Events received by editor widgets are processed here.">OnEvent()</a>, OnButtonClick() etc.  </p>
 <p>to change the property value based on user input.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This method is const since it doesn't actually modify value, but posts given variant as pending value, stored in <a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a>.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This method is const since it doesn't actually modify value, but posts given variant as pending value, stored in <a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a>.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPGProperty::SetValueToUnspecified" ref="a4e55506bbc49f0b7d447df71a00f2df6" args="()" -->
@@ -3315,7 +3315,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns <span class="literal">true</span> if resulting <a class="el" href="classwx_variant.html" title="The wxVariant class represents a container for any type.">wxVariant</a> value was different.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Default implementation converts semicolon delimited tokens into child values. Only works for properties with children.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Default implementation converts semicolon delimited tokens into child values. Only works for properties with children.</dd></dl>
 <p>You might want to take into account that m_value is Null variant if property value is unspecified (which is usually only case if you explicitly enabled that sort behaviour).  </p>
 
 </div>
@@ -3384,7 +3384,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implement this function in derived class to check the value.  </p>
 <p>Return <span class="literal">true</span> if it is ok. Returning <span class="literal">false</span> prevents property change events from occurring.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd><ul>
+<dl class="remark"><dt><b>注意:</b></dt><dd><ul>
 <li>Default implementation always returns <span class="literal">true</span>.  </li>
 </ul>
 </dd></dl>
@@ -3424,7 +3424,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Default implementation calls <a class="el" href="classwx_p_g_property.html#a5f266fcee82f96b626914e1876078135" title="Composes text from values of child properties.">GenerateComposedValue()</a>.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Default implementation calls <a class="el" href="classwx_p_g_property.html#a5f266fcee82f96b626914e1876078135" title="Composes text from values of child properties.">GenerateComposedValue()</a>.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPGProperty::wxDEPRECATED" ref="af9aa04abe8dc641dec6211568fb74fcc" args="(void AddChild(wxPGProperty *prop))" -->

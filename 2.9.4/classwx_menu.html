@@ -419,7 +419,7 @@ Public Member Functions</h2></td></tr>
 <div class="fragment"><pre class="fragment">        m_pFileMenu-&gt;Append(ID_NEW_FILE, <span class="stringliteral">"&amp;New file\tCTRL+N"</span>, <span class="stringliteral">"Creates a new XYZ document"</span>);
 </pre></div><p>  or even better for stock menu items (see <a class="el" href="classwx_menu_item.html#a6e9b0e1b786fa84250a42c88d84aed2b" title="Constructs a wxMenuItem object.">wxMenuItem::wxMenuItem</a>):  </p>
 <div class="fragment"><pre class="fragment">        m_pFileMenu-&gt;Append(<a class="code" href="defs_8h.html#ac66d0a09761e7d86b2ac0b2e0c6a8cbba00208fb870c6129805d5e4662f387631">wxID_NEW</a>, <span class="stringliteral">""</span>, <span class="stringliteral">"Creates a new XYZ document"</span>);
-</pre></div><dl class="remark"><dt><b>Remarks:</b></dt><dd>This command can be used after the menu has been shown, as well as on initial creation of a menu or menubar.</dd></dl>
+</pre></div><dl class="remark"><dt><b>注意:</b></dt><dd>This command can be used after the menu has been shown, as well as on initial creation of a menu or menubar.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_menu.html#ac4027fc18854f535171ea32f416fc667" title="Adds a separator to the end of the menu.">AppendSeparator()</a>, <a class="el" href="classwx_menu.html#a0e2986e5c03907990504337493221baf" title="Adds a checkable item to the end of the menu.">AppendCheckItem()</a>, <a class="el" href="classwx_menu.html#a3ec8da997f0969d6df4f2394af6a9580" title="Adds a radio item to the end of the menu.">AppendRadioItem()</a>, <a class="el" href="classwx_menu.html#a6e5821042919502670e8fdab77a5f7a8" title="Adds the given submenu to this menu.">AppendSubMenu()</a>, <a class="el" href="classwx_menu.html#aec84d928bf461c59739e0e4fc7a27bbe" title="Inserts the given item before the position pos.">Insert()</a>, <a class="el" href="classwx_menu.html#aec7c82f4c6fa18187c25b3797590a9d2" title="Sets the label of a menu item.">SetLabel()</a>, <a class="el" href="classwx_menu.html#a45ae0ae8a1ceed683cbdb0e311989316" title="Returns the help string associated with a menu item.">GetHelpString()</a>, <a class="el" href="classwx_menu.html#afaad5f31ec3abcf830ecdf2532c6e98b" title="Sets an item's help string.">SetHelpString()</a>, <a class="el" href="classwx_menu_item.html" title="A menu item represents an item in a menu.">wxMenuItem</a> </dd></dl>
 
 </div>
@@ -499,7 +499,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>See the remarks for the other <a class="el" href="classwx_menu.html#ab8b9fe9baabeb67cf3eaa70df072f7c9" title="Adds a menu item.">Append()</a> overloads.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>See the remarks for the other <a class="el" href="classwx_menu.html#ab8b9fe9baabeb67cf3eaa70df072f7c9" title="Adds a menu item.">Append()</a> overloads.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_menu.html#ac4027fc18854f535171ea32f416fc667" title="Adds a separator to the end of the menu.">AppendSeparator()</a>, <a class="el" href="classwx_menu.html#a0e2986e5c03907990504337493221baf" title="Adds a checkable item to the end of the menu.">AppendCheckItem()</a>, <a class="el" href="classwx_menu.html#a3ec8da997f0969d6df4f2394af6a9580" title="Adds a radio item to the end of the menu.">AppendRadioItem()</a>, <a class="el" href="classwx_menu.html#a6e5821042919502670e8fdab77a5f7a8" title="Adds the given submenu to this menu.">AppendSubMenu()</a>, <a class="el" href="classwx_menu.html#aec84d928bf461c59739e0e4fc7a27bbe" title="Inserts the given item before the position pos.">Insert()</a>, <a class="el" href="classwx_menu.html#aec7c82f4c6fa18187c25b3797590a9d2" title="Sets the label of a menu item.">SetLabel()</a>, <a class="el" href="classwx_menu.html#a45ae0ae8a1ceed683cbdb0e311989316" title="Returns the help string associated with a menu item.">GetHelpString()</a>, <a class="el" href="classwx_menu.html#afaad5f31ec3abcf830ecdf2532c6e98b" title="Sets an item's help string.">SetHelpString()</a>, <a class="el" href="classwx_menu_item.html" title="A menu item represents an item in a menu.">wxMenuItem</a> </dd></dl>
 
 </div>
@@ -927,7 +927,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Menu item identifier, or wxNOT_FOUND if none is found.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Any special menu codes are stripped out of source and target strings before matching.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Any special menu codes are stripped out of source and target strings before matching.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxMenu::FindItem" ref="ae8844fd2df14981d8699792c3a405806" args="(int id, wxMenu **menu=NULL) const " -->
@@ -1800,7 +1800,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Notice that you can only call this method directly for the popup menus, to change the title of a menu that is part of a menu bar you need to use <a class="el" href="classwx_menu_bar.html#ab21c09c911ec182f1b4fe566350b2437" title="Sets the label of a top-level menu.">wxMenuBar::SetLabelTop()</a>.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Notice that you can only call this method directly for the popup menus, to change the title of a menu that is part of a menu bar you need to use <a class="el" href="classwx_menu_bar.html#ab21c09c911ec182f1b4fe566350b2437" title="Sets the label of a top-level menu.">wxMenuBar::SetLabelTop()</a>.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_menu.html#a4350ea455980ea08d4d3104f69ef4bcb" title="Returns the title of the menu.">GetTitle()</a> </dd></dl>
 
 </div>

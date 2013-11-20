@@ -139,7 +139,7 @@ function toggleVisibility(linkObj) {
 <dd>
 
 if not all characters are being intercepted by your OnKeyDown or OnChar handler, it may be because you are using the <code>wxTAB_TRAVERSAL</code> style, which grabs some keypresses for use by child controls.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>By default, a panel has the same colouring as a dialog.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>By default, a panel has the same colouring as a dialog.</dd></dl>
 <h2>Events emitted by this class</h2>
 <p>The following event handler macros redirect the events to member function handlers '<b>func</b>' with prototypes like:  </p>
 <div class="eventHandler"><span>void&nbsp;handlerFuncName(<a class="el" href="classwx_navigation_key_event.html" title="このイベントクラスはナビゲーションイベントに関する情報を含んでおり、タブやページダウンなどのナビゲーションキーから生成されます。">wxNavigationKeyEvent</a>&amp;&nbsp;event)</span></div><p>Event macros for events emitted by this class:</p>
@@ -421,7 +421,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Changes the panel's colour to conform to the current settings (Windows only). Add an event table entry for your panel class if you wish the behaviour to be different (such as keeping a user-defined background colour). If you do override this function, call <a class="el" href="classwx_event.html#a98eb20b76106f9a933c2eb3ee119f66c" title="この関数はイベントハンドラの中で使用し、現在のイベントハンドラの処理が終わった後にさらにイベントハンドラを呼び出すかどうかを制御します。">wxEvent::Skip()</a> to propagate the notification to child windows and controls.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Changes the panel's colour to conform to the current settings (Windows only). Add an event table entry for your panel class if you wish the behaviour to be different (such as keeping a user-defined background colour). If you do override this function, call <a class="el" href="classwx_event.html#a98eb20b76106f9a933c2eb3ee119f66c" title="この関数はイベントハンドラの中で使用し、現在のイベントハンドラの処理が終わった後にさらにイベントハンドラを呼び出すかどうかを制御します。">wxEvent::Skip()</a> to propagate the notification to child windows and controls.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_sys_colour_changed_event.html" title="This class is used for system colour change events, which are generated when the user changes the col...">wxSysColourChangedEvent</a> </dd></dl>
 
 </div>

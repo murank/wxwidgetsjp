@@ -305,7 +305,7 @@ template&lt;typename T &gt;  </div>
 <div class="memdoc">
 
 <p>Constructs <a class="el" href="classwx_any.html" title="The wxAny class represents a container for any type.">wxAny</a>, converting value from <a class="el" href="classwx_variant.html" title="The wxVariant class represents a container for any type.">wxVariant</a>.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Because of this conversion, it is not usually possible to have <a class="el" href="classwx_any.html" title="The wxAny class represents a container for any type.">wxAny</a> that actually holds a <a class="el" href="classwx_variant.html" title="The wxVariant class represents a container for any type.">wxVariant</a>. If <a class="el" href="classwx_variant.html" title="The wxVariant class represents a container for any type.">wxVariant</a> cannot be converted to a specific data type, <a class="el" href="classwx_any.html" title="The wxAny class represents a container for any type.">wxAny</a> will then hold and manage reference to wxVariantData* similar to how <a class="el" href="classwx_variant.html" title="The wxVariant class represents a container for any type.">wxVariant</a> does.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Because of this conversion, it is not usually possible to have <a class="el" href="classwx_any.html" title="The wxAny class represents a container for any type.">wxAny</a> that actually holds a <a class="el" href="classwx_variant.html" title="The wxVariant class represents a container for any type.">wxVariant</a>. If <a class="el" href="classwx_variant.html" title="The wxVariant class represents a container for any type.">wxVariant</a> cannot be converted to a specific data type, <a class="el" href="classwx_any.html" title="The wxAny class represents a container for any type.">wxAny</a> will then hold and manage reference to wxVariantData* similar to how <a class="el" href="classwx_variant.html" title="The wxVariant class represents a container for any type.">wxVariant</a> does.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxAny::~wxAny" ref="a2073a5bead2fc7929778a6b80c5e41a2" args="()" -->
@@ -347,7 +347,7 @@ template&lt;typename T &gt;  </div>
 
 <p>This template function converts <a class="el" href="classwx_any.html" title="The wxAny class represents a container for any type.">wxAny</a> into given type.  </p>
 <p>In most cases no type conversion is performed, so if the type is incorrect an assertion failure will occur.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>For conveniency, conversion is done when T is <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>. This is useful when a string literal (which are treated as const char* and const wchar_t*) has been assigned to <a class="el" href="classwx_any.html" title="The wxAny class represents a container for any type.">wxAny</a>.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>For conveniency, conversion is done when T is <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>. This is useful when a string literal (which are treated as const char* and const wchar_t*) has been assigned to <a class="el" href="classwx_any.html" title="The wxAny class represents a container for any type.">wxAny</a>.</dd></dl>
 <p>This template function may not work properly with Visual C++ 6. For full compiler compatibility, please use <a class="el" href="any_8h.html#a718197eac6fd06ce8cd60b868536852c" title="This is value getter macro that is more compatible with older compilers, such as Visual C++ 6...">wxANY_AS(any, T)</a> macro instead.  </p>
 
 </div>
@@ -370,7 +370,7 @@ template&lt;typename T &gt;  </div>
 <div class="memdoc">
 
 <p>Use this template function for checking if this <a class="el" href="classwx_any.html" title="The wxAny class represents a container for any type.">wxAny</a> holds a specific C++ data type.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This template function may not work properly with Visual C++ 6. For full compiler compatibility, please use <a class="el" href="any_8h.html#a50295ab114c98f18da22360091b590c9" title="This is type checking macro that is more compatible with older compilers, such as Visual C++ 6...">wxANY_CHECK_TYPE(any, T)</a> macro instead.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This template function may not work properly with Visual C++ 6. For full compiler compatibility, please use <a class="el" href="any_8h.html#a50295ab114c98f18da22360091b590c9" title="This is type checking macro that is more compatible with older compilers, such as Visual C++ 6...">wxANY_CHECK_TYPE(any, T)</a> macro instead.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_any_value_type.html#a331dd31c6de02ff4b32259e2fe6742ea" title="Use this template function for checking if wxAnyValueType represents a specific C++ data type...">wxAnyValueType::CheckType()</a> </dd></dl>
 
 </div>
@@ -433,7 +433,7 @@ template&lt;typename T &gt;  </div>
 <div class="memdoc">
 
 <p>Returns the value type as <a class="el" href="classwx_any_value_type.html" title="wxAnyValueType is base class for value type functionality for C++ data types used with wxAny...">wxAnyValueType</a> instance.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>You cannot reliably test whether two wxAnys are of same value type by simply comparing return values of <a class="el" href="classwx_any.html#a567f458f2e8fc8ffdfe38905d6c5e1da" title="Returns the value type as wxAnyValueType instance.">wxAny::GetType()</a>. Instead, use <a class="el" href="classwx_any.html#a903c00884bde666fb5dc178cb355be8b" title="Returns true if this and another wxAny have the same value type.">wxAny::HasSameType()</a>.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>You cannot reliably test whether two wxAnys are of same value type by simply comparing return values of <a class="el" href="classwx_any.html#a567f458f2e8fc8ffdfe38905d6c5e1da" title="Returns the value type as wxAnyValueType instance.">wxAny::GetType()</a>. Instead, use <a class="el" href="classwx_any.html#a903c00884bde666fb5dc178cb355be8b" title="Returns true if this and another wxAny have the same value type.">wxAny::HasSameType()</a>.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_any.html#a903c00884bde666fb5dc178cb355be8b" title="Returns true if this and another wxAny have the same value type.">HasSameType()</a> </dd></dl>
 
 </div>

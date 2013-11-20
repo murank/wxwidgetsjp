@@ -134,7 +134,7 @@ function toggleVisibility(linkObj) {
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Base class for custom <a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a> editors.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd><ul>
+<dl class="remark"><dt><b>注意:</b></dt><dd><ul>
 <li>Names of built-in property editors are: TextCtrl, Choice, ComboBox, CheckBox, TextCtrlAndButton, and ChoiceAndButton. Additional editors include SpinCtrl and DatePickerCtrl, but using them requires calling <a class="el" href="classwx_property_grid_interface.html#a330dc911b08378e967955f8a6a938612" title="Initializes additional property editors (SpinCtrl etc.).">wxPropertyGrid::RegisterAdditionalEditors()</a> prior use.</li>
 </ul>
 </dd></dl>
@@ -289,7 +289,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd><ul>
+<dl class="remark"><dt><b>注意:</b></dt><dd><ul>
 <li>Primary control shall use id wxPG_SUBID1, and secondary (button) control shall use wxPG_SUBID2.</li>
 <li>Unlike in previous version of <a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a>, it is no longer necessary to call <a class="el" href="classwx_evt_handler.html#a78719e8b82c9f9c6e4056b3449df1943" title="Connects the given function dynamically with the event handler, id and event type.">wxEvtHandler::Connect()</a> for interesting editor events. Instead, all events from control are now automatically forwarded to <a class="el" href="classwx_p_g_editor.html#a035fa3bee4ac87e4300df0c637a56261" title="Handles events.">wxPGEditor::OnEvent()</a> and <a class="el" href="classwx_p_g_property.html#a16fbe26240bf47ab0a9a02d21781da73" title="Events received by editor widgets are processed here.">wxPGProperty::OnEvent()</a>.  </li>
 </ul>
@@ -498,7 +498,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Handles events.  </p>
 <p>Returns <span class="literal">true</span> if value in control was modified (see <a class="el" href="classwx_p_g_property.html#a16fbe26240bf47ab0a9a02d21781da73" title="Events received by editor widgets are processed here.">wxPGProperty::OnEvent()</a> for more information).</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd><a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a> will automatically unfocus the editor when <code>wxEVT_COMMAND_TEXT_ENTER</code> is received and when it results in property value being modified. This happens regardless of editor type (ie. behaviour is same for any <a class="el" href="classwx_text_ctrl.html" title="テキストの表示と編集が可能なテキストコントロール。">wxTextCtrl</a> and <a class="el" href="classwx_combo_box.html" title="A combobox is like a combination of an edit control and a listbox.">wxComboBox</a> based editor).  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd><a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a> will automatically unfocus the editor when <code>wxEVT_COMMAND_TEXT_ENTER</code> is received and when it results in property value being modified. This happens regardless of editor type (ie. behaviour is same for any <a class="el" href="classwx_text_ctrl.html" title="テキストの表示と編集が可能なテキストコントロール。">wxTextCtrl</a> and <a class="el" href="classwx_combo_box.html" title="A combobox is like a combination of an edit control and a listbox.">wxComboBox</a> based editor).  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPGEditor::OnFocus" ref="a479f4ec8deeb41a41c5427f4e506c499" args="(wxPGProperty *property, wxWindow *wnd) const " -->

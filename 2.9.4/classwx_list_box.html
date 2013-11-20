@@ -383,7 +383,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Constructor, creating and showing a list box.  </p>
-<p>See the other <a class="el" href="classwx_list_box.html#a63347db33d1ae5a10c8eb54b3d556b56" title="Default constructor.">wxListBox()</a> constructor; the only difference is that this overload takes a <a class="el" href="classwx_array_string.html" title="wxArrayString is an efficient container for storing wxString objects.">wxArrayString</a> instead of a pointer to an array of <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>.</p>
+<p>See the other <a class="el" href="classwx_list_box.html#a63347db33d1ae5a10c8eb54b3d556b56" title="Default constructor.">wxListBox()</a> constructor; the only difference is that this overload takes a <a class="el" href="classwx_array_string.html" title="wxArrayString は wxString オブジェクトを効率的に格納するためのコンテナです。">wxArrayString</a> instead of a pointer to an array of <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a>.</p>
 <p><b>wxPerl Note:</b> Use an array reference for the <em>choices</em> parameter.  </p>
 
 </div>
@@ -571,7 +571,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This applies to multiple selection listboxes only.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This applies to multiple selection listboxes only.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxListBox::EnsureVisible" ref="a152fc29cfc7877e8bdb1f0ec21b67014" args="(int n)" -->
@@ -673,7 +673,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the index of the selected item or <code>wxNOT_FOUND</code> if no item is selected.  </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The position of the current selection.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This method can be used with single selection list boxes only, you should use <a class="el" href="classwx_list_box.html#abe7c5010843f2b3522036588b5298427" title="Fill an array of ints with the positions of the currently selected items.">wxListBox::GetSelections()</a> for the list boxes with wxLB_MULTIPLE style.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This method can be used with single selection list boxes only, you should use <a class="el" href="classwx_list_box.html#abe7c5010843f2b3522036588b5298427" title="Fill an array of ints with the positions of the currently selected items.">wxListBox::GetSelections()</a> for the list boxes with wxLB_MULTIPLE style.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_list_box.html#a65fd7fd5e3b8e7451b225b581ead70b1" title="Sets the selection to the given item n or removes the selection entirely if n == wxNOT_FOUND.">SetSelection()</a>, <a class="el" href="classwx_item_container_immutable.html#ad4e81fb20f75c3cd6b277ed639087e28" title="Returns the label of the selected item or an empty string if no item is selected.">GetStringSelection()</a> </dd></dl>
 
 <p>Implements <a class="el" href="classwx_item_container_immutable.html#a18a7cb1a652772d5cb8adc52be1efea0">wxItemContainerImmutable</a>.</p>
@@ -703,7 +703,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>The number of selections.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Use this with a multiple selection listbox.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Use this with a multiple selection listbox.</dd></dl>
 <p><b>wxPerl Note:</b> In wxPerl this method takes no parameters and return the selected items as a list.</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_item_container_immutable.html#a18a7cb1a652772d5cb8adc52be1efea0" title="Returns the index of the selected item or wxNOT_FOUND if no item is selected.">wxControlWithItems::GetSelection</a>, <a class="el" href="classwx_item_container_immutable.html#ad4e81fb20f75c3cd6b277ed639087e28" title="Returns the label of the selected item or an empty string if no item is selected.">wxControlWithItems::GetStringSelection</a>, <a class="el" href="classwx_item_container_immutable.html#aea97d8ee51e7af5e06befd5f8c9d793b" title="Sets the selection to the given item n or removes the selection entirely if n == wxNOT_FOUND.">wxControlWithItems::SetSelection</a> </dd></dl>
 

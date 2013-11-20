@@ -136,7 +136,7 @@ function toggleVisibility(linkObj) {
 <div class="textblock"><p>フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。 </p>
 <p>It usually has thick borders and a title bar, and can optionally contain a menu bar, toolbar and status bar. A frame can contain any window that is not a frame or dialog.</p>
 <p>A frame that has a status bar and toolbar, created via the <a class="el" href="classwx_frame.html#aaa5134dcecc1ec77386465a327dd0a21" title="Creates a status bar at the bottom of the frame.">CreateStatusBar()</a> and <a class="el" href="classwx_frame.html#a529698edc2fd2037ac8578dadafad0e2" title="Creates a toolbar at the top or left of the frame.">CreateToolBar()</a> functions, manages these windows and adjusts the value returned by <a class="el" href="classwx_window.html#ae56fc53268b815b58570f66bfc33838f" title="Returns the size of the window 'client area' in pixels.">GetClientSize()</a> to reflect the remaining size available to application windows.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>An application should normally define an <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a> handler for the frame to respond to system close events, for example so that related data and subwindows can be cleaned up.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>An application should normally define an <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a> handler for the frame to respond to system close events, for example so that related data and subwindows can be cleaned up.</dd></dl>
 <h2><a class="anchor" id="frame_defaultevent"></a>
 
 Default event processing</h2>
@@ -324,7 +324,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>For Motif, MWM (the Motif Window Manager) should be running for any window styles to work (otherwise all styles take effect).</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>For Motif, MWM (the Motif Window Manager) should be running for any window styles to work (otherwise all styles take effect).</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_frame.html#a6541d1aab71fc90041bfdde6e8705add" title="Used in two-step frame construction.">Create()</a> </dd></dl>
 
 </div>
@@ -489,7 +489,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>A pointer to the status bar if it was created successfully, <span class="literal">NULL</span> otherwise.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>The width of the status bar is the whole width of the frame (adjusted automatically when resizing), and the height and text size are chosen by the host windowing system.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>The width of the status bar is the whole width of the frame (adjusted automatically when resizing), and the height and text size are chosen by the host windowing system.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_frame.html#a0026c883df35e1d1f8818e229c41249f" title="Sets the status bar text and redraws the status bar.">SetStatusText()</a>, <a class="el" href="classwx_frame.html#a34c3472eb2e8a7a355d4282d2e08eca7" title="Virtual function called when a status bar is requested by CreateStatusBar().">OnCreateStatusBar()</a>, <a class="el" href="classwx_frame.html#a6f14d67263cba3440d7bf8dd253c12ef" title="Returns a pointer to the status bar currently associated with the frame (if any).">GetStatusBar()</a> </dd></dl>
 
 </div>
@@ -535,7 +535,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>A pointer to the toolbar if it was created successfully, <span class="literal">NULL</span> otherwise.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>By default, the toolbar is an instance of <a class="el" href="classwx_tool_bar.html" title="A toolbar is a bar of buttons and/or other controls usually placed below the menu bar in a wxFrame...">wxToolBar</a>. To use a different class, override <a class="el" href="classwx_frame.html#a45277b2ee2d95e792da16fee2aa8fdcc" title="Virtual function called when a toolbar is requested by CreateToolBar().">OnCreateToolBar()</a>. When a toolbar has been created with this function, or made known to the frame with <a class="el" href="classwx_frame.html#ab4017f727aa97560f51457d7302b0ca5" title="Associates a toolbar with the frame.">wxFrame::SetToolBar()</a>, the frame will manage the toolbar position and adjust the return value from <a class="el" href="classwx_window.html#ae56fc53268b815b58570f66bfc33838f" title="Returns the size of the window 'client area' in pixels.">wxWindow::GetClientSize()</a> to reflect the available space for application windows. Under Pocket PC, you should always use this function for creating the toolbar to be managed by the frame, so that wxWidgets can use a combined menubar and toolbar. Where you manage your own toolbars, create a <a class="el" href="classwx_tool_bar.html" title="A toolbar is a bar of buttons and/or other controls usually placed below the menu bar in a wxFrame...">wxToolBar</a> as usual.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>By default, the toolbar is an instance of <a class="el" href="classwx_tool_bar.html" title="A toolbar is a bar of buttons and/or other controls usually placed below the menu bar in a wxFrame...">wxToolBar</a>. To use a different class, override <a class="el" href="classwx_frame.html#a45277b2ee2d95e792da16fee2aa8fdcc" title="Virtual function called when a toolbar is requested by CreateToolBar().">OnCreateToolBar()</a>. When a toolbar has been created with this function, or made known to the frame with <a class="el" href="classwx_frame.html#ab4017f727aa97560f51457d7302b0ca5" title="Associates a toolbar with the frame.">wxFrame::SetToolBar()</a>, the frame will manage the toolbar position and adjust the return value from <a class="el" href="classwx_window.html#ae56fc53268b815b58570f66bfc33838f" title="Returns the size of the window 'client area' in pixels.">wxWindow::GetClientSize()</a> to reflect the available space for application windows. Under Pocket PC, you should always use this function for creating the toolbar to be managed by the frame, so that wxWidgets can use a combined menubar and toolbar. Where you manage your own toolbars, create a <a class="el" href="classwx_tool_bar.html" title="A toolbar is a bar of buttons and/or other controls usually placed below the menu bar in a wxFrame...">wxToolBar</a> as usual.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_frame.html#aaa5134dcecc1ec77386465a327dd0a21" title="Creates a status bar at the bottom of the frame.">CreateStatusBar()</a>, <a class="el" href="classwx_frame.html#a45277b2ee2d95e792da16fee2aa8fdcc" title="Virtual function called when a toolbar is requested by CreateToolBar().">OnCreateToolBar()</a>, <a class="el" href="classwx_frame.html#ab4017f727aa97560f51457d7302b0ca5" title="Associates a toolbar with the frame.">SetToolBar()</a>, <a class="el" href="classwx_frame.html#aa9256e3e483df4fc3403585047c96dbc" title="Returns a pointer to the toolbar currently associated with the frame (if any).">GetToolBar()</a> </dd></dl>
 
 </div>
@@ -685,7 +685,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>A status bar object.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>An application can override this function to return a different kind of status bar. The default implementation returns an instance of <a class="el" href="classwx_status_bar.html" title="A status bar is a narrow window that can be placed along the bottom of a frame to give small amounts ...">wxStatusBar</a>.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>An application can override this function to return a different kind of status bar. The default implementation returns an instance of <a class="el" href="classwx_status_bar.html" title="A status bar is a narrow window that can be placed along the bottom of a frame to give small amounts ...">wxStatusBar</a>.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_frame.html#aaa5134dcecc1ec77386465a327dd0a21" title="Creates a status bar at the bottom of the frame.">CreateStatusBar()</a>, <a class="el" href="classwx_status_bar.html" title="A status bar is a narrow window that can be placed along the bottom of a frame to give small amounts ...">wxStatusBar</a>.  </dd></dl>
 
 </div>
@@ -731,7 +731,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>A toolbar object.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>An application can override this function to return a different kind of toolbar. The default implementation returns an instance of <a class="el" href="classwx_tool_bar.html" title="A toolbar is a bar of buttons and/or other controls usually placed below the menu bar in a wxFrame...">wxToolBar</a>.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>An application can override this function to return a different kind of toolbar. The default implementation returns an instance of <a class="el" href="classwx_tool_bar.html" title="A toolbar is a bar of buttons and/or other controls usually placed below the menu bar in a wxFrame...">wxToolBar</a>.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_frame.html#a529698edc2fd2037ac8578dadafad0e2" title="Creates a toolbar at the top or left of the frame.">CreateToolBar()</a>, <a class="el" href="classwx_tool_bar.html" title="A toolbar is a bar of buttons and/or other controls usually placed below the menu bar in a wxFrame...">wxToolBar</a>.  </dd></dl>
 
 </div>
@@ -827,7 +827,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>If the frame is destroyed, the menu bar and its menus will be destroyed also, so do not delete the menu bar explicitly (except by resetting the frame's menu bar to another frame or <span class="literal">NULL</span>). Under Windows, a size event is generated, so be sure to initialize data members properly before calling <a class="el" href="classwx_frame.html#a83e63c48e1a3f14e661de3ccd434cbbf" title="Tells the frame to show the given menu bar.">SetMenuBar()</a>. Note that on some platforms, it is not possible to call this function twice for the same frame object.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>If the frame is destroyed, the menu bar and its menus will be destroyed also, so do not delete the menu bar explicitly (except by resetting the frame's menu bar to another frame or <span class="literal">NULL</span>). Under Windows, a size event is generated, so be sure to initialize data members properly before calling <a class="el" href="classwx_frame.html#a83e63c48e1a3f14e661de3ccd434cbbf" title="Tells the frame to show the given menu bar.">SetMenuBar()</a>. Note that on some platforms, it is not possible to call this function twice for the same frame object.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_frame.html#aa71c4e210aac131e9361529393ad6638" title="Returns a pointer to the menubar currently associated with the frame (if any).">GetMenuBar()</a>, <a class="el" href="classwx_menu_bar.html" title="A menu bar is a series of menus accessible from the top of a frame.">wxMenuBar</a>, <a class="el" href="classwx_menu.html" title="A menu is a popup (or pull down) list of items, one of which may be selected before the menu goes awa...">wxMenu</a>.  </dd></dl>
 
 </div>
@@ -906,7 +906,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Use an empty string to clear the status bar.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Use an empty string to clear the status bar.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_frame.html#aaa5134dcecc1ec77386465a327dd0a21" title="Creates a status bar at the bottom of the frame.">CreateStatusBar()</a>, <a class="el" href="classwx_status_bar.html" title="A status bar is a narrow window that can be placed along the bottom of a frame to give small amounts ...">wxStatusBar</a> </dd></dl>
 
 </div>
@@ -944,7 +944,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>The widths of the variable fields are calculated from the total width of all fields, minus the sum of widths of the non-variable fields, divided by the number of variable fields.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>The widths of the variable fields are calculated from the total width of all fields, minus the sum of widths of the non-variable fields, divided by the number of variable fields.</dd></dl>
 <p><b>wxPerl Note:</b> In wxPerl this method takes the field widths as parameters.  </p>
 
 </div>

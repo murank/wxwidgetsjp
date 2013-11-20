@@ -128,7 +128,7 @@ function toggleVisibility(linkObj) {
 <div class="textblock"><p>The <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> class has been completely rewritten for wxWidgets 3.0 and this change was actually the main reason for the calling that version wxWidgets 3.0.  </p>
 <p><a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> is a class representing a Unicode character string. <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> uses <code>std::basic_string</code> internally (even if <code>wxUSE_STL</code> is not defined) to store its content (unless this is not supported by the compiler or disabled specifically when building wxWidgets) and it therefore inherits many features from <code>std::basic_string</code>. (Note that most implementations of <code>std::basic_string</code> are thread-safe and don't use reference counting.)</p>
 <p>These <code>std::basic_string</code> standard functions are only listed here, but they are not fully documented in this manual; see the STL documentation (<a href="http://www.cppreference.com/wiki/string/start">http://www.cppreference.com/wiki/string/start</a>) for more info. The behaviour of all these functions is identical to the behaviour described there.</p>
-<p>You may notice that <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> sometimes has several functions which do the same thing like <a class="el" href="classwx_string.html#a8895cca03120099236c002c0577b4d1c" title="Returns the length of the string (same as Len).">Length()</a>, <a class="el" href="classwx_string.html#ab20a87ca731a52c36ec674dae2213ad8" title="Returns the length of the string.">Len()</a> and <a class="el" href="classwx_string.html#af63f200410b56436a830550905e20539">length()</a> which all return the string length. In all cases of such duplication the <code>std::string</code> compatible methods should be used.</p>
+<p>You may notice that <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> sometimes has several functions which do the same thing like <a class="el" href="classwx_string.html#a8895cca03120099236c002c0577b4d1c" title="文字列の長さを返却します (Len と同じです)。">Length()</a>, <a class="el" href="classwx_string.html#ab20a87ca731a52c36ec674dae2213ad8" title="文字列の長さを返却します。">Len()</a> and <a class="el" href="classwx_string.html#af63f200410b56436a830550905e20539">length()</a> which all return the string length. In all cases of such duplication the <code>std::string</code> compatible methods should be used.</p>
 <p>For informations about the internal encoding used by <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> and for important warnings and advices for using it, please read the <a class="el" href="overview_string.html">wxString Overview</a>.</p>
 <p>Since wxWidgets 3.0 <a class="el" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> always stores Unicode strings, so you should be sure to read also <a class="el" href="overview_unicode.html">Unicode Support in wxWidgets</a>.</p>
 <h2><a class="anchor" id="string_index"></a>
@@ -154,7 +154,7 @@ Index of the member groups</h2>
 </ul>
 <h2></h2>
 <div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxbase">wxBase</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__data.html">Data Structures</a></span></div><p><span class="stdobj">Predefined objects/pointers:</span> <a class="el" href="interface_2wx_2string_8h.html#a9a321d587166a30017b608dd2d234033" title="The global wxString instance of an empty string.">wxEmptyString</a></p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_string.html">wxString Overview</a>, <a class="el" href="overview_unicode.html">Unicode Support in wxWidgets</a>, <a class="el" href="group__group__funcmacro__string.html">String-related functions</a>, <a class="el" href="classwx_u_string.html" title="wxUString is a class representing a Unicode character string where each character is stored using a 3...">wxUString</a>, <a class="el" href="classwx_char_buffer.html" title="これは char 型による wxCharTypeBuffer&lt;T&gt; の特殊化です。">wxCharBuffer</a>, <a class="el" href="classwx_uni_char.html" title="このクラスはひとつの Unicode 文字を表します。">wxUniChar</a>, <a class="el" href="classwx_string_tokenizer.html" title="wxStringTokenizer helps you to break a string up into a number of tokens.">wxStringTokenizer</a>, <a class="el" href="classwx_string_buffer.html" title="This tiny class allows you to conveniently access the wxString internal buffer as a writable pointer ...">wxStringBuffer</a>, <a class="el" href="classwx_string_buffer_length.html" title="This tiny class allows you to conveniently access the wxString internal buffer as a writable pointer ...">wxStringBufferLength</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_string.html">wxString Overview</a>, <a class="el" href="overview_unicode.html">Unicode Support in wxWidgets</a>, <a class="el" href="group__group__funcmacro__string.html">String-related functions</a>, <a class="el" href="classwx_u_string.html" title="wxUString は各文字が 32 ビット値に格納される Unicode 文字列を表したクラスです。">wxUString</a>, <a class="el" href="classwx_char_buffer.html" title="これは char 型による wxCharTypeBuffer&lt;T&gt; の特殊化です。">wxCharBuffer</a>, <a class="el" href="classwx_uni_char.html" title="このクラスはひとつの Unicode 文字を表します。">wxUniChar</a>, <a class="el" href="classwx_string_tokenizer.html" title="wxStringTokenizer は文字列を複数のトークンに分割することを支援します。">wxStringTokenizer</a>, <a class="el" href="classwx_string_buffer.html" title="This tiny class allows you to conveniently access the wxString internal buffer as a writable pointer ...">wxStringBuffer</a>, <a class="el" href="classwx_string_buffer_length.html" title="This tiny class allows you to conveniently access the wxString internal buffer as a writable pointer ...">wxStringBufferLength</a> </dd></dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 
@@ -222,9 +222,9 @@ Public Member Functions</h2></td></tr>
 <p>See also the <a class="el" href="classwx_string.html#af63f200410b56436a830550905e20539">length()</a>, <a class="el" href="classwx_string.html#aba423303c6e0580605269827e4744761">size()</a> or <a class="el" href="classwx_string.html#ac6ae24a8ccc6e4e671f972948fca437c">empty()</a> STL-like functions.  </p>
 </div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_string.html#ab20a87ca731a52c36ec674dae2213ad8">Len</a> () const  </td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the length of the string.    <a href="#ab20a87ca731a52c36ec674dae2213ad8"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列の長さを返却します。  <a href="#ab20a87ca731a52c36ec674dae2213ad8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_string.html#a8895cca03120099236c002c0577b4d1c">Length</a> () const  </td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the length of the string (same as Len).    <a href="#a8895cca03120099236c002c0577b4d1c"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列の長さを返却します (Len と同じです)。  <a href="#a8895cca03120099236c002c0577b4d1c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_string.html#ace32756bab999f8aae9be0cf981fc449">IsEmpty</a> () const  </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns <span class="literal">true</span> if the string is empty.    <a href="#ace32756bab999f8aae9be0cf981fc449"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_string.html#ae0a2020695a6ecd9ee49c14fe7429176">IsNull</a> () const  </td></tr>
@@ -303,7 +303,7 @@ Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Concatenation</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="concat"></a></p>
 <p>Almost anything may be concatenated (appended to) with a string!</p>
-<p>Note that the various <a class="el" href="classwx_string.html#a8d96a72afdc434512dee502353730b6a" title="Appends the string literal psz.">operator&lt;&lt;()</a> overloads work as C++ stream insertion operators. They insert the given value into the string. Precision and format cannot be set using them. Use <a class="el" href="classwx_string.html#a9588b7f2684b9a6a924dc3746a2b2f8d" title="Similar to the standard function sprintf().">Printf()</a> instead.</p>
+<p>Note that the various <a class="el" href="classwx_string.html#a8d96a72afdc434512dee502353730b6a" title="Appends the string literal psz.">operator&lt;&lt;()</a> overloads work as C++ stream insertion operators. They insert the given value into the string. Precision and format cannot be set using them. Use <a class="el" href="classwx_string.html#a9588b7f2684b9a6a924dc3746a2b2f8d" title="標準の sprintf() 関数と似ています。">Printf()</a> instead.</p>
 <p>See also the <a class="el" href="classwx_string.html#af81fb656038da7c98f62317f55db15a4">insert()</a> and <a class="el" href="classwx_string.html#aa07c1e103eea1da6bfd91a6aa33bfa15">append()</a> STL-like functions.  </p>
 </div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_string.html">wxString</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_string.html#a2faf8f428d7fac92e11f00a017ab46b3">Append</a> (const char *psz)</td></tr>
@@ -427,7 +427,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_string.html">wxString</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_string.html#af862e46d093e1e52fbc4f204e9aea34f">MakeUpper</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts all characters to upper case and returns the reference to the modified string.    <a href="#af862e46d093e1e52fbc4f204e9aea34f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwx_string.html">wxString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_string.html#ab84d4b6e9f38ba939d61f3382d2a009b">Upper</a> () const  </td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns this string converted to upper case.    <a href="#ab84d4b6e9f38ba939d61f3382d2a009b"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">大文字へ変換した文字列を返却します。  <a href="#ab84d4b6e9f38ba939d61f3382d2a009b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_string.html#ab708a3eb6b01704bc0019f1cf0de5b4f">UpperCase</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The same as <a class="el" href="classwx_string.html#af862e46d093e1e52fbc4f204e9aea34f" title="Converts all characters to upper case and returns the reference to the modified string.">MakeUpper()</a>.    <a href="#ab708a3eb6b01704bc0019f1cf0de5b4f"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Searching and replacing</div></td></tr>
@@ -478,7 +478,7 @@ Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Memory management</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="mem"></a></p>
 <p>The following are "advanced" functions and they will be needed rarely.</p>
-<p><a class="el" href="classwx_string.html#a87e614d9924a1b5524334aac3fc96d38" title="Preallocate enough space for wxString to store nLen characters.">Alloc()</a> and <a class="el" href="classwx_string.html#ae81a1f0b72aa33325f922aa50579de59" title="Minimizes the string's memory.">Shrink()</a> are only interesting for optimization purposes. <a class="el" href="classwx_string_buffer.html" title="This tiny class allows you to conveniently access the wxString internal buffer as a writable pointer ...">wxStringBuffer</a> and <a class="el" href="classwx_string_buffer_length.html" title="This tiny class allows you to conveniently access the wxString internal buffer as a writable pointer ...">wxStringBufferLength</a> classes may be very useful when working with some external API which requires the caller to provide a writable buffer.</p>
+<p><a class="el" href="classwx_string.html#a87e614d9924a1b5524334aac3fc96d38" title="nLen 文字を格納するために必要なメモリを wxString に事前に割り当てる。">Alloc()</a> and <a class="el" href="classwx_string.html#ae81a1f0b72aa33325f922aa50579de59" title="Minimizes the string's memory.">Shrink()</a> are only interesting for optimization purposes. <a class="el" href="classwx_string_buffer.html" title="This tiny class allows you to conveniently access the wxString internal buffer as a writable pointer ...">wxStringBuffer</a> and <a class="el" href="classwx_string_buffer_length.html" title="This tiny class allows you to conveniently access the wxString internal buffer as a writable pointer ...">wxStringBufferLength</a> classes may be very useful when working with some external API which requires the caller to provide a writable buffer.</p>
 <p>See also the <a class="el" href="classwx_string.html#a3fa50b251ca98e1e5d2aa8d73c688b57">reserve()</a> and <a class="el" href="classwx_string.html#ab79b33581860edeced7855c70af192d5">resize()</a> STL-like functions.  </p>
 </div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_string.html#a87e614d9924a1b5524334aac3fc96d38">Alloc</a> (size_t nLen)</td></tr>
@@ -625,7 +625,7 @@ Public Member Functions</h2></td></tr>
 
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwx_string.html">wxString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_string.html#addd9ccfa3ae2b7ab2d66bcbf034d0be0">Format</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;format,...)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This static function returns the string containing the result of calling <a class="el" href="classwx_string.html#a9588b7f2684b9a6a924dc3746a2b2f8d" title="Similar to the standard function sprintf().">Printf()</a> with the passed parameters on it.    <a href="#addd9ccfa3ae2b7ab2d66bcbf034d0be0"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This static function returns the string containing the result of calling <a class="el" href="classwx_string.html#a9588b7f2684b9a6a924dc3746a2b2f8d" title="標準の sprintf() 関数と似ています。">Printf()</a> with the passed parameters on it.    <a href="#addd9ccfa3ae2b7ab2d66bcbf034d0be0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwx_string.html">wxString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_string.html#aa7bc330dcb0248bb8e886d27c4983ef5">FormatV</a> (const <a class="el" href="classwx_string.html">wxString</a> &amp;format, va_list argptr)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">This static function returns the string containing the result of calling <a class="el" href="classwx_string.html#a5670779cbafb35c454a6d7664b6a6064" title="Similar to vprintf.">PrintfV()</a> with the passed parameters on it.    <a href="#aa7bc330dcb0248bb8e886d27c4983ef5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwx_string.html">wxString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_string.html#a12be0249db64b0c53339cb79dcaa2add">FromCDouble</a> (double val, int precision=-1)</td></tr>
@@ -1236,7 +1236,7 @@ Static Public Attributes</h2></td></tr>
 
                 <span class="keywordtype">size_t</span> len = original.<a class="code" href="classwx_string.html#af63f200410b56436a830550905e20539">length</a>();
 
-                result.<a class="code" href="classwx_string.html#a87e614d9924a1b5524334aac3fc96d38" title="Preallocate enough space for wxString to store nLen characters.">Alloc</a>(len);
+                result.<a class="code" href="classwx_string.html#a87e614d9924a1b5524334aac3fc96d38" title="nLen 文字を格納するために必要なメモリを wxString に事前に割り当てる。">Alloc</a>(len);
 
                 <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> n = 0; n &lt; len; n++ )
                 {
@@ -1775,7 +1775,7 @@ Static Public Attributes</h2></td></tr>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">ch</td><td>The character to look for.  </td></tr>
-    <tr><td class="paramname">rest</td><td>Filled with the part of the string following the first occurrence of <em>ch</em> or cleared if it was not found. The same string is returned by <a class="el" href="classwx_string.html#a1605126b7bbf5f60a6fca7f393a58f1d" title="Gets all the characters after the first occurrence of ch.">AfterFirst()</a> but it is more efficient to use this output parameter if both the "before" and "after" parts are needed than calling both functions one after the other. This parameter is available in wxWidgets version 2.9.2 and later only.  </td></tr>
+    <tr><td class="paramname">rest</td><td>Filled with the part of the string following the first occurrence of <em>ch</em> or cleared if it was not found. The same string is returned by <a class="el" href="classwx_string.html#a1605126b7bbf5f60a6fca7f393a58f1d" title="ch が最初に登場した位置以降のすべての文字列を取得します。">AfterFirst()</a> but it is more efficient to use this output parameter if both the "before" and "after" parts are needed than calling both functions one after the other. This parameter is available in wxWidgets version 2.9.2 and later only.  </td></tr>
   </table>
   </dd>
 </dl>
@@ -3338,8 +3338,8 @@ Static Public Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>This static function returns the string containing the result of calling <a class="el" href="classwx_string.html#a9588b7f2684b9a6a924dc3746a2b2f8d" title="Similar to the standard function sprintf().">Printf()</a> with the passed parameters on it.  </p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_string.html#aa7bc330dcb0248bb8e886d27c4983ef5" title="This static function returns the string containing the result of calling PrintfV() with the passed pa...">FormatV()</a>, <a class="el" href="classwx_string.html#a9588b7f2684b9a6a924dc3746a2b2f8d" title="Similar to the standard function sprintf().">Printf()</a> </dd></dl>
+<p>This static function returns the string containing the result of calling <a class="el" href="classwx_string.html#a9588b7f2684b9a6a924dc3746a2b2f8d" title="標準の sprintf() 関数と似ています。">Printf()</a> with the passed parameters on it.  </p>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_string.html#aa7bc330dcb0248bb8e886d27c4983ef5" title="This static function returns the string containing the result of calling PrintfV() with the passed pa...">FormatV()</a>, <a class="el" href="classwx_string.html#a9588b7f2684b9a6a924dc3746a2b2f8d" title="標準の sprintf() 関数と似ています。">Printf()</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxString::FormatV" ref="aa7bc330dcb0248bb8e886d27c4983ef5" args="(const wxString &amp;format, va_list argptr)" -->
@@ -4310,7 +4310,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Returns the length of the string.  </p>
+<p>文字列の長さを返却します。 </p>
 
 </div>
 </div><!-- doxytag: member="wxString::Length" ref="a8895cca03120099236c002c0577b4d1c" args="() const " -->
@@ -4328,7 +4328,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Returns the length of the string (same as Len).  </p>
+<p>文字列の長さを返却します (Len と同じです)。 </p>
 <p>This is a wxWidgets 1.xx compatibility function; you should not use it in new code.  </p>
 
 </div>
@@ -4441,7 +4441,7 @@ Static Public Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Converts all characters to upper case and returns the reference to the modified string.  </p>
-<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_string.html#ab84d4b6e9f38ba939d61f3382d2a009b" title="Returns this string converted to upper case.">Upper()</a> </dd></dl>
+<dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_string.html#ab84d4b6e9f38ba939d61f3382d2a009b" title="大文字へ変換した文字列を返却します。">Upper()</a> </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxString::Matches" ref="a0fef65e3bf7f77fa6858521f29a84e20" args="(const wxString &amp;mask) const " -->
@@ -5175,10 +5175,10 @@ Static Public Attributes</h2></td></tr>
 <p>Returns the number of characters written, or an integer less than zero on error. Note that if <code>wxUSE_PRINTF_POS_PARAMS</code> is set to 1, then this function supports Unix98-style positional parameters:</p>
 <div class="fragment"><pre class="fragment">        <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> str;
 
-        str.<a class="code" href="classwx_string.html#a9588b7f2684b9a6a924dc3746a2b2f8d" title="Similar to the standard function sprintf().">Printf</a>(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"%d %d %d"</span>), 1, 2, 3);
+        str.<a class="code" href="classwx_string.html#a9588b7f2684b9a6a924dc3746a2b2f8d" title="標準の sprintf() 関数と似ています。">Printf</a>(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"%d %d %d"</span>), 1, 2, 3);
         <span class="comment">// str now contains "1 2 3"</span>
 
-        str.<a class="code" href="classwx_string.html#a9588b7f2684b9a6a924dc3746a2b2f8d" title="Similar to the standard function sprintf().">Printf</a>(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"%2$d %3$d %1$d"</span>), 1, 2, 3);
+        str.<a class="code" href="classwx_string.html#a9588b7f2684b9a6a924dc3746a2b2f8d" title="標準の sprintf() 関数と似ています。">Printf</a>(<a class="code" href="group__group__funcmacro__string.html#ga437ea6ba615b75dac8603e96ec864160" title="このマクロは文字やリテラル文字列 (つまり、'x' や &quot;foo&quot;) を Unicode ビルド時に自動的にワイド文字列へ変換します。">wxT</a>(<span class="stringliteral">"%2$d %3$d %1$d"</span>), 1, 2, 3);
         <span class="comment">// str now contains "2 3 1"</span>
 </pre></div><dl class="note"><dt><b>注:</b></dt><dd>This function will use a safe version of <em>vsprintf()</em> (usually called <em>vsnprintf()</em>) whenever available to always allocate the buffer of correct size. Unfortunately, this function is not available on all platforms and the dangerous <em>vsprintf()</em> will be used then which may lead to buffer overflows.  </dd></dl>
 
@@ -6120,7 +6120,7 @@ Static Public Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Minimizes the string's memory.  </p>
-<p>This can be useful after a call to <a class="el" href="classwx_string.html#a87e614d9924a1b5524334aac3fc96d38" title="Preallocate enough space for wxString to store nLen characters.">Alloc()</a> if too much memory were preallocated.  </p>
+<p>This can be useful after a call to <a class="el" href="classwx_string.html#a87e614d9924a1b5524334aac3fc96d38" title="nLen 文字を格納するために必要なメモリを wxString に事前に割り当てる。">Alloc()</a> if too much memory were preallocated.  </p>
 
 </div>
 </div><!-- doxytag: member="wxString::size" ref="aba423303c6e0580605269827e4744761" args="() const " -->
@@ -6745,7 +6745,7 @@ template&lt;typename T &gt;  </div>
 </div>
 <div class="memdoc">
 
-<p>Returns this string converted to upper case.  </p>
+<p>大文字へ変換した文字列を返却します。 </p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_string.html#af862e46d093e1e52fbc4f204e9aea34f" title="Converts all characters to upper case and returns the reference to the modified string.">MakeUpper()</a> </dd></dl>
 
 </div>

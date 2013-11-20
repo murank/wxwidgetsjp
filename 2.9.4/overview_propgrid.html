@@ -252,7 +252,7 @@ Creating and Populating wxPropertyGrid</h2>
 
 Tree-like Property Structure</h2>
 <p>Basically any property can have children. There are few limitations, however.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd><ul>
+<dl class="remark"><dt><b>注意:</b></dt><dd><ul>
 <li>Names of properties with non-category, non-root parents are not stored in global hash map. Instead, they can be accessed with strings like "Parent.Child". For instance, in the sample below, child property named "Max. Speed (mph)" can be accessed by global name "Car.Speeds.Max Speed (mph)".</li>
 <li>If you want to property's value to be a string composed of the child property values, you must use wxStringProperty as parent and use magic string "&lt;composed&gt;" as its value.</li>
 <li>Events (eg. change of value) that occur in parent do not propagate to children. Events that occur in children will propagate to parents, but only if they are wxStringProperties with "&lt;composed&gt;" value.</li>
@@ -297,7 +297,7 @@ Tree-like Property Structure</h2>
 wxEnumProperty and wxFlagsProperty</h2>
 <p>wxEnumProperty is used when you want property's (integer or string) value to be selected from a popup list of choices.</p>
 <p>Creating wxEnumProperty is slightly more complex than those described earlier. You have to provide list of constant labels, and optionally relevant values (if label indexes are not sufficient).</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd></dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd></dd></dl>
 <ul>
 <li>Value wxPG_INVALID_VALUE (equals INT_MAX) is not allowed as list item value.</li>
 </ul>
@@ -305,7 +305,7 @@ wxEnumProperty and wxFlagsProperty</h2>
 <div class="fragment"><pre class="fragment">    <span class="comment">//</span>
     <span class="comment">// Using wxArrayString</span>
     <span class="comment">//</span>
-    <a class="code" href="classwx_array_string.html" title="wxArrayString is an efficient container for storing wxString objects.">wxArrayString</a> arrDiet;
+    <a class="code" href="classwx_array_string.html" title="wxArrayString は wxString オブジェクトを効率的に格納するためのコンテナです。">wxArrayString</a> arrDiet;
     arr.<a class="code" href="classwx_array_string.html#af06b61455118d83a24183c3a9f6854b1" title="Appends the given number of copies of the new item str to the array and returns the index of the firs...">Add</a>(<span class="stringliteral">"Herbivore"</span>);
     arr.Add(<span class="stringliteral">"Carnivore"</span>);
     arr.Add(<span class="stringliteral">"Omnivore"</span>);
@@ -327,7 +327,7 @@ wxEnumProperty and wxFlagsProperty</h2>
 <div class="fragment"><pre class="fragment">    <span class="comment">//</span>
     <span class="comment">// Using wxArrayString and wxArrayInt</span>
     <span class="comment">//</span>
-    <a class="code" href="classwx_array_string.html" title="wxArrayString is an efficient container for storing wxString objects.">wxArrayString</a> arrDiet;
+    <a class="code" href="classwx_array_string.html" title="wxArrayString は wxString オブジェクトを効率的に格納するためのコンテナです。">wxArrayString</a> arrDiet;
     arr.<a class="code" href="classwx_array_string.html#af06b61455118d83a24183c3a9f6854b1" title="Appends the given number of copies of the new item str to the array and returns the index of the firs...">Add</a>(<span class="stringliteral">"Herbivore"</span>);
     arr.Add(<span class="stringliteral">"Carnivore"</span>);
     arr.Add(<span class="stringliteral">"Omnivore"</span>);
@@ -544,7 +544,7 @@ Saving and Restoring User-Editable State</h3>
         }
     }
 }
-</pre></div><dl class="remark"><dt><b>Remarks:</b></dt><dd>On Child Property Event Handling<ul>
+</pre></div><dl class="remark"><dt><b>注意:</b></dt><dd>On Child Property Event Handling<ul>
 <li>For properties which have private, implicit children (wxFontProperty and wxFlagsProperty), events occur for the main parent property only. For other properties events occur for the children themselves. See <a class="el" href="overview_propgrid.html#propgrid_parentprops">Tree-like Property Structure</a>.</li>
 </ul>
 </dd></dl>

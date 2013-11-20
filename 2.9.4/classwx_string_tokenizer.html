@@ -133,12 +133,12 @@ function toggleVisibility(linkObj) {
 <area shape="rect" id="node2" href="classwx_object.html" title="This is the root class of many of the wxWidgets classes." alt="" coords="32,6,107,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classwx_string_tokenizer.html" title="wxStringTokenizer helps you to break a string up into a number of tokens.">wxStringTokenizer</a> helps you to break a string up into a number of tokens.  </p>
+<div class="textblock"><p><a class="el" href="classwx_string_tokenizer.html" title="wxStringTokenizer は文字列を複数のトークンに分割することを支援します。">wxStringTokenizer</a> helps you to break a string up into a number of tokens.  </p>
 <p>It replaces the standard C function <code>strtok()</code> and also extends it in a number of ways.</p>
-<p>To use this class, you should create a <a class="el" href="classwx_string_tokenizer.html" title="wxStringTokenizer helps you to break a string up into a number of tokens.">wxStringTokenizer</a> object, give it the string to tokenize and also the delimiters which separate tokens in the string (by default, white space characters will be used).</p>
+<p>To use this class, you should create a <a class="el" href="classwx_string_tokenizer.html" title="wxStringTokenizer は文字列を複数のトークンに分割することを支援します。">wxStringTokenizer</a> object, give it the string to tokenize and also the delimiters which separate tokens in the string (by default, white space characters will be used).</p>
 <p>Then <a class="el" href="classwx_string_tokenizer.html#a6537282af1f6b9757393046d780e5270" title="Returns the next token or empty string if the end of string was reached.">wxStringTokenizer::GetNextToken()</a> may be called repeatedly until <a class="el" href="classwx_string_tokenizer.html#a9617fc60328fbc8a502b5da16841fd73" title="Returns true if the tokenizer has further tokens, false if none are left.">wxStringTokenizer::HasMoreTokens()</a> returns <span class="literal">false</span>.</p>
 <p>以下に例を示します:</p>
-<div class="fragment"><pre class="fragment">    <a class="code" href="classwx_string_tokenizer.html" title="wxStringTokenizer helps you to break a string up into a number of tokens.">wxStringTokenizer</a> tokenizer(<span class="stringliteral">"first:second:third:fourth"</span>, <span class="stringliteral">":"</span>);
+<div class="fragment"><pre class="fragment">    <a class="code" href="classwx_string_tokenizer.html" title="wxStringTokenizer は文字列を複数のトークンに分割することを支援します。">wxStringTokenizer</a> tokenizer(<span class="stringliteral">"first:second:third:fourth"</span>, <span class="stringliteral">":"</span>);
     <span class="keywordflow">while</span> ( tokenizer.HasMoreTokens() )
     {
         <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> token = tokenizer.GetNextToken();

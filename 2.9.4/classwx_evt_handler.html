@@ -820,7 +820,7 @@ template&lt;typename EventTag , typename Functor &gt;  </div>
 <div class="memdoc">
 
 <p>Returns user-supplied client data.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Normally, any extra data the programmer wishes to associate with the object should be made available by deriving a new class with new data members.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Normally, any extra data the programmer wishes to associate with the object should be made available by deriving a new class with new data members.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_evt_handler.html#a82c74f2cebfa02cb3c1563d459c872bf" title="Sets user-supplied client data.">SetClientData()</a> </dd></dl>
 
 </div>
@@ -1154,7 +1154,7 @@ template&lt;typename EventTag , typename Functor &gt;  </div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if a suitable event handler function was found and executed, and the function did not call <a class="el" href="classwx_event.html#a98eb20b76106f9a933c2eb3ee119f66c" title="この関数はイベントハンドラの中で使用し、現在のイベントハンドラの処理が終わった後にさらにイベントハンドラを呼び出すかどうかを制御します。">wxEvent::Skip</a>.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This function looks through the object's event table and tries to find an entry that will match the event. An entry will match if:  <ul>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This function looks through the object's event table and tries to find an entry that will match the event. An entry will match if:  <ul>
 <li>The event type matches, and  </li>
 <li>the identifier or identifier range matches, or the event table entry's identifier is zero.</li>
 </ul>
@@ -1187,7 +1187,7 @@ If a suitable function is called but calls <a class="el" href="classwx_event.htm
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Normally, any extra data the programmer wishes to associate with the object should be made available by deriving a new class with new data members. You must not call this method and SetClientObject on the same class - only one of them.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Normally, any extra data the programmer wishes to associate with the object should be made available by deriving a new class with new data members. You must not call this method and SetClientObject on the same class - only one of them.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_evt_handler.html#ad6e543115a9405962152630138645588" title="Returns user-supplied client data.">GetClientData()</a> </dd></dl>
 
 </div>
@@ -1235,7 +1235,7 @@ If a suitable function is called but calls <a class="el" href="classwx_event.htm
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>You can use this function to avoid having to remove the event handler from the chain, for example when implementing a dialog editor and changing from edit to test mode.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>You can use this function to avoid having to remove the event handler from the chain, for example when implementing a dialog editor and changing from edit to test mode.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_evt_handler.html#a533e62afcb125abf1fcc8bb53fbc2e81" title="Returns true if the event handler is enabled, false otherwise.">GetEvtHandlerEnabled()</a> </dd></dl>
 
 </div>
@@ -1256,7 +1256,7 @@ If a suitable function is called but calls <a class="el" href="classwx_event.htm
 <div class="memdoc">
 
 <p>次のイベントハンドラへのポインタを設定します。 </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>See <a class="el" href="classwx_evt_handler.html#a65968dd27f3aac7718f2dd6b2ddd5a08" title="イベントテーブルを検索し、0 個以上の適切なイベントハンドラ関数を呼び出してイベントを処理します。">ProcessEvent()</a> for more info about how the chains of event handlers are internally used. Also remember that <a class="el" href="classwx_evt_handler.html" title="ウィンドウから送信されるベントを処理可能なクラス。">wxEvtHandler</a> uses double-linked lists and thus if you use this function, you should also call <a class="el" href="classwx_evt_handler.html#aff0d1836464be82e2ad723ad3a58eccc" title="Sets the pointer to the previous handler.">SetPreviousHandler()</a> on the argument passed to this function:  <div class="fragment"><pre class="fragment">            handlerA-&gt;SetNextHandler(handlerB);
+<dl class="remark"><dt><b>注意:</b></dt><dd>See <a class="el" href="classwx_evt_handler.html#a65968dd27f3aac7718f2dd6b2ddd5a08" title="イベントテーブルを検索し、0 個以上の適切なイベントハンドラ関数を呼び出してイベントを処理します。">ProcessEvent()</a> for more info about how the chains of event handlers are internally used. Also remember that <a class="el" href="classwx_evt_handler.html" title="ウィンドウから送信されるベントを処理可能なクラス。">wxEvtHandler</a> uses double-linked lists and thus if you use this function, you should also call <a class="el" href="classwx_evt_handler.html#aff0d1836464be82e2ad723ad3a58eccc" title="Sets the pointer to the previous handler.">SetPreviousHandler()</a> on the argument passed to this function:  <div class="fragment"><pre class="fragment">            handlerA-&gt;SetNextHandler(handlerB);
             handlerB-&gt;SetPreviousHandler(handlerA);
 </pre></div></dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>

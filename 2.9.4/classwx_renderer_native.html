@@ -1131,7 +1131,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>This function is used for version checking: <a class="el" href="classwx_renderer_native.html#a0536cd4ed40c392859d2e8ae37a3eaca" title="Load the renderer from the specified DLL, the returned pointer must be deleted by caller if not NULL ...">Load()</a> refuses to load any shared libraries implementing an older or incompatible version.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>The implementation of this method is always the same in all renderers (simply construct <a class="el" href="structwx_renderer_version.html" title="This simple struct represents the wxRendererNative interface version and is only used as the return v...">wxRendererVersion</a> using the <code>wxRendererVersion::Current_XXX</code> values), but it has to be in the derived, not base, class, to detect mismatches between the renderers versions and so you have to implement it anew in all renderers.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>The implementation of this method is always the same in all renderers (simply construct <a class="el" href="structwx_renderer_version.html" title="This simple struct represents the wxRendererNative interface version and is only used as the return v...">wxRendererVersion</a> using the <code>wxRendererVersion::Current_XXX</code> values), but it has to be in the derived, not base, class, to detect mismatches between the renderers versions and so you have to implement it anew in all renderers.  </dd></dl>
 
 <p>Implemented in <a class="el" href="classwx_delegate_renderer_native.html#af9b226f3ea9857618116931d9a8cd04a">wxDelegateRendererNative</a>.</p>
 

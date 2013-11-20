@@ -950,7 +950,7 @@ Functions</h2></td></tr>
 
 <p>Pops up a dialog box containing a message, OK/Cancel buttons and a multiple-selection listbox.  </p>
 <p>The user may choose an arbitrary (including 0) number of items in the listbox whose indices will be returned in <code>selections</code> array. The initial contents of this array will be used to select the items when the dialog is shown. If the user cancels the dialog, the function returns -1 and <code>selections</code> array is left unchanged.</p>
-<p>You may pass the list of strings to choose from either using <code>choices</code> which is an array of <em>n</em> strings for the listbox or by using a single <code>aChoices</code> parameter of type <a class="el" href="classwx_array_string.html" title="wxArrayString is an efficient container for storing wxString objects.">wxArrayString</a>.</p>
+<p>You may pass the list of strings to choose from either using <code>choices</code> which is an array of <em>n</em> strings for the listbox or by using a single <code>aChoices</code> parameter of type <a class="el" href="classwx_array_string.html" title="wxArrayString は wxString オブジェクトを効率的に格納するためのコンテナです。">wxArrayString</a>.</p>
 <p>If <code>centre</code> is <span class="literal">true</span>, the message text (which may include new line characters) is centred; if <span class="literal">false</span>, the message is left-justified.</p>
 <p>Include <a href="file:">file:</a> </p>
 <div class="fragment"><pre class="fragment">#include &lt;wx/choicdlg.h&gt; </pre></div><p><b>wxPerl Note:</b> Use an array reference for the <em>choices</em> parameter. In wxPerl there is no <em>selections</em> parameter; the function returns an array containing the user selections.  </p>
@@ -1209,7 +1209,7 @@ Functions</h2></td></tr>
 
 <p>Pops up a dialog box containing a message, OK/Cancel buttons and a single-selection listbox.  </p>
 <p>The user may choose an item and press OK to return a string or Cancel to return the empty string. Use <a class="el" href="group__group__funcmacro__dialog.html#ga2873f797756a0286b1c1058cb4f94afb" title="Same as wxGetSingleChoice() but returns the index representing the selected string.">wxGetSingleChoiceIndex()</a> if empty string is a valid choice and if you want to be able to detect pressing Cancel reliably.</p>
-<p>You may pass the list of strings to choose from either using <code>choices</code> which is an array of <em>n</em> strings for the listbox or by using a single <code>aChoices</code> parameter of type <a class="el" href="classwx_array_string.html" title="wxArrayString is an efficient container for storing wxString objects.">wxArrayString</a>.</p>
+<p>You may pass the list of strings to choose from either using <code>choices</code> which is an array of <em>n</em> strings for the listbox or by using a single <code>aChoices</code> parameter of type <a class="el" href="classwx_array_string.html" title="wxArrayString は wxString オブジェクトを効率的に格納するためのコンテナです。">wxArrayString</a>.</p>
 <p>If <code>centre</code> is <span class="literal">true</span>, the message text (which may include new line characters) is centred; if <span class="literal">false</span>, the message is left-justified.</p>
 <p>Include <a href="file:">file:</a> </p>
 <div class="fragment"><pre class="fragment">#include &lt;wx/choicdlg.h&gt; </pre></div><p><b>wxPerl Note:</b> Use an array reference for the <em>choices</em> parameter.  </p>

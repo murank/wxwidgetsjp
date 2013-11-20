@@ -568,7 +568,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>This static method replaces the standard <code>popen()</code> function: it launches the process specified by the <em>cmd</em> parameter and returns the <a class="el" href="classwx_process.html" title="The objects of this class are used in conjunction with the wxExecute() function.">wxProcess</a> object which can be used to retrieve the streams connected to the standard input, output and error output of the child process.  </p>
 <p>If the process couldn't be launched, <span class="literal">NULL</span> is returned.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>In any case the returned pointer should <b>not</b> be deleted, rather the process object will be destroyed automatically when the child process terminates. This does mean that the child process should be told to quit before the main program exits to avoid memory leaks.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>In any case the returned pointer should <b>not</b> be deleted, rather the process object will be destroyed automatically when the child process terminates. This does mean that the child process should be told to quit before the main program exits to avoid memory leaks.</dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">cmd</td><td>The command to execute, including optional arguments.  </td></tr>

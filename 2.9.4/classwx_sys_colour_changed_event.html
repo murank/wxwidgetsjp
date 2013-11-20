@@ -135,7 +135,7 @@ function toggleVisibility(linkObj) {
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>This class is used for system colour change events, which are generated when the user changes the colour settings using the control panel.  </p>
 <p>This is only appropriate under Windows.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>The default event handler for this event propagates the event to child windows, since Windows only sends the events to top-level windows. If intercepting this event for a top-level window, remember to call the base class handler, or to pass the event on to the window's children explicitly.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>The default event handler for this event propagates the event to child windows, since Windows only sends the events to top-level windows. If intercepting this event for a top-level window, remember to call the base class handler, or to pass the event on to the window's children explicitly.</dd></dl>
 <h2>Events using this class</h2>
 <p>The following event handler macros redirect the events to member function handlers '<b>func</b>' with prototypes like:  </p>
 <div class="eventHandler"><span>void&nbsp;handlerFuncName(<a class="el" href="classwx_sys_colour_changed_event.html" title="This class is used for system colour change events, which are generated when the user changes the col...">wxSysColourChangedEvent</a>&amp;&nbsp;event)</span></div><p>Event macros:</p>

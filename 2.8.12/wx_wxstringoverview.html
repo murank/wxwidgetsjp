@@ -1,118 +1,52 @@
 <HTML>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>wxString overview</title></head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel=stylesheet type="text/css" href="wx.css"><title>wxString の概要</title></head>
 
 <BODY BGCOLOR=#FFFFFF>
 <A NAME="wxstringoverview"></A><CENTER>
 <A HREF="wx_contents.html"><img align=center src="contents.gif" BORDER=0 ALT="Contents"></A> <A HREF="wx_overviews.html#overviews"><img align=center src="up.gif" BORDER=0 ALT="Up"></A> <A HREF="wx_trefcount.html#trefcount"><img align=center src="back.gif" BORDER=0 ALT="Previous"></A> <A HREF="wx_bufferclasses.html#bufferclasses"><img align=center src="forward.gif" BORDER=0 ALT="Next"></A> </CENTER><HR>
 
-<H2>wxString overview</H2>
+<H2>wxString の概要</H2>
 <P>
-
-Classes: <A HREF="wx_wxstring.html#wxstring">wxString</A>, <A HREF="wx_wxarraystring.html#wxarraystring">wxArrayString</A>, <A HREF="wx_wxstringtokenizer.html#wxstringtokenizer">wxStringTokenizer</A><P>
-<A HREF="#introductiontowxstring">イントロダクション</A><BR><A HREF="#otherstringclasses">Comparison of wxString to other string classes</A><BR><A HREF="#wxstringadvices">Some advice about using wxString</A><BR><A HREF="#relatedtostring">Other string related functions and classes</A><BR><A HREF="#wxstringrefcount">Reference counting and why you shouldn't care about it</A><BR><A HREF="#wxstringtuning">Tuning wxString for your application</A><BR>
+クラス: <A HREF="wx_wxstring.html#wxstring">wxString</A>, <A HREF="wx_wxarraystring.html#wxarraystring">wxArrayString</A>, <A HREF="wx_wxstringtokenizer.html#wxstringtokenizer">wxStringTokenizer</A><P>
+<A HREF="#introductiontowxstring">イントロダクション</A><BR><A HREF="#otherstringclasses">wxString と他の文字列クラスとの比較</A><BR><A HREF="#wxstringadvices">wxStringを使用するにあたってのアドバイス</A><BR><A HREF="#relatedtostring">文字列に関する他の関数やクラス</A><BR><A HREF="#wxstringrefcount">参照カウンタと、それを意識しなくて良い理由</A><BR><A HREF="#wxstringtuning">wxString のチューニング</A><BR>
 <P>
 
 <HR>
 <A NAME="introductiontowxstring"></A>
 <H3>イントロダクション</H3>
 <P>
-
-wxString is a class which represents a character string of arbitrary length (limited by 
-<I>MAX_INT</I> which is usually 2147483647 on 32 bit machines) and containing
-arbitrary characters. The ASCII NUL character is allowed, but be aware that
-in the current string implementation some methods might not work correctly
-in this case.<P>
-
-wxString works with both ASCII (traditional, 7 or 8 bit, characters) as well as
-Unicode (wide characters) strings.<P>
-
-This class has all the standard operations you can expect to find in a string class:
-dynamic memory management (string extends to accommodate new characters),
-construction from other strings, C strings and characters, assignment operators,
-access to individual characters, string concatenation and comparison, substring
-extraction, case conversion, trimming and padding (with spaces), searching and
-replacing and both C-like <A HREF="wx_wxstring.html#wxstringprintf">Printf()</A> and stream-like
-insertion functions as well as much more - see <A HREF="wx_wxstring.html#wxstring">wxString</A> 
-for a list of all functions.<P>
+wxString は任意の長さ (最大は <I>MAX_INT</I> で、32 ビットマシンの場合、通常は 2147483647 です) で任意の文字を含む文字列を表すクラスです。ASCII NUL 文字を含めることも可能ですが、その場合、現在の実装ではいくつかの関数は正しく動作しないことに注意してください。<P>
+wxString は ASCII (従来の 7 ビットまたは 8 ビット) 文字列と Unicode (ワイド) 文字列の両方を取り扱うことができます。<P>
+このクラスは文字列クラスに含まれていると考えるであろうすべての標準的な文字列操作機能を持っています: 動的なメモリ管理 (新しい文字にあわせて文字列を拡張します)、他の文字列や C 文字列からの構築、代入演算子、各文字へのアクセス、文字列の結合と比較、部分文字列の抽出、大文字小文字の変換、トリムと (スペースによる) パディング、検索と置換、C 言語風の <A HREF="wx_wxstring.html#wxstringprintf">Printf()</A> やストリーム風の挿入関数などです。すべての関数の一覧は <A HREF="wx_wxstring.html#wxstring">wxString</A> を参照してください。<P>
 
 <HR>
 <A NAME="otherstringclasses"></A>
-<H3>Comparison of wxString to other string classes</H3>
+<H3>wxString と他の文字列クラスとの比較</H3>
 <P>
-
-The advantages of using a special string class instead of working directly with
-C strings are so obvious that there is a huge number of such classes available.
-The most important advantage is the need to always
-remember to allocate/free memory for C strings; working with fixed size buffers almost
-inevitably leads to buffer overflows. At last, C++ has a standard string class
-(std::string). So why the need for wxString?<P>
-
-There are several advantages:<P>
+C 文字列を直接使用する代わりに特別な文字列クラスを使用する利点は、多くの文字列クラスが存在することから明らかと言えます。もっとも重要な利点は、C 文字列の場合、メモリの割り当てと解放を忘れずに行なう必要がある点です; また、固定サイズのバッファを使用すると大抵バッファオーバーランを引き起こします。最後に、C++ では標準の文字列クラス (std::string) が用意されています。それなのになぜ wxString が必要なのでしょうか?<P>
+これにはいくつかの利点があります:<P>
 <OL>
 
-<LI> <B>Efficiency</B> This class was made to be as efficient as possible: both
-in terms of size (each wxString objects takes exactly the same space as a <I>
-char *</I> pointer, sing <A HREF="wx_wxstringoverview.html#wxstringrefcount">reference counting</A>) and speed.
-It also provides performance <A HREF="wx_wxstringoverview.html#wxstringtuning">statistics gathering code</A> 
-which may be enabled to fine tune the memory allocation strategy for your
-particular application - and the gain might be quite big.
-
-</LI><LI> <B>Compatibility</B> This class tries to combine almost full compatibility
-with the old wxWidgets 1.xx wxString class, some reminiscence to MFC CString
-class and 90% of the functionality of std::string class.
-
-</LI><LI> <B>Rich set of functions</B> Some of the functions present in wxString are
-very useful but don't exist in most of other string classes: for example, 
-<A HREF="wx_wxstring.html#wxstringafterfirst">AfterFirst</A>, 
-<A HREF="wx_wxstring.html#wxstringbeforelast">BeforeLast</A>, <A HREF="wx_wxstring.html#wxstringoperatorout">operator&lt;&lt;</A> 
-or <A HREF="wx_wxstring.html#wxstringprintf">Printf</A>. Of course, all the standard string
-operations are supported as well.
-
-</LI><LI> <B>Unicode</B> wxString is Unicode friendly: it allows to easily convert
-to and from ANSI and Unicode strings in any build mode (see the 
-<A HREF="wx_unicode.html#unicode">Unicode overview</A> for more details) and maps to either
-<TT>string</TT> or <TT>wstring</TT> transparently depending on the current mode.
-
-</LI><LI> <B>Used by wxWidgets</B> And, of course, this class is used everywhere
-inside wxWidgets so there is no performance loss which would result from
-conversions of objects of any other string class (including std::string) to
-wxString internally by wxWidgets.
-
+<LI> <B>効率性</B> このクラスはできるだけ効率的に動作するように作られています: これはサイズ (個々の wxString オブジェクトは <A HREF="wx_wxstringoverview.html#wxstringrefcount">参照カウンタ</A> のおかげで <I> char *</I> ポインタと完全に同じサイズです) と性能面の両方についてです。また、性能の <A HREF="wx_wxstringoverview.html#wxstringtuning">統計収集コード</A> も提供しており、特定のアプリケーションにあわせてメモリ割り当て戦略をチューニングすることができます。これによる性能向上効果は極めて大きいと思われます。
+</LI><LI> <B>互換性</B> このクラスは wxWidgets 1.xx の wxString クラス、および昔懐かしい MFC の CString クラスとほぼ完全に互換性があり、std::string クラスの機能の 90% と互換性があります。
+</LI><LI> <B>豊富な関数群</B> wxString に存在するいくつかの関数はとても便利ですが、他の文字列クラスの大半には存在しません: 例えば、<A HREF="wx_wxstring.html#wxstringafterfirst">AfterFirst</A>、<A HREF="wx_wxstring.html#wxstringbeforelast">BeforeLast</A>、<A HREF="wx_wxstring.html#wxstringoperatorout">operator&lt;&lt;</A>、<A HREF="wx_wxstring.html#wxstringprintf">Printf</A> などです。もちろん、標準的な文字列操作にも対応しています。
+</LI><LI> <B>ユニコード</B> wxString は Unicode との親和性が高いです: どのビルドモードでも簡単に ANSI 文字列や Unicode 文字列と相互に変換できます (詳細は <A HREF="wx_unicode.html#unicode">Unicode の概要</A> を参照してください) し、現在のビルドモードに応じて透過的に <TT>string</TT> か <TT>wstring</TT> のいずれかにマッピングされます。
+</LI><LI> <B>wxWidgets での使用</B> もちろん、このクラスは wxWidgets 内部のあらゆるところで使用されています。そのため、wxWidgets が内部的に (std::string を含む) 他の文字列クラスを wxString へ変換することによる性能劣化が発生しません。
 </LI></OL>
 <P>
-
-However, there are several problems as well. The most important one is probably
-that there are often several functions to do exactly the same thing: for
-example, to get the length of the string either one of 
-length(), <A HREF="wx_wxstring.html#wxstringlen">Len()</A> or 
-<A HREF="wx_wxstring.html#wxstringlength">Length()</A> may be used. The first function, as almost
-all the other functions in lowercase, is std::string compatible. The second one
-is "native" wxString version and the last one is wxWidgets 1.xx way. So the
-question is: which one is better to use? And the answer is that:<P>
-<B>The usage of std::string compatible functions is strongly advised!</B> It will
-both make your code more familiar to other C++ programmers (who are supposed to
-have knowledge of std::string but not of wxString), let you reuse the same code
-in both wxWidgets and other programs (by just typedefing wxString as std::string
-when used outside wxWidgets) and by staying compatible with future versions of
-wxWidgets which will probably start using std::string sooner or later too.<P>
-
-In the situations where there is no corresponding std::string function, please
-try to use the new wxString methods and not the old wxWidgets 1.xx variants
-which are deprecated and may disappear in future versions.<P>
+しかし、同様にいくつかの問題も存在します。もっとも重要な問題はおそらく、まったく同じことを行なう関数が複数存在することです: 例えば、文字列の長さを取得するために length()、<A HREF="wx_wxstring.html#wxstringlen">Len()</A>、<A HREF="wx_wxstring.html#wxstringlength">Length()</A> のどれでも使用できます。他の小文字の関数のほとんどがそうであるように、最初の関数は std::string と互換性があります。二番目の関数は wxString "ネイティブ" の関数で、最後の関数は wxWidgets 1.xx の形式です。そのため、質問は次のようになります: どの関数を使用すれば良いのか? そして、その答えは次の通りです:<P>
+<B>std::string 互換の関数を使用することを強く推奨します!</B> そうすることで、(std::string に関する知識はあっても wxString のことは知らないであろう) 他の C++ プログラマにとってより馴染みのあるコードにできますし、(wxWidgets 外でコードを使用するときは wxString を std::string として typedef することで) wxWidgets とそれ以外のプログラムで同じコードを再利用することもできます。また、wxWidgets の将来のバージョンとの互換性も保てます。なぜなら、遅かれ早かれ、おそらく wxWidgets で std::string を使用し始めるためです。<P>
+std::string に対応する関数が存在しない場合は新しい wxString 関数を使用するようにし、wxWidgets 1.xx 版を使用しないようにしてください。これらの関数は非推奨であり、将来のバージョンでは削除されるかもしれません。<P>
 
 <HR>
 <A NAME="wxstringadvices"></A>
-<H3>Some advice about using wxString</H3>
+<H3>wxStringを使用するにあたってのアドバイス</H3>
 <P>
-
-Probably the main trap with using this class is the implicit conversion operator to 
-<I>const char *</I>. It is advised that you use <A HREF="wx_wxstring.html#wxstringcstr">c_str()</A>
-instead to clearly indicate when the conversion is done. Specifically, the
-danger of this implicit conversion may be seen in the following code fragment:<P>
+おそらく、このクラスを使用する際の一番の罠は <I>const char *</I> への暗黙の型変換演算子です。変換を行なうタイミングを明確にするために、代わりに <A HREF="wx_wxstring.html#wxstringcstr">c_str()</A> を使用するようにしてください。暗黙の型変換の具体的な危険性は以下のコードで分かると思います:<P>
 <PRE>
-// this function converts the input string to uppercase, output it to the screen
-// and returns the result
+// この関数は入力された文字列を大文字に変換し、画面に表示した上で
+// 結果を返却する
 const char *SayHELLO(const wxString&amp; input)
 {
     wxString output = input.Upper();
@@ -122,119 +56,43 @@ const char *SayHELLO(const wxString&amp; input)
     return output;
 }
 </PRE>
-
-There are two nasty bugs in these three lines. First of them is in the call to the 
-<I>printf()</I> function. Although the implicit conversion to C strings is applied
-automatically by the compiler in the case of<P>
+この 3 行の中にふたつの分かりにくいバグが含まれています。最初のバグは <I>printf()</I> 関数の呼び出し部分に存在します。次のような場合であれば、コンパイラによって自動的に C 文字列への暗黙的な変換が行われます。<P>
 <PRE>
     puts(output);
 </PRE>
-
-because the argument of <I>puts()</I> is known to be of the type <I>const char *</I>,
-this is <B>not</B> done for <I>printf()</I> which is a function with variable
-number of arguments (and whose arguments are of unknown types). So this call may
-do anything at all (including displaying the correct string on screen), although
-the most likely result is a program crash. The solution is to use 
-<A HREF="wx_wxstring.html#wxstringcstr">c_str()</A>: just replace this line with<P>
+なぜなら、<I>puts()</I> の引数が <I>const char *</I> 型であることが分かっているためです。これは (引数が不明な型になる) 可変数引数を受け取る <I>printf()</I> では <B>行われません</B> 。そのため、この関数呼び出しの結果は (文字列が正しく表示されることも含めて) 不定になりますが、一番起こりうるのはプログラムのクラッシュでしょう。解決方法は <A HREF="wx_wxstring.html#wxstringcstr">c_str()</A> を使用することです: この行を単純に次のように置き換えてください。<P>
 <PRE>
     printf("Hello, %s!\n", output.c_str());
 </PRE>
-
-The second bug is that returning <I>output</I> doesn't work. The implicit cast is
-used again, so the code compiles, but as it returns a pointer to a buffer
-belonging to a local variable which is deleted as soon as the function exits,
-its contents is totally arbitrary. The solution to this problem is also easy:
-just make the function return wxString instead of a C string.<P>
-
-This leads us to the following general advice: all functions taking string
-arguments should take <I>const wxString&amp;</I> (this makes assignment to the
-strings inside the function faster because of 
-<A HREF="wx_wxstringoverview.html#wxstringrefcount">reference counting</A>) and all functions returning
-strings should return <I>wxString</I> - this makes it safe to return local
-variables.<P>
+ふたつ目のバグは <I>output</I> を正しく返却できないことです。暗黙的な変換が再度行われるため、コードはコンパイルできますが、返却されるポインタはローカル変数のバッファを指すことになります。そして、このローカル変数は関数を抜けるとすぐに破棄されるため、その内容は完全に不定になります。この問題の解決方法も簡単です: C 文字列の代わりに wxString を返却するようにするだけです。<P>
+このことから、次のような一般的なアドバイスが可能です: 文字列を引数として受け取るすべての関数は <I>const wxString&amp;</I> を受け取るべきで (<A HREF="wx_wxstringoverview.html#wxstringrefcount">参照カウンタ</A> を使用するため、内部文字列への代入が早くなります)、文字列を返却するすべての関数は <I>wxString</I> を返却するべきです。(これにより、安全にローカル変数を返却することができます)<P>
 
 <HR>
 <A NAME="relatedtostring"></A>
-<H3>Other string related functions and classes</H3>
+<H3>文字列に関する他の関数やクラス</H3>
 <P>
-
-As most programs use character strings, the standard C library provides quite
-a few functions to work with them. Unfortunately, some of them have rather
-counter-intuitive behaviour (like strncpy() which doesn't always terminate the
-resulting string with a NULL) and are in general not very safe (passing NULL
-to them will probably lead to program crash). Moreover, some very useful
-functions are not standard at all. This is why in addition to all wxString
-functions, there are also a few global string functions which try to correct
-these problems: <A HREF="wx_stringfunctions.html#wxisempty">wxIsEmpty()</A> verifies whether the string
-is empty (returning <TT>true</TT> for <TT>NULL</TT> pointers), 
-<A HREF="wx_stringfunctions.html#wxstrlen">wxStrlen()</A> also handles NULLs correctly and returns 0 for
-them and <A HREF="wx_stringfunctions.html#wxstricmp">wxStricmp()</A> is just a platform-independent
-version of case-insensitive string comparison function known either as
-stricmp() or strcasecmp() on different platforms.<P>
-
-The <TT>&lt;wx/string.h&gt;</TT> header also defines <A HREF="wx_stringfunctions.html#wxsnprintf">wxSnprintf</A> 
-and <A HREF="wx_stringfunctions.html#wxvsnprintf">wxVsnprintf</A> functions which should be used instead
-of the inherently dangerous standard <TT>sprintf()</TT> and which use <TT>
-snprintf()</TT> instead which does buffer size checks whenever possible. Of
-course, you may also use <A HREF="wx_wxstring.html#wxstringprintf">wxString::Printf</A> which is
-also safe.<P>
-
-There is another class which might be useful when working with wxString: 
-<A HREF="wx_wxstringtokenizer.html#wxstringtokenizer">wxStringTokenizer</A>. It is helpful when a string must
-be broken into tokens and replaces the standard C library <I>
-strtok()</I> function.<P>
-
-And the very last string-related class is <A HREF="wx_wxarraystring.html#wxarraystring">wxArrayString</A>: it
-is just a version of the "template" dynamic array class which is specialized to work
-with strings. Please note that this class is specially optimized (using its
-knowledge of the internal structure of wxString) for storing strings and so it is
-vastly better from a performance point of view than a wxObjectArray of wxStrings.<P>
+多くのプログラムで文字列が使用されていますが、標準 C ライブラリではそれらのプログラムで使用できる関数をほんの少ししか提供していません。残念なことに、いくつかの関数は直感的でない振る舞いをします (例えば strncpy() は結果の文字列を常に NULL で終端させるとは限りません) し、一般的にあまり安全ではありません。（それらの関数に NULL を渡すとおそらくプログラムがクラッシュするでしょう) その上、いくつかの非常に便利な関数は標準関数ではありません。これが wxString の関数に加えて若干のグローバル文字列関数が存在する理由です: <A HREF="wx_stringfunctions.html#wxisempty">wxIsEmpty()</A> は文字列が空かどうかを確かめます。(<TT>NULL</TT> ポインタに対しては <TT>true</TT> を返却します) <A HREF="wx_stringfunctions.html#wxstrlen">wxStrlen()</A> も NULL を正しく取り扱うことができ、NULL の場合は 0 を返却します。 <A HREF="wx_stringfunctions.html#wxstricmp">wxStricmp()</A> は単なるプラットフォーム非依存の大文字小文字を区別しない文字列比較関数で、プラットフォームによっては stricmp() や strcasecmp() として知られています。<P>
+また、<TT>&lt;wx/string.h&gt;</TT> ヘッダでは <A HREF="wx_stringfunctions.html#wxsnprintf">wxSnprintf</A> 関数と <A HREF="wx_stringfunctions.html#wxvsnprintf">wxVsnprintf</A> 関数も定義しています。潜在的に危険な標準の <TT>sprintf()</TT> の代わりにこれらの関数を使用するべきであり、これらの関数ではバッファサイズのチェックを行なう <TT> snprintf()</TT> をできるだけ使用しています。もちろん、<A HREF="wx_wxstring.html#wxstringprintf">wxString::Printf</A> も安全なので使用しても構いません。<P>
+他にも wxString と一緒に使用すると便利なクラスがあります: それが <A HREF="wx_wxstringtokenizer.html#wxstringtokenizer">wxStringTokenizer</A> です。このクラスは文字列をトークンに分解する必要があるときに便利で、標準 C ライブラリの <I>strtok()</I> 関数の代わりになります。<P>
+そして、文字列に関する最後のクラスが <A HREF="wx_wxarraystring.html#wxarraystring">wxArrayString</A> です: これは単なる "テンプレート" 動的配列クラスの一種で、文字列に対して使用するように特殊化されています。このクラスは (wxString の内部構造に関する知識を用いて) 文字列の格納に特化して最適化されています。そのため、wxObjectArray に wxString を格納するより性能面で優れています。<P>
 
 <HR>
 <A NAME="wxstringrefcount"></A>
-<H3>Reference counting and why you shouldn't care about it</H3>
+<H3>参照カウンタと、それを意識しなくて良い理由</H3>
 <P>
-
-All considerations for wxObject-derived <A HREF="wx_trefcount.html#trefcount">reference counted</A> objects
-are valid also for wxString, even if it does not derive from wxObject.<P>
-
-Probably the unique case when you might want to think about reference
-counting is when a string character is taken from a string which is not a
-constant (or a constant reference). In this case, due to C++ rules, the
-"read-only" <I>operator[]</I> (which is the same as 
-<A HREF="wx_wxstring.html#wxstringgetchar">GetChar()</A>) cannot be chosen and the "read/write" 
-<I>operator[]</I> (the same as 
-<A HREF="wx_wxstring.html#wxstringgetwritablechar">GetWritableChar()</A>) is used instead. As the
-call to this operator may modify the string, its data is unshared (COW is done)
-and so if the string was really shared there is some performance loss (both in
-terms of speed and memory consumption). In the rare cases when this may be
-important, you might prefer using <A HREF="wx_wxstring.html#wxstringgetchar">GetChar()</A> instead
-of the array subscript operator for this reasons. Please note that 
-<A HREF="wx_wxstring.html#wxstringat">at()</A> method has the same problem as the subscript operator in
-this situation and so using it is not really better. Also note that if all
-string arguments to your functions are passed as <I>const wxString&amp;</I> (see the
-section <A HREF="wx_wxstringoverview.html#wxstringadvices">Some advice</A>) this situation will almost
-never arise because for constant references the correct operator is called automatically.<P>
+wxString は wxObject を継承していませんが、wxObject を継承した <A HREF="wx_trefcount.html#trefcount">参照カウント</A> オブジェクトと同様のことが wxString にも当てはまります。<P>
+ただ、非 const (もしくは非 const 参照) の文字列から文字を取り出すときだけは参照カウンタを意識する必要があると考えることでしょう。この場合、C++ の規則により、"読み取り専用" の <I>operator[]</I> (これは <A HREF="wx_wxstring.html#wxstringgetchar">GetChar()</A> と同じです) は使用できず、代わりに "読み書き可能な" <I>operator[]</I> (これは <A HREF="wx_wxstring.html#wxstringgetwritablechar">GetWritableChar()</A> と同じです) が使用されます。この演算子を呼び出すことで文字列が変更されるため、データは共有されなくなります。(COW が行われます) そのため、文字列が本当に共有されていた場合、いくらか性能が (速度とメモリ消費の両方の観点で) 劣化します。このことが重要になるような稀な場合では、添字演算子の代わりに <A HREF="wx_wxstring.html#wxstringgetchar">GetChar()</A> を使用した方が良いでしょう。このような状況では <A HREF="wx_wxstring.html#wxstringat">at()</A> 関数にも添字演算子と同じ問題があるため、この関数を使用するのは本当に良いとは言えません。また、関数の引数の文字列をすべて <I>const wxString&amp;</I> で受け取っている場合 (<A HREF="wx_wxstringoverview.html#wxstringadvices">アドバイス</A> の章を参照)、この問題がほとんど発生しないことに注意してください。なぜなら、const 参照に対しては自動的に正しい演算子が呼ばれるためです。<P>
 
 <HR>
 <A NAME="wxstringtuning"></A>
-<H3>Tuning wxString for your application</H3>
+<H3>wxString のチューニング</H3>
 <P>
 <HR>
-<B>Note:</B> this section is strictly about performance issues and is
-absolutely not necessary to read for using wxString class. Please skip it unless
-you feel familiar with profilers and relative tools. If you do read it, please
-also read the preceding section about 
-<A HREF="wx_wxstringoverview.html#wxstringrefcount">reference counting</A>.<HR><P>
+<B>注:</B> この章では性能に関する問題のみを取り扱っており、wxString クラスを使用するだけであれば読む必要はまったくありません。プロファイラやその関連ツールについて詳しくないのであればこの章を読み飛ばしてください。もしこの章を読む場合、<A HREF="wx_wxstringoverview.html#wxstringrefcount">参照カウンタ</A> の章にも目を通すようにしてください。<HR><P>
 <P>
-
-For the performance reasons wxString doesn't allocate exactly the amount of
-memory needed for each string. Instead, it adds a small amount of space to each
-allocated block which allows it to not reallocate memory (a relatively
-expensive operation) too often as when, for example, a string is constructed by
-subsequently adding one character at a time to it, as for example in:<P>
+性能上の理由から、wxString は各文字列で必要とされる量ちょうどのメモリを割り当てません。代わりに、各割り当て済みブロックに少しだけメモリを追加します。割り当て済みブロックを用いることで、例えば以下のように一度に一文字ずつ連結して文字列を構築する場合などに、頻繁にメモリの再割り当てを行わなくても良くなります:<P>
 <PRE>
-// delete all vowels from the string
+// 文字列から母音をすべて削除する
 wxString DeleteAllVowels(const wxString&amp; original)
 {
     wxString result;
@@ -249,44 +107,11 @@ wxString DeleteAllVowels(const wxString&amp; original)
     return result;
 }
 </PRE>
-
-This is quite a common situation and not allocating extra memory at all would
-lead to very bad performance in this case because there would be as many memory
-(re)allocations as there are consonants in the original string. Allocating too
-much extra memory would help to improve the speed in this situation, but due to
-a great number of wxString objects typically used in a program would also
-increase the memory consumption too much.<P>
-
-The very best solution in precisely this case would be to use 
-<A HREF="wx_wxstring.html#wxstringalloc">Alloc()</A> function to preallocate, for example, len bytes
-from the beginning - this will lead to exactly one memory allocation being
-performed (because the result is at most as long as the original string).<P>
-
-However, using Alloc() is tedious and so wxString tries to do its best. The
-default algorithm assumes that memory allocation is done in granularity of at
-least 16 bytes (which is the case on almost all of wide-spread platforms) and so
-nothing is lost if the amount of memory to allocate is rounded up to the next
-multiple of 16. Like this, no memory is lost and 15 iterations from 16 in the
-example above won't allocate memory but use the already allocated pool.<P>
-
-The default approach is quite conservative. Allocating more memory may bring
-important performance benefits for programs using (relatively) few very long
-strings. The amount of memory allocated is configured by the setting of <I>
-EXTRA_ALLOC</I> in the file string.cpp during compilation (be sure to understand
-why its default value is what it is before modifying it!). You may try setting
-it to greater amount (say twice nLen) or to 0 (to see performance degradation
-which will follow) and analyse the impact of it on your program. If you do it,
-you will probably find it helpful to also define WXSTRING_STATISTICS symbol
-which tells the wxString class to collect performance statistics and to show
-them on stderr on program termination. This will show you the average length of
-strings your program manipulates, their average initial length and also the
-percent of times when memory wasn't reallocated when string concatenation was
-done but the already preallocated memory was used (this value should be about
-98% for the default allocation policy, if it is less than 90% you should
-really consider fine tuning wxString for your application).<P>
-
-It goes without saying that a profiler should be used to measure the precise
-difference the change to EXTRA_ALLOC makes to your program.<P>
+これは非常によくある状況であり、余分なメモリを割り当てない場合、著しい性能劣化を引き起こします。これは元の文字列に含まれる文字数分、メモリの (再) 割り当てが行われるためです。この場合では余分なメモリを割り当てることで処理速度が改善されましたが、通常のプログラムでは非常に多くの wxString が使用されるため、メモリ消費量も大きく増加します。<P>
+この例での最適な解決方法は <A HREF="wx_wxstring.html#wxstringalloc">Alloc()</A> 関数を用いて、最初に例えば len バイトほど割り当てておくことです。これにより、メモリの割り当てが確実に 1 回だけ行われます。(なぜなら、変換結果の文字列の長さは最大でも元の文字列と同じだからです)<P>
+しかし、Alloc() を使用するのは手間がかかるため、wxString ではできるだけのことをしています。デフォルトのアルゴリズムでは少なくとも 16 バイト単位でメモリの割り当てが行われると仮定している (これは広く使われているほぼすべてのプラットフォームで当てはまります) ため、メモリの割り当て量が 16 の倍数に切り上げられたとしても何も無駄になりません。このように、メモリが無駄になることはありませんし、上記の例では 16 回の繰り返しのうち、15 回はメモリの割り当てが行われず、割り当て済みのプールが使用されます。<P>
+このデフォルトのやり方は非常に保守的です。より多くのメモリを割り当てることで、(相対的に) とても長い文字列を使用するプログラムでは性能が大きく向上することでしょう。割り当てられるメモリの量は string.cpp ファイルの <I> EXTRA_ALLOC</I> を変更することでコンパイル時に設定することができます。(値を変更する前に、なぜデフォルト値がその値になっているのかをよく理解するようにしてください!) この値を大きく (ここでは nLen の倍にしたとしましょう) したり、(性能の劣化具合を確認するために) 0 に設定したりしてプログラムに与える影響を分析しようとするかもしれません。これを行なう場合、WXSTRING_STATISTICS シンボルも定義すると便利なことにおそらく気がつくでしょう。これを定義すると wxString クラスで性能統計を収集し、プログラムの終了時に標準エラー出力へ出力させることができます。これにより、プログラムで使用する文字列の平均長、平均初期サイズ、および文字列を連結する際にメモリを割り当てず、割り当て済みのメモリを使用した回数の割合 (デフォルトの設定では約 98% のはずですが、これが 90% を下回る場合には wxString のチューニングを本当に検討するべきです) が分かります。<P>
+言うまでもないことですが、EXTRA_ALLOC を変更したときの正確な違いを計測するためにプロファイラを使用するべきです。<P>
 
 </FONT><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -233,7 +233,7 @@ Enumeration</h2>
 <p>You must pass the same index to GetNext() and GetFirst() (don't modify it). Please note that it is not the index of the current item (you will have some great surprises with <a class="el" href="classwx_reg_config.html" title="wxRegConfig implements the wxConfigBase interface for storing and retrieving configuration informatio...">wxRegConfig</a> if you assume this) and you shouldn't even look at it: it is just a "cookie" which stores the state of the enumeration. It can't be stored inside the class because it would prevent you from running several enumerations simultaneously, that's why you must pass it explicitly.</p>
 <p>Having said all this, enumerating the config entries/groups is very simple:</p>
 <div class="fragment"><pre class="fragment">    <a class="code" href="classwx_config_base.html" title="wxConfigBase はすべてのコンフィグクラスの基本インタフェースを定義します。">wxConfigBase</a> *config = ...;
-    <a class="code" href="classwx_array_string.html" title="wxArrayString is an efficient container for storing wxString objects.">wxArrayString</a> aNames;
+    <a class="code" href="classwx_array_string.html" title="wxArrayString は wxString オブジェクトを効率的に格納するためのコンテナです。">wxArrayString</a> aNames;
 
     <span class="comment">// enumeration variables</span>
     <a class="code" href="classwx_string.html" title="wxString クラスは wxWidgets 3.0 では完全に書き直されます。そして、この変更が新しいバージョンを wxWidgets 3.0 と呼ぶ主な理由です。">wxString</a> str;
@@ -512,7 +512,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>By default, environment variable expansion is on and recording defaults is off.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>By default, environment variable expansion is on and recording defaults is off.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxConfigBase::~wxConfigBase" ref="a43a12ede8b28e1a62820101105f380d0" args="()" -->

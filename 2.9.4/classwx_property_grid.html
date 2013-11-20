@@ -162,7 +162,7 @@ function toggleVisibility(linkObj) {
 <li><span class="event">EVT_PG_COL_DRAGGING, (id, func)</span>:<div class="eventDesc">  Respond to <code>wxEVT_PG_COL_DRAGGING</code>, event, generated when a column resize by user is in progress. This event is also generated when user double-clicks the splitter in order to recenter it.  </div></li>
 <li><span class="event">EVT_PG_COL_END_DRAG(id,  func)</span>:<div class="eventDesc">  Respond to <code>wxEVT_PG_COL_END_DRAG</code> event, generated after column resize by user has finished.  </div></li>
 </ul>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Use <a class="el" href="classwx_window.html#a15c678314cfc1d807196bc298b713ed3" title="ウィンドウをフリーズ、つまり、画面上のいかなる更新も行われないようにします。これを行なうとウィンドウはまったく再描画されなくなります。">Freeze()</a> and <a class="el" href="classwx_window.html#a279a532124073261b28131b6afb59a1e" title="Re-enables window updating after a previous call to Freeze().">Thaw()</a> respectively to disable and enable drawing. This will also delay sorting etc. miscellaneous calculations to the last possible moment.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Use <a class="el" href="classwx_window.html#a15c678314cfc1d807196bc298b713ed3" title="ウィンドウをフリーズ、つまり、画面上のいかなる更新も行われないようにします。これを行なうとウィンドウはまったく再描画されなくなります。">Freeze()</a> and <a class="el" href="classwx_window.html#a279a532124073261b28131b6afb59a1e" title="Re-enables window updating after a previous call to Freeze().">Thaw()</a> respectively to disable and enable drawing. This will also delay sorting etc. miscellaneous calculations to the last possible moment.</dd></dl>
 <h2></h2>
 <div><span class="lib">Library:</span>&nbsp;&nbsp;<span class="lib_text"><a class="el" href="page_libs.html#page_libs_wxpropgrid">wxPropertyGrid</a></span></div><div><span class="category">Category:</span>&nbsp;&nbsp;<span class="category_text"><a class="el" href="group__group__class__propgrid.html">wxPropertyGrid</a></span></div>  <br><div><span class='appearance'>Appearance:</span><br><table class='appearance'><tr><td><img src='wxmsw/propertygrid.png' alt="wxMSW appearance" class='appearance'/></td><td><img src='wxgtk/propertygrid.png' alt="wxGTK appearance" class='appearance'/></td><td><img src='wxmac/propertygrid.png' alt="wxMac appearance" class='appearance'/></td></tr><tr><td>wxMSW appearance</td><td>wxGTK appearance</td><td>wxMac appearance</td></tr></table></div>  </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
@@ -514,7 +514,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Adds given property into selection.  </p>
 <p>If wxPG_EX_MULTIPLE_SELECTION extra style is not used, then this has same effect as calling <a class="el" href="classwx_property_grid.html#ab2c5acf3ce62377a8d570fd089cb815b" title="Selects a property.">SelectProperty()</a>.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Multiple selection is not supported for categories. This means that if you have properties selected, you cannot add category to selection, and also if you have category selected, you cannot add other properties to selection. This member function will fail silently in these cases, even returning true.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Multiple selection is not supported for categories. This means that if you have properties selected, you cannot add category to selection, and also if you have category selected, you cannot add other properties to selection. This member function will fail silently in these cases, even returning true.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPropertyGrid::AutoGetTranslation" ref="a1089c4b29e22fd6472c400b1a504b429" args="(bool enable)" -->
@@ -849,7 +849,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Override in derived class to display error messages in custom manner (these message usually only result from validation failure).  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>If you implement this, then you also need to implement <a class="el" href="classwx_property_grid.html#af170d02811ab8eed906963de693b79aa" title="Override in derived class to hide an error displayed by DoShowPropertyError().">DoHidePropertyError()</a> - possibly to do nothing, if error does not need hiding (e.g. it was logged or shown in a message box).</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>If you implement this, then you also need to implement <a class="el" href="classwx_property_grid.html#af170d02811ab8eed906963de693b79aa" title="Override in derived class to hide an error displayed by DoShowPropertyError().">DoHidePropertyError()</a> - possibly to do nothing, if error does not need hiding (e.g. it was logged or shown in a message box).</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_property_grid.html#af170d02811ab8eed906963de693b79aa" title="Override in derived class to hide an error displayed by DoShowPropertyError().">DoHidePropertyError()</a> </dd></dl>
 
 </div>
@@ -870,7 +870,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Call when editor widget's contents is modified.  </p>
 <p>For example, this is called when changes text in <a class="el" href="classwx_text_ctrl.html" title="テキストの表示と編集が可能なテキストコントロール。">wxTextCtrl</a> (used in wxStringProperty and wxIntProperty).</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This function should only be called by custom properties.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This function should only be called by custom properties.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_p_g_property.html#a16fbe26240bf47ab0a9a02d21781da73" title="Events received by editor widgets are processed here.">wxPGProperty::OnEvent()</a> </dd></dl>
 
 </div>
@@ -890,7 +890,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Reverse of <a class="el" href="classwx_property_grid.html#a98d434dc2d39b242aa98a0359143d5a3" title="Call when editor widget's contents is modified.">EditorsValueWasModified()</a>.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This function should only be called by custom properties.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This function should only be called by custom properties.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPropertyGrid::EnableCategories" ref="a69fd5ebd1012ee52f35721c824327278" args="(bool enable)" -->
@@ -910,7 +910,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Enables or disables (shows/hides) categories according to parameter enable.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This functions deselects selected property, if any. Validation failure option wxPG_VFB_STAY_IN_PROPERTY is not respected, ie. selection is cleared even if editor had invalid value.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This functions deselects selected property, if any. Validation failure option wxPG_VFB_STAY_IN_PROPERTY is not respected, ie. selection is cleared even if editor had invalid value.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPropertyGrid::EndLabelEdit" ref="a6ce64394848fef5da64ae050a780de87" args="(bool commit=true)" -->
@@ -976,7 +976,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Reduces column sizes to minimum possible, while still retaining fully visible grid contents (labels, images).  </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Minimum size for the grid to still display everything.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Does not work well with wxPG_SPLITTER_AUTO_CENTER window style.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Does not work well with wxPG_SPLITTER_AUTO_CENTER window style.</dd></dl>
 <p>This function only works properly if grid size prior to call was already fairly large.</p>
 <p>Note that you can also get calculated column widths by calling GetState-&gt;GetColumnWidth() immediately after this function returns.  </p>
 
@@ -1762,7 +1762,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This function is automatically called from <a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a>:: <a class="el" href="classwx_window.html#a7977b749284e65aecfed2ce146799cb9" title="Reparents the window, i.e.">Reparent()</a> and <a class="el" href="classwx_window.html#a7977b749284e65aecfed2ce146799cb9" title="Reparents the window, i.e.">wxPropertyGridManager::Reparent()</a>. You only need to use it if you reparent <a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a> indirectly.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This function is automatically called from <a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a>:: <a class="el" href="classwx_window.html#a7977b749284e65aecfed2ce146799cb9" title="Reparents the window, i.e.">Reparent()</a> and <a class="el" href="classwx_window.html#a7977b749284e65aecfed2ce146799cb9" title="Reparents the window, i.e.">wxPropertyGridManager::Reparent()</a>. You only need to use it if you reparent <a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a> indirectly.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPropertyGrid::RefreshEditor" ref="a0706eeff64712ce81ac7c31cd0b2d879" args="()" -->
@@ -1931,7 +1931,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>returns <span class="literal">true</span> if selection finished successfully. Usually only fails if current value in editor is not valid.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>In <a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a> 1.4, this member function used to generate <code>wxEVT_PG_SELECTED</code>. In wxWidgets 2.9 and later, it no longer does that.</dd>
+<dl class="remark"><dt><b>注意:</b></dt><dd>In <a class="el" href="classwx_property_grid.html" title="wxPropertyGrid is a specialized grid for editing properties - in other words name = value pairs...">wxPropertyGrid</a> 1.4, this member function used to generate <code>wxEVT_PG_SELECTED</code>. In wxWidgets 2.9 and later, it no longer does that.</dd>
 <dd>
 
 This clears any previous selection.</dd></dl>
@@ -2216,7 +2216,7 @@ This clears any previous selection.</dd></dl>
                 {
                     <span class="keywordflow">return</span> p1-&gt;<a class="code" href="classwx_p_g_property.html#adc211e2a17cfaab3a1c7d4b6fd8788b6" title="Returns property's base name (ie.">GetBaseName</a>().<a class="code" href="classwx_string.html#addee33a9b9e21e4803bccdda8e362548">compare</a>( p2-&gt;<a class="code" href="classwx_p_g_property.html#adc211e2a17cfaab3a1c7d4b6fd8788b6" title="Returns property's base name (ie.">GetBaseName</a>() );
                 }
-</pre></div><dl class="remark"><dt><b>Remarks:</b></dt><dd>Default property sort function sorts properties by their labels (case-insensitively).</dd></dl>
+</pre></div><dl class="remark"><dt><b>注意:</b></dt><dd>Default property sort function sorts properties by their labels (case-insensitively).</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_property_grid.html#aa0d82af21a87fe9e7ef23faebec694e8" title="Returns the property sort function (default is NULL).">GetSortFunction</a>, <a class="el" href="classwx_property_grid_interface.html#a68c73043fc89e18169207c0cee737852" title="Sorts all properties recursively.">wxPropertyGridInterface::Sort</a>, <a class="el" href="classwx_property_grid_interface.html#a5e99b4ebcbdc6ee1c59d8284df0bfa8f" title="Sorts children of a property.">wxPropertyGridInterface::SortChildren</a> </dd></dl>
 
 </div>
@@ -2272,7 +2272,7 @@ This clears any previous selection.</dd></dl>
 <div class="memdoc">
 
 <p>Sets x coordinate of the splitter.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Splitter position cannot exceed grid size, and therefore setting it during form creation may fail as initial grid size is often smaller than desired splitter position, especially when sizers are being used.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Splitter position cannot exceed grid size, and therefore setting it during form creation may fail as initial grid size is often smaller than desired splitter position, especially when sizers are being used.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPropertyGrid::SetUnspecifiedValueAppearance" ref="ae4d3d62469b3f0b8a7a6e2f10fa473ff" args="(const wxPGCell &amp;cell)" -->
@@ -2293,7 +2293,7 @@ This clears any previous selection.</dd></dl>
 
 <p>Sets appearance of value cells representing an unspecified property value.  </p>
 <p>Default appearance is blank.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>If you set the unspecified value to have any textual representation, then that will override "InlineHelp" attribute.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>If you set the unspecified value to have any textual representation, then that will override "InlineHelp" attribute.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_p_g_property.html#a4e55506bbc49f0b7d447df71a00f2df6" title="Sets property's value to unspecified (ie.">wxPGProperty::SetValueToUnspecified()</a>, <a class="el" href="classwx_p_g_property.html#a785c3679e91f5b878bcbaec31aa1bccc" title="Returns true if property's value is considered unspecified.">wxPGProperty::IsValueUnspecified()</a> </dd></dl>
 
 </div>

@@ -138,7 +138,7 @@ function toggleVisibility(linkObj) {
 <p>MDI is a user-interface model in which all the window reside inside the single parent window as opposed to being separate from each other. It remains popular despite dire warnings from Microsoft itself (which popularized this model in the first model) that MDI is obsolete.</p>
 <p>An MDI parent frame always has a <a class="el" href="classwx_m_d_i_client_window.html" title="An MDI client window is a child of wxMDIParentFrame, and manages zero or more wxMDIChildFrame objects...">wxMDIClientWindow</a> associated with it, which is the parent for MDI child frames. In the simplest case, the client window takes up the entire parent frame area but it is also possible to resize it to be smaller in order to have other windows in the frame, a typical example is using a sidebar along one of the window edges.</p>
 <p>The appearance of MDI applications differs between different ports. The classic MDI model, with child windows which can be independently moved, resized etc, is only available under MSW, which provides native support for it. In Mac ports, multiple top level windows are used for the MDI children too and the MDI parent frame itself is invisible, to accommodate the native look and feel requirements. In all the other ports, a tab-based MDI implementation (sometimes called TDI) is used and so at most one MDI child is visible at any moment (child frames are always maximized).</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd></dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd></dd></dl>
 <p>Although it is possible to have multiple MDI parent frames, a typical MDI application has a single MDI parent frame window inside which multiple MDI child frames, i.e. objects of class <a class="el" href="classwx_m_d_i_child_frame.html" title="An MDI child frame is a frame that can only exist inside a wxMDIClientWindow, which is itself a child...">wxMDIChildFrame</a>, can be created.</p>
 <h2>Styles</h2>
 <p>This class supports the following styles:</p>
@@ -273,7 +273,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd></dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd></dd></dl>
 <p>Under wxMSW, the client window will automatically have a sunken border style when the active child is not maximized, and no border style when a child is maximized.</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_m_d_i_parent_frame.html#a72bf23c5e4ad28a8954b37e4951a3b73" title="Used in two-step frame construction.">Create()</a>, <a class="el" href="classwx_m_d_i_parent_frame.html#a218d7f590ee36e9a113b5321eb4a83cd" title="Override this to return a different kind of client window.">OnCreateClient()</a> </dd></dl>
 
@@ -537,7 +537,7 @@ Static Public Member Functions</h2></td></tr>
 <p>If you override this function, you must create your parent frame in two stages, or your function will never be called, due to the way C++ treats virtual functions called from constructors. 以下に例を示します:</p>
 <div class="fragment"><pre class="fragment">        frame = <span class="keyword">new</span> MyParentFrame;
         frame-&gt;Create(parent, myParentFrameId, <span class="stringliteral">"My Parent Frame"</span>);
-</pre></div><dl class="remark"><dt><b>Remarks:</b></dt><dd></dd></dl>
+</pre></div><dl class="remark"><dt><b>注意:</b></dt><dd></dd></dl>
 <p>You might wish to derive from <a class="el" href="classwx_m_d_i_client_window.html" title="An MDI client window is a child of wxMDIParentFrame, and manages zero or more wxMDIChildFrame objects...">wxMDIClientWindow</a> in order to implement different erase behaviour, for example, such as painting a bitmap on the background.</p>
 <p>Note that it is probably impossible to have a client window that scrolls as well as painting a bitmap or pattern, since in <b>OnScroll</b>, the scrollbar positions always return zero.</p>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_m_d_i_parent_frame.html#ad56178287336d30e658c636a8cb096da" title="Returns a pointer to the client window.">GetClientWindow()</a>, <a class="el" href="classwx_m_d_i_client_window.html" title="An MDI client window is a child of wxMDIParentFrame, and manages zero or more wxMDIChildFrame objects...">wxMDIClientWindow</a> </dd></dl>

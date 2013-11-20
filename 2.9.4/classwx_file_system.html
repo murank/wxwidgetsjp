@@ -243,7 +243,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Sets the current location.  </p>
 <p><em>location</em> parameter passed to <a class="el" href="classwx_file_system.html#a01c6b989e86e34da21e94c802e516b16" title="Opens the file and returns a pointer to a wxFSFile object or NULL if failed.">OpenFile()</a> is relative to this path.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Unless <em>is_dir</em> is <span class="literal">true</span> the <em>location</em> parameter is not the directory name but the name of the file in this directory.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Unless <em>is_dir</em> is <span class="literal">true</span> the <em>location</em> parameter is not the directory name but the name of the file in this directory.</dd></dl>
 <p>All these commands change the path to "dir/subdir/":</p>
 <div class="fragment"><pre class="fragment">        <a class="code" href="classwx_file_system.html#ad491d9cb899dcdd3b9960c1974e34da0" title="Sets the current location.">ChangePathTo</a>(<span class="stringliteral">"dir/subdir/xh.htm"</span>);
         <a class="code" href="classwx_file_system.html#ad491d9cb899dcdd3b9960c1974e34da0" title="Sets the current location.">ChangePathTo</a>(<span class="stringliteral">"dir/subdir"</span>, <span class="keyword">true</span>);

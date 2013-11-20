@@ -429,7 +429,7 @@ Static Public Member Functions</h2></td></tr>
 <p>It is also used as the key for the search in the catalog. The <em>origString2</em> parameter is the plural form (in English).</p>
 <p>The parameter <em>n</em> is used to determine the plural form. If no message catalog is found <em>origString</em> is returned if 'n == 1', otherwise <em>origString2</em>.</p>
 <p>See GNU gettext manual for additional information on plural forms handling. This method is called by the <a class="el" href="group__group__funcmacro__string.html#ga223e9aea5b1a2252c7e632613c7b9a74" title="This function returns the translation of string in the current locale().">wxGetTranslation()</a> function and <a class="el" href="group__group__funcmacro__string.html#ga8a02b8875a521df57263a9e6f090f2d0" title="翻訳対象となるすべてのリテラル文字列に対して使用するマクロです。">_()</a> macro.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Domains are searched in the last to first order, i.e. catalogs added later override those added before.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Domains are searched in the last to first order, i.e. catalogs added later override those added before.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxTranslations::GetString" ref="abc65ffea4b238c11c7131e5303f174f2" args="(const wxString &amp;origString, const wxString &amp;domain=wxEmptyString) const " -->
@@ -460,7 +460,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Retrieves the translation for a string in all loaded domains unless the <em>domain</em> parameter is specified (and then only this catalog/domain is searched).  </p>
 <p>Returns original string if translation is not available (in this case an error message is generated the first time a string is not found; use <a class="el" href="classwx_log_null.html" title="このクラスを用いて一時的にロギングを中断することができます。">wxLogNull</a> to suppress it).</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Domains are searched in the last to first order, i.e. catalogs added later override those added before.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Domains are searched in the last to first order, i.e. catalogs added later override those added before.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxTranslations::IsLoaded" ref="a1baf790dc4226869a727e03a59ff5b25" args="(const wxString &amp;domain) const " -->

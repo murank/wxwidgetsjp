@@ -302,7 +302,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>After using this constructor, you must create either one or two subwindows with the splitter window as parent, and then call one of <a class="el" href="classwx_splitter_window.html#a7b54aa365c98375c562a7fbc3f4e715f" title="Initializes the splitter window to have one pane.">Initialize()</a>, <a class="el" href="classwx_splitter_window.html#a3003054271e61737e914b365e3a233b4" title="Initializes the left and right panes of the splitter window.">SplitVertically()</a> and <a class="el" href="classwx_splitter_window.html#a27f942a5849311e4800cabfdc1e781db" title="Initializes the top and bottom panes of the splitter window.">SplitHorizontally()</a> in order to set the pane(s). You can create two windows, with one hidden when not being shown; or you can create and delete the second pane on demand.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>After using this constructor, you must create either one or two subwindows with the splitter window as parent, and then call one of <a class="el" href="classwx_splitter_window.html#a7b54aa365c98375c562a7fbc3f4e715f" title="Initializes the splitter window to have one pane.">Initialize()</a>, <a class="el" href="classwx_splitter_window.html#a3003054271e61737e914b365e3a233b4" title="Initializes the left and right panes of the splitter window.">SplitVertically()</a> and <a class="el" href="classwx_splitter_window.html#a27f942a5849311e4800cabfdc1e781db" title="Initializes the top and bottom panes of the splitter window.">SplitHorizontally()</a> in order to set the pane(s). You can create two windows, with one hidden when not being shown; or you can create and delete the second pane on demand.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_splitter_window.html#a7b54aa365c98375c562a7fbc3f4e715f" title="Initializes the splitter window to have one pane.">Initialize()</a>, <a class="el" href="classwx_splitter_window.html#a3003054271e61737e914b365e3a233b4" title="Initializes the left and right panes of the splitter window.">SplitVertically()</a>, <a class="el" href="classwx_splitter_window.html#a27f942a5849311e4800cabfdc1e781db" title="Initializes the top and bottom panes of the splitter window.">SplitHorizontally()</a>, <a class="el" href="classwx_splitter_window.html#a40bd4e468a9c71a837e8de40b4c983db" title="Creation function, for two-step construction.">Create()</a> </dd></dl>
 
 </div>
@@ -557,7 +557,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This should be called if you wish to initially view only a single pane in the splitter window.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This should be called if you wish to initially view only a single pane in the splitter window.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_splitter_window.html#a3003054271e61737e914b365e3a233b4" title="Initializes the left and right panes of the splitter window.">SplitVertically()</a>, <a class="el" href="classwx_splitter_window.html#a27f942a5849311e4800cabfdc1e781db" title="Initializes the top and bottom panes of the splitter window.">SplitHorizontally()</a> </dd></dl>
 
 </div>
@@ -577,7 +577,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns <span class="literal">true</span> if the sash is invisible even when the window is split, <span class="literal">false</span> otherwise.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This is a shortcut for HasFlag(wxSP_NOSASH)</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This is a shortcut for HasFlag(wxSP_NOSASH)</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_splitter_window.html#a3e140b4e8e73ff55aaf3b055f007c269" title="Sets whether the sash should be invisible, even when the window is split.">SetSashInvisible()</a></dd></dl>
 <dl class="since"><dt><b>Since:</b></dt><dd>2.9.4  </dd></dl>
 
@@ -634,7 +634,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>The default implementation of this function calls Unsplit if the minimum pane size is zero.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>The default implementation of this function calls Unsplit if the minimum pane size is zero.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_splitter_window.html#a8802da28267a6bb4eb6610f6abca2fc3" title="Unsplits the window.">Unsplit()</a> </dd></dl>
 
 </div>
@@ -662,7 +662,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>The default implementation of this function verifies that the sizes of both panes of the splitter are greater than minimum pane size.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>The default implementation of this function verifies that the sizes of both panes of the splitter are greater than minimum pane size.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxSplitterWindow::OnUnsplit" ref="a6ff1d9cf73ded27ff0de8fd608106659" args="(wxWindow *removed)" -->
@@ -688,7 +688,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>The default implementation of this function simply hides removed. You may wish to delete the window.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>The default implementation of this function simply hides removed. You may wish to delete the window.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxSplitterWindow::ReplaceWindow" ref="af85847a7899f8f4bf9a28b7e2ebee357" args="(wxWindow *winOld, wxWindow *winNew)" -->
@@ -746,7 +746,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>The default minimum pane size is zero, which means that either pane can be reduced to zero by dragging the sash, thus removing one of the panes. To prevent this behaviour (and veto out-of-range sash dragging), set a minimum size, for example 20 pixels. If the wxSP_PERMIT_UNSPLIT style is used when a splitter window is created, the window may be unsplit even if minimum size is non-zero.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>The default minimum pane size is zero, which means that either pane can be reduced to zero by dragging the sash, thus removing one of the panes. To prevent this behaviour (and veto out-of-range sash dragging), set a minimum size, for example 20 pixels. If the wxSP_PERMIT_UNSPLIT style is used when a splitter window is created, the window may be unsplit even if minimum size is non-zero.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_splitter_window.html#ad492c8a5baa7db0d867259452750151a" title="Returns the current minimum pane size (defaults to zero).">GetMinimumPaneSize()</a> </dd></dl>
 
 </div>
@@ -773,7 +773,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Gravity is real factor which controls position of sash while resizing <a class="el" href="classwx_splitter_window.html" title="This class manages up to two subwindows.">wxSplitterWindow</a>. Gravity tells <a class="el" href="classwx_splitter_window.html" title="This class manages up to two subwindows.">wxSplitterWindow</a> how much will left/top window grow while resizing. Example values:<ul>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Gravity is real factor which controls position of sash while resizing <a class="el" href="classwx_splitter_window.html" title="This class manages up to two subwindows.">wxSplitterWindow</a>. Gravity tells <a class="el" href="classwx_splitter_window.html" title="This class manages up to two subwindows.">wxSplitterWindow</a> how much will left/top window grow while resizing. Example values:<ul>
 <li>0.0: only the bottom/right window is automatically resized</li>
 <li>0.5: both windows grow by equal size</li>
 <li>1.0: only left/top window grows Gravity should be a real value between 0.0 and 1.0. Default value of sash gravity is 0.0. That value is compatible with previous (before gravity was introduced) behaviour of <a class="el" href="classwx_splitter_window.html" title="This class manages up to two subwindows.">wxSplitterWindow</a>.</li>
@@ -800,7 +800,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Sets whether the sash should be invisible, even when the window is split.  </p>
 <p>When the sash is invisible, it doesn't appear on the screen at all and, in particular, doesn't allow the user to resize the windows.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Only sets the internal variable; does not update the display.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Only sets the internal variable; does not update the display.</dd></dl>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">invisible</td><td>If <span class="literal">true</span>, the sash is always invisible, else it is shown when the window is split.</td></tr>
@@ -845,7 +845,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Does not currently check for an out-of-range value.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Does not currently check for an out-of-range value.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_splitter_window.html#a20316c3f66d3d596d63630a1529ababc" title="Returns the current sash position.">GetSashPosition()</a> </dd></dl>
 
 </div>
@@ -872,7 +872,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Only sets the internal variable; does not update the display.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Only sets the internal variable; does not update the display.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_splitter_window.html#a5a75a5c90aea1448a639dc2e7318dec9" title="Gets the split mode.">GetSplitMode()</a>, <a class="el" href="classwx_splitter_window.html#a3003054271e61737e914b365e3a233b4" title="Initializes the left and right panes of the splitter window.">SplitVertically()</a>, <a class="el" href="classwx_splitter_window.html#a27f942a5849311e4800cabfdc1e781db" title="Initializes the top and bottom panes of the splitter window.">SplitHorizontally()</a>.  </dd></dl>
 
 </div>
@@ -919,7 +919,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful, <span class="literal">false</span> otherwise (the window was already split).</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This should be called if you wish to initially view two panes. It can also be called at any subsequent time, but the application should check that the window is not currently split using <a class="el" href="classwx_splitter_window.html#ab57f1dc1b8a48f8a19fd3d615de04084" title="Returns true if the window is split, false otherwise.">IsSplit()</a>.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This should be called if you wish to initially view two panes. It can also be called at any subsequent time, but the application should check that the window is not currently split using <a class="el" href="classwx_splitter_window.html#ab57f1dc1b8a48f8a19fd3d615de04084" title="Returns true if the window is split, false otherwise.">IsSplit()</a>.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_splitter_window.html#a3003054271e61737e914b365e3a233b4" title="Initializes the left and right panes of the splitter window.">SplitVertically()</a>, <a class="el" href="classwx_splitter_window.html#ab57f1dc1b8a48f8a19fd3d615de04084" title="Returns true if the window is split, false otherwise.">IsSplit()</a>, <a class="el" href="classwx_splitter_window.html#a8802da28267a6bb4eb6610f6abca2fc3" title="Unsplits the window.">Unsplit()</a> </dd></dl>
 
 </div>
@@ -966,7 +966,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful, <span class="literal">false</span> otherwise (the window was already split).</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This should be called if you wish to initially view two panes. It can also be called at any subsequent time, but the application should check that the window is not currently split using <a class="el" href="classwx_splitter_window.html#ab57f1dc1b8a48f8a19fd3d615de04084" title="Returns true if the window is split, false otherwise.">IsSplit()</a>.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This should be called if you wish to initially view two panes. It can also be called at any subsequent time, but the application should check that the window is not currently split using <a class="el" href="classwx_splitter_window.html#ab57f1dc1b8a48f8a19fd3d615de04084" title="Returns true if the window is split, false otherwise.">IsSplit()</a>.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_splitter_window.html#a27f942a5849311e4800cabfdc1e781db" title="Initializes the top and bottom panes of the splitter window.">SplitHorizontally()</a>, <a class="el" href="classwx_splitter_window.html#ab57f1dc1b8a48f8a19fd3d615de04084" title="Returns true if the window is split, false otherwise.">IsSplit()</a>, <a class="el" href="classwx_splitter_window.html#a8802da28267a6bb4eb6610f6abca2fc3" title="Unsplits the window.">Unsplit()</a>.  </dd></dl>
 
 </div>
@@ -994,7 +994,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if successful, <span class="literal">false</span> otherwise (the window was not split).</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This call will not actually delete the pane being removed; it calls <a class="el" href="classwx_splitter_window.html#a6ff1d9cf73ded27ff0de8fd608106659" title="Application-overridable function called when the window is unsplit, either programmatically or using ...">OnUnsplit()</a> which can be overridden for the desired behaviour. By default, the pane being removed is hidden.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This call will not actually delete the pane being removed; it calls <a class="el" href="classwx_splitter_window.html#a6ff1d9cf73ded27ff0de8fd608106659" title="Application-overridable function called when the window is unsplit, either programmatically or using ...">OnUnsplit()</a> which can be overridden for the desired behaviour. By default, the pane being removed is hidden.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_splitter_window.html#a27f942a5849311e4800cabfdc1e781db" title="Initializes the top and bottom panes of the splitter window.">SplitHorizontally()</a>, <a class="el" href="classwx_splitter_window.html#a3003054271e61737e914b365e3a233b4" title="Initializes the left and right panes of the splitter window.">SplitVertically()</a>, <a class="el" href="classwx_splitter_window.html#ab57f1dc1b8a48f8a19fd3d615de04084" title="Returns true if the window is split, false otherwise.">IsSplit()</a>, <a class="el" href="classwx_splitter_window.html#a6ff1d9cf73ded27ff0de8fd608106659" title="Application-overridable function called when the window is unsplit, either programmatically or using ...">OnUnsplit()</a> </dd></dl>
 
 </div>

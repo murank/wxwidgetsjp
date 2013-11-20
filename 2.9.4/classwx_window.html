@@ -1040,7 +1040,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This function is currently only implemented under Mac/Carbon.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This function is currently only implemented under Mac/Carbon.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::CacheBestSize" ref="a100905524d330cfd9620fd726e378066" args="(const wxSize &amp;size) const " -->
@@ -1193,7 +1193,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>If the window is a top level one (i.e. doesn't have a parent), it will be centred relative to the screen anyhow.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>If the window is a top level one (i.e. doesn't have a parent), it will be centred relative to the screen anyhow.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a06c0ecb262995b40083bfb446a6cff99" title="A synonym for Centre().">Center()</a> </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classwx_dialog.html#a6af384c4a558965bfee61784f5e0b7fc">wxDialog</a>, and <a class="el" href="classwx_frame.html#a39b18ed552aabaf2a1bc4af7cc924a0f">wxFrame</a>.</p>
@@ -1223,7 +1223,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This methods provides for a way to centre top level windows over their parents instead of the entire screen. If there is no parent or if the window is not a top level window, then behaviour is the same as <a class="el" href="classwx_window.html#a4a1819eeee3f2143cdde4f329ffde787" title="Centres the window.">Centre()</a>.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This methods provides for a way to centre top level windows over their parents instead of the entire screen. If there is no parent or if the window is not a top level window, then behaviour is the same as <a class="el" href="classwx_window.html#a4a1819eeee3f2143cdde4f329ffde787" title="Centres the window.">Centre()</a>.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_top_level_window.html#a1d28df1d739af6a3d5d2ec9e43b03c29" title="Centres the window on screen.">wxTopLevelWindow::CentreOnScreen</a> </dd></dl>
 
 </div>
@@ -1355,7 +1355,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Close calls the close handler for the window, providing an opportunity for the window to choose whether to destroy the window. Usually it is only used with the top level windows (<a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> and <a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> classes) as the others are not supposed to have any special OnClose() logic. The close handler should check whether the window is being deleted forcibly, using <a class="el" href="classwx_close_event.html#adaa0548df45e05e8487cc5664ac352cf" title="システムシャットダウンやウィンドウの終了イベントを拒否できる場合に true を返却します。">wxCloseEvent::CanVeto</a>, in which case it should destroy the window using <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="安全にウィンドウを破棄します。">wxWindow::Destroy</a>. Note that calling Close does not guarantee that the window will be destroyed; but it provides a way to simulate a manual close of a window, which may or may not be implemented by destroying the window. The default implementation of wxDialog::OnCloseWindow does not necessarily delete the dialog, since it will simply simulate an wxID_CANCEL event which is handled by the appropriate button event handler and may do anything at all. To guarantee that the window will be destroyed, call <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="安全にウィンドウを破棄します。">wxWindow::Destroy</a> instead</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Close calls the close handler for the window, providing an opportunity for the window to choose whether to destroy the window. Usually it is only used with the top level windows (<a class="el" href="classwx_frame.html" title="フレームは (通常は) ユーザがサイズや位置を変更可能なウィンドウです。">wxFrame</a> and <a class="el" href="classwx_dialog.html" title="ダイアログボックスはタイトルバーと、たまにシステムメニューを持つ、移動可能なウィンドウです。">wxDialog</a> classes) as the others are not supposed to have any special OnClose() logic. The close handler should check whether the window is being deleted forcibly, using <a class="el" href="classwx_close_event.html#adaa0548df45e05e8487cc5664ac352cf" title="システムシャットダウンやウィンドウの終了イベントを拒否できる場合に true を返却します。">wxCloseEvent::CanVeto</a>, in which case it should destroy the window using <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="安全にウィンドウを破棄します。">wxWindow::Destroy</a>. Note that calling Close does not guarantee that the window will be destroyed; but it provides a way to simulate a manual close of a window, which may or may not be implemented by destroying the window. The default implementation of wxDialog::OnCloseWindow does not necessarily delete the dialog, since it will simply simulate an wxID_CANCEL event which is handled by the appropriate button event handler and may do anything at all. To guarantee that the window will be destroyed, call <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="安全にウィンドウを破棄します。">wxWindow::Destroy</a> instead</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_windowdeletion.html">Window Deletion Overview</a>, <a class="el" href="classwx_window.html#a6bf0c5be864544d9ce0560087667b7fc" title="安全にウィンドウを破棄します。">Destroy()</a>, <a class="el" href="classwx_close_event.html" title="このイベントクラスはウィンドウとセッションの終了イベントに関する情報を含んでいます。">wxCloseEvent</a> </dd></dl>
 
 </div>
@@ -1377,7 +1377,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Converts a point or size from dialog units to pixels.  </p>
 <p>For the x dimension, the dialog units are multiplied by the average character width and then divided by 4. For the y dimension, the dialog units are multiplied by the average character height and then divided by 8.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Dialog units are used for maintaining a dialog's proportions even if the font changes. You can also use these functions programmatically. A convenience macro is defined:  <div class="fragment"><pre class="fragment"><span class="preprocessor">                #define wxDLG_UNIT(parent, pt) parent-&gt;ConvertDialogToPixels(pt)</span>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Dialog units are used for maintaining a dialog's proportions even if the font changes. You can also use these functions programmatically. A convenience macro is defined:  <div class="fragment"><pre class="fragment"><span class="preprocessor">                #define wxDLG_UNIT(parent, pt) parent-&gt;ConvertDialogToPixels(pt)</span>
 </pre></div></dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a449aac6a24f1d14b1a82b58003447dfe" title="Converts a point or size from pixels to dialog units.">ConvertPixelsToDialog()</a> </dd></dl>
 
@@ -1419,7 +1419,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Converts a point or size from pixels to dialog units.  </p>
 <p>For the x dimension, the pixels are multiplied by 4 and then divided by the average character width. For the y dimension, the pixels are multiplied by 8 and then divided by the average character height.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Dialog units are used for maintaining a dialog's proportions even if the font changes.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Dialog units are used for maintaining a dialog's proportions even if the font changes.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#acb6787b6c3c314f9e015658a89ad0265" title="Converts a point or size from dialog units to pixels.">ConvertDialogToPixels()</a> </dd></dl>
 
 </div>
@@ -1577,7 +1577,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This function is not meant to be called directly by user code, but via Centre, Center, CentreOnParent, or CenterOnParent. This function can be overridden to fine-tune centring behaviour.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This function is not meant to be called directly by user code, but via Centre, Center, CentreOnParent, or CenterOnParent. This function can be overridden to fine-tune centring behaviour.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::DoGetBestClientHeight" ref="a4a7af6aa217c9aa41d7ba3def3564520" args="(int width) const " -->
@@ -1732,7 +1732,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Windows only until version 2.8.9, available on all platforms since 2.8.10. Cannot be used together with <a class="el" href="classwx_window.html#ae34b4d45433ca8287df0e47d46411e58" title="このウィンドウに関連付けられたドロップ先。">SetDropTarget()</a> on non-Windows platforms.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Windows only until version 2.8.9, available on all platforms since 2.8.10. Cannot be used together with <a class="el" href="classwx_window.html#ae34b4d45433ca8287df0e47d46411e58" title="このウィンドウに関連付けられたドロップ先。">SetDropTarget()</a> on non-Windows platforms.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#ae34b4d45433ca8287df0e47d46411e58" title="このウィンドウに関連付けられたドロップ先。">SetDropTarget()</a> </dd></dl>
 
 </div>
@@ -1780,7 +1780,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Finds the window or control which currently has the keyboard focus.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Note that this is a static function, so it can be called without needing a <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> pointer.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Note that this is a static function, so it can be called without needing a <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> pointer.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a697f9f8d3ff389790f1c74b59bcb1d75" title="This sets the window to receive keyboard input.">SetFocus()</a>, <a class="el" href="classwx_window.html#a4e0abff99d64d2a595ee0ab4b415bbd6" title="Returns true if the window (or in case of composite controls, its main child window) has focus...">HasFocus()</a> </dd></dl>
 
 </div>
@@ -2610,7 +2610,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns the foreground colour of the window.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>The meaning of foreground colour varies according to the window class; it may be the text colour or other colour, or it may not be used at all.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>The meaning of foreground colour varies according to the window class; it may be the text colour or other colour, or it may not be used at all.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a69f1e1c7ddd370d72e68c70f13ac8de9" title="Sets the foreground colour of the window.">SetForegroundColour()</a>, <a class="el" href="classwx_window.html#a37219df52734626e23401fd83b25d8a0" title="Sets the background colour of the window.">SetBackgroundColour()</a>, <a class="el" href="classwx_window.html#a3006d98a4145b7064c1f08e39487d257" title="Returns the background colour of the window.">GetBackgroundColour()</a> </dd></dl>
 
 </div>
@@ -2725,7 +2725,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns the identifier of the window.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Each window has an integer identifier. If the application has not provided one (or the default wxID_ANY) a unique identifier with a negative value will be generated.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Each window has an integer identifier. If the application has not provided one (or the default wxID_ANY) a unique identifier with a negative value will be generated.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a7f27d0faed14effa013381bdc40e1bcd" title="Sets the identifier of the window.">SetId()</a>, <a class="el" href="overview_windowids.html">Window IDs</a> </dd></dl>
 
 </div>
@@ -2745,7 +2745,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Generic way of getting a label from any window, for identification purposes.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>The interpretation of this function differs from class to class. For frames and dialogs, the value returned is the title. For buttons or static text controls, it is the button text. This function can be useful for meta-programs (such as testing tools or special-needs access programs) which need to identify windows by name.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>The interpretation of this function differs from class to class. For frames and dialogs, the value returned is the title. For buttons or static text controls, it is the button text. This function can be useful for meta-programs (such as testing tools or special-needs access programs) which need to identify windows by name.  </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classwx_button.html#ab2e600e498ab8b2119a9cdc6ae93612d">wxButton</a>, <a class="el" href="classwx_command_link_button.html#a62f9b9ae4a163d4e202498edcccedea3">wxCommandLinkButton</a>, and <a class="el" href="classwx_control.html#a0c15321992cfb77595db57cd4e4aec37">wxControl</a>.</p>
 
@@ -2940,7 +2940,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns the window's name.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This name is not guaranteed to be unique; it is up to the programmer to supply an appropriate name in the window constructor or via <a class="el" href="classwx_window.html#af80875cda5e1af98dcd7c8e712e3c800" title="Sets the window's name.">SetName()</a>.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This name is not guaranteed to be unique; it is up to the programmer to supply an appropriate name in the window constructor or via <a class="el" href="classwx_window.html#af80875cda5e1af98dcd7c8e712e3c800" title="Sets the window's name.">SetName()</a>.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#af80875cda5e1af98dcd7c8e712e3c800" title="Sets the window's name.">SetName()</a> </dd></dl>
 
 </div>
@@ -4300,7 +4300,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns <span class="literal">true</span> if the window is retained, <span class="literal">false</span> otherwise.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Retained windows are only available on X platforms.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Retained windows are only available on X platforms.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::IsScrollbarAlwaysShown" ref="aeeef7eaf8c8f1ec1a54e7a68d63923d0" args="(int orient) const " -->
@@ -4513,7 +4513,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Lowers the window to the bottom of the window hierarchy (Z-order).  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This function only works for wxTopLevelWindow-derived classes.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This function only works for wxTopLevelWindow-derived classes.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a54808c933f22a891c5db646f6209fa4d" title="Raises the window to the top of the window hierarchy (Z-order).">Raise()</a> </dd></dl>
 
 </div>
@@ -4558,7 +4558,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Implementations of SetSize can also implicitly implement the <a class="el" href="classwx_window.html#ab1cb98c8d25b9e6ff7b706b1446c3df7" title="Moves the window to the given position.">Move()</a> function, which is defined in the base <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> class as the call:  <div class="fragment"><pre class="fragment">                 <a class="code" href="classwx_window.html#a180312d5ad4a4a5ad805b8d52d67a74e" title="ピクセル単位でウィンドウサイズを設定します。">SetSize</a>(x, y, <a class="code" href="defs_8h.html#ae297119c813ec5d3328ce3f43f9ac6c1" title='A special value meaning "use default coordinate".'>wxDefaultCoord</a>, <a class="code" href="defs_8h.html#ae297119c813ec5d3328ce3f43f9ac6c1" title='A special value meaning "use default coordinate".'>wxDefaultCoord</a>, <a class="code" href="defs_8h.html#a2f39257d6e2924d14ba28afa42abcde6">wxSIZE_USE_EXISTING</a>);
+<dl class="remark"><dt><b>注意:</b></dt><dd>Implementations of SetSize can also implicitly implement the <a class="el" href="classwx_window.html#ab1cb98c8d25b9e6ff7b706b1446c3df7" title="Moves the window to the given position.">Move()</a> function, which is defined in the base <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> class as the call:  <div class="fragment"><pre class="fragment">                 <a class="code" href="classwx_window.html#a180312d5ad4a4a5ad805b8d52d67a74e" title="ピクセル単位でウィンドウサイズを設定します。">SetSize</a>(x, y, <a class="code" href="defs_8h.html#ae297119c813ec5d3328ce3f43f9ac6c1" title='A special value meaning "use default coordinate".'>wxDefaultCoord</a>, <a class="code" href="defs_8h.html#ae297119c813ec5d3328ce3f43f9ac6c1" title='A special value meaning "use default coordinate".'>wxDefaultCoord</a>, <a class="code" href="defs_8h.html#a2f39257d6e2924d14ba28afa42abcde6">wxSIZE_USE_EXISTING</a>);
 </pre></div></dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a180312d5ad4a4a5ad805b8d52d67a74e" title="ピクセル単位でウィンドウサイズを設定します。">SetSize()</a> </dd></dl>
 
@@ -4597,7 +4597,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Implementations of <a class="el" href="classwx_window.html#a180312d5ad4a4a5ad805b8d52d67a74e" title="ピクセル単位でウィンドウサイズを設定します。">SetSize()</a> can also implicitly implement the <a class="el" href="classwx_window.html#ab1cb98c8d25b9e6ff7b706b1446c3df7" title="Moves the window to the given position.">Move()</a> function, which is defined in the base <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> class as the call:  <div class="fragment"><pre class="fragment">                 <a class="code" href="classwx_window.html#a180312d5ad4a4a5ad805b8d52d67a74e" title="ピクセル単位でウィンドウサイズを設定します。">SetSize</a>(x, y, <a class="code" href="defs_8h.html#ae297119c813ec5d3328ce3f43f9ac6c1" title='A special value meaning "use default coordinate".'>wxDefaultCoord</a>, <a class="code" href="defs_8h.html#ae297119c813ec5d3328ce3f43f9ac6c1" title='A special value meaning "use default coordinate".'>wxDefaultCoord</a>, <a class="code" href="defs_8h.html#a2f39257d6e2924d14ba28afa42abcde6">wxSIZE_USE_EXISTING</a>);
+<dl class="remark"><dt><b>注意:</b></dt><dd>Implementations of <a class="el" href="classwx_window.html#a180312d5ad4a4a5ad805b8d52d67a74e" title="ピクセル単位でウィンドウサイズを設定します。">SetSize()</a> can also implicitly implement the <a class="el" href="classwx_window.html#ab1cb98c8d25b9e6ff7b706b1446c3df7" title="Moves the window to the given position.">Move()</a> function, which is defined in the base <a class="el" href="classwx_window.html" title="wxWindow はすべてのウィンドウの基底クラスであり、画面上に表示されるすべての可視オブジェクトを表しています。">wxWindow</a> class as the call:  <div class="fragment"><pre class="fragment">                 <a class="code" href="classwx_window.html#a180312d5ad4a4a5ad805b8d52d67a74e" title="ピクセル単位でウィンドウサイズを設定します。">SetSize</a>(x, y, <a class="code" href="defs_8h.html#ae297119c813ec5d3328ce3f43f9ac6c1" title='A special value meaning "use default coordinate".'>wxDefaultCoord</a>, <a class="code" href="defs_8h.html#ae297119c813ec5d3328ce3f43f9ac6c1" title='A special value meaning "use default coordinate".'>wxDefaultCoord</a>, <a class="code" href="defs_8h.html#a2f39257d6e2924d14ba28afa42abcde6">wxSIZE_USE_EXISTING</a>);
 </pre></div></dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a180312d5ad4a4a5ad805b8d52d67a74e" title="ピクセル単位でウィンドウサイズを設定します。">SetSize()</a> </dd></dl>
 
@@ -4673,7 +4673,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns <span class="literal">true</span> if the focus was moved to another window or <span class="literal">false</span> if nothing changed.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>You may wish to call this from a text control custom keypress handler to do the default navigation behaviour for the tab key, since the standard default behaviour for a multiline text control with the wxTE_PROCESS_TAB style is to insert a tab and not navigate to the next control. See also <a class="el" href="classwx_navigation_key_event.html" title="このイベントクラスはナビゲーションイベントに関する情報を含んでおり、タブやページダウンなどのナビゲーションキーから生成されます。">wxNavigationKeyEvent</a> and HandleAsNavigationKey.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>You may wish to call this from a text control custom keypress handler to do the default navigation behaviour for the tab key, since the standard default behaviour for a multiline text control with the wxTE_PROCESS_TAB style is to insert a tab and not navigate to the next control. See also <a class="el" href="classwx_navigation_key_event.html" title="このイベントクラスはナビゲーションイベントに関する情報を含んでおり、タブやページダウンなどのナビゲーションキーから生成されます。">wxNavigationKeyEvent</a> and HandleAsNavigationKey.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::NavigateIn" ref="aa58039c8fc65e19160becf510ee1d1d5" args="(int flags=wxNavigationKeyEvent::IsForward)" -->
@@ -4881,7 +4881,7 @@ Protected Member Functions</h2></td></tr>
 <p>If a menu item is selected, the corresponding menu event is generated and will be processed as usual. If coordinates are not specified, the current mouse cursor position is used.</p>
 <p><em>menu</em> is the menu to pop up.</p>
 <p>The position where the menu will appear can be specified either as a <a class="el" href="classwx_point.html" title="wxPoint は図形操作のための有用なデータ構造です。">wxPoint</a> <em>pos</em> or by two integers (<em>x</em> and <em>y</em>).</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Just before the menu is popped up, <a class="el" href="classwx_menu.html#aedd1c1536176ffec144f7e8bea85bd89" title="Sends events to source (or owning window if NULL) to update the menu UI.">wxMenu::UpdateUI</a> is called to ensure that the menu items are in the correct state. The menu does not get deleted by the window. It is recommended to not explicitly specify coordinates when calling PopupMenu in response to mouse click, because some of the ports (namely, wxGTK) can do a better job of positioning the menu in that case.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Just before the menu is popped up, <a class="el" href="classwx_menu.html#aedd1c1536176ffec144f7e8bea85bd89" title="Sends events to source (or owning window if NULL) to update the menu UI.">wxMenu::UpdateUI</a> is called to ensure that the menu items are in the correct state. The menu does not get deleted by the window. It is recommended to not explicitly specify coordinates when calling PopupMenu in response to mouse click, because some of the ports (namely, wxGTK) can do a better job of positioning the menu in that case.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_menu.html" title="A menu is a popup (or pull down) list of items, one of which may be selected before the menu goes awa...">wxMenu</a> </dd></dl>
 
 </div>
@@ -5104,7 +5104,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Raises the window to the top of the window hierarchy (Z-order).  </p>
 <p>Notice that this function only requests the window manager to raise this window to the top of Z-order. Depending on its configuration, the window manager may raise the window, not do it at all or indicate that a window requested to be raised in some other way, e.g. by flashing its icon if it is minimized.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This function only works for wxTopLevelWindow-derived classes.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This function only works for wxTopLevelWindow-derived classes.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a124944524f36b71385dad8fddaad8ded" title="Lowers the window to the bottom of the window hierarchy (Z-order).">Lower()</a> </dd></dl>
 
 </div>
@@ -5222,7 +5222,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if the hotkey was registered successfully. <span class="literal">false</span> if some other application already registered a hotkey with this modifier/virtualKeyCode combination.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Use EVT_HOTKEY(hotkeyId, fnc) in the event table to capture the event. This function is currently only implemented under Windows. It is used in the Windows CE port for detecting hardware button presses.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Use EVT_HOTKEY(hotkeyId, fnc) in the event table to capture the event. This function is currently only implemented under Windows. It is used in the Windows CE port for detecting hardware button presses.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a695f60d65f8f6c12e3c3645ad9c0c35b" title="Unregisters a system wide hotkey.">UnregisterHotKey()</a> </dd></dl>
 
 </div>
@@ -5426,7 +5426,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Scrolls the window by the given number of lines down (if <em>lines</em> is positive) or up.  </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns <span class="literal">true</span> if the window was scrolled, <span class="literal">false</span> if it was already on top/bottom and nothing was done.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This function is currently only implemented under MSW and <a class="el" href="classwx_text_ctrl.html" title="テキストの表示と編集が可能なテキストコントロール。">wxTextCtrl</a> under wxGTK (it also works for <a class="el" href="classwx_scrolled.html" title="wxScrolled クラスはクライアントエリアのスクロール、スクロールバーの位置に合わせた座標の変換、表示領域にあわせたスクロール位置やつまみのサイズの設定といったことの管理を行います。">wxScrolled</a> classes under all platforms).</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This function is currently only implemented under MSW and <a class="el" href="classwx_text_ctrl.html" title="テキストの表示と編集が可能なテキストコントロール。">wxTextCtrl</a> under wxGTK (it also works for <a class="el" href="classwx_scrolled.html" title="wxScrolled クラスはクライアントエリアのスクロール、スクロールバーの位置に合わせた座標の変換、表示領域にあわせたスクロール位置やつまみのサイズの設定といったことの管理を行います。">wxScrolled</a> classes under all platforms).</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#adc0ed5e1c4925223cb901ced14b8343d" title="Scrolls the window by the given number of pages down (if pages is positive) or up.">ScrollPages()</a> </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classwx_ribbon_gallery.html#a1fda9962ce07f5924cd4cc80cdc70d33">wxRibbonGallery</a>, and <a class="el" href="classwx_ribbon_page.html#a6c716e621f9452cbcaedce810974a751">wxRibbonPage</a>.</p>
@@ -5450,7 +5450,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Scrolls the window by the given number of pages down (if <em>pages</em> is positive) or up.  </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns <span class="literal">true</span> if the window was scrolled, <span class="literal">false</span> if it was already on top/bottom and nothing was done.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This function is currently only implemented under MSW and wxGTK.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This function is currently only implemented under MSW and wxGTK.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#aa5c5b683bd11a0d9771bd2fcdf643c64" title="Scrolls the window by the given number of lines down (if lines is positive) or up.">ScrollLines()</a> </dd></dl>
 
 </div>
@@ -5495,7 +5495,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Note that you can often use <a class="el" href="classwx_scrolled.html" title="wxScrolled クラスはクライアントエリアのスクロール、スクロールバーの位置に合わせた座標の変換、表示領域にあわせたスクロール位置やつまみのサイズの設定といったことの管理を行います。">wxScrolled</a> instead of using this function directly.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Note that you can often use <a class="el" href="classwx_scrolled.html" title="wxScrolled クラスはクライアントエリアのスクロール、スクロールバーの位置に合わせた座標の変換、表示領域にあわせたスクロール位置やつまみのサイズの設定といったことの管理を行います。">wxScrolled</a> instead of using this function directly.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::SendDestroyEvent" ref="a7e21eb6a0819281b29134a6432d064fe" args="()" -->
@@ -5663,7 +5663,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>The background colour is usually painted by the default <a class="el" href="classwx_erase_event.html" title="An erase event is sent when a window's background needs to be repainted.">wxEraseEvent</a> event handler function under Windows and automatically under GTK. Note that setting the background colour does not cause an immediate refresh, so you may wish to call <a class="el" href="classwx_window.html#a61e833684ee5c89775e91e88be1a9a52" title="Clears the window by filling it with the current background colour.">wxWindow::ClearBackground</a> or <a class="el" href="classwx_window.html#a29dc7251746154c821b17841b9877830" title="Causes this window, and all of its children recursively (except under wxGTK1 where this is not implem...">wxWindow::Refresh</a> after calling this function. Using this function will disable attempts to use themes for this window, if the system supports them. Use with care since usually the themes represent the appearance chosen by the user to be used for all applications on the system.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>The background colour is usually painted by the default <a class="el" href="classwx_erase_event.html" title="An erase event is sent when a window's background needs to be repainted.">wxEraseEvent</a> event handler function under Windows and automatically under GTK. Note that setting the background colour does not cause an immediate refresh, so you may wish to call <a class="el" href="classwx_window.html#a61e833684ee5c89775e91e88be1a9a52" title="Clears the window by filling it with the current background colour.">wxWindow::ClearBackground</a> or <a class="el" href="classwx_window.html#a29dc7251746154c821b17841b9877830" title="Causes this window, and all of its children recursively (except under wxGTK1 where this is not implem...">wxWindow::Refresh</a> after calling this function. Using this function will disable attempts to use themes for this window, if the system supports them. Use with care since usually the themes represent the appearance chosen by the user to be used for all applications on the system.</dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if the colour was really changed, <span class="literal">false</span> if it was already set to this colour and nothing was done.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a3006d98a4145b7064c1f08e39487d257" title="Returns the background colour of the window.">GetBackgroundColour()</a>, <a class="el" href="classwx_window.html#a69f1e1c7ddd370d72e68c70f13ac8de9" title="Sets the foreground colour of the window.">SetForegroundColour()</a>, <a class="el" href="classwx_window.html#acb8e9bd1c88f330bc9748255a5592964" title="Returns the foreground colour of the window.">GetForegroundColour()</a>, <a class="el" href="classwx_window.html#a61e833684ee5c89775e91e88be1a9a52" title="Clears the window by filling it with the current background colour.">ClearBackground()</a>, <a class="el" href="classwx_window.html#a29dc7251746154c821b17841b9877830" title="Causes this window, and all of its children recursively (except under wxGTK1 where this is not implem...">Refresh()</a>, <a class="el" href="classwx_erase_event.html" title="An erase event is sent when a window's background needs to be repainted.">wxEraseEvent</a>, <a class="el" href="classwx_system_settings.html" title="wxSystemSettings allows the application to ask for details about the system.">wxSystemSettings</a> </dd></dl>
 
@@ -5840,7 +5840,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>You must call <a class="el" href="classwx_window.html#ad369fe1db5c20f9d9edff7b5eb1f7226" title="Determines whether the Layout() function will be called automatically when the window is resized...">SetAutoLayout()</a> to tell a window to use the constraints automatically in OnSize; otherwise, you must override OnSize and call <a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113" title="このウィンドウに対して、制約に基づく配置アルゴリズムか、サイザーに基づくアルゴリズムを実行します。">Layout()</a> explicitly. When setting both a <a class="el" href="classwx_layout_constraints.html">wxLayoutConstraints</a> and a <a class="el" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a>, only the sizer will have effect.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>You must call <a class="el" href="classwx_window.html#ad369fe1db5c20f9d9edff7b5eb1f7226" title="Determines whether the Layout() function will be called automatically when the window is resized...">SetAutoLayout()</a> to tell a window to use the constraints automatically in OnSize; otherwise, you must override OnSize and call <a class="el" href="classwx_window.html#a1b143c3e72bd0af533b76db4830a6113" title="このウィンドウに対して、制約に基づく配置アルゴリズムか、サイザーに基づくアルゴリズムを実行します。">Layout()</a> explicitly. When setting both a <a class="el" href="classwx_layout_constraints.html">wxLayoutConstraints</a> and a <a class="el" href="classwx_sizer.html" title="wxSizer はウィンドウ内にサブウィンドウを配置するために使用される抽象基底クラスです。">wxSizer</a>, only the sizer will have effect.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::SetContainingSizer" ref="a0ccf78fe06722b500adfb7f36b8ce443" args="(wxSizer *sizer)" -->
@@ -6117,7 +6117,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Sets the identifier of the window.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Each window has an integer identifier. If the application has not provided one, an identifier will be generated. Normally, the identifier should be provided on creation and should not be modified subsequently.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Each window has an integer identifier. If the application has not provided one, an identifier will be generated. Normally, the identifier should be provided on creation and should not be modified subsequently.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a4633b6ad527c921598f55af5274156f0" title="Returns the identifier of the window.">GetId()</a>, <a class="el" href="overview_windowids.html">Window IDs</a> </dd></dl>
 
 </div>
@@ -6525,7 +6525,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Let's say you wish to display 50 lines of text, using the same font. The window is sized so that you can only see 16 lines at a time. You would use:  <div class="fragment"><pre class="fragment">            <a class="code" href="classwx_window.html#aa842d59529f873683e55cd8392ec46e9" title="Sets the scrollbar properties of a built-in scrollbar.">SetScrollbar</a>(<a class="code" href="defs_8h.html#a1e6994f40bd9cb140e292afb165af971a2134d1cb8cf605532880c118190695b5">wxVERTICAL</a>, 0, 16, 50);
+<dl class="remark"><dt><b>注意:</b></dt><dd>Let's say you wish to display 50 lines of text, using the same font. The window is sized so that you can only see 16 lines at a time. You would use:  <div class="fragment"><pre class="fragment">            <a class="code" href="classwx_window.html#aa842d59529f873683e55cd8392ec46e9" title="Sets the scrollbar properties of a built-in scrollbar.">SetScrollbar</a>(<a class="code" href="defs_8h.html#a1e6994f40bd9cb140e292afb165af971a2134d1cb8cf605532880c118190695b5">wxVERTICAL</a>, 0, 16, 50);
 </pre></div>  Note that with the window at this size, the thumb position can never go above 50 minus 16, or 34. You can determine how many lines are currently visible by dividing the current view size by the character height in pixels. When defining your own scrollbar behaviour, you will always need to recalculate the scrollbar settings when the window size changes. You could therefore put your scrollbar calculations and SetScrollbar call into a function named AdjustScrollbars, which can be called initially and also from your <a class="el" href="classwx_size_event.html" title="リサイズイベントは wxWindow のサイズ変更イベントに関する情報を保持します。">wxSizeEvent</a> handler function.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="overview_scrolling.html">Scrolled Windows</a>, <a class="el" href="classwx_scroll_bar.html" title="A wxScrollBar is a control that represents a horizontal or vertical scrollbar.">wxScrollBar</a>, <a class="el" href="classwx_scrolled.html" title="wxScrolled クラスはクライアントエリアのスクロール、スクロールバーの位置に合わせた座標の変換、表示領域にあわせたスクロール位置やつまみのサイズの設定といったことの管理を行います。">wxScrolled</a>, <a class="el" href="classwx_scroll_win_event.html" title="A scroll event holds information about events sent from scrolling windows.">wxScrollWinEvent</a> </dd></dl>
 
@@ -6573,7 +6573,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This function does not directly affect the contents of the window: it is up to the application to take note of scrollbar attributes and redraw contents accordingly.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This function does not directly affect the contents of the window: it is up to the application to take note of scrollbar attributes and redraw contents accordingly.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#aa842d59529f873683e55cd8392ec46e9" title="Sets the scrollbar properties of a built-in scrollbar.">SetScrollbar()</a>, <a class="el" href="classwx_window.html#a3e23d10c17943fd873d0acb472db0caa" title="Returns the built-in scrollbar position.">GetScrollPos()</a>, <a class="el" href="classwx_window.html#a10d24c60525a1c612cd775fc44dd1953" title="Returns the built-in scrollbar thumb size.">GetScrollThumb()</a>, <a class="el" href="classwx_scroll_bar.html" title="A wxScrollBar is a control that represents a horizontal or vertical scrollbar.">wxScrollBar</a>, <a class="el" href="classwx_scrolled.html" title="wxScrolled クラスはクライアントエリアのスクロール、スクロールバーの位置に合わせた座標の変換、表示領域にあわせたスクロール位置やつまみのサイズの設定といったことの管理を行います。">wxScrolled</a> </dd></dl>
 
 </div>
@@ -6640,7 +6640,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This overload sets the position and optionally size, of the window. Parameters may be wxDefaultCoord to indicate either that a default should be supplied by wxWidgets, or that the current value of the dimension should be used.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This overload sets the position and optionally size, of the window. Parameters may be wxDefaultCoord to indicate either that a default should be supplied by wxWidgets, or that the current value of the dimension should be used.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#ab1cb98c8d25b9e6ff7b706b1446c3df7" title="Moves the window to the given position.">Move()</a>, <a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
 
 </div>
@@ -6710,7 +6710,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>ピクセル単位でウィンドウサイズを設定します。 </p>
 <p>The size is specified using a <a class="el" href="classwx_rect.html" title="A class for manipulating rectangles.">wxRect</a>, <a class="el" href="classwx_size.html" title="wxSize は図形操作のための有用なデータ構造です。">wxSize</a> or by a couple of <code>int</code> objects.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This form must be used with non-default width and height values.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This form must be used with non-default width and height values.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#ab1cb98c8d25b9e6ff7b706b1446c3df7" title="Moves the window to the given position.">Move()</a>, <a class="el" href="overview_windowsizing.html">Window Sizing Overview</a> </dd></dl>
 
 </div>
@@ -6845,7 +6845,7 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>SetSizer enables and disables Layout automatically.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>SetSizer enables and disables Layout automatically.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxWindow::SetSizerAndFit" ref="a29938af9828fd35da666536cdfb6b73c" args="(wxSizer *sizer, bool deleteOld=true)" -->
@@ -7298,7 +7298,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><span class="literal">true</span> if the hotkey was unregistered successfully, <span class="literal">false</span> if the id was invalid.</dd></dl>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This function is currently only implemented under MSW.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This function is currently only implemented under MSW.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_window.html#a53ca57872dac5851ea6ba55a494b899b" title="Registers a system wide hotkey.">RegisterHotKey()</a> </dd></dl>
 
 </div>

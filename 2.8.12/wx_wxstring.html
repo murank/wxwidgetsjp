@@ -675,7 +675,7 @@ Preallocate enough space for wxString to store <I>nLen</I> characters. This func
 may be used to increase speed when the string is constructed by repeated
 concatenation as in<P>
 <PRE>
-// delete all vowels from the string
+// 文字列から母音をすべて削除する
 wxString DeleteAllVowels(const wxString&amp; original)
 {
     wxString result;
@@ -1151,8 +1151,7 @@ Returns the first <I>count</I> characters of the string.<P>
 <H3>wxString::Len</H3>
 <P>
 <B>size_t</B> <B>Len</B>() <B>const</B><P>
-
-Returns the length of the string.<P>
+文字列の長さを返却します。<P>
 
 
 <HR>
@@ -1160,8 +1159,7 @@ Returns the length of the string.<P>
 <H3>wxString::Length</H3>
 <P>
 <B>size_t</B> <B>Length</B>() <B>const</B><P>
-
-Returns the length of the string (same as Len).<P>
+文字列の長さを返却します (Len と同じです)。<P>
 
 This is a wxWidgets 1.xx compatibility function; you should not use it in new code.<P>
 
@@ -1595,8 +1593,7 @@ doesn't have to be called).<P>
 <H3>wxString::Upper</H3>
 <P>
 <B><A HREF="wx_wxstring.html#wxstring">wxString</A></B> </B> <B>Upper</B>() <B>const</B><P>
-
-Returns this string converted to upper case.<P>
+大文字へ変換した文字列を返却します。<P>
 
 
 <HR>

@@ -295,7 +295,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns highest level non-category, non-root parent of property for which event occurred.  </p>
 <p>Useful when you have nested properties with children.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>If immediate parent is root or category, this will return the property itself.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>If immediate parent is root or category, this will return the property itself.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPropertyGridEvent::GetProperty" ref="a6038b47795f707535e61b3716e1b34ca" args="() const " -->
@@ -314,7 +314,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns property associated with this event.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>You should assume that this property can always be NULL. For instance, <code>wxEVT_PG_SELECTED</code> is emitted not only when a new property is selected, but also when selection is cleared by user activity.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>You should assume that this property can always be NULL. For instance, <code>wxEVT_PG_SELECTED</code> is emitted not only when a new property is selected, but also when selection is cleared by user activity.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPropertyGridEvent::GetPropertyName" ref="a4dc67c4487b509f823f434a6b6d77ec7" args="() const " -->
@@ -333,7 +333,7 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns name of the associated property.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Property name is stored in event, so it remains accessible even after the associated property or the property grid has been deleted.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Property name is stored in event, so it remains accessible even after the associated property or the property grid has been deleted.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPropertyGridEvent::GetPropertyValue" ref="a577d7fb277be169e295726878dcbb7db" args="() const wxVariant GetValue() const " -->
@@ -353,7 +353,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns value of the associated property.  </p>
 <p>Works for all event types, but for <code>wxEVT_PG_CHANGING</code> this member function returns the value that is pending, so you can call <a class="el" href="classwx_property_grid_event.html#a5e35bf2aeaad48147c0270e9b04426c8" title="Call this from your event handler to veto action that the event is signaling.">Veto()</a> if the value is not satisfactory.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Property value is stored in event, so it remains accessible even after the associated property or the property grid has been deleted.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Property value is stored in event, so it remains accessible even after the associated property or the property grid has been deleted.  </dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_property_grid_event.html#a577d7fb277be169e295726878dcbb7db" title="Returns value of the associated property.">GetPropertyValue()</a> </dd></dl>
 
 </div>
@@ -471,7 +471,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Call this from your event handler to veto action that the event is signaling.  </p>
 <p>You can only veto a shutdown if <a class="el" href="classwx_property_grid_event.html#aebf868380eef99a405f9576b69742f12" title="Returns true if you can veto the action that the event is signaling.">wxPropertyGridEvent::CanVeto()</a> returns true.</p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>Currently only <code>wxEVT_PG_CHANGING</code> supports vetoing.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>Currently only <code>wxEVT_PG_CHANGING</code> supports vetoing.  </dd></dl>
 
 </div>
 </div><!-- doxytag: member="wxPropertyGridEvent::WasVetoed" ref="af70e7f2f95460c9505cf06be170f5b85" args="() const " -->

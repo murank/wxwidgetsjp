@@ -154,7 +154,7 @@ Defines</h2></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">When set, will be shown as 'greyed' text in property's value cell when the actual displayed value is blank.    <a href="#a7a9e4f54dad7e12f09eca803d110c690"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="property_8h.html#a346b2fb98b8639ac02e822290923a662">wxPG_ATTR_INLINE_HELP</a>&nbsp;&nbsp;&nbsp;wxS("InlineHelp")</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="property_8h.html#a5553822f656c5230474efcf47fa342fe">wxPG_ATTR_AUTOCOMPLETE</a>&nbsp;&nbsp;&nbsp;wxS("AutoComplete")</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Universal, <a class="el" href="classwx_array_string.html" title="wxArrayString is an efficient container for storing wxString objects.">wxArrayString</a>.    <a href="#a5553822f656c5230474efcf47fa342fe"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Universal, <a class="el" href="classwx_array_string.html" title="wxArrayString は wxString オブジェクトを効率的に格納するためのコンテナです。">wxArrayString</a>.    <a href="#a5553822f656c5230474efcf47fa342fe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="property_8h.html#a9e92f4867bf9fbc7c71779c74d18ccd1">wxPG_BOOL_USE_CHECKBOX</a>&nbsp;&nbsp;&nbsp;wxS("UseCheckbox")</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">wxBoolProperty and wxFlagsProperty specific.    <a href="#a9e92f4867bf9fbc7c71779c74d18ccd1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="property_8h.html#a83269ba02f001acb95afd54365ab1249">wxPG_BOOL_USE_DOUBLE_CLICK_CYCLING</a>&nbsp;&nbsp;&nbsp;wxS("UseDClickCycling")</td></tr>
@@ -242,7 +242,7 @@ Defines</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Universal, <a class="el" href="classwx_array_string.html" title="wxArrayString is an efficient container for storing wxString objects.">wxArrayString</a>.  </p>
+<p>Universal, <a class="el" href="classwx_array_string.html" title="wxArrayString は wxString オブジェクトを効率的に格納するためのコンテナです。">wxArrayString</a>.  </p>
 <p>Set to enable auto-completion in any wxTextCtrl-based property editor.  </p>
 
 </div>
@@ -780,11 +780,11 @@ wxPGProperty Flags</h2>
 </td></tr>
 <tr><td valign="top"><!-- doxytag: member="wxPG_PROP_COMPOSED_VALUE" ref="a2aac85b6d4e1018849f0026b62f1b751a92b638ef1a62b9a1aca773ce3bb25aa5" args="" --><em><a class="anchor" id="a2aac85b6d4e1018849f0026b62f1b751a92b638ef1a62b9a1aca773ce3bb25aa5"></a>wxPG_PROP_COMPOSED_VALUE</em>&nbsp;</td><td>
 <p>Property's value is composed from values of child properties.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This flag cannot be used with property iterators.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This flag cannot be used with property iterators.  </dd></dl>
 </td></tr>
 <tr><td valign="top"><!-- doxytag: member="wxPG_PROP_USES_COMMON_VALUE" ref="a2aac85b6d4e1018849f0026b62f1b751a1f9d53d1879780398cd585faf1505892" args="" --><em><a class="anchor" id="a2aac85b6d4e1018849f0026b62f1b751a1f9d53d1879780398cd585faf1505892"></a>wxPG_PROP_USES_COMMON_VALUE</em>&nbsp;</td><td>
 <p>Common value of property is selectable in editor.  </p>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This flag cannot be used with property iterators.  </dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This flag cannot be used with property iterators.  </dd></dl>
 </td></tr>
 <tr><td valign="top"><!-- doxytag: member="wxPG_PROP_AUTO_UNSPECIFIED" ref="a2aac85b6d4e1018849f0026b62f1b751afeaeef6281a9e1e9e044acbf1bff0252" args="" --><em><a class="anchor" id="a2aac85b6d4e1018849f0026b62f1b751afeaeef6281a9e1e9e044acbf1bff0252"></a>wxPG_PROP_AUTO_UNSPECIFIED</em>&nbsp;</td><td>
 <p>Property can be set to unspecified value via editor.  </p>
@@ -792,7 +792,7 @@ wxPGProperty Flags</h2>
 <ul>
 <li>wxIntProperty, wxUIntProperty, wxFloatProperty, wxEditEnumProperty: Clear the text field</li>
 </ul>
-<dl class="remark"><dt><b>Remarks:</b></dt><dd>This flag cannot be used with property iterators.</dd></dl>
+<dl class="remark"><dt><b>注意:</b></dt><dd>This flag cannot be used with property iterators.</dd></dl>
 <dl class="see"><dt><b>参照:</b></dt><dd><a class="el" href="classwx_p_g_property.html#a126a59cc86786f51cc72469bc2143b4c" title="Set if user can change the property's value to unspecified by modifying the value of the editor contr...">wxPGProperty::SetAutoUnspecified()</a> </dd></dl>
 </td></tr>
 <tr><td valign="top"><!-- doxytag: member="wxPG_PROP_CLASS_SPECIFIC_1" ref="a2aac85b6d4e1018849f0026b62f1b751a34b5ec724cfcb6f22bca2ec03fe92ecd" args="" --><em><a class="anchor" id="a2aac85b6d4e1018849f0026b62f1b751a34b5ec724cfcb6f22bca2ec03fe92ecd"></a>wxPG_PROP_CLASS_SPECIFIC_1</em>&nbsp;</td><td>
